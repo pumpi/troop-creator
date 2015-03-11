@@ -1,4 +1,4 @@
-'use strict';
+﻿'use strict';
 
 // Wildcard Filter for Army List builder
 armyBuilder.filter('wildcardArmy', function() {
@@ -28,7 +28,7 @@ armyBuilder.filter('wildcardArmy', function() {
 armyBuilder.controller('buildCtrl',
     function ($scope, $http, $routeParams) {
     
-    	$http.get('/data/' + $routeParams.army + '.json').
+    	$http.get('./data/' + $routeParams.army + '.json').
 		success(function(data, status, headers, config) {
 			$scope.data 			= data;
 			$scope.selectedModels 	= {};
