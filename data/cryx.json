@@ -1,0 +1,617 @@
+{  
+    "warcaster":[  
+        {  
+            "name":"Iron Lich Asphyxious",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "otherVersionOf":"Lich Lord Asphyxious",
+            "sortString":"Iron Lich Asphyxious 1",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Lich Lord Asphyxious",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "otherVersionOf":"Iron Lich Asphyxious",
+            "sortString":"Iron Lich Asphyxious 2",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Warwitch Deneghra",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "otherVersionOf":"Wraith Witch Deneghra",
+            "sortString":"Warwitch Deneghra 1",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Wraith Witch Deneghra",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "otherVersionOf":"Warwitch Deneghra",
+            "sortString":"Warwitch Deneghra 2",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Goreshade the Bastard",
+            "otherVersionOf":"Goreshade the Cursed",
+            "sortString":"Goreshade the Bastard 1",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Goreshade the Cursed",
+            "otherVersionOf":"Goreshade the Bastard",
+            "sortString":"Goreshade the Bastard 1",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Master Necrotech Mortenebra",
+            "baseFaction":"Cryx",
+            "mkiicost":"4",
+            "forceAdd":"Deryliss",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Pirate Queen Skarre",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "otherVersionOf":"Skarre, Queen of the Broken Coast",
+            "sortString":"Pirate Queen Skarre 1",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Skarre, Queen of the Broken Coast",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "otherVersionOf":"Pirate Queen Skarre",
+            "sortString":"Pirate Queen Skarre 2",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Lich Lord Terminus",
+            "baseFaction":"Cryx",
+            "mkiicost":"4",
+            "damageGrid":{  
+                "hitPoints":"20"
+            }
+        },
+        {  
+            "name":"Witch Coven of Garlghast",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"8"
+                },
+                {  
+                    "hitPoints":"8"
+                },
+                {  
+                    "hitPoints":"8"
+                }
+            ]
+        },
+        {  
+            "name":"Lich Lord Venethrax",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        }
+    ],
+    "warjack":[  
+        {  
+            "name":"Cankerworm",
+            "type":"Light",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "name":"Cryx-Cankerworm"
+            },
+            "bondTo":{  
+                "name":[  
+                    "Iron Lich Asphyxious",
+                    "Lich Lord Asphyxious"
+                ]
+            }
+        },
+        {  
+            "name":"Corruptor",
+            "type":"Heavy",
+            "baseFaction":"Cryx",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Deathjack",
+            "type":"Heavy",
+            "baseFaction":"Cryx",
+            "mkiicost":"12",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Deathripper",
+            "type":"Light",
+            "baseFaction":"Cryx",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Cryx-Bonejack"
+            }
+        },
+        {  
+            "name":"Defiler",
+            "type":"Light",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Cryx-Bonejack"
+            }
+        },
+        {  
+            "name":"Harrower",
+            "type":"Heavy",
+            "baseFaction":"Cryx",
+            "mkiicost":"10",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Helldiver",
+            "type":"Light",
+            "baseFaction":"Cryx",
+            "mkiicost":"3",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Cryx-Helldiver"
+            }
+        },
+        {  
+            "name":"Leviathan",
+            "type":"Heavy",
+            "baseFaction":"Cryx",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Nightmare",
+            "type":"Heavy",
+            "baseFaction":"Cryx",
+            "mkiicost":"10",
+            "damageGrid":{  
+                "name":"Cryx-Helljack"
+            },
+            "bondTo":{  
+                "name":[  
+                    "Warwitch Deneghra",
+                    "Wraith Witch Deneghra"
+                ]
+            }
+        },
+        {  
+            "name":"Nightwretch",
+            "type":"Light",
+            "baseFaction":"Cryx",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Cryx-Bonejack"
+            }
+        },
+        {  
+            "name":"Reaper",
+            "type":"Heavy",
+            "baseFaction":"Cryx",
+            "mkiicost":"7",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Cryx-Helljack"
+            }
+        },
+        {  
+            "name":"Seether",
+            "type":"Heavy",
+            "baseFaction":"Cryx",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Cryx-Helljack"
+            }
+        },
+        {  
+            "name":"Slayer",
+            "type":"Heavy",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Cryx-Helljack"
+            }
+        },
+        {  
+            "name":"Stalker",
+            "type":"Light",
+            "baseFaction":"Cryx",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Cryx-Stalker"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"Bane Lord Tartarus",
+            "baseFaction":"Cryx",
+            "mkiicost":"4",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Bloat Thrall",
+            "baseFaction":"Cryx",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Captain Rengrave",
+            "baseFaction":"Cryx",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Darragh Wrathe",
+            "baseFaction":"Cryx",
+            "mkiicost":"4",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"8"
+                },
+                {  
+                    "hitPoints":"5"
+                }
+            ]
+        },
+        {  
+            "name":"General Gerlak Slaughterborn",
+            "baseFaction":"Cryx",
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trophy":{  
+                "name":"Blood Marks",
+                "count":"5"
+            }
+        },
+        {  
+            "name":"Machine Wraith",
+            "baseFaction":"Cryx",
+            "mkiicost":"1",
+            "basicFA":"3"
+        },
+        {  
+            "name":"Necrotech",
+            "baseFaction":"Cryx",
+            "mkiicost":"1",
+            "basicFA":"3"
+        },
+        {  
+            "name":"Pistol Wraith",
+            "baseFaction":"Cryx",
+            "mkiicost":"3",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Scrap Thrall (3)",
+            "baseFaction":"Cryx",
+            "mkiicost":"1",
+            "basicFA":"3"
+        },
+        {  
+            "name":"Warwitch Siren",
+            "baseFaction":"Cryx",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ],
+    "assignableSolo":[  
+        {  
+            "name":"Skarlock",
+            "baseFaction":"Cryx",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "damageGrid":{  
+                "hitPoints":"5"
+            },
+            "exludeFrom":{  
+                "model":"Master Necrotech Mortenebra"
+            }
+        },
+        {  
+            "name":"Deryliss",
+            "baseFaction":"Cryx",
+            "mkiicost":"0",
+            "characterFA":{  
+                "dependsOn":"Master Necrotech Mortenebra"
+            },
+            "baseUnit":"Master Necrotech Mortenebra",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ],
+    "unit":[  
+        {  
+            "name":"Bane Thralls",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"3",
+            "expandFA":{  
+                "base":"3",
+                "expandBy":"Bane Lord Tartarus"
+            }
+        },
+        {  
+            "name":"Bane Knights",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "mkiiexpand":"10",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"3",
+            "expandFA":{  
+                "base":"3",
+                "expandBy":"Bane Lord Tartarus"
+            }
+        },
+        {  
+            "name":"Bile Thralls",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"3"
+        },
+        {  
+            "name":"Black Ogrun Boarding Party",
+            "baseFaction":"Cryx",
+            "mkiicost":"4",
+            "mkiiexpand":"6",
+            "baseSize":"3",
+            "maxSize":"5",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Blackbane's Ghost Raiders",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "mkiiexpand":"9",
+            "baseSize":"6",
+            "maxSize":"10",
+            "damageGrid":{  
+                "hitPoints":"5"
+            },
+            "expandModel":"Blackbane Pirate"
+        },
+        {  
+            "name":"Bloodgorgers",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Bloodgorger",
+            "trophy":{  
+                "name":"Blood Marks",
+                "count":"8"
+            }
+        },
+        {  
+            "name":"Cephalyx Mind Slaver",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "mkiiexpand":"7",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Drudge Mind Slave",
+            "damageGrid":"5"
+        },
+        {  
+            "name":"Cephalyx Overlords",
+            "baseFaction":"Cryx",
+            "mkiicost":"4",
+            "mkiiexpand":"0",
+            "baseSize":"3",
+            "maxSize":"3",
+            "basicFA":"1",
+            "damageGrid":"5"
+        },
+        {  
+            "name":"Mechanithralls",
+            "baseFaction":"Cryx",
+            "mkiicost":"3",
+            "mkiiexpand":"5",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"3",
+            "expandModel":"Mechanithrall Trooper"
+        },
+        {  
+            "name":"Necrosurgeon & Stitch Thralls",
+            "baseFaction":"Cryx",
+            "mkiicost":"2",
+            "mkiiexpand":"0",
+            "baseSize":"3",
+            "maxSize":"3",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Revenant Crew of the Atramentous",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "mkiiexpand":"9",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Revenant Pirate"
+        },
+        {  
+            "name":"Revenant Cannon Crew",
+            "baseFaction":"Cryx",
+            "mkiicost":"3",
+            "mkiiexpand":"0",
+            "baseSize":"3",
+            "maxSize":"3",
+            "basicFA":"2"
+        },
+        {  
+            "name":"Satyxis Blood Hags",
+            "baseFaction":"Cryx",
+            "mkiicost":"4",
+            "mkiiexpand":"6",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Satyxis Blood Hag Trooper"
+        },
+        {  
+            "name":"Satyxis Raiders",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Satyxis Trooper"
+        },
+        {  
+            "name":"Soulhunters",
+            "baseFaction":"Cryx",
+            "mkiicost":"6",
+            "mkiiexpand":"9",
+            "baseSize":"3",
+            "maxSize":"5",
+            "basicFA":"1",
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Withershadow Combine",
+            "baseFaction":"Cryx",
+            "mkiicost":"5",
+            "mkiiexpand":"0",
+            "baseSize":"3",
+            "maxSize":"3",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ],
+    "unitAttachment":[  
+        {  
+            "name":"Bane Thrall Officer & Standard Bearer",
+            "baseFaction":"Cryx",
+            "mkiicost":"3",
+            "basicFA":"1",
+            "baseUnit":"Bane Thralls",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Satyxis Blood Hag",
+            "baseFaction":"Cryx",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Satyxis Blood Hags",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Satyxis Raider Sea Witch",
+            "baseFaction":"Cryx",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Satyxis Raiders",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ],
+    "specWpnAttachment":[
+    	{  
+		    "name":"Brute Thrall",
+		    "baseFaction":"Cryx",
+		    "mkiicost":"1",
+		    "basicFA":"3",
+		    "baseUnit":"Mechanithralls",
+		    "damageGrid":{  
+		        "hitPoints":"8"
+		    }
+    	}
+    ]
+}

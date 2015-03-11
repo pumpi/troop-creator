@@ -1,0 +1,1251 @@
+{  
+    "warcaster":[  
+        {  
+            "name":"Ashlynn D'Elyse",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Khador",
+                "Four Star Syndicate",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"14"
+            }
+        },
+        {  
+            "name":"Fiona the Black",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Protectorate of Menoth",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Searforge Commission"
+            ],
+            "cannotUseWith":[  
+                "Precursor Knights",
+                "Precursor Knight Officer and Standard Bearer"
+            ],
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        },
+        {  
+            "name":"Gorten Grundback",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Protectorate of Menoth",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"7",
+            "onlyRuns":[  
+                "Grundback Gunner",
+                "Grundback Blaster",
+                "Ghordson Driller",
+                "Wroughthammer Rockram"
+            ],
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Magnus the Traitor",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cygnar",
+                "Highborn Covenant",
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "mkiicost":"6",
+            "otherVersionOf":"Magnus the Warlord",
+            "sortString":"Magnus the Traitor 1",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Magnus the Warlord",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cygnar",
+                "Highborn Covenant",
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "mkiicost":"6",
+            "otherVersionOf":"Magnus the Traitor",
+            "sortString":"Magnus the Traitor 2",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Durgen Madhammer",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"6",
+            "onlyRuns":[  
+                "Grundback Gunner",
+                "Grundback Blaster",
+                "Ghordson Driller",
+                "Wroughthammer Rockram"
+            ],
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Captain Bartolo Montador",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Searforge Commission"
+            ],
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Captain Phinneus Shae",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Khador",
+                "Cygnar",
+                "Protectorate of Menoth",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Four Star Syndicate",
+                "Highborn Covenant",
+                "Searforge Commission"
+            ],
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        }
+    ],
+    "warjack":[  
+        {  
+            "name":"Grundback Gunner",
+            "type":"Light",
+            "baseFaction":"Mercenaries",
+            "onlyRunBy":[  
+                "Gorten Grundback",
+                "Hammerfall High Shield Gun Corps",
+                "Durgen Madhammer",
+                "Thor Steinhammer"
+            ],
+            "mkiicost":"3",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Merc-Gunner"
+            }
+        },
+        {  
+            "name":"Grundback Blaster",
+            "type":"Light",
+            "baseFaction":"Mercenaries",
+            "onlyRunBy":[  
+                "Gorten Grundback",
+                "Hammerfall High Shield Gun Corps",
+                "Durgen Madhammer",
+                "Thor Steinhammer"
+            ],
+            "mkiicost":"3",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Merc-Gunner"
+            }
+        },
+        {  
+            "name":"Ghordson Avalancher",
+            "type":"Heavy",
+            "baseFaction":"Mercenaries",
+            "onlyRunBy":[  
+                "Gorten Grundback",
+                "Hammerfall High Shield Gun Corps",
+                "Durgen Madhammer"
+            ],
+            "excludeFaction":[  
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Ghordson Driller",
+            "type":"Heavy",
+            "baseFaction":"Mercenaries",
+            "onlyRunBy":[  
+                "Gorten Grundback",
+                "Hammerfall High Shield Gun Corps",
+                "Durgen Madhammer",
+                "Thor Steinhammer"
+            ],
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Wroughthammer Rockram",
+            "type":"Heavy",
+            "baseFaction":"Mercenaries",
+            "onlyRunBy":[  
+                "Gorten Grundback",
+                "Hammerfall High Shield Gun Corps",
+                "Durgen Madhammer",
+                "Thor Steinhammer"
+            ],
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Mule",
+            "type":"Heavy",
+            "baseFaction":"Mercenaries",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Mariner",
+            "type":"Heavy",
+            "baseFaction":"Mercenaries",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Freebooter",
+            "type":"Heavy",
+            "baseFaction":"Mercenaries",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Vanguard",
+            "type":"Light",
+            "baseFaction":"Mercenaries",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Renegade",
+            "type":"Light",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":"Highborn Covenant",
+            "onlyRunBy":[  
+                "Magnus the Traitor",
+                "Magnus the Warlord"
+            ],
+            "mkiicost":"6",
+            "tierBenefit":{  
+                "tierName":"Magnus Most Wanted",
+                "tierLevel":"1",
+                "mkiicost":"5"
+            },
+            "basicFA":"2",
+            "damageGrid":{  
+                "name":"Common-Light-ArcNode"
+            }
+        },
+        {  
+            "name":"Talon",
+            "type":"Light",
+            "baseFaction":"Mercenaries",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Buccaneer",
+            "type":"Light",
+            "baseFaction":"Mercenaries",
+            "mkiicost":"3",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Mangler",
+            "type":"Heavy",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":"Highborn Covenant",
+            "onlyRunBy":[  
+                "Magnus the Traitor",
+                "Magnus the Warlord"
+            ],
+            "mkiicost":"8",
+            "tierBenefit":{  
+                "tierName":"Magnus' Agenda",
+                "tierLevel":"1",
+                "mkiicost":"7"
+            },
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Nomad",
+            "type":"Heavy",
+            "baseFaction":"Mercenaries",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"Brun Cragback & Lug",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cygnar",
+                "Cryx",
+                "Protectorate of Menoth",
+                "Khador",
+                "Highborn Covenant",
+                "Four Star Syndicate",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"10",
+            "forceAdd":"Lug",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Ogrun Bokur",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Protectorate of Menoth",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"3",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Anastasia di Bray",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Khador",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter",
+                "Four Star Syndicate",
+                "Searforge Commission"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Orin Midwinter, Rogue Inquisitor",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cygnar",
+                "Highborn Covenant",
+                "Talion Charter",
+                "Searforge Commission"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Stannis Brocker",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "mkiicost":"4",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Saxon Orrik",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cygnar",
+                "Highborn Covenant",
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "cannotUseWith":"Professor Viktor Pendrake",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Professor Viktor Pendrake",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Protectorate of Menoth",
+                "Khador",
+                "Four Star Syndicate",
+                "Searforge Commission",
+                "Talion Charter",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "cannotUseWith":"Saxon Orrik",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Lanyssa Ryssyl, Nyss Sorceress",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Protectorate of Menoth",
+                "Khador",
+                "Four Star Syndicate",
+                "Searforge Commission",
+                "Talion Charter",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Thor Steinhammer",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Protectorate of Menoth",
+                "Cryx",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"2",
+            "warjackControl":"2",
+            "onlyRuns":[  
+                "Grundback Gunner",
+                "Grundback Blaster",
+                "Ghordson Driller",
+                "Wroughthammer Rockram"
+            ],
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Gudrun the Wanderer",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Protectorate of Menoth",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Gorman Di Wulfe, Rogue Alchemist",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Rhupert Carvolo, Piper of Ord",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Khador",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Rutger Shaw",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Retribution of Scyrah",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Taryn di la Rovissi",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Protectorate of Menoth",
+                "Retribution of Scyrah",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Kell Bailoch",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Cygnar",
+                "Highborn Covenant",
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Eiryss, Mage Hunter of Ios",
+            "otherVersionOf":"Eiryss, Angel of Retribution",
+            "sortString":"Eiryss, Mage Hunter of Ios 1",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Eiryss, Angel of Retribution",
+            "otherVersionOf":"Eiryss, Mage Hunter of Ios",
+            "sortString":"Eiryss, Mage Hunter of Ios 2",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Reinholdt, Gobber Speculator",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Protectorate of Menoth",
+                "Cryx",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"1"
+        },
+        {  
+            "name":"Bloody Bradigan",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Master Gunner Dougal MacNaile",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Dirty Meg",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Cryx"
+            ],
+            "mkiicost":"2",
+            "warjackControl":"1",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Bosun Grogspar",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Highborn Covenant",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Doc Killingsworth",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Magnus' Agenda"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"First Mate Hawk",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Lord Rockbottom, Expedition Financier",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            },
+            "trophy":{  
+                "name":"Coins",
+                "count":"5"
+            }
+        },
+        {  
+            "name":"Alten Ashley, Monster Hunter",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ],
+    "warbeast":[
+			{  
+		    "name":"Lug",
+		    "type":"Heavy",
+		    "baseFaction":"Mercenaries",
+		    "mkiicost":"0",
+		    "excludeFaction":[  
+		        "Cygnar",
+		        "Cryx",
+		        "Protectorate of Menoth",
+		        "Khador",
+		        "Highborn Covenant",
+		        "Four Star Syndicate",
+		        "Magnus' Agenda",
+		        "Magnus Most Wanted",
+		        "Talion Charter"
+		    ],
+		    "characterFA":{  
+		        "dependsOn":"Brun Cragback"
+		    },
+		    "lifeSpiral":{  
+		        "branch1":"5",
+		        "branch2":"5",
+		        "branch3":"7",
+		        "branch4":"6",
+		        "branch5":"5",
+		        "branch6":"5"
+		    }
+		}
+    ],
+    "unit":[  
+        {  
+            "name":"Alexia Ciannor & the Risen",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Protectorate of Menoth",
+                "Cryx",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"5",
+            "mkiiexpand":"0",
+            "baseSize":"10",
+            "maxSize":"10",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Captain Sam MacHorne & the Devil Dogs",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Khador",
+                "Cryx",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"5",
+            "warjackControl":"1",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"7",
+            "expandModel":"Devil Dog",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Cylena Raefyll and Nyss Hunters",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Protectorate of Menoth",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"7",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"10",
+            "expandModel":"Nyss Hunter"
+        },
+        {  
+            "name":"Croe's Cutthroats",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cygnar",
+                "Highborn Covenant",
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "mkiicost":"7",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"10",
+            "expandModel":"Cutthroat"
+        },
+        {  
+            "name":"Hammerfall High Shield Gun Corps",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Protectorate of Menoth",
+                "Cryx",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"5",
+            "basicFA":"2",
+            "warjackControl":"1",
+            "onlyRuns":[  
+                "Grundback Gunner",
+                "Grundback Blaster",
+                "Ghordson Driller",
+                "Wroughthammer Rockram"
+            ],
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"8",
+            "expandModel":"Hammerfall Gunman"
+        },
+        {  
+            "name":"Steelhead Halberdiers",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "mkiicost":"4",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"6",
+            "expandModel":"Steelhead Halberdier"
+        },
+        {  
+            "name":"Lady Aiyana & Master Holt",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "mkiicost":"4",
+            "mkiiexpand":"0",
+            "baseSize":"2",
+            "maxSize":"2",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"5"
+                },
+                {  
+                    "hitPoints":"5"
+                }
+            ]
+        },
+        {  
+            "name":"Greygore Boomhowler and Company",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Highborn Covenant",
+                "Protectorate of Menoth",
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "mkiicost":"6",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"9",
+            "expandModel":"Trollkin Mercenaries",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Herne & Jonne",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter"
+            ],
+            "mkiicost":"3",
+            "baseSize":"2",
+            "maxSize":"2",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"5"
+                },
+                {  
+                    "hitPoints":"10"
+                }
+            ]
+        },
+        {  
+            "name":"Loyalist Long Gunners",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Cygnar",
+                "Protectorate of Menoth",
+                "Khador",
+                "Highborn Covenant",
+                "Four Star Syndicate",
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "mkiicost":"0",
+            "sharedFA":{  
+                "base":"1",
+                "shareWith":"Loyalist Trenchers"
+            },
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"0",
+            "expandModel":"Long Gunner Trooper"
+        },
+        {  
+            "name":"Loyalist Trenchers",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Cygnar",
+                "Protectorate of Menoth",
+                "Khador",
+                "Highborn Covenant",
+                "Four Star Syndicate",
+                "Searforge Commission",
+                "Talion Charter"
+            ],
+            "mkiicost":"0",
+            "sharedFA":{  
+                "base":"1",
+                "shareWith":"Loyalist Long Gunners"
+            },
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"0",
+            "expandModel":"Trencher Trooper"
+        },
+        {  
+            "name":"The Commodore Cannon & Crew",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Cryx",
+                "Khador",
+                "Cygnar",
+                "Protectorate of Menoth",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Four Star Syndicate",
+                "Highborn Covenant",
+                "Searforge Commission"
+            ],
+            "mkiicost":"4",
+            "characterFA":{  
+                "dependsOn":"Captain Phinneus Shae"
+            },
+            "baseSize":"4",
+            "maxSize":"4",
+            "mkiiexpand":"0"
+        },
+        {  
+            "name":"Sea Dogs",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "mkiicost":"5",
+            "basicFA":"999",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"8",
+            "expandModel":"Sea Dog Swab"
+        },
+        {  
+            "name":"Press Gangers",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "mkiicost":"4",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"6",
+            "expandModel":"Press Ganger Swab"
+        },
+        {  
+            "name":"Sea Dog Deck Gun",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "mkiicost":"2",
+            "basicFA":"2",
+            "baseSize":"2",
+            "maxSize":"2",
+            "mkiiexpand":"0"
+        },
+        {  
+            "name":"Precursor Knights",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Four Star Syndicate",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter",
+                "Cryx",
+                "Khador",
+                "Cygnar",
+                "Protectorate of Menoth"
+            ],
+            "cannotUseWith":"Alexia Ciannor",
+            "mkiicost":"5",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"8",
+            "expandModel":"Precursor Knight"
+        },
+        {  
+            "name":"Kayazy Assassins",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Highborn Covenant",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter",
+                "Cryx",
+                "Khador",
+                "Cygnar",
+                "Protectorate of Menoth"
+            ],
+            "mkiicost":"5",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"8",
+            "expandModel":"Kayazy Blademan"
+        },
+        {  
+            "name":"Idrian Skirmishers",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Four Star Syndicate",
+                "Highborn Covenant",
+                "Searforge Commission",
+                "Talion Charter",
+                "Cryx",
+                "Khador",
+                "Cygnar",
+                "Protectorate of Menoth"
+            ],
+            "mkiicost":"6",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"10",
+            "expandModel":"Idrian Skirmisher Nomad"
+        },
+        {  
+            "name":"Horgenhold Forge Guard",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Four Star Syndicate",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter",
+                "Cryx",
+                "Khador"
+            ],
+            "mkiicost":"5",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"8",
+            "expandModel":"Horgenhold Guard Hammerer"
+        },
+        {  
+            "name":"Steelhead Heavy Cavalry",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Talion Charter",
+                "Searforge Commission"
+            ],
+            "mkiicost":"6",
+            "basicFA":"1",
+            "baseSize":"3",
+            "maxSize":"5",
+            "mkiiexpand":"10",
+            "expandModel":"Steelhead Horseman",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        }
+    ],
+    "unitAttachment":[  
+        {  
+            "name":"Mr. Walls, the Quartermaster",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted"
+            ],
+            "baseUnit":"Sea Dogs",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Precursor Knight Officer and Standard Bearer",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Four Star Syndicate",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter",
+                "Cryx",
+                "Khador",
+                "Cygnar",
+                "Protectorate of Menoth"
+            ],
+            "cannotUseWith":"Alexia Ciannor",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Precursor Knights",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Idrian Skirmisher Chieftain and Guide",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Four Star Syndicate",
+                "Highborn Covenant",
+                "Searforge Commission",
+                "Talion Charter",
+                "Cryx",
+                "Khador",
+                "Cygnar",
+                "Protectorate of Menoth"
+            ],
+            "mkiicost":"3",
+            "basicFA":"1",
+            "baseUnit":"Idrian Skirmishers",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Kayazy Assassins Underboss",
+            "baseFaction":"Mercenaries",
+            "excludeFaction":[  
+                "Highborn Covenant",
+                "Searforge Commission",
+                "Magnus' Agenda",
+                "Magnus Most Wanted",
+                "Talion Charter",
+                "Cryx",
+                "Khador",
+                "Cygnar",
+                "Protectorate of Menoth"
+            ],
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Kayazy Assassins",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        }
+    ],
+    "specWpnAttachment":{  
+        "name":"Sea Dog Rifleman",
+        "baseFaction":"Mercenaries",
+        "excludeFaction":[  
+            "Searforge Commission",
+            "Magnus Agenda"
+        ],
+        "baseUnit":"Sea Dogs",
+        "mkiicost":"1",
+        "basicFA":"999",
+        "baseSize":"1",
+        "maxSize":"3",
+        "mkiiexpand":"1",
+        "expandModel":"Sea Dog Rifleman"
+    }
+}

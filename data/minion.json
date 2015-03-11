@@ -1,0 +1,444 @@
+{  
+    "warcaster":[  
+        {  
+            "name":"Magnus the Warlord",
+            "baseFaction":"Minion",
+            "excludeFaction":[  
+                "Circle Orboros",
+                "Legion of Everblight",
+                "Trollbloods"
+            ],
+            "mkiicost":"6",
+            "otherVersionOf":"Magnus the Traitor",
+            "sortString":"Magnus the Traitor 2",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Bloody Barnabas",
+            "baseFaction":"Minion",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        }
+    ],
+    "warbeast":[  
+        {  
+            "name":"Blackhide Wrastler",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"1",
+                "branch3":"8",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"3"
+            }
+        },
+        {  
+            "name":"Ironback Spitter",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "lifeSpiral":{  
+
+            }
+        },
+        {  
+            "name":"Bull Snapper",
+            "type":"Light",
+            "baseFaction":"Minion",
+            "mkiicost":"3",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"3",
+                "branch2":"1",
+                "branch3":"5",
+                "branch4":"2",
+                "branch5":"4",
+                "branch6":"1"
+            }
+        },
+        {  
+            "name":"Skarath",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "excludeFaction":[  
+                "Skorne",
+                "Legion of Everblight"
+            ],
+            "mkiicost":"0",
+            "characterFA":{  
+                "dependsOn":"Dahlia Hallyr"
+            },
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Brine",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "excludeFaction":"Circle Orboros",
+            "mkiicost":"0",
+            "characterFA":{  
+                "dependsOn":"Rorsh"
+            },
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"3",
+                "branch3":"7",
+                "branch4":"7",
+                "branch5":"6",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Snapjaw",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "mkiicost":"0",
+            "characterFA":{  
+                "dependsOn":"Wrong Eye"
+            },
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"3",
+                "branch3":"8",
+                "branch4":"8",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Lug",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "excludeFaction":[  
+                "Skorne",
+                "Legion of Everblight"
+            ],
+            "mkiicost":"0",
+            "characterFA":{  
+                "dependsOn":"Brun Cragback"
+            },
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"5",
+                "branch3":"7",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        }
+    ],
+    "warjack":[  
+        {  
+            "name":"Mariner",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "onlyRunBy":"Magnus the Warlord",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Freebooter",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "onlyRunBy":"Magnus the Warlord",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Mule",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "onlyRunBy":"Magnus the Warlord",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Vanguard",
+            "type":"Light",
+            "baseFaction":"Minion",
+            "onlyRunBy":"Magnus the Warlord",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Buccaneer",
+            "type":"Light",
+            "baseFaction":"Minion",
+            "onlyRunBy":"Magnus the Warlord",
+            "mkiicost":"3",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Renegade",
+            "type":"Light",
+            "baseFaction":"Minion",
+            "onlyRunBy":"Magnus the Warlord",
+            "mkiicost":"6",
+            "basicFA":"2",
+            "damageGrid":{  
+                "name":"Common-Light-ArcNode"
+            }
+        },
+        {  
+            "name":"Talon",
+            "type":"Light",
+            "baseFaction":"Minion",
+            "onlyRunBy":"Magnus the Warlord",
+            "mkiicost":"4",
+            "basicFA":"2",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Mangler",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "onlyRunBy":"Magnus the Warlord",
+            "mkiicost":"8",
+            "basicFA":"2",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Nomad",
+            "type":"Heavy",
+            "baseFaction":"Minion",
+            "onlyRunBy":"Magnus the Warlord",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"Dahlia Hallyr & Skarath",
+            "baseFaction":"Minion",
+            "excludeFaction":[  
+                "Skorne",
+                "Legion of Everblight"
+            ],
+            "mkiicost":"9",
+            "forceAdd":"Skarath",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Rorsh & Brine",
+            "baseFaction":"Minion",
+            "excludeFaction":"Circle Orboros",
+            "mkiicost":"9",
+            "forceAdd":"Brine",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Wrong Eye & Snapjaw",
+            "baseFaction":"Minion",
+            "mkiicost":"9",
+            "forceAdd":"Snapjaw",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Brun Cragback & Lug",
+            "baseFaction":"Minion",
+            "excludeFaction":[  
+                "Skorne",
+                "Legion of Everblight"
+            ],
+            "mkiicost":"9",
+            "forceAdd":"Lug",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Croak Hunter",
+            "baseFaction":"Minion",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Orin Midwinter, Rogue Inquisitor",
+            "baseFaction":"Minion",
+            "excludeFaction":[  
+                "Circle Orboros",
+                "Legion of Everblight",
+                "Trollbloods"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Alten Ashley, Monster Hunter",
+            "baseFaction":"Minion",
+            "excludeFaction":[  
+                "Legion of Everblight",
+                "Skorne"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Saxon Orrik",
+            "baseFaction":"Minion",
+            "excludeFaction":"Legion of Everblight",
+            "cannotUseWith":"Professor Viktor Pendrake",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Viktor Pendrake",
+            "baseFaction":"Minion",
+            "excludeFaction":[  
+                "Skorne",
+                "Legion of Everblight"
+            ],
+            "cannotUseWith":"Saxon Orrik",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Lanyssa Ryssyl, Nyss Sorceress",
+            "baseFaction":"Minion",
+            "excludeFaction":[  
+                "Skorne",
+                "Legion of Everblight"
+            ],
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Feralgeist",
+            "baseFaction":"Minion",
+            "mkiicost":"1",
+            "basicFA":"3"
+        },
+        {  
+            "name":"Gudrun the Wanderer",
+            "baseFaction":"Minion",
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Totem Hunter",
+            "baseFaction":"Minion",
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        }
+    ],
+    "unit":[  
+        {  
+            "name":"Swamp Gobber Bellows Crew",
+            "baseFaction":"Minion",
+            "mkiicost":"1",
+            "mkiiexpand":"0",
+            "basicFA":"1",
+            "baseSize":"2",
+            "maxSize":"2"
+        },
+        {  
+            "name":"Farrow Brigands",
+            "baseFaction":"Minion",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Farrow Brigand",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Bog Trog Ambushers",
+            "baseFaction":"Minion",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Ambusher Trog"
+        },
+        {  
+            "name":"Gatorman Posse",
+            "baseFaction":"Minion",
+            "mkiicost":"6",
+            "mkiiexpand":"9",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"5",
+            "expandModel":"Gator Warrior",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Farrow Bone Grinders",
+            "baseFaction":"Minion",
+            "mkiicost":"2",
+            "mkiiexpand":"3",
+            "basicFA":"2",
+            "baseSize":"4",
+            "maxSize":"6",
+            "expandModel":"Farrow Gatherer"
+        }
+    ]
+}

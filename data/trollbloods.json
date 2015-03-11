@@ -1,0 +1,538 @@
+{  
+    "warlock":[  
+        {  
+            "name":"Madrak Ironhide, Thornwood Chieftain",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"6",
+            "otherVersionOf":"Madrak Ironhide, World Ender",
+            "sortString":"Chief Madrak Ironhide 1",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Madrak Ironhide, World Ender",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "otherVersionOf":"Chief Madrak Ironhide",
+            "sortString":"Chief Madrak Ironhide 2",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Grissel Bloodsong",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Hoarluk Doomshaper",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"7",
+            "otherVersionOf":"Hoarluk Doomshaper, Rage of Dhunia",
+            "sortString":"Hoarluk Doomshaper 2",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Hoarluk Doomshaper, Rage of Dhunia",
+            "baseFaction":"Trollbloods",
+            "otherVersionOf":"Hoarluk Doomshaper",
+            "sortString":"Hoarluk Doomshaper 2",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Grim Angus",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Captain Gunnbjorn",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Calandra Truthsayer, Oracle of the Glimmerwood",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Borka Kegslayer",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "forceAdd":"Pyg Keg Carrier",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        }
+    ],
+    "warbeast":[  
+        {  
+            "name":"Dire Troll Blitzer",
+            "type":"Heavy",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"6",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"6",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Dire Troll Bomber",
+            "type":"Heavy",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"10",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"6",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"6",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Dire Troll Mauler",
+            "type":"Heavy",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"6",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"6",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Earthborn Dire Troll",
+            "type":"Heavy",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"10",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"6",
+                "branch2":"5",
+                "branch3":"7",
+                "branch4":"6",
+                "branch5":"6",
+                "branch6":"6"
+            }
+        },
+        {  
+            "name":"Mulg the Ancient",
+            "type":"Heavy",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"12",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"5",
+                "branch3":"7",
+                "branch4":"6",
+                "branch5":"7",
+                "branch6":"6"
+            }
+        },
+        {  
+            "name":"Troll Axer",
+            "type":"Light",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Troll Impaler",
+            "type":"Light",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Pyre Troll",
+            "type":"Light",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Slag Troll",
+            "type":"Light",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"3",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Winter Troll",
+            "type":"Light",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Troll Bouncer",
+            "type":"Light",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Swamp Troll",
+            "type":"Light",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"3",
+                "branch3":"4",
+                "branch4":"4",
+                "branch5":"4",
+                "branch6":"3"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"Fell Caller Hero",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"3",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Troll Whelps",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"2",
+            "basicFA":"3"
+        },
+        {  
+            "name":"Trollkin Champion Hero",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"3",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Horthol, Long Rider Champion",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"10"
+                },
+                {  
+                    "hitPoints":"8"
+                }
+            ]
+        },
+        {  
+            "name":"Stone Scribe Chronicler",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Trollkin Skinner",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Janissa Stonetide",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        }
+    ],
+    "assignableSolo":[  
+        {  
+            "name":"Pyg Keg Carrier",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"0",
+            "characterFA":{  
+                "dependsOn":"Borka Kegslayer"
+            },
+            "damageGrid":{  
+                "hitPoints":"5"
+            },
+            "assignment":{  
+                "assignCount":"1",
+                "assignTo":{  
+                    "-name":"Borka Kegslayer"
+                }
+            }
+        },
+        {  
+            "name":"Trollkin Runebearer",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            },
+            "assignment":{  
+                "assignCount":"1"
+            }
+        }
+    ],
+    "unit":[  
+        {  
+            "name":"Krielstone Bearer and Stone Scribes",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"3",
+            "mkiiexpand":"4",
+            "basicFA":"1",
+            "baseSize":"4",
+            "maxSize":"6",
+            "expandModel":"Stone Scribe"
+        },
+        {  
+            "name":"Pyg Bushwhackers",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Pyg Bushwhacker"
+        },
+        {  
+            "name":"Trollkin Fennblades",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Fennblade Warrior"
+        },
+        {  
+            "name":"Trollkin Scouts",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"6"
+        },
+        {  
+            "name":"Trollkin Scattergunners",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Scattergunner Grunt"
+        },
+        {  
+            "name":"Trollkin Runeshapers",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"4",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"3"
+        },
+        {  
+            "name":"Kriel Warriors",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"4",
+            "mkiiexpand":"6",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Kriel Warrior"
+        },
+        {  
+            "name":"Pyg Burrowers",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"4",
+            "mkiiexpand":"6",
+            "basicFA":"1",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Pyg Burrower"
+        },
+        {  
+            "name":"Trollkin Champions",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"6",
+            "mkiiexpand":"10",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"5",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Trollkin Sluggers",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"1",
+            "baseSize":"3",
+            "maxSize":"5",
+            "damageGrid":{  
+                "hitPoints":"5"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Trollkin Long Riders",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"7",
+            "mkiiexpand":"11",
+            "basicFA":"1",
+            "baseSize":"3",
+            "maxSize":"5",
+            "expandModel":"Trollkin Long Rider",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Thumper Crew",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"3",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"3"
+        }
+    ],
+    "unitAttachment":[  
+        {  
+            "name":"Trollkin Fennblade Officer and Drummer",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Trollkin Fennblades"
+        },
+        {  
+            "name":"Skaldi Bonehammer, Champions UA",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"3",
+            "basicFA":"1",
+            "baseUnit":"Trollkin Champions"
+        },
+        {  
+            "name":"Kriel Warrior Standard Bearer and Piper",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Kriel Warriors"
+        },
+        {  
+            "name":"Stone Scribe Elder",
+            "baseFaction":"Trollbloods",
+            "mkiicost":"1",
+            "basicFA":"1",
+            "baseUnit":"Krielstone Bearer and Stone Scribes",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ],
+    "specWpnAttachment":[
+    	{    	
+		    "name":"Kriel Warrior Caber Thrower",
+		    "baseFaction":"Trollbloods",
+		    "mkiicost":"1",
+		    "basicFA":"3",
+		    "baseUnit":"Kriel Warriors"
+		}
+	]
+}

@@ -1,0 +1,646 @@
+{  
+    "warcaster":[  
+        {  
+            "name":"Zevanna Agha, Old Witch of Khador",
+            "baseFaction":"Khador",
+            "mkiicost":"3",
+            "forceAdd":"Scrapjack",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Butcher of Khardov",
+            "baseFaction":"Khador",
+            "mkiicost":"6",
+            "otherVersionOf":"Kommander Orsus Zoktavir",
+            "sortString":"Butcher of Khardov 1",
+            "damageGrid":{  
+                "hitPoints":"20"
+            }
+        },
+        {  
+            "name":"Kommandant Irusk",
+            "baseFaction":"Khador",
+            "mkiicost":"6",
+            "otherVersionOf":"Supreme Kommandant Irusk",
+            "sortString":"Kommandant Irusk 1",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Supreme Kommandant Irusk",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "otherVersionOf":"Kommandant Irusk",
+            "sortString":"Kommandant Irusk 2",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Karchev the Terrible",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "name":"Khador-Karchev"
+            }
+        },
+        {  
+            "name":"Kommander Sorscha Kratikoff",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "otherVersionOf":"Forward Kommander Sorscha Kratikoff",
+            "sortString":"Kommander Sorscha Kratikoff 1",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Forward Kommander Sorscha Kratikoff",
+            "baseFaction":"Khador",
+            "mkiicost":"6",
+            "otherVersionOf":"Kommander Sorscha Kratikoff",
+            "sortString":"Kommander Sorscha Kratikoff 2",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Vladimir Tzepesci, Dark Prince of Umbrey",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "otherVersionOf":"Vladimir Tzepesci, Dark Champion",
+            "sortString":"Vladimir Tzepesci 1",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Vladimir Tzepesci, Dark Champion",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "otherVersionOf":"Vladimir Tzepesci, Dark Prince of Umbrey",
+            "sortString":"Vladimir Tzepesci 2",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Koldun Kommander Aleksandra Zerkova",
+            "baseFaction":"Khador",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Kommander Orsus Zoktavir",
+            "baseFaction":"Khador",
+            "mkiicost":"6",
+            "otherVersionOf":"Butcher of Khardov",
+            "sortString":"Butcher of Khardov 2",
+            "damageGrid":{  
+                "hitPoints":"20"
+            }
+        }
+    ],
+    "warjack":[  
+        {  
+            "name":"Beast 09",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"11",
+            "damageGrid":{  
+                "name":"Khador-Heavy"
+            },
+            "bondTo":{  
+                "name":[  
+                    "Kommander Sorscha Kratikoff",
+                    "Forward Kommander Sorscha Kratikoff"
+                ]
+            }
+        },
+        {  
+            "name":"Behemoth",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"13",
+            "damageGrid":{  
+                "name":"Khador-Behemoth"
+            }
+        },
+        {  
+            "name":"Berserker",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Khador-Berserker"
+            }
+        },
+        {  
+            "name":"Decimator",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Khador-Heavy"
+            }
+        },
+        {  
+            "name":"Destroyer",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Khador-Heavy"
+            }
+        },
+        {  
+            "name":"Devastator",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Khador-Heavy"
+            }
+        },
+        {  
+            "name":"Drago",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"8",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            },
+            "bondTo":{  
+                "name":[  
+                    "Vladimir Tzepesci, Dark Prince of Umbrey",
+                    "Vladimir Tzepesci, Dark Champion"
+                ]
+            }
+        },
+        {  
+            "name":"Juggernaut",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"7",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Khador-Heavy"
+            }
+        },
+        {  
+            "name":"Kodiak",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Khador-Heavy"
+            }
+        },
+        {  
+            "name":"Marauder",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"7",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Khador-Heavy"
+            }
+        },
+        {  
+            "name":"Scrapjack",
+            "type":"Light",
+            "baseFaction":"Khador",
+            "mkiicost":"0",
+            "onlyRunBy":"Zevanna Agha, Old Witch of Khador",
+            "baseUnit":"Zevanna Agha, Old Witch of Khador",
+            "damageGrid":{  
+                "name":"Khador-Scrapjack"
+            }
+        },
+        {  
+            "name":"Spriggan",
+            "type":"Heavy",
+            "baseFaction":"Khador",
+            "mkiicost":"10",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Khador-Heavy"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"War Dog",
+            "baseFaction":"Khador",
+            "mkiicost":"1",
+            "basicFA":"1",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "assignment":{  
+                "assignCount":"1",
+                "assignTo":{  
+                    "-faction":"Khador",
+                    "-type":"warcaster"
+                }
+            }
+        },
+        {  
+            "name":"Fenris",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"8"
+                },
+                {  
+                    "hitPoints":"8"
+                }
+            ]
+        },
+        {  
+            "name":"Koldun Lord",
+            "baseFaction":"Khador",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "warjackControl":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Kovnik Jozef Grigorovich",
+            "baseFaction":"Khador",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Kovnik Markov",
+            "baseFaction":"Khador",
+            "mkiicost":"4",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Man-o-War Drakhun",
+            "baseFaction":"Khador",
+            "mkiicost":"4",
+            "sharedFA":{  
+                "base":"1",
+                "shareWith":"Man-o-War Drakhun (+Dismount)"
+            },
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Man-o-War Drakhun (+Dismount)",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "sharedFA":{  
+                "base":"1",
+                "shareWith":"Man-o-War Drakhun"
+            },
+            "damageGrid":[  
+                {  
+                    "hitPoints":"10"
+                },
+                {  
+                    "hitPoints":"10"
+                }
+            ]
+        },
+        {  
+            "name":"Man-o-War Kovnik",
+            "baseFaction":"Khador",
+            "mkiicost":"3",
+            "basicFA":"2",
+            "warjackControl":"2",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Manhunter",
+            "baseFaction":"Khador",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "expandFA":{  
+                "base":"1",
+                "expandBy":"Yuri the Axe"
+            },
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Windowmaker Marksman",
+            "baseFaction":"Khador",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Yuri the Axe",
+            "baseFaction":"Khador",
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        }
+    ],
+    "unit":[  
+        {  
+            "name":"Assault Kommandos",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Kommando Soldier"
+        },
+        {  
+            "name":"Battle Mechaniks",
+            "baseFaction":"Khador",
+            "mkiicost":"2",
+            "mkiiexpand":"3",
+            "baseSize":"4",
+            "maxSize":"6",
+            "basicFA":"3",
+            "warjackControl":"1",
+            "expandModel":"Assistant Mechanik"
+        },
+        {  
+            "name":"Doom Reavers",
+            "baseFaction":"Khador",
+            "mkiicost":"6",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "expandFA":{  
+                "base":"1",
+                "expandBy":"Fenris"
+            },
+            "baseSize":"6",
+            "maxSize":"6"
+        },
+        {  
+            "name":"Great Bears of Gallowswood",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "baseSize":"3",
+            "maxSize":"3",
+            "mkiiexpand":"0",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Greylord Ternion",
+            "baseFaction":"Khador",
+            "mkiicost":"4",
+            "basicFA":"3",
+            "expandFA":{  
+                "base":"2",
+                "expandBy":"Koldun Kommander Aleksandra Zerkova"
+            },
+            "baseSize":"3",
+            "maxSize":"3",
+            "mkiiexpand":"0"
+        },
+        {  
+            "name":"Iron Fang Pikemen",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Iron Fang Trooper"
+        },
+        {  
+            "name":"Iron Fang Uhlans",
+            "baseFaction":"Khador",
+            "mkiicost":"7",
+            "mkiiexpand":"11",
+            "baseSize":"3",
+            "maxSize":"5",
+            "basicFA":"1",
+            "expandModel":"Iron Fang Uhlan",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Kayazy Assassins",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"8",
+            "expandModel":"Kayazy Blademan"
+        },
+        {  
+            "name":"Kossite Woodsmen",
+            "baseFaction":"Khador",
+            "mkiicost":"4",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"6",
+            "expandModel":"Kossite Woodsman"
+        },
+        {  
+            "name":"Man-o-War Bombardiers",
+            "baseFaction":"Khador",
+            "mkiicost":"7",
+            "expandFA":{  
+                "base":"1",
+                "expandBy":"Man-o-War Bombardiers"
+            },
+            "baseSize":"3",
+            "maxSize":"5",
+            "mkiiexpand":"11",
+            "expandModel":"Man-o-War Bombardiers",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Man-o-War Demolition Corps",
+            "baseFaction":"Khador",
+            "mkiicost":"6",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"5",
+            "mkiiexpand":"9",
+            "expandModel":"Man-o-War Demolisher",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Man-o-War Shocktroopers",
+            "baseFaction":"Khador",
+            "mkiicost":"6",
+            "basicFA":"3",
+            "expandFA":{  
+                "base":"2",
+                "expandBy":"Man-o-War Kovnik"
+            },
+            "baseSize":"3",
+            "maxSize":"5",
+            "mkiiexpand":"9",
+            "expandModel":"Man-o-War Trooper",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Widowmakers",
+            "baseFaction":"Khador",
+            "mkiicost":"4",
+            "basicFA":"1",
+            "baseSize":"4",
+            "maxSize":"4",
+            "mkiiexpand":"0"
+        },
+        {  
+            "name":"Winter Guard Field Gun Crew",
+            "baseFaction":"Khador",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"3",
+            "mkiiexpand":"0"
+        },
+        {  
+            "name":"Winter Guard Infantry",
+            "baseFaction":"Khador",
+            "mkiicost":"4",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"6",
+            "expandModel":"Winter Guard Trooper"
+        },
+        {  
+            "name":"Winter Guard Mortar Crew",
+            "baseFaction":"Khador",
+            "mkiicost":"3",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"2",
+            "maxSize":"2"
+        },
+        {  
+            "name":"Winter Guard Rifle Corps",
+            "baseFaction":"Khador",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Winter Guard Rifleman"
+        }
+    ],
+    "specWpnAttachment":[  
+        {  
+            "name":"Assault Kommando Flame Thrower",
+            "baseFaction":"Khador",
+            "mkiicost":"1",
+            "basicFA":"3",
+            "baseUnit":"Assault Kommandos",
+            "damageGrid":{  
+                "hitPoints":"1"
+            }
+        },
+        {  
+            "name":"Winter Guard Infantry Rocketeer",
+            "baseFaction":"Khador",
+            "mkiicost":"1",
+            "basicFA":"3",
+            "baseUnit":"Winter Guard Infantry",
+            "damageGrid":{  
+                "hitPoints":"1"
+            },
+            "trophy":{  
+                "name":"Rockets",
+                "count":"3"
+            }
+        }
+    ],
+    "unitAttachment":[  
+        {  
+            "name":"Greylord Escort",
+            "baseFaction":"Khador",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Doom Reavers",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Iron Fang Officer and Standard Bearer",
+            "baseFaction":"Khador",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Iron Fang Pikemen",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Kayazy Assassins Underboss",
+            "baseFaction":"Khador",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Kayazy Assassins",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Winter Guard Infantry Officer and Standard Bearer",
+            "baseFaction":"Khador",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Winter Guard Infantry",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ]
+}

@@ -1,0 +1,63 @@
+<div class="row">
+	
+</div>
+<div class="row">
+	<div class="col-md-6">
+		<h2>Verfügbaren Einheiten</h2>
+		<input type="search" ng-model="search" placeholder="Suche..." class="form-control">
+		<ul id="aviable-models" class="army-models" ng-repeat="type in notSorted(data)" ng-init="value = data[type]">
+			<li ng-hide="(value | wildcardArmy:search).length == 0" class="headline">{{type}}</li>
+			<li ng-class="{disable: checkModelAviable(model, type)}" ng-repeat="model in value | wildcardArmy:search">
+				<span class="col-md-9">{{model.name}}{{(model.baseSize) ? ' (' + model.baseSize : ''}}{{(model.baseSize !== model.maxSize) ? '/' + model.maxSize : ''}}{{(model.baseSize) ? ')' : ''}}</span>
+				<span class="col-md-1">{{model.basicFA && model.basicFA > 100 ? 'U' : model.basicFA}}{{!model.basicFA ? 'C' : ''}}</span>
+				<span class="col-md-1">{{model.mkiicost}}{{(model.baseSize && model.mkiiexpand !== '0') ? '/' + model.mkiiexpand : ''}}</span>
+				<span class="col-md-1"><i ng-click="addModel(model, type)" class="fa fa-plus-circle add-to-list"></i></span>
+				<span class="clearfix"></span>
+			</li>
+		</ul>
+	</div>
+
+	<div class="col-md-6">
+		<h2>Armee Liste</h2>
+		<div class="row">
+			<div class="col-md-2">
+				<input type="text" ng-model="gameCaster" ng-change="calculateAviablePoints()" placeholder="Caster" class="form-control">
+			</div>
+			<div class="col-md-2">
+				<input type="text" ng-model="gamePoints" ng-change="calculateAviablePoints()" placeholder="Punkte" class="form-control">
+			</div>
+		</div>
+		<div class="sticky">
+			<ul id="selected-models" class="army-models" ng-repeat="type in notSorted(selectedModels)" ng-init="value = selectedModels[type]">
+				<li ng-hide="selectedModels[type].length == 0" class="headline">{{type}}</li>
+				<li ng-repeat="model in value track by $index">
+					<span class="col-md-10">
+						{{model.name}} 
+						<span ng-show="model.maxSize && model.baseSize !== model.maxSize">
+							(Leader and 
+							<span class="btn-group btn-group-xs">
+								<button type="button" class="btn btn-default" ng-class="{'active btn-success': !model.useMax}" ng-click="model.useMax = false; calculateAviablePoints();">{{model.baseSize -1}}</button>
+								<button type="button" class="btn btn-default" ng-class="{'active btn-success': model.useMax}" ng-click="model.useMax = true; calculateAviablePoints();" ng-disabled="canUseMax(model)" >{{model.maxSize -1}}</button>
+							</span>
+							)
+						</span>
+						<span ng-show="model.maxSize && model.baseSize === model.maxSize">
+							(Leader and {{model.baseSize -1}})
+						</span>
+					</span>
+					<span ng-show="!model.useMax" class="col-md-1">
+						{{model.mkiicost}}
+					</span>
+					<span ng-show="model.useMax" class="col-md-1">
+						{{model.mkiiexpand}}
+					</span>
+					<span class="col-md-1">
+						<i ng-click="removeModel(model, type, $index)" class="fa fa-minus-circle add-to-list"></i>
+					</span>
+					<span class="clearfix"></span>
+				</li>
+			</ul>
+			{{selectedModels.warlock.length}}{{selectedModels.warcaster.length}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Punkten
+		</div>
+	</div>
+</div>

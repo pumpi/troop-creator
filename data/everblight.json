@@ -1,0 +1,485 @@
+{  
+    "warlock":[  
+        {  
+            "name":"Lylyth, Herald of Everblight",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"6",
+            "otherVersionOf":"Lylyth, Shadow of Everblight",
+            "sortString":"Lylyth, Herald of Everblight 1",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        },
+        {  
+            "name":"Lylyth, Shadow of Everblight",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "otherVersionOf":"Lylyth, Herald of Everblight",
+            "sortString":"Lylyth, Herald of Everblight 2",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        },
+        {  
+            "name":"Thagrosh, Prophet of Everblight",
+            "baseFaction":"Legion of Everblight",
+            "otherVersionOf":"Thagrosh, the Messiah",
+            "sortString":"Thagrosh, Prophet of Everblight",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Thagrosh, the Messiah",
+            "baseFaction":"Legion of Everblight",
+            "otherVersionOf":"Thagrosh, Prophet of Everblight",
+            "sortString":"Thagrosh, Prophet of Everblight 2",
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"20"
+            }
+        },
+        {  
+            "name":"Vayl, Disciple of Everblight",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"13"
+            }
+        },
+        {  
+            "name":"Rhyas, Sigil of Everblight",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Saeryn, Omen of Everblight",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Absylonia, Terror of Everblight",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        }
+    ],
+    "warbeast":[  
+        {  
+            "name":"Typhon",
+            "type":"Heavy",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"12",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"5",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Carnivean",
+            "type":"Heavy",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"11",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"4",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Scythean",
+            "type":"Heavy",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"4",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Ravagore",
+            "type":"Heavy",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"10",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"4",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Angelius",
+            "type":"Heavy",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"4",
+                "branch5":"4",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Seraph",
+            "type":"Light",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"4",
+                "branch5":"4",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Teraph",
+            "type":"Light",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"3",
+                "branch2":"3",
+                "branch3":"4",
+                "branch4":"3",
+                "branch5":"4",
+                "branch6":"3"
+            }
+        },
+        {  
+            "name":"Nephilim Soldier",
+            "type":"Light",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"4",
+                "branch3":"4",
+                "branch4":"3",
+                "branch5":"4",
+                "branch6":"3"
+            }
+        },
+        {  
+            "name":"Nephilim Protector",
+            "type":"Light",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"4",
+                "branch3":"4",
+                "branch4":"3",
+                "branch5":"4",
+                "branch6":"3"
+            }
+        },
+        {  
+            "name":"Nephilim Bolt Thrower",
+            "type":"Light",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"4",
+                "branch3":"4",
+                "branch4":"3",
+                "branch5":"4",
+                "branch6":"3"
+            }
+        },
+        {  
+            "name":"Raek",
+            "type":"Light",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"3",
+                "branch2":"3",
+                "branch3":"4",
+                "branch4":"3",
+                "branch5":"4",
+                "branch6":"3"
+            }
+        },
+        {  
+            "name":"Shredder",
+            "type":"Lesser",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"2",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"2",
+                "branch2":"2",
+                "branch3":"2",
+                "branch4":"2",
+                "branch5":"3",
+                "branch6":"2"
+            }
+        },
+        {  
+            "name":"Stinger",
+            "type":"Lesser",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"2",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"2",
+                "branch2":"2",
+                "branch3":"2",
+                "branch4":"2",
+                "branch5":"3",
+                "branch6":"2"
+            }
+        },
+        {  
+            "name":"Harrier",
+            "type":"Lesser",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"2",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"2",
+                "branch2":"2",
+                "branch3":"2",
+                "branch4":"2",
+                "branch5":"3",
+                "branch6":"2"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"The Forsaken",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Strider Deathstalker",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Incubus",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "basicFA":"2"
+        },
+        {  
+            "name":"Blighted Nyss Shepherd",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"1",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Warmonger War Chief",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"3",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Blighted Nyss Sorceress and Hellion",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"4",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        }
+    ],
+    "unit":[  
+        {  
+            "name":"Blighted Nyss Swordsmen",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Blighted Nyss Swordsman"
+        },
+        {  
+            "name":"Blighted Nyss Legionnaires",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"4",
+            "mkiiexpand":"6",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Blighted Nyss Legionnaire"
+        },
+        {  
+            "name":"Blighted Nyss Striders",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"6",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"6"
+        },
+        {  
+            "name":"Blighted Nyss Archers",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Blighted Archer"
+        },
+        {  
+            "name":"Spawning Vessel",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"2",
+            "mkiiexpand":"3",
+            "basicFA":"1",
+            "baseSize":"4",
+            "maxSize":"6",
+            "expandModel":"Acolyth"
+        },
+        {  
+            "name":"Blighted Ogrun Warmongers",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"5",
+            "expandModel":"Blighted Ogrun Warmonger",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Blighted Ogrun Warspears",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"3",
+            "baseSize":"3",
+            "maxSize":"5",
+            "expandModel":"Blighted Ogrun Spearman",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Blighted Nyss Raptors",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"6",
+            "mkiiexpand":"10",
+            "basicFA":"1",
+            "baseSize":"3",
+            "maxSize":"5",
+            "expandModel":"Raptor Rider",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Blighted Nyss Scather Crew",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"3",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"3"
+        }
+    ],
+    "unitAttachment":[  
+        {  
+            "name":"Blighted Nyss Archer Officer and Ammo Porter",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Blighted Nyss Archers",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Blighted Nyss Strider Officer and Musician",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"3",
+            "basicFA":"1",
+            "baseUnit":"Blighted Nyss Striders",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Blighted Nyss Swordsman Abbot and Champion",
+            "baseFaction":"Legion of Everblight",
+            "mkiicost":"3",
+            "basicFA":"1",
+            "baseUnit":"Blighted Nyss Swordsmen",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"5"
+                },
+                {  
+                    "hitPoints":"5"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+[  
+	{  
+        "name":"Cygnar",
+        "link":"cygnar",
+        "img":"cygnar.png"
+    },
+    {  
+        "name":"The protectorate of menoth",
+        "link":"menoth",
+        "img":"the-protectorate-of-menoth.png"
+    },
+    {  
+        "name":"Khador",
+        "link":"khador",
+        "img":"khador.png"
+    },
+    {  
+        "name":"Cryx",
+        "link":"cryx",
+        "img":"cryx.png"
+    },
+    {  
+        "name":"The retribution of scyrah",
+        "link":"scyrah",
+        "img":"the-retribution-of-scyrah.png"
+    },
+    {  
+        "name":"Mercenary",
+        "link":"mercenary",
+        "img":"mercenaries.png"
+    },
+    {  
+        "name":"Convergence",
+        "link":"convergence",
+        "img":"Convergence.png"
+    },
+    {  
+        "name":"Trollbloods",
+        "link":"trollbloods",
+        "img":"trollbloods.png"
+    },
+    {  
+        "name":"Circle of Ordboros",
+        "link":"orboros",
+        "img":"circle-orboros.png"
+    },
+    {  
+        "name":"Skorne",
+        "link":"skorne",
+        "img":"skorne.png"
+    },
+    {  
+        "name":"Legion of Everblight",
+        "link":"everblight",
+        "img":"legion-of-everblight.png"
+    },    
+    {  
+        "name":"Minions",
+        "link":"minion",
+        "img":"minions.png"
+    }
+]

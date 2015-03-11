@@ -1,0 +1,674 @@
+{  
+    "warcaster":[  
+        {  
+            "name":"Grand Scrutator Severius",
+            "otherVersionOf":"Hierarch Severius",
+            "sortString":"Grand Scrutator Severius 1",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Hierarch Severius",
+            "otherVersionOf":"Grand Scrutator Severius",
+            "sortString":"Grand Scrutator Severius 2",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"High Exemplar Kreoss",
+            "otherVersionOf":"Grand Exemplar Kreoss",
+            "sortString":"High Exemplar Kreoss 1",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"High Reclaimer",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "otherVersionOf":"Testament of Menoth",
+            "sortString":"High Reclaimer 1",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Feora, Priestess of the Flame",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "otherVersionOf":"Feora, Protector of the Flame",
+            "sortString":"Feora, Priestess of the Flame 1",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Feora, Protector of the Flame",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "otherVersionOf":"Feora, Priestess of the Flame",
+            "sortString":"Feora, Priestess of the Flame 2",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Harbinger of Menoth",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"High Allegiant Amon Ad-Raza",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Grand Exemplar Kreoss",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "otherVersionOf":"High Exemplar Kreoss",
+            "sortString":"High Exemplar Kreoss 2",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Testament of Menoth",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "otherVersionOf":"High Reclaimer",
+            "sortString":"High Reclaimer 2",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"High Executioner Servath Reznik",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Thyra, Flame of Sorrow",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        }
+    ],
+    "warjack":[  
+        {  
+            "name":"Castigator",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Crusader",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Fire of Salvation",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"9",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            },
+            "bondTo":{  
+                "name":[  
+                    "High Exemplar Kreoss",
+                    "Grand Exemplar Kreoss"
+                ]
+            }
+        },
+        {  
+            "name":"Scourge of Heresy",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"9",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            },
+            "bondTo":{  
+                "name":"High Executioner Servath Reznik"
+            }
+        },
+        {  
+            "name":"Vanquisher",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Guardian",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy-ArcNode"
+            }
+        },
+        {  
+            "name":"Reckoner",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Templar",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Avatar of Menoth",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"11",
+            "damageGrid":{  
+                "name":"Protectorate-Avatar"
+            }
+        },
+        {  
+            "name":"Vigilant",
+            "type":"Light",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Vigilant"
+            }
+        },
+        {  
+            "name":"Revenger",
+            "type":"Light",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light-ArcNode"
+            }
+        },
+        {  
+            "name":"Blessing of Vengeance",
+            "type":"Light",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"7",
+            "damageGrid":{  
+                "name":"Common-Light-ArcNode"
+            },
+            "bondTo":{  
+                "name":[  
+                    "Grand Scrutator Severius",
+                    "Hierarch Severius"
+                ]
+            }
+        },
+        {  
+            "name":"Repenter",
+            "type":"Light",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Redeemer",
+            "type":"Light",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Devout",
+            "type":"Light",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Dervish",
+            "type":"Light",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Sanctifier",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            }
+        },
+        {  
+            "name":"Blood of Martyrs",
+            "type":"Heavy",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"9",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            },
+            "bondTo":{  
+                "name":"Thyra, Flame of Sorrow"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"Allegiant of the Order of the Fist",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Exemplar Errant Seneschal",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Hierophant",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "damageGrid":{  
+                "hitPoints":"5"
+            },
+            "assignment":{  
+                "assignCount":"1",
+                "assignTo":{  
+                    "-faction":"Protectorate of Menoth",
+                    "-type":"warcaster"
+                }
+            }
+        },
+        {  
+            "name":"High Exemplar Gravus",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"8"
+                },
+                {  
+                    "hitPoints":"5"
+                }
+            ]
+        },
+        {  
+            "name":"High Paladin Dartan Vilmon",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Vassal Mechanik",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"1",
+            "basicFA":"3",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Vassal of Menoth",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Paladin of the Order of the Wall",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "expandFA":{  
+                "base":"2",
+                "expandBy":"High Paladin Dartan Vilmon"
+            },
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Knights Exemplar Seneschal",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"3",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Wrack",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"1",
+            "basicFA":"1"
+        },
+        {  
+            "name":"Allegiant of the Order of the Fist",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Covenant of Menoth",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Reclaimer",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Nicia, Tear of Vengeance",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ],
+    "unit":[  
+        {  
+            "name":"Visgoth Juviah Rhoven and Honor Guard",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"4",
+            "baseSize":"3",
+            "maxSize":"3",
+            "mkiiexpand":"0",
+            "damageGrid":{  
+                "hitPoints":"5"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Choir of Menoth",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"3",
+            "baseSize":"4",
+            "maxSize":"6",
+            "mkiiexpand":"3",
+            "expandModel":"Choir Acolyte"
+        },
+        {  
+            "name":"Daughters of the Flame",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"6",
+            "mkiiexpand":"0"
+        },
+        {  
+            "name":"Deliverers",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"1",
+            "expandModel":"Deliverer Trooper"
+        },
+        {  
+            "name":"Exemplar Cinerators",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "baseSize":"3",
+            "maxSize":"5",
+            "basicFA":"2",
+            "expandModel":"Exemplar Cinerator Trooper"
+        },
+        {  
+            "name":"Knights Exemplar",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "mkiiexpand":"0",
+            "basicFA":"3",
+            "expandFA":{  
+                "base":"1",
+                "expandBy":"Knight Exemplar Seneschal",
+                "shareExpandWith":"Exemplars Errant"
+            },
+            "baseSize":"6",
+            "maxSize":"6"
+        },
+        {  
+            "name":"Exemplar Bastions",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"5",
+            "mkiiexpand":"8",
+            "expandModel":"Exemplar Bastion Knight",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Exemplar Errants",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "expandFA":{  
+                "base":"1",
+                "expandBy":"Knight Exemplar Seneschal",
+                "shareExpandWith":"Knights Exemplar"
+            },
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"8",
+            "basicFA":"3",
+            "expandModel":"Exemplar Errant Knight"
+        },
+        {  
+            "name":"Exemplar Vengers",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"7",
+            "basicFA":"1",
+            "baseSize":"3",
+            "maxSize":"5",
+            "mkiiexpand":"11",
+            "expandModel":"Exemplar Venger Knight",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Temple Flameguard",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"4",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"6",
+            "expandModel":"Flameguard Trooper"
+        },
+        {  
+            "name":"Holy Zealots",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"4",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"6",
+            "expandModel":"Holy Zealot"
+        },
+        {  
+            "name":"Deliverer Sunburst Crew",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"3",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"3"
+        },
+        {  
+            "name":"Flameguard Cleansers",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"5",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"8",
+            "expandModel":"Flameguard Cleanser"
+        },
+        {  
+            "name":"Idrian Skirmishers",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"6",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"10",
+            "expandModel":"Idrian Skirmisher Nomad"
+        }
+    ],
+    "unitAttachment":[  
+        {  
+            "name":"Exemplar Errant Officer and Standard Bearer",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Exemplar Errants",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Monolith Bearer",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Holy Zealots",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Temple Flameguard Officer and Standard Bearer",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Temple Flameguard",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Idrian Skirmisher Chieftain and Guide",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"3",
+            "basicFA":"1",
+            "baseUnit":"Idrian Skirmishers",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Attendant Priest",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Flameguard Cleanser Officer",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Flameguard Cleansers",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ]
+}

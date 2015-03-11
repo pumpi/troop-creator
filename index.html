@@ -1,0 +1,30 @@
+<!doctype html>
+
+<!-- Binds the content to the boilerplateExamples app -->
+<html lang="de" ng-app="armyBuilder">
+<head>
+
+    <title>Army Builder</title>
+	
+    <link rel="stylesheet" href="/static/armybuilder.css?v=20141201" />
+    <link rel="stylesheet" href="/lib/bower/font-awsome/css/font-awesome.css?v=20141201" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/png" />
+    
+    <script src="/static/armybuilder.min.js"></script>
+
+</head>
+<body>
+<!-- Load the ng-controller ExampleListCtrl to get the $scope.example how contains the navigation -->
+
+
+<div id="wrapper">
+	<div id="header">
+		<img src="/img/banner.jpg" />
+	</div>
+	<nav-d></nav-d>
+	<div class="container-fluid" id="content" ng-view>
+	</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+{  
+    "warlock":[  
+        {  
+            "name":"Master Tormentor Morghoul",
+            "baseFaction":"Skorne",
+            "mkiicost":"7",
+            "otherVersionOf":"Lord Assassin Morghoul",
+            "sortString":"Master Tormentor Morghoul 1",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        },
+        {  
+            "name":"Lord Assassin Morghoul",
+            "baseFaction":"Skorne",
+            "mkiicost":"6",
+            "otherVersionOf":"Master Tormentor Morghoul",
+            "sortString":"Master Tormentor Morghoul 2",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Archdomina Makeda",
+            "baseFaction":"Skorne",
+            "otherVersionOf":"Supreme Archdomina Makeda",
+            "sortString":"Archdomina Makeda",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Supreme Archdomina Makeda",
+            "baseFaction":"Skorne",
+            "otherVersionOf":"Archdomina Makeda",
+            "sortString":"Archdomina Makeda 2",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Lord Tyrant Hexeris",
+            "baseFaction":"Skorne",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Tyrant Xerxis",
+            "baseFaction":"Skorne",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"19"
+            }
+        },
+        {  
+            "name":"Supreme Aptimus Zaal",
+            "baseFaction":"Skorne",
+            "mkiicost":"5",
+            "forceAdd":"Kovaas",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        },
+        {  
+            "name":"Void Seer Mordikaar",
+            "baseFaction":"Skorne",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        }
+    ],
+    "warbeast":[  
+        {  
+            "name":"Molik Karn",
+            "type":"Heavy",
+            "baseFaction":"Skorne",
+            "mkiicost":"11",
+            "lifeSpiral":{  
+                "branch1":"6",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"6",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Titan Gladiator",
+            "type":"Heavy",
+            "baseFaction":"Skorne",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"6",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Titan Cannoneer",
+            "type":"Heavy",
+            "baseFaction":"Skorne",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"6",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Bronzeback Titan",
+            "type":"Heavy",
+            "baseFaction":"Skorne",
+            "mkiicost":"10",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"6",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"6",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Rhinodon",
+            "type":"Heavy",
+            "baseFaction":"Skorne",
+            "mkiicost":"7",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"4",
+                "branch3":"7",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Cyclops Savage",
+            "type":"Light",
+            "baseFaction":"Skorne",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Cyclops Brute",
+            "type":"Light",
+            "baseFaction":"Skorne",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Cyclops Shaman",
+            "type":"Light",
+            "baseFaction":"Skorne",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"4",
+                "branch4":"4",
+                "branch5":"6",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Basilisk Krea",
+            "type":"Light",
+            "baseFaction":"Skorne",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"4",
+                "branch4":"3",
+                "branch5":"6",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Basilisk Drake",
+            "type":"Light",
+            "baseFaction":"Skorne",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"4",
+                "branch4":"4",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"Ancestral Guardian",
+            "baseFaction":"Skorne",
+            "mkiicost":"3",
+            "basicFA":"3",
+            "expandFA":{  
+                "base":"2",
+                "expandBy":"Supreme Aptimus Zaal"
+            },
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Void Spirit",
+            "baseFaction":"Skorne",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Agonizer",
+            "baseFaction":"Skorne",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Extoller Soulward",
+            "baseFaction":"Skorne",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Bloodrunner Master Tormentor",
+            "baseFaction":"Skorne",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Tyrant Rhadeim",
+            "baseFaction":"Skorne",
+            "mkiicost":"5",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"8"
+                },
+                {  
+                    "hitPoints":"5"
+                }
+            ]
+        }
+    ],
+    "assignableSolo":[
+    	{  
+		    "name":"Kovaas",
+		    "baseFaction":"Skorne",
+		    "mkiicost":"0",
+		    "characterFA":{  
+		        "dependsOn":"Supreme Aptimus Zaal"
+		    },
+		    "damageGrid":{  
+		        "hitPoints":"10"
+		    },
+		    "assignment":{  
+		        "assignCount":"1",
+		        "assignTo":{  
+		            "-name":"Supreme Aptimus Zaal"
+		        }
+		    }
+		}
+	],
+    "unit":[  
+        {  
+            "name":"Praetorian Swordsmen",
+            "baseFaction":"Skorne",
+            "mkiicost":"4",
+            "mkiiexpand":"6",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Praetorian Swordsman"
+        },
+        {  
+            "name":"Tyrant Commander and Standard Bearer",
+            "baseFaction":"Skorne",
+            "mkiicost":"3",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"2",
+            "maxSize":"2"
+        },
+        {  
+            "name":"Paingiver Bloodrunners",
+            "baseFaction":"Skorne",
+            "mkiicost":"5",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"6"
+        },
+        {  
+            "name":"Cataphract Arcuarii",
+            "baseFaction":"Skorne",
+            "mkiicost":"6",
+            "mkiiexpand":"9",
+            "basicFA":"2",
+            "baseSize":"4",
+            "maxSize":"6",
+            "expandModel":"Cataphract Arcuarii",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Cataphract Cetrati",
+            "baseFaction":"Skorne",
+            "mkiicost":"8",
+            "mkiiexpand":"11",
+            "basicFA":"2",
+            "baseSize":"4",
+            "maxSize":"6",
+            "expandModel":"Cataphract Cetrati",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Venator Reivers",
+            "baseFaction":"Skorne",
+            "mkiicost":"5",
+            "mkiiexpand":"9",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Venator Armiger"
+        },
+        {  
+            "name":"Paingiver Beast Handlers",
+            "baseFaction":"Skorne",
+            "mkiicost":"2",
+            "mkiiexpand":"3",
+            "basicFA":"2",
+            "baseSize":"4",
+            "maxSize":"6",
+            "expandModel":"Paingiver Beast Handler"
+        },
+        {  
+            "name":"Praetorian Ferox",
+            "baseFaction":"Skorne",
+            "mkiicost":"7",
+            "mkiiexpand":"11",
+            "basicFA":"1",
+            "baseSize":"3",
+            "maxSize":"5",
+            "expandModel":"Ferox Praetor",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Praetorian Karax",
+            "baseFaction":"Skorne",
+            "mkiicost":"4",
+            "mkiiexpand":"6",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Karax Praetor"
+        },
+        {  
+            "name":"Immortals",
+            "baseFaction":"Skorne",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Immortal Warrior"
+        },
+        {  
+            "name":"Venator Catapult Crew",
+            "baseFaction":"Skorne",
+            "mkiicost":"3",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"3"
+        }
+    ],
+    "unitAttachment":[
+    	{  
+		    "name":"Praetorian Officer and Standard Bearer",
+		    "baseFaction":"Skorne",
+		    "mkiicost":"2",
+		    "basicFA":"1",
+		    "baseUnit":"Praetorian Swordsmen",
+		    "damageGrid":{  
+		        "hitPoints":"5"
+		    }
+		}
+	]
+}

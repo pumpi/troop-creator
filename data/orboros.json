@@ -1,0 +1,557 @@
+{  
+    "warlock":[  
+        {  
+            "name":"Kaya the Wildborne",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"6",
+            "otherVersionOf":"Kaya the Moonhunter",
+            "sortString":"Kaya the Wildborne 1",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Kaya the Moonhunter",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"3",
+            "otherVersionOf":"Kaya the Wildborne",
+            "sortString":"Kaya the Wildborne 2",
+            "forceAdd":"Laris",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Krueger the Stormwrath",
+            "baseFaction":"Circle Orboros",
+            "otherVersionOf":"Krueger the Stormlord",
+            "sortString":"Krueger the Stormwrath",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Krueger the Stormlord",
+            "baseFaction":"Circle Orboros",
+            "otherVersionOf":"Krueger the Stormwrath",
+            "sortString":"Krueger the Stormwrath 2",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Baldur the Stonecleaver",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Mohsar the Desertwalker",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        },
+        {  
+            "name":"Morvahna the Autumnblade",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"14"
+            }
+        },
+        {  
+            "name":"Kromac the Ravenous",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"4",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        }
+    ],
+    "warbeast":[  
+        {  
+            "name":"Laris",
+            "type":"Light",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"0",
+            "characterFA":{  
+                "dependsOn":"Kaya the Moonhunter"
+            },
+            "baseUnit":"Kaya the Moonhunter",
+            "lifeSpiral":{  
+                "branch1":"4",
+                "branch2":"4",
+                "branch3":"4",
+                "branch4":"4",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Feral Warpwolf",
+            "type":"Heavy",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Pureblood Warpwolf",
+            "type":"Heavy",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"5",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"6",
+                "branch6":"6"
+            }
+        },
+        {  
+            "name":"Warpwolf Stalker",
+            "type":"Heavy",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"10",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Woldwarden",
+            "type":"Heavy",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"6",
+                "branch2":"6",
+                "branch3":"8",
+                "branch4":"8",
+                "branch5":"7",
+                "branch6":"6"
+            }
+        },
+        {  
+            "name":"Wold Guardian",
+            "type":"Heavy",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"5",
+                "branch3":"8",
+                "branch4":"8",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Megalith",
+            "type":"Heavy",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"11",
+            "lifeSpiral":{  
+                "branch1":"6",
+                "branch2":"6",
+                "branch3":"8",
+                "branch4":"8",
+                "branch5":"7",
+                "branch6":"6"
+            }
+        },
+        {  
+            "name":"Gnarlhorn Satyr",
+            "type":"Heavy",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Shadowhorn Satyr",
+            "type":"Heavy",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"7",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"6",
+                "branch4":"6",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Argus",
+            "type":"Light",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"4",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Gorax",
+            "type":"Light",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"4",
+                "branch3":"5",
+                "branch4":"5",
+                "branch5":"5",
+                "branch6":"4"
+            }
+        },
+        {  
+            "name":"Woldwatcher",
+            "type":"Light",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"5",
+                "branch3":"6",
+                "branch4":"5",
+                "branch5":"6",
+                "branch6":"5"
+            }
+        },
+        {  
+            "name":"Woldwyrd",
+            "type":"Light",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "lifeSpiral":{  
+                "branch1":"5",
+                "branch2":"5",
+                "branch3":"4",
+                "branch4":"4",
+                "branch5":"5",
+                "branch6":"5"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"Wolf Lord Morraig",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"5",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"8"
+                },
+                {  
+                    "hitPoints":"5"
+                }
+            ]
+        },
+        {  
+            "name":"Lord of the Feast",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"4",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trophy":{  
+                "name":"Totems",
+                "count":"5"
+            }
+        },
+        {  
+            "name":"Reeve Hunter",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"War Wolf",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"1",
+            "basicFA":"3",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Tharn Ravager White Mane",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"3",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Blackclad Wayfarer",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ],
+    "assignableSolo":[
+    	{  
+		    "name":"Druid Wilder",
+		    "baseFaction":"Circle Orboros",
+		    "mkiicost":"2",
+		    "damageGrid":{  
+		        "hitPoints":"5"
+		    },
+		    "assignment":{  
+		        "assignCount":"1"
+		    }
+		}
+	],
+    "unit":[  
+        {  
+            "name":"Sentry Stone",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"3",
+            "mkiiexpand":"0",
+            "baseSize":"4",
+            "maxSize":"4",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"10"
+            }
+        },
+        {  
+            "name":"Druids of Orboros",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"7",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"6"
+        },
+        {  
+            "name":"Shifting Stones",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"2",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"3",
+            "damageGrid":{  
+                "hitPoints":"5"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Tharn Ravagers",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"6",
+            "mkiiexpand":"9",
+            "basicFA":"2",
+            "baseSize":"4",
+            "maxSize":"6",
+            "expandModel":"Tharn Ravager",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Warpborn Skinwalkers",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"2",
+            "baseSize":"4",
+            "maxSize":"6",
+            "expandModel":"Warpborn Skinwalker",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Tharn Bloodtrackers",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "basicFA":"1",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Tharn Bloodtracker"
+        },
+        {  
+            "name":"Tharn Bloodweavers",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"5",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"6"
+        },
+        {  
+            "name":"Druid Stoneward and Woldstalkers",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"5",
+            "mkiiexpand":"0",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"6"
+        },
+        {  
+            "name":"Wolves of Orboros",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"4",
+            "mkiiexpand":"6",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Wolf of Orboros"
+        },
+        {  
+            "name":"Reeves of Orboros",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"6",
+            "mkiiexpand":"10",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "expandModel":"Reeve of Orboros"
+        },
+        {  
+            "name":"Tharn Wolf Riders",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"6",
+            "mkiiexpand":"10",
+            "basicFA":"1",
+            "baseSize":"3",
+            "maxSize":"5",
+            "expandModel":"Wolf Rider",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ],
+    "unitAttachment":[  
+        {  
+            "name":"Tharn Ravager Shaman",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Tharn Ravagers",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Tharn Ravager Chieftain",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Tharn Ravagers",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Wolves of Orboros Chieftain and Standard Bearer",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Wolves of Orboros",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Druid of Orboros Overseer",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Druids of Orboros",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Stone Keeper Overseer",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"1",
+            "basicFA":"1",
+            "baseUnit":"Shifting Stones",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Reeve of Orboros Chieftain and Standard",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Reeves of Orboros",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Nuala the Huntress",
+            "baseFaction":"Circle Orboros",
+            "mkiicost":"2",
+            "baseUnit":"Tharn Bloodtrackers",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ]
+}

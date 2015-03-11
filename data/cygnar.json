@@ -1,0 +1,686 @@
+{  
+    "warcaster":[  
+        {  
+            "name":"Commander Coleman Stryker",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "otherVersionOf":"Lord Commander Stryker",
+            "sortString":"Commander Stryker 1",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Captain Victoria Haley",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "otherVersionOf":"Major Victoria Haley",
+            "sortString":"Captain Victoria Haley 1",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        },
+        {  
+            "name":"Lt. Allister Caine",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "otherVersionOf":"Captain Allister Caine",
+            "sortString":"Lt. Allister Caine 1",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        },
+        {  
+            "name":"Captain Allister Caine",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "otherVersionOf":"Lt. Allister Caine",
+            "sortString":"Lt. Allister Caine 2",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        },
+        {  
+            "name":"Lord Commander Stryker",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "otherVersionOf":"Commander Coleman Stryker",
+            "sortString":"Commander Stryker 2",
+            "damageGrid":{  
+                "hitPoints":"17"
+            }
+        },
+        {  
+            "name":"Major Victoria Haley",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "otherVersionOf":"Captain Victoria Haley",
+            "sortString":"Captain Victoria Haley 2",
+            "damageGrid":{  
+                "hitPoints":"15"
+            }
+        },
+        {  
+            "name":"Major Markus 'Siege' Brisbane",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Commander Adept Sebastian Nemo",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "otherVersionOf":"General Adept Sebastian Nemo",
+            "sortString":"Commander Adept Sebastian Nemo 1",
+            "damageGrid":{  
+                "hitPoints":"14"
+            }
+        },
+        {  
+            "name":"General Adept Sebastian Nemo",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "otherVersionOf":"Commander Adept Sebastian Nemo",
+            "sortString":"Commander Adept Sebastian Nemo 2",
+            "damageGrid":{  
+                "hitPoints":"14"
+            }
+        },
+        {  
+            "name":"Captain E. Dominic Darius",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "damageGrid":{  
+                "hitPoints":"22"
+            }
+        },
+        {  
+            "name":"Captain Jeremiah Kraye",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {  
+            "name":"Constance Blaize, Knight of the Prophet",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        }
+    ],
+    "warjack":[  
+        {  
+            "name":"Avenger",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Centurion",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Charger",
+            "type":"Light",
+            "baseFaction":"Cygnar",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Cyclone",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Defender",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Firefly",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Gallant",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"9",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            },
+            "bondTo":{  
+                "name":"Constance Blaize, Knight of the Prophet"
+            }
+        },
+        {  
+            "name":"Grenadier",
+            "type":"Light",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Cygnar-Hunter"
+            }
+        },
+        {  
+            "name":"Hammersmith",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Hunter",
+            "type":"Light",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Cygnar-Hunter"
+            }
+        },
+        {  
+            "name":"Ironclad",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"7",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Lancer",
+            "type":"Light",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light-ArcNode"
+            }
+        },
+        {  
+            "name":"Minuteman",
+            "type":"Light",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Ol Rowdy",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"9",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            },
+            "bondTo":{  
+                "name":[  
+                    "Commander Coleman Stryker",
+                    "Lord Commander Stryker",
+                    "General Adept Sebastian Nemo"
+                ]
+            }
+        },
+        {  
+            "name":"Sentinel",
+            "type":"Light",
+            "baseFaction":"Cygnar",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Light"
+            }
+        },
+        {  
+            "name":"Stormclad",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"10",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            }
+        },
+        {  
+            "name":"Thorn",
+            "type":"Light",
+            "baseFaction":"Cygnar",
+            "mkiicost":"8",
+            "damageGrid":{  
+                "name":"Common-Light-ArcNode"
+            },
+            "bondTo":{  
+                "name":[  
+                    "Captain Victoria Haley",
+                    "Major Victoria Haley",
+                    "General Adept Sebastian Nemo"
+                ]
+            }
+        },
+        {  
+            "name":"Thunderhead",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"12",
+            "damageGrid":{  
+                "name":"Protectorate-Heavy"
+            },
+            "bondTo":{  
+                "name":"General Adept Sebastian Nemo"
+            }
+        },
+        {  
+            "name":"Triumph",
+            "type":"Heavy",
+            "baseFaction":"Cygnar",
+            "mkiicost":"11",
+            "damageGrid":{  
+                "name":"Common-Heavy"
+            },
+            "bondTo":{  
+                "name":"Major Markus 'Siege' Brisbane"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"Archduke Alain Runewood, Lord of Fharin",
+            "baseFaction":"Cygnar",
+            "mkiicost":"3",
+            "warjackControl":"1",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Captain Arlan Strangewayes",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "warjackControl":"2",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Captain Maxwell Finn",
+            "baseFaction":"Cygnar",
+            "mkiicost":"3",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Gun Mage Captain Adept",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Journeyman Warcaster",
+            "baseFaction":"Cygnar",
+            "mkiicost":"3",
+            "basicFA":"1",
+            "warjackControl":"999",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Major Katherine Laddermore",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "damageGrid":[  
+                {  
+                    "hitPoints":"8"
+                },
+                {  
+                    "hitPoints":"5"
+                }
+            ]
+        },
+        {  
+            "name":"Professor Viktor Pendrake",
+            "baseFaction":"Cygnar",
+            "cannotUseWith":"Saxon Orrik",
+            "mkiicost":"0",
+            "damageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Squire",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "damageGrid":{  
+                "hitPoints":"5"
+            },
+            "trophy":{  
+                "name":"Accumulator",
+                "count":"3"
+            },
+            "assignment":{  
+                "assignCount":"1",
+                "assignTo":{  
+                    "-faction":"Cygnar",
+                    "-type":"warcaster"
+                }
+            }
+        },
+        {  
+            "name":"Stormsmith Stormcaller",
+            "baseFaction":"Cygnar",
+            "mkiicost":"1",
+            "basicFA":"3"
+        },
+        {  
+            "name":"Trencher Master Gunner",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "basicFA":"1"
+        }
+    ],
+    "unit":[  
+        {  
+            "name":"Arcane Tempest Gun Mages",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "mkiiexpand":"0",
+            "baseSize":"6",
+            "maxSize":"6",
+            "basicFA":"2",
+            "expandFA":{  
+                "base":"1",
+                "expandBy":"Gun Mage Captain Adept"
+            }
+        },
+        {  
+            "name":"Black 13th Gun Mage Strike Team",
+            "baseFaction":"Cygnar",
+            "mkiicost":"4",
+            "mkiiexpand":"0",
+            "baseSize":"3",
+            "maxSize":"3",
+            "damageGrid":{  
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Field Mechaniks",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "mkiiexpand":"3",
+            "baseSize":"4",
+            "maxSize":"6",
+            "basicFA":"3",
+            "warjackControl":"1",
+            "expandModel":"Bodger"
+        },
+        {  
+            "name":"Long Gunner Infantry",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "mkiiexpand":"10",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Long Gunner Trooper"
+        },
+        {  
+            "name":"Precursor Knights",
+            "baseFaction":"Cygnar",
+            "cannotUseWith":"Alexia Ciannor",
+            "mkiicost":"5",
+            "mkiiexpand":"8",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Precursor Knight"
+        },
+        {  
+            "name":"Rangers",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "mkiiexpand":"0",
+            "baseSize":"6",
+            "maxSize":"6",
+            "basicFA":"2"
+        },
+        {  
+            "name":"Storm Lances",
+            "baseFaction":"Cygnar",
+            "mkiicost":"7",
+            "basicFA":"1",
+            "baseSize":"3",
+            "maxSize":"5",
+            "mkiiexpand":"11",
+            "expandModel":"Storm Lance Knight",
+            "damageGrid":{  
+                "hitPoints":"10"
+            },
+            "trooperDamageGrid":{  
+                "hitPoints":"8"
+            }
+        },
+        {  
+            "name":"Stormblade Infantry",
+            "baseFaction":"Cygnar",
+            "mkiicost":"5",
+            "mkiiexpand":"0",
+            "baseSize":"6",
+            "maxSize":"9",
+            "basicFA":"2"
+        },
+        {  
+            "name":"Stormguard",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "mkiiexpand":"9",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Stormguard Guard"
+        },
+        {  
+            "name":"Stormsmith Storm Tower",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "mkiiexpand":"0",
+            "baseSize":"2",
+            "maxSize":"2",
+            "basicFA":"2"
+        },
+        {  
+            "name":"Sword Knights",
+            "baseFaction":"Cygnar",
+            "mkiicost":"4",
+            "mkiiexpand":"6",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "warjackControl":"1",
+            "expandModel":"Sword Knight"
+        },
+        {  
+            "name":"Trencher Cannon Crew",
+            "baseFaction":"Cygnar",
+            "mkiicost":"3",
+            "mkiiexpand":"0",
+            "baseSize":"3",
+            "maxSize":"3",
+            "basicFA":"2"
+        },
+        {  
+            "name":"Trencher Chain Gun Crew",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "mkiiexpand":"0",
+            "baseSize":"2",
+            "maxSize":"2",
+            "basicFA":"2"
+        },
+        {  
+            "name":"Trencher Commandos",
+            "baseFaction":"Cygnar",
+            "mkiicost":"6",
+            "mkiiexpand":"10",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2"
+        },
+        {  
+            "name":"Trencher Infantry",
+            "baseFaction":"Cygnar",
+            "mkiicost":"7",
+            "mkiiexpand":"11",
+            "baseSize":"6",
+            "maxSize":"10",
+            "basicFA":"2",
+            "expandModel":"Trencher Trooper"
+        }
+    ],
+    "unitAttachment":[  
+        {  
+            "name":"Arcane Tempest Gun Mage Officer",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "warjackControl":"1",
+            "baseUnit":"Arcane Tempest Gun Mages",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Captain Jonas Murdoch",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Long Gunner Officer and Standard Bearer",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Long Gunner Infantry",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Precursor Knight Officer and Standard Bearer",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Precursor Knights",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Stormblade Officer and Standard Bearer",
+            "baseFaction":"Cygnar",
+            "mkiicost":"3",
+            "basicFA":"1",
+            "warjackControl":"1",
+            "baseUnit":"Stormblade Infantry",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Sword Knight Officer and Standard Bearer",
+            "baseFaction":"Cygnar",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "warjackControl":"1",
+            "baseUnit":"Sword Knights",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        },
+        {  
+            "name":"Trencher Officer and Sharpshooter",
+            "baseFaction":"Cygnar",
+            "mkiicost":"3",
+            "basicFA":"1",
+            "warjackControl":"1",
+            "baseUnit":"Trencher Infantry",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ],
+    "specWpnAttachment":[  
+        {  
+            "name":"Stormblade Storm Gunner",
+            "baseFaction":"Cygnar",
+            "mkiicost":"1",
+            "basicFA":"3",
+            "baseUnit":"Stormblade Infantry"
+        },
+        {  
+            "name":"Trencher Commandos Scattergunner",
+            "baseFaction":"Cygnar",
+            "mkiicost":"1",
+            "basicFA":"3",
+            "baseUnit":"Trencher Commandos"
+        },
+        {  
+            "name":"Trencher Infantry Rifle Grenadier",
+            "baseFaction":"Cygnar",
+            "mkiicost":"1",
+            "basicFA":"3",
+            "baseUnit":"Trencher Infantry"
+        }
+    ]
+}

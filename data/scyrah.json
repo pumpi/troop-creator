@@ -1,0 +1,321 @@
+{  
+    "warcaster":[  
+        {  
+            "name":"Adeptis Rahn Shyeel",
+            "baseFaction":"Retribution",
+            "mkiicost":"6",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Dawnlord Vyros",
+            "baseFaction":"Retribution",
+            "mkiicost":"6",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Garryth, Blade of Retribution",
+            "baseFaction":"Retribution",
+            "mkiicost":"5",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Kaelyssa, Night's Whisper",
+            "baseFaction":"Retribution",
+            "mkiicost":"7",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Ravyn, Eternal Light",
+            "baseFaction":"Retribution",
+            "mkiicost":"6",
+            "damageGrid":{  
+
+            }
+        }
+    ],
+    "warjack":[  
+        {  
+            "name":"Chimera",
+            "type":"Light",
+            "baseFaction":"Retribution",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Retribution-Light"
+            }
+        },
+        {  
+            "name":"Gorgon",
+            "type":"Light",
+            "baseFaction":"Retribution",
+            "mkiicost":"5",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Retribution-Light"
+            }
+        },
+        {  
+            "name":"Griffon",
+            "type":"Light",
+            "baseFaction":"Retribution",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Retribution-Light"
+            }
+        },
+        {  
+            "name":"Hydra",
+            "type":"Heavy",
+            "baseFaction":"Retribution",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Retribution-Heavy"
+            }
+        },
+        {  
+            "name":"Manticore",
+            "type":"Heavy",
+            "baseFaction":"Retribution",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Retribution-Heavy"
+            }
+        },
+        {  
+            "name":"Phoenix",
+            "type":"Heavy",
+            "baseFaction":"Retribution",
+            "mkiicost":"10",
+            "basicFA":"999",
+            "damageGrid":{  
+                "name":"Retribution-Heavy"
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"Arcanist",
+            "baseFaction":"Retribution",
+            "mkiicost":"1",
+            "basicFA":"2",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Dawnguard Destor Thane",
+            "baseFaction":"Retribution",
+            "mkiicost":"4",
+            "basicFA":"2",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Dawnguard Scyir",
+            "baseFaction":"Retribution",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Fane Knight Skeryth Issyen",
+            "baseFaction":"Retribution",
+            "mkiicost":"5",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Ghost Sniper",
+            "baseFaction":"Retribution",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"House Shyeel Magister",
+            "baseFaction":"Retribution",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Mage Hunter Assasin",
+            "baseFaction":"Retribution",
+            "mkiicost":"2",
+            "basicFA":"2",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Narn, Mage Hunter of Ios",
+            "baseFaction":"Retribution",
+            "mkiicost":"3",
+            "damageGrid":{  
+
+            }
+        },
+        {  
+            "name":"Nayl",
+            "baseFaction":"Retribution",
+            "mkiicost":"2",
+            "damageGrid":{  
+
+            }
+        }
+    ],
+    "unit":[  
+        {  
+            "name":"Dawnguard Destors",
+            "baseFaction":"Retribution",
+            "mkiicost":"7",
+            "basicFA":"1",
+            "baseSize":"3",
+            "maxSize":"5",
+            "mkiiexpand":"11"
+        },
+        {  
+            "name":"Dawnguard Invictors",
+            "baseFaction":"Retribution",
+            "mkiicost":"6",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"10"
+        },
+        {  
+            "name":"Dawnguard Sentinels",
+            "baseFaction":"Retribution",
+            "mkiicost":"6",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"9"
+        },
+        {  
+            "name":"House Shyeel Battle Mages",
+            "baseFaction":"Retribution",
+            "mkiicost":"5",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"6",
+            "mkiiexpand":"0"
+        },
+        {  
+            "name":"Houseguard Halberdiers",
+            "baseFaction":"Retribution",
+            "mkiicost":"4",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"7"
+        },
+        {  
+            "name":"Houseguard Riflemen",
+            "baseFaction":"Retribution",
+            "mkiicost":"5",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"8"
+        },
+        {  
+            "name":"Mage Hunter Strikeforce",
+            "baseFaction":"Retribution",
+            "mkiicost":"5",
+            "basicFA":"2",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"8"
+        },
+        {  
+            "name":"Stormfall Archers",
+            "baseFaction":"Retribution",
+            "mkiicost":"5",
+            "basicFA":"2",
+            "baseSize":"4",
+            "maxSize":"4",
+            "mkiiexpand":"0"
+        }
+    ],
+    "unitAttachment":[  
+        {  
+            "name":"Dawnguard Invictor Officer and Standard Bearer",
+            "baseFaction":"Retribution",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Dawnguard Invictor",
+            "damageGrid":{  
+                "hitPoints":"0"
+            }
+        },
+        {  
+            "name":"Dawnguard Sentinel Officer and Standard Bearer",
+            "baseFaction":"Retribution",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Dawnguard Sentinel",
+            "damageGrid":{  
+                "hitPoints":"0"
+            }
+        },
+        {  
+            "name":"Mage Hunter Commander",
+            "baseFaction":"Retribution",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Mage Hunter Strikeforce",
+            "damageGrid":{  
+                "hitPoints":"0"
+            }
+        },
+        {  
+            "name":"Riflemen Officer and Standard Bearer",
+            "baseFaction":"Retribution",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Dawnguard Invictor",
+            "damageGrid":{  
+                "hitPoints":"0"
+            }
+        },
+        {  
+            "name":"Soulless Escort",
+            "baseFaction":"Retribution",
+            "mkiicost":"1",
+            "basicFA":"3",
+            "damageGrid":{  
+                "hitPoints":"0"
+            }
+        },
+        {  
+            "name":"Houseguard Halberdiers Officer and Standard Bearer",
+            "baseFaction":"Retribution",
+            "mkiicost":"2",
+            "basicFA":"1",
+            "baseUnit":"Houseguard Halberdiers",
+            "damageGrid":{  
+                "hitPoints":"0"
+            }
+        }
+    ]
+}
