@@ -1,5 +1,5 @@
-Welcome to Troop Creater!
+Welcome to troop-creator!
 
-This is an tool to create Troop or army fpr the Tabletop Warmachine or Hordes from Privgater Press
+This is an tool to create Troop or army fpr the tabletop warmachine or hordes from Privater Press
 
-The Live version of this repositori is at http://pumpi.github.io/troop-creator
+The Live version of this repository is at http://pumpi.github.io/troop-creator
