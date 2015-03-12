@@ -4939,11 +4939,14 @@ html, body {
     margin: 10px 100px 10px 100px;
     padding: 0; }
 
+#left-col-build {
+  position: inherit; }
+
 .army-models {
-  background: #CCC;
   margin: 10px 0 10px 0;
   padding: 0; }
   .army-models li {
+    background: #CCC;
     list-style: none;
     padding: 5px 0; }
     .army-models li:hover {
@@ -4961,5 +4964,12 @@ html, body {
     color: #aaa; }
     .army-models .disable .add-to-list {
       display: none; }
+
+.drop-model {
+  padding: 40px;
+  border: 3px dashed #CCC;
+  color: #CCC;
+  font-size: 20px;
+  font-weight: bold; }
 
 /*# sourceMappingURL=sass.css.map */

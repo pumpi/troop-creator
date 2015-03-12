@@ -2,12 +2,12 @@
 	
 </div>
 <div class="row">
-	<div class="col-md-6">
+	<div class="col-md-6" id="left-col-build">
 		<h2>Verfügbaren Einheiten</h2>
 		<input type="search" ng-model="search" placeholder="Suche..." class="form-control">
 		<ul id="aviable-models" class="army-models" ng-repeat="type in notSorted(data)" ng-init="value = data[type]">
 			<li ng-hide="(value | wildcardArmy:search).length == 0" class="headline">{{type}}</li>
-			<li ng-class="{disable: checkModelAviable(model, type)}" ng-repeat="model in value | wildcardArmy:search">
+			<li ng-class="{disable: checkModelAviable(model, type)}" data-drag="!checkModelAviable(model, type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{index: {{$index}}}" data-type="{{type}}" ng-repeat="model in value | wildcardArmy:search">
 				<span class="col-md-9">{{model.name}}{{(model.baseSize) ? ' (' + model.baseSize : ''}}{{(model.baseSize !== model.maxSize) ? '/' + model.maxSize : ''}}{{(model.baseSize) ? ')' : ''}}</span>
 				<span class="col-md-1">{{model.basicFA && model.basicFA > 100 ? 'U' : model.basicFA}}{{!model.basicFA ? 'C' : ''}}</span>
 				<span class="col-md-1">{{model.mkiicost}}{{(model.baseSize && model.mkiiexpand !== '0') ? '/' + model.mkiiexpand : ''}}</span>
@@ -57,6 +57,9 @@
 					<span class="clearfix"></span>
 				</li>
 			</ul>
+            <div class="drop-model" data-drop="true" jqyoui-droppable="{onDrop:'dropCallback'}">
+                Drop Here
+            </div>
 			{{selectedModels.warlock.length}}{{selectedModels.warcaster.length}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Punkten
 		</div>
 	</div>

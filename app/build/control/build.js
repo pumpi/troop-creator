@@ -29,30 +29,35 @@ armyBuilder.controller('buildCtrl',
     function ($scope, $http, $routeParams) {
     
     	$http.get('./data/' + $routeParams.army + '.json').
-		success(function(data, status, headers, config) {
-			$scope.data 			= data;
-			$scope.selectedModels 	= {};
-			$scope.gameCaster		= 1;
-			$scope.gamePoints		= 15;
-			$scope.points			= 0;
-			
-			angular.forEach(data, function(value, index) {
-				$scope.selectedModels[index] = [];
-			});
-			
-			var favicon = new Favico();
-			var image = document.getElementById($routeParams.army);
-			favicon.image(image);
-			
-			document.title = $('#' + $routeParams.army).attr('alt') + ' - Armybuilder';
-			
-			// Menu set selected
-			$( '#top-menu li' ).removeClass( 'active' );
-			$( '#' + $routeParams.army ).closest('li').addClass('active');
-		}).
-		error(function(data, status, headers, config) {
-			alert('error reading ' + $routeParams.army + '.json');
-		});
+		success(
+            function(data, status, headers, config) {
+                $scope.data 			= data;
+                $scope.selectedModels 	= {};
+                $scope.gameCaster		= 1;
+                $scope.gamePoints		= 15;
+                $scope.points			= 0;
+                $scope.dropModel        = {};
+
+                angular.forEach(data, function(value, index) {
+                    $scope.selectedModels[index] = [];
+                });
+
+                var favicon = new Favico();
+                var image = document.getElementById($routeParams.army);
+                favicon.image(image);
+
+                document.title = $('#' + $routeParams.army).attr('alt') + ' - Armybuilder';
+
+                // Menu set selected
+                $( '#top-menu li' ).removeClass( 'active' );
+                $( '#' + $routeParams.army ).closest('li').addClass('active');
+		    }
+        ).
+		error(
+            function(data, status, headers, config) {
+                alert('error reading ' + $routeParams.army + '.json');
+		    }
+        );
 		
 		// Sticky Container
 		$(document).ready( function() {
@@ -153,7 +158,13 @@ armyBuilder.controller('buildCtrl',
             // All its fine we can activate the model
             return false;
         };
-        
+
+        $scope.dropCallback = function(event, ui) {
+            var type = ui.draggable.data().type;
+            var dragScope = angular.element(ui.draggable).scope();
+            $scope.addModel(dragScope.model, type);
+        };
+
         // Add an model from the left to the right
         $scope.addModel = function(model, type) {
         	copy = angular.copy(model);
