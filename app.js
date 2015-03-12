@@ -1,7 +1,7 @@
 'use strict';
 
 // Create an angular module and load the ngRoute and armyBuilderControllers
-var armyBuilder = angular.module('armyBuilder', ['ngRoute', 'navModule'])
+var armyBuilder = angular.module('armyBuilder', ['ngRoute', 'navModule', 'hc.commonmark'])
 
 // the armybuilder configuration for ngRoute
 armyBuilder.config(['$routeProvider',
