@@ -1,0 +1,8 @@
+{
+	"name": "armybuilder",
+	"version": "1.0",
+	"main": "css/main.css",
+	"directory": "lib/bower",
+  	"dependencies": {
+  	}
+}
