@@ -1,0 +1,12 @@
+{
+  "name": "commonmark",
+  "_cacheHeaders": {
+    "Last-Modified": "Wed, 04 Mar 2015 21:50:14 GMT",
+    "Content-Length": "139029",
+    "Content-Type": "application/javascript; charset=utf-8"
+  },
+  "main": "index.js",
+  "_source": "http://spec.commonmark.org/js/commonmark.js",
+  "_target": "*",
+  "_originalSource": "http://spec.commonmark.org/js/commonmark.js"
+}
