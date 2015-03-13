@@ -113,7 +113,7 @@ armyBuilder.controller('buildCtrl',
                 return true;
             }
             
-            // Check if field allowenze at cap
+            // Check if field allowence at cap
             if ( !model.basicFA || parseInt(model.basicFA) < 100 ) {
             	var mc = 0;
             	var fa = false;
@@ -138,7 +138,7 @@ armyBuilder.controller('buildCtrl',
 					}
 				});
 				
-				// field Allowence overdune
+				// field allowence overdune
 				if ( fa ) {
 					return true;
 				}
@@ -149,7 +149,6 @@ armyBuilder.controller('buildCtrl',
             	for (var i = 0, len = $scope.selectedModels.unit.length; i < len; i++) {
 					if ( $scope.selectedModels.unit[i]['name'] === model.baseUnit ) {
 						return false;
-						break;
 					}
 				}				
 				return true;
@@ -182,15 +181,11 @@ armyBuilder.controller('buildCtrl',
         $scope.unitUseMax = function(type, index, set) {
         	$scope.selectedModels[type][index]['useMax'] = set;
         	$scope.calculateAviablePoints();
-        }
+        };
         
         // Is there enouth points to use max size
         $scope.canUseMax = function(model) {
-        	if(!model.useMax && ( parseInt($scope.gamePoints) - parseInt($scope.points) + parseInt(model.mkiicost) ) < parseInt(model.mkiiexpand) ) {
-        		return true;
-        	}
-        	
-        	return false;
+       		return ( !model.useMax && ( parseInt($scope.gamePoints) - parseInt($scope.points) + parseInt(model.mkiicost) ) < parseInt(model.mkiiexpand) );
         };
         
         // Calculate the Aviable Points
@@ -232,7 +227,7 @@ armyBuilder.controller('buildCtrl',
 			}
 		};
         
-        // No sort fpr ng-repeat
+        // No sort for ng-repeat
         $scope.notSorted = function(obj){
 		    if (!obj) {
 		        return [];
