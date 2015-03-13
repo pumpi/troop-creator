@@ -18,7 +18,7 @@ Todo:
   - Retribution of Scyrah
   - Mercenaries
   - Convergence of Cyriss
-  - Trollbloods
+  - Trollbloods (completed with forward commander)
   - Circle Orboros
   - Skorne
   - Legion of Everblight
