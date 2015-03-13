@@ -111,6 +111,14 @@
             "damageGrid":{  
                 "hitPoints":"15"
             }
+        },
+        {
+            "name":"Vizescrutator Vindicus",
+            "baseFaction": "Protectorate of Menoth",
+            "mkiicost":"6",
+            "damageGrid":{
+                "hitPoints":"16"
+            }
         }
     ],
     "warjack":[  
@@ -208,7 +216,8 @@
             "mkiicost":"11",
             "damageGrid":{  
                 "name":"Protectorate-Avatar"
-            }
+            },
+            "bondTo":"none"
         },
         {  
             "name":"Vigilant",
