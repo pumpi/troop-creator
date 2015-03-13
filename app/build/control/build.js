@@ -205,7 +205,13 @@ armyBuilder.controller('buildCtrl',
 					});
 				} else if ( /warjack|warbeast/i.test(type) ) {
 					$.each(models, function ( index, model ) {
-						casterPoints = casterPoints - parseInt(model.mkiicost);
+                        // if he bonTo none we must calculate the points to the sumPoints and not to casterPoints
+                        console.log(model.hasOwnProperty('bondTo'));
+                        if ( model.hasOwnProperty('bondTo') && model.bondTo === 'none' ) {
+                            sumPoints = sumPoints + parseInt(model.mkiicost);
+                        } else {
+                            casterPoints = casterPoints - parseInt(model.mkiicost);
+                        }
 					});
 				} else {
 					$.each(models, function ( index, model ) {
