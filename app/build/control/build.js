@@ -43,7 +43,7 @@ armyBuilder.controller('buildCtrl',
                 });
 
                 var favicon = new Favico();
-                var image = document.getElementById($routeParams.army);
+                var image = $('#' + $routeParams.army)[0];
                 favicon.image(image);
 
                 document.title = $('#' + $routeParams.army).attr('alt') + ' - Armybuilder';
