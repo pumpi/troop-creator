@@ -147,7 +147,7 @@ armyBuilder.controller('buildCtrl',
             // An unit or weapon Attackment but not set the model
             if ( /attachment/i.test(type) ) {
             	for (var i = 0, len = $scope.selectedModels.unit.length; i < len; i++) {
-					if ( $scope.selectedModels.unit[i]['name'] === model.baseUnit ) {
+					if ( $scope.selectedModels.unit[i]['name'] === model.baseUnit || model.baseUnit === '*' ) {
 						return false;
 					}
 				}				
