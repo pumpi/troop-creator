@@ -1,0 +1,605 @@
+{  
+    "warcaster":[  
+        {  
+            "name":"Aurora, Numen of Aerogenesis",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"16"
+            }
+        },
+        {  
+            "name":"Axis, the Harmonic Enforcer",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"6",
+            "damageGrid":{  
+                "hitPoints":"18"
+            }
+        },
+        {
+            "name":"Iron Mother Directrix & Exponent Servitors",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"4",
+            "damageGrid":{
+                "hitPoints":"18"
+            }
+        },
+        {
+            "name":"Father Lucant, Divinity Architect",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"5",
+            "damageGrid":{
+                "hitPoints":"21"
+            }
+        },
+        {
+            "name":"Forge Master Syntherion",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"6",
+            "damageGrid":{
+                "hitPoints":"20"
+            }
+        }
+    ],
+    "warjack":[  
+        {  
+            "name":"Corollary",
+            "type":"Light",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"3",
+            "basicFA":"1",
+            "damageGrid":{  
+                "grid1": {
+                    "points":"1",
+                    "slot": ["M"]
+                },
+                "grid2": {
+                    "points":"3",
+                    "slot": ["M"]
+                },
+                "grid3": {
+                    "points":"5",
+                    "slot": ["I", "H"]
+                },
+                "grid4": {
+                    "points":"5",
+                    "slot": ["I", "H"]
+                },
+                "grid5": {
+                    "points":"3",
+                    "slot": ["M"]
+                },
+                "grid6": {
+                    "points":"1",
+                    "slot": ["M"]
+                }
+            }
+        },
+        {
+            "name":"Diffuser",
+            "type":"Light",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"3",
+            "basicFA":"999",
+            "damageGrid":{
+                "grid1": {
+                    "points":"1",
+                    "slot": ["M"]
+                },
+                "grid2": {
+                    "points":"3",
+                    "slot": ["M", "H"]
+                },
+                "grid3": {
+                    "points":"6",
+                    "slot": ["I", "H"]
+                },
+                "grid4": {
+                    "points":"6",
+                    "slot": ["I", "H"]
+                },
+                "grid5": {
+                    "points":"3",
+                    "slot": ["M", "H"]
+                },
+                "grid6": {
+                    "points":"1",
+                    "slot": ["M"]
+                }
+            }
+        },
+        {
+            "name": "Galvanizer",
+            "type": "Light",
+            "baseFaction": "Convergence of Cyriss",
+            "mkiicost": "3",
+            "basicFA": "999",
+            "damageGrid": {
+                "grid1": {
+                    "points": "1",
+                    "slot": ["M"]
+                },
+                "grid2": {
+                    "points": "3",
+                    "slot": [
+                        "M",
+                        "H"
+                    ]
+                },
+                "grid3": {
+                    "points": "6",
+                    "slot": [
+                        "I",
+                        "H"
+                    ]
+                },
+                "grid4": {
+                    "points": "6",
+                    "slot": [
+                        "I",
+                        "H"
+                    ]
+                },
+                "grid5": {
+                    "points": "3",
+                    "slot": [
+                        "M",
+                        "H"
+                    ]
+                },
+                "grid6": {
+                    "points": "1",
+                    "slot": ["M"]
+                }
+            }
+        },
+        {
+            "name":"Mitigator",
+            "type":"Light",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"4",
+            "basicFA":"999",
+            "damageGrid":{
+                "grid1": {
+                    "points":"1",
+                    "slot": ["M"]
+                },
+                "grid2": {
+                    "points":"3",
+                    "slot": ["M", "H"]
+                },
+                "grid3": {
+                    "points":"6",
+                    "slot": ["I", "H"]
+                },
+                "grid4": {
+                    "points":"6",
+                    "slot": ["I", "H"]
+                },
+                "grid5": {
+                    "points":"3",
+                    "slot": ["M", "H"]
+                },
+                "grid6": {
+                    "points":"1",
+                    "slot": ["M"]
+                }
+            }
+        },
+        {
+            "name":"Assimilator",
+            "type":"Heavy",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{
+                "grid1": {
+                    "points":"3",
+                    "slot": ["M"]
+                },
+                "grid2": {
+                    "points":"5",
+                    "slot": ["M", "L"]
+                },
+                "grid3": {
+                    "points":"6",
+                    "slot": ["I", "L", "L"]
+                },
+                "grid4": {
+                    "points":"6",
+                    "slot": ["I", "R", "R"]
+                },
+                "grid5": {
+                    "points":"5",
+                    "slot": ["M", "R"]
+                },
+                "grid6": {
+                    "points":"3",
+                    "slot": ["M"]
+                }
+            }
+        },
+        {
+            "name":"Cipher",
+            "type":"Heavy",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"9",
+            "basicFA":"999",
+            "damageGrid":{
+                "grid1": {
+                    "points":"4",
+                    "slot": ["M"]
+                },
+                "grid2": {
+                    "points":"6",
+                    "slot": ["M", "L"]
+                },
+                "grid3": {
+                    "points":"6",
+                    "slot": ["I", "L", "L"]
+                },
+                "grid4": {
+                    "points":"6",
+                    "slot": ["I", "R", "R"]
+                },
+                "grid5": {
+                    "points":"6",
+                    "slot": ["M", "R"]
+                },
+                "grid6": {
+                    "points":"1",
+                    "slot": ["M"]
+                }
+            }
+        },
+        {
+            "name":"Conservator",
+            "type":"Heavy",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"7",
+            "basicFA":"999",
+            "damageGrid":{
+                "grid1": {
+                    "points":"3",
+                    "slot": ["M"]
+                },
+                "grid2": {
+                    "points":"5",
+                    "slot": ["M", "L"]
+                },
+                "grid3": {
+                    "points":"6",
+                    "slot": ["I", "L", "L"]
+                },
+                "grid4": {
+                    "points":"6",
+                    "slot": ["I", "R", "R"]
+                },
+                "grid5": {
+                    "points":"5",
+                    "slot": ["M", "R"]
+                },
+                "grid6": {
+                    "points":"3",
+                    "slot": ["M"]
+                }
+            }
+        },
+        {
+            "name":"Inverter",
+            "type":"Heavy",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{
+                "grid1": {
+                    "points":"4",
+                    "slot": ["M"]
+                },
+                "grid2": {
+                    "points":"6",
+                    "slot": ["M", "L"]
+                },
+                "grid3": {
+                    "points":"6",
+                    "slot": ["I", "L", "L"]
+                },
+                "grid4": {
+                    "points":"6",
+                    "slot": ["I", "R", "R"]
+                },
+                "grid5": {
+                    "points":"6",
+                    "slot": ["M", "R"]
+                },
+                "grid6": {
+                    "points":"1",
+                    "slot": ["M"]
+                }
+            }
+        },
+        {
+            "name":"Modulator",
+            "type":"Heavy",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"6",
+            "basicFA":"999",
+            "damageGrid":{
+                "grid1": {
+                    "points":"3",
+                    "slot": ["M"]
+                },
+                "grid2": {
+                    "points":"5",
+                    "slot": ["M", "L"]
+                },
+                "grid3": {
+                    "points":"6",
+                    "slot": ["I", "L", "L"]
+                },
+                "grid4": {
+                    "points":"6",
+                    "slot": ["I", "R", "R"]
+                },
+                "grid5": {
+                    "points":"5",
+                    "slot": ["M", "R"]
+                },
+                "grid6": {
+                    "points":"3",
+                    "slot": ["M"]
+                }
+            }
+        },
+        {
+            "name":"Monitor",
+            "type":"Heavy",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"8",
+            "basicFA":"999",
+            "damageGrid":{
+                "grid1": {
+                    "points":"4",
+                    "slot": ["M"]
+                },
+                "grid2": {
+                    "points":"6",
+                    "slot": ["M", "L"]
+                },
+                "grid3": {
+                    "points":"6",
+                    "slot": ["I", "L", "L"]
+                },
+                "grid4": {
+                    "points":"6",
+                    "slot": ["I", "R", "R"]
+                },
+                "grid5": {
+                    "points":"6",
+                    "slot": ["M", "R"]
+                },
+                "grid6": {
+                    "points":"1",
+                    "slot": ["M"]
+                }
+            }
+        },
+        {
+            "name":"Prime Axiom",
+            "type":"Colosal",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"19",
+            "basicFA":"2",
+            "damageGrid":{
+                "grid1": {
+                    "points":"2",
+                    "slot": ["M", "L"]
+                },
+                "grid2": {
+                    "points":"3",
+                    "slot": ["M", "L"]
+                },
+                "grid3": {
+                    "points":"6",
+                    "slot": ["M", "I", "L"]
+                },
+                "grid4": {
+                    "points":"6",
+                    "slot": ["M", "I", "L"]
+                },
+                "grid5": {
+                    "points":"6",
+                    "slot": ["M", "I", "S", "S"]
+                },
+                "grid6": {
+                    "points":"6",
+                    "slot": ["I", "I", "I", "S"]
+                },
+                "grid7": {
+                    "points":"6",
+                    "slot": ["I", "I", "I", "S"]
+                },
+                "grid8": {
+                    "points":"6",
+                    "slot": ["M", "I", "S", "S"]
+                },
+                "grid9": {
+                    "points":"6",
+                    "slot": ["M", "I", "R"]
+                },
+                "grid10": {
+                    "points":"6",
+                    "slot": ["M", "I", "R"]
+                },
+                "grid11": {
+                    "points":"3",
+                    "slot": ["M", "R"]
+                },
+                "grid12": {
+                    "points":"2",
+                    "slot": ["M", "R"]
+                }
+            }
+        }
+    ],
+    "solo":[  
+        {  
+            "name":"Accretion Servitors",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"1",
+            "baseSize":"3",
+            "basicFA":"3"
+        },
+        {
+            "name":"Algorithmic Dispersion Optifex",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"1",
+            "baseSize":"1",
+            "basicFA":"4",
+            "damageGrid":{
+                "hitPoints":"5"
+            }
+        },
+        {
+            "name":"Attunement Servitors",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"2",
+            "baseSize":"2",
+            "basicFA":"3"
+        },
+        {
+            "name":"Elimination Servitors",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"2",
+            "baseSize":"3",
+            "basicFA":"3"
+        },
+        {
+            "name":"Enigma Foundry",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"3",
+            "baseSize":"1",
+            "basicFA":"2",
+            "damageGrid":{
+                "hitPoints":"10"
+            }
+        },
+        {
+            "name":"Reflex Servitor",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"2",
+            "baseSize":"3",
+            "basicFA":"3"
+        },
+        {
+            "name":"Steelsoul Protector",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"2",
+            "baseSize":"1",
+            "basicFA":"3",
+            "damageGrid":{
+                "hitPoints":"8"
+            }
+        }
+    ],
+    "BattleEngines":[
+        {
+            "name":"Steelsoul Protector",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"9",
+            "basicFA":"2",
+            "damageGrid":{
+                "hitPoints":"20"
+            }
+        }
+    ],
+    "unit":[  
+        {  
+            "name":"Clockwork Angels",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"3",
+            "basicFA":"3",
+            "baseSize":"3",
+            "maxSize":"3",
+            "mkiiexpand":"0"
+        },
+        {
+            "name":"Eradicators",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"6",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"5",
+            "mkiiexpand":"9",
+            "damageGrid":{
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{
+                "hitPoints":"8"
+            }
+        },
+        {
+            "name":"Obstructors",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"4",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"6"
+        },
+        {
+            "name":"Optivex Directive",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"2",
+            "basicFA":"999",
+            "baseSize":"3",
+            "maxSize":"3",
+            "mkiiexpand":"0"
+        },
+        {
+            "name":"Recipricators",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"6",
+            "basicFA":"2",
+            "baseSize":"3",
+            "maxSize":"5",
+            "mkiiexpand":"9",
+            "damageGrid":{
+                "hitPoints":"8"
+            },
+            "trooperDamageGrid":{
+                "hitPoints":"8"
+            }
+        },
+        {
+            "name":"Recipricator",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"4",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"6"
+        },
+        {
+            "name":"Perforators",
+            "baseFaction":"Convergence of Cyriss",
+            "mkiicost":"4",
+            "basicFA":"3",
+            "baseSize":"6",
+            "maxSize":"10",
+            "mkiiexpand":"6"
+        }
+    ],
+    "unitAttachment":[  
+        {  
+            "name":"Traverse Enumerator",
+            "baseFaction":"Protectorate of Menoth",
+            "mkiicost":"2",
+            "basicFA":"3",
+            "baseUnit":"*",
+            "damageGrid":{  
+                "hitPoints":"5"
+            }
+        }
+    ]
+}
