@@ -93,6 +93,12 @@ html, body {
 			color: green;
 		}
 	}
+    .remove-from-list {
+        cusros: pointer;
+        &:hover {
+            color: red;
+        }
+    }
 	.disable {
 		color: #aaa;
 		.add-to-list {
