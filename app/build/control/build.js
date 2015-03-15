@@ -41,6 +41,16 @@ armyBuilder.controller('buildCtrl',
                 angular.forEach(data, function(value, index) {
                     $scope.selectedModels[index] = [];
                 });
+
+                var favicon = new Favico();
+                var image = $('#' + $routeParams.army)[0];
+                favicon.image(image);
+
+                document.title = $('#' + $routeParams.army).attr('alt') + ' - Armybuilder';
+
+                // Menu set selected
+                $( '#top-menu li' ).removeClass( 'active' );
+                $( '#' + $routeParams.army ).closest('li').addClass('active');
 		    }
         ).
 		error(
@@ -65,15 +75,7 @@ armyBuilder.controller('buildCtrl',
 				});			
 			});
 
-            var favicon = new Favico();
-            var image = $('#' + $routeParams.army)[0];
-            favicon.image(image);
 
-            document.title = $('#' + $routeParams.army).attr('alt') + ' - Armybuilder';
-
-            // Menu set selected
-            $( '#top-menu li' ).removeClass( 'active' );
-            $( '#' + $routeParams.army ).closest('li').addClass('active');
 		});
 		
 		// Check if this model aviable
@@ -163,6 +165,11 @@ armyBuilder.controller('buildCtrl',
             var dragScope = angular.element(ui.draggable).scope();
             $scope.addModel(dragScope.model, type);
         };
+
+        $scope.startCallback = function(event, ui) {
+            var prevWidth = ui.helper.prevObject.width();
+            ui.helper.css({'width': prevWidth});
+        }
 
         // Add an model from the left to the right
         $scope.addModel = function(model, type) {
