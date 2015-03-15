@@ -22,6 +22,13 @@ html, body {
  *****************************/
 #header {
 	max-height: 300px;
+    position: relative;
+    .beta-logo {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        width: 300px;
+    }
 }
 
 /*
@@ -94,9 +101,9 @@ html, body {
 		}
 	}
     .remove-from-list {
-        cusros: pointer;
+        cursor: pointer;
         &:hover {
-            color: red;
+            color: #8B0000;
         }
     }
 	.disable {
@@ -105,6 +112,12 @@ html, body {
 			display: none;
 		}
 	}
+    .ui-draggable {
+        cursor: col-resize;
+        &.disable {
+            cursor: default;
+        }
+    }
 }
 
 .drop-model {
