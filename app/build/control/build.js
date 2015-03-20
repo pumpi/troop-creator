@@ -37,6 +37,7 @@ armyBuilder.controller('buildCtrl',
                 $scope.gamePoints		= 15;
                 $scope.points			= 0;
                 $scope.dropModel        = {};
+                $scope.casterPoints     = 0;
 
                 angular.forEach(data, function(value, index) {
                     $scope.selectedModels[index] = [];
@@ -110,9 +111,15 @@ armyBuilder.controller('buildCtrl',
 				return true;
             }
             
-            // The Points to use are higher as the aviable points
-            if ( ( parseInt($scope.gamePoints) - parseInt($scope.points) ) < parseInt(model.mkiicost) ) {
-                return true;
+            // The Points to use are higher as the aviable points but check if warbeast an we have aviable caster points
+            if ( /warbeast|warjack/i.test(type) ) {
+                if ( ( parseInt($scope.gamePoints) - ( parseInt($scope.points) ) + ( $scope.casterPoints * +1 ) ) < parseInt(model.mkiicost)) {
+                    return true;
+                }
+            } else {
+                if (( parseInt($scope.gamePoints) - parseInt($scope.points) ) < parseInt(model.mkiicost)) {
+                    return true;
+                }
             }
             
             // Check if field allowence at cap
@@ -232,6 +239,9 @@ armyBuilder.controller('buildCtrl',
 			} else {
 				$scope.points = sumPoints;
 			}
+
+            // Set the aviable Caster points for later Checks
+            $scope.casterPoints = casterPoints;
 		};
         
         // No sort for ng-repeat

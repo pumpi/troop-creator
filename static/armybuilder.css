@@ -1,4 +1,4 @@
-/*! armybuilder 2015-03-15 */
+/*! armybuilder 2015-03-20 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4975,7 +4975,7 @@ html, body {
     .army-models .disable .add-to-list {
       display: none; }
   .army-models .ui-draggable {
-    cursor: col-resize; }
+    cursor: move; }
     .army-models .ui-draggable.disable {
       cursor: default; }
 

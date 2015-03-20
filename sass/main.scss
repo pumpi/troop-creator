@@ -113,7 +113,7 @@ html, body {
 		}
 	}
     .ui-draggable {
-        cursor: col-resize;
+        cursor: move;
         &.disable {
             cursor: default;
         }
