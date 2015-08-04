@@ -112,12 +112,12 @@ armyBuilder.controller('buildCtrl',
             }
             
             // The Points to use are higher as the aviable points but check if warbeast an we have aviable caster points
-            if ( /warbeast|warjack/i.test(type) ) {
-                if ( ( parseInt($scope.gamePoints) - ( parseInt($scope.points) ) + ( $scope.casterPoints * +1 ) ) < parseInt(model.mkiicost)) {
-                    return true;
-                }
-            } else {
-                if (( parseInt($scope.gamePoints) - parseInt($scope.points) ) < parseInt(model.mkiicost)) {
+            if ( /warbeast|warjack/i.test(type) && parseInt($scope.casterPoints) > 0) {
+		    	if ( ( parseInt($scope.gamePoints) - parseInt($scope.points) + parseInt($scope.casterPoints) ) < parseInt(model.mkiicost)) {
+		            return true;
+				}
+            } else if ( !/warcaster|warlock/i.test(type) ) {
+                if ( ( parseInt($scope.gamePoints) - parseInt($scope.points) ) < parseInt(model.mkiicost)) {
                     return true;
                 }
             }
@@ -215,7 +215,6 @@ armyBuilder.controller('buildCtrl',
 				} else if ( /warjack|warbeast/i.test(type) ) {
 					$.each(models, function ( index, model ) {
                         // if he bonTo none we must calculate the points to the sumPoints and not to casterPoints
-                        console.log(model.hasOwnProperty('bondTo'));
                         if ( model.hasOwnProperty('bondTo') && model.bondTo === 'none' ) {
                             sumPoints = sumPoints + parseInt(model.mkiicost);
                         } else {
