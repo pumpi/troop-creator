@@ -129,13 +129,13 @@ armyBuilder.controller('buildCtrl',
             	$.each($scope.selectedModels, function(key) {
 		        	for (var i = 0, len = $scope.selectedModels[key].length; i < len; i++) {
 		        		// if Character and we always have in Liste
-						if ( !model.basicFA && $scope.selectedModels[key][i]['name'] === model.name ) {
+						if ( !model.basicFA && $scope.selectedModels[key][i].name === model.name ) {
 							fa = true;
 							break;
 						}
 					
 						// Count field allowence model
-						if ( $scope.selectedModels[key][i]['name'] === model.name ) {
+						if ( $scope.selectedModels[key][i].name === model.name ) {
 							mc ++;
 						}
 					
@@ -156,7 +156,7 @@ armyBuilder.controller('buildCtrl',
             // An unit or weapon Attackment but not set the model
             if ( /attachment/i.test(type) ) {
             	for (var i = 0, len = $scope.selectedModels.unit.length; i < len; i++) {
-					if ( $scope.selectedModels.unit[i]['name'] === model.baseUnit || model.baseUnit === '*' ) {
+					if ( $scope.selectedModels.unit[i].name === model.baseUnit || model.baseUnit === '*' ) {
 						return false;
 					}
 				}				
@@ -176,11 +176,11 @@ armyBuilder.controller('buildCtrl',
         $scope.startCallback = function(event, ui) {
             var prevWidth = ui.helper.prevObject.width();
             ui.helper.css({'width': prevWidth});
-        }
+        };
 
         // Add an model from the left to the right
         $scope.addModel = function(model, type) {
-        	copy = angular.copy(model);
+        	var copy = angular.copy(model);
 	       	$scope.selectedModels[type].push(copy);
         	$scope.calculateAviablePoints();
         };
@@ -193,7 +193,7 @@ armyBuilder.controller('buildCtrl',
         
         // Unit use Base Size
         $scope.unitUseMax = function(type, index, set) {
-        	$scope.selectedModels[type][index]['useMax'] = set;
+        	$scope.selectedModels[type][index].useMax = set;
         	$scope.calculateAviablePoints();
         };
         

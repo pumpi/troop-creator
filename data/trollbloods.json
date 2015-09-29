@@ -631,8 +631,8 @@
             "mkiicost":"5",
             "mkiiexpand":"8",
             "basicFA":"2",
-            "baseSize":"2",
-            "maxSize":"4",
+            "baseSize":"3",
+            "maxSize":"5",
             "damageGrid":{
                 "hitPoints":"8"
             },
