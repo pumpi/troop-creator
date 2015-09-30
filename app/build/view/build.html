@@ -21,23 +21,23 @@
 		<h2>Armee Liste</h2>
 		<div class="row">
 			<div class="col-md-2">
-				<input type="text" ng-model="gameCaster" ng-change="calculateAviablePoints()" placeholder="Caster" class="form-control">
+				<input type="text" ng-model="gameCaster" ng-change="calculateAvailablePoints()" placeholder="Caster" class="form-control">
 			</div>
 			<div class="col-md-2">
-				<input type="text" ng-model="gamePoints" ng-change="calculateAviablePoints()" placeholder="Punkte" class="form-control">
+				<input type="text" ng-model="gamePoints" ng-change="calculateAvailablePoints()" placeholder="Punkte" class="form-control">
 			</div>
 		</div>
 		<div class="sticky">
-			<ul id="selected-models" class="army-models" ng-repeat="type in notSorted(selectedModels)" ng-init="value = selectedModels[type]">
-				<li ng-hide="selectedModels[type].length == 0" class="headline">{{type}}</li>
-				<li ng-repeat="model in value track by $index">
+			<ul id="selected-models" class="army-models">
+				<li ng-repeat="model in selectedModels track by $index">
 					<span class="col-md-10">
+                        <i class="fa fa-level-up fa-rotate-90" ng-show="model.bonded >= 0"></i>
 						{{model.name}} 
 						<span ng-show="model.maxSize && model.baseSize !== model.maxSize">
 							(Leader and 
 							<span class="btn-group btn-group-xs">
-								<button type="button" class="btn btn-default" ng-class="{'active btn-success': !model.useMax}" ng-click="model.useMax = false; calculateAviablePoints();">{{model.baseSize -1}}</button>
-								<button type="button" class="btn btn-default" ng-class="{'active btn-success': model.useMax}" ng-click="model.useMax = true; calculateAviablePoints();" ng-disabled="canUseMax(model)" >{{model.maxSize -1}}</button>
+								<button type="button" class="btn btn-default" ng-class="{'active btn-success': !model.useMax}" ng-click="model.useMax = false; calculateAvailablePoints();">{{model.baseSize -1}}</button>
+								<button type="button" class="btn btn-default" ng-class="{'active btn-success': model.useMax}" ng-click="model.useMax = true; calculateAvailablePoints();" ng-disabled="canUseMax(model)" >{{model.maxSize -1}}</button>
 							</span>
 							)
 						</span>
@@ -52,7 +52,7 @@
 						{{model.mkiiexpand}}
 					</span>
 					<span class="col-md-1">
-						<i ng-click="removeModel(model, type, $index)" class="fa fa-minus-circle remove-from-list"></i>
+						<i ng-click="removeModel($index)" class="fa fa-minus-circle remove-from-list"></i>
 					</span>
 					<span class="clearfix"></span>
 				</li>
@@ -60,7 +60,7 @@
             <div class="drop-model" data-drop="true" jqyoui-droppable="{onDrop:'dropCallback'}">
                 Drop Here
             </div>
-			{{selectedModels.warlock.length}}{{selectedModels.warcaster.length}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Punkten
+			{{countType('warlock|warcaster')}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Punkten
 		</div>
 	</div>
 </div>

@@ -32,16 +32,12 @@ armyBuilder.controller('buildCtrl',
 		success(
             function(data, status, headers, config) {
                 $scope.data 			= data;
-                $scope.selectedModels 	= {};
+                $scope.selectedModels 	= [];
                 $scope.gameCaster		= 1;
                 $scope.gamePoints		= 15;
                 $scope.points			= 0;
                 $scope.dropModel        = {};
                 $scope.casterPoints     = 0;
-
-                angular.forEach(data, function(value, index) {
-                    $scope.selectedModels[index] = [];
-                });
 
                 var favicon = new Favico();
                 var image = $('#' + $routeParams.army)[0];
@@ -92,26 +88,21 @@ armyBuilder.controller('buildCtrl',
             }
 			
 			// Warlock have max value in selectedModels
-            if ( /warlock/i.test(type) && $scope.selectedModels.warlock.length >= $scope.gameCaster ) {
+            if ( /warlock/i.test(type) && $scope.countType('warlock') >= $scope.gameCaster ) {
 				return true;
             }
             
             // Warcaster have max value in selectedModels
-            if ( /warcaster/i.test(type) && $scope.selectedModels.warcaster.length >= $scope.gameCaster ) {
+            if ( /warcaster/i.test(type) && $scope.countType('warcaster') >= $scope.gameCaster ) {
 				return true;
             }
 			
-			// No Warlock in selectedModels we can not select an Warbeast
-            if ( /warbeast/i.test(type) && $scope.selectedModels.warlock.length === 0 ) {
+			// No Caster in selectedModels we can not select an Warbeast or Warjack
+            if ( /warbeast|warjack/i.test(type) && $scope.countType('warlock|warcaster') === 0 ) {
 				return true;
             }
             
-            // No Warcaster in selectedModels we can not select an Warjack
-            if ( /warjack/i.test(type) && $scope.selectedModels.warcaster.length === 0 ) {
-				return true;
-            }
-            
-            // The Points to use are higher as the aviable points but check if warbeast an we have aviable caster points
+            // The Points to use are higher as the available points but check if warbeast an we have available caster points
             if ( /warbeast|warjack/i.test(type) && parseInt($scope.casterPoints) > 0) {
 		    	if ( ( parseInt($scope.gamePoints) - parseInt($scope.points) + parseInt($scope.casterPoints) ) < parseInt(model.mkiicost)) {
 		            return true;
@@ -122,41 +113,39 @@ armyBuilder.controller('buildCtrl',
                 }
             }
             
-            // Check if field allowence at cap
+            // Check if field allowance at cap
             if ( !model.basicFA || parseInt(model.basicFA) < 100 ) {
             	var mc = 0;
             	var fa = false;
-            	$.each($scope.selectedModels, function(key) {
-		        	for (var i = 0, len = $scope.selectedModels[key].length; i < len; i++) {
-		        		// if Character and we always have in Liste
-						if ( !model.basicFA && $scope.selectedModels[key][i].name === model.name ) {
-							fa = true;
-							break;
-						}
-					
-						// Count field allowence model
-						if ( $scope.selectedModels[key][i].name === model.name ) {
-							mc ++;
-						}
-					
-						// if field allowence model overdune
-						if ( model.basicFA <= mc ) {
-							fa = true;
-							break;
-						}
-					}
+            	$.each($scope.selectedModels, function(key, selectedModel) {
+                    // if Character and we always have in list
+                    if ( !model.basicFA && selectedModel.name === model.name ) {
+                        fa = true;
+                        return false;
+                    }
+
+                    // Count field allowance model
+                    if ( selectedModel.name === model.name ) {
+                        mc ++;
+                    }
+
+                    // if field allowance model full
+                    if ( model.basicFA <= mc ) {
+                        fa = true;
+                        return false;
+                    }
 				});
 				
-				// field allowence overdune
+				// field allowance full
 				if ( fa ) {
 					return true;
 				}
             }
             
-            // An unit or weapon Attackment but not set the model
-            if ( /attachment/i.test(type) ) {
-            	for (var i = 0, len = $scope.selectedModels.unit.length; i < len; i++) {
-					if ( $scope.selectedModels.unit[i].name === model.baseUnit || model.baseUnit === '*' ) {
+            // An unit or weapon attachment but not set the base model
+            if ( model.hasOwnProperty('baseUnit') ) {
+            	for (var i = 0, len = $scope.selectedModels.length; i < len; i++) {
+					if ( $scope.selectedModels[i].name === model.baseUnit || model.baseUnit === '*' ) {
 						return false;
 					}
 				}				
@@ -165,6 +154,17 @@ armyBuilder.controller('buildCtrl',
             
             // All its fine we can activate the model
             return false;
+        };
+
+        $scope.countType = function(type) {
+            var count = 0;
+            var matcher = new RegExp(type, "i");
+            $.each( $scope.selectedModels, function( key, selectedModel ) {
+                if ( matcher.test(selectedModel.type) ) {
+                    count ++;
+                }
+            });
+            return count;
         };
 
         $scope.dropCallback = function(event, ui) {
@@ -181,55 +181,96 @@ armyBuilder.controller('buildCtrl',
         // Add an model from the left to the right
         $scope.addModel = function(model, type) {
         	var copy = angular.copy(model);
-	       	$scope.selectedModels[type].push(copy);
-        	$scope.calculateAviablePoints();
+                copy.type = type;
+
+            // If type warbeast or warjack we must add it after the last warbeast/warjack oder after the last warlock/warcaster
+            // If baseUnit set we must add this model to an unit
+            var findIndex = false;
+            if ( /warbeast|warjack/i.test(type) ) {
+                for (var i = $scope.selectedModels.length -1; i >= 0; i--) {
+                    if ( /warbeast|warlock|warjack|warcaster/i.test($scope.selectedModels[i].type) ) {
+                        findIndex = i;
+                        break;
+                    }
+                }
+            } else if ( model.hasOwnProperty('baseUnit') ) {
+                for (var i = $scope.selectedModels.length -1; i >= 0; i--) {
+                    if ( $scope.selectedModels[i].name === model.baseUnit ) {
+                        findIndex = i;
+                        break;
+                    }
+                }
+            }
+
+            // If we find a postion where we add the model add or add to the end
+            if ( findIndex !== false ) {
+                copy.bonded = 1;
+                $scope.selectedModels.splice(findIndex +1, 0, copy);
+            } else {
+                $scope.selectedModels.push(copy);
+            }
+        	$scope.calculateAvailablePoints();
         };
 
         // Remove an Model from the right
-        $scope.removeModel = function(model, type, index) {
-        	$scope.selectedModels[type].splice(index, 1);
-        	$scope.calculateAviablePoints();
+        $scope.removeModel = function(index) {
+            if ( $scope.selectedModels[index + 1] !== undefined && !$scope.selectedModels[index].hasOwnProperty('bonded') && $scope.selectedModels[index + 1].hasOwnProperty('bonded') ) {
+                if ( !confirm(unescape("Wenn Sie dieses Model l%F6schen werden auch alle angeschlossenen Modelle gel%F6scht%21 wollen Sie wirklich l%F6schen%3F")) ) {
+                    return false;
+                }
+
+                // Let us se how much models are bonded to the model we like to del
+                var modelsToDel = 0;
+                for ( var i = index +1, len = $scope.selectedModels.length; i < len; i ++ ) {
+                    if ( $scope.selectedModels[i].hasOwnProperty('bonded') ) {
+                        modelsToDel ++;
+                    } else {
+                        // we have count all models an can leave the for
+                        break;
+                    }
+                }
+
+                $scope.selectedModels.splice(index, modelsToDel + 1);
+            } else {
+                $scope.selectedModels.splice(index, 1);
+            }
+
+        	$scope.calculateAvailablePoints();
         };
         
         // Unit use Base Size
         $scope.unitUseMax = function(type, index, set) {
-        	$scope.selectedModels[type][index].useMax = set;
-        	$scope.calculateAviablePoints();
+        	$scope.selectedModels[index].useMax = set;
+            $scope.calculateAvailablePoints();
         };
         
-        // Is there enouth points to use max size
+        // Is there enough points to use max size
         $scope.canUseMax = function(model) {
        		return ( !model.useMax && ( parseInt($scope.gamePoints) - parseInt($scope.points) + parseInt(model.mkiicost) ) < parseInt(model.mkiiexpand) );
         };
         
-        // Calculate the Aviable Points
-        $scope.calculateAviablePoints = function() {
+        // Calculate the available Points
+        $scope.calculateAvailablePoints = function() {
 			var sumPoints = 0;			
 			var casterPoints = 0;
-			
-			$.each( $scope.selectedModels, function( type , models ) {
-				if ( /warlock|warcaster/i.test(type) ) {
-					$.each(models, function ( index, model ) {
-						casterPoints = casterPoints + parseInt(model.mkiicost);
-					});
-				} else if ( /warjack|warbeast/i.test(type) ) {
-					$.each(models, function ( index, model ) {
-                        // if he bonTo none we must calculate the points to the sumPoints and not to casterPoints
-                        if ( model.hasOwnProperty('bondTo') && model.bondTo === 'none' ) {
-                            sumPoints = sumPoints + parseInt(model.mkiicost);
-                        } else {
-                            casterPoints = casterPoints - parseInt(model.mkiicost);
-                        }
-					});
+
+			$.each( $scope.selectedModels, function( key, model ) {
+				if ( /warlock|warcaster/i.test(model.type) ) {
+                    casterPoints = casterPoints + parseInt(model.mkiicost);
+				} else if ( /warjack|warbeast/i.test(model.type) ) {
+                    // if he bonTo none we must calculate the points to the sumPoints and not to casterPoints
+                    if ( model.hasOwnProperty('bondTo') && model.bondTo === 'none' ) {
+                        sumPoints = sumPoints + parseInt(model.mkiicost);
+                    } else {
+                        casterPoints = casterPoints - parseInt(model.mkiicost);
+                    }
 				} else {
-					$.each(models, function ( index, model ) {
-						// Must we use the base cost of model or the max
-						if ( model.useMax ) {
-							sumPoints = sumPoints + parseInt(model.mkiiexpand);
-						} else {
-							sumPoints = sumPoints + parseInt(model.mkiicost);
-						}
-					});
+                    // Must we use the base cost of model or the max
+                    if ( model.useMax ) {
+                        sumPoints = sumPoints + parseInt(model.mkiiexpand);
+                    } else {
+                        sumPoints = sumPoints + parseInt(model.mkiicost);
+                    }
 				}
 			});
 
@@ -239,7 +280,7 @@ armyBuilder.controller('buildCtrl',
 				$scope.points = sumPoints;
 			}
 
-            // Set the aviable Caster points for later Checks
+            // Set the available Caster points for later Checks
             $scope.casterPoints = casterPoints;
 		};
         
