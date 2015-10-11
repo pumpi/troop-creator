@@ -8,20 +8,11 @@ For bug reports please use the github issues https://github.com/pumpi/troop-crea
 
 Todo:
 - visible that an warbeast/warjack add to a special warlock/warcaster same for unit attachments and weapon attachments
+  - move the attached model between tow
 - minions or mechanaries add to troop
 - Tier list and visible the level of tier
 - complete data for:
-  - Cygnar
-  - The Protectorate of Menoth
-  - Kador
-  - Cryx
-  - Retribution of Scyrah
-  - Mercenaries
-  - Convergence of Cyriss
-  - Circle Orboros
-  - Skorne
-  - Legion of Everblight
-  - Minions
+  - The New Gargantuan book
 
 Known Bugs:
-- Mercenaries get an JavaScript error for not finding an warlock for his warbeast
+- tier list select have no function
