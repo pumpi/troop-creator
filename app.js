@@ -13,10 +13,11 @@ armyBuilder.config(['$routeProvider',
                 templateUrl: 'app/dashboard/view/dashboard.html',
                 controller: 'dashboardCtrl'
             }).
-            
+
             when('/build/:army', {
                 templateUrl: 'app/build/view/build.html',
-                controller: 'buildCtrl'
+                controller: 'buildCtrl',
+                reloadOnSearch: false
             }).
 
             // Fallback if no hash found we redirect to home/Example Link list
