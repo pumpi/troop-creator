@@ -5,16 +5,20 @@
 	<div class="col-md-6" id="left-col-build">
 		<h2>Verfügbaren Einheiten</h2>
 		<input type="search" ng-model="search" placeholder="Suche..." class="form-control">
-		<ul id="aviable-models" class="army-models" ng-repeat="type in notSorted(data)" ng-init="value = data[type]">
-			<li ng-hide="(value | wildcardArmy:search).length == 0" class="headline">{{type}}</li>
-			<li ng-class="{disable: checkModelAviable(model, type)}" data-drag="!checkModelAviable(model, type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{type}}" ng-repeat="model in value | wildcardArmy:search">
-				<span class="col-md-9">{{model.name}}{{(model.baseSize) ? ' (' + model.baseSize : ''}}{{(model.baseSize !== model.maxSize) ? '/' + model.maxSize : ''}}{{(model.baseSize) ? ')' : ''}}</span>
-				<span class="col-md-1">{{model.basicFA && model.basicFA > 100 ? 'U' : model.basicFA}}{{!model.basicFA ? 'C' : ''}}</span>
-				<span class="col-md-1">{{model.mkiicost}}{{(model.baseSize && model.mkiiexpand !== '0') ? '/' + model.mkiiexpand : ''}}</span>
-				<span class="col-md-1"><i ng-click="addModel(model, type)" class="fa fa-plus-circle add-to-list"></i></span>
-				<span class="clearfix"></span>
-			</li>
-		</ul>
+		<div class="army-models" ng-repeat="i in notSorted(data)" ng-init="value = data[i]['entries']">
+			<div ng-hide="(value | wildcardArmy:search).length == 0" class="headline accordion-click" data-accordion-id="{{data[i].id}}" ng-click="accordion(data[i].id)">{{data[i]['label']}} <span>({{(value | wildcardArmy:search).length}})</span></div>
+            <div class="accordion-container" ng-class="data[i].id">
+                <ul>
+                    <li ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in value | wildcardArmy:search">
+                        <span class="col-md-9">{{model.name}}{{(model.baseSize) ? ' (' + model.baseSize : ''}}{{(model.baseSize !== model.maxSize) ? '/' + model.maxSize : ''}}{{(model.baseSize) ? ')' : ''}}</span>
+                        <span class="col-md-1">{{model.fa && model.fa > 100 ? 'U' : model.fa}}{{!model.fa ? 'C' : ''}}</span>
+                        <span class="col-md-1">{{model.cost}}{{(model.min && model.max !== '0') ? '/' + model.costMax : ''}}</span>
+                        <span class="col-md-1"><i ng-click="addModel(model)" class="fa fa-plus-circle add-to-list"></i></span>
+                        <span class="clearfix"></span>
+                    </li>
+                </ul>
+            </div>
+		</div>
 	</div>
 
 	<div class="col-md-6">
@@ -26,30 +30,36 @@
 			<div class="col-md-2">
 				<input type="text" ng-model="gamePoints" ng-change="calculateAvailablePoints()" placeholder="Punkte" class="form-control">
 			</div>
+            <div class="col-md-8">
+                <select class="form-control">
+                    <option value="">no tier</option>
+                    <option ng-repeat="tier in tiers" value="{{$index}}">{{tier.name}}</option>
+                </select>
+            </div>
 		</div>
-		<div class="sticky">
-			<ul id="selected-models" class="army-models">
+		<div class="selected-models army-models">
+			<ul>
 				<li ng-repeat="model in selectedModels track by $index">
 					<span class="col-md-10">
                         <i class="fa fa-level-up fa-rotate-90" ng-show="model.bonded >= 0"></i>
 						{{model.name}} 
-						<span ng-show="model.maxSize && model.baseSize !== model.maxSize">
+						<span ng-show="model.max && model.min !== model.max">
 							(Leader and 
 							<span class="btn-group btn-group-xs">
-								<button type="button" class="btn btn-default" ng-class="{'active btn-success': !model.useMax}" ng-click="model.useMax = false; calculateAvailablePoints();">{{model.baseSize -1}}</button>
-								<button type="button" class="btn btn-default" ng-class="{'active btn-success': model.useMax}" ng-click="model.useMax = true; calculateAvailablePoints();" ng-disabled="canUseMax(model)" >{{model.maxSize -1}}</button>
+								<button type="button" class="btn btn-default" ng-class="{'active btn-success': !model.useMax}" ng-click="model.useMax = false; calculateAvailablePoints();">{{model.min -1}}</button>
+								<button type="button" class="btn btn-default" ng-class="{'active btn-success': model.useMax}" ng-click="model.useMax = true; calculateAvailablePoints();" ng-disabled="canUseMax(model)" >{{model.max -1}}</button>
 							</span>
 							)
 						</span>
-						<span ng-show="model.maxSize && model.baseSize === model.maxSize">
-							(Leader and {{model.baseSize -1}})
+						<span ng-show="model.max && model.min === model.max">
+							(Leader and {{model.min -1}})
 						</span>
 					</span>
 					<span ng-show="!model.useMax" class="col-md-1">
-						{{model.mkiicost}}
+						{{model.cost}}
 					</span>
 					<span ng-show="model.useMax" class="col-md-1">
-						{{model.mkiiexpand}}
+						{{model.costMax}}
 					</span>
 					<span class="col-md-1">
 						<i ng-click="removeModel($index)" class="fa fa-minus-circle remove-from-list"></i>

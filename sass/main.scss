@@ -5,6 +5,13 @@ html, body {
 }
 
 /*
+ * GENERIC
+ *****************************/
+.row {
+    margin-bottom: 10px;
+}
+
+/*
  * WRAPPER
  *****************************/
 #wrapper {
@@ -78,22 +85,37 @@ html, body {
 }
 
 .army-models {
-	margin: 10px 0 10px 0;
-	padding: 0;	
-	li {
-        background: #CCC;
-		list-style: none;
-		padding: 5px 0;
-		&:hover {
-			background-color: #AAA;
-		}
-	}
+    &:first-of-type {
+        .accordion-container {
+            display: block;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            background: #CCC;
+            list-style: none;
+            padding: 5px 0;
+            &:hover {
+                background-color: #AAA;
+            }
+        }
+    }
 	.headline {
 		font-weight: bold;
 		background: #EEE;
 		text-transform: capitalize;
 		padding: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+        span {
+            font-weight: normal;
+        }
 	}
+    .accordion-container {
+        display: none;
+    }
 	.add-to-list {
 		cursor: pointer;
 		&:hover {
@@ -119,8 +141,12 @@ html, body {
         }
     }
 }
+.selected-models {
+    margin: 10px 0;
+}
 
 .drop-model {
+    margin-top: 10px;
     padding: 40px;
     border: 3px dashed #CCC;
     color: #CCC;

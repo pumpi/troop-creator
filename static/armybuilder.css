@@ -1,4 +1,4 @@
-/*! armybuilder 2015-09-30 */
+/*! armybuilder 2015-10-11 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4892,6 +4892,12 @@ html, body {
   height: 100%; }
 
 /*
+ * GENERIC
+ *****************************/
+.row {
+  margin-bottom: 10px; }
+
+/*
  * WRAPPER
  *****************************/
 #wrapper {
@@ -4948,38 +4954,50 @@ html, body {
 #left-col-build {
   position: inherit; }
 
-.army-models {
-  margin: 10px 0 10px 0;
+.army-models:first-of-type .accordion-container {
+  display: block; }
+.army-models ul {
+  margin: 0;
   padding: 0; }
-  .army-models li {
+  .army-models ul li {
     background: #CCC;
     list-style: none;
     padding: 5px 0; }
-    .army-models li:hover {
+    .army-models ul li:hover {
       background-color: #AAA; }
-  .army-models .headline {
-    font-weight: bold;
-    background: #EEE;
-    text-transform: capitalize;
-    padding: 5px; }
-  .army-models .add-to-list {
-    cursor: pointer; }
-    .army-models .add-to-list:hover {
-      color: green; }
-  .army-models .remove-from-list {
-    cursor: pointer; }
-    .army-models .remove-from-list:hover {
-      color: #8B0000; }
-  .army-models .disable {
-    color: #aaa; }
-    .army-models .disable .add-to-list {
-      display: none; }
-  .army-models .ui-draggable {
-    cursor: move; }
-    .army-models .ui-draggable.disable {
-      cursor: default; }
+.army-models .headline {
+  font-weight: bold;
+  background: #EEE;
+  text-transform: capitalize;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 10px; }
+  .army-models .headline span {
+    font-weight: normal; }
+.army-models .accordion-container {
+  display: none; }
+.army-models .add-to-list {
+  cursor: pointer; }
+  .army-models .add-to-list:hover {
+    color: green; }
+.army-models .remove-from-list {
+  cursor: pointer; }
+  .army-models .remove-from-list:hover {
+    color: #8B0000; }
+.army-models .disable {
+  color: #aaa; }
+  .army-models .disable .add-to-list {
+    display: none; }
+.army-models .ui-draggable {
+  cursor: move; }
+  .army-models .ui-draggable.disable {
+    cursor: default; }
+
+.selected-models {
+  margin: 10px 0; }
 
 .drop-model {
+  margin-top: 10px;
   padding: 40px;
   border: 3px dashed #CCC;
   color: #CCC;
