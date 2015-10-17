@@ -11,6 +11,8 @@ Todo:
   - move the attached model between tow
 - minions or mechanaries add to troop
 - Tier list and visible the level of tier
+- complete data for:
+  - Devasation tier lists
 
 Known Bugs:
 - tier list select have no function
