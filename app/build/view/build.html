@@ -23,18 +23,23 @@
 
 	<div class="col-md-6">
 		<h2>Armee Liste</h2>
-		<div class="row">
+        <div class="row">
 			<div class="col-md-2">
 				<input type="text" ng-model="gameCaster" ng-change="calculateAvailablePoints()" placeholder="Caster" class="form-control">
 			</div>
 			<div class="col-md-2">
 				<input type="text" ng-model="gamePoints" ng-change="calculateAvailablePoints()" placeholder="Punkte" class="form-control">
 			</div>
-            <div class="col-md-8">
+            <div class="col-md-6">
                 <select class="form-control">
                     <option value="">no tier</option>
                     <option ng-repeat="tier in tiers" value="{{$index}}">{{tier.name}}</option>
                 </select>
+            </div>
+            <div class="col-md-2">
+                <button type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#plainTextOutput">
+                    <i class="fa fa-file-text-o"></i>
+                </button>
             </div>
 		</div>
 		<div class="selected-models army-models">
@@ -70,7 +75,31 @@
             <div class="drop-model" data-drop="true" jqyoui-droppable="{onDrop:'dropCallback'}">
                 Drop Here
             </div>
-			{{countType('warlock|warcaster')}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Punkten
+			{{countType('warlock|warcaster')}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Points
 		</div>
+
+
+        <!-- Modal plain text output-->
+        <div class="modal fade" id="plainTextOutput" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-file-text-o"></i> Troop plain text</h4>
+                    </div>
+                    <div class="modal-body">
+                        Faction: <strong>{{faction}}</strong><br />
+                        Caster: <strong>{{countType('warlock|warcaster')}} / {{gameCaster}}</strong><br />
+                        Points: <strong>{{points}} / {{gamePoints}}</strong><br />
+
+                        <div ng-repeat="model in selectedModels track by $index">
+                            <span ng-show="model.bonded >= 0">* </span>{{model.name}} <span
+                                ng-show="!model.useMax"><strong>(<span ng-show="checkIsCaster(model)">-</span>{{model.cost}} Pts.)</strong></span><span
+                                ng-show="model.useMax"><strong>>({{model.costMax}} Pts.)</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 	</div>
 </div>
