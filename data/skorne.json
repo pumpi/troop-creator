@@ -301,6 +301,14 @@
           "type": "warbeast",
           "cost": 9,
           "name": "Titan Sentry"
+        },
+        {
+          "id": "SB22",
+          "fa": "2",
+          "faction": "faction_skorne",
+          "type": "warbeast",
+          "cost": 19,
+          "name": "Desert Hydra"
         }
       ],
       "logo": "faction_skorne",
@@ -499,6 +507,14 @@
           "faction": "faction_skorne",
           "type": "unit",
           "cost": 6
+        },
+        {
+          "id": "SU17",
+          "name": "Legends of Halaak",
+          "fa": "C",
+          "faction": "faction_skorne",
+          "type": "unit",
+          "cost": 4
         }
       ],
       "logo": "faction_skorne",
@@ -539,6 +555,15 @@
           "cost": 2,
           "name": "Venators Reiver Officer & Standard",
           "restricted_to": "SU11"
+        },
+        {
+          "id": "SA04",
+          "fa": "1",
+          "faction": "faction_skorne",
+          "type": "UA",
+          "cost": 2,
+          "name": "Extoller Advocate",
+          "restricted_to": "SU04"
         }
       ],
       "logo": "faction_skorne",

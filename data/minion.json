@@ -481,6 +481,54 @@
             "IW03_minion"
           ],
           "name": "Brine"
+        },
+        {
+          "id": "IB10",
+          "fa": "U",
+          "faction": "faction_minions",
+          "type": "warbeast",
+          "cost": 4,
+          "restricted_to": [
+            "IW08",
+            "IW10",
+            "IW11",
+            "IW05",
+            "IW13",
+            "IW03_minion"
+          ],
+          "name": "Battle Boar"
+        },
+        {
+          "id": "IB11",
+          "fa": "U",
+          "faction": "faction_minions",
+          "type": "warbeast",
+          "cost": 5,
+          "restricted_to": [
+            "IW08",
+            "IW10",
+            "IW11",
+            "IW05",
+            "IW13",
+            "IW03_minion"
+          ],
+          "name": "Splatter Boar"
+        },
+        {
+          "id": "IB12",
+          "fa": "U",
+          "faction": "faction_minions",
+          "type": "warbeast",
+          "cost": 7,
+          "restricted_to": [
+            "IW06",
+            "IW07",
+            "IW09",
+            "IW12",
+            "IW14",
+            "IW04_minion"
+          ],
+          "name": "Blind Walker"
         }
       ],
       "logo": "faction_minions",
@@ -707,6 +755,36 @@
           "faction": "faction_minions",
           "type": "unit",
           "cost": 5
+        },
+        {
+          "min": 6,
+          "id": "IU10",
+          "max": 10,
+          "works_for": [
+            "faction_orboros",
+            "faction_everblight",
+            "faction_trollblood",
+            "faction_skorne"
+          ],
+          "name": "Croak Raiders",
+          "costMax": 8,
+          "costMin": 5,
+          "fa": "2",
+          "faction": "faction_minions",
+          "type": "unit",
+          "cost": 5
+        },
+        {
+          "id": "MU20_minion",
+          "fa": "C",
+          "faction": "faction_minions",
+          "works_for": [
+            "faction_orboros",
+            "faction_trollblood"
+          ],
+          "type": "unit",
+          "cost": 3,
+          "name": "Lynus Wesselbaum & Edrea Lloryrr"
         }
       ],
       "logo": "faction_minions",
@@ -720,7 +798,19 @@
     },
     {
       "id": "faction_minions_UAs",
-      "entries": [],
+      "entries": [
+        {
+          "id": "IA01",
+          "fa": "1",
+          "faction": "faction_minions",
+          "type": "UA",
+          "cost": 3,
+          "name": "Farrow Brigand Warlord",
+          "restricted_to": [
+            "IU03"
+          ]
+        }
+      ],
       "logo": "faction_minions",
       "label": "Unit Attachments"
     },
@@ -1025,6 +1115,19 @@
           "type": "soloAttachment",
           "cost": 2,
           "name": "Targ"
+        },
+        {
+          "id": "MS32_minion",
+          "fa": "C",
+          "faction": "faction_minions",
+          "works_for": [
+            "faction_orboros",
+            "faction_trollblood",
+            "faction_skorne"
+          ],
+          "type": "solo",
+          "cost": 3,
+          "name": "Hutchuck, Ogrun Bounty Hunter"
         }
       ],
       "logo": "faction_minions",

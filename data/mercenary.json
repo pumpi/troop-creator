@@ -1354,6 +1354,17 @@
           "type": "unit",
           "cost": 3,
           "name": "Horgenhold Artillery Corps"
+        },
+        {
+          "id": "MU20_mercs",
+          "fa": "C",
+          "faction": "faction_minions",
+          "works_for": [
+            "faction_cygnar"
+          ],
+          "type": "unit",
+          "cost": 3,
+          "name": "Lynus Wesselbaum & Edrea Lloryrr"
         }
       ],
       "logo": "faction_mercs",
@@ -2101,6 +2112,18 @@
           "type": "solo",
           "cost": 2,
           "name": "First Mate Hawk"
+        },
+        {
+          "id": "MS32_mercs",
+          "fa": "C",
+          "faction": "faction_minions",
+          "works_for": [
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "type": "solo",
+          "cost": 3,
+          "name": "Hutchuck, Ogrun Bounty Hunter"
         }
       ],
       "logo": "faction_mercs",

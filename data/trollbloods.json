@@ -112,6 +112,14 @@
           "type": "warlock",
           "cost": 5,
           "name": "Madrak2(Madrak Ironhide, World Ender)"
+        },
+        {
+          "id": "TZ01",
+          "fa": "C",
+          "faction": "faction_trollblood",
+          "type": "warlock",
+          "cost": 3,
+          "name": "Doomshaper3(Hoarluk Doomshaper, Dire Prophet)"
         }
       ],
       "logo": "faction_trollblood",
@@ -463,6 +471,14 @@
           "faction": "faction_trollblood",
           "type": "unit",
           "cost": 5
+        },
+        {
+          "id": "TU17",
+          "name": "Dhunian Knot",
+          "fa": "2",
+          "faction": "faction_trollblood",
+          "type": "unit",
+          "cost": 3
         }
       ],
       "logo": "faction_trollblood",
@@ -531,6 +547,15 @@
           "cost": 3,
           "name": "Skaldi Bonehammer",
           "restricted_to": "TU06"
+        },
+        {
+          "id": "TA07",
+          "fa": "C",
+          "faction": "faction_trollblood",
+          "type": "UA",
+          "cost": 2,
+          "name": "Pyg Bushwhacker Officer & Mortar",
+          "restricted_to": "TU04"
         }
       ],
       "logo": "faction_trollblood",

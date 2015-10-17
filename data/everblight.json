@@ -320,6 +320,14 @@
           "type": "warbeast",
           "cost": 2,
           "name": "Shredder"
+        },
+        {
+          "id": "EB23",
+          "fa": "2",
+          "faction": "faction_everblight",
+          "type": "warbeast",
+          "cost": 18,
+          "name": "Blightbringer"
         }
       ],
       "logo": "faction_everblight",
@@ -479,6 +487,18 @@
           "costMax": 8,
           "costMin": 5,
           "fa": "3",
+          "faction": "faction_everblight",
+          "type": "unit",
+          "cost": 5
+        },
+        {
+          "min": 6,
+          "id": "EU14",
+          "max": 10,
+          "name": "Grotesque Banshees",
+          "costMax": 8,
+          "costMin": 5,
+          "fa": "2",
           "faction": "faction_everblight",
           "type": "unit",
           "cost": 5
@@ -649,6 +669,14 @@
           "type": "solo",
           "cost": 1,
           "name": "Spell Martyr"
+        },
+        {
+          "id": "EU12",
+          "fa": "2",
+          "faction": "faction_everblight",
+          "type": "solo",
+          "cost": 2,
+          "name": "Grotesque Assassin"
         }
       ],
       "logo": "faction_everblight",

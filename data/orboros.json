@@ -312,6 +312,14 @@
             "Ox01"
           ],
           "name": "Laris"
+        },
+        {
+          "id": "OB22",
+          "fa": "2",
+          "faction": "faction_orboros",
+          "type": "warbeast",
+          "cost": 19,
+          "name": "Storm Raptor"
         }
       ],
       "logo": "faction_orboros",
@@ -466,6 +474,18 @@
           "type": "unit",
           "cost": 7,
           "name": "Druids of Orboros"
+        },
+        {
+          "min": 3,
+          "id": "OU14",
+          "max": 5,
+          "name": "Blackclad Mist Riders",
+          "costMax": 9,
+          "costMin": 6,
+          "fa": "1",
+          "faction": "faction_orboros",
+          "type": "unit",
+          "cost": 6
         }
       ],
       "logo": "faction_orboros",
@@ -636,6 +656,14 @@
             "OB19"
           ],
           "name": "Una the Falconer"
+        },
+        {
+          "id": "OS10",
+          "fa": "2",
+          "faction": "faction_orboros",
+          "type": "solo",
+          "cost": 2,
+          "name": "Bloodweaver Night Witch"
         }
       ],
       "logo": "faction_orboros",
