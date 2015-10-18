@@ -72,7 +72,7 @@ armyBuilder.controller('buildCtrl',
 
         $scope.accordion = function(id) {
             var $this = $('.'+id);
-            $this.slideDown();
+            $this.slideToggle();
             $this.parent().siblings().find('.accordion-container').slideUp();
         };
 
