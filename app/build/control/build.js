@@ -47,13 +47,14 @@ armyBuilder.controller('buildCtrl',
                 $scope.points = 0;
                 $scope.dropModel = {};
                 $scope.casterPoints = 0;
-                $scope.faction = $('#' + $routeParams.army).attr('alt');
+                $scope.faction = $('#' + $routeParams.army).data('faction');
+                $scope.system = $('#' + $routeParams.army).data('system');
 
                 //restore from URL
                 $scope.restoreSearch();
 
                 var favicon = new Favico();
-                var image = $('#' + $routeParams.army)[0];
+                var image = $('#' + $routeParams.army + ' img')[0];
                 favicon.image(image);
 
                 document.title = $scope.faction + ' - Armybuilder';

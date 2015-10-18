@@ -12,12 +12,12 @@ angular.module('navModule', [])
 ).controller('navCtrl', function ($scope, $rootScope, $http, $timeout, $location) {
         // Add the examples array to the scope to use it in the Template wit ng-repeat
         $http.get('./data/nav.json').
-		success(function(data, status, headers, config) {
-			$scope.armys = data;
-		}).
+            success(function(data, status, headers, config) {
+                $scope.armys = data;
+		    }
+        ).
 		error(function(data, status, headers, config) {
 			alert('error reading navigation');
 		});
-        
     }
 );

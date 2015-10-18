@@ -3,7 +3,7 @@
 		<!-- ng-repeat the examploes array and build one li for one entry and show the navigation -->
 		<li ng-repeat="army in armys" >
 			<!-- Use the values of the array to create an a and the name of the nav point -->
-			<a href="#/build/{{army.link}}"><img id="{{army.link}}" ng-src="./img/{{army.img}}" alt="{{army.name}}"/></a> <!-- the if no sub -->
+			<a href="#/build/{{army.link}}" id="{{army.link}}" data-system="{{army.system}}" data-faction="{{army.name}}" data-toggle="tooltip" data-placement="bottom" title="{{army.name}}" tooltip><img ng-src="./img/{{army.img}}"></a> <!-- the if no sub -->
 		</li>
 	</ul>
 </nav>

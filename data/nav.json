@@ -1,62 +1,74 @@
-[  
-	{  
-        "name":"Cygnar",
-        "link":"cygnar",
-        "img":"cygnar.png"
-    },
-    {  
-        "name":"The protectorate of menoth",
-        "link":"menoth",
-        "img":"the-protectorate-of-menoth.png"
-    },
-    {  
-        "name":"Khador",
-        "link":"khador",
-        "img":"khador.png"
-    },
-    {  
-        "name":"Cryx",
-        "link":"cryx",
-        "img":"cryx.png"
-    },
-    {  
-        "name":"The retribution of scyrah",
-        "link":"scyrah",
-        "img":"the-retribution-of-scyrah.png"
-    },
-    {  
-        "name":"Mercenary",
-        "link":"mercenary",
-        "img":"mercenaries.png"
-    },
-    {  
-        "name":"Convergence",
-        "link":"convergence",
-        "img":"Convergence.png"
-    },
-    {  
-        "name":"Trollbloods",
-        "link":"trollbloods",
-        "img":"trollbloods.png"
-    },
-    {  
-        "name":"Circle of Ordboros",
-        "link":"orboros",
-        "img":"circle-orboros.png"
-    },
-    {  
-        "name":"Skorne",
-        "link":"skorne",
-        "img":"skorne.png"
-    },
-    {  
-        "name":"Legion of Everblight",
-        "link":"everblight",
-        "img":"legion-of-everblight.png"
-    },    
-    {  
-        "name":"Minions",
-        "link":"minion",
-        "img":"minions.png"
-    }
+[
+  {
+    "name": "Cygnar",
+    "link": "cygnar",
+    "img": "cygnar.png",
+    "system": "Warmachine"
+  },
+  {
+    "name": "The protectorate of menoth",
+    "link": "menoth",
+    "img": "the-protectorate-of-menoth.png",
+    "system": "Warmachine"
+  },
+  {
+    "name": "Khador",
+    "link": "khador",
+    "img": "khador.png",
+    "system": "Warmachine"
+  },
+  {
+    "name": "Cryx",
+    "link": "cryx",
+    "img": "cryx.png",
+    "system": "Warmachine"
+  },
+  {
+    "name": "The retribution of scyrah",
+    "link": "scyrah",
+    "img": "the-retribution-of-scyrah.png",
+    "system": "Warmachine"
+  },
+  {
+    "name": "Mercenary",
+    "link": "mercenary",
+    "img": "mercenaries.png",
+    "system": "Warmachine"
+  },
+  {
+    "name": "Convergence",
+    "link": "convergence",
+    "img": "Convergence.png",
+    "system": "Hordes"
+  },
+  {
+    "name": "Trollbloods",
+    "link": "trollbloods",
+    "img": "trollbloods.png",
+    "system": "Hordes"
+  },
+  {
+    "name": "Circle of Ordboros",
+    "link": "orboros",
+    "img": "circle-orboros.png",
+    "system": "Hordes"
+  },
+  {
+    "name": "Skorne",
+    "link": "skorne",
+    "img": "skorne.png",
+    "system": "Hordes"
+  },
+  {
+    "name": "Legion of Everblight",
+    "link": "everblight",
+    "img": "legion-of-everblight.png",
+    "system": "Hordes"
+  },
+  {
+    "name": "Minions",
+    "link": "minion",
+    "img": "minions.png",
+    "system": "Hordes"
+  }
 ]
