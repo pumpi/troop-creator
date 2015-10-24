@@ -40,6 +40,7 @@ armyBuilder.controller('buildCtrl',
 
                 $scope.data = data.groups;
                 $scope.tiers = data.tiers;
+                $scope.tier = {};
                 $scope.selectedModels = [];
                 $scope.gameCaster = 1;
                 $scope.gamePoints = 15;
@@ -50,6 +51,8 @@ armyBuilder.controller('buildCtrl',
                 $scope.faction = $('#' + $routeParams.army).data('faction');
                 $scope.system = $('#' + $routeParams.army).data('system');
 
+                console.log($scope.tiers);
+
                 //restore from URL
                 $scope.restoreSearch();
 
@@ -57,11 +60,15 @@ armyBuilder.controller('buildCtrl',
                 var image = $('#' + $routeParams.army + ' img')[0];
                 favicon.image(image);
 
-                document.title = $scope.faction + ' - Armybuilder';
+                document.title = $scope.faction + ' - Troop Creator';
 
                 // Menu set selected
                 $( '#top-menu li' ).removeClass( 'active' );
                 $( '#' + $routeParams.army ).closest('li').addClass('active');
+
+                $('.btn').focus(function() {
+                    this.blur();
+                });
 		    }
         ).
 		error(
@@ -70,19 +77,28 @@ armyBuilder.controller('buildCtrl',
 		    }
         );
 
-        $scope.accordion = function(id) {
-            var $this = $('.'+id);
-            $this.slideToggle();
+        // accordion function for list
+        $scope.accordion = function(id, open) {
+            var $this = $('.accordion-'+id);
+            if ( open ) {
+                $this.slideDown();
+            } else {
+                $this.slideToggle();
+            }
             $this.parent().siblings().find('.accordion-container').slideUp();
         };
 
         // Check if model an warcaster/warlock
         $scope.checkIsCaster = function(model) {
             return /warcaster|warlock/i.test(model.type);
-        }
+        };
 
 		// Check if this model available
 		$scope.checkModelAvailable = function(model) {
+            if ( $scope.gameTier && $scope.checkModelTier(model) ) {
+                return true;
+            }
+
 			// gameCaster not set or no usable int
 			if ( typeof $scope.gameCaster === 'undefined' || $scope.gameCaster.length === 0 || isNaN($scope.gameCaster)) {
                 return true;
@@ -175,6 +191,13 @@ armyBuilder.controller('buildCtrl',
             return false;
         };
 
+        // we have an Tier an check if the model allowed
+        $scope.checkModelTier = function(model) {
+            var tier = $scope.tiers[$scope.gameTier];
+            return tier.levels[0].onlyModels.ids.indexOf(model.id) === -1;
+        };
+
+        // count all types in list
         $scope.countType = function(type) {
             var count = 0;
             var matcher = new RegExp(type, "i");
@@ -186,11 +209,13 @@ armyBuilder.controller('buildCtrl',
             return count;
         };
 
+        // Drop callback for dragable
         $scope.dropCallback = function(event, ui) {
             var dragScope = angular.element(ui.draggable).scope();
             $scope.addModel(dragScope.model);
         };
 
+        // start drag callback
         $scope.startCallback = function(event, ui) {
             var prevWidth = ui.helper.prevObject.width();
             ui.helper.css({'width': prevWidth});
@@ -312,6 +337,7 @@ armyBuilder.controller('buildCtrl',
 		    return Object.keys(obj);
 		};
 
+        // add currently selects in the URL
         $scope.updateSearch = function() {
             //get the selectedModels as string
             var search = {},
@@ -338,6 +364,7 @@ armyBuilder.controller('buildCtrl',
             $location.search( search );
         };
 
+        // Get the selects from the URL
         $scope.restoreSearch = function() {
             var search = $location.search();
             // restore gamePoints
@@ -362,6 +389,7 @@ armyBuilder.controller('buildCtrl',
             }
         };
 
+        // adds an model by only give an string
         $scope.addModelByString = function(string) {
             //split by id an option
             var args = string.split(':');
@@ -391,6 +419,22 @@ armyBuilder.controller('buildCtrl',
                 $scope.selectedModels.push(add);
                 $scope.calculateAvailablePoints();
             }
+        };
+
+        // callback if the tier changed
+        $scope.changeTier = function() {
+            $scope.tier = $scope.tiers[$scope.gameTier];
+            $scope.clearList();
+            if ( $scope.tier.hasOwnProperty('casterId') ) {
+                $scope.addModelByString($scope.tier.casterId);
+                $scope.accordion('1', true);
+            }
+        };
+
+        // clear the complete list
+        $scope.clearList = function() {
+            $scope.selectedModels = [];
+            $scope.calculateAvailablePoints();
         };
     }
 );
