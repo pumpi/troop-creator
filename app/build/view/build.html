@@ -9,7 +9,7 @@
 			<div ng-hide="(value | wildcardArmy:search).length == 0" class="headline accordion-click" ng-click="accordion($index)">{{data[i]['label']}} <span>({{(value | wildcardArmy:search).length}})</span></div>
             <div class="accordion-container" ng-class="'accordion-' + $index">
                 <ul>
-                    <li ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in value | wildcardArmy:search">
+                    <li ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in value | orderBy: 'name' | wildcardArmy:search">
                         <span class="col-md-9">{{model.name}}{{(model.baseSize) ? ' (' + model.baseSize : ''}}{{(model.baseSize !== model.maxSize) ? '/' + model.maxSize : ''}}{{(model.baseSize) ? ')' : ''}}</span>
                         <span class="col-md-1">{{model.fa && model.fa > 100 ? 'U' : model.fa}}{{!model.fa ? 'C' : ''}}</span>
                         <span class="col-md-1">{{model.cost}}{{(model.min && model.max !== '0') ? '/' + model.costMax : ''}}</span>
