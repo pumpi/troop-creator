@@ -23,10 +23,10 @@
 
 	<div class="col-md-6">
 		<h2>Troop list  <span class="tier-stars" ng-hide="!gameTier" data-toggle="modal" data-target="#tier-level-info">
-            <i class="fa fa-star active" ng-click="modalLevel = 0"></i>
-            <i class="fa fa-star" ng-click="modalLevel = 1"></i>
-            <i class="fa fa-star" ng-click="modalLevel = 2"></i>
-            <i class="fa fa-star" ng-click="modalLevel = 3"></i>
+            <i class="fa fa-star" ng-click="modalLevel = 0" ng-class="{active: tierLevel >= 1}"></i>
+            <i class="fa fa-star" ng-click="modalLevel = 1" ng-class="{active: tierLevel >= 2}"></i>
+            <i class="fa fa-star" ng-click="modalLevel = 2" ng-class="{active: tierLevel >= 3}"></i>
+            <i class="fa fa-star" ng-click="modalLevel = 3" ng-class="{active: tierLevel >= 4}"></i>
         </span></h2>
         <div class="row">
 			<div class="col-md-2">
