@@ -338,11 +338,13 @@ armyBuilder.controller('buildCtrl',
         $scope.calculateTierLevel = function() {
             if ( $scope.tier ) {
                 $.each($scope.tier.levels, function(idx, level) {
+
                     var mustCount = 0;
                     if ( !level.mustHave[0] ) {
                         $scope.tierLevel = level.level;
                         return true;
                     } else {
+
                         $.each(level.mustHave, function(idx, must) {
                             var have = 0;
                             $.each($scope.selectedModels, function(idx, selectedModel) {
@@ -350,12 +352,13 @@ armyBuilder.controller('buildCtrl',
                                 if ( $.inArray(selectedModel.id, must.ids ) !== -1 ) {
                                     have ++;
                                 }
+                                if ( have >= must.min ) {
+                                    mustCount ++;
+                                    return false;
+                                }
                             });
-                            if ( have >= must.min ) {
-                                mustCount ++;
-                                return false;
-                            }
                         });
+
                         if ( level.mustHave.length === mustCount ) {
                             $scope.tierLevel = level.level;
                         } else {
