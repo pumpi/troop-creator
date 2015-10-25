@@ -3,7 +3,7 @@
 </div>
 <div class="row">
 	<div class="col-md-6" id="left-col-build">
-		<h2>Verfügbaren Einheiten</h2>
+		<h2>Available models</h2>
 		<input type="search" ng-model="search" placeholder="Suche..." class="form-control">
 		<div class="army-models" ng-repeat="i in notSorted(data)" ng-init="value = data[i]['entries']">
 			<div ng-hide="(value | wildcardArmy:search).length == 0" class="headline accordion-click" ng-click="accordion($index)">{{data[i]['label']}} <span>({{(value | wildcardArmy:search).length}})</span></div>
@@ -22,7 +22,12 @@
 	</div>
 
 	<div class="col-md-6">
-		<h2>Armee Liste</h2>
+		<h2>Troop list  <span class="tier-stars" ng-hide="!gameTier" data-toggle="modal" data-target="#tier-level-info">
+            <i class="fa fa-star active" ng-click="modalLevel = 0"></i>
+            <i class="fa fa-star" ng-click="modalLevel = 1"></i>
+            <i class="fa fa-star" ng-click="modalLevel = 2"></i>
+            <i class="fa fa-star" ng-click="modalLevel = 3"></i>
+        </span></h2>
         <div class="row">
 			<div class="col-md-2">
 				<input type="text" ng-model="gameCaster" ng-change="calculateAvailablePoints()" placeholder="Caster" class="form-control">
@@ -80,12 +85,12 @@
         <button class="btn btn-danger pull-right" ng-click="clearList()"><i class="fa fa-trash"></i></button>
 
         <!-- Modal plain text output-->
-        <div class="modal fade" id="plainTextOutput" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal fade" id="plainTextOutput" tabindex="-1" role="dialog">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel"><i class="fa fa-file-text-o"></i> Troop plain text</h4>
+                        <h4 class="modal-title"><i class="fa fa-file-text-o"></i> Troop plain text</h4>
                     </div>
                     <div class="modal-body">
                         System: <strong>{{system}}</strong><br />
@@ -98,6 +103,59 @@
                                 ng-show="!model.useMax"><strong>(<span ng-show="checkIsCaster(model)">-</span>{{model.cost}} Pts.)</strong></span><span
                                 ng-show="model.useMax"><strong>>({{model.costMax}} Pts.)</strong></span>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal tier level-->
+        <div class="modal fade" id="tier-level-info" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title"><i class="fa fa-star"></i> Tier level {{tier.levels[modalLevel].level}}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Models available</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul ng-repeat="availableModels in tier.availableModels">
+                                    <li><strong>{{availableModels.type}}</strong></li>
+                                    <li>{{availableModels.models}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Requirements</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li ng-show="!tier.levels[modalLevel].mustHave[0]">The army can include only the models listed above.</li>
+                                    <li ng-show="tier.levels[modalLevel].mustHave[0]" ng-repeat="have in tier.levels[modalLevel].mustHave">The army includes <strong>{{have.min}}</strong> or more <strong ng-repeat="id in have.ids">{{getModelById(id).name}}{{$last ? '' : ', '}}</strong></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Benefit</h3>
+                            </div>
+                            <div class="panel-body">
+                                <ul>
+                                    <li ng-show="tier.levels[modalLevel].benefit">{{tier.levels[modalLevel].benefit}}</li>
+                                    <li ng-show="tier.levels[modalLevel].costAlterations" ng-repeat="cost in tier.levels[modalLevel].costAlterations">Reduce the point cost of <strong>{{getModelById(cost.id).name}}</strong> to <strong>{{getModelById(cost.id).cost - cost.bonus}}</strong></li>
+                                    <li ng-show="tier.levels[modalLevel].faAlterations" ng-repeat="fa in tier.levels[modalLevel].faAlterations"><strong>{{getModelById(fa.id).name}}</strong> become FA: <strong>{{fa.bonus}}</strong></li>
+                                    <li ng-show="tier.levels[modalLevel].freeModels" ng-repeat="free in tier.levels[modalLevel].freeModels">Add one of (<strong ng-repeat="id in free.id">{{getModelById(id).name}}{{$last ? '' : ', '}}</strong>) free of cost. This entry ignores FA restrictions.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" ng-click="modalLevel = modalLevel - 1" ng-hide="modalLevel < 1" class="pull-left btn btn-primary" ><i class="fa fa-chevron-left"></i> previous</button>
+                        <button type="button" ng-click="modalLevel = modalLevel + 1" ng-hide="modalLevel > 2" class="btn btn-primary">next <i class="fa fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>

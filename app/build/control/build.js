@@ -45,6 +45,7 @@ armyBuilder.controller('buildCtrl',
                 $scope.gameCaster = 1;
                 $scope.gamePoints = 15;
                 $scope.gameTier = 0;
+                $scope.modlaLevel = 0;
                 $scope.points = 0;
                 $scope.dropModel = {};
                 $scope.casterPoints = 0;
@@ -184,7 +185,7 @@ armyBuilder.controller('buildCtrl',
 				}				
 				return true;
             }
-            
+
             // All its fine we can activate the model
             return false;
         };
@@ -378,6 +379,7 @@ armyBuilder.controller('buildCtrl',
             // restore gameTier
             if (search.tier) {
                 $scope.gameTier = search.tier;
+                $scope.tier = $scope.tiers[$scope.gameTier];
             }
             //restore selectedModels
             if (search.sel) {
@@ -419,6 +421,23 @@ armyBuilder.controller('buildCtrl',
                 $scope.selectedModels.push(add);
                 $scope.calculateAvailablePoints();
             }
+        };
+
+        // get model by ID
+        $scope.getModelById = function(id) {
+            var model = false;
+            angular.forEach($scope.data, function(grp) {
+                angular.forEach(grp.entries, function(entrie) {
+                    if ( entrie.id === id ) {
+                        model = entrie;
+                        return true
+                    }
+                });
+                if ( model ) {
+                    return true;
+                }
+            });
+            return model;
         };
 
         // callback if the tier changed

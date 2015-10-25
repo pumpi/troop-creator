@@ -145,6 +145,27 @@ html, body {
     margin: 10px 0;
 }
 
+.tier-stars {
+    font-size: 18px;
+    font-size: 1.8rem;
+    color: #CCC;
+    cursor: pointer;
+    .active {
+        color: #d58512;
+    }
+}
+
+/*
+ * MODAL
+ *****************************/
+.modal-body {
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 10px 0;
+    }
+}
+
 .drop-model {
     margin-top: 10px;
     padding: 40px;
