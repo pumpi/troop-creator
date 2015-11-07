@@ -151,11 +151,9 @@
                                     <li ng-show="tier.levels[modalLevel].costAlterations" ng-repeat="cost in tier.levels[modalLevel].costAlterations">
                                         Reduce the point cost of <strong>{{getModelById(cost.id).name}}</strong> to <strong>{{getModelById(cost.id).cost - cost.bonus}}</strong>
                                     </li>
-                                    <li ng-show="tier.levels[modalLevel].faAlterations && !tier.levels[modalLevel].faAlterations.forEach" ng-repeat="fa in tier.levels[modalLevel].faAlterations">
-                                        <strong>{{getModelById(fa.id).name}}</strong> become FA: <strong>{{fa.bonus}}</strong>
-                                    </li>
-                                    <li ng-show="tier.levels[modalLevel].faAlterations.forEach" ng-repeat="fa in tier.levels[modalLevel].faAlterations">
-                                        The FA of <strong>{{getModelById(fa.id).name}}</strong> increases by <strong>+{{fa.bonus}}</strong> for each (<strong ng-repeat="id in fa.forEach">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>)
+                                    <li ng-show="tier.levels[modalLevel].faAlterations" ng-repeat="fa in tier.levels[modalLevel].faAlterations">
+                                        <span ng-hide="fa.forEach"><strong>{{getModelById(fa.id).name}}</strong> become FA: <strong>{{fa.bonus}}</strong></span>
+                                        <span ng-show="fa.forEach">The FA of <strong>{{getModelById(fa.id).name}}</strong> increases by <strong>+{{fa.bonus}}</strong> for each (<strong ng-repeat="id in fa.forEach">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>)</span>
                                     </li>
                                     <li ng-show="tier.levels[modalLevel].freeModels" ng-repeat="free in tier.levels[modalLevel].freeModels">
                                         Add one of (<strong ng-repeat="id in free.id">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>) free of cost. This entry ignores FA restrictions.
