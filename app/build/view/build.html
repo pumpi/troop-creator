@@ -12,7 +12,7 @@
                     <li ng-click="addModel(model)" ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in value | orderBy: 'name' | wildcardArmy:search">
                         <span class="col-md-9">{{model.name}}{{(model.baseSize) ? ' (' + model.baseSize : ''}}{{(model.baseSize !== model.maxSize) ? '/' + model.maxSize : ''}}{{(model.baseSize) ? ')' : ''}}</span>
                         <span class="col-md-1">{{model.fa && model.fa > 100 ? 'U' : model.fa}}{{!model.fa ? 'C' : ''}}</span>
-                        <span class="col-md-1">{{model.cost}}{{(model.min && model.max !== '0') ? '/' + model.costMax : ''}}</span>
+                        <span class="col-md-1" ng-class="{'cost-bonus': model.cost != getModelCost(model, 1)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + model.costMax : ''}}</span>
                         <span class="col-md-1"><i class="fa fa-plus-circle add-to-list"></i></span>
                         <span class="clearfix"></span>
                     </li>
@@ -64,12 +64,12 @@
 							(Leader and {{model.min -1}})
 						</span>
 					</span>
-					<span ng-show="!model.useMax" class="col-md-1">
-						{{model.cost}}
+					<span ng-show="!model.useMax" class="col-md-1" ng-class="{'cost-bonus': model.cost != getModelCost(model)}">
+						{{getModelCost(model)}}
 					</span>
 					<span ng-show="model.useMax" class="col-md-1">
 						{{model.costMax}}
-					</span>
+                    </span>
 					<span class="col-md-1">
 						<i ng-click="removeModel($index)" class="fa fa-minus-circle remove-from-list"></i>
 					</span>
@@ -145,10 +145,21 @@
                             </div>
                             <div class="panel-body">
                                 <ul>
-                                    <li ng-show="tier.levels[modalLevel].benefit">{{tier.levels[modalLevel].benefit}}</li>
-                                    <li ng-show="tier.levels[modalLevel].costAlterations" ng-repeat="cost in tier.levels[modalLevel].costAlterations">Reduce the point cost of <strong>{{getModelById(cost.id).name}}</strong> to <strong>{{getModelById(cost.id).cost - cost.bonus}}</strong></li>
-                                    <li ng-show="tier.levels[modalLevel].faAlterations" ng-repeat="fa in tier.levels[modalLevel].faAlterations"><strong>{{getModelById(fa.id).name}}</strong> become FA: <strong>{{fa.bonus}}</strong></li>
-                                    <li ng-show="tier.levels[modalLevel].freeModels" ng-repeat="free in tier.levels[modalLevel].freeModels">Add one of (<strong ng-repeat="id in free.id">{{getModelById(id).name}}{{$last ? '' : ', '}}</strong>) free of cost. This entry ignores FA restrictions.</li>
+                                    <li ng-show="tier.levels[modalLevel].benefit">
+                                        {{tier.levels[modalLevel].benefit}}
+                                    </li>
+                                    <li ng-show="tier.levels[modalLevel].costAlterations" ng-repeat="cost in tier.levels[modalLevel].costAlterations">
+                                        Reduce the point cost of <strong>{{getModelById(cost.id).name}}</strong> to <strong>{{getModelById(cost.id).cost - cost.bonus}}</strong>
+                                    </li>
+                                    <li ng-show="tier.levels[modalLevel].faAlterations && !tier.levels[modalLevel].faAlterations.forEach" ng-repeat="fa in tier.levels[modalLevel].faAlterations">
+                                        <strong>{{getModelById(fa.id).name}}</strong> become FA: <strong>{{fa.bonus}}</strong>
+                                    </li>
+                                    <li ng-show="tier.levels[modalLevel].faAlterations.forEach" ng-repeat="fa in tier.levels[modalLevel].faAlterations">
+                                        The FA of <strong>{{getModelById(fa.id).name}}</strong> increases by <strong>+{{fa.bonus}}</strong> for each (<strong ng-repeat="id in fa.forEach">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>)
+                                    </li>
+                                    <li ng-show="tier.levels[modalLevel].freeModels" ng-repeat="free in tier.levels[modalLevel].freeModels">
+                                        Add one of (<strong ng-repeat="id in free.id">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>) free of cost. This entry ignores FA restrictions.
+                                    </li>
                                 </ul>
                             </div>
                         </div>
