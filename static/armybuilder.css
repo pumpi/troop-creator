@@ -4984,10 +4984,14 @@ html, body {
   cursor: pointer; }
   .army-models .remove-from-list:hover {
     color: #8B0000; }
+.army-models .tier-bonus {
+  color: green; }
 .army-models .disable {
   color: #aaa; }
   .army-models .disable .add-to-list {
     display: none; }
+  .army-models .disable .tier-bonus {
+    color: #97aa93; }
 .army-models .ui-draggable {
   cursor: move; }
   .army-models .ui-draggable.disable {
@@ -4995,9 +4999,6 @@ html, body {
 
 .selected-models {
   margin: 10px 0; }
-
-.cost-bonus {
-  color: green; }
 
 .tier-stars {
   font-size: 18px;

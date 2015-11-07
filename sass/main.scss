@@ -128,11 +128,17 @@ html, body {
             color: #8B0000;
         }
     }
+    .tier-bonus {
+        color: green;
+    }
 	.disable {
 		color: #aaa;
 		.add-to-list {
 			display: none;
 		}
+        .tier-bonus {
+            color: #97aa93;
+        }
 	}
     .ui-draggable {
         cursor: move;
@@ -143,10 +149,6 @@ html, body {
 }
 .selected-models {
     margin: 10px 0;
-}
-
-.cost-bonus {
-    color: green;
 }
 
 .tier-stars {
