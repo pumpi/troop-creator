@@ -1,4 +1,4 @@
-/*! armybuilder 2015-10-25 */
+/*! armybuilder 2015-11-07 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5002,7 +5002,9 @@ html, body {
   color: #CCC;
   cursor: pointer; }
   .tier-stars .active {
-    color: #d58512; }
+    color: #d58512;
+    font-size: 22px;
+    font-size: 2.2rem; }
 
 /*
  * MODAL
