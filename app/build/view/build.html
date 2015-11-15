@@ -4,10 +4,10 @@
 <div class="row">
 	<div class="col-md-6" id="left-col-build">
 		<h2>Available models</h2>
-		<input type="search" ng-model="search" placeholder="Suche..." class="form-control">
+		<input type="search" ng-model="search" placeholder="Search..." class="form-control">
 		<div class="army-models" ng-repeat="i in notSorted(data)" ng-init="value = data[i]['entries']">
-			<div ng-hide="(filtered = (value | wildcardArmy:search | restricted:data)).length == 0" class="headline accordion-click" ng-click="accordion($index)">{{data[i]['label']}} <span>({{filtered.length}})</span></div>
-            <div class="accordion-container" ng-class="'accordion-' + $index">
+			<div ng-hide="(filtered = (value | wildcardArmy:search | restricted:this)).length == 0" class="headline accordion-click" ng-click="accordion($index)" ng-class="{mercenary: data[i].add.indexOf('mercenary') > -1, minions: data[i].add.indexOf('minion') > -1}">{{data[i]['label']}} <span>({{filtered.length}})</span></div>
+            <div class="accordion-container accordion-{{$index}}">
                 <ul>
                     <li ng-click="addModel(model)" ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in filtered | orderBy: 'name'">
                         <span class="col-md-9">{{model.name}}{{(model.baseSize) ? ' (' + model.baseSize : ''}}{{(model.baseSize !== model.maxSize) ? '/' + model.maxSize : ''}}{{(model.baseSize) ? ')' : ''}}</span>

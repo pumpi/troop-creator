@@ -112,6 +112,12 @@ html, body {
         span {
             font-weight: normal;
         }
+        &.minions {
+            background-color: #7CB1A2;
+        }
+        &.mercenary {
+            background-color: #A07D65;
+        }
 	}
     .accordion-container {
         display: none;

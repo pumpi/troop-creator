@@ -1,4 +1,4 @@
-/*! armybuilder 2015-11-07 */
+/*! armybuilder 2015-11-15 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4974,6 +4974,10 @@ html, body {
   margin-top: 10px; }
   .army-models .headline span {
     font-weight: normal; }
+  .army-models .headline.minions {
+    background-color: #7CB1A2; }
+  .army-models .headline.mercenary {
+    background-color: #A07D65; }
 .army-models .accordion-container {
   display: none; }
 .army-models .add-to-list {

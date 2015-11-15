@@ -2,25 +2,52 @@
 
 // Wildcard Filter for Army List builder
 armyBuilder.filter('wildcardArmy', function () {
-    return function (items, search) {
-        var filtered = [];
-
+    return function (models, search) {
         if (typeof search !== 'undefined') {
             var searchRegEx = search.replace(/[^A-za-zÄÖÜäöü?]/g, '.*?');
             var thisRegex = new RegExp('.*?' + searchRegEx + '.*?', 'i');
         }
 
-        angular.forEach(items, function (item) {
+        models = $.grep(models, function (model) {
             if (typeof search !== 'undefined') {
-                if (thisRegex.test(item.name)) {
-                    filtered.push(item);
+                if (thisRegex.test(model.name)) {
+                    return true
                 }
             } else {
-                filtered.push(item);
+                return true
             }
+            return false;
         });
 
-        return filtered;
+        return models;
+    };
+});
+
+// Filter the model who not have the restricted_to model
+armyBuilder.filter('restricted', function () {
+    return function (models, $scope) {
+        models = $.grep(models, function(model) {
+            if ( model.hasOwnProperty('restricted_to') ) {
+
+                if (typeof model.restricted_to === 'string') {
+                    if ($scope.getModelById(model.restricted_to) || model.restricted_to === '*') {
+                        return true;
+                    }
+                } else {
+                    var found = false;
+                    $.each(model.restricted_to, function(id, val) {
+                        if ( $scope.getModelById(val) ) {
+                            found = true;
+                            return found;
+                        }
+                    });
+                    return found;
+                }
+                return false;
+            }
+            return true;
+        });
+        return models;
     };
 });
 
@@ -32,6 +59,7 @@ armyBuilder.controller('buildCtrl',
 		success(
             function(data, status, headers, config) {
                 // only add data with entries
+
                 $scope.data = [];
                 $.each(data.groups, function(key, item) {
                     if (item.entries.length !== 0) {
@@ -39,22 +67,61 @@ armyBuilder.controller('buildCtrl',
                     }
                 });
 
-                $scope.tiers = data.tiers;
-                $scope.tier = {};
-                $scope.tierLevel = 0;
-                $scope.selectedModels = [];
-                $scope.gameCaster = 1;
-                $scope.gamePoints = 20;
-                $scope.gameTier = 0;
-                $scope.modlaLevel = 0;
-                $scope.points = 0;
-                $scope.dropModel = {};
-                $scope.casterPoints = 0;
-                $scope.costAlterations = [];
-                $scope.faAlterations =[];
-                $scope.freeModels = [];
-                $scope.faction = $('#' + $routeParams.army).data('faction');
-                $scope.system = $('#' + $routeParams.army).data('system');
+                $scope.tiers            = data.tiers;
+                $scope.tier             = {};
+                $scope.tierLevel        = 0;
+                $scope.selectedModels   = [];
+                $scope.gameCaster       = 1;
+                $scope.gamePoints       = 20;
+                $scope.gameTier         = 0;
+                $scope.modlaLevel       = 0;
+                $scope.points           = 0;
+                $scope.dropModel        = {};
+                $scope.casterPoints     = 0;
+                $scope.costAlterations  = [];
+                $scope.faAlterations    =[];
+                $scope.freeModels       = [];
+                $scope.faction          = $('#' + $routeParams.army).data('faction');
+                $scope.factionId        = 'faction_' + $routeParams.army;
+                $scope.system           = $('#' + $routeParams.army).data('system');
+
+
+                // Now we get the mercenarys an minions
+                $.each(['minion', 'mercenary'], function (k, v) {
+                    if ( v !== $routeParams.army ) {
+                        $http.get('./data/' + v + '.json').
+                        success(
+                            function (data) {
+                                // Only who works for the faction get in list
+                                $.each(data.groups, function (gkey, group) {
+                                    if (group.entries.length !== 0) {
+                                        // We clone the actual group to modify entries
+
+                                        // Now we check all models if he work for the faction
+                                        group.entries = $.grep(group.entries, function (item) {
+                                            if (item.works_for) {
+                                                // We have an caster, unit or solo and must look if he works_for this faction
+                                                if ($.inArray($scope.factionId, item.works_for) !== -1) {
+                                                    return true;
+                                                }
+                                            } else if (item.restricted_to) {
+                                                // We have an restricted model but not all data fetched we save reference for later
+                                                return true;
+                                            }
+                                            return false;
+                                        });
+                                        group.add = v;
+                                        $scope.data.push(group);
+                                    }
+                                });
+                            }
+                        ). error (
+                            function (data) {
+                                alert('error reading minion.json');
+                            }
+                        );
+                    }
+                });
 
                 //restore from URL
                 $scope.restoreSearch();
@@ -362,7 +429,7 @@ armyBuilder.controller('buildCtrl',
 
         // Calculate the tier level
         $scope.calculateTierLevel = function() {
-            if ( $scope.tier ) {
+            if ( $scope.tier && $scope.tier.hasOwnProperty('level') ) {
                 $scope.resetTierBonus();
                 $.each($scope.tier.levels, function(idx, level) {
 
