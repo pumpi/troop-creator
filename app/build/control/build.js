@@ -79,7 +79,7 @@ armyBuilder.controller('buildCtrl',
                 $scope.dropModel        = {};
                 $scope.casterPoints     = 0;
                 $scope.costAlterations  = [];
-                $scope.faAlterations    =[];
+                $scope.faAlterations    = [];
                 $scope.freeModels       = [];
                 $scope.faction          = $('#' + $routeParams.army).data('faction');
                 $scope.factionId        = 'faction_' + $routeParams.army;
@@ -117,7 +117,7 @@ armyBuilder.controller('buildCtrl',
                             }
                         ). error (
                             function (data) {
-                                alert('error reading minion.json');
+                                alert('error reading ' + v + '.json');
                             }
                         );
                     }
@@ -307,7 +307,7 @@ armyBuilder.controller('buildCtrl',
             if ( !$scope.checkModelAvailable(model) ) {
                 var copy = angular.copy(model);
 
-                // If type warbeast or warjack we must add it after the last warbeast/warjack oder after the last warlock/warcaster
+                // If type warbeast or warjack we must add it after the last warbeast/warjack or after the last warlock/warcaster
                 // If baseUnit set we must add this model to an unit
                 var findIndex = false;
                 if (/warbeast|warjack/i.test(model.type)) {
@@ -429,7 +429,7 @@ armyBuilder.controller('buildCtrl',
 
         // Calculate the tier level
         $scope.calculateTierLevel = function() {
-            if ( $scope.tier && $scope.tier.hasOwnProperty('level') ) {
+            if ( $scope.tier && $scope.tier.hasOwnProperty('levels') ) {
                 $scope.resetTierBonus();
                 $.each($scope.tier.levels, function(idx, level) {
 
