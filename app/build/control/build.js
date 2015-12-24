@@ -385,6 +385,12 @@ armyBuilder.controller('buildCtrl',
 
         // Calculate the available Points
         $scope.calculateAvailablePoints = function() {
+            // Store the models in URL
+            $scope.updateSearch();
+
+            // Calculate the tier level
+            $scope.calculateTierLevel();
+
 			var sumPoints = 0;
 			var casterPoints = 0;
 
@@ -419,12 +425,6 @@ armyBuilder.controller('buildCtrl',
 
             // Set the available Caster points for later Checks
             $scope.casterPoints = casterPoints;
-
-            // Store the models in URL
-            $scope.updateSearch();
-
-            // Calculate the tier level
-            $scope.calculateTierLevel();
 		};
 
         // Calculate the tier level
