@@ -160,7 +160,7 @@ armyBuilder.controller('buildCtrl',
 
         // Check if model an warcaster/warlock
         $scope.checkIsCaster = function(model) {
-            return /warcaster|warlock/i.test(model.type);
+            return /^warcaster$|^warlock$/i.test(model.type);
         };
 
 		// Check if this model available
@@ -183,22 +183,17 @@ armyBuilder.controller('buildCtrl',
             }
 
 			// Warlock have max value in selectedModels
-            if ( /warlock/i.test(model.type) && $scope.countType('warlock') >= $scope.gameCaster ) {
-				return true;
-            }
-
-            // Warcaster have max value in selectedModels
-            if ( /warcaster/i.test(model.type) && $scope.countType('warcaster') >= $scope.gameCaster ) {
+            if ( /^warlock$|^warcaster$/i.test(model.type) && $scope.countType('^warlock$|^warcaster$') >= $scope.gameCaster ) {
 				return true;
             }
 
 			// No Caster in selectedModels we can not select an Warbeast or Warjack
-            if ( /warbeast|warjack/i.test(model.type) && $scope.countType('warlock|warcaster') === 0 ) {
+            if ( /warbeast|warjack/i.test(model.type) && $scope.countType('^warlock$|^warcaster$') === 0 ) {
 				return true;
             }
 
             // The Points to use are higher as the available points but check if warbeast an we have available caster points
-            if ( /warbeast|warjack/i.test(model.type) && parseInt($scope.casterPoints) > 0) {
+            if ( /^warbeast$|^warjack$/i.test(model.type) && parseInt($scope.casterPoints) > 0) {
 		    	if ( ( parseInt($scope.gamePoints) - parseInt($scope.points) + parseInt($scope.casterPoints) ) < cost) {
 		            return true;
 				}
@@ -310,9 +305,9 @@ armyBuilder.controller('buildCtrl',
                 // If type warbeast or warjack we must add it after the last warbeast/warjack or after the last warlock/warcaster
                 // If baseUnit set we must add this model to an unit
                 var findIndex = false;
-                if (/warbeast|warjack/i.test(model.type)) {
+                if (/^warbeast$|^warjack$/i.test(model.type)) {
                     for (var i = $scope.selectedModels.length - 1; i >= 0; i--) {
-                        if (/warbeast|warlock|warjack|warcaster/i.test($scope.selectedModels[i].type)) {
+                        if (/^warbeast$|^warlock$|^warjack$|^warcaster$/i.test($scope.selectedModels[i].type)) {
                             findIndex = i;
                             break;
                         }
@@ -398,15 +393,10 @@ armyBuilder.controller('buildCtrl',
                 // Change the cost to the tier bonus cost
                 var cost = $scope.getModelCost(model);
 
-				if ( /warlock|warcaster/i.test(model.type) ) {
+				if ( /^warlock$|^warcaster$/i.test(model.type) ) {
                     casterPoints = casterPoints + parseInt(cost);
-				} else if ( /warjack|warbeast/i.test(model.type) ) {
-                    // if he bonTo none we must calculate the points to the sumPoints and not to casterPoints
-                    if ( model.hasOwnProperty('bondTo') && model.restricted_to === 'none' ) {
-                        sumPoints = sumPoints + cost;
-                    } else {
-                        casterPoints = casterPoints - cost;
-                    }
+				} else if ( /^warjack$|^warbeast$/i.test(model.type) ) {
+                    casterPoints = casterPoints - cost;
 				} else {
                     // Must we use the base cost of model or the max
                     if ( model.useMax ) {

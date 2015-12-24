@@ -207,7 +207,7 @@
           "cost": 11,
           "faction": "faction_menoth",
           "id": "PJ11",
-          "type": "warjack"
+          "type": "warjacksolo"
         },
         {
           "name": "Repenter",
