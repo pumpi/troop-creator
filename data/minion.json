@@ -1115,6 +1115,20 @@
           "faction": "faction_minions",
           "id": "IW01_minion",
           "type": "soloLesserWarlock"
+        },
+        {
+          "name": "Swamp Gobber Chef",
+          "fa": "2",
+          "works_for": [
+            "faction_orboros",
+            "faction_everblight",
+            "faction_trollblood",
+            "faction_skorne"
+          ],
+          "cost": 1,
+          "faction": "faction_minions",
+          "id": "IS17",
+          "type": "solo"
         }
       ],
       "label": "Solos"
