@@ -2946,6 +2946,238 @@
       ]
     },
     {
+      "name": "Madrak - Winter Kin (NQ63)",
+      "casterId": "Tw01",
+      "faction": "faction_trollblood",
+      "levels": [
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "Trollkin Skinners in the army gain Immunity: Cold  and their Skinning Knives gain Beacon. (Replace the Trollkin Skinners card with the Theme Force Trollkin Skinners card found in this article - NQ 63.) ",
+          "level": 1,
+          "mustHave": [],
+          "onlyModels": {
+            "ids": [
+              "Tw01",
+              "TB01",
+              "TB02",
+              "TB03",
+              "TB04",
+              "TB05",
+              "TB06",
+              "TB07",
+              "TB08",
+              "TB09",
+              "TB11",
+              "TB12",
+              "TB14",
+              "TB15",
+              "TB16",
+              "TB18",
+              "TU02",
+              "TU15",
+              "TU11",
+              "TU14",
+              "TA03",
+              "TS02",
+              "TS06",
+              "TS07",
+              "TS09"
+            ]
+          }
+        },
+        {
+          "freeModels": [
+            {
+              "id": [
+                "TA01"
+              ]
+            }
+          ],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "Models in the army have concealment during the first round of the game.",
+          "level": 2,
+          "mustHave": [
+            {
+              "min": 3,
+              "inMarshal": false,
+              "ids": [
+                "TB12",
+                "TB09",
+                "TU11",
+                "TS07"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "Tw01",
+              "TB01",
+              "TB02",
+              "TB03",
+              "TB04",
+              "TB05",
+              "TB06",
+              "TB07",
+              "TB08",
+              "TB09",
+              "TB11",
+              "TB12",
+              "TB14",
+              "TB15",
+              "TB16",
+              "TB18",
+              "TU02",
+              "TU15",
+              "TU11",
+              "TU14",
+              "TA03",
+              "TS02",
+              "TS06",
+              "TS07",
+              "TS09"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "Friendly models/units can begin the game affected by Madrak’s upkeep spells. These spells and their targets must be declared before either player sets up models. Madrak does not pay fury to upkeep these spells during your first turn.",
+          "level": 3,
+          "mustHave": [
+            {
+              "min": 1,
+              "inMarshal": false,
+              "ids": [
+                "TA03"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "Tw01",
+              "TB01",
+              "TB02",
+              "TB03",
+              "TB04",
+              "TB05",
+              "TB06",
+              "TB07",
+              "TB08",
+              "TB09",
+              "TB11",
+              "TB12",
+              "TB14",
+              "TB15",
+              "TB16",
+              "TB18",
+              "TU02",
+              "TU15",
+              "TU11",
+              "TU14",
+              "TA03",
+              "TS02",
+              "TS06",
+              "TS07",
+              "TS09"
+            ]
+          }
+        },
+        {
+          "freeModels": [
+            {
+              "id": [
+                "TB05"
+              ]
+            }
+          ],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "",
+          "level": 4,
+          "mustHave": [
+            {
+              "min": 1,
+              "inMarshal": false,
+              "ids": [
+                "TB03"
+              ],
+              "inBG": true
+            },
+            {
+              "min": 2,
+              "inMarshal": false,
+              "ids": [
+                "TB01",
+                "TB02",
+                "TB04",
+                "TB05",
+                "TB06",
+                "TB07",
+                "TB08",
+                "TB09",
+                "TB11",
+                "TB12",
+                "TB14",
+                "TB15",
+                "TB16",
+                "TB18"
+              ],
+              "inBG": true
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "Tw01",
+              "TB01",
+              "TB02",
+              "TB03",
+              "TB04",
+              "TB05",
+              "TB06",
+              "TB07",
+              "TB08",
+              "TB09",
+              "TB11",
+              "TB12",
+              "TB14",
+              "TB15",
+              "TB16",
+              "TB18",
+              "TU02",
+              "TU15",
+              "TU11",
+              "TU14",
+              "TA03",
+              "TS02",
+              "TS06",
+              "TS07",
+              "TS09"
+            ]
+          }
+        }
+      ],
+      "availableModels": [
+        {
+          "type": "WARBEASTS",
+          "models": "Trollblood Non-character warbeasts"
+        },
+        {
+          "type": "UNITS",
+          "models": "Krielstone Bearer & Stone Scribes, Northkin units, Trollkin Scouts, Trollkin Warders"
+        },
+        {
+          "type": "SOLOS",
+          "models": "Stone Scribe Chronicler, Trollkin Runebearer, Trollkin Sorcerer, Trollkin Skinners"
+        }
+      ]
+    },
+    {
       "name": "epic Grim - Hunting Party",
       "casterId": "Tx04",
       "faction": "faction_trollblood",
