@@ -592,7 +592,7 @@ armyBuilder.controller('buildCtrl',
             search.sel = btoa(sel);
             search.caster = $scope.gameCaster;
             search.points = $scope.gamePoints;
-            search.tier = $scope.gameTier;
+            search.tier = $scope.gameTier === 0 ? '' : $scope.gameTier;
 
             $location.search( search );
         };
