@@ -152,7 +152,7 @@
                                         Reduce the point cost of <strong>{{getModelById(cost.id).name}}</strong> to <strong>{{getModelById(cost.id).cost - cost.bonus}}</strong>
                                     </li>
                                     <li ng-show="tier.levels[modalLevel].faAlterations" ng-repeat="fa in tier.levels[modalLevel].faAlterations">
-                                        <span ng-hide="fa.forEach"><strong>{{getModelById(fa.id).name}}</strong> become FA: <strong>{{fa.bonus > 100 ? 'U' : fa.bonus}}</strong></span>
+                                        <span ng-hide="fa.forEach"><strong>{{getModelById(fa.id).name}}</strong> increased to FA: <strong>{{fa.bonus > 100 ? 'U' : 1 * getModelById(fa.id).fa + fa.bonus }}</strong></span>
                                         <span ng-show="fa.forEach">The FA of <strong>{{getModelById(fa.id).name}}</strong> increases by <strong>+{{fa.bonus}}</strong> for each (<strong ng-repeat="id in fa.forEach">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>)</span>
                                     </li>
                                     <li ng-show="tier.levels[modalLevel].freeModels" ng-repeat="free in tier.levels[modalLevel].freeModels">
