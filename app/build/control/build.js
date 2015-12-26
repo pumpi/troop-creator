@@ -210,18 +210,18 @@ armyBuilder.controller('buildCtrl',
 
             	$.each($scope.selectedModels, function(k, selectedModel) {
                     // if Character and we always have in list
-                    if ( getFa === 'C' && selectedModel.name === model.name ) {
+                    if (getFa === 'C' && selectedModel.name === model.name) {
                         fa = true;
                         return false;
                     }
 
-                    // Count field allowance model
-                    if ( selectedModel.name === model.name ) {
-                        mc ++;
+                    // Count field allowance model but not the free models
+                    if (selectedModel.name === model.name && !selectedModel.hasOwnProperty('freeModel')) {
+                        mc++;
                     }
 
                     // if field allowance model full
-                    if ( getFa <= mc ) {
+                    if (getFa <= mc) {
                         fa = true;
                         return false;
                     }
@@ -313,10 +313,15 @@ armyBuilder.controller('buildCtrl',
                         }
                     }
                 } else if (model.hasOwnProperty('restricted_to')) {
-                    for (var i = $scope.selectedModels.length - 1; i >= 0; i--) {
+                    var count = $scope.selectedModels.length - 1
+                    for (var i = 0; i <= count; i++) {
                         if ($scope.selectedModels[i].id === model.restricted_to) {
-                            findIndex = i;
-                            break;
+                            if (i !== count && $scope.selectedModels[(i + 1)].id !== model.id) {
+                                findIndex = i;
+                                break;
+                            } else if ( i === count ) {
+                                findIndex = i;
+                            }
                         }
                     }
                 }
@@ -325,6 +330,7 @@ armyBuilder.controller('buildCtrl',
                 if ( $scope.tier ) {
                     var cost = $scope.getModelCost(model, true);
                     if ( cost === 0 ) {
+                        copy.realCost = copy.cost;
                         copy.cost = 0;
                         copy.freeModel = 1;
                     }
@@ -380,11 +386,9 @@ armyBuilder.controller('buildCtrl',
 
         // Calculate the available Points
         $scope.calculateAvailablePoints = function() {
-            // Store the models in URL
             $scope.updateSearch();
-
-            // Calculate the tier level
             $scope.calculateTierLevel();
+            $scope.checkFreeSelected();
 
 			var sumPoints = 0;
 			var casterPoints = 0;
@@ -492,6 +496,30 @@ armyBuilder.controller('buildCtrl',
             $scope.faAlterations = [];
         };
 
+        // Check Free Models in selected
+        $scope.checkFreeSelected = function() {
+            $.each($scope.selectedModels, function(idx, selectedModel) {
+                if ( selectedModel.hasOwnProperty('freeModel') ) {
+                    var isFree = true;
+                    if ($scope.freeModels.length > 0 ) {
+                        $.each($scope.freeModels, function (key, freeModel) {
+                            // is the model we are check in the for free array
+                            isFree = ( $.inArray(selectedModel.id, freeModel.id) !== -1 );
+                            return !isFree;
+                        });
+                    } else {
+                        isFree = false;
+                    }
+
+                    if ( !isFree ) {
+                        $scope.selectedModels[idx].cost = $scope.selectedModels[idx].realCost;
+                        delete $scope.selectedModels[idx].freeModel;
+                        delete $scope.selectedModels[idx].realCost;
+                    }
+                }
+            });
+        };
+
         // get the real model cost
         $scope.getModelCost = function(model, checkFree) {
             if ( typeof(checkFree) === 'undefined' ) checkFree = false;
@@ -518,7 +546,7 @@ armyBuilder.controller('buildCtrl',
                         });
                         if (hasFree) return false;
 
-                        // is the model we are check in the the for free array
+                        // is the model we are check in the for free array
                         isFree = ( $.inArray(model.id, freeModel.id) !== -1 );
 
                         if (!hasFree && isFree) return false;
@@ -653,6 +681,7 @@ armyBuilder.controller('buildCtrl',
 
                 if ( $.inArray('freeModel', args) !== -1 ) {
                     add.freeModel = 1;
+                    add.realCost = add.cost;
                     add.cost = 0;
                 }
                 $scope.selectedModels.push(add);

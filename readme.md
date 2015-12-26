@@ -1,18 +1,22 @@
-Welcome to troop-creator!
+Welcome to the Troop Creator!
 
-This is an tool to create Troop or army for the tabletop warmachine or hordes from Privater Press
+This is a tool to create an army list for the Warmachine and Hordes Tabletop Games made by Privateer Press.
+This is a fan project and I do not own any rights on either Warmachine, Hordes, or Privateer Press.
+I only wish to contribute to the great community of this game.
 
-The Live version of this repository is at http://pumpi.github.io/troop-creator
+You can access the live version through http://pumpi.github.io/troop-creator
 
-For bug reports please use the github issues https://github.com/pumpi/troop-creator/issues
+To-Do:
+- some minor issues with TIER-lists.
+- Move Uas to other units
+- Some graphical changes
+- a lot of testing ;-)
 
-Todo:
-- visible that an warbeast/warjack add to a special warlock/warcaster same for unit attachments and weapon attachments
-  - move the attached model between tow
-- minions or mechanaries add to troop
-- Tier list and visible the level of tier
-- complete data for:
-  - Devasation tier lists
+This tool is not yet completely finished, which is why I still consider it work-in-progress or BETA.
+If you find any bugs or issues, please feel free to report them to me via the github issue reporter:
 
-Known Bugs:
-- tier list select have no function
+https://github.com/pumpi/troop-creator/issues
+
+(You will need a github account; it's ment to protect the github community from spambots)
+
+Please feel free to contribute!
