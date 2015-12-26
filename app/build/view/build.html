@@ -29,13 +29,13 @@
             <i class="fa fa-star" ng-click="modalLevel = 3" ng-class="{active: tierLevel >= 4}"></i>
         </span></h2>
         <div class="row">
-			<div class="col-md-2">
+			<div class="col-md-2 max-caster">
 				<input type="text" ng-model="gameCaster" ng-change="calculateAvailablePoints()" placeholder="Caster" class="form-control">
 			</div>
-			<div class="col-md-2">
+			<div class="col-md-2 max-points">
 				<input type="text" ng-model="gamePoints" ng-change="calculateAvailablePoints()" placeholder="Punkte" class="form-control">
 			</div>
-            <div class="col-md-6">
+            <div class="col-md-6 tiers">
                 <select class="form-control" ng-model="gameTier" ng-change="changeTier()" ng-options="index as tier.name for (index, tier) in tiers">
                     <option value="">select tier list ...</option>
                 </select>

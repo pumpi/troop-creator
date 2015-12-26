@@ -188,3 +188,52 @@ html, body {
     font-size: 20px;
     font-weight: bold;
 }
+
+/*
+ * PRINT
+ *****************************/
+@media print {
+    #left-col-build,
+    .remove-from-list,
+    .btn,
+    .max-caster,
+    .max-points,
+    .drop-model,
+    .tier-stars i,
+    .remove-from-list {
+        display: none !important;
+    }
+    .tier-stars i.active {
+        display: inline-block;
+    }
+    select.form-control {
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: inline-block;
+        width: auto;
+    }
+    .tiers {
+        width: auto;
+        &::before {
+            content: 'Tier: ';
+            display: inline-block;
+        }
+    }
+    .col-md-6 {
+        width: 100%;
+    }
+    .selected-models {
+        ul {
+            display: table;
+            margin-bottom: 20px;
+            li {
+                display: table-row;
+            }
+            span {
+                display: table-cell;
+            }
+        }
+    }
+}
