@@ -1599,6 +1599,182 @@
       ]
     },
     {
+      "name": "Feora2 - World Aflame",
+      "casterId": "Px04",
+      "faction": "faction_menoth",
+      "levels": [
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "Exemplar Cinerators gain Defensive Line (+1 Arm base to base)",
+          "level": 1,
+          "mustHave": [],
+          "onlyModels": {
+            "ids": [
+              "PJ21",
+              "PJ12",
+              "PJ19",
+              "PJ02",
+              "PJ08",
+              "PJ07",
+              "PJ10",
+              "PJ23",
+              "PE01",
+              "PU01",
+              "PU14",
+              "PU03",
+              "PU07",
+              "PS08",
+              "PS03",
+              "PS05",
+              "PA06",
+              "PA01"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "Extra deployment zone",
+          "level": 2,
+          "mustHave": [
+            {
+              "min": 2,
+              "inMarshal": false,
+              "ids": [
+                "PU14",
+                "PJ08",
+                "PJ07",
+                "PJ19",
+                "PJ23"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "PJ21",
+              "PJ12",
+              "PJ19",
+              "PJ02",
+              "PJ08",
+              "PJ07",
+              "PJ10",
+              "PJ23",
+              "PE01",
+              "PU01",
+              "PU14",
+              "PU03",
+              "PU07",
+              "PS08",
+              "PS03",
+              "PS05",
+              "PA06",
+              "PA01"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "Flameguard Cleansers become cheaper",
+          "level": 3,
+          "mustHave": [
+            {
+              "min": 2,
+              "inMarshal": false,
+              "ids": [
+                "PU07"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "PJ21",
+              "PJ12",
+              "PJ19",
+              "PJ02",
+              "PJ08",
+              "PJ07",
+              "PJ10",
+              "PJ23",
+              "PE01",
+              "PU01",
+              "PU14",
+              "PU03",
+              "PU07",
+              "PS08",
+              "PS03",
+              "PS05",
+              "PA06",
+              "PA01"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "You gain + 1 on your starting roll for the game.",
+          "level": 4,
+          "mustHave": [
+            {
+              "min": 1,
+              "inMarshal": false,
+              "ids": [
+                "PJ21"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "PJ21",
+              "PJ12",
+              "PJ19",
+              "PJ02",
+              "PJ08",
+              "PJ07",
+              "PJ10",
+              "PJ23",
+              "PE01",
+              "PU01",
+              "PU14",
+              "PU03",
+              "PU07",
+              "PS08",
+              "PS03",
+              "PS05",
+              "PA06",
+              "PA01"
+            ]
+          }
+        }
+      ],
+      "availableModels": [
+        {
+          "type": "WARJACKS",
+          "models": "Protectorate non-character warjacks that have weapons with one or more of continuous Fire, critical Fire or damage Type Fire"
+        },
+        {
+          "type": "UNITS",
+          "models": "Chor, Exemplar Cineators, Flameguard Cleansers, Holy Zealotsn"
+        },
+        {
+          "type": "SOLOS",
+          "models": "Hierophant, Reclaimer, Wrack"
+        },
+        {
+          "type": "BATTLE ENGINES",
+          "models": "Vessel of Judgment"
+        }
+      ]
+    },
+    {
       "name": "Harbinger - Army of the Righteous",
       "casterId": "PW06",
       "faction": "faction_menoth",
