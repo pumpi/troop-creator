@@ -4036,6 +4036,292 @@
           "models": "Paingiver solos"
         }
       ]
+    },
+    {
+      "name": "epic Morghoul - Hit Squad",
+      "casterId": "Sx01",
+      "faction": "faction_skorne",
+      "levels": [
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "The Bloodrunner Master Tormentor gains Shadow Whip",
+          "level": 1,
+          "mustHave": [],
+          "onlyModels": {
+            "ids": [
+              "SB01",
+              "SB02",
+              "SB03",
+              "SB04",
+              "SB05",
+              "SB06",
+              "SB07",
+              "SB08",
+              "SB09",
+              "SB11",
+              "SB12",
+              "SB14",
+              "SB15",
+              "SB17",
+              "SB18",
+              "SB19",
+              "SB20",
+              "SB21",
+              "SB22",
+              "SU01",
+              "SU05",
+              "IU01",
+              "IU02",
+              "IU03",
+              "IU04",
+              "IU05",
+              "IU06",
+              "IU07",
+              "IU08",
+              "IU09",
+              "UA_for_IU03",
+              "SS01",
+              "SS03",
+              "SS07"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "Your opponent's models/units lose Advance Deployment",
+          "level": 2,
+          "mustHave": [
+            {
+              "min": 2,
+              "inMarshal": false,
+              "ids": [
+                "SS03",
+                "SU01"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "SB01",
+              "SB02",
+              "SB03",
+              "SB04",
+              "SB05",
+              "SB06",
+              "SB07",
+              "SB08",
+              "SB09",
+              "SB11",
+              "SB12",
+              "SB14",
+              "SB15",
+              "SB17",
+              "SB18",
+              "SB19",
+              "SB20",
+              "SB21",
+              "SB22",
+              "SU01",
+              "SU05",
+              "IU01",
+              "IU02",
+              "IU03",
+              "IU04",
+              "IU05",
+              "IU06",
+              "IU07",
+              "IU08",
+              "IU09",
+              "UA_for_IU03",
+              "SS01",
+              "SS03",
+              "SS07"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [
+            {
+              "id": "SB06",
+              "bonus": 1
+            },
+            {
+              "id": "SB07",
+              "bonus": 1
+            },
+            {
+              "id": "SB08",
+              "bonus": 1
+            },
+            {
+              "id": "SB09",
+              "bonus": 1
+            },
+            {
+              "id": "SB11",
+              "bonus": 1
+            },
+            {
+              "id": "SB13",
+              "bonus": 1
+            },
+            {
+              "id": "SB15",
+              "bonus": 1
+            },
+            {
+              "id": "SB20",
+              "bonus": 1
+            },
+            {
+              "id": "SB21",
+              "bonus": 1
+            }
+          ],
+          "faAlterations": [],
+          "benefit": "Models/units in the army gain Stealth during the first round of the game.",
+          "level": 3,
+          "mustHave": [
+            {
+              "min": 3,
+              "inMarshal": false,
+              "ids": [
+                "SB06",
+                "SB07",
+                "SB08",
+                "SB09",
+                "SB11",
+                "SB13",
+                "SB15",
+                "SB20",
+                "SB21"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "SB01",
+              "SB02",
+              "SB03",
+              "SB04",
+              "SB05",
+              "SB06",
+              "SB07",
+              "SB08",
+              "SB09",
+              "SB11",
+              "SB12",
+              "SB14",
+              "SB15",
+              "SB17",
+              "SB18",
+              "SB19",
+              "SB20",
+              "SB21",
+              "SB22",
+              "SU01",
+              "SU05",
+              "IU01",
+              "IU02",
+              "IU03",
+              "IU04",
+              "IU05",
+              "IU06",
+              "IU07",
+              "IU08",
+              "IU09",
+              "UA_for_IU03",
+              "SS01",
+              "SS03",
+              "SS07"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "The agonizer begins the game with 1 Fury for each Paingiver unit",
+          "level": 4,
+          "mustHave": [
+            {
+              "min": 1,
+              "inMarshal": false,
+              "ids": [
+                "SS01"
+              ],
+              "inBG": false
+            },
+            {
+              "min": 1,
+              "inMarshal": false,
+              "ids": [
+                "SU05"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "SB01",
+              "SB02",
+              "SB03",
+              "SB04",
+              "SB05",
+              "SB06",
+              "SB07",
+              "SB08",
+              "SB09",
+              "SB11",
+              "SB12",
+              "SB14",
+              "SB15",
+              "SB17",
+              "SB18",
+              "SB19",
+              "SB20",
+              "SB21",
+              "SB22",
+              "SU01",
+              "SU05",
+              "IU01",
+              "IU02",
+              "IU03",
+              "IU04",
+              "IU05",
+              "IU06",
+              "IU07",
+              "IU08",
+              "IU09",
+              "UA_for_IU03",
+              "SS01",
+              "SS03",
+              "SS07"
+            ]
+          }
+        }
+      ],
+      "availableModels": [
+        {
+          "type": "WARBEASTS",
+          "models": "Skorne non-character warbeasts"
+        },
+        {
+          "type": "UNITS",
+          "models": "Paingiver units"
+        },
+        {
+          "type": "SOLOS",
+          "models": "Paingiver solos"
+        }
+      ]
     }
   ]
 }

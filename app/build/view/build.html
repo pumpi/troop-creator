@@ -64,7 +64,7 @@
 							(Leader and {{model.min -1}})
 						</span>
 					</span>
-					<span ng-show="!model.useMax" class="col-md-1" ng-class="{'tier-bonus': model.freeModel}">
+					<span ng-show="!model.useMax" class="col-md-1" ng-class="{'tier-bonus': model.freeModel || model.cost != getModelCost(model)}">
 						{{getModelCost(model)}}
 					</span>
 					<span ng-show="model.useMax" class="col-md-1">
