@@ -402,12 +402,7 @@ armyBuilder.controller('buildCtrl',
 				} else if ( /^warjack$|^warbeast$/i.test(model.type) ) {
                     casterPoints = casterPoints - cost;
 				} else {
-                    // Must we use the base cost of model or the max
-                    if ( model.useMax ) {
-                        sumPoints = sumPoints + parseInt(model.costMax);
-                    } else {
-                        sumPoints = sumPoints + cost;
-                    }
+                    sumPoints = sumPoints + cost;
 				}
 			});
 
@@ -521,15 +516,22 @@ armyBuilder.controller('buildCtrl',
         };
 
         // get the real model cost
-        $scope.getModelCost = function(model, checkFree) {
+        $scope.getModelCost = function(model, checkFree, checkMax) {
             if ( typeof(checkFree) === 'undefined' ) checkFree = false;
+            if ( typeof(checkMax) === 'undefined' ) checkMax = false;
+
+            if ( ( checkMax && model.hasOwnProperty('costMax') ) || ( model.hasOwnProperty('useMax') && model.useMax ) ) {
+                var rCost = parseInt(model.costMax);
+            } else {
+                var rCost = parseInt(model.cost);
+            }
 
             // only run this checks if we have an tier
             if ( $scope.tier ) {
                 // Check for bonus points for Models
                 var bonus = $scope.costAlterations[model.id];
                 if (bonus) {
-                    return parseInt(model.cost - bonus);
+                    rCost -= bonus;
                 }
 
                 // Check for free models
@@ -552,12 +554,12 @@ armyBuilder.controller('buildCtrl',
                         if (!hasFree && isFree) return false;
                     });
                     if (!hasFree && isFree) {
-                        return parseInt(0);
+                        rCost = parseInt(0);
                     }
                 }
             }
 
-            return parseInt(model.cost);
+            return rCost;
         };
 
         // get the real model FA

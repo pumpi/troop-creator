@@ -10,9 +10,9 @@
             <div class="accordion-container accordion-{{$index}}">
                 <ul>
                     <li ng-click="addModel(model)" ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in filtered | orderBy: 'name'">
-                        <span class="col-md-9">{{model.name}}{{(model.baseSize) ? ' (' + model.baseSize : ''}}{{(model.baseSize !== model.maxSize) ? '/' + model.maxSize : ''}}{{(model.baseSize) ? ')' : ''}}</span>
+                        <span class="col-md-9">{{model.name}}</span>
                         <span class="col-md-1" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
-                        <span class="col-md-1" ng-class="{'tier-bonus': model.cost != getModelCost(model, 1)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + model.costMax : ''}}</span>
+                        <span class="col-md-1" ng-class="{'tier-bonus': model.cost != getModelCost(model, 1)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + getModelCost(model, 1, 1) : ''}}</span>
                         <span class="col-md-1"><i class="fa fa-plus-circle add-to-list"></i></span>
                         <span class="clearfix"></span>
                     </li>
@@ -64,12 +64,9 @@
 							(Leader and {{model.min -1}})
 						</span>
 					</span>
-					<span ng-show="!model.useMax" class="col-md-1" ng-class="{'tier-bonus': model.freeModel || model.cost != getModelCost(model)}">
+					<span class="col-md-1" ng-class="{'tier-bonus': model.freeModel || model.cost != getModelCost(model)}">
 						{{getModelCost(model)}}
 					</span>
-					<span ng-show="model.useMax" class="col-md-1">
-						{{model.costMax}}
-                    </span>
 					<span class="col-md-1">
 						<i ng-click="removeModel($index)" class="fa fa-minus-circle remove-from-list"></i>
 					</span>
