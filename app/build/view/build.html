@@ -1,58 +1,55 @@
-<div class="row">
-	
-</div>
-<div class="row">
-	<div class="col-md-6" id="left-col-build">
+<div class="cols">
+	<div class="col available-models" id="left-col-build">
+        <div class="open-list" ng-click="openList()">
+            <i class="fa fa-chevron-right"></i>
+            <span>Available models</span>
+        </div>
 		<h2>Available models</h2>
 		<input type="search" ng-model="search" placeholder="Search..." class="form-control">
 		<div class="army-models" ng-repeat="i in notSorted(data)" ng-init="value = data[i]['entries']">
 			<div ng-hide="(filtered = (value | wildcardArmy:search | restricted:this)).length == 0" class="headline accordion-click" ng-click="accordion($index)" ng-class="{mercenary: data[i].add.indexOf('mercenary') > -1, minions: data[i].add.indexOf('minion') > -1}">{{data[i]['label']}} <span>({{filtered.length}})</span></div>
             <div class="accordion-container accordion-{{$index}}">
                 <ul>
-                    <li ng-click="addModel(model)" ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in filtered | orderBy: 'name'">
-                        <span class="col-md-9">{{model.name}}</span>
-                        <span class="col-md-1" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
-                        <span class="col-md-1" ng-class="{'tier-bonus': model.cost != getModelCost(model, 1)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + getModelCost(model, 1, 1) : ''}}</span>
-                        <span class="col-md-1"><i class="fa fa-plus-circle add-to-list"></i></span>
-                        <span class="clearfix"></span>
+                    <li class="model" ng-click="addModel(model)" ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in filtered | orderBy: 'name'">
+                        <div class="model-name">{{model.name}}</div>
+                        <div class="model-options">
+                            <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
+                            <span class="model-cost" ng-class="{'tier-bonus': model.cost != getModelCost(model, 1)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + getModelCost(model, 1, 1) : ''}}</span>
+                            <span class="model-add"><i class="fa fa-plus-circle add-to-list"></i></span>
+                        </div>
                     </li>
                 </ul>
             </div>
 		</div>
 	</div>
 
-	<div class="col-md-6">
+	<div class="col">
 		<h2>Troop list  <span class="tier-stars" ng-hide="!gameTier" data-toggle="modal" data-target="#tier-level-info">
             <i class="fa fa-star" ng-click="modalLevel = 0" ng-class="{active: tierLevel >= 1}"></i>
             <i class="fa fa-star" ng-click="modalLevel = 1" ng-class="{active: tierLevel >= 2}"></i>
             <i class="fa fa-star" ng-click="modalLevel = 2" ng-class="{active: tierLevel >= 3}"></i>
             <i class="fa fa-star" ng-click="modalLevel = 3" ng-class="{active: tierLevel >= 4}"></i>
         </span></h2>
-        <div class="row">
-			<div class="col-md-2 max-caster">
+        <div class="list-options">
+			<div class="max-caster">
 				<input type="text" ng-model="gameCaster" ng-change="calculateAvailablePoints()" placeholder="Caster" class="form-control">
 			</div>
-			<div class="col-md-2 max-points">
+			<div class="max-points">
 				<input type="text" ng-model="gamePoints" ng-change="calculateAvailablePoints()" placeholder="Punkte" class="form-control">
 			</div>
-            <div class="col-md-6 tiers">
+            <div class="tiers">
                 <select class="form-control" ng-model="gameTier" ng-change="changeTier()" ng-options="index as tier.name for (index, tier) in tiers">
                     <option value="">select tier list ...</option>
                 </select>
             </div>
-            <div class="col-md-2">
-                <button type="button" class="btn pull-right" data-toggle="modal" data-target="#plainTextOutput" tooltip title="Export list as text">
-                    <i class="fa fa-file-text-o"></i>
-                </button>
-            </div>
 		</div>
 		<div class="selected-models army-models">
 			<ul>
-				<li ng-repeat="model in selectedModels track by $index">
-					<span class="col-md-10">
+				<li class="model" ng-repeat="model in selectedModels track by $index">
+                    <div class="model-name">
                         <i class="fa fa-level-up fa-rotate-90" ng-show="model.bonded >= 0"></i>
-						{{model.name}} 
-						<span ng-show="model.max && model.min !== model.max">
+						{{model.name}}
+                        <span ng-show="model.max && model.min !== model.max">
 							(Leader and 
 							<span class="btn-group btn-group-xs">
 								<button type="button" class="btn btn-default" ng-class="{'active btn-success': !model.useMax}" ng-click="model.useMax = false; calculateAvailablePoints();">{{model.min -1}}</button>
@@ -63,23 +60,31 @@
 						<span ng-show="model.max && model.min === model.max">
 							(Leader and {{model.min -1}})
 						</span>
-					</span>
-					<span class="col-md-1" ng-class="{'tier-bonus': model.freeModel || model.cost != getModelCost(model)}">
-						{{getModelCost(model)}}
-					</span>
-					<span class="col-md-1">
-						<i ng-click="removeModel($index)" class="fa fa-minus-circle remove-from-list"></i>
-					</span>
-					<span class="clearfix"></span>
+                    </div>
+					<div class="model-options">
+                        <span class="model-cost" ng-class="{'tier-bonus': model.freeModel || model.cost != getModelCost(model)}">
+                            {{getModelCost(model)}}
+                        </span>
+                        <span class="model-remove">
+                            <i ng-click="removeModel($index)" class="fa fa-minus-circle remove-from-list"></i>
+                        </span>
+					</div>
 				</li>
 			</ul>
             <div class="drop-model" data-drop="true" jqyoui-droppable="{onDrop:'dropCallback'}">
                 Drop Here
             </div>
-			{{countType('warlock|warcaster')}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Points
+            <div class="selected-counts">
+			    {{countType('warlock|warcaster')}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Points
+            </div>
 		</div>
 
-        <button class="btn btn-danger pull-right" ng-click="clearList()"><i class="fa fa-trash"></i></button>
+        <div class="btn-group pull-right">
+            <button class="btn" data-toggle="modal" data-target="#shareList" tooltip title="Share list"><i class="fa fa-share-alt"></i></button>
+            <button class="btn" ng-click="saveListAsFav()" tooltip title="Save list as favorit"><i class="fa fa-save"></i></button>
+            <button class="btn" data-toggle="modal" data-target="#plainTextOutput" tooltip title="Export list as text"><i class="fa fa-file-text-o"></i></button>
+            <button class="btn btn-danger" ng-click="clearList()"><i class="fa fa-trash"></i></button>
+        </div>
 
         <!-- Modal plain text output-->
         <div class="modal fade" id="plainTextOutput" tabindex="-1" role="dialog">
@@ -99,6 +104,26 @@
                             <span ng-show="model.bonded >= 0">* </span>{{model.name}} <span
                                 ng-show="!model.useMax"><strong>(<span ng-show="checkIsCaster(model)">-</span>{{model.cost}} Pts.)</strong></span><span
                                 ng-show="model.useMax"><strong>>({{model.costMax}} Pts.)</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal share list-->
+        <div class="modal fade" id="shareList" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title"><i class="fa fa-share-alt"></i> Share your list with the internet</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>You can easily share your list in all social networks or other pages, only copy the link bellow and post it wherever you like.</p>
+                        <p>your config ist store in the url and any other can change something and give you back an new url but your list was not touched.</p>
+                        <div class="input-group">
+                            <div class="input-group-addon"><i class="fa fa-share-alt"></i></div>
+                            <input class="form-control" type="text" onFocus="this.select()" value="{{location.absUrl()}}">
                         </div>
                     </div>
                 </div>

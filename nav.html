@@ -1,7 +1,10 @@
 <nav class="navbar navbar-default" role="navigation">
-	<ul id="top-menu" class="nav nav-justified">
+    <div id="navi-icon" class="navi-icon" ng-click="menuToggle()" ng-class="{'active': menuActive}">
+        <span></span>
+    </div>
+	<ul id="top-menu" class="nav nav-justified" ng-class="{'active': menuActive}">
 		<!-- ng-repeat the examploes array and build one li for one entry and show the navigation -->
-		<li ng-repeat="army in armys" >
+		<li ng-repeat="army in armys" ng-click="menuToggle()">
 			<!-- Use the values of the array to create an a and the name of the nav point -->
 			<a href="#/build/{{army.link}}" id="{{army.link}}" data-system="{{army.system}}" data-faction="{{army.name}}" data-toggle="tooltip" data-placement="bottom" title="{{army.name}}" tooltip><img ng-src="./img/{{army.img}}"></a> <!-- the if no sub -->
 		</li>

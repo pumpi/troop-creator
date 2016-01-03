@@ -3,9 +3,12 @@
 <!-- Binds the content to the boilerplateExamples app -->
 <html lang="de" ng-app="armyBuilder">
 <head>
-
+    <meta charset=utf-8>
     <title>Troop Creator</title>
-	
+    <meta name=viewport content="width=device-width">
+
+    <link href='https://fonts.googleapis.com/css?family=Fredericka+the+Great' rel='stylesheet' type='text/css'>
+
     <link rel="stylesheet" href="./static/armybuilder.css?v=20151226" />
     <link rel="stylesheet" href="./lib/bower/font-awsome/css/font-awesome.css?v=20151226" />
     <link rel="shortcut icon" href="favicon.ico" type="image/png" />
@@ -20,11 +23,12 @@
 
 <div id="wrapper">
 	<div id="header">
-		<a href="#/"><img src="./img/banner.jpg" /></a>
+		<img src="./img/banner.jpg" />
         <img class="beta-logo" src="./img/beta.png" />
+        <a href="#/" class="header-title">Troop Creator</a>
 	</div>
 	<nav-d></nav-d>
-	<div class="container-fluid" id="content" ng-view>
+	<div id="content" ng-view>
 	</div>
 </div>
 

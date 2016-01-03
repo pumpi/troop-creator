@@ -6,19 +6,11 @@ armyBuilder.filter('wildcardArmy', function () {
         if (typeof search !== 'undefined') {
             var searchRegEx = search.replace(/[^A-za-zÄÖÜäöü?]/g, '.*?');
             var thisRegex = new RegExp('.*?' + searchRegEx + '.*?', 'i');
+
+            models = $.grep(models, function (model) {
+                return thisRegex.test(model.name);
+            });
         }
-
-        models = $.grep(models, function (model) {
-            if (typeof search !== 'undefined') {
-                if (thisRegex.test(model.name)) {
-                    return true
-                }
-            } else {
-                return true
-            }
-            return false;
-        });
-
         return models;
     };
 });
@@ -51,7 +43,7 @@ armyBuilder.filter('restricted', function () {
     };
 });
 
-// Controller to build the examplelist and the top Navigation
+// Controller to display the troop creator
 armyBuilder.controller('buildCtrl',
     function ($scope, $http, $routeParams, $location) {
     
@@ -84,9 +76,10 @@ armyBuilder.controller('buildCtrl',
                 $scope.faction          = $('#' + $routeParams.army).data('faction');
                 $scope.factionId        = 'faction_' + $routeParams.army;
                 $scope.system           = $('#' + $routeParams.army).data('system');
+                $scope.location         = $location;
 
 
-                // Now we get the mercenarys an minions
+                // Now we get the mercenarys and minions
                 $.each(['minion', 'mercenary'], function (k, v) {
                     if ( v !== $routeParams.army ) {
                         $http.get('./data/' + v + '.json').
@@ -114,6 +107,11 @@ armyBuilder.controller('buildCtrl',
                                         $scope.data.push(group);
                                     }
                                 });
+
+                                if ( v === 'mercenary' || $routeParams.army === 'mercenary' ) {
+                                    //restore from URL after we load the last data
+                                    $scope.restoreSearch();
+                                }
                             }
                         ). error (
                             function (data) {
@@ -123,8 +121,7 @@ armyBuilder.controller('buildCtrl',
                     }
                 });
 
-                //restore from URL
-                $scope.restoreSearch();
+
 
                 var favicon = new Favico();
                 var image = $('#' + $routeParams.army + ' img')[0];
@@ -156,6 +153,10 @@ armyBuilder.controller('buildCtrl',
                 $this.slideToggle();
             }
             $this.parent().siblings().find('.accordion-container').slideUp();
+        };
+
+        $scope.openList = function() {
+            $('#left-col-build').toggleClass('active');
         };
 
         // Check if model an warcaster/warlock
@@ -385,8 +386,11 @@ armyBuilder.controller('buildCtrl',
         };
 
         // Calculate the available Points
-        $scope.calculateAvailablePoints = function() {
-            $scope.updateSearch();
+        $scope.calculateAvailablePoints = function(noUpdateSearch) {
+            if ( typeof(noUpdateSearch) === 'undefined' ) noUpdateSearch = false;
+            if ( !noUpdateSearch ) {
+                $scope.updateSearch();
+            }
             $scope.calculateTierLevel();
             $scope.checkFreeSelected();
 
@@ -722,6 +726,36 @@ armyBuilder.controller('buildCtrl',
         $scope.clearList = function() {
             $scope.selectedModels = [];
             $scope.calculateAvailablePoints();
+        };
+
+        // Try save the link in bookmark
+        $scope.saveListAsFav = function() {
+            var bookmarkURL = window.location.href;
+            var bookmarkTitle = document.title;
+
+            if ('addToHomescreen' in window && window.addToHomescreen.isCompatible) {
+                // Mobile browsers
+                addToHomescreen({ autostart: false, startDelay: 0 }).show(true);
+            } else if (window.sidebar && window.sidebar.addPanel) {
+                // Firefox version < 23
+                window.sidebar.addPanel(bookmarkTitle, bookmarkURL, '');
+            } else if ((window.sidebar && /Firefox/i.test(navigator.userAgent)) || (window.opera && window.print)) {
+                // Firefox version >= 23 and Opera Hotlist
+                $(this).attr({
+                    href: bookmarkURL,
+                    title: bookmarkTitle,
+                    rel: 'sidebar'
+                }).off(e);
+                return true;
+            } else if (window.external && ('AddFavorite' in window.external)) {
+                // IE Favorite
+                window.external.AddFavorite(bookmarkURL, bookmarkTitle);
+            } else {
+                // Other browsers (mainly WebKit - Chrome/Safari)
+                alert('Press ' + (/Mac/i.test(navigator.userAgent) ? 'Cmd' : 'Ctrl') + '+D to bookmark this page.');
+            }
+
+            return false;
         };
     }
 );

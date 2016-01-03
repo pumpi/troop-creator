@@ -1,4 +1,4 @@
-/*! armybuilder 2015-12-29 */
+/*! armybuilder 2016-01-03 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4888,14 +4888,32 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+html {
+  font-size: 62.5%; }
+
 html, body {
   height: 100%; }
+
+body {
+  font-size: 1.4rem; }
 
 /*
  * GENERIC
  *****************************/
-.row {
-  margin-bottom: 10px; }
+img {
+  max-width: 100%;
+  height: auto; }
+
+h1, h2, h3, h4, h5, p {
+  margin-top: 0; }
+
+.cols {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap; }
+  .cols .col {
+    width: 100%;
+    max-width: 49%; }
 
 /*
  * WRAPPER
@@ -4919,7 +4937,16 @@ html, body {
     position: absolute;
     right: 10px;
     top: 10px;
-    width: 300px; }
+    width: 300px;
+    max-width: 30%; }
+  #header .header-title {
+    position: absolute;
+    bottom: 10px;
+    left: 30px;
+    color: #FFF;
+    font-size: 8rem;
+    font-family: 'Fredericka the Great', cursive;
+    text-shadow: 0 0 30px #000; }
 
 /*
  * MENU
@@ -4931,9 +4958,53 @@ html, body {
     .navbar #top-menu > li > a:hover {
       background: #CCC; }
     .navbar #top-menu > li > a > img {
-      max-width: 40px; }
+      max-height: 40px;
+      max-width: 100%; }
     .navbar #top-menu .active {
       background: #CCC; }
+
+.navi-icon {
+  cursor: pointer;
+  display: none;
+  float: none;
+  height: 30px;
+  margin: 0 auto;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  transition: all .3s;
+  width: 34px;
+  font-size: 12px;
+  z-index: 130; }
+  .navi-icon > span {
+    background-color: #000;
+    display: block;
+    height: .3em;
+    margin-top: -.3em;
+    position: absolute;
+    top: 50%;
+    width: 90%; }
+    .navi-icon > span:after, .navi-icon > span:before {
+      background-color: #000;
+      content: '\00a0';
+      height: 100%;
+      position: absolute;
+      transition: all .3s;
+      width: 100%; }
+    .navi-icon > span:before {
+      -webkit-transform: translateY(-.8em);
+      transform: translateY(-.8em); }
+    .navi-icon > span:after {
+      -webkit-transform: translateY(0.8em);
+      transform: translateY(0.8em); }
+  .navi-icon.active {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg); }
+    .navi-icon.active > span:after, .navi-icon.active > span:before {
+      -webkit-transform: rotate(90deg);
+      transform: rotate(90deg); }
+  .navi-icon.active > span, .navi-icon.active > span:after, .navi-icon.active > span:before {
+    background-color: #666; }
 
 /*
  * CONTENT
@@ -4953,6 +5024,32 @@ html, body {
 
 #left-col-build {
   position: inherit; }
+  #left-col-build .open-list {
+    position: absolute;
+    right: -40px;
+    top: -1px;
+    width: 40px;
+    height: 215px;
+    background: #FFF;
+    border: 1px solid #BBB;
+    border-width: 1px 1px 1px 0;
+    padding: 10px;
+    font-weight: bold;
+    display: none;
+    -webkit-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
+    box-shadow: 3px 8px 14px -5px rgba(0, 0, 0, 0.4);
+    overflow: hidden; }
+    #left-col-build .open-list span {
+      transform-origin: -1% 95%;
+      transform: rotate(90deg);
+      display: inline-block;
+      font-size: 20px;
+      white-space: nowrap; }
+    #left-col-build .open-list .fa {
+      position: absolute;
+      left: 15px;
+      transition: transform .8s; }
 
 .army-models:first-of-type .accordion-container {
   display: block; }
@@ -4980,6 +5077,20 @@ html, body {
     background-color: #A07D65; }
 .army-models .accordion-container {
   display: none; }
+.army-models .model {
+  display: flex;
+  width: 100%; }
+  .army-models .model .model-name {
+    flex: 1;
+    padding-left: 10px; }
+  .army-models .model .model-options {
+    text-align: right; }
+    .army-models .model .model-options > span {
+      margin-right: 10px;
+      min-width: 20px;
+      display: inline-block; }
+      .army-models .model .model-options > span.model-cost {
+        min-width: 30px; }
 .army-models .add-to-list {
   cursor: pointer; }
   .army-models .add-to-list:hover {
@@ -5003,6 +5114,14 @@ html, body {
 
 .selected-models {
   margin: 10px 0; }
+
+.list-options {
+  display: flex;
+  justify-content: space-between; }
+  .list-options .max-caster, .list-options .max-points {
+    width: 15%; }
+  .list-options .tiers {
+    width: 68%; }
 
 .tier-stars {
   font-size: 18px;
@@ -5059,6 +5178,97 @@ html, body {
       display: table-row; }
     .selected-models ul span {
       display: table-cell; } }
+
+/*
+ * RESPONSIVE
+ *****************************/
+@media all and (max-width: 767px) {
+  .cols .col {
+    max-width: 100%; }
+  #header .header-title {
+    font-size: 4rem; }
+  #left-col-build {
+    background: #FFF;
+    position: absolute;
+    left: -85%;
+    width: 85%;
+    z-index: 100;
+    padding: 10px 10px 60px;
+    border: 1px solid #BBB;
+    transition: left .8s;
+    -webkit-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
+    box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4); }
+    #left-col-build .army-models .headline {
+      height: 0;
+      padding: 0;
+      margin: 0;
+      transition: height 0s .8s, padding 0s .8s, margin 0s .8s; }
+    #left-col-build h2 {
+      display: none; }
+    #left-col-build .open-list {
+      display: block; }
+    #left-col-build.active {
+      left: 0;
+      height: auto; }
+      #left-col-build.active .army-models .headline {
+        height: 100%;
+        padding: 5px;
+        margin-top: 10px;
+        transition: height 0s 0s, padding 0s 0s, margin 0s 0s; }
+      #left-col-build.active .open-list .fa {
+        transform: rotate(180deg); }
+  .drop-model {
+    display: none; }
+  .navi-icon {
+    display: block; }
+  .navbar {
+    margin: 0;
+    background: transparent;
+    border: none;
+    min-height: auto; }
+    .navbar #top-menu {
+      position: absolute;
+      display: none;
+      z-index: 110;
+      background: #FFF; }
+      .navbar #top-menu > li > a {
+        text-align: left;
+        padding-left: 30px; }
+        .navbar #top-menu > li > a > img {
+          margin-right: 8px;
+          max-height: 25px; }
+        .navbar #top-menu > li > a:after {
+          content: attr(title);
+          font-size: 1.6rem;
+          color: #000; }
+  #content {
+    padding: 30px 10px 10px 45px; }
+  #wrapper {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none; }
+  .selected-counts {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    background: #333333;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF;
+    z-index: 110; } }
+
+@media all and (max-width: 520px) {
+  #header .header-title {
+    font-size: 3rem; }
+  .list-options .max-caster, .list-options .max-points {
+    width: 20%; }
+  .list-options .tiers {
+    width: 58%; } }
 
 /* */
 /*# sourceMappingURL=armybuilder.css.map */
