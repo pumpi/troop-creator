@@ -1,4 +1,4 @@
-/*! armybuilder 2016-01-03 */
+/*! armybuilder 2016-01-04 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4947,6 +4947,8 @@ h1, h2, h3, h4, h5, p {
     font-size: 8rem;
     font-family: 'Fredericka the Great', cursive;
     text-shadow: 0 0 30px #000; }
+    #header .header-title:hover {
+      text-decoration: none; }
 
 /*
  * MENU
@@ -4954,12 +4956,22 @@ h1, h2, h3, h4, h5, p {
 .navbar {
   border-radius: 0px; }
   .navbar #top-menu {
-    width: 100%; }
-    .navbar #top-menu > li > a:hover {
-      background: #CCC; }
-    .navbar #top-menu > li > a > img {
-      max-height: 40px;
-      max-width: 100%; }
+    width: 100%;
+    display: table-row;
+    margin: 0;
+    padding: 0; }
+    .navbar #top-menu > li {
+      display: table-cell;
+      width: 1%;
+      padding: 5px;
+      text-align: center; }
+      .navbar #top-menu > li > a {
+        display: block; }
+        .navbar #top-menu > li > a:hover {
+          background: #CCC; }
+        .navbar #top-menu > li > a > img {
+          max-height: 40px;
+          max-width: 100%; }
     .navbar #top-menu .active {
       background: #CCC; }
 
@@ -5182,7 +5194,7 @@ h1, h2, h3, h4, h5, p {
 /*
  * RESPONSIVE
  *****************************/
-@media all and (max-width: 767px) {
+@media all and (max-width: 767px), (max-device-width: 1024px) and (orientation: portrait) {
   .cols .col {
     max-width: 100%; }
   #header .header-title {
@@ -5232,16 +5244,19 @@ h1, h2, h3, h4, h5, p {
       display: none;
       z-index: 110;
       background: #FFF; }
-      .navbar #top-menu > li > a {
-        text-align: left;
-        padding-left: 30px; }
-        .navbar #top-menu > li > a > img {
-          margin-right: 8px;
-          max-height: 25px; }
-        .navbar #top-menu > li > a:after {
-          content: attr(title);
-          font-size: 1.6rem;
-          color: #000; }
+      .navbar #top-menu > li {
+        display: block;
+        width: 100%; }
+        .navbar #top-menu > li > a {
+          text-align: left;
+          padding-left: 30px; }
+          .navbar #top-menu > li > a > img {
+            margin-right: 8px;
+            max-height: 25px; }
+          .navbar #top-menu > li > a:after {
+            content: attr(title);
+            font-size: 1.6rem;
+            color: #000; }
   #content {
     padding: 30px 10px 10px 45px; }
   #wrapper {
