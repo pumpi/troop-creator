@@ -771,6 +771,10 @@
             {
               "id": "YU01",
               "bonus": 1
+            },
+            {
+              "id": "YU11",
+              "bonus": 1
             }
           ],
           "faAlterations": [
