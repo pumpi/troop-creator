@@ -30,7 +30,7 @@ armyBuilder.filter('restricted', function () {
                     $.each(model.restricted_to, function(id, val) {
                         if ( $scope.getModelById(val) ) {
                             found = true;
-                            return found;
+                            return false;
                         }
                     });
                     return found;
@@ -248,7 +248,7 @@ armyBuilder.controller('buildCtrl',
                         }
                     } else {
                         var found = false;
-                        angular.forEach(model.restricted_to, function(val) {
+                        $.each(model.restricted_to, function(key, val) {
                             if ($scope.selectedModels[i].id === val ) {
                                 found = true;
                                 return false;
@@ -314,15 +314,27 @@ armyBuilder.controller('buildCtrl',
                         }
                     }
                 } else if (model.hasOwnProperty('restricted_to')) {
-                    var count = $scope.selectedModels.length - 1
+                    var count = $scope.selectedModels.length - 1;
                     for (var i = 0; i <= count; i++) {
-                        if ($scope.selectedModels[i].id === model.restricted_to) {
-                            if (i !== count && $scope.selectedModels[(i + 1)].id !== model.id) {
-                                findIndex = i;
-                                break;
-                            } else if ( i === count ) {
-                                findIndex = i;
+                        if ( i === count ) {
+                            findIndex = i;
+                        }
+                        else if (typeof model.restricted_to === 'string') {
+                            if ($scope.selectedModels[i].id === model.restricted_to) {
+                                if (i !== count && $scope.selectedModels[(i + 1)].id !== model.id) {
+                                    findIndex = i;
+                                }
                             }
+                        } else {
+                            $.each(model.restricted_to, function(key, val) {
+                                if ($scope.selectedModels[i].id === val ) {
+                                    findIndex = i;
+                                    return false;
+                                }
+                            });
+                        }
+                        if ( findIndex ) {
+                            break;
                         }
                     }
                 }

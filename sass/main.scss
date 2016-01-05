@@ -457,7 +457,7 @@ h1, h2, h3, h4, h5, p {
         margin: 0;
         background: transparent;
         border: none;
-        min-height: auto;
+        min-height: inherit;
         #top-menu {
             position: absolute;
             display: none;
