@@ -2541,10 +2541,6 @@
           "costAlterations": [],
           "faAlterations": [
             {
-              "id": "CU13_mercs",
-              "bonus": 512
-            },
-            {
               "id": "CU15_mercs",
               "bonus": 512
             }
