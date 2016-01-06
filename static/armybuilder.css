@@ -1,4 +1,4 @@
-/*! armybuilder 2016-01-05 */
+/*! armybuilder 2016-01-06 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4963,9 +4963,9 @@ h1, h2, h3, h4, h5, p {
     .navbar #top-menu > li {
       display: table-cell;
       width: 1%;
-      padding: 5px;
       text-align: center; }
       .navbar #top-menu > li > a {
+        padding: 5px;
         display: block; }
         .navbar #top-menu > li > a:hover {
           background: #CCC; }
@@ -5063,7 +5063,7 @@ h1, h2, h3, h4, h5, p {
       left: 15px;
       transition: transform .8s; }
 
-.army-models:first-of-type .accordion-container {
+.army-models:nth-of-type(2) .accordion-container {
   display: block; }
 .army-models ul {
   margin: 0;
@@ -5126,6 +5126,11 @@ h1, h2, h3, h4, h5, p {
 
 .selected-models {
   margin: 10px 0; }
+
+.selected-counts {
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding-top: 15px; }
 
 .list-options {
   display: flex;

@@ -306,6 +306,12 @@ h1, h2, h3, h4, h5, p {
     margin: 10px 0;
 }
 
+.selected-counts {
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding-top: 15px;
+}
+
 .list-options {
     display: flex;
     justify-content: space-between;
