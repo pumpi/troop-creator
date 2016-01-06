@@ -88,9 +88,9 @@ h1, h2, h3, h4, h5, p {
         & > li {
             display: table-cell;
             width: 1%;
-            padding: 5px;
             text-align: center;
             & > a {
+                padding: 5px;
                 display: block;
                 &:hover {
                     background: #CCC;
@@ -214,7 +214,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .army-models {
-    &:first-of-type {
+    &:nth-of-type(2) {
         .accordion-container {
             display: block;
         }
