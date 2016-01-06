@@ -62,7 +62,7 @@
 						</span>
                     </div>
 					<div class="model-options">
-                        <span class="model-cost" ng-class="{'tier-bonus': model.freeModel || model.cost != getModelCost(model)}">
+                        <span class="model-cost" ng-class="{'tier-bonus': model.freeModel || getModelCost(model, false, model.useMax) != getModelCost(model)}">
                             {{getModelCost(model)}}
                         </span>
                         <span class="model-remove">

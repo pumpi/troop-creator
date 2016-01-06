@@ -240,7 +240,8 @@ armyBuilder.controller('buildCtrl',
             }
 
             // The model only can attached to but not  set the base model
-            if ( model.hasOwnProperty('restricted_to') ) {
+            // restricted_to is in lesser warlock the same naming for other use
+            if ( model.hasOwnProperty('restricted_to') && !/lesserwarlock|journeyman|marshal/i.test(model.type) ) {
             	for (var i = 0, len = $scope.selectedModels.length; i < len; i++) {
                     if (typeof model.restricted_to === 'string') {
                         if ($scope.selectedModels[i].id === model.restricted_to || model.restricted_to === '*') {
@@ -532,11 +533,11 @@ armyBuilder.controller('buildCtrl',
         };
 
         // get the real model cost
-        $scope.getModelCost = function(model, checkFree, checkMax) {
+        $scope.getModelCost = function(model, checkFree, getMax) {
             if ( typeof(checkFree) === 'undefined' ) checkFree = false;
-            if ( typeof(checkMax) === 'undefined' ) checkMax = false;
+            if ( typeof(getMax) === 'undefined' ) getMax = false;
 
-            if ( ( checkMax && model.hasOwnProperty('costMax') ) || ( model.hasOwnProperty('useMax') && model.useMax ) ) {
+            if ( ( getMax && model.hasOwnProperty('costMax') ) || ( model.hasOwnProperty('useMax') && model.useMax ) ) {
                 var rCost = parseInt(model.costMax);
             } else {
                 var rCost = parseInt(model.cost);
