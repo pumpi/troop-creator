@@ -1074,7 +1074,7 @@
           "level": 2,
           "mustHave": [
             {
-              "min": 2,
+              "min": 1,
               "inMarshal": false,
               "ids": [
                 "OB18"
