@@ -579,6 +579,20 @@ armyBuilder.controller('buildCtrl',
             return rCost;
         };
 
+        // Get true if this model with Bonus points
+        $scope.isBonusCost = function(model) {
+            var bonus = false;
+            if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 ) {
+                bonus = true;
+            } else if ( model.hasOwnProperty('useMax') && model.useMax === 1 && model.costMax != $scope.getModelCost(model, 1) ) {
+                bonus = true;
+            } else if ( model.cost != $scope.getModelCost(model, 1) ) {
+                bonus = true;
+            }
+
+            return bonus;
+        };
+
         // get the real model FA
         $scope.getModelFa = function(model) {
             // only run this checks if we have an tier and not an character

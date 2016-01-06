@@ -14,7 +14,7 @@
                         <div class="model-name">{{model.name}}</div>
                         <div class="model-options">
                             <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
-                            <span class="model-cost" ng-class="{'tier-bonus': model.cost != getModelCost(model, 1)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + getModelCost(model, 1, 1) : ''}}</span>
+                            <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + getModelCost(model, 1, 1) : ''}}</span>
                             <span class="model-add"><i class="fa fa-plus-circle add-to-list"></i></span>
                         </div>
                     </li>
@@ -62,7 +62,7 @@
 						</span>
                     </div>
 					<div class="model-options">
-                        <span class="model-cost" ng-class="{'tier-bonus': model.freeModel || getModelCost(model, false, model.useMax) != getModelCost(model)}">
+                        <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model)}">
                             {{getModelCost(model)}}
                         </span>
                         <span class="model-remove">
