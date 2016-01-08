@@ -11,7 +11,7 @@
             <div class="accordion-container accordion-{{$index}}">
                 <ul>
                     <li class="model" ng-click="addModel(model)" ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in filtered | orderBy: 'name'">
-                        <div class="model-name">{{model.name}}</div>
+                        <div class="model-name">{{model.id}} - {{model.name}}</div>
                         <div class="model-options">
                             <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
                             <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + getModelCost(model, 1, 1) : ''}}</span>

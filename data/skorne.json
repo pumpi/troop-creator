@@ -667,7 +667,7 @@
   ],
   "tiers": [
     {
-      "name": "Hexeris - Kingdom of Shadow",
+      "name": "Hexeris1 - Kingdom of Shadow",
       "casterId": "Sw03",
       "faction": "faction_skorne",
       "levels": [
@@ -909,7 +909,7 @@
       ]
     },
     {
-      "name": "Makeda - Army of the Western Reaches",
+      "name": "Makeda1 - Army of the Western Reaches",
       "casterId": "Sw02",
       "faction": "faction_skorne",
       "levels": [
@@ -1427,7 +1427,7 @@
       ]
     },
     {
-      "name": "Mordikaar - Legions of the Abyss",
+      "name": "Mordikaar1 - Legions of the Abyss",
       "casterId": "SW06",
       "faction": "faction_skorne",
       "levels": [
@@ -1663,7 +1663,7 @@
       ]
     },
     {
-      "name": "Morghoul - Big Game Hunters",
+      "name": "Morghoul1 - Big Game Hunters",
       "casterId": "Sw01",
       "faction": "faction_skorne",
       "levels": [
@@ -1840,7 +1840,7 @@
       ]
     },
     {
-      "name": "Naaresh - No Pain, No Gain",
+      "name": "Naaresh1 - No Pain, No Gain",
       "casterId": "SW08",
       "faction": "faction_skorne",
       "levels": [
@@ -1873,6 +1873,7 @@
               "SB14",
               "SB15",
               "SB17",
+              "SB19",
               "SB22",
               "SU01",
               "SU05",
@@ -1912,6 +1913,7 @@
               "SB14",
               "SB15",
               "SB17",
+              "SB19",
               "SB22",
               "SU01",
               "SU05",
@@ -1951,6 +1953,7 @@
               "SB14",
               "SB15",
               "SB17",
+              "SB19",
               "SB22",
               "SU01",
               "SU05",
@@ -2000,6 +2003,7 @@
               "SB14",
               "SB15",
               "SB17",
+              "SB19",
               "SB22",
               "SU01",
               "SU05",
@@ -2027,7 +2031,7 @@
       ]
     },
     {
-      "name": "Rasheth - Chain Gang",
+      "name": "Rasheth1 - Chain Gang",
       "casterId": "SW07",
       "faction": "faction_skorne",
       "levels": [
@@ -2274,7 +2278,7 @@
       ]
     },
     {
-      "name": "Xerxis - The Abyssal Cohort (NQ39)",
+      "name": "Xerxis1 - The Abyssal Cohort (NQ39)",
       "casterId": "SW04",
       "faction": "faction_skorne",
       "levels": [
@@ -2503,7 +2507,7 @@
       ]
     },
     {
-      "name": "Xerxis - The fist of Halaak",
+      "name": "Xerxis1 - The Fist of Halaak",
       "casterId": "SW04",
       "faction": "faction_skorne",
       "levels": [
@@ -2538,6 +2542,8 @@
               "SB11",
               "SB13",
               "SB15",
+              "SB20",
+              "SB21",
               "SU05",
               "SU09",
               "SU02",
@@ -2594,6 +2600,8 @@
               "SB11",
               "SB13",
               "SB15",
+              "SB20",
+              "SB21",
               "SU05",
               "SU09",
               "SU02",
@@ -2636,6 +2644,8 @@
               "SB11",
               "SB13",
               "SB15",
+              "SB20",
+              "SB21",
               "SU05",
               "SU09",
               "SU02",
@@ -2677,6 +2687,8 @@
               "SB11",
               "SB13",
               "SB15",
+              "SB20",
+              "SB21",
               "SU05",
               "SU09",
               "SU02",
@@ -2708,7 +2720,7 @@
       ]
     },
     {
-      "name": "epic Xerxis - Footsteps of Giants",
+      "name": "Xerxis2 - Footsteps of Giants",
       "casterId": "Sx04",
       "faction": "faction_skorne",
       "levels": [
@@ -2927,7 +2939,7 @@
       ]
     },
     {
-      "name": "Zaal - Immortal Host",
+      "name": "Zaal1 - Immortal Host",
       "casterId": "SW05",
       "faction": "faction_skorne",
       "levels": [
@@ -3175,7 +3187,7 @@
       ]
     },
     {
-      "name": "epic Zaal - Exalted Legions",
+      "name": "Zaal2 - Exalted Legions",
       "casterId": "Sx05",
       "faction": "faction_skorne",
       "levels": [
@@ -3242,7 +3254,9 @@
                 "SB04",
                 "SB05",
                 "SB12",
-                "SB14"
+                "SB14",
+                "SB15",
+                "SB17"
               ],
               "inBG": false
             }
@@ -3392,7 +3406,7 @@
       ]
     },
     {
-      "name": "epic Hexeris - Practical Magic",
+      "name": "Hexeris2 - Practical Magic",
       "casterId": "Sx03",
       "faction": "faction_skorne",
       "levels": [
@@ -3440,7 +3454,8 @@
               "SS06",
               "SS02",
               "SS09",
-              "SS04"
+              "SS04",
+              "SS08"
             ]
           }
         },
@@ -3505,7 +3520,8 @@
               "SS06",
               "SS02",
               "SS09",
-              "SS04"
+              "SS04",
+              "SS08"
             ]
           }
         },
@@ -3571,7 +3587,8 @@
               "SS06",
               "SS02",
               "SS09",
-              "SS04"
+              "SS04",
+              "SS08"
             ]
           }
         },
@@ -3646,7 +3663,8 @@
               "SS06",
               "SS02",
               "SS09",
-              "SS04"
+              "SS04",
+              "SS08"
             ]
           }
         }
@@ -3667,7 +3685,7 @@
       ]
     },
     {
-      "name": "epic Makeda - Imperishable Dominion",
+      "name": "Makeda2 - Imperishable Dominion",
       "casterId": "Sx02",
       "faction": "faction_skorne",
       "levels": [
@@ -3850,7 +3868,7 @@
       ]
     },
     {
-      "name": "epic Morghoul - Imperial Executioners",
+      "name": "Morghoul2 - Imperial Executioners",
       "casterId": "Sx01",
       "faction": "faction_skorne",
       "levels": [
@@ -4038,7 +4056,7 @@
       ]
     },
     {
-      "name": "epic Morghoul - Hit Squad",
+      "name": "Morghoul2 - Hit Squad",
       "casterId": "Sx01",
       "faction": "faction_skorne",
       "levels": [
