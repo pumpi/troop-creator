@@ -11,7 +11,7 @@
             <div class="accordion-container accordion-{{$index}}">
                 <ul>
                     <li class="model" ng-click="addModel(model)" ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in filtered | orderBy: 'name'">
-                        <div class="model-name">{{model.id}} - {{model.name}}</div>
+                        <div class="model-name">{{model.name}}</div>
                         <div class="model-options">
                             <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
                             <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + getModelCost(model, 1, 1) : ''}}</span>
@@ -38,8 +38,9 @@
 				<input type="text" ng-model="gamePoints" ng-change="calculateAvailablePoints()" placeholder="Punkte" class="form-control">
 			</div>
             <div class="tiers">
-                <select class="form-control" ng-model="gameTier" ng-change="changeTier()" ng-options="index as tier.name for (index, tier) in tiers">
-                    <option value="">select tier list ...</option>
+                <select class="form-control" ng-model="gameTier" ng-change="changeTier()">
+                    <option value="">no tier selected ...</option>
+                    <option ng-repeat="tier in tiersOptions | orderBy: 'label'" value="{{tier.key}}">{{tier.label}}</option>
                 </select>
             </div>
 		</div>

@@ -61,6 +61,7 @@ armyBuilder.controller('buildCtrl',
                 });
 
                 $scope.tiers            = data.tiers;
+                $scope.tiersOptions     = [];
                 $scope.tier             = {};
                 $scope.tierLevel        = 0;
                 $scope.selectedModels   = [];
@@ -79,6 +80,13 @@ armyBuilder.controller('buildCtrl',
                 $scope.system           = $('#' + $routeParams.army).data('system');
                 $scope.location         = $location;
 
+                // We must convert the Tiers in an array for select
+                $.each(data.tiers, function(key, value) {
+                    $scope.tiersOptions.push({
+                        key: key,
+                        label: value.name
+                    });
+                });
 
                 // Now we get the mercenarys and minions
                 $.each(['minion', 'mercenary'], function (k, v) {
@@ -751,6 +759,7 @@ armyBuilder.controller('buildCtrl',
 
         // callback if the tier changed
         $scope.changeTier = function() {
+            console.log(typeof $scope.tiers);
             $scope.tier = $scope.tiers[$scope.gameTier];
             $scope.clearList();
             if ( $scope.tier.hasOwnProperty('casterId') ) {
