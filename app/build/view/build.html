@@ -61,6 +61,9 @@
 						<span ng-show="model.max && model.min === model.max">
 							(Leader and {{model.min -1}})
 						</span>
+                        <span ng-show="model.max_attach > 1" class="btn-group btn-group-xs">
+                            <button type="button" class="btn btn-default" ng-repeat="i in model.max_attach | range" ng-class="{'active btn-success': i === model.attached}" ng-click="model.attached = i; calculateAvailablePoints();" ng-disabled="canUseAttached(model, i)">{{i}}</button>
+                        </span>
                     </div>
 					<div class="model-options">
                         <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model)}">
@@ -76,14 +79,14 @@
                 Drop Here
             </div>
             <div class="selected-counts">
-			    {{countType('warlock|warcaster')}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Points
+			    {{countSelectedModel('warlock|warcaster')}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Points
             </div>
 		</div>
 
         <div class="btn-group pull-right">
             <button class="btn" data-toggle="modal" data-target="#shareList" tooltip title="Share list"><i class="fa fa-share-alt"></i></button>
             <button class="btn" ng-click="saveListAsFav()" tooltip title="Save list as favorit"><i class="fa fa-save"></i></button>
-            <button class="btn" tooltip title="Print your list"><i class="fa fa-print" onclick="window.print();"></i></button>
+            <button class="btn" tooltip title="Print your list" onClick="window.print()"><i class="fa fa-print" ></i></button>
             <button class="btn" data-toggle="modal" data-target="#plainTextOutput" tooltip title="Export list as text"><i class="fa fa-file-text-o"></i></button>
             <button class="btn btn-danger" ng-click="clearList()"><i class="fa fa-trash"></i></button>
         </div>
@@ -99,7 +102,7 @@
                     <div class="modal-body">
                         System: <strong>{{system}}</strong><br />
                         Faction: <strong>{{faction}}</strong><br />
-                        Caster: <strong>{{countType('warlock|warcaster')}} / {{gameCaster}}</strong><br />
+                        Caster: <strong>{{countSelectedModle('warlock|warcaster')}} / {{gameCaster}}</strong><br />
                         Points: <strong>{{points}} / {{gamePoints}}</strong><br />
 
                         <div ng-repeat="model in selectedModels track by $index">

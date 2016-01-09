@@ -556,6 +556,7 @@
           "fa": "2",
           "cost": 1,
           "restricted_to": "KU10",
+          "max_attach": 3,
           "faction": "faction_khador",
           "id": "KA05",
           "type": "WA"
@@ -565,6 +566,7 @@
           "fa": "2",
           "cost": 1,
           "restricted_to": "KU06",
+          "max_attach": 3,
           "faction": "faction_khador",
           "id": "KA03",
           "type": "WA"

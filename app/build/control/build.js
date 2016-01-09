@@ -1,49 +1,5 @@
 ﻿'use strict';
 
-// Wildcard Filter for Army List builder
-armyBuilder.filter('wildcardArmy', function () {
-    return function (models, search) {
-        if (typeof search !== 'undefined') {
-            var searchRegEx = search.replace(/[^A-za-zÄÖÜäöü?]/g, '.*?');
-            var thisRegex = new RegExp('.*?' + searchRegEx + '.*?', 'i');
-
-            models = $.grep(models, function (model) {
-                return thisRegex.test(model.name);
-            });
-        }
-        return models;
-    };
-});
-
-// Filter the model who not have the restricted_to model
-armyBuilder.filter('restricted', function () {
-    return function (models, $scope) {
-        models = $.grep(models, function(model) {
-            if ( model.hasOwnProperty('restricted_to') ) {
-
-                if (typeof model.restricted_to === 'string') {
-                    if ($scope.getModelById(model.restricted_to) || model.restricted_to === '*') {
-                        return true;
-                    }
-                } else {
-
-                    var found = false;
-                    $.each(model.restricted_to, function(id, val) {
-                        if ( $scope.getModelById(val) ) {
-                            found = true;
-                            return false;
-                        }
-                    });
-                    return found;
-                }
-                return false;
-            }
-            return true;
-        });
-        return models;
-    };
-});
-
 // Controller to display the troop creator
 armyBuilder.controller('buildCtrl',
     function ($scope, $http, $routeParams, $location) {
@@ -66,7 +22,7 @@ armyBuilder.controller('buildCtrl',
                 $scope.tierLevel        = 0;
                 $scope.selectedModels   = [];
                 $scope.gameCaster       = 1;
-                $scope.gamePoints       = 20;
+                $scope.gamePoints       = 25;
                 $scope.gameTier         = 0;
                 $scope.modlaLevel       = 0;
                 $scope.points           = 0;
@@ -202,12 +158,12 @@ armyBuilder.controller('buildCtrl',
             }
 
 			// Warlock have max value in selectedModels
-            if ( /^warlock$|^warcaster$/i.test(model.type) && $scope.countType('^warlock$|^warcaster$') >= $scope.gameCaster ) {
+            if ( /^warlock$|^warcaster$/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$') >= $scope.gameCaster ) {
 				return true;
             }
 
 			// No Caster in selectedModels we can not select an Warbeast or Warjack
-            if ( /warbeast|warjack/i.test(model.type) && $scope.countType('^warlock$|^warcaster$') === 0 ) {
+            if ( /warbeast|warjack/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$') === 0 ) {
 				return true;
             }
 
@@ -260,25 +216,15 @@ armyBuilder.controller('buildCtrl',
             // The model only can attached to but not  set the base model
             // restricted_to is in lesser warlock the same naming for other use
             if ( model.hasOwnProperty('restricted_to') && !/lesserwarlock|journeyman|marshal/i.test(model.type) ) {
-            	for (var i = 0, len = $scope.selectedModels.length; i < len; i++) {
-                    if (typeof model.restricted_to === 'string') {
-                        if ($scope.selectedModels[i].id === model.restricted_to || model.restricted_to === '*') {
-                            return false;
-                        }
-                    } else {
-                        var found = false;
-                        $.each(model.restricted_to, function(key, val) {
-                            if ($scope.selectedModels[i].id === val ) {
-                                found = true;
-                                return false;
-                            }
-                        });
-                        if (found === true ) {
-                            return false;
-                        }
-                    }
-				}
-				return true;
+            	var search = model.restricted_to;
+                console.log(model.restricted_to.join);
+                if (typeof model.restricted_to !== 'string') {
+                    search = model.restricted_to.join('|');
+                }
+
+                var countRestricted = $scope.countSelectedModel(search, 'id'),
+                    countModel = $scope.countSelectedModel(model.id, 'id');
+                return !(countRestricted > 0 && countRestricted > countModel);
             }
 
             // All its fine we can activate the model
@@ -291,13 +237,14 @@ armyBuilder.controller('buildCtrl',
             return tier.levels[0].onlyModels.ids.indexOf(model.id) === -1;
         };
 
-        // count all types in list
-        $scope.countType = function(type) {
+        // count models with regex in selected list
+        $scope.countSelectedModel = function(match, type) {
+            if ( typeof(type) === 'undefined' ) type = 'type';
             var count = 0;
-            var matcher = new RegExp(type, "i");
+            var matcher = new RegExp(match, 'i');
             if ( $scope.selectedModels ) {
                 $.each($scope.selectedModels, function (key, selectedModel) {
-                    if (matcher.test(selectedModel.type)) {
+                    if (matcher.test(selectedModel[type])) {
                         count++;
                     }
                 });
@@ -321,6 +268,11 @@ armyBuilder.controller('buildCtrl',
         $scope.addModel = function(model) {
             if ( !$scope.checkModelAvailable(model) ) {
                 var copy = angular.copy(model);
+
+                // its an Weapon Attachmend we need an option
+                if ( /^wa$/i.test(model.type) ) {
+                    copy.attached = 1;
+                }
 
                 // If type warbeast or warjack we must add it after the last warbeast/warjack or after the last warlock/warcaster
                 // If baseUnit set we must add this model to an unit
@@ -372,6 +324,8 @@ armyBuilder.controller('buildCtrl',
                 if (findIndex !== false) {
                     copy.bonded = 1;
                     $scope.selectedModels.splice(findIndex + 1, 0, copy);
+                } else if ( $scope.countSelectedModel('^warlock|^warcaster') === 0 && /^warlock|^warcaster/i.test(copy.type) ) {
+                    $scope.selectedModels.splice(0, 0, copy);
                 } else {
                     $scope.selectedModels.push(copy);
                 }
@@ -414,6 +368,11 @@ armyBuilder.controller('buildCtrl',
         // Is there enough points to use max size
         $scope.canUseMax = function(model) {
        		return ( !model.useMax && ( parseInt($scope.gamePoints) - parseInt($scope.points) + parseInt(model.cost) ) < parseInt(model.costMax) );
+        };
+
+        // Is there enough points to change the attached
+        $scope.canUseAttached = function(model, i) {
+            return ( model.attached < i && ( parseInt($scope.gamePoints) - parseInt($scope.points) + parseInt(model.cost * model.attached) ) < parseInt(model.cost * i) );
         };
 
         // Calculate the available Points
@@ -554,11 +513,14 @@ armyBuilder.controller('buildCtrl',
         $scope.getModelCost = function(model, checkFree, getMax) {
             if ( typeof(checkFree) === 'undefined' ) checkFree = false;
             if ( typeof(getMax) === 'undefined' ) getMax = false;
+            var rCost;
 
             if ( ( getMax && model.hasOwnProperty('costMax') ) || ( model.hasOwnProperty('useMax') && model.useMax ) ) {
-                var rCost = parseInt(model.costMax);
+                rCost = parseInt(model.costMax);
+            } else if ( model.hasOwnProperty('attached') ) {
+                rCost = parseInt(model.cost * model.attached);
             } else {
-                var rCost = parseInt(model.cost);
+                rCost = parseInt(model.cost)
             }
 
             // only run this checks if we have an tier
@@ -604,7 +566,9 @@ armyBuilder.controller('buildCtrl',
                 bonus = true;
             } else if ( model.hasOwnProperty('useMax') && model.useMax === 1 && model.costMax != $scope.getModelCost(model, 1) ) {
                 bonus = true;
-            } else if ( model.cost != $scope.getModelCost(model, 1) ) {
+            } else if ( model.hasOwnProperty('attached') && ( model.cost * model.attached ) != $scope.getModelCost(model, 1) ) {
+                bonus = true;
+            } else if ( !model.hasOwnProperty('attached') && model.cost != $scope.getModelCost(model, 1) ) {
                 bonus = true;
             }
 
@@ -649,7 +613,7 @@ armyBuilder.controller('buildCtrl',
             //get the selectedModels as string
             var search = {},
                 sel = [];
-            angular.forEach($scope.selectedModels, function(model) {
+            $.each($scope.selectedModels, function(k, model) {
                 var modStr = model.id;
 
                 //an unit have an max size
@@ -666,6 +630,12 @@ armyBuilder.controller('buildCtrl',
                 if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 ) {
                     modStr += ':freeModel';
                 }
+
+                //a weapon attachment with the attached size
+                if ( model.hasOwnProperty('attached') ) {
+                    modStr += ':attached#' + model.attached;
+                }
+
                 sel.push( modStr );
             });
             search.sel = btoa(sel);
@@ -709,8 +679,8 @@ armyBuilder.controller('buildCtrl',
 
             //search in data for id = args[0]
             var add = {};
-            angular.forEach($scope.data, function(grp) {
-                angular.forEach(grp.entries, function(entrie) {
+            $.each($scope.data, function(k, grp) {
+                $.each(grp.entries, function(k, entrie) {
                     if ( entrie.id === args[0] ) {
                         add = angular.copy(entrie);
                         return false;
@@ -722,19 +692,26 @@ armyBuilder.controller('buildCtrl',
             });
 
             if (!$.isEmptyObject(add) ) {
-                if ( $.inArray('bonded', args) !== -1 ) {
-                    add.bonded = 1;
-                }
+                $.each(args, function(key, val) {
+                    if (val === 'bonded') {
+                        add.bonded = 1;
+                    }
 
-                if ( $.inArray('useMax', args) !== -1 ) {
-                    add.useMax = true;
-                }
+                    if (val === 'useMax') {
+                        add.useMax = true;
+                    }
 
-                if ( $.inArray('freeModel', args) !== -1 ) {
-                    add.freeModel = 1;
-                    add.realCost = add.cost;
-                    add.cost = 0;
-                }
+                    if (val === 'freeModel') {
+                        add.freeModel = 1;
+                        add.realCost = add.cost;
+                        add.cost = 0;
+                    }
+
+                    if ( /^attached/i.test(val) ) {
+                        var split = val.split('#');
+                        add.attached = parseInt(split[1]);
+                    }
+                });
                 $scope.selectedModels.push(add);
                 $scope.calculateAvailablePoints();
             }

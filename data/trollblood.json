@@ -493,6 +493,7 @@
           "fa": "3",
           "cost": 1,
           "restricted_to": "TU01",
+          "max_attach": 3,
           "faction": "faction_trollblood",
           "id": "TA02",
           "type": "WA"

@@ -43,3 +43,58 @@ armyBuilder.directive('tooltip', function(){
         }
     };
 });
+
+// Wildcard Filter for Army List builder
+armyBuilder.filter('wildcardArmy', function () {
+    return function (models, search) {
+        if (typeof search !== 'undefined') {
+            var searchRegEx = search.replace(/[^A-za-zÄÖÜäöü?]/g, '.*?');
+            var thisRegex = new RegExp('.*?' + searchRegEx + '.*?', 'i');
+
+            models = $.grep(models, function (model) {
+                return thisRegex.test(model.name);
+            });
+        }
+        return models;
+    };
+});
+
+// Filter the model who not have the restricted_to model
+armyBuilder.filter('restricted', function () {
+    return function (models, $scope) {
+        models = $.grep(models, function(model) {
+            if ( model.hasOwnProperty('restricted_to') ) {
+
+                if (typeof model.restricted_to === 'string') {
+                    if ($scope.getModelById(model.restricted_to) || model.restricted_to === '*') {
+                        return true;
+                    }
+                } else {
+
+                    var found = false;
+                    $.each(model.restricted_to, function(id, val) {
+                        if ( $scope.getModelById(val) ) {
+                            found = true;
+                            return false;
+                        }
+                    });
+                    return found;
+                }
+                return false;
+            }
+            return true;
+        });
+        return models;
+    };
+});
+
+// Filter for range support
+armyBuilder.filter('range', function(){
+    return function(n) {
+        var res = [];
+        for (var i = 1; i <= n; i++) {
+            res.push(i);
+        }
+        return res;
+    };
+});

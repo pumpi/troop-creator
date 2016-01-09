@@ -1410,6 +1410,7 @@
         {
           "fa": "3",
           "restricted_to": "MU13",
+          "max_attach": 3,
           "id": "MA02",
           "name": "Sea Dog Crew Riflemen",
           "works_for": [
@@ -1427,6 +1428,7 @@
           "fa": "2",
           "cost": 1,
           "restricted_to": "YU14_mercs",
+          "max_attach": 3,
           "faction": "faction_mercs",
           "id": "YA08_mercs",
           "type": "WA"
@@ -1436,6 +1438,7 @@
           "fa": "2",
           "cost": 1,
           "restricted_to": "YU05_mercs",
+          "max_attach": 3,
           "faction": "faction_mercs",
           "id": "YA04_mercs",
           "type": "WA"

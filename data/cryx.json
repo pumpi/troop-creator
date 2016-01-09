@@ -573,6 +573,7 @@
           "fa": "2",
           "cost": 1,
           "restricted_to": "CU05",
+          "max_attach": 3,
           "faction": "faction_cryx",
           "id": "CA06",
           "type": "WA"
@@ -582,6 +583,7 @@
           "fa": "3",
           "cost": 1,
           "restricted_to": "CU03",
+          "max_attach": 3,
           "faction": "faction_cryx",
           "id": "CA02",
           "type": "WA"
