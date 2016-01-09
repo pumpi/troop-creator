@@ -685,7 +685,7 @@
   ],
   "tiers": [
     {
-      "name": "Absylonia - Winds of Change",
+      "name": "Absylonia1 - Winds of Change",
       "casterId": "EW06",
       "faction": "faction_everblight",
       "levels": [
@@ -975,6 +975,7 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB24",
               "EU13",
               "EU07",
               "EA03",
@@ -1027,6 +1028,7 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB24",
               "EU13",
               "EU07",
               "EA03",
@@ -1098,6 +1100,7 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB24",
               "EU13",
               "EU07",
               "EA03",
@@ -1159,6 +1162,7 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB24",
               "EU13",
               "EU07",
               "EA03",
@@ -1193,7 +1197,7 @@
       ]
     },
     {
-      "name": "Bethayne - Black Magic",
+      "name": "Bethayne1 - Black Magic",
       "casterId": "EW07",
       "faction": "faction_everblight",
       "levels": [
@@ -1434,7 +1438,7 @@
       ]
     },
     {
-      "name": "Kallus - Unconquerable Dominion",
+      "name": "Kallus1 - Unconquerable Dominion",
       "casterId": "EW08",
       "faction": "faction_everblight",
       "levels": [
@@ -1470,6 +1474,9 @@
               "EB17",
               "EB18",
               "EB19",
+              "EB21",
+              "EB22",
+              "EB24",
               "EU10",
               "EU02",
               "EA05",
@@ -1517,6 +1524,9 @@
               "EB17",
               "EB18",
               "EB19",
+              "EB21",
+              "EB22",
+              "EB24",
               "EU10",
               "EU02",
               "EA05",
@@ -1567,6 +1577,9 @@
               "EB17",
               "EB18",
               "EB19",
+              "EB21",
+              "EB22",
+              "EB24",
               "EU10",
               "EU02",
               "EA05",
@@ -1615,6 +1628,9 @@
               "EB17",
               "EB18",
               "EB19",
+              "EB21",
+              "EB22",
+              "EB24",
               "EU10",
               "EU02",
               "EA05",
@@ -1629,7 +1645,7 @@
       "availableModels": []
     },
     {
-      "name": "Lylyth - Hunter Killers",
+      "name": "Lylyth1 - Hunter Killers",
       "casterId": "Ew01",
       "faction": "faction_everblight",
       "levels": [
@@ -2304,7 +2320,7 @@
       ]
     },
     {
-      "name": "Rhyas - Alpha Strike",
+      "name": "Rhyas1 - Alpha Strike",
       "casterId": "EW04",
       "faction": "faction_everblight",
       "levels": [
@@ -2346,6 +2362,8 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB23",
+              "EB24",
               "EU11",
               "EA04",
               "EU03",
@@ -2394,6 +2412,8 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB23",
+              "EB24",
               "EU11",
               "EA04",
               "EU03",
@@ -2442,6 +2462,8 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB23",
+              "EB24",
               "EU11",
               "EA04",
               "EU03",
@@ -2495,6 +2517,8 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB23",
+              "EB24",
               "EU11",
               "EA04",
               "EU03",
@@ -2509,7 +2533,7 @@
       "availableModels": [
         {
           "type": "WARBEASTS",
-          "models": "Non-character Legion warbeasts"
+          "models": "Non-character Legion warbeasts and Zuriel"
         },
         {
           "type": "UNITS",
@@ -2522,7 +2546,7 @@
       ]
     },
     {
-      "name": "Rhyas - Rearguard (NQ36)",
+      "name": "Rhyas1 - Rearguard (NQ36)",
       "casterId": "EW04",
       "faction": "faction_everblight",
       "levels": [
@@ -2565,6 +2589,8 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB23",
+              "EB24",
               "EU03",
               "EA02",
               "EU08",
@@ -2621,6 +2647,8 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB23",
+              "EB24",
               "EU03",
               "EA02",
               "EU08",
@@ -2671,6 +2699,8 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB23",
+              "EB24",
               "EU03",
               "EA02",
               "EU08",
@@ -2722,6 +2752,8 @@
               "EB19",
               "EB21",
               "EB22",
+              "EB23",
+              "EB24",
               "EU03",
               "EA02",
               "EU08",
@@ -2737,7 +2769,7 @@
       "availableModels": [
         {
           "type": "WARBEASTS",
-          "models": "Non-character Legion warbeasts, Typhon"
+          "models": "Non-character Legion warbeasts, Typhon and Zuriel"
         },
         {
           "type": "UNITS",
@@ -2994,7 +3026,7 @@
       ]
     },
     {
-      "name": "Saeryn - Fallen Angels",
+      "name": "Saeryn1 - Fallen Angels",
       "casterId": "EW05",
       "faction": "faction_everblight",
       "levels": [
@@ -3178,7 +3210,7 @@
       ]
     },
     {
-      "name": "Thagrosh - Army of Annihilation",
+      "name": "Thagrosh1 - Army of Annihilation",
       "casterId": "Ew02",
       "faction": "faction_everblight",
       "levels": [
@@ -3439,7 +3471,6 @@
               "EB07",
               "EB08",
               "EB09",
-              "EB10",
               "EB11",
               "EB12",
               "EB13",
@@ -3488,7 +3519,6 @@
               "EB07",
               "EB08",
               "EB09",
-              "EB10",
               "EB11",
               "EB12",
               "EB13",
@@ -3548,7 +3578,6 @@
               "EB07",
               "EB08",
               "EB09",
-              "EB10",
               "EB11",
               "EB12",
               "EB13",
@@ -3598,7 +3627,6 @@
               "EB07",
               "EB08",
               "EB09",
-              "EB10",
               "EB11",
               "EB12",
               "EB13",
@@ -3886,7 +3914,7 @@
       ]
     },
     {
-      "name": "Vayl - Winter Storm",
+      "name": "Vayl1 - Winter Storm",
       "casterId": "Ew03",
       "faction": "faction_everblight",
       "levels": [
@@ -4189,7 +4217,6 @@
           "mustHave": [],
           "onlyModels": {
             "ids": [
-              "Ex03",
               "EB01",
               "EB02",
               "EB03",
@@ -4209,6 +4236,9 @@
               "EB17",
               "EB18",
               "EB19",
+              "EB21",
+              "EB22",
+              "EB24",
               "EU02",
               "EU05",
               "EU06",
@@ -4242,7 +4272,6 @@
           ],
           "onlyModels": {
             "ids": [
-              "Ex03",
               "EB01",
               "EB02",
               "EB03",
@@ -4262,6 +4291,9 @@
               "EB17",
               "EB18",
               "EB19",
+              "EB21",
+              "EB22",
+              "EB24",
               "EU02",
               "EU05",
               "EU06",
@@ -4294,14 +4326,14 @@
                 "EB07",
                 "EB17",
                 "EB18",
-                "EB19"
+                "EB19",
+                "EB21"
               ],
               "inBG": false
             }
           ],
           "onlyModels": {
             "ids": [
-              "Ex03",
               "EB01",
               "EB02",
               "EB03",
@@ -4321,6 +4353,9 @@
               "EB17",
               "EB18",
               "EB19",
+              "EB21",
+              "EB22",
+              "EB24",
               "EU02",
               "EU05",
               "EU06",
@@ -4366,6 +4401,10 @@
             {
               "id": "EB15",
               "bonus": 1
+            },
+            {
+              "id": "EB21",
+              "bonus": 1
             }
           ],
           "faAlterations": [],
@@ -4382,14 +4421,14 @@
                 "EB10",
                 "EB11",
                 "EB13",
-                "EB15"
+                "EB15",
+                "EB21"
               ],
               "inBG": false
             }
           ],
           "onlyModels": {
             "ids": [
-              "Ex03",
               "EB01",
               "EB02",
               "EB03",
@@ -4409,6 +4448,9 @@
               "EB17",
               "EB18",
               "EB19",
+              "EB21",
+              "EB22",
+              "EB24",
               "EU02",
               "EU05",
               "EU06",
@@ -4425,7 +4467,24 @@
           }
         }
       ],
-      "availableModels": []
+      "availableModels": [
+        {
+          "type": "WARBEASTS",
+          "models": "Non-character Legion Warbeasts, Proteus, Typhon"
+        },
+        {
+          "type": "UNITS",
+          "models": "Blighted Nyss Legionnaires, Spawning Vessel, Legion units with Magic Ability"
+        },
+        {
+          "type": "SOLOS",
+          "models": "Blighted Nyss Shepherd, Spell Martyrs, Succubus, Legion solos with Magic Ability"
+        },
+        {
+          "type": "BATTLE ENGINES",
+          "models": "Throne of Everblight"
+        }
+      ]
     }
   ]
 }
