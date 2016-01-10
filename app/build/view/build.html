@@ -102,6 +102,7 @@
                     <div class="modal-body">
                         System: <strong>{{system}}</strong><br />
                         Faction: <strong>{{faction}}</strong><br />
+                        <span ng-hide="!gameTier">Tier: <strong>{{tiers[gameTier].name}}</strong> (Level <strong>{{tierLevel}}</strong>)<br /></span>
                         Caster: <strong>{{countSelectedModel('warlock|warcaster')}} / {{gameCaster}}</strong><br />
                         Points: <strong>{{points}} / {{gamePoints}}</strong><br />
 
