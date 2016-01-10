@@ -107,7 +107,8 @@
                         Points: <strong>{{points}} / {{gamePoints}}</strong><br />
 
                         <div ng-repeat="model in selectedModels track by $index">
-                            <span ng-show="model.bonded >= 0">* </span>{{model.name}}
+                            <span ng-show="model.bonded >= 0">* </span><strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
+                            <span ng-show="model.max"> (Leader and {{model.useMax ? model.max -1 : model.min - 1}})</span>
                             <strong>(<span ng-show="checkIsCaster(model)">-</span>{{getModelCost(model)}} Pts.)</strong>
                         </div>
                     </div>
