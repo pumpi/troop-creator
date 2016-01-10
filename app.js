@@ -45,9 +45,11 @@ armyBuilder.config(['$routeProvider',
 // Google Analytics send
 armyBuilder.run(function($rootScope, $location, $window){
     $rootScope.$on('$routeChangeSuccess', function() {
-        if (!$window.ga || /127\.0\.0\.1.*?/i.test($location.host())) {
+        if (!$window.ga || /127\.0\.0\.1/i.test($location.host())) {
+            console.log('dev');
             return;
         }
+        console.log('push analytics');
         $window.ga('send', 'pageview', { page: $location.path() });
     });
 });
