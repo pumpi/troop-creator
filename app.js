@@ -45,9 +45,9 @@ armyBuilder.config(['$routeProvider',
 // Google Analytics send
 armyBuilder.run(function($rootScope, $location, $window){
     $rootScope.$on('$routeChangeSuccess', function() {
-        if (!$window.ga || !/127\.0\.0\.1.*?/i.test($location.path()))
+        if (!$window.ga || /127\.0\.0\.1.*?/i.test($location.host())) {
             return;
-
+        }
         $window.ga('send', 'pageview', { page: $location.path() });
     });
 });
