@@ -358,12 +358,6 @@ armyBuilder.controller('buildCtrl',
         	$scope.calculateAvailablePoints();
         };
 
-        // Unit use Base Size
-        $scope.unitUseMax = function(type, index, set) {
-        	$scope.selectedModels[index].useMax = set;
-            $scope.calculateAvailablePoints();
-        };
-
         // Is there enough points to use max size
         $scope.canUseMax = function(model) {
        		return ( !model.useMax && ( parseInt($scope.gamePoints) - parseInt($scope.points) + parseInt(model.cost) ) < parseInt(model.costMax) );
@@ -560,18 +554,18 @@ armyBuilder.controller('buildCtrl',
 
         // Get true if this model with Bonus points
         $scope.isBonusCost = function(model) {
-            var bonus = false;
+            var cost = model.cost;
             if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 ) {
-                bonus = true;
-            } else if ( model.hasOwnProperty('useMax') && model.useMax === 1 && model.costMax != $scope.getModelCost(model, 1) ) {
-                bonus = true;
-            } else if ( model.hasOwnProperty('attached') && ( model.cost * model.attached ) != $scope.getModelCost(model, 1) ) {
-                bonus = true;
-            } else if ( !model.hasOwnProperty('attached') && model.cost != $scope.getModelCost(model, 1) ) {
-                bonus = true;
+                return true;
+            } else if ( /^unit/i.test(model.type) ) {
+                if ( model.useMax == 1 ) {
+                    cost = model.costMax;
+                }
+            } else if (/^wa$/i.test(model.type)) {
+                cost = model.cost * model.attached;
             }
 
-            return bonus;
+            return cost !== $scope.getModelCost(model, 1);
         };
 
         // get the real model FA
