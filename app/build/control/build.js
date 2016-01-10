@@ -217,7 +217,6 @@ armyBuilder.controller('buildCtrl',
             // restricted_to is in lesser warlock the same naming for other use
             if ( model.hasOwnProperty('restricted_to') && !/lesserwarlock|journeyman|marshal/i.test(model.type) ) {
             	var search = model.restricted_to;
-                console.log(model.restricted_to.join);
                 if (typeof model.restricted_to !== 'string') {
                     search = model.restricted_to.join('|');
                 }
@@ -736,7 +735,6 @@ armyBuilder.controller('buildCtrl',
 
         // callback if the tier changed
         $scope.changeTier = function() {
-            console.log(typeof $scope.tiers);
             $scope.tier = $scope.tiers[$scope.gameTier];
             $scope.clearList();
             if ( $scope.tier.hasOwnProperty('casterId') ) {
