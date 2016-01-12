@@ -15,11 +15,11 @@
 
 ga('create', 'UA-72234013-1', 'auto');
 
-// Create an angular module and load the ngRoute and armyBuilderControllers
-var armyBuilder = angular.module('armyBuilder', ['ngRoute', 'navModule', 'hc.commonmark', 'ngDragDrop'])
+// Create an angular module and load the ngRoute and troopCreatorControllers
+var troopCreator = angular.module('troopCreator', ['ngRoute', 'navModule', 'hc.commonmark', 'ngDragDrop'])
 
-// the armybuilder configuration for ngRoute
-armyBuilder.config(['$routeProvider',
+// the troopcreator configuration for ngRoute
+troopCreator.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
 
@@ -43,7 +43,7 @@ armyBuilder.config(['$routeProvider',
 );
 
 // Google Analytics send
-armyBuilder.run(function($rootScope, $location, $window){
+troopCreator.run(function($rootScope, $location, $window){
     $rootScope.$on('$routeChangeSuccess', function() {
         if (!$window.ga || /127\.0\.0\.1/i.test($location.host())) {
             return;
@@ -52,7 +52,7 @@ armyBuilder.run(function($rootScope, $location, $window){
     });
 });
 
-armyBuilder.directive('tooltip', function(){
+troopCreator.directive('tooltip', function(){
     return {
         restrict: 'A',
         link: function(scope, element, attrs){
@@ -70,7 +70,7 @@ armyBuilder.directive('tooltip', function(){
 });
 
 // Wildcard Filter for Army List builder
-armyBuilder.filter('wildcardArmy', function () {
+troopCreator.filter('wildcardArmy', function () {
     return function (models, search) {
         if (typeof search !== 'undefined') {
             var searchRegEx = search.replace(/[^A-za-zÄÖÜäöü?]/g, '.*?');
@@ -85,7 +85,7 @@ armyBuilder.filter('wildcardArmy', function () {
 });
 
 // Filter the model who not have the restricted_to model
-armyBuilder.filter('restricted', function () {
+troopCreator.filter('restricted', function () {
     return function (models, $scope) {
         models = $.grep(models, function(model) {
             if ( model.hasOwnProperty('restricted_to') ) {
@@ -114,7 +114,7 @@ armyBuilder.filter('restricted', function () {
 });
 
 // Filter for range support
-armyBuilder.filter('range', function(){
+troopCreator.filter('range', function(){
     return function(n) {
         var res = [];
         for (var i = 1; i <= n; i++) {
