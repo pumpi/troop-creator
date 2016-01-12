@@ -1,7 +1,7 @@
 ﻿'use strict';
 
 // Controller to display the troop creator
-armyBuilder.controller('buildCtrl',
+troopCreator.controller('buildCtrl',
     function ($scope, $http, $routeParams, $location) {
     
     	$http.get('./data/' + $routeParams.army + '.json').
