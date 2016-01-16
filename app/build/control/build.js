@@ -24,13 +24,13 @@ troopCreator.controller('buildCtrl',
                 $scope.gameCaster       = 1;
                 $scope.gamePoints       = 25;
                 $scope.gameTier         = 0;
-                $scope.modlaLevel       = 0;
+                $scope.modalLevel       = 0;
                 $scope.points           = 0;
                 $scope.dropModel        = {};
                 $scope.casterPoints     = 0;
                 $scope.costAlterations  = [];
                 $scope.faAlterations    = [];
-                $scope.freeModels       = [];
+                $scope.freeModels       = {'id': [], 'count': 0};
                 $scope.faction          = $('#' + $routeParams.army).data('faction');
                 $scope.factionId        = 'faction_' + $routeParams.army;
                 $scope.system           = $('#' + $routeParams.army).data('system');
@@ -66,11 +66,7 @@ troopCreator.controller('buildCtrl',
                                                 // If we have an UA we can already watch for the restricted_to Unit
                                                 // UAs restricted_to always string i hope ^^
                                                 if ( /^ua/i.test(item.type) ) {
-                                                    if ( $scope.getModelById(item.restricted_to) ) {
-                                                        return true;
-                                                    } else {
-                                                        return false;
-                                                    }
+                                                    return $scope.getModelById(item.restricted_to);
                                                 } else {
                                                     return true;
                                                 }
@@ -213,7 +209,7 @@ troopCreator.controller('buildCtrl',
 				}
             }
 
-            // The model only can attached to but not  set the base model
+            // The model only can attached to but not set the base model
             // restricted_to is in lesser warlock the same naming for other use
             if ( model.hasOwnProperty('restricted_to') && !/lesserwarlock|journeyman|marshal/i.test(model.type) ) {
             	var search = model.restricted_to;
@@ -221,9 +217,11 @@ troopCreator.controller('buildCtrl',
                     search = model.restricted_to.join('|');
                 }
 
-                var countRestricted = $scope.countSelectedModel(search, 'id'),
-                    countModel = $scope.countSelectedModel(model.id, 'id');
-                return !(countRestricted > 0 && countRestricted > countModel);
+                if ( !/^war/i.test(model.type) ) {
+                    var countRestricted = $scope.countSelectedModel(search, 'id'),
+                        countModel = $scope.countSelectedModel(model.id, 'id');
+                    return !(countRestricted > 0 && countRestricted > countModel);
+                }
             }
 
             // All its fine we can activate the model
@@ -236,15 +234,21 @@ troopCreator.controller('buildCtrl',
             return tier.levels[0].onlyModels.ids.indexOf(model.id) === -1;
         };
 
-        // count models with regex in selected list
-        $scope.countSelectedModel = function(match, type) {
-            if ( typeof(type) === 'undefined' ) type = 'type';
+        // count models with regex in selected list by value
+        $scope.countSelectedModel = function(match, value, onlyFree) {
+            if ( typeof(value) === 'undefined' ) value = 'type';
+            if ( typeof(onlyFree) === 'undefined' ) onlyFree = false;
             var count = 0;
             var matcher = new RegExp(match, 'i');
+
             if ( $scope.selectedModels ) {
                 $.each($scope.selectedModels, function (key, selectedModel) {
-                    if (matcher.test(selectedModel[type])) {
-                        count++;
+                    if ( matcher.test(selectedModel[value]) ) {
+                        if ( onlyFree && selectedModel.isFree ) {
+                            count++;
+                        } else if ( !onlyFree ) {
+                            count++;
+                        }
                     }
                 });
             }
@@ -449,8 +453,21 @@ troopCreator.controller('buildCtrl',
                 });
             }
             if ( level.freeModels.length > 0 ) {
-                $.each(level.freeModels, function(key, val) {
-                    $scope.freeModels.push(val);
+                $.each(level.freeModels, function(key, free) {
+                    var eachFree = 0;
+                    if ( free.forEach ) {
+                        $.each($scope.selectedModels, function(idx, selectedModel) {
+                            // if we have the model in list by Id
+                            if ( $.inArray(selectedModel.id, free.forEach ) !== -1 ) {
+                                eachFree ++;
+                            }
+                        });
+                    } else {
+                        eachFree = 1;
+                    }
+                    $scope.freeModels.id = free.id;
+                    $scope.freeModels.count = eachFree;
+                    console.log($scope.freeModels);
                 });
             }
             if ( level.faAlterations.length > 0 ) {
@@ -474,7 +491,7 @@ troopCreator.controller('buildCtrl',
         // reset the Tier Bonus
         $scope.resetTierBonus = function() {
             $scope.costAlterations = [];
-            $scope.freeModels = [];
+            $scope.freeModels = {'id': [], 'count': 0};
             $scope.faAlterations = [];
         };
 
@@ -483,12 +500,10 @@ troopCreator.controller('buildCtrl',
             $.each($scope.selectedModels, function(idx, selectedModel) {
                 if ( selectedModel.hasOwnProperty('freeModel') ) {
                     var isFree = true;
-                    if ($scope.freeModels.length > 0 ) {
-                        $.each($scope.freeModels, function (key, freeModel) {
-                            // is the model we are check in the for free array
-                            isFree = ( $.inArray(selectedModel.id, freeModel.id) !== -1 );
-                            return !isFree;
-                        });
+                    if ($scope.freeModels.id.length > 0 ) {
+                        // is the model we are check in the for free array
+                        console.log($scope.countSelectedModel(selectedModel, 'id'), $scope.freeModels.count);
+                        isFree = ( $.inArray(selectedModel.id, $scope.freeModels.id) !== -1 && $scope.countSelectedModel(selectedModel, 'id', 1) <= $scope.freeModels.count );
                     } else {
                         isFree = false;
                     }
@@ -525,25 +540,22 @@ troopCreator.controller('buildCtrl',
                 }
 
                 // Check for free models
-                if ($scope.freeModels.length > 0 && checkFree) {
+                if ($scope.freeModels.id.length > 0 && checkFree) {
 
-                    var hasFree = false,
-                        isFree = false;
-                    $.each($scope.freeModels, function (key, freeModel) {
-                        $.each($scope.selectedModels, function (idx, selectedModel) {
-                            // if we have the model in list by Id and the cost is for 0
-                            hasFree = ( $.inArray(selectedModel.id, freeModel.id) !== -1 && selectedModel.cost === 0 );
+                    var countFree = 0;
 
-                            if (hasFree) return false;
-                        });
-                        if (hasFree) return false;
+                    $.each($scope.selectedModels, function (idx, selectedModel) {
+                        // if we have the model in list by Id and the cost is for 0
+                        if ( $.inArray(selectedModel.id, $scope.freeModels.id) !== -1 && selectedModel.cost === 0 ) {
+                            countFree ++;
+                        }
 
-                        // is the model we are check in the for free array
-                        isFree = ( $.inArray(model.id, freeModel.id) !== -1 );
-
-                        if (!hasFree && isFree) return false;
+                        if (countFree >= $scope.freeModels.count) return false;
                     });
-                    if (!hasFree && isFree) {
+                    // is the model we are check in the for free array
+                    var isFree = ( $.inArray(model.id, $scope.freeModels.id) !== -1 );
+
+                    if (countFree < $scope.freeModels.count && isFree) {
                         rCost = parseInt(0);
                     }
                 }
@@ -663,6 +675,7 @@ troopCreator.controller('buildCtrl',
                     $scope.addModelByString(val);
                 });
             }
+            $scope.calculateAvailablePoints();
         };
 
         // adds an model by only give an string
@@ -685,28 +698,27 @@ troopCreator.controller('buildCtrl',
             });
 
             if (!$.isEmptyObject(add) ) {
-                $.each(args, function(key, val) {
-                    if (val === 'bonded') {
+                for (var i = 0; i <= args.length ; i++) {
+                    if (args[i] === 'bonded') {
                         add.bonded = 1;
                     }
 
-                    if (val === 'useMax') {
+                    if (args[i] === 'useMax') {
                         add.useMax = true;
                     }
 
-                    if (val === 'freeModel') {
+                    if (args[i] === 'freeModel') {
                         add.freeModel = 1;
                         add.realCost = add.cost;
                         add.cost = 0;
                     }
 
-                    if ( /^attached/i.test(val) ) {
+                    if ( /^attached/i.test(args[i]) ) {
                         var split = val.split('#');
                         add.attached = parseInt(split[1]);
                     }
-                });
+                }
                 $scope.selectedModels.push(add);
-                $scope.calculateAvailablePoints();
             }
         };
 
