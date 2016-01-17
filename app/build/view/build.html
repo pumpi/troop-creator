@@ -75,6 +75,13 @@
 					</div>
 				</li>
 			</ul>
+            <div class="selected-objective input-group">
+                <div class="input-group-addon">Objective</div>
+                <select class="form-control" ng-model="gameObjective" ng-change="updateSearch()">
+                    <option value="">no objecitve selected ...</option>
+                    <option ng-repeat="tier in objectives" value="{{$index}}">{{tier}}</option>
+                </select>
+            </div>
             <div class="drop-model" data-drop="true" jqyoui-droppable="{onDrop:'dropCallback'}">
                 Drop Here
             </div>
@@ -111,6 +118,8 @@
                             <span ng-show="model.max"> (Leader and {{model.useMax ? model.max -1 : model.min - 1}})</span>
                             <strong>(<span ng-show="checkIsCaster(model)">-</span>{{getModelCost(model)}} Pts.)</strong>
                         </div>
+
+                        <span ng-hide="!gameObjective">Objective: <strong>{{objectives[gameObjective]}}</strong></span>
                     </div>
                 </div>
             </div>

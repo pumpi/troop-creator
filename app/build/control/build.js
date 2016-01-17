@@ -24,6 +24,7 @@ troopCreator.controller('buildCtrl',
                 $scope.gameCaster       = 1;
                 $scope.gamePoints       = 25;
                 $scope.gameTier         = 0;
+                $scope.gameObjective    = '';
                 $scope.modalLevel       = 0;
                 $scope.points           = 0;
                 $scope.dropModel        = {};
@@ -43,6 +44,9 @@ troopCreator.controller('buildCtrl',
                         label: value.name
                     });
                 });
+
+                // Objective Data
+                $scope.objectives = ['Arcane Wonder', 'Amory', 'Bunker', 'Effigy of Val', 'Fuel Cache', 'Stockpile'];
 
                 // Now we get the mercenarys and minions
                 $.each(['minion', 'mercenary'], function (k, v) {
@@ -647,6 +651,7 @@ troopCreator.controller('buildCtrl',
             search.caster = $scope.gameCaster;
             search.points = $scope.gamePoints;
             search.tier = $scope.gameTier === 0 ? '' : $scope.gameTier;
+            search.objective =  $scope.gameObjective;
 
             $location.search( search );
         };
@@ -666,6 +671,10 @@ troopCreator.controller('buildCtrl',
             if (search.tier) {
                 $scope.gameTier = search.tier;
                 $scope.tier = $scope.tiers[$scope.gameTier];
+            }
+            // restore gameTier
+            if (search.objective) {
+                $scope.gameObjective = search.objective;
             }
             //restore selectedModels
             if (search.sel) {

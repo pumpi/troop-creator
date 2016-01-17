@@ -1,4 +1,4 @@
-/*! troopcreator 2016-01-16 */
+/*! troopcreator 2016-01-17 */
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -5131,6 +5131,9 @@ h1, h2, h3, h4, h5, p {
   font-size: 1.8rem;
   font-weight: bold;
   padding-top: 15px; }
+
+.selected-objective {
+  margin-top: 10px; }
 
 .list-options {
   display: flex;
