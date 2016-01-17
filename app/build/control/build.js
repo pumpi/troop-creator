@@ -46,7 +46,7 @@ troopCreator.controller('buildCtrl',
                 });
 
                 // Objective Data
-                $scope.objectives = ['Arcane Wonder', 'Amory', 'Bunker', 'Effigy of Val', 'Fuel Cache', 'Stockpile'];
+                $scope.objectives = ['Arcane Wonder', 'Amory', 'Bunker', 'Effigy of Valor', 'Fuel Cache', 'Stockpile'];
 
                 // Now we get the mercenarys and minions
                 $.each(['minion', 'mercenary'], function (k, v) {
