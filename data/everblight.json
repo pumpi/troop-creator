@@ -136,7 +136,7 @@
       "id": "faction_everblight_warbeasts",
       "entries": [
         {
-          "name": "Blight Bringer",
+          "name": "Blightbringer",
           "fa": "2",
           "cost": 18,
           "faction": "faction_everblight",
@@ -554,7 +554,7 @@
           "type": "UA"
         },
         {
-          "name": "Warspear Chieftan",
+          "name": "Warspear Chieftain",
           "fa": "2",
           "cost": 2,
           "restricted_to": "EU09",
