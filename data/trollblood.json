@@ -51,7 +51,7 @@
           "type": "warlock"
         },
         {
-          "name": "Jarl Skuld, Devil of the Thornwood",
+          "name": "Jarl1 (Jarl Skuld, Devil of the Thornwood)",
           "fa": "C",
           "cost": 6,
           "faction": "faction_trollblood",
@@ -672,7 +672,7 @@
   ],
   "tiers": [
     {
-      "name": "Borka - Drunk and Disorderly",
+      "name": "Borka1 - Drunk and Disorderly",
       "casterId": "TW05",
       "faction": "faction_trollblood",
       "levels": [
@@ -857,7 +857,7 @@
       ]
     },
     {
-      "name": "Borka - Family Reunion (NQ38)",
+      "name": "Borka1 - Family Reunion (NQ38)",
       "casterId": "TW05",
       "faction": "faction_trollblood",
       "levels": [
@@ -1320,7 +1320,7 @@
       ]
     },
     {
-      "name": "Calandra - Children of Dhunia",
+      "name": "Calandra1 - Children of Dhunia",
       "casterId": "TW06",
       "faction": "faction_trollblood",
       "levels": [
@@ -1525,7 +1525,7 @@
       ]
     },
     {
-      "name": "Calandra Truthsayer - Evolutionary Elementalism",
+      "name": "Calandra1 - Evolutionary Elementalism",
       "casterId": "TW06",
       "faction": "faction_trollblood",
       "levels": [
@@ -1554,7 +1554,7 @@
             }
           ],
           "faAlterations": [],
-          "benefit": "",
+          "benefit": "At the start of your first turn, choose one warbeast in Calandra's battlegroup. All models in the army are affected by that warbeast's animus.",
           "level": 1,
           "mustHave": [],
           "onlyModels": {
@@ -1648,9 +1648,30 @@
         },
         {
           "freeModels": [],
-          "costAlterations": [],
+          "costAlterations": [
+            {
+              "id": "TB01",
+              "bonus": 1
+            },
+            {
+              "id": "TB02",
+              "bonus": 1
+            },
+            {
+              "id": "TB06",
+              "bonus": 1
+            },
+            {
+              "id": "TB14",
+              "bonus": 1
+            },
+            {
+              "id": "TB16",
+              "bonus": 1
+            }
+          ],
           "faAlterations": [],
-          "benefit": "At the start of your first turn, choose one warbeast in Calandra's battlegroup. All models in the army are affected by that warbeast's animus.",
+          "benefit": "",
           "level": 4,
           "mustHave": [
             {
@@ -1697,7 +1718,7 @@
       ]
     },
     {
-      "name": "Grim Angus - Headhunters",
+      "name": "Grim1 - Headhunters",
       "casterId": "Tw04",
       "faction": "faction_trollblood",
       "levels": [
@@ -1882,7 +1903,7 @@
       ]
     },
     {
-      "name": "Grissel - Blood of Bragg",
+      "name": "Grissel1 - Blood of Bragg",
       "casterId": "Tw03",
       "faction": "faction_trollblood",
       "levels": [
@@ -2088,7 +2109,7 @@
       ]
     },
     {
-      "name": "Gunnbjorn - The Big Bang",
+      "name": "Gunnbjorn1 - The Big Bang",
       "casterId": "TW07",
       "faction": "faction_trollblood",
       "levels": [
@@ -2297,7 +2318,7 @@
       ]
     },
     {
-      "name": "Hoarluk - Runes of War",
+      "name": "Hoarluk1 - Runes of War",
       "casterId": "Tw02",
       "faction": "faction_trollblood",
       "levels": [
@@ -2495,7 +2516,7 @@
       ]
     },
     {
-      "name": "Jarl Skuld - Highwaymen",
+      "name": "Jarl1 - Highwaymen",
       "casterId": "TW08",
       "faction": "faction_trollblood",
       "levels": [
@@ -2708,7 +2729,7 @@
       ]
     },
     {
-      "name": "Madrak - War Party",
+      "name": "Madrak1 - War Party",
       "casterId": "Tw01",
       "faction": "faction_trollblood",
       "levels": [
@@ -2947,7 +2968,7 @@
       ]
     },
     {
-      "name": "Madrak - Winter Kin (NQ63)",
+      "name": "Madrak1 - Winter Kin (NQ63)",
       "casterId": "Tw01",
       "faction": "faction_trollblood",
       "levels": [
@@ -3179,7 +3200,7 @@
       ]
     },
     {
-      "name": "epic Grim - Hunting Party",
+      "name": "Grim2 - Hunting Party",
       "casterId": "Tx04",
       "faction": "faction_trollblood",
       "levels": [
@@ -3378,7 +3399,7 @@
       ]
     },
     {
-      "name": "epic Grissel - Blockade Runners",
+      "name": "Grissel2 - Blockade Runners",
       "casterId": "Tx03",
       "faction": "faction_trollblood",
       "levels": [
@@ -3560,7 +3581,7 @@
       ]
     },
     {
-      "name": "epic Hoarluk - Unbridled Fury",
+      "name": "Hoarluk2 - Unbridled Fury",
       "casterId": "Tx02",
       "faction": "faction_trollblood",
       "levels": [
@@ -3738,7 +3759,7 @@
       ]
     },
     {
-      "name": "epic Hoarluk - Immovable Mountains",
+      "name": "Hoarluk3 - Immovable Mountains",
       "casterId": "Tz02",
       "faction": "faction_trollblood",
       "levels": [
@@ -3942,7 +3963,7 @@
       ]
     },
     {
-      "name": "epic Madrak - End Times",
+      "name": "Madrak2 - End Times",
       "casterId": "Tx01",
       "faction": "faction_trollblood",
       "levels": [

@@ -673,7 +673,7 @@
   ],
   "tiers": [
     {
-      "name": "Baldur - Rock of Orboros",
+      "name": "Baldur1 - Rock of Orboros",
       "casterId": "Ow03",
       "faction": "faction_orboros",
       "levels": [
@@ -850,7 +850,7 @@
       ]
     },
     {
-      "name": "Bradigus - Wold War",
+      "name": "Bradigus1 - Wold War",
       "casterId": "OW09",
       "faction": "faction_orboros",
       "levels": [
@@ -938,7 +938,7 @@
           "freeModels": [],
           "costAlterations": [],
           "faAlterations": [],
-          "benefit": "Sentry Stones start the game with 3 Fury",
+          "benefit": "You gain +1 on your starting roll for the game.",
           "level": 3,
           "mustHave": [
             {
@@ -1023,7 +1023,7 @@
       ]
     },
     {
-      "name": "Cassius - Giants of Stone (NQ44)",
+      "name": "Cassius1 - Giants of Stone (NQ44)",
       "casterId": "OW07",
       "faction": "faction_orboros",
       "levels": [
@@ -1189,7 +1189,7 @@
       ]
     },
     {
-      "name": "Cassius - Widower's Wood",
+      "name": "Cassius1 - Widower's Wood",
       "casterId": "OW07",
       "faction": "faction_orboros",
       "levels": [
@@ -1413,7 +1413,7 @@
       ]
     },
     {
-      "name": "Grayle - Claw & Fang",
+      "name": "Grayle1 - Claw & Fang",
       "casterId": "OW08",
       "faction": "faction_orboros",
       "levels": [
@@ -1601,7 +1601,7 @@
       ]
     },
     {
-      "name": "Kaya - The Wild Hunt",
+      "name": "Kaya1 - The Wild Hunt",
       "casterId": "Ow01",
       "faction": "faction_orboros",
       "levels": [
@@ -2076,7 +2076,7 @@
       ]
     },
     {
-      "name": "Kromac - Heart Eaters",
+      "name": "Kromac1 - Heart Eaters",
       "casterId": "OW05",
       "faction": "faction_orboros",
       "levels": [
@@ -2310,7 +2310,7 @@
       ]
     },
     {
-      "name": "epic Kromac - Blood Price",
+      "name": "Kromac2 - Blood Price",
       "casterId": "OW10",
       "faction": "faction_orboros",
       "levels": [
@@ -2586,7 +2586,7 @@
       ]
     },
     {
-      "name": "Krueger - Storm Front",
+      "name": "Krueger1 - Storm Front",
       "casterId": "Ow02",
       "faction": "faction_orboros",
       "levels": [
@@ -2828,7 +2828,7 @@
       ]
     },
     {
-      "name": "Mohsar - Sandstorm",
+      "name": "Mohsar1 - Sandstorm",
       "casterId": "OW06",
       "faction": "faction_orboros",
       "levels": [
@@ -3065,7 +3065,7 @@
       ]
     },
     {
-      "name": "Morvahna - Harvest of Blood",
+      "name": "Morvahna1 - Harvest of Blood",
       "casterId": "Ow04",
       "faction": "faction_orboros",
       "levels": [
@@ -3260,7 +3260,7 @@
       ]
     },
     {
-      "name": "epic Baldur - Hour of Reckoning",
+      "name": "Baldur2 - Hour of Reckoning",
       "casterId": "Ox03",
       "faction": "faction_orboros",
       "levels": [
@@ -3434,7 +3434,7 @@
       ]
     },
     {
-      "name": "epic Kaya - Call of the Wild",
+      "name": "Kaya2 - Call of the Wild",
       "casterId": "Ox01",
       "faction": "faction_orboros",
       "levels": [
@@ -3656,7 +3656,7 @@
       ]
     },
     {
-      "name": "epic Krueger - The Devourer's Host",
+      "name": "Krueger2 - The Devourer's Host",
       "casterId": "Ox02",
       "faction": "faction_orboros",
       "levels": [
@@ -3847,7 +3847,7 @@
       ]
     },
     {
-      "name": "epic Krueger - Wake of Destruction (NQ38)",
+      "name": "Krueger2 - Wake of Destruction (NQ38)",
       "casterId": "Ox02",
       "faction": "faction_orboros",
       "levels": [
@@ -4019,7 +4019,7 @@
       ]
     },
     {
-      "name": "epic Morvahna - Seasons of Fate",
+      "name": "Morvahna2 - Seasons of Fate",
       "casterId": "Ox04",
       "faction": "faction_orboros",
       "levels": [

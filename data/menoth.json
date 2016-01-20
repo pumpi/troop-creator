@@ -1833,7 +1833,7 @@
           "freeModels": [],
           "costAlterations": [],
           "faAlterations": [],
-          "benefit": "",
+          "benefit": "You gain +1 on your starting roll for the game.",
           "level": 2,
           "mustHave": [
             {
@@ -1882,7 +1882,7 @@
           "freeModels": [],
           "costAlterations": [],
           "faAlterations": [],
-          "benefit": "",
+          "benefit": "For each Paladin solo, place one wall template anywhere within 20˝ of the back edge of the Harbinger’s deployment zone after terrain has been placed but before either player deploys his army. The walls are linear obstacles that grant cover. These walls cannot be placed within 3˝ of another wall or terrain feature.",
           "level": 3,
           "mustHave": [
             {

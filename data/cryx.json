@@ -2843,7 +2843,7 @@
           "freeModels": [],
           "costAlterations": [],
           "faAlterations": [],
-          "benefit": "Helljacks gain Stealth during your first turn of the game.",
+          "benefit": "Helljacks gain Stealth during the first round of the game.",
           "level": 2,
           "mustHave": [
             {
