@@ -316,7 +316,7 @@ troopCreator.controller('buildCtrl',
                                 }
                             });
                         }
-                        if ( findIndex ) {
+                        if ( findIndex !== false ) {
                             break;
                         }
                     }
