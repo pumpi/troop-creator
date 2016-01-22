@@ -219,7 +219,7 @@ troopCreator.controller('buildCtrl',
 
             // The model only can attached to but not set the base model
             // restricted_to is in lesser warlock the same naming for other use
-            if ( model.hasOwnProperty('restricted_to') && !/lesserwarlock|journeyman|marshal/i.test(model.type) ) {
+            if ( model.hasOwnProperty('restricted_to') && ( !/lesserwarlock|journeyman|marshall/i.test(model.type) || /^ua/i.test(model.type)) ) {
             	var search = model.restricted_to;
                 if (typeof model.restricted_to !== 'string') {
                     search = model.restricted_to.join('|');
@@ -298,6 +298,7 @@ troopCreator.controller('buildCtrl',
                 } else if (model.hasOwnProperty('restricted_to')) {
                     var count = $scope.selectedModels.length - 1;
                     for (var i = 0; i <= count; i++) {
+                    	// Is This right?? we alwasy bond the model to the last model when we find no restricted_to
                         if ( i === count ) {
                             findIndex = i;
                         }
