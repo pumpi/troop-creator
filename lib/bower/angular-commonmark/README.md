@@ -9,9 +9,9 @@ Render markdown in AngularJS using [CommonMark](http://commonmark.org/); A stron
 
 ## Usage
 1. `bower install Hypercubed/angular-commonmark`
-2. Include the `stmd.js` script into your app.  By default should be at `bower_components/angular-commonmark/lib/stmd.js`.
-3. Include the `angular-CommonMark.js` into your app.  By default should be at `bower_components/angular-commonmark/angular-CommonMark.js`.
-4. Add `hc.commonMark` as a module dependency to your app.
+2. Include the `commonmarkjs` script into your app.  By default should be at `bower_components/commonmark/dist/commonmark.js`.
+3. Include the `angular-CommonMark.js` into your app.  By default should be at `bower_components/angular-commonmark/angular-commonmark.js`.
+4. Add `hc.commonmark` as a module dependency to your app.
 
 ### As a directive
 
@@ -61,6 +61,9 @@ Based on
 - [angular-marked](https://github.com/Hypercubed/angular-marked) by [Hypercubed](https://github.com/Hypercubed/) via
 - [angular-markdown-directive](https://github.com/btford/angular-markdown-directive) by [briantford](http://briantford.com/) via
 - [this excellent tutorial](http://blog.angularjs.org/2012/05/custom-components-part-1.html) by [@johnlinquist](https://twitter.com/johnlindquist).
+
+Using
+- [commonmark.js](https://github.com/jgm/commonmark.js) by [John MacFarlane](https://github.com/jgm/)
 
 ## License
 Copyright (c) 2014 Jayson Harshbarger [![Gittip donate button](http://img.shields.io/gratipay/Hypercubed.svg)](https://www.gittip.com/hypercubed/ "Donate weekly to this project using Gittip")

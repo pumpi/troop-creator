@@ -1,8 +1,30 @@
 {
-	"name": "troopcreator",
-	"version": "1.0",
-	"main": "css/main.css",
-	"directory": "lib/bower",
-  	"dependencies": {
-  	}
+  "name": "troopcreator",
+  "version": "1.0",
+  "main": "css/main.css",
+  "directory": "lib/bower",
+  "dependencies": {
+    "angular-route": "~1.3.5",
+    "angular-dragdrop": "~1.0.11",
+    "angular-commonmark": "Hypercubed/angular-commonmark#~0.0.4",
+    "angularjs": "~1.5.0",
+    "bootstrap-sass": "~3.3.3",
+    "favico.js": "~0.3.5",
+    "font-awsome": "~4.3.0"
+  },
+  "homepage": "https://github.com/pumpi/troop-creator",
+  "authors": [
+    "pumpi <webmaster@pumpi-online.de>"
+  ],
+  "description": "",
+  "moduleType": [],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib/bower",
+    "test",
+    "tests"
+  ]
 }
