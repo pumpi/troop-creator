@@ -5043,6 +5043,7 @@ html, body {
   height: 100%; }
 
 body {
+  font-size: 14px;
   font-size: 1.4rem; }
 
 /*
@@ -5056,8 +5057,16 @@ h1, h2, h3, h4, h5, p {
   margin-top: 0; }
 
 .cols {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-flex-flow: row wrap;
+  -ms-flex-flow: row wrap;
   flex-flow: row wrap; }
   .cols .col {
     width: 100%;
@@ -5070,8 +5079,6 @@ h1, h2, h3, h4, h5, p {
   max-width: 1000px;
   min-height: 100%;
   margin: 0 auto;
-  -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
   border: 1px solid #CCC; }
 
@@ -5080,7 +5087,8 @@ h1, h2, h3, h4, h5, p {
  *****************************/
 #header {
   max-height: 300px;
-  position: relative; }
+  position: relative;
+  font-size: 80px; }
   #header .beta-logo {
     position: absolute;
     right: 10px;
@@ -5092,6 +5100,7 @@ h1, h2, h3, h4, h5, p {
     bottom: 10px;
     left: 30px;
     color: #FFF;
+    font-size: 80px;
     font-size: 8rem;
     font-family: 'Fredericka the Great', cursive;
     text-shadow: 0 0 30px #000; }
@@ -5132,6 +5141,7 @@ h1, h2, h3, h4, h5, p {
   position: absolute;
   right: 10px;
   top: 10px;
+  -webkit-transition: all .3s;
   transition: all .3s;
   width: 34px;
   font-size: 12px;
@@ -5149,19 +5159,24 @@ h1, h2, h3, h4, h5, p {
       content: '\00a0';
       height: 100%;
       position: absolute;
+      -webkit-transition: all .3s;
       transition: all .3s;
       width: 100%; }
     .navi-icon > span:before {
       -webkit-transform: translateY(-.8em);
+      -ms-transform: translateY(-.8em);
       transform: translateY(-.8em); }
     .navi-icon > span:after {
       -webkit-transform: translateY(0.8em);
+      -ms-transform: translateY(0.8em);
       transform: translateY(0.8em); }
   .navi-icon.active {
     -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
     .navi-icon.active > span:after, .navi-icon.active > span:before {
       -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
       transform: rotate(90deg); }
   .navi-icon.active > span, .navi-icon.active > span:after, .navi-icon.active > span:before {
     background-color: #666; }
@@ -5196,12 +5211,14 @@ h1, h2, h3, h4, h5, p {
     padding: 10px;
     font-weight: bold;
     display: none;
-    -webkit-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
     box-shadow: 3px 8px 14px -5px rgba(0, 0, 0, 0.4);
     overflow: hidden; }
     #left-col-build .open-list span {
+      -webkit-transform-origin: -1% 95%;
+      -ms-transform-origin: -1% 95%;
       transform-origin: -1% 95%;
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
       transform: rotate(90deg);
       display: inline-block;
       font-size: 20px;
@@ -5209,6 +5226,7 @@ h1, h2, h3, h4, h5, p {
     #left-col-build .open-list .fa {
       position: absolute;
       left: 15px;
+      -webkit-transition: -webkit-transform .8s;
       transition: transform .8s; }
 
 .army-models:nth-of-type(2) .accordion-container {
@@ -5235,10 +5253,16 @@ h1, h2, h3, h4, h5, p {
 .army-models .accordion-container {
   display: none; }
 .army-models .model {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 5px 0; }
   .army-models .model .model-name {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
     flex: 1;
     padding-left: 10px; }
   .army-models .model .model-options {
@@ -5274,6 +5298,7 @@ h1, h2, h3, h4, h5, p {
   margin: 10px 0; }
 
 .selected-counts {
+  font-size: 18px;
   font-size: 1.8rem;
   font-weight: bold;
   padding-top: 15px; }
@@ -5282,7 +5307,13 @@ h1, h2, h3, h4, h5, p {
   margin-top: 10px; }
 
 .list-options {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between; }
   .list-options .max-caster, .list-options .max-points {
     width: 15%; }
@@ -5344,7 +5375,7 @@ h1, h2, h3, h4, h5, p {
     width: auto; }
   .tiers {
     width: auto; }
-    .tiers::before {
+    .tiers:before {
       content: 'Tier: ';
       display: inline-block; }
   .col-md-6 {
@@ -5378,18 +5409,19 @@ h1, h2, h3, h4, h5, p {
     z-index: 100;
     padding: 10px 10px 60px;
     border: 1px solid #BBB;
+    -webkit-transition: left .8s;
     transition: left .8s;
-    -webkit-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
     box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4); }
     #left-col-build .army-models .headline {
       height: 0;
       padding: 0;
       margin: 0;
+      -webkit-transition: height 0s .8s, padding 0s .8s, margin 0s .8s;
       transition: height 0s .8s, padding 0s .8s, margin 0s .8s; }
     #left-col-build .army-models .accordion-container {
       height: 0;
       overflow: hidden;
+      -webkit-transition: height 0s .8s;
       transition: height 0s .8s; }
     #left-col-build .open-list {
       display: block; }
@@ -5400,11 +5432,15 @@ h1, h2, h3, h4, h5, p {
         height: 100%;
         padding: 5px;
         margin-top: 10px;
+        -webkit-transition: height 0s 0s, padding 0s 0s, margin 0s 0s;
         transition: height 0s 0s, padding 0s 0s, margin 0s 0s; }
       #left-col-build.active .army-models .accordion-container {
         height: 100%;
+        -webkit-transition: height 0s 0s;
         transition: height 0s 0s; }
       #left-col-build.active .open-list .fa {
+        -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
         transform: rotate(180deg); }
   .navi-icon {
     display: block; }
@@ -5415,27 +5451,29 @@ h1, h2, h3, h4, h5, p {
     min-height: inherit; }
     .navbar #top-menu {
       position: absolute;
+      font-size: 16px;
       display: none;
       z-index: 110;
       background: #FFF; }
       .navbar #top-menu > li {
         display: block;
+        font-size: 16px;
         width: 100%; }
         .navbar #top-menu > li > a {
           text-align: left;
+          font-size: 16px;
           padding-left: 30px; }
           .navbar #top-menu > li > a > img {
             margin-right: 8px;
             max-height: 25px; }
           .navbar #top-menu > li > a:after {
             content: attr(title);
+            font-size: 16px;
             font-size: 1.6rem;
             color: #000; }
   #content {
     padding: 40px 10px 60px 45px; }
   #wrapper {
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
     box-shadow: none;
     border: none; }
   .selected-counts {

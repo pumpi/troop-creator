@@ -9,6 +9,7 @@ html, body {
 }
 
 body {
+    font-size: 14px;
     font-size: 1.4rem;
 }
 
@@ -26,8 +27,16 @@ h1, h2, h3, h4, h5, p {
 
 // Grid Model
 .cols {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
     .col {
         width: 100%;
@@ -42,8 +51,6 @@ h1, h2, h3, h4, h5, p {
     max-width: 1000px;
     min-height: 100%;
     margin: 0 auto;
-    -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
     border: 1px solid #CCC;
 }
@@ -66,6 +73,7 @@ h1, h2, h3, h4, h5, p {
         bottom: 10px;
         left: 30px;
         color: #FFF;
+        font-size: 80px;
         font-size: 8rem;
         font-family: 'Fredericka the Great', cursive;
         text-shadow: 0 0 30px #000;
@@ -73,6 +81,7 @@ h1, h2, h3, h4, h5, p {
             text-decoration: none;
         }
     }
+    font-size: 80px
 }
 
 /*
@@ -116,6 +125,7 @@ h1, h2, h3, h4, h5, p {
     position: absolute;
     right: 10px;
     top: 10px;
+    -webkit-transition: all .3s;
     transition: all .3s;
     width: 34px;
     font-size: 12px;
@@ -133,24 +143,29 @@ h1, h2, h3, h4, h5, p {
             content: '\00a0';
             height: 100%;
             position: absolute;
+            -webkit-transition: all .3s;
             transition: all .3s;
             width: 100%;
         }
         &:before {
             -webkit-transform: translateY(-.8em);
+            -ms-transform: translateY(-.8em);
             transform: translateY(-.8em);
         }
         &:after {
             -webkit-transform: translateY(0.8em);
+            -ms-transform: translateY(0.8em);
             transform: translateY(0.8em);
         }
     }
     &.active {
         -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
         transform: rotate(45deg);
         > span:after,
         > span:before {
             -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
             transform: rotate(90deg);
         }
     }
@@ -194,12 +209,14 @@ h1, h2, h3, h4, h5, p {
         padding: 10px;
         font-weight: bold;
         display: none;
-        -webkit-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
-        -moz-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
         box-shadow: 3px 8px 14px -5px rgba(0, 0, 0, 0.4);
         overflow: hidden;
         span {
+            -webkit-transform-origin: -1% 95%;
+            -ms-transform-origin: -1% 95%;
             transform-origin: -1% 95%;
+            -webkit-transform: rotate(90deg);
+            -ms-transform: rotate(90deg);
             transform: rotate(90deg);
             display: inline-block;
             font-size: 20px;
@@ -208,6 +225,7 @@ h1, h2, h3, h4, h5, p {
         .fa {
             position: absolute;
             left: 15px;
+            -webkit-transition: -webkit-transform .8s;
             transition: transform .8s;
         }
     }
@@ -248,10 +266,16 @@ h1, h2, h3, h4, h5, p {
         display: none;
     }
     .model {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex;
         width: 100%;
         padding: 5px 0;
         .model-name {
+            -webkit-box-flex: 1;
+            -webkit-flex: 1;
+            -ms-flex: 1;
             flex: 1;
             padding-left: 10px;
         }
@@ -304,6 +328,7 @@ h1, h2, h3, h4, h5, p {
 }
 
 .selected-counts {
+    font-size: 18px;
     font-size: 1.8rem;
     font-weight: bold;
     padding-top: 15px;
@@ -314,7 +339,13 @@ h1, h2, h3, h4, h5, p {
 }
 
 .list-options {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     .max-caster, .max-points {
         width: 15%;
@@ -397,7 +428,7 @@ h1, h2, h3, h4, h5, p {
     }
     .tiers {
         width: auto;
-        &::before {
+        &:before {
             content: 'Tier: ';
             display: inline-block;
         }
@@ -445,20 +476,21 @@ h1, h2, h3, h4, h5, p {
         z-index: 100;
         padding: 10px 10px 60px;
         border: 1px solid #BBB;
+        -webkit-transition: left .8s;
         transition: left .8s;
-        -webkit-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
-        -moz-box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
         box-shadow: 10px 10px 28px -8px rgba(0, 0, 0, 0.4);
         .army-models {
             .headline {
                 height: 0;
                 padding: 0;
                 margin: 0;
+                -webkit-transition: height 0s .8s, padding 0s .8s, margin 0s .8s;
                 transition: height 0s .8s, padding 0s .8s, margin 0s .8s;
             }
             .accordion-container {
                 height: 0;
                 overflow: hidden;
+                -webkit-transition: height 0s .8s;
                 transition: height 0s .8s;
             }
         }
@@ -473,14 +505,18 @@ h1, h2, h3, h4, h5, p {
                     height: 100%;
                     padding: 5px;
                     margin-top: 10px;
+                    -webkit-transition: height 0s 0s, padding 0s 0s, margin 0s 0s;
                     transition: height 0s 0s, padding 0s 0s, margin 0s 0s;
                 }
                 .accordion-container {
                     height: 100%;
+                    -webkit-transition: height 0s 0s;
                     transition: height 0s 0s;
                 }
             }
             .open-list .fa {
+                -webkit-transform: rotate(180deg);
+                -ms-transform: rotate(180deg);
                 transform: rotate(180deg);
             }
         }
@@ -495,14 +531,17 @@ h1, h2, h3, h4, h5, p {
         min-height: inherit;
         #top-menu {
             position: absolute;
+            font-size: 16px;
             display: none;
             z-index: 110;
             background: #FFF;
             > li {
                 display: block;
+                font-size: 16px;
                 width: 100%;
                 > a {
                     text-align: left;
+                    font-size: 16px;
                     padding-left: 30px;
                     > img {
                         margin-right: 8px;
@@ -510,6 +549,7 @@ h1, h2, h3, h4, h5, p {
                     }
                     &:after {
                         content: attr(title);
+                        font-size: 16px;
                         font-size: 1.6rem;
                         color: #000;
                     }
@@ -521,8 +561,6 @@ h1, h2, h3, h4, h5, p {
         padding: 40px 10px 60px 45px;
     }
     #wrapper {
-        -webkit-box-shadow: none;
-        -moz-box-shadow: none;
         box-shadow: none;
         border: none;
     }

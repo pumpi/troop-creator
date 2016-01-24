@@ -24,7 +24,7 @@ troopCreator.controller('buildCtrl',
                 $scope.selectedModels   = [];
                 $scope.gameCaster       = 1;
                 $scope.gamePoints       = 25;
-                $scope.gameTier         = 0;
+                $scope.gameTier         = '';
                 $scope.gameObjective    = '';
                 $scope.modalLevel       = 0;
                 $scope.points           = 0;
