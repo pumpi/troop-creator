@@ -1,4 +1,5 @@
-﻿'use strict';
+﻿/* global troopCreator */
+'use strict';
 
 // Controller to display the troop creator
 troopCreator.controller('buildCtrl',
@@ -99,8 +100,6 @@ troopCreator.controller('buildCtrl',
                     }
                 });
 
-
-
                 var favicon = new Favico();
                 var image = $('#' + $routeParams.army + ' img')[0];
                 favicon.image(image);
@@ -121,17 +120,6 @@ troopCreator.controller('buildCtrl',
                 alert('error reading ' + $routeParams.army + '.json');
 		    }
         );
-
-        // accordion function for list
-        $scope.accordion = function(id, open) {
-            var $this = $('.accordion-'+id);
-            if ( open ) {
-                $this.slideDown();
-            } else {
-                $this.slideToggle();
-            }
-            $this.parent().siblings().find('.accordion-container').slideUp();
-        };
 
         $scope.openList = function() {
             $('#left-col-build').toggleClass('active');
@@ -162,12 +150,12 @@ troopCreator.controller('buildCtrl',
             }
 
 			// Warlock have max value in selectedModels
-            if ( /^warlock$|^warcaster$/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$') >= $scope.gameCaster ) {
+            if ( /^warlock$|^warcaster$/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$').all >= $scope.gameCaster ) {
 				return true;
             }
 
 			// No Caster in selectedModels we can not select an Warbeast or Warjack
-            if ( /warbeast|warjack/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$') === 0 ) {
+            if ( /warbeast|warjack/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$').all === 0 ) {
 				return true;
             }
 
@@ -184,27 +172,14 @@ troopCreator.controller('buildCtrl',
 
             // Check if field allowance at cap
             if ( !getFa || getFa !== 'U' ) {
-            	var mc = 0;
-            	var fa = false;
+                var mc = $scope.countSelectedModel(model.id, 'id'),
+                    fa = false;
 
-            	$.each($scope.selectedModels, function(k, selectedModel) {
-                    // if Character and we always have in list
-                    if (getFa === 'C' && selectedModel.name === model.name) {
-                        fa = true;
-                        return false;
-                    }
-
-                    // Count field allowance model but not the free models
-                    if (selectedModel.name === model.name && !selectedModel.hasOwnProperty('freeModel')) {
-                        mc++;
-                    }
-
-                    // if field allowance model full
-                    if (getFa <= mc) {
-                        fa = true;
-                        return false;
-                    }
-				});
+                if (getFa === 'C' && mc.all > 0) {
+                    fa = true;
+                } else if (getFa <= mc.normal) {
+                    fa = true;
+                }
 
                 // Check if this an free tier model an ignores the FA
                 if ( cost === 0 && model.cost !== 0 ) {
@@ -212,7 +187,7 @@ troopCreator.controller('buildCtrl',
                 }
 
 				// field allowance full
-				if ( fa ) {
+				if ( fa === true ) {
 					return true;
 				}
             }
@@ -228,7 +203,7 @@ troopCreator.controller('buildCtrl',
                 if ( !/^war/i.test(model.type) ) {
                     var countRestricted = $scope.countSelectedModel(search, 'id'),
                         countModel = $scope.countSelectedModel(model.id, 'id');
-                    return !(countRestricted > 0 && countRestricted > countModel);
+                    return !(countRestricted.all > 0 && countRestricted.all > countModel.all);
                 }
             }
 
@@ -243,24 +218,29 @@ troopCreator.controller('buildCtrl',
         };
 
         // count models with regex in selected list by value
-        $scope.countSelectedModel = function(match, value, onlyFree) {
-            if ( typeof(value) === 'undefined' ) value = 'type';
-            if ( typeof(onlyFree) === 'undefined' ) onlyFree = false;
-            var count = 0;
-            var matcher = new RegExp(match, 'i');
+        $scope.countSelectedModel = function(match, value) {
+            if ( typeof(value) === 'undefined' ) { value = 'type'; }
+
+            var count = 0,
+                countFree = 0,
+                matcher = new RegExp(match, 'i');
 
             if ( $scope.selectedModels ) {
-                $.each($scope.selectedModels, function (key, selectedModel) {
-                    if ( matcher.test(selectedModel[value]) ) {
-                        if ( onlyFree && selectedModel.isFree ) {
-                            count++;
-                        } else if ( !onlyFree ) {
-                            count++;
+                var recursive = function(models) {
+                    $.each(models, function (key, model) {
+                        if ( matcher.test(model[value]) ) {
+                            if ( model.freeModel ) {
+                                countFree++;
+                            } else {
+                                count++;
+                            }
                         }
-                    }
-                });
+                        recursive(model.group);
+                    });
+                };
+                recursive($scope.selectedModels);
             }
-            return count;
+            return {'normal': count, 'free': countFree, 'all': (count + countFree)};
         };
 
         // Drop callback for dragable
@@ -279,7 +259,7 @@ troopCreator.controller('buildCtrl',
         $scope.addModel = function(model) {
             if ( !$scope.checkModelAvailable(model) ) {
                 var copy = angular.copy(model);
-
+                    copy.group = [];
                 // its an Weapon Attachmend we need an option
                 if ( /^wa$/i.test(model.type) ) {
                     copy.attached = 1;
@@ -297,20 +277,20 @@ troopCreator.controller('buildCtrl',
                     }
                 } else if (model.hasOwnProperty('restricted_to')) {
                     var count = $scope.selectedModels.length - 1;
-                    for (var i = 0; i <= count; i++) {
+                    for (var j = 0; j <= count; j++) {
                     	// Is This right?? we alwasy bond the model to the last model when we find no restricted_to
-                        if ( i === count ) {
-                            findIndex = i;
+                        if ( j === count ) {
+                            findIndex = j;
                         }
                         else if (typeof model.restricted_to === 'string') {
-                            if ($scope.selectedModels[i].id === model.restricted_to) {
-                                if (i !== count && $scope.selectedModels[(i + 1)].id !== model.id) {
-                                    findIndex = i;
+                            if ($scope.selectedModels[j].id === model.restricted_to) {
+                                if (j !== count && $scope.selectedModels[(j + 1)].id !== model.id) {
+                                    findIndex = j;
                                 }
                             }
                         } else {
                             $.each(model.restricted_to, function(key, val) {
-                                if ($scope.selectedModels[i].id === val ) {
+                                if ($scope.selectedModels[j].id === val ) {
                                     findIndex = i;
                                     return false;
                                 }
@@ -335,8 +315,8 @@ troopCreator.controller('buildCtrl',
                 // If we find a postion where we add the model add or add to the end
                 if (findIndex !== false) {
                     copy.bonded = 1;
-                    $scope.selectedModels.splice(findIndex + 1, 0, copy);
-                } else if ( $scope.countSelectedModel('^warlock|^warcaster') === 0 && /^warlock|^warcaster/i.test(copy.type) ) {
+                    $scope.selectedModels[findIndex].group.push(copy);
+                } else if ( $scope.countSelectedModel('^warlock|^warcaster').all === 0 && /^warlock|^warcaster/i.test(copy.type) ) {
                     $scope.selectedModels.splice(0, 0, copy);
                 } else {
                     $scope.selectedModels.push(copy);
@@ -346,28 +326,20 @@ troopCreator.controller('buildCtrl',
         };
 
         // Remove an Model from the right
-        $scope.removeModel = function(index) {
-            if ( $scope.selectedModels[index + 1] !== undefined && !$scope.selectedModels[index].hasOwnProperty('bonded') && $scope.selectedModels[index + 1].hasOwnProperty('bonded') ) {
-                if ( !confirm(unescape("Wenn Sie dieses Model l%F6schen werden auch alle angeschlossenen Modelle gel%F6scht%21 wollen Sie wirklich l%F6schen%3F")) ) {
+        $scope.removeModel = function(index, groupIdx) {
+            var models = false;
+            if (typeof groupIdx === 'undefined' ) {
+                models = $scope.selectedModels;
+            } else {
+                models = $scope.selectedModels[groupIdx].group;
+            }
+            if ( models[index].group.length > 0 ) {
+                if (!confirm(unescape("Wenn Sie dieses Model l%F6schen werden auch alle angeschlossenen Modelle gel%F6scht%21 wollen Sie wirklich l%F6schen%3F"))) {
                     return false;
                 }
-
-                // Let us se how much models are bonded to the model we like to del
-                var modelsToDel = 0;
-                for ( var i = index +1, len = $scope.selectedModels.length; i < len; i ++ ) {
-                    if ( $scope.selectedModels[i].hasOwnProperty('bonded') ) {
-                        modelsToDel ++;
-                    } else {
-                        // we have count all models an can leave the for
-                        break;
-                    }
-                }
-
-                $scope.selectedModels.splice(index, modelsToDel + 1);
-            } else {
-                $scope.selectedModels.splice(index, 1);
             }
 
+            models.splice(index, 1);
         	$scope.calculateAvailablePoints();
         };
 
@@ -382,13 +354,10 @@ troopCreator.controller('buildCtrl',
         };
 
         // Calculate the available Points
-        $scope.calculateAvailablePoints = function(noUpdateSearch) {
-            if ( typeof(noUpdateSearch) === 'undefined' ) noUpdateSearch = false;
-            if ( !noUpdateSearch ) {
-                $scope.updateSearch();
-            }
+        $scope.calculateAvailablePoints = function() {
             $scope.calculateTierLevel();
             $scope.checkFreeSelected();
+            $scope.updateSearch();
 
 			var sumPoints = 0;
 			var casterPoints = 0;
@@ -399,11 +368,19 @@ troopCreator.controller('buildCtrl',
 
 				if ( /^warlock$|^warcaster$/i.test(model.type) ) {
                     casterPoints = casterPoints + parseInt(cost);
-				} else if ( /^warjack$|^warbeast$/i.test(model.type) ) {
-                    casterPoints = casterPoints - cost;
 				} else {
                     sumPoints = sumPoints + cost;
 				}
+
+                // If we have models in the Battle Group we must count one deeper
+                $.each( model.group, function(k, group) {
+                    var cost = $scope.getModelCost(group);
+                    if ( /^warjack$|^warbeast$/i.test(group.type) ) {
+                        casterPoints = casterPoints - cost;
+                    } else {
+                        sumPoints = sumPoints + cost;
+                    }
+                });
 			});
 
 			if ( casterPoints < 0 ) {
@@ -429,17 +406,10 @@ troopCreator.controller('buildCtrl',
                     } else {
 
                         $.each(level.mustHave, function(idx, must) {
-                            var have = 0;
-                            $.each($scope.selectedModels, function(idx, selectedModel) {
-                                // if we have the model in list by Id
-                                if ( $.inArray(selectedModel.id, must.ids ) !== -1 ) {
-                                    have ++;
-                                }
-                                if ( have >= must.min ) {
-                                    mustCount ++;
-                                    return false;
-                                }
-                            });
+                            if ( must.min <= $scope.countSelectedModel(must.ids.join('|'), 'id').all ) {
+                                mustCount ++;
+                                return false;
+                            }
                         });
 
                         if ( level.mustHave.length === mustCount ) {
@@ -465,31 +435,18 @@ troopCreator.controller('buildCtrl',
                 $.each(level.freeModels, function(key, free) {
                     var eachFree = 0;
                     if ( free.forEach ) {
-                        $.each($scope.selectedModels, function(idx, selectedModel) {
-                            // if we have the model in list by Id
-                            if ( $.inArray(selectedModel.id, free.forEach ) !== -1 ) {
-                                eachFree ++;
-                            }
-                        });
+                        eachFree = $scope.countSelectedModel(free.forEach.join('|'), 'id').all
                     } else {
                         eachFree = 1;
                     }
                     $scope.freeModels.id = free.id;
                     $scope.freeModels.count = eachFree;
-                    console.log($scope.freeModels);
                 });
             }
             if ( level.faAlterations.length > 0 ) {
                 $.each(level.faAlterations, function(key, fa) {
                     if ( fa.forEach ) {
-                        var eachBonus = 0;
-                        $.each($scope.selectedModels, function(idx, selectedModel) {
-                            // if we have the model in list by Id
-                            if ( $.inArray(selectedModel.id, fa.forEach ) !== -1 ) {
-                                eachBonus ++;
-                            }
-                        });
-                        $scope.faAlterations[fa.id] = eachBonus;
+                        $scope.faAlterations[fa.id] = $scope.countSelectedModel(fa.forEach.join('|'), 'id').all;
                     } else {
                         $scope.faAlterations[fa.id] = fa.bonus;
                     }
@@ -506,30 +463,33 @@ troopCreator.controller('buildCtrl',
 
         // Check Free Models in selected
         $scope.checkFreeSelected = function() {
-            $.each($scope.selectedModels, function(idx, selectedModel) {
-                if ( selectedModel.hasOwnProperty('freeModel') ) {
-                    var isFree = true;
-                    if ($scope.freeModels.id.length > 0 ) {
-                        // is the model we are check in the for free array
-                        console.log($scope.countSelectedModel(selectedModel, 'id'), $scope.freeModels.count);
-                        isFree = ( $.inArray(selectedModel.id, $scope.freeModels.id) !== -1 && $scope.countSelectedModel(selectedModel, 'id', 1) <= $scope.freeModels.count );
-                    } else {
-                        isFree = false;
-                    }
+            var recursive = function(models) {
+                $.each(models, function (idx, model) {
+                    if (model.hasOwnProperty('freeModel')) {
+                        var isFree = true;
+                        if ($scope.freeModels.id.length > 0) {
+                            // is the model we are check in the for free array
+                            isFree = ( $.inArray(model.id, $scope.freeModels.id) !== -1 && $scope.countSelectedModel(model.id, 'id').free <= $scope.freeModels.count );
+                        } else {
+                            isFree = false;
+                        }
 
-                    if ( !isFree ) {
-                        $scope.selectedModels[idx].cost = $scope.selectedModels[idx].realCost;
-                        delete $scope.selectedModels[idx].freeModel;
-                        delete $scope.selectedModels[idx].realCost;
+                        if (!isFree) {
+                            model.cost = model.realCost;
+                            delete model.freeModel;
+                            delete model.realCost;
+                        }
                     }
-                }
-            });
+                    recursive(model.group);
+                });
+            };
+            recursive($scope.selectedModels);
         };
 
         // get the real model cost
         $scope.getModelCost = function(model, checkFree, getMax) {
-            if ( typeof(checkFree) === 'undefined' ) checkFree = false;
-            if ( typeof(getMax) === 'undefined' ) getMax = false;
+            if ( typeof(checkFree) === 'undefined' ) { checkFree = false; }
+            if ( typeof(getMax) === 'undefined' ) { getMax = false; }
             var rCost;
 
             if ( ( getMax && model.hasOwnProperty('costMax') ) || ( model.hasOwnProperty('useMax') && model.useMax ) ) {
@@ -537,7 +497,7 @@ troopCreator.controller('buildCtrl',
             } else if ( model.hasOwnProperty('attached') ) {
                 rCost = parseInt(model.cost * model.attached);
             } else {
-                rCost = parseInt(model.cost)
+                rCost = parseInt(model.cost);
             }
 
             // only run this checks if we have an tier
@@ -550,21 +510,10 @@ troopCreator.controller('buildCtrl',
 
                 // Check for free models
                 if ($scope.freeModels.id.length > 0 && checkFree) {
-
-                    var countFree = 0;
-
-                    $.each($scope.selectedModels, function (idx, selectedModel) {
-                        // if we have the model in list by Id and the cost is for 0
-                        if ( $.inArray(selectedModel.id, $scope.freeModels.id) !== -1 && selectedModel.cost === 0 ) {
-                            countFree ++;
-                        }
-
-                        if (countFree >= $scope.freeModels.count) return false;
-                    });
                     // is the model we are check in the for free array
                     var isFree = ( $.inArray(model.id, $scope.freeModels.id) !== -1 );
 
-                    if (countFree < $scope.freeModels.count && isFree) {
+                    if ($scope.countSelectedModel(model.id, 'id').free < $scope.freeModels.count && isFree) {
                         rCost = parseInt(0);
                     }
                 }
@@ -579,7 +528,7 @@ troopCreator.controller('buildCtrl',
             if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 ) {
                 return true;
             } else if ( /^unit/i.test(model.type) ) {
-                if ( model.useMax == 1 ) {
+                if ( model.useMax === 1 ) {
                     cost = model.costMax;
                 }
             } else if (/^wa$/i.test(model.type)) {
@@ -601,7 +550,7 @@ troopCreator.controller('buildCtrl',
                 }
             }
 
-            // number over 100 mens this model is unlimited
+            // number over 100 this model is unlimited
             if ( fa > 100 ) {
                 fa = 'U';
             }
@@ -622,36 +571,44 @@ troopCreator.controller('buildCtrl',
 		    return Object.keys(obj);
 		};
 
+        $scope.createModStr = function(model) {
+
+        };
+
         // add currently selects in the URL
         $scope.updateSearch = function() {
             //get the selectedModels as string
             var search = {},
                 sel = [];
-            $.each($scope.selectedModels, function(k, model) {
-                var modStr = model.id;
+            var recursive = function(models) {
+                $.each(models, function(k, model) {
+                    var modStr = model.id;
 
-                //an unit have an max size
-                if ( model.hasOwnProperty('useMax') && model.useMax === true ) {
-                    modStr += ':m';
-                }
+                    //an unit have an max size
+                    if ( model.hasOwnProperty('useMax') && model.useMax === true ) {
+                        modStr += ':m';
+                    }
 
-                //a bonded model
-                if ( model.hasOwnProperty('bonded') && model.bonded === 1 ) {
-                    modStr += ':b';
-                }
+                    //a bonded model
+                    if ( model.hasOwnProperty('bonded') && model.bonded === 1 ) {
+                        modStr += ':b';
+                    }
 
-                //a free model
-                if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 ) {
-                    modStr += ':f';
-                }
+                    //a free model
+                    if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 ) {
+                        modStr += ':f';
+                    }
 
-                //a weapon attachment with the attached size
-                if ( model.hasOwnProperty('attached') ) {
-                    modStr += ':a#' + model.attached;
-                }
+                    //a weapon attachment with the attached size
+                    if ( model.hasOwnProperty('attached') ) {
+                        modStr += ':a#' + model.attached;
+                    }
+                    sel.push(modStr);
+                    recursive(model.group);
+                });
+            };
+             recursive($scope.selectedModels);
 
-                sel.push( modStr );
-            });
             search.sel = btoa(sel);
             search.caster = $scope.gameCaster;
             search.points = $scope.gamePoints;
@@ -713,6 +670,7 @@ troopCreator.controller('buildCtrl',
             });
 
             if (!$.isEmptyObject(add) ) {
+                add.group = [];
                 for (var i = 0; i <= args.length ; i++) {
                     if (args[i] === 'bonded' || args[i] === 'b') {
                         add.bonded = 1;
@@ -733,7 +691,13 @@ troopCreator.controller('buildCtrl',
                         add.attached = parseInt(split[1]);
                     }
                 }
-                $scope.selectedModels.push(add);
+                // Add bonded models in .group from the last model
+                if ( add.bonded === 1 ) {
+                    var lastIdx = $scope.selectedModels.length - 1;
+                    $scope.selectedModels[lastIdx].group.push(add);
+                } else {
+                    $scope.selectedModels.push(add);
+                }
             }
         };
 
@@ -744,7 +708,7 @@ troopCreator.controller('buildCtrl',
                 $.each(grp.entries, function(key, model) {
                     if ( model.id === id ) {
                         found = model;
-                        return true
+                        return true;
                     }
                 });
                 if ( found ) {
@@ -760,7 +724,7 @@ troopCreator.controller('buildCtrl',
             $scope.clearList();
             if ( $scope.tier.hasOwnProperty('casterId') ) {
                 $scope.addModelByString($scope.tier.casterId);
-                $scope.accordion('1', true);
+                $('.army-models:eq(1) .accordion-container').slideDown().parent().siblings().find('.accordion-container').slideUp();
             }
         };
 
@@ -806,6 +770,6 @@ troopCreator.controller('buildCtrl',
                     item.name = item.id + " - " + item.name;
                 });
             });
-        }
+        };
     }
 );

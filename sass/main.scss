@@ -225,10 +225,6 @@ h1, h2, h3, h4, h5, p {
         li {
             background: #CCC;
             list-style: none;
-            padding: 5px 0;
-            &:hover {
-                background-color: #AAA;
-            }
         }
     }
     .headline {
@@ -254,6 +250,7 @@ h1, h2, h3, h4, h5, p {
     .model {
         display: flex;
         width: 100%;
+        padding: 5px 0;
         .model-name {
             flex: 1;
             padding-left: 10px;
@@ -339,6 +336,10 @@ h1, h2, h3, h4, h5, p {
     }
 }
 
+.select-on-click {
+    cursor: pointer;
+}
+
 /*
  * MODAL
  *****************************/
@@ -356,6 +357,16 @@ h1, h2, h3, h4, h5, p {
     border: 3px dashed #CCC;
     color: #CCC;
     font-size: 20px;
+    font-weight: bold;
+}
+.modal-title .fa-check {
+    color: green;
+    font-size: 18px;
+    font-size: 1.8rem;
+}
+
+.tier-add-model {
+    cursor: pointer;
     font-weight: bold;
 }
 

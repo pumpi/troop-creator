@@ -7,10 +7,10 @@
 		<h2>Available models</h2>
 		<input type="search" ng-model="search" placeholder="Search..." class="form-control">
 		<div class="army-models" ng-repeat="i in notSorted(data)" ng-init="value = data[i]['entries']">
-			<div ng-hide="(filtered = (value | wildcardArmy:search | restricted:this)).length == 0" class="headline accordion-click" ng-click="accordion($index)" ng-class="{mercenary: data[i].add.indexOf('mercenary') > -1, minions: data[i].add.indexOf('minion') > -1}">{{data[i]['label']}} <span>({{filtered.length}})</span></div>
-            <div class="accordion-container accordion-{{$index}}">
+			<div ng-hide="(filtered = (value | wildcardArmy:search | restricted:this)).length == 0" class="headline accordion-click" accordion-toggle ng-class="{mercenary: data[i].add.indexOf('mercenary') > -1, minions: data[i].add.indexOf('minion') > -1}">{{data[i]['label']}} <span>({{filtered.length}})</span></div>
+            <div class="accordion-container">
                 <ul>
-                    <li class="model" ng-click="addModel(model)" ng-class="{disable: checkModelAvailable(model, model.type)}" data-drag="!checkModelAvailable(model, model.type)" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in filtered | orderBy: 'name'">
+                    <li class="model" ng-click="addModel(model)" ng-class="{disable: modelAvailable = checkModelAvailable(model, model.type)}" data-drag="!modelAvailable" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in filtered | orderBy: 'name'">
                         <div class="model-name">{{model.name}}</div>
                         <div class="model-options">
                             <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
@@ -45,35 +45,15 @@
             </div>
 		</div>
 		<div class="selected-models army-models">
-			<ul>
-				<li class="model" ng-repeat="model in selectedModels track by $index">
-                    <div class="model-name">
-                        <i class="fa fa-level-up fa-rotate-90" ng-show="model.bonded >= 0"></i>
-						{{model.name}}
-                        <span ng-show="model.max && model.min !== model.max">
-							(Leader and 
-							<span class="btn-group btn-group-xs">
-								<button type="button" class="btn btn-default" ng-class="{'active btn-success': !model.useMax}" ng-click="model.useMax = false; calculateAvailablePoints();">{{model.min -1}}</button>
-								<button type="button" class="btn btn-default" ng-class="{'active btn-success': model.useMax}" ng-click="model.useMax = true; calculateAvailablePoints();" ng-disabled="canUseMax(model)" >{{model.max -1}}</button>
-							</span>
-							)
-						</span>
-						<span ng-show="model.max && model.min === model.max">
-							(Leader and {{model.min -1}})
-						</span>
-                        <span ng-show="model.max_attach > 1" class="btn-group btn-group-xs">
-                            <button type="button" class="btn btn-default" ng-repeat="i in model.max_attach | range" ng-class="{'active btn-success': i === model.attached}" ng-click="model.attached = i; calculateAvailablePoints();" ng-disabled="canUseAttached(model, i)">{{i}}</button>
-                        </span>
-                    </div>
-					<div class="model-options">
-                        <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model)}">
-                            {{getModelCost(model)}}
-                        </span>
-                        <span class="model-remove">
-                            <i ng-click="removeModel($index)" class="fa fa-minus-circle remove-from-list"></i>
-                        </span>
-					</div>
-				</li>
+			<ul jqyoui-droppable="{index: {{$index}}}">
+				<li ng-repeat="(idx, model) in selectedModels track by $index">
+                    <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
+                    <ul ng-show="model.group">
+                        <li ng-repeat="model in model.group track by $index" ng-init="groupIdx = idx">
+                            <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
+                        </li>
+                    </ul>
+                </li>
 			</ul>
             <div class="selected-objective input-group">
                 <div class="input-group-addon">Objective</div>
@@ -86,7 +66,7 @@
                 Drop Here
             </div>
             <div class="selected-counts">
-			    {{countSelectedModel('warlock|warcaster')}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Points
+			    {{countSelectedModel('warlock|warcaster').all}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Points
             </div>
 		</div>
 
@@ -106,17 +86,21 @@
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title"><i class="fa fa-file-text-o"></i> Troop plain text</h4>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body select-on-click" select-on-click>
                         System: <strong>{{system}}</strong><br />
                         Faction: <strong>{{faction}}</strong><br />
                         <span ng-hide="!gameTier">Tier: <strong>{{tiers[gameTier].name}}</strong> (Level <strong>{{tierLevel}}</strong>)<br /></span>
-                        Caster: <strong>{{countSelectedModel('warlock|warcaster')}} / {{gameCaster}}</strong><br />
+                        Caster: <strong>{{countSelectedModel('warlock|warcaster').all}} / {{gameCaster}}</strong><br />
                         Points: <strong>{{points}} / {{gamePoints}}</strong><br />
 
                         <div ng-repeat="model in selectedModels track by $index">
-                            <span ng-show="model.bonded >= 0">* </span><strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
+                            <strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
                             <span ng-show="model.max"> (Leader and {{model.useMax ? model.max -1 : model.min - 1}})</span>
                             <strong>(<span ng-show="checkIsCaster(model)">-</span>{{getModelCost(model)}} Pts.)</strong>
+                            <div ng-repeat="model in model.group track by $index">
+                                * <strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
+                                <strong>({{getModelCost(model)}} Pts.)</strong>
+                            </div>
                         </div>
 
                         <span ng-hide="!gameObjective">Objective: <strong>{{objectives[gameObjective]}}</strong></span>
@@ -151,7 +135,7 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title"><i class="fa fa-star"></i> Tier level {{tier.levels[modalLevel].level}}</h4>
+                        <h4 class="modal-title"><i class="fa fa-star"></i> Tier level {{tier.levels[modalLevel].level}} <i ng-show="tierLevel >= tier.levels[modalLevel].level" class="fa fa-check"></i></h4>
                     </div>
                     <div class="modal-body">
                         <div class="panel panel-default">
@@ -167,12 +151,12 @@
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Requirements</h3>
+                                <h3 class="panel-title">Requirements <small>(click model name to add)</small></h3>
                             </div>
                             <div class="panel-body">
                                 <ul>
                                     <li ng-show="!tier.levels[modalLevel].mustHave[0]">The army can include only the models listed above.</li>
-                                    <li ng-show="tier.levels[modalLevel].mustHave[0]" ng-repeat="have in tier.levels[modalLevel].mustHave">The army includes <strong>{{have.min}}</strong> or more <strong ng-repeat="id in have.ids">{{getModelById(id).name}}{{$last ? '' : ', '}}</strong></li>
+                                    <li ng-show="tier.levels[modalLevel].mustHave[0]" ng-repeat="have in tier.levels[modalLevel].mustHave">The army includes <strong>{{have.min}}</strong> or more <a ng-repeat="id in have.ids" ng-init="model = getModelById(id)" ng-click="addModel(model)" class="tier-add-model">{{model.name}}{{$last ? '' : ', '}}</a></li>
                                 </ul>
                             </div>
                         </div>

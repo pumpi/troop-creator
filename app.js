@@ -52,6 +52,7 @@ troopCreator.run(function($rootScope, $location, $window){
     });
 });
 
+// Generate the Tooltip directive
 troopCreator.directive('tooltip', function(){
     return {
         restrict: 'A',
@@ -67,6 +68,38 @@ troopCreator.directive('tooltip', function(){
             }
         }
     };
+});
+
+// The on click select Directive
+troopCreator.directive('selectOnClick', function ($window) {
+    return {
+        link: function (scope, element) {
+            element.on('click', function () {
+                var selection = $window.getSelection();
+                var range = document.createRange();
+                range.selectNodeContents(element[0]);
+                selection.removeAllRanges();
+                selection.addRange(range);
+            });
+        }
+    }
+});
+
+// The Accordion Directive
+troopCreator.directive('accordionToggle', function () {
+    return {
+        link: function (scope, element) {
+            element.on('click', function () {
+                var $this = $(element).next('.accordion-container');
+                if ( $this.is(':hidden') ) {
+                    $this.slideDown();
+                } else {
+                    $this.slideToggle();
+                }
+                $this.parent().siblings().find('.accordion-container').slideUp();
+            });
+        }
+    }
 });
 
 // Wildcard Filter for Army List builder
