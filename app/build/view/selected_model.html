@@ -1,0 +1,37 @@
+<div class="model-name">
+    <i class="fa fa-level-up fa-rotate-90" ng-show="model.bonded >= 0"></i>
+    {{model.name}}
+    <span ng-show="model.max && model.min !== model.max">
+        (Leader and
+        <span class="btn-group btn-group-xs">
+            <button type="button" class="btn btn-default"
+                    ng-class="{'active btn-success': !model.useMax}"
+                    ng-click="model.useMax = false; calculateAvailablePoints();">{{model.min -1}}
+            </button>
+            <button type="button" class="btn btn-default"
+                    ng-class="{'active btn-success': model.useMax}"
+                    ng-click="model.useMax = true; calculateAvailablePoints();"
+                    ng-disabled="canUseMax(model)">{{model.max -1}}
+            </button>
+        </span>
+        )
+    </span>
+    <span ng-show="model.max && model.min === model.max">
+        (Leader and {{model.min -1}})
+    </span>
+    <span ng-show="model.max_attach > 1" class="btn-group btn-group-xs">
+        <button type="button" class="btn btn-default" ng-repeat="i in model.max_attach | range"
+                ng-class="{'active btn-success': i === model.attached}"
+                ng-click="model.attached = i; calculateAvailablePoints();"
+                ng-disabled="canUseAttached(model, i)">{{i}}
+        </button>
+    </span>
+</div>
+<div class="model-options">
+    <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model)}">
+        {{getModelCost(model)}}
+    </span>
+    <span class="model-remove">
+        <i ng-click="removeModel($index, groupIdx)" class="fa fa-minus-circle remove-from-list"></i>
+    </span>
+</div>
