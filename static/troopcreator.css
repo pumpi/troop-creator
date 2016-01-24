@@ -5071,7 +5071,8 @@ h1, h2, h3, h4, h5, p {
   .cols .col {
     width: 100%;
     max-width: 49%;
-    flex: 1 49%; }
+    flex: 1 49%;
+    display: inline-block; }
 
 /*
  * WRAPPER
