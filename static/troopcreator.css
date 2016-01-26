@@ -1,4 +1,4 @@
-/*! troopcreator 2016-01-24 */
+/*! troopcreator 2016-01-26 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -26,7 +26,6 @@ audio:not([controls]) {
 
 [hidden], template {
   display: none; }
-
 
 a {
   background-color: transparent; }

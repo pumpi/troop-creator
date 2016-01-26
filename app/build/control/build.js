@@ -469,7 +469,7 @@ troopCreator.controller('buildCtrl',
                         var isFree = true;
                         if ($scope.freeModels.id.length > 0) {
                             // is the model we are check in the for free array
-                            isFree = ( $.inArray(model.id, $scope.freeModels.id) !== -1 && $scope.countSelectedModel(model.id, 'id').free <= $scope.freeModels.count );
+                            isFree = ( $.inArray(model.id, $scope.freeModels.id) !== -1 && $scope.countSelectedModel($scope.freeModels.id.join('|'), 'id').free <= $scope.freeModels.count );
                         } else {
                             isFree = false;
                         }
@@ -513,7 +513,7 @@ troopCreator.controller('buildCtrl',
                     // is the model we are check in the for free array
                     var isFree = ( $.inArray(model.id, $scope.freeModels.id) !== -1 );
 
-                    if ($scope.countSelectedModel(model.id, 'id').free < $scope.freeModels.count && isFree) {
+                    if ($scope.countSelectedModel($scope.freeModels.id.join('|'), 'id').free < $scope.freeModels.count && isFree) {
                         rCost = parseInt(0);
                     }
                 }
@@ -523,9 +523,10 @@ troopCreator.controller('buildCtrl',
         };
 
         // Get true if this model with Bonus points
-        $scope.isBonusCost = function(model) {
+        $scope.isBonusCost = function(model, checkFree) {
+            if ( typeof(checkFree) === 'undefined' ) { checkFree = true; }
             var cost = model.cost;
-            if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 ) {
+            if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 && model.cost === 0 ) {
                 return true;
             } else if ( /^unit/i.test(model.type) ) {
                 if ( model.useMax === 1 ) {
@@ -535,7 +536,7 @@ troopCreator.controller('buildCtrl',
                 cost = model.cost * model.attached;
             }
 
-            return cost !== $scope.getModelCost(model, 1);
+            return cost !== $scope.getModelCost(model, checkFree);
         };
 
         // get the real model FA
