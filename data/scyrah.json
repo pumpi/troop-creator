@@ -366,12 +366,6 @@
     },
     {
       "logo": "faction_retribution",
-      "id": "faction_retribution_WAs",
-      "entries": [],
-      "label": "Weapon Attachments"
-    },
-    {
-      "logo": "faction_retribution",
       "id": "faction_retribution_UAs",
       "entries": [
         {
@@ -443,6 +437,12 @@
         }
       ],
       "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_retribution",
+      "id": "faction_retribution_WAs",
+      "entries": [],
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_retribution",

@@ -526,12 +526,6 @@
     },
     {
       "logo": "faction_menoth",
-      "id": "faction_menoth_WAs",
-      "entries": [],
-      "label": "Weapon Attachments"
-    },
-    {
-      "logo": "faction_menoth",
       "id": "faction_menoth_UAs",
       "entries": [
         {
@@ -581,6 +575,12 @@
         }
       ],
       "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_menoth",
+      "id": "faction_menoth_WAs",
+      "entries": [],
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_menoth",

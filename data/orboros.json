@@ -493,23 +493,6 @@
     },
     {
       "logo": "faction_orboros",
-      "id": "faction_orboros_WAs",
-      "entries": [
-        {
-          "name": "Tharn Ravager Shaman",
-          "fa": "1",
-          "cost": 2,
-          "restricted_to": "OU03",
-          "max_attach": 1,
-          "faction": "faction_orboros",
-          "id": "OA02",
-          "type": "WA"
-        }
-      ],
-      "label": "Weapon Attachments"
-    },
-    {
-      "logo": "faction_orboros",
       "id": "faction_orboros_UAs",
       "entries": [
         {
@@ -577,6 +560,23 @@
         }
       ],
       "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_orboros",
+      "id": "faction_orboros_WAs",
+      "entries": [
+        {
+          "name": "Tharn Ravager Shaman",
+          "fa": "1",
+          "cost": 2,
+          "restricted_to": "OU03",
+          "max_attach": 1,
+          "faction": "faction_orboros",
+          "id": "OA02",
+          "type": "WA"
+        }
+      ],
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_orboros",

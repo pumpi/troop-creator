@@ -774,12 +774,6 @@
     },
     {
       "logo": "faction_minions",
-      "id": "faction_minions_WAs",
-      "entries": [],
-      "label": "Weapon Attachments"
-    },
-    {
-      "logo": "faction_minions",
       "id": "faction_minions_UAs",
       "entries": [
         {
@@ -799,6 +793,12 @@
         }
       ],
       "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_minions",
+      "id": "faction_minions_WAs",
+      "entries": [],
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_minions",

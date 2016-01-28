@@ -1405,49 +1405,6 @@
     },
     {
       "logo": "faction_mercs",
-      "id": "faction_mercs_WAs",
-      "entries": [
-        {
-          "fa": "3",
-          "restricted_to": "MU13",
-          "max_attach": 3,
-          "id": "MA02",
-          "name": "Sea Dog Crew Riflemen",
-          "works_for": [
-            "faction_menoth",
-            "faction_khador",
-            "faction_cryx",
-            "faction_cygnar"
-          ],
-          "cost": 1,
-          "faction": "faction_mercs",
-          "type": "WA"
-        },
-        {
-          "name": "Trencher Commandos Scattergunner",
-          "fa": "2",
-          "cost": 1,
-          "restricted_to": "YU14_mercs",
-          "max_attach": 3,
-          "faction": "faction_mercs",
-          "id": "YA08_mercs",
-          "type": "WA"
-        },
-        {
-          "name": "Trencher Infantry Grenadier",
-          "fa": "2",
-          "cost": 1,
-          "restricted_to": "YU05_mercs",
-          "max_attach": 3,
-          "faction": "faction_mercs",
-          "id": "YA04_mercs",
-          "type": "WA"
-        }
-      ],
-      "label": "Weapon Attachments"
-    },
-    {
-      "logo": "faction_mercs",
       "id": "faction_mercs_UAs",
       "entries": [
         {
@@ -1574,6 +1531,49 @@
         }
       ],
       "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_mercs",
+      "id": "faction_mercs_WAs",
+      "entries": [
+        {
+          "fa": "3",
+          "restricted_to": "MU13",
+          "max_attach": 3,
+          "id": "MA02",
+          "name": "Sea Dog Crew Riflemen",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 1,
+          "faction": "faction_mercs",
+          "type": "WA"
+        },
+        {
+          "name": "Trencher Commandos Scattergunner",
+          "fa": "2",
+          "cost": 1,
+          "restricted_to": "YU14_mercs",
+          "max_attach": 3,
+          "faction": "faction_mercs",
+          "id": "YA08_mercs",
+          "type": "WA"
+        },
+        {
+          "name": "Trencher Infantry Grenadier",
+          "fa": "2",
+          "cost": 1,
+          "restricted_to": "YU05_mercs",
+          "max_attach": 3,
+          "faction": "faction_mercs",
+          "id": "YA04_mercs",
+          "type": "WA"
+        }
+      ],
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_mercs",

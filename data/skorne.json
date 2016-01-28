@@ -522,12 +522,6 @@
     },
     {
       "logo": "faction_skorne",
-      "id": "faction_skorne_WAs",
-      "entries": [],
-      "label": "Weapon Attachments"
-    },
-    {
-      "logo": "faction_skorne",
       "id": "faction_skorne_UAs",
       "entries": [
         {
@@ -568,6 +562,12 @@
         }
       ],
       "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_skorne",
+      "id": "faction_skorne_WAs",
+      "entries": [],
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_skorne",

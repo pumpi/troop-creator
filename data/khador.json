@@ -549,33 +549,6 @@
     },
     {
       "logo": "faction_khador",
-      "id": "faction_khador_WAs",
-      "entries": [
-        {
-          "name": "Assault Kommando Flame Thrower",
-          "fa": "2",
-          "cost": 1,
-          "restricted_to": "KU10",
-          "max_attach": 3,
-          "faction": "faction_khador",
-          "id": "KA05",
-          "type": "WA"
-        },
-        {
-          "name": "Winter Guard Infantry Rocketeer",
-          "fa": "2",
-          "cost": 1,
-          "restricted_to": "KU06",
-          "max_attach": 3,
-          "faction": "faction_khador",
-          "id": "KA03",
-          "type": "WA"
-        }
-      ],
-      "label": "Weapon Attachments"
-    },
-    {
-      "logo": "faction_khador",
       "id": "faction_khador_UAs",
       "entries": [
         {
@@ -644,6 +617,33 @@
         }
       ],
       "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_khador",
+      "id": "faction_khador_WAs",
+      "entries": [
+        {
+          "name": "Assault Kommando Flame Thrower",
+          "fa": "2",
+          "cost": 1,
+          "restricted_to": "KU10",
+          "max_attach": 3,
+          "faction": "faction_khador",
+          "id": "KA05",
+          "type": "WA"
+        },
+        {
+          "name": "Winter Guard Infantry Rocketeer",
+          "fa": "2",
+          "cost": 1,
+          "restricted_to": "KU06",
+          "max_attach": 3,
+          "faction": "faction_khador",
+          "id": "KA03",
+          "type": "WA"
+        }
+      ],
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_khador",

@@ -509,12 +509,6 @@
     },
     {
       "logo": "faction_everblight",
-      "id": "faction_everblight_WAs",
-      "entries": [],
-      "label": "Weapon Attachments"
-    },
-    {
-      "logo": "faction_everblight",
       "id": "faction_everblight_UAs",
       "entries": [
         {
@@ -573,6 +567,12 @@
         }
       ],
       "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_everblight",
+      "id": "faction_everblight_WAs",
+      "entries": [],
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_everblight",

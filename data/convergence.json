@@ -254,12 +254,6 @@
     },
     {
       "logo": "faction_cyriss",
-      "id": "faction_cyriss_WAs",
-      "entries": [],
-      "label": "Weapon Attachments"
-    },
-    {
-      "logo": "faction_cyriss",
       "id": "faction_cyriss_UAs",
       "entries": [
         {
@@ -281,6 +275,12 @@
         }
       ],
       "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_cyriss",
+      "id": "faction_cyriss_WAs",
+      "entries": [],
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_cyriss",

@@ -486,23 +486,6 @@
     },
     {
       "logo": "faction_trollblood",
-      "id": "faction_trollblood_WAs",
-      "entries": [
-        {
-          "name": "Kriel Warrior Caber Thrower",
-          "fa": "3",
-          "cost": 1,
-          "restricted_to": "TU01",
-          "max_attach": 3,
-          "faction": "faction_trollblood",
-          "id": "TA02",
-          "type": "WA"
-        }
-      ],
-      "label": "Weapon Attachments"
-    },
-    {
-      "logo": "faction_trollblood",
       "id": "faction_trollblood_UAs",
       "entries": [
         {
@@ -561,6 +544,23 @@
         }
       ],
       "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_trollblood",
+      "id": "faction_trollblood_WAs",
+      "entries": [
+        {
+          "name": "Kriel Warrior Caber Thrower",
+          "fa": "3",
+          "cost": 1,
+          "restricted_to": "TU01",
+          "max_attach": 3,
+          "faction": "faction_trollblood",
+          "id": "TA02",
+          "type": "WA"
+        }
+      ],
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_trollblood",
