@@ -1148,7 +1148,7 @@
             "faction_cygnar",
             "faction_menoth",
             "faction_khador",
-            "faction_retribution"
+            "faction_scyrah"
           ],
           "cost": 4,
           "faction": "faction_mercs",
@@ -1368,7 +1368,7 @@
             "faction_khador",
             "faction_cryx",
             "faction_cygnar",
-            "faction_retribution"
+            "faction_scyrah"
           ],
           "cost": 7,
           "faction": "faction_mercs",
@@ -1632,7 +1632,7 @@
           "fa": "C",
           "works_for": [
             "faction_cygnar",
-            "faction_retribution"
+            "faction_scyrah"
           ],
           "cost": 2,
           "faction": "faction_mercs",
@@ -1657,7 +1657,7 @@
           "works_for": [
             "faction_cygnar",
             "faction_khador",
-            "faction_retribution"
+            "faction_scyrah"
           ],
           "cost": 2,
           "faction": "faction_mercs",
@@ -1694,7 +1694,7 @@
           "name": "Dahlia Hallyr (Dahlia Hallyr & Skarath)",
           "fa": "C",
           "works_for": [
-            "faction_retribution"
+            "faction_scyrah"
           ],
           "cost": 9,
           "faction": "faction_mercs",
@@ -1751,7 +1751,7 @@
             "faction_cygnar",
             "faction_khador",
             "faction_menoth",
-            "faction_retribution"
+            "faction_scyrah"
           ],
           "cost": 2,
           "faction": "faction_mercs",
@@ -2058,7 +2058,7 @@
             "faction_menoth",
             "faction_khador",
             "faction_cygnar",
-            "faction_retribution"
+            "faction_scyrah"
           ],
           "cost": 3,
           "faction": "faction_mercs",
@@ -2072,7 +2072,7 @@
             "faction_menoth",
             "faction_khador",
             "faction_cygnar",
-            "faction_retribution"
+            "faction_scyrah"
           ],
           "cost": 3,
           "faction": "faction_mercs",
