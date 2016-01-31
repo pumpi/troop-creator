@@ -406,7 +406,6 @@ troopCreator.controller('buildCtrl',
                     } else {
 
                         $.each(level.mustHave, function(idx, must) {
-                            console.log(must.min, $scope.countSelectedModel(must.ids.join('|'), 'id'));
                             if ( must.min <= $scope.countSelectedModel(must.ids.join('|'), 'id').normal ) {
                                 mustCount ++;
                                 return false;
@@ -725,7 +724,7 @@ troopCreator.controller('buildCtrl',
         $scope.changeTier = function() {
             $scope.tier = $scope.tiers[$scope.gameTier];
             $scope.clearList();
-            if ( $scope.tier.hasOwnProperty('casterId') ) {
+            if ( $scope.tier !== undefined && $scope.tier.hasOwnProperty('casterId') ) {
                 $scope.addModelByString($scope.tier.casterId);
                 $('.army-models:eq(1) .accordion-container').slideDown().parent().siblings().find('.accordion-container').slideUp();
             }

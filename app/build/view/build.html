@@ -39,7 +39,7 @@
 			</div>
             <div class="tiers">
                 <select class="form-control" ng-model="gameTier" ng-change="changeTier()">
-                    <option>no tier selected ...</option>
+                    <option value="">no tier selected ...</option>
                     <option ng-repeat="tier in tiersOptions | orderBy: 'label'" value="{{tier.key}}">{{tier.label}}</option>
                 </select>
             </div>
