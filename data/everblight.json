@@ -3158,7 +3158,7 @@
           "level": 4,
           "mustHave": [
             {
-              "min": 4,
+              "min": 3,
               "inMarshal": false,
               "ids": [
                 "EB03",
