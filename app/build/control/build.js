@@ -203,11 +203,12 @@ troopCreator.controller('buildCtrl',
                     search = model.restricted_to.join('|');
                 }
 
-                if ( !/^war/i.test(model.type) ) {
+                // i dont know why i have add this Oo this make some problems if we have an warbeast that only can play with spezial Caster
+                //if ( !/^war/i.test(model.type) ) {
                     var countRestricted = $scope.countSelectedModel(search, 'id'),
                         countModel = $scope.countSelectedModel(model.id, 'id');
                     return !(countRestricted.all > 0 && countRestricted.all > countModel.all);
-                }
+                //}
             }
 
             // All its fine we can activate the model
