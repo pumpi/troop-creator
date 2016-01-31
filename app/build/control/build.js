@@ -406,7 +406,8 @@ troopCreator.controller('buildCtrl',
                     } else {
 
                         $.each(level.mustHave, function(idx, must) {
-                            if ( must.min <= $scope.countSelectedModel(must.ids.join('|'), 'id').all ) {
+                            console.log(must.min, $scope.countSelectedModel(must.ids.join('|'), 'id'));
+                            if ( must.min <= $scope.countSelectedModel(must.ids.join('|'), 'id').normal ) {
                                 mustCount ++;
                                 return false;
                             }
@@ -478,6 +479,7 @@ troopCreator.controller('buildCtrl',
                             model.cost = model.realCost;
                             delete model.freeModel;
                             delete model.realCost;
+                            $scope.calculateTierLevel();
                         }
                     }
                     recursive(model.group);
