@@ -222,8 +222,9 @@ troopCreator.controller('buildCtrl',
         };
 
         // count models with regex in selected list by value
-        $scope.countSelectedModel = function(match, value) {
-            if ( typeof(value) === 'undefined' ) { value = 'type'; }
+        $scope.countSelectedModel = function(match, value, group) {
+            if ( typeof value === 'undefined' ) { value = 'type'; }
+            if ( typeof group === 'undefined' ) { group = false; }
 
             var count = 0,
                 countFree = 0,
@@ -242,12 +243,17 @@ troopCreator.controller('buildCtrl',
                         recursive(model.group);
                     });
                 };
-                recursive($scope.selectedModels);
+
+                if ( group !== false ) {
+                    recursive($scope.selectedModels[group].group);
+                } else {
+                    recursive($scope.selectedModels);
+                }
             }
             return {'normal': count, 'free': countFree, 'all': (count + countFree)};
         };
 
-        // Drop callback for dragable
+        // Drop callback for draggable
         $scope.dropCallback = function(event, ui) {
             var dragScope = angular.element(ui.draggable).scope();
             $scope.addModel(dragScope.model);
@@ -282,13 +288,13 @@ troopCreator.controller('buildCtrl',
                 } else if (model.hasOwnProperty('restricted_to')) {
                     var count = $scope.selectedModels.length - 1;
                     for (var j = 0; j <= count; j++) {
-                    	// Is This right?? we alwasy bond the model to the last model when we find no restricted_to
+                    	// Is This right?? we always bond the model to the last model when we find no restricted_to
                         if ( j === count ) {
                             findIndex = j;
                         }
                         else if (typeof model.restricted_to === 'string') {
                             if ($scope.selectedModels[j].id === model.restricted_to) {
-                                if (j !== count && $scope.selectedModels[(j + 1)].id !== model.id) {
+                                if ($scope.countSelectedModel(model.id, 'id', j).all === 0) {
                                     findIndex = j;
                                 }
                             }
@@ -316,7 +322,7 @@ troopCreator.controller('buildCtrl',
                     }
                 }
 
-                // If we find a postion where we add the model add or add to the end
+                // If we find a postion where we add the model add this model or add to the end
                 if (findIndex !== false) {
                     copy.bonded = 1;
                     $scope.selectedModels[findIndex].group.push(copy);
