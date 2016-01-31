@@ -2946,30 +2946,34 @@
           }
         },
         {
-          "freeModels": [
+          "freeModels": [],
+          "costAlterations": [
             {
-              "id": [
-                "EB14",
-                "EB03",
-                "EB04",
-                "EB18"
-              ]
+              "id": "EB04",
+              "bonus": 1
+            },
+            {
+              "id": "EB14",
+              "bonus": 1
             }
           ],
-          "costAlterations": [],
           "faAlterations": [],
           "benefit": "",
           "level": 4,
           "mustHave": [
             {
-              "min": 4,
+              "min": 1,
               "inMarshal": false,
               "ids": [
-                "EB03",
-                "EB04",
-                "EB14",
-                "EB18",
-                "EB23"
+                "EU03"
+              ],
+              "inBG": true
+            },
+            {
+              "min": 1,
+              "inMarshal": false,
+              "ids": [
+                "EU11"
               ],
               "inBG": true
             }
