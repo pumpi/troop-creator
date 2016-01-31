@@ -351,10 +351,10 @@ h1, h2, h3, h4, h5, p {
     -ms-flex-pack: justify;
     justify-content: space-between;
     .max-caster, .max-points {
-        width: 15%;
+        width: 29%;
     }
     .tiers {
-        width: 68%;
+        width: 40%;
     }
 }
 
@@ -372,6 +372,23 @@ h1, h2, h3, h4, h5, p {
 
 .select-on-click {
     cursor: pointer;
+}
+
+/*
+ * BOOTSTRAP
+ ******************************/
+.dropdown-menu > li > span {
+    display: block;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.428571429;
+    color: #333333;
+    white-space: nowrap;
+    cursor: pointer;
+    &:hover, &.current {
+        background-color: #EEE;
+    }
 }
 
 /*
@@ -592,12 +609,15 @@ h1, h2, h3, h4, h5, p {
         font-size: 3rem;
     }
     .list-options {
+        flex-flow: row wrap;
+        -webkit-flex-flow: row wrap;
         .max-caster,
         .max-points {
-            width: 20%;
+            width: 49%;
+            margin-bottom: 10px;
         }
         .tiers {
-            width: 58%;
+            width: 100%;
         }
     }
 }

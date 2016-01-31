@@ -23,7 +23,7 @@ troopCreator.controller('buildCtrl',
                 $scope.tierLevel        = 0;
                 $scope.selectedModels   = [];
                 $scope.gameCaster       = 1;
-                $scope.gamePoints       = 25;
+                $scope.gamePoints       = 50;
                 $scope.gameTier         = '';
                 $scope.gameObjective    = '';
                 $scope.modalLevel       = 0;
@@ -88,8 +88,11 @@ troopCreator.controller('buildCtrl',
                                         $scope.devAddId();
                                     }
 
-                                    //restore from URL after we load the last data
+                                    //restore from URL after we load the last data and we start watching scope Changes
                                     $scope.restoreSearch();
+                                    $scope.$watchGroup(['gamePoints', 'gameCaster'], function() {
+                                        $scope.updateSearch();
+                                    });
                                 }
                             }
                         ). error (
@@ -321,7 +324,7 @@ troopCreator.controller('buildCtrl',
                 } else {
                     $scope.selectedModels.push(copy);
                 }
-                $scope.calculateAvailablePoints();
+                $scope.calculatePoints();
             }
         };
 
@@ -340,7 +343,7 @@ troopCreator.controller('buildCtrl',
             }
 
             models.splice(index, 1);
-        	$scope.calculateAvailablePoints();
+        	$scope.calculatePoints();
         };
 
         // Is there enough points to use max size
@@ -354,7 +357,7 @@ troopCreator.controller('buildCtrl',
         };
 
         // Calculate the available Points
-        $scope.calculateAvailablePoints = function() {
+        $scope.calculatePoints = function() {
             $scope.calculateTierLevel();
             $scope.checkFreeSelected();
             $scope.updateSearch();
@@ -649,7 +652,7 @@ troopCreator.controller('buildCtrl',
                     $scope.addModelByString(val);
                 });
             }
-            $scope.calculateAvailablePoints();
+            $scope.calculatePoints();
         };
 
         // adds an model by only give an string
@@ -733,7 +736,7 @@ troopCreator.controller('buildCtrl',
         // clear the complete list
         $scope.clearList = function() {
             $scope.selectedModels = [];
-            $scope.calculateAvailablePoints();
+            $scope.calculatePoints();
         };
 
         // Try save the link in bookmark

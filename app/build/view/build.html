@@ -1,16 +1,23 @@
 <div class="cols">
-	<div class="col available-models" id="left-col-build">
+    <div class="col available-models" id="left-col-build">
         <div class="open-list" ng-click="openList()">
             <i class="fa fa-chevron-right"></i>
             <span>Available models</span>
         </div>
-		<h2>Available models</h2>
-		<input type="search" ng-model="search" placeholder="Search..." class="form-control">
-		<div class="army-models" ng-repeat="i in notSorted(data)" ng-init="value = data[i]['entries']">
-			<div ng-hide="(filtered = (value | wildcardArmy:search | restricted:this)).length == 0" class="headline accordion-click" accordion-toggle ng-class="{mercenary: data[i].add.indexOf('mercenary') > -1, minions: data[i].add.indexOf('minion') > -1}">{{data[i]['label']}} <span>({{filtered.length}})</span></div>
+        <h2>Available models</h2>
+        <input type="search" ng-model="search" placeholder="Search..." class="form-control">
+        <div class="army-models" ng-repeat="i in notSorted(data)" ng-init="value = data[i]['entries']">
+            <div ng-hide="(filtered = (value | wildcardArmy:search | restricted:this)).length == 0"
+                 class="headline accordion-click" accordion-toggle
+                 ng-class="{mercenary: data[i].add.indexOf('mercenary') > -1, minions: data[i].add.indexOf('minion') > -1}">
+                {{data[i]['label']}} <span>({{filtered.length}})</span></div>
             <div class="accordion-container">
                 <ul>
-                    <li class="model" ng-click="addModel(model)" ng-class="{disable: modelAvailable = checkModelAvailable(model, model.type)}" data-drag="!modelAvailable" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}" jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}" ng-repeat="model in filtered | orderBy: 'name'">
+                    <li class="model" ng-click="addModel(model)"
+                        ng-class="{disable: modelAvailable = checkModelAvailable(model, model.type)}"
+                        data-drag="!modelAvailable" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}"
+                        jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}"
+                        ng-repeat="model in filtered | orderBy: 'name'">
                         <div class="model-name">{{model.name}}</div>
                         <div class="model-options">
                             <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
@@ -20,33 +27,54 @@
                     </li>
                 </ul>
             </div>
-		</div>
-	</div>
+        </div>
+    </div>
 
-	<div class="col">
-		<h2>Troop list  <span class="tier-stars" ng-hide="!gameTier" data-toggle="modal" data-target="#tier-level-info">
+    <div class="col">
+        <h2>Troop list  <span class="tier-stars" ng-hide="!gameTier" data-toggle="modal" data-target="#tier-level-info">
             <i class="fa fa-star" ng-click="modalLevel = 0" ng-class="{active: tierLevel >= 1}"></i>
             <i class="fa fa-star" ng-click="modalLevel = 1" ng-class="{active: tierLevel >= 2}"></i>
             <i class="fa fa-star" ng-click="modalLevel = 2" ng-class="{active: tierLevel >= 3}"></i>
             <i class="fa fa-star" ng-click="modalLevel = 3" ng-class="{active: tierLevel >= 4}"></i>
         </span></h2>
-        <div class="list-options">
-			<div class="max-caster">
-				<input type="text" ng-model="gameCaster" ng-change="calculateAvailablePoints()" placeholder="Caster" class="form-control">
-			</div>
-			<div class="max-points">
-				<input type="text" ng-model="gamePoints" ng-change="calculateAvailablePoints()" placeholder="Punkte" class="form-control">
-			</div>
+        <div class="list-options ">
+            <div class="max-caster input-group">
+                <div class="input-group-btn" >
+                    <div class="btn-group">
+                        <button class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Caster</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li ng-repeat="i in [1,2,3]"><span ng-class="{current: $parent.gameCaster == i}" ng-click="$parent.gameCaster = i">{{i}}</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="text" ng-model="gameCaster" class="form-control">
+            </div>
+            <div class="max-points input-group">
+                <div class="input-group-btn" >
+                    <div class="btn-group">
+                        <button class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Points</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li ng-repeat="i in [15,25,35,50,75,100]"><span ng-class="{current: $parent.gamePoints == i}" ng-click="$parent.gamePoints = i;">{{i}}</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <input type="text" ng-model="gamePoints" class="form-control">
+            </div>
             <div class="tiers">
                 <select class="form-control" ng-model="gameTier" ng-change="changeTier()">
                     <option value="">no tier selected ...</option>
                     <option ng-repeat="tier in tiersOptions | orderBy: 'label'" value="{{tier.key}}">{{tier.label}}</option>
                 </select>
             </div>
-		</div>
-		<div class="selected-models army-models">
-			<ul jqyoui-droppable="{index: {{$index}}}">
-				<li ng-repeat="(idx, model) in selectedModels track by $index">
+        </div>
+
+        <div class="selected-models army-models">
+            <ul jqyoui-droppable="{index: {{$index}}}">
+                <li ng-repeat="(idx, model) in selectedModels track by $index">
                     <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
                     <ul ng-show="model.group">
                         <li ng-repeat="model in model.group track by $index" ng-init="groupIdx = idx">
@@ -54,7 +82,7 @@
                         </li>
                     </ul>
                 </li>
-			</ul>
+            </ul>
             <div class="selected-objective input-group">
                 <div class="input-group-addon">Objective</div>
                 <select class="form-control" ng-model="gameObjective" ng-change="updateSearch()">
@@ -66,15 +94,20 @@
                 Drop Here
             </div>
             <div class="selected-counts">
-			    {{countSelectedModel('warlock|warcaster').all}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}} Points
+                {{countSelectedModel('warlock|warcaster').all}} / {{gameCaster}} Caster | {{points}} / {{gamePoints}}
+                Points
             </div>
-		</div>
+        </div>
 
         <div class="btn-group pull-right">
-            <button class="btn" data-toggle="modal" data-target="#shareList" tooltip title="Share list"><i class="fa fa-share-alt"></i></button>
-            <button class="btn" ng-click="saveListAsFav()" tooltip title="Save list as favorit"><i class="fa fa-save"></i></button>
-            <button class="btn" tooltip title="Print your list" onClick="window.print()"><i class="fa fa-print" ></i></button>
-            <button class="btn" data-toggle="modal" data-target="#plainTextOutput" tooltip title="Export list as text"><i class="fa fa-file-text-o"></i></button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#shareList" tooltip title="Share list"><i
+                    class="fa fa-share-alt"></i></button>
+            <button class="btn btn-default" ng-click="saveListAsFav()" tooltip title="Save list as favorit"><i
+                    class="fa fa-save"></i></button>
+            <button class="btn btn-default" tooltip title="Print your list" onClick="window.print()"><i
+                    class="fa fa-print"></i></button>
+            <button class="btn btn-default" data-toggle="modal" data-target="#plainTextOutput" tooltip
+                    title="Export list as text"><i class="fa fa-file-text-o"></i></button>
             <button class="btn btn-danger" ng-click="clearList()"><i class="fa fa-trash"></i></button>
         </div>
 
@@ -83,15 +116,16 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title"><i class="fa fa-file-text-o"></i> Troop plain text</h4>
                     </div>
                     <div class="modal-body select-on-click" select-on-click>
-                        System: <strong>{{system}}</strong><br />
-                        Faction: <strong>{{faction}}</strong><br />
-                        <span ng-hide="!gameTier">Tier: <strong>{{tiers[gameTier].name}}</strong> (Level <strong>{{tierLevel}}</strong>)<br /></span>
-                        Caster: <strong>{{countSelectedModel('warlock|warcaster').all}} / {{gameCaster}}</strong><br />
-                        Points: <strong>{{points}} / {{gamePoints}}</strong><br />
+                        System: <strong>{{system}}</strong><br/>
+                        Faction: <strong>{{faction}}</strong><br/>
+                        <span ng-hide="!gameTier">Tier: <strong>{{tiers[gameTier].name}}</strong> (Level <strong>{{tierLevel}}</strong>)<br/></span>
+                        Caster: <strong>{{countSelectedModel('warlock|warcaster').all}} / {{gameCaster}}</strong><br/>
+                        Points: <strong>{{points}} / {{gamePoints}}</strong><br/>
 
                         <div ng-repeat="model in selectedModels track by $index">
                             <strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
@@ -114,15 +148,19 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
                         <h4 class="modal-title"><i class="fa fa-share-alt"></i> Share your list with the internet</h4>
                     </div>
                     <div class="modal-body">
-                        <p>You can easily share your list in all social networks or other pages, only copy the link bellow and post it wherever you like.</p>
-                        <p>your config ist store in the url and any other can change something and give you back an new url but your list was not touched.</p>
+                        <p>You can easily share your list in all social networks or other pages, only copy the link
+                            bellow and post it wherever you like.</p>
+                        <p>your config ist store in the url and any other can change something and give you back an new
+                            url but your list was not touched.</p>
                         <div class="input-group">
                             <div class="input-group-addon"><i class="fa fa-share-alt"></i></div>
-                            <input class="form-control" type="text" onFocus="this.select()" value="{{location.absUrl()}}">
+                            <input class="form-control" type="text" onFocus="this.select()"
+                                   value="{{location.absUrl()}}">
                         </div>
                     </div>
                 </div>
@@ -134,8 +172,10 @@
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title"><i class="fa fa-star"></i> Tier level {{tier.levels[modalLevel].level}} <i ng-show="tierLevel >= tier.levels[modalLevel].level" class="fa fa-check"></i></h4>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title"><i class="fa fa-star"></i> Tier level {{tier.levels[modalLevel].level}}
+                            <i ng-show="tierLevel >= tier.levels[modalLevel].level" class="fa fa-check"></i></h4>
                     </div>
                     <div class="modal-body">
                         <div class="panel panel-default">
@@ -151,12 +191,20 @@
                         </div>
                         <div class="panel panel-default">
                             <div class="panel-heading">
-                                <h3 class="panel-title">Requirements <small>(click model name to add)</small></h3>
+                                <h3 class="panel-title">Requirements
+                                    <small>(click model name to add)</small>
+                                </h3>
                             </div>
                             <div class="panel-body">
                                 <ul>
-                                    <li ng-show="!tier.levels[modalLevel].mustHave[0]">The army can include only the models listed above.</li>
-                                    <li ng-show="tier.levels[modalLevel].mustHave[0]" ng-repeat="have in tier.levels[modalLevel].mustHave">The army includes <strong>{{have.min}}</strong> or more <a ng-repeat="id in have.ids" ng-init="model = getModelById(id)" ng-click="addModel(model)" class="tier-add-model">{{model.name}}{{$last ? '' : ', '}}</a></li>
+                                    <li ng-show="!tier.levels[modalLevel].mustHave[0]">The army can include only the
+                                        models listed above.
+                                    </li>
+                                    <li ng-show="tier.levels[modalLevel].mustHave[0]"
+                                        ng-repeat="have in tier.levels[modalLevel].mustHave">The army includes <strong>{{have.min}}</strong>
+                                        or more <a ng-repeat="id in have.ids" ng-init="model = getModelById(id)"
+                                                   ng-click="addModel(model)" class="tier-add-model">{{model.name}}{{$last
+                                            ? '' : ', '}}</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -169,16 +217,28 @@
                                     <li ng-show="tier.levels[modalLevel].benefit">
                                         {{tier.levels[modalLevel].benefit}}
                                     </li>
-                                    <li ng-show="tier.levels[modalLevel].costAlterations" ng-repeat="cost in tier.levels[modalLevel].costAlterations">
-                                        Reduce the point cost of <strong>{{getModelById(cost.id).name}}</strong> to <strong>{{getModelById(cost.id).cost - cost.bonus}}</strong>
+                                    <li ng-show="tier.levels[modalLevel].costAlterations"
+                                        ng-repeat="cost in tier.levels[modalLevel].costAlterations">
+                                        Reduce the point cost of <strong>{{getModelById(cost.id).name}}</strong> to
+                                        <strong>{{getModelById(cost.id).cost - cost.bonus}}</strong>
                                     </li>
-                                    <li ng-show="tier.levels[modalLevel].faAlterations" ng-repeat="fa in tier.levels[modalLevel].faAlterations">
-                                        <span ng-hide="fa.forEach"><strong>{{getModelById(fa.id).name}}</strong> increased to FA: <strong>{{fa.bonus > 100 ? 'U' : 1 * getModelById(fa.id).fa + fa.bonus }}</strong></span>
-                                        <span ng-show="fa.forEach">The FA of <strong>{{getModelById(fa.id).name}}</strong> increases by <strong>+{{fa.bonus}}</strong> for each (<strong ng-repeat="id in fa.forEach">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>)</span>
+                                    <li ng-show="tier.levels[modalLevel].faAlterations"
+                                        ng-repeat="fa in tier.levels[modalLevel].faAlterations">
+                                        <span ng-hide="fa.forEach"><strong>{{getModelById(fa.id).name}}</strong> increased to FA: <strong>{{fa.bonus
+                                            > 100 ? 'U' : 1 * getModelById(fa.id).fa + fa.bonus }}</strong></span>
+                                        <span ng-show="fa.forEach">The FA of <strong>{{getModelById(fa.id).name}}</strong> increases by <strong>+{{fa.bonus}}</strong> for each (<strong
+                                                ng-repeat="id in fa.forEach">{{getModelById(id).name}}{{$last ? '' :
+                                            ','}}</strong>)</span>
                                     </li>
-                                    <li ng-show="tier.levels[modalLevel].freeModels" ng-repeat="free in tier.levels[modalLevel].freeModels">
-                                        <span ng-hide="free.forEach">Add one of (<strong ng-repeat="id in free.id">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>) free of cost. This entry ignores FA restrictions.</span>
-                                        <span ng-show="free.forEach">Add one of (<strong ng-repeat="id in free.id">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>) free of cost for each <strong ng-repeat="fid in free.forEach">{{getModelById(fid).name}}{{$last ? '' : ', '}}</strong>. This entry ignores FA restrictions.</span>
+                                    <li ng-show="tier.levels[modalLevel].freeModels"
+                                        ng-repeat="free in tier.levels[modalLevel].freeModels">
+                                        <span ng-hide="free.forEach">Add one of (<strong ng-repeat="id in free.id">{{getModelById(id).name}}{{$last
+                                            ? '' :
+                                            ','}}</strong>) free of cost. This entry ignores FA restrictions.</span>
+                                        <span ng-show="free.forEach">Add one of (<strong ng-repeat="id in free.id">{{getModelById(id).name}}{{$last
+                                            ? '' : ','}}</strong>) free of cost for each <strong
+                                                ng-repeat="fid in free.forEach">{{getModelById(fid).name}}{{$last ? '' :
+                                            ', '}}</strong>. This entry ignores FA restrictions.</span>
 
                                     </li>
                                 </ul>
@@ -186,11 +246,14 @@
                         </div>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" ng-click="modalLevel = modalLevel - 1" ng-hide="modalLevel < 1" class="pull-left btn btn-primary" ><i class="fa fa-chevron-left"></i> previous</button>
-                        <button type="button" ng-click="modalLevel = modalLevel + 1" ng-hide="modalLevel > 2" class="btn btn-primary">next <i class="fa fa-chevron-right"></i></button>
+                        <button type="button" ng-click="modalLevel = modalLevel - 1" ng-hide="modalLevel < 1"
+                                class="pull-left btn btn-primary"><i class="fa fa-chevron-left"></i> previous
+                        </button>
+                        <button type="button" ng-click="modalLevel = modalLevel + 1" ng-hide="modalLevel > 2"
+                                class="btn btn-primary">next <i class="fa fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
         </div>
-	</div>
+    </div>
 </div>

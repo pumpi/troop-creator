@@ -6,11 +6,11 @@
         <span class="btn-group btn-group-xs">
             <button type="button" class="btn btn-default"
                     ng-class="{'active btn-success': !model.useMax}"
-                    ng-click="model.useMax = false; calculateAvailablePoints();">{{model.min -1}}
+                    ng-click="model.useMax = false; calculatePoints();">{{model.min -1}}
             </button>
             <button type="button" class="btn btn-default"
                     ng-class="{'active btn-success': model.useMax}"
-                    ng-click="model.useMax = true; calculateAvailablePoints();"
+                    ng-click="model.useMax = true; calculatePoints();"
                     ng-disabled="canUseMax(model)">{{model.max -1}}
             </button>
         </span>
@@ -22,7 +22,7 @@
     <span ng-show="model.max_attach > 1" class="btn-group btn-group-xs">
         <button type="button" class="btn btn-default" ng-repeat="i in model.max_attach | range"
                 ng-class="{'active btn-success': i === model.attached}"
-                ng-click="model.attached = i; calculateAvailablePoints();"
+                ng-click="model.attached = i; calculatePoints();"
                 ng-disabled="canUseAttached(model, i)">{{i}}
         </button>
     </span>

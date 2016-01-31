@@ -1,4 +1,4 @@
-/*! troopcreator 2016-01-28 */
+/*! troopcreator 2016-01-31 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5318,9 +5318,9 @@ h1, h2, h3, h4, h5, p {
   -ms-flex-pack: justify;
   justify-content: space-between; }
   .list-options .max-caster, .list-options .max-points {
-    width: 15%; }
+    width: 29%; }
   .list-options .tiers {
-    width: 68%; }
+    width: 40%; }
 
 .tier-stars {
   font-size: 18px;
@@ -5334,6 +5334,21 @@ h1, h2, h3, h4, h5, p {
 
 .select-on-click {
   cursor: pointer; }
+
+/*
+ * BOOTSTRAP
+ ******************************/
+.dropdown-menu > li > span {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.428571429;
+  color: #333333;
+  white-space: nowrap;
+  cursor: pointer; }
+  .dropdown-menu > li > span:hover, .dropdown-menu > li > span.current {
+    background-color: #EEE; }
 
 /*
  * MODAL
@@ -5496,10 +5511,14 @@ h1, h2, h3, h4, h5, p {
 @media screen and (max-width: 520px) {
   #header .header-title {
     font-size: 3rem; }
-  .list-options .max-caster, .list-options .max-points {
-    width: 20%; }
-  .list-options .tiers {
-    width: 58%; } }
+  .list-options {
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap; }
+    .list-options .max-caster, .list-options .max-points {
+      width: 49%;
+      margin-bottom: 10px; }
+    .list-options .tiers {
+      width: 100%; } }
 
 /* */
 /*# sourceMappingURL=troopcreator.css.map */

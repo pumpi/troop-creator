@@ -17,7 +17,8 @@ var jsFilesVendor = [
     "lib/bower/angular-dragdrop/src/angular-dragdrop.js",
     "lib/bower/favico.js/favico.js",
     "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/modal.js",
-    "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js"
+    "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js",
+    "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"
 ];
 
 var sassFiles = [
