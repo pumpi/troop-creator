@@ -133,6 +133,41 @@ troopCreator.controller('buildCtrl',
             return /^warcaster$|^warlock$/i.test(model.type);
         };
 
+        // Filter the selected Models and return only the Models that allowed
+        $scope.allowedModels = function(models) {
+            models = $.grep(models, function(model) {
+                //Check first if we have an Tier and is this model allowed
+                if ($scope.gameTier) {
+                    var tier  = $scope.tiers[$scope.gameTier];
+                    if (tier.levels[0].onlyModels.ids.indexOf(model.id) === -1 && tier.casterId !== model.id) {
+                        return false;
+                    }
+                }
+
+                //Now we Check if we have the restricted model available
+                if ( model.hasOwnProperty('restricted_to') ) {
+                    if (typeof model.restricted_to === 'string') {
+                        if ($scope.getModelById(model.restricted_to) || model.restricted_to === '*') {
+                            return true;
+                        }
+                    } else {
+
+                        var found = false;
+                        $.each(model.restricted_to, function(id, val) {
+                            if ( $scope.getModelById(val) ) {
+                                found = true;
+                                return false;
+                            }
+                        });
+                        return found;
+                    }
+                    return false;
+                }
+                return true;
+            });
+            return models;
+        };
+
 		// Check if this model available
 		$scope.checkModelAvailable = function(model) {
             var cost = $scope.getModelCost(model, true),

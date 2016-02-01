@@ -7,7 +7,7 @@
         <h2>Available models</h2>
         <input type="search" ng-model="search" placeholder="Search..." class="form-control">
         <div class="army-models" ng-repeat="i in notSorted(data)" ng-init="value = data[i]['entries']">
-            <div ng-hide="(filtered = (value | wildcardArmy:search | restricted:this)).length == 0"
+            <div ng-hide="(filtered = (allowedModels(value) | wildcardArmy:search )).length == 0"
                  class="headline accordion-click" accordion-toggle
                  ng-class="{mercenary: data[i].add.indexOf('mercenary') > -1, minions: data[i].add.indexOf('minion') > -1}">
                 {{data[i]['label']}} <span>({{filtered.length}})</span></div>
