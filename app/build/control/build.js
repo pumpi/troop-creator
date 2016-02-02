@@ -453,7 +453,6 @@ troopCreator.controller('buildCtrl',
                         $.each(level.mustHave, function(idx, must) {
                             if ( must.min <= $scope.countSelectedModel(must.ids.join('|'), 'id').normal ) {
                                 mustCount ++;
-                                return false;
                             }
                         });
 
