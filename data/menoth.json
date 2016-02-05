@@ -572,6 +572,30 @@
           "faction": "faction_menoth",
           "id": "PA02",
           "type": "UA"
+        },
+        {
+          "name": "Attendant Priest",
+          "fa": "2",
+          "cost": 2,
+          "restricted_to": [
+            "MU02",
+            "MU03",
+            "MU04",
+            "MU07",
+            "MU08",
+            "MU11",
+            "MU12",
+            "MU13",
+            "MU14",
+            "MU15",
+            "MU16",
+            "MU17",
+            "MU18",
+            "MU19"
+          ],
+          "faction": "faction_menoth",
+          "id": "PA05",
+          "type": "UA"
         }
       ],
       "label": "Unit Attachments"
@@ -704,14 +728,6 @@
           "cost": 3,
           "faction": "faction_menoth",
           "id": "PS02",
-          "type": "solo"
-        },
-        {
-          "name": "Attendant Priest",
-          "fa": "2",
-          "cost": 2,
-          "faction": "faction_menoth",
-          "id": "PA05",
           "type": "solo"
         },
         {
