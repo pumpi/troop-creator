@@ -600,6 +600,23 @@
           "name": "Koldun Kapitan Valachev",
           "fa": "C",
           "cost": 2,
+          "restricted_to": [
+            "MU01",
+            "MU02",
+            "MU04",
+            "MU05",
+            "MU06",
+            "MU08",
+            "MU09",
+            "MU11",
+            "MU12",
+            "MU13",
+            "MU14",
+            "MU15",
+            "MU16",
+            "MU18",
+            "MU20"
+          ],
           "faction": "faction_khador",
           "id": "KA07",
           "type": "RA"
