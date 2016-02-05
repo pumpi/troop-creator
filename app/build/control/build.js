@@ -151,7 +151,6 @@ troopCreator.controller('buildCtrl',
                             return true;
                         }
                     } else {
-
                         var found = false;
                         $.each(model.restricted_to, function(id, val) {
                             if ( $scope.getModelById(val) ) {
@@ -192,8 +191,8 @@ troopCreator.controller('buildCtrl',
 				return true;
             }
 
-			// No Caster in selectedModels we can not select an Warbeast or Warjack
-            if ( /warbeast|warjack/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$').all === 0 ) {
+			// No Caster or other model can control warbeast or warjack in selectedModels we can not select an Warbeast or Warjack
+            if ( /warbeast|warjack/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$|lesserwarlock|journeyman|marshall').all === 0 ) {
 				return true;
             }
 
