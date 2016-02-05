@@ -244,7 +244,16 @@ troopCreator.controller('buildCtrl',
                 if ( !/^war/i.test(model.type) || (/^war/i.test(model.type) && model.cost === 0) ) {
                     var countRestricted = $scope.countSelectedModel(search, 'id'),
                         countModel = $scope.countSelectedModel(model.id, 'id');
-                    return !(countRestricted.all > 0 && countRestricted.all > countModel.all);
+                    if ( !(countRestricted.all > 0 && countRestricted.all > countModel.all) ) {
+                        return true;
+                    }
+                }
+
+                // if the Type UA or WA we can not add more UAs or WAs as Units
+                if ( /ua|wa/i.test(model.type) ) {
+                    if ( $scope.searchFreeUnit(model) === false ) {
+                        return true;
+                    }
                 }
             }
 
@@ -290,6 +299,31 @@ troopCreator.controller('buildCtrl',
             return {'normal': count, 'free': countFree, 'all': (count + countFree)};
         };
 
+        // Search for an free Unit without the same type of model
+        $scope.searchFreeUnit = function(model) {
+            var count = $scope.selectedModels.length - 1,
+                restrictedTo = model.restricted_to,
+                findIdx = false;
+            if (typeof model.restricted_to === 'string') {
+                restrictedTo = [model.restricted_to];
+            }
+
+            for (var j = 0; j <= count; j++) {
+                if ( restrictedTo.indexOf($scope.selectedModels[j].id) !== -1 ) {
+                    // We only can add if there no other UA or other WA or not the same model in group
+                    if ( $scope.countSelectedModel(model.type, 'type', j).all === 0
+                        && $scope.countSelectedModel(model.id, 'id', j).all === 0 ) {
+                        findIdx = j;
+                    }
+                }
+
+                if ( findIdx !== false ) {
+                    break;
+                }
+            }
+            return findIdx;
+        };
+
         // Drop callback for draggable
         $scope.dropCallback = function(event, ui) {
             var dragScope = angular.element(ui.draggable).scope();
@@ -314,38 +348,16 @@ troopCreator.controller('buildCtrl',
 
                 // If type warbeast or warjack we must add it after the last warbeast/warjack or after the last warlock/warcaster
                 // If baseUnit set we must add this model to an unit
-                var findIndex = false;
+                var findIdx = false;
                 if (/^warbeast$|^warjack$/i.test(model.type)) {
                     for (var i = $scope.selectedModels.length - 1; i >= 0; i--) {
                         if (/^warbeast$|^warlock$|^warjack$|^warcaster$/i.test($scope.selectedModels[i].type)) {
-                            findIndex = i;
+                            findIdx = i;
                             break;
                         }
                     }
                 } else if (model.hasOwnProperty('restricted_to')) {
-                    var count = $scope.selectedModels.length - 1;
-                    for (var j = 0; j <= count; j++) {
-                    	// Is This right?? we always bond the model to the last model when we find no restricted_to
-                        if ( j === count ) {
-                            findIndex = j;
-                        }
-                        else if (typeof model.restricted_to === 'string') {
-                            if ($scope.selectedModels[j].id === model.restricted_to) {
-                                if ($scope.countSelectedModel(model.id, 'id', j).all === 0) {
-                                    findIndex = j;
-                                }
-                            }
-                        } else {
-                            if ( model.restricted_to.indexOf($scope.selectedModels[j].id) !== -1 ) {
-                                if ($scope.countSelectedModel(model.id, 'id', j).all === 0) {
-                                    findIndex = j;
-                                }
-                            }
-                        }
-                        if ( findIndex !== false ) {
-                            break;
-                        }
-                    }
+                    findIdx = $scope.searchFreeUnit(model);
                 }
 
                 // check if the model we add an free model but only if tier
@@ -358,10 +370,10 @@ troopCreator.controller('buildCtrl',
                     }
                 }
 
-                // If we find a postion where we add the model add this model or add to the end
-                if (findIndex !== false) {
+                // If we find a position where we add the model add this model or add to the end
+                if (findIdx !== false) {
                     copy.bonded = 1;
-                    $scope.selectedModels[findIndex].group.push(copy);
+                    $scope.selectedModels[findIdx].group.push(copy);
                 } else if ( $scope.countSelectedModel('^warlock|^warcaster').all === 0 && /^warlock|^warcaster/i.test(copy.type) ) {
                     $scope.selectedModels.splice(0, 0, copy);
                 } else {
