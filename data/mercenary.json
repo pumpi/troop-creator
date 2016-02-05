@@ -1620,7 +1620,8 @@
           "works_for": [
             "faction_cryx",
             "faction_cygnar",
-            "faction_khador"
+            "faction_khador",
+            "faction_trollblood"
           ],
           "cost": 2,
           "faction": "faction_mercs",
