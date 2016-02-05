@@ -434,7 +434,14 @@
           "faction": "faction_retribution",
           "id": "RA03",
           "type": "UA"
-        },
+        }
+      ],
+      "label": "Unit Attachments"
+    },
+    {
+      "logo": "faction_retribution",
+      "id": "faction_retribution_WAs",
+      "entries": [
         {
           "name": "Soulless Escort",
           "fa": "3",
@@ -447,20 +454,17 @@
             "RU06",
             "RU07",
             "RU08",
-            "RU10"
+            "RU09",
+            "RU10",
+            "RU11"
           ],
           "cost": 1,
+          "max_attach": 2,
           "faction": "faction_retribution",
           "id": "RA04",
-          "type": "UA"
+          "type": "WA"
         }
       ],
-      "label": "Unit Attachments"
-    },
-    {
-      "logo": "faction_retribution",
-      "id": "faction_retribution_WAs",
-      "entries": [],
       "label": "Weapon Attachments"
     },
     {
