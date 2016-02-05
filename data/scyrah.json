@@ -434,6 +434,25 @@
           "faction": "faction_retribution",
           "id": "RA03",
           "type": "UA"
+        },
+        {
+          "name": "Soulless Escort",
+          "fa": "3",
+          "restricted_to": [
+            "RU01",
+            "RU02",
+            "RU03",
+            "RU04",
+            "RU05",
+            "RU06",
+            "RU07",
+            "RU08",
+            "RU10"
+          ],
+          "cost": 1,
+          "faction": "faction_retribution",
+          "id": "RA04",
+          "type": "UA"
         }
       ],
       "label": "Unit Attachments"
@@ -519,25 +538,6 @@
           "faction": "faction_retribution",
           "id": "RS02",
           "type": "soloMarshall"
-        },
-        {
-          "name": "Soulless Escort",
-          "fa": "3",
-          "restricted_to": [
-            "RU01",
-            "RU02",
-            "RU03",
-            "RU04",
-            "RU05",
-            "RU06",
-            "RU07",
-            "RU08",
-            "RU10"
-          ],
-          "cost": 1,
-          "faction": "faction_retribution",
-          "id": "RA04",
-          "type": "solo"
         },
         {
           "name": "Soulless Voidtracer",
