@@ -249,7 +249,7 @@ troopCreator.controller('buildCtrl',
                 }
 
                 // if the Type UA or WA we can not add more UAs or WAs as Units
-                if ( /ua|wa/i.test(model.type) ) {
+                if ( /^ua$|^wa$/i.test(model.type) ) {
                     if ( $scope.searchFreeUnit(model) === false ) {
                         return true;
                     }
