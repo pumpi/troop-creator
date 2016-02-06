@@ -236,13 +236,18 @@ troopCreator.controller('buildCtrl',
                 if (typeof model.restricted_to !== 'string') {
                     search = model.restricted_to.join('|');
                 }
+                var countRestricted = $scope.countSelectedModel(search, 'id'),
+                    countModel = $scope.countSelectedModel(model.id, 'id');
+
+                // The restricted model is not set
+                if ( countRestricted.all === 0 ) {
+                    return true;
+                }
 
                 // restricted models can only add once per restricted model
                 // But we have some jacks or beast that only can restricted to an special caster (mercanary, minions or chatacter adds to caster)
                 // have the Jack or Beast 0 cost is the same as an UA only once per restricted caster
                 if ( !/^war/i.test(model.type) || (/^war/i.test(model.type) && model.cost === 0) ) {
-                    var countRestricted = $scope.countSelectedModel(search, 'id'),
-                        countModel = $scope.countSelectedModel(model.id, 'id');
                     if ( !(countRestricted.all > 0 && countRestricted.all > countModel.all) ) {
                         return true;
                     }
