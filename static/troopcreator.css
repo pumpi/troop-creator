@@ -1,4 +1,4 @@
-/*! troopcreator 2016-02-01 */
+/*! troopcreator 2016-02-06 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5082,7 +5082,10 @@ h1, h2, h3, h4, h5, p {
   min-height: 100%;
   margin: 0 auto;
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
-  border: 1px solid #CCC; }
+  border: 1px solid #CCC;
+  position: relative;
+  padding-bottom: 100px;
+  background-color: #FFF; }
 
 /*
  * HEADER
@@ -5336,6 +5339,45 @@ h1, h2, h3, h4, h5, p {
   cursor: pointer; }
 
 /*
+ * FOOTER
+ ******************************/
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+  background: #f8f8f8;
+  Text-align: center;
+  padding: 10px;
+  color: #323232;
+  font-size: 12px;
+  border-top: 1px solid #EEE; }
+  .footer p {
+    margin-bottom: 3px; }
+  .footer a {
+    color: #323232;
+    border-bottom: 1px dotted #323232;
+    line-height: 1; }
+    .footer a:hover, .footer a:focus {
+      text-decoration: none;
+      border-bottom-style: solid; }
+  .footer form {
+    display: inline-block; }
+  .footer button {
+    border: none;
+    background: transparent;
+    color: #323232;
+    display: inline;
+    padding: 0;
+    line-height: 1;
+    border-bottom: 1px dotted #323232; }
+    .footer button:hover, .footer button:focus {
+      border-bottom-style: solid; }
+  .footer .fa {
+    margin-left: 15px; }
+
+/*
  * BOOTSTRAP
  ******************************/
 .dropdown-menu > li > span {
@@ -5471,7 +5513,8 @@ h1, h2, h3, h4, h5, p {
       font-size: 16px;
       display: none;
       z-index: 110;
-      background: #FFF; }
+      background: #FFF;
+      border-bottom: 1px solid #CCC; }
       .navbar #top-menu > li {
         display: block;
         font-size: 16px;
@@ -5488,11 +5531,26 @@ h1, h2, h3, h4, h5, p {
             font-size: 16px;
             font-size: 1.6rem;
             color: #000; }
+  html {
+    background: #f8f8f8; }
   #content {
-    padding: 40px 10px 60px 45px; }
+    padding: 40px 10px 60px 45px;
+    min-height: 80vh; }
   #wrapper {
     box-shadow: none;
-    border: none; }
+    border: none;
+    margin-bottom: 50px;
+    padding-bottom: 0; }
+  .footer {
+    position: relative;
+    bottom: auto;
+    height: auto; }
+    .footer span {
+      display: block;
+      text-align: center;
+      margin-bottom: 10px; }
+    .footer .fa {
+      margin: 0; }
   .selected-counts {
     position: fixed;
     bottom: 0;

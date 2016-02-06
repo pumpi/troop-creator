@@ -35,6 +35,10 @@ troopCreator.config(['$routeProvider',
                 reloadOnSearch: false
             }).
 
+            when('/imprint', {
+                templateUrl: 'app/content/imprint.html'
+            }).
+
             // Fallback if no hash found we redirect to home/Example Link list
             otherwise({
                 redirectTo: '/'
