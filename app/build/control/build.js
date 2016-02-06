@@ -310,7 +310,7 @@ troopCreator.controller('buildCtrl',
             for (var j = 0; j <= count; j++) {
                 if ( restrictedTo.indexOf($scope.selectedModels[j].id) !== -1 ) {
                     // We only can add if there no other UA or other WA or not the same model in group
-                    if ( $scope.countSelectedModel(model.type, 'type', j).all === 0
+                    if ( $scope.countSelectedModel('^' + model.type + '$', 'type', j).all === 0
                         && $scope.countSelectedModel(model.id, 'id', j).all === 0 ) {
                         findIdx = j;
                     }
