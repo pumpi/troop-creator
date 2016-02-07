@@ -23,45 +23,44 @@ troopCreator.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
 
-            // Is the hash contains /examples we at home and view the navigation list
-            when('/', {
-                templateUrl: 'app/dashboard/view/dashboard.html',
-                controller: 'dashboardCtrl'
-            }).
+        // Is the hash contains /examples we at home and view the navigation list
+        when('/', {
+            templateUrl: 'app/dashboard/view/dashboard.html',
+            controller: 'dashboardCtrl'
+        }).when('/build/:army', {
+            templateUrl: 'app/build/view/build.html',
+            controller: 'buildCtrl',
+            reloadOnSearch: false
+        }).when('/imprint', {
+            templateUrl: 'app/content/imprint.html'
+        }).
 
-            when('/build/:army', {
-                templateUrl: 'app/build/view/build.html',
-                controller: 'buildCtrl',
-                reloadOnSearch: false
-            }).
-
-            when('/imprint', {
-                templateUrl: 'app/content/imprint.html'
-            }).
-
-            // Fallback if no hash found we redirect to home/Example Link list
-            otherwise({
-                redirectTo: '/'
-            });
+        // Fallback if no hash found we redirect to home/Example Link list
+        otherwise({
+            redirectTo: '/'
+        });
     }]
 );
 
 // Google Analytics send
-troopCreator.run(function($rootScope, $location, $window){
-    $rootScope.$on('$locationChangeSuccess', function() {
-        if (!$window.ga || /127\.0\.0\.1/i.test($location.host())) {
-            return;
-        }
-        $window.ga('send', 'pageview', { page: $location.path() });
-    });
-});
+troopCreator.run(['$rootScope', '$location', '$window',
+    function ($rootScope, $location, $window) {
+        $rootScope.$on('$locationChangeSuccess', function () {
+            if (!$window.ga || /127\.0\.0\.1/i.test($location.host())) {
+                return;
+            }
+            $window.ga('send', 'pageview', {page: $location.path()});
+        });
+    }]
+);
 
 // Generate the Tooltip directive
-troopCreator.directive('tooltip', function(){
+troopCreator.directive('tooltip', function () {
     return {
         restrict: 'A',
-        link: function(scope, element, attrs){
-            if ( !$('#navi-icon').is(':visible') ) {
+        link: function (scope, element, attrs) {
+            if (!$('#navi-icon').is(':visible')) {
+                $.fn.tooltip.Constructor.DEFAULTS.container = 'body';
                 $(element).hover(function () {
                     // on mouseenter
                     $(element).tooltip('show');
@@ -75,19 +74,21 @@ troopCreator.directive('tooltip', function(){
 });
 
 // The on click select Directive
-troopCreator.directive('selectOnClick', function ($window) {
-    return {
-        link: function (scope, element) {
-            element.on('click', function () {
-                var selection = $window.getSelection();
-                var range = document.createRange();
-                range.selectNodeContents(element[0]);
-                selection.removeAllRanges();
-                selection.addRange(range);
-            });
+troopCreator.directive('selectOnClick', ['$window',
+    function ($window) {
+        return {
+            link: function (scope, element) {
+                element.on('click', function () {
+                    var selection = $window.getSelection();
+                    var range = document.createRange();
+                    range.selectNodeContents(element[0]);
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                });
+            }
         }
-    }
-});
+    }]
+);
 
 // The Accordion Directive
 troopCreator.directive('accordionToggle', function () {
@@ -95,7 +96,7 @@ troopCreator.directive('accordionToggle', function () {
         link: function (scope, element) {
             element.on('click', function () {
                 var $this = $(element).next('.accordion-container');
-                if ( $this.is(':hidden') ) {
+                if ($this.is(':hidden')) {
                     $this.slideDown();
                 } else {
                     $this.slideToggle();
@@ -122,8 +123,8 @@ troopCreator.filter('wildcardArmy', function () {
 });
 
 // Filter for range support
-troopCreator.filter('range', function(){
-    return function(n) {
+troopCreator.filter('range', function () {
+    return function (n) {
         var res = [];
         for (var i = 1; i <= n; i++) {
             res.push(i);

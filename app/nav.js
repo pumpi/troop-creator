@@ -9,7 +9,8 @@ angular.module('navModule', [])
                 controller: 'navCtrl'
             };
         }
-    ).controller('navCtrl', function ($scope, $rootScope, $http, $timeout, $location) {
+    ).controller('navCtrl', ['$scope', '$rootScope', '$http', '$timeout', '$location',
+    function ($scope, $rootScope, $http, $timeout, $location) {
         // Add the examples array to the scope to use it in the Template wit ng-repeat
         $http.get('./data/nav.json').
         success(function (data, status, headers, config) {
@@ -31,5 +32,5 @@ angular.module('navModule', [])
                 }
             }
         }
-    }
+    }]
 );

@@ -2,7 +2,7 @@
 'use strict';
 
 // Controller to display the troop creator
-troopCreator.controller('buildCtrl',
+troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$location', '$window',
     function ($scope, $http, $routeParams, $location, $window) {
     
     	$http.get('./data/' + $routeParams.army + '.json').
@@ -834,5 +834,5 @@ troopCreator.controller('buildCtrl',
                 });
             });
         };
-    }
+    }]
 );
