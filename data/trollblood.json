@@ -637,6 +637,7 @@
             "TB01",
             "TB02"
           ],
+          "bonded_bonus": 1,
           "cost": 3,
           "faction": "faction_trollblood",
           "id": "TS11",
