@@ -13,7 +13,7 @@
           "type": "warcaster"
         },
         {
-          "name": "Harkevich(Kommander Harkevich, the iron wolf )",
+          "name": "Harkevich(Kommander Harkevich, The Iron Wolf )",
           "fa": "C",
           "cost": 5,
           "faction": "faction_khador",
@@ -61,7 +61,7 @@
           "type": "warcaster"
         },
         {
-          "name": "Vladimir2(Vladimir Tzepesci, the Dark Champion)",
+          "name": "Vladimir2(Vladimir Tzepesci, The Dark Champion)",
           "fa": "C",
           "cost": 5,
           "faction": "faction_khador",
