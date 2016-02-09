@@ -45,7 +45,7 @@
           "type": "warcaster"
         },
         {
-          "name": "Witch Coven(The witch coven of Garlghast)",
+          "name": "Witch Coven(The Witch Coven of Garlghast & Egregore)",
           "fa": "C",
           "cost": 5,
           "faction": "faction_cryx",
@@ -69,7 +69,7 @@
           "type": "warcaster"
         },
         {
-          "name": "Skarre2(Skarre queen of the broken coast)",
+          "name": "Skarre2(Skarre, Queen of the Broken Coast)",
           "fa": "C",
           "cost": 6,
           "faction": "faction_cryx",
@@ -85,7 +85,7 @@
           "type": "warcaster"
         },
         {
-          "name": "Goreshade1(Goreshade the bastard)",
+          "name": "Goreshade1(Goreshade the Bastard)",
           "fa": "C",
           "cost": 6,
           "faction": "faction_cryx",
@@ -117,7 +117,7 @@
           "type": "warcaster"
         },
         {
-          "name": "Skarre1(Pirate queen Skarre)",
+          "name": "Skarre1(Pirate Queen Skarre)",
           "fa": "C",
           "cost": 6,
           "faction": "faction_cryx",
@@ -380,13 +380,13 @@
           "fa": "2",
           "costMin": 6,
           "id": "CU05",
-          "name": "Revenant crew of the Atramentous",
+          "name": "Revenant Crew of the Atramentous",
           "cost": 6,
           "faction": "faction_cryx",
           "type": "unit"
         },
         {
-          "name": "Revenant cannon crew",
+          "name": "Revenant Cannon Crew",
           "fa": "2",
           "cost": 3,
           "faction": "faction_cryx",
@@ -412,7 +412,7 @@
           "fa": "2",
           "costMin": 4,
           "id": "CU13",
-          "name": "Cephalyx mind slaver & Drudges",
+          "name": "Cephalyx Mind Slaver & Drudges",
           "cost": 4,
           "faction": "faction_cryx",
           "type": "unit"
@@ -474,7 +474,7 @@
           "type": "unit"
         },
         {
-          "name": "Necrosurgeon & stitch thralls",
+          "name": "Necrosurgeon & Stitch Thralls",
           "fa": "2",
           "cost": 2,
           "faction": "faction_cryx",
@@ -500,7 +500,7 @@
           "fa": "3",
           "costMin": 3,
           "id": "CU03",
-          "name": "Mecanithralls",
+          "name": "Mechanithralls",
           "cost": 3,
           "faction": "faction_cryx",
           "type": "unit"
@@ -512,7 +512,7 @@
           "fa": "2",
           "costMin": 4,
           "id": "CU07",
-          "name": "Black Ogrun boarding party",
+          "name": "Black Ogrun Boarding Party",
           "cost": 4,
           "faction": "faction_cryx",
           "type": "unit"
@@ -524,7 +524,7 @@
           "fa": "2",
           "costMin": 4,
           "id": "CU16",
-          "name": "Satyxis Blood witches",
+          "name": "Satyxis Blood Witches",
           "cost": 4,
           "faction": "faction_cryx",
           "type": "unit"
@@ -615,7 +615,7 @@
       "id": "faction_cryx_WAs",
       "entries": [
         {
-          "name": "Revenant crew rifleman",
+          "name": "Revenant Crew Rifleman",
           "fa": "2",
           "cost": 1,
           "restricted_to": "CU05",
@@ -650,7 +650,7 @@
           "type": "solo"
         },
         {
-          "name": "Aiakos(Aiakos, Scourge of meredius)",
+          "name": "Aiakos(Aiakos, Scourge of the Meredius)",
           "fa": "C",
           "cost": 3,
           "faction": "faction_cryx",
@@ -706,7 +706,7 @@
           "type": "soloMarshall"
         },
         {
-          "name": "Scrap Thrall",
+          "name": "Scrap Thralls",
           "fa": "3",
           "cost": 1,
           "faction": "faction_cryx",
@@ -738,7 +738,7 @@
           "type": "solo"
         },
         {
-          "name": "Necrotech",
+          "name": "Necrotech & Scrap Thrall",
           "fa": "3",
           "cost": 1,
           "faction": "faction_cryx",
@@ -746,7 +746,7 @@
           "type": "solo"
         },
         {
-          "name": "Bloat thrall",
+          "name": "Bloat Thrall",
           "fa": "2",
           "cost": 2,
           "faction": "faction_cryx",
