@@ -651,7 +651,7 @@
           "fa": "2",
           "cost": 1,
           "restricted_to": "YU14",
-          "max_attach": 2,
+          "max_attach": 3,
           "faction": "faction_cygnar",
           "id": "YA08",
           "type": "WA"
@@ -661,7 +661,7 @@
           "fa": "2",
           "cost": 1,
           "restricted_to": "YU04",
-          "max_attach": 2,
+          "max_attach": 3,
           "faction": "faction_cygnar",
           "id": "YA09",
           "type": "WA"
@@ -671,7 +671,7 @@
           "fa": "2",
           "cost": 1,
           "restricted_to": "YU05",
-          "max_attach": 2,
+          "max_attach": 3,
           "faction": "faction_cygnar",
           "id": "YA04",
           "type": "WA"
