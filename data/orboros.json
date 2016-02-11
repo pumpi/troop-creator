@@ -1819,7 +1819,7 @@
       ]
     },
     {
-      "name": "Kaya2 - Soothe the savage beast",
+      "name": "Kaya2 - Soothe the savage beast (NQ52)",
       "casterId": "Ox01",
       "faction": "faction_orboros",
       "levels": [
@@ -1862,6 +1862,7 @@
               "OU06",
               "OU07",
               "OU12",
+              "OA07",
               "OS03",
               "OS06",
               "OS10"
@@ -1916,6 +1917,7 @@
               "OU06",
               "OU07",
               "OU12",
+              "OA07",
               "OS03",
               "OS06",
               "OS10"
@@ -1974,6 +1976,7 @@
               "OU06",
               "OU07",
               "OU12",
+              "OA07",
               "OS03",
               "OS06",
               "OS10"
@@ -2016,7 +2019,8 @@
                 "OB17",
                 "OB19",
                 "OB20",
-                "OB22"
+                "OB22",
+                "Laris"
               ],
               "inBG": true
             }
@@ -2053,6 +2057,7 @@
               "OU06",
               "OU07",
               "OU12",
+              "OA07",
               "OS03",
               "OS06",
               "OS10"
