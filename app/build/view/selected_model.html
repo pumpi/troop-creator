@@ -1,5 +1,4 @@
-<div class="model-name">
-    <i class="fa fa-level-up fa-rotate-90" ng-show="model.bonded >= 0"></i>
+<div class="model-name" ng-class="{'bonded': model.bonded >= 0}">
     {{model.name}}
     <span ng-show="model.max && model.min !== model.max">
         (Leader and
@@ -28,8 +27,8 @@
     </span>
 </div>
 <div class="model-options">
-    <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model, false)}">
-        {{getModelCost(model)}}
+    <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model, false, groupIdx)}">
+        {{getModelCost(model, false, false, groupIdx)}}
     </span>
     <span class="model-remove">
         <i ng-click="removeModel($index, groupIdx)" class="fa fa-minus-circle remove-from-list"></i>
