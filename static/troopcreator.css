@@ -1,4 +1,4 @@
-/*! troopcreator 2016-02-07 */
+/*! troopcreator 2016-02-12 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5084,7 +5084,7 @@ h1, h2, h3, h4, h5, p {
   box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.75);
   border: 1px solid #CCC;
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 130px;
   background-color: #FFF; }
 
 /*
@@ -5116,7 +5116,7 @@ h1, h2, h3, h4, h5, p {
  * MENU
  *****************************/
 .navbar {
-  border-radius: 0px; }
+  border-radius: 0; }
   .navbar #top-menu {
     width: 100%;
     display: table-row;
@@ -5242,6 +5242,16 @@ h1, h2, h3, h4, h5, p {
   .army-models ul li {
     background: #CCC;
     list-style: none; }
+    .army-models ul li > ul {
+      position: relative; }
+      .army-models ul li > ul:before {
+        content: '\00a0';
+        position: absolute;
+        width: 1px;
+        border-left: 1px dotted #000;
+        left: 20px;
+        top: -5px;
+        bottom: 14px; }
 .army-models .headline {
   font-weight: bold;
   background: #EEE;
@@ -5270,6 +5280,17 @@ h1, h2, h3, h4, h5, p {
     -ms-flex: 1;
     flex: 1;
     padding-left: 10px; }
+    .army-models .model .model-name.bonded {
+      padding-left: 35px;
+      position: relative; }
+      .army-models .model .model-name.bonded:before {
+        content: '\00a0';
+        position: absolute;
+        height: 1px;
+        width: 10px;
+        border-top: 1px dotted #000;
+        left: 22px;
+        top: 10px; }
   .army-models .model .model-options {
     text-align: right; }
     .army-models .model .model-options > span {
@@ -5346,7 +5367,7 @@ h1, h2, h3, h4, h5, p {
   bottom: 0;
   left: 0;
   right: 0;
-  height: 80px;
+  height: 115px;
   background: #f8f8f8;
   Text-align: center;
   padding: 10px;
@@ -5355,6 +5376,8 @@ h1, h2, h3, h4, h5, p {
   border-top: 1px solid #EEE; }
   .footer p {
     margin-bottom: 3px; }
+    .footer p:last-of-type {
+      margin-top: 10px; }
   .footer a {
     color: #323232;
     border-bottom: 1px dotted #323232;
