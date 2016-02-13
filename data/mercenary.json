@@ -2150,6 +2150,18 @@
           "faction": "faction_mercs",
           "id": "MS10",
           "type": "solo"
+        },
+        {
+          "name": "Hutchuck",
+          "fa": "C",
+          "works_for": [
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "cost": 3,
+          "faction": "faction_mercs",
+          "id": "MS32",
+          "type": "solo"
         }
       ],
       "label": "Solos"
@@ -5090,6 +5102,7 @@
               "MS26",
               "MS29",
               "MS30",
+              "MS32",
               "IS01_mercs",
               "IS03_mercs",
               "IS06_mercs",
@@ -5229,6 +5242,7 @@
               "MS26",
               "MS29",
               "MS31",
+              "MS32",
               "IS01_mercs",
               "IS03_mercs",
               "IS04_mercs",
@@ -5395,6 +5409,7 @@
               "MS05",
               "MS12",
               "MS17",
+              "MS32",
               "IS03_mercs",
               "IW01_mercs",
               "Lug_mercs"

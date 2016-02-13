@@ -1129,6 +1129,19 @@
           "faction": "faction_minions",
           "id": "IS17",
           "type": "solo"
+        },
+        {
+          "name": "Hutchuck",
+          "fa": "C",
+          "works_for": [
+            "faction_orboros",
+            "faction_trollblood",
+            "faction_skorne"
+          ],
+          "cost": 3,
+          "faction": "faction_mercs",
+          "id": "MS32_minion",
+          "type": "solo"
         }
       ],
       "label": "Solos"
