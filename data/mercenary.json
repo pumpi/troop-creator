@@ -4774,7 +4774,7 @@
       ]
     },
     {
-      "name": "Shae - A Pirate's Life",
+      "name": "Shae1 - A Pirate's Life",
       "casterId": "MW07",
       "faction": "faction_mercs",
       "levels": [
@@ -4992,6 +4992,218 @@
         {
           "type": "SOLOS",
           "models": "Bosun Grogspar, Dirty Meg, Doc Killingsworth, First Mate Hawk, Lord Rockbottom"
+        }
+      ]
+    },
+    {
+      "name": "Shae1 - Agents Of Jhord (NQ42)",
+      "casterId": "MW07",
+      "faction": "faction_mercs",
+      "levels": [
+        {
+          "freeModels": [],
+          "costAlterations": [
+            {
+              "id": "MU19",
+              "bonus": 1
+            }
+          ],
+          "faAlterations": [],
+          "benefit": "",
+          "level": 1,
+          "mustHave": [],
+          "onlyModels": {
+            "ids": [
+              "MW07",
+              "MJ02",
+              "MJ03",
+              "MJ04",
+              "MJ09",
+              "MJ10",
+              "MJ11",
+              "MJ12",
+              "MJ13",
+              "MJ16",
+              "MJ18",
+              "MU06",
+              "MU11",
+              "MU19",
+              "MU12",
+              "MU13",
+              "MA01",
+              "MA03",
+              "MS28",
+              "MS08",
+              "MS10",
+              "MS11",
+              "MS12",
+              "MS05",
+              "MS17"
+            ]
+          }
+        },
+        {
+          "freeModels": [
+            {
+              "id": [
+                "MA03"
+              ]
+            }
+          ],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "",
+          "level": 2,
+          "mustHave": [
+            {
+              "min": 1,
+              "inMarshal": false,
+              "ids": [
+                "MU06"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "MW07",
+              "MJ02",
+              "MJ03",
+              "MJ04",
+              "MJ09",
+              "MJ10",
+              "MJ11",
+              "MJ12",
+              "MJ13",
+              "MJ16",
+              "MJ18",
+              "MU06",
+              "MU11",
+              "MU19",
+              "MU12",
+              "MU13",
+              "MA01",
+              "MA03",
+              "MS28",
+              "MS08",
+              "MS10",
+              "MS11",
+              "MS12",
+              "MS05",
+              "MS17"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": " For each character solo included in the army, one Rhulic model/unit gains Advance Deployment",
+          "level": 3,
+          "mustHave": [
+            {
+              "min": 3,
+              "inMarshal": false,
+              "ids": [
+                "MS08",
+                "MS10",
+                "MS11",
+                "MS12",
+                "MS17"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "MW07",
+              "MJ02",
+              "MJ03",
+              "MJ04",
+              "MJ09",
+              "MJ10",
+              "MJ11",
+              "MJ12",
+              "MJ13",
+              "MJ16",
+              "MJ18",
+              "MU06",
+              "MU11",
+              "MU19",
+              "MU12",
+              "MU13",
+              "MA01",
+              "MA03",
+              "MS28",
+              "MS08",
+              "MS10",
+              "MS11",
+              "MS12",
+              "MS05",
+              "MS17"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "Your deployment zone is extended 2” forward.",
+          "level": 4,
+          "mustHave": [
+            {
+              "min": 2,
+              "inMarshal": false,
+              "ids": [
+                "MJ12",
+                "MJ13"
+              ],
+              "inBG": true
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "MW07",
+              "MJ02",
+              "MJ03",
+              "MJ04",
+              "MJ09",
+              "MJ10",
+              "MJ11",
+              "MJ12",
+              "MJ13",
+              "MJ16",
+              "MJ18",
+              "MU06",
+              "MU11",
+              "MU19",
+              "MU12",
+              "MU13",
+              "MA01",
+              "MA03",
+              "MS28",
+              "MS08",
+              "MS10",
+              "MS11",
+              "MS12",
+              "MS05",
+              "MS17"
+            ]
+          }
+        }
+      ],
+      "availableModels": [
+        {
+          "type": "WARJACKS",
+          "models": "Mercenary non-character warjacks"
+        },
+        {
+          "type": "UNITS",
+          "models": "Hammerfall High Shield Gun Corps, Lady Aiyana & Master Holt, Ogrun Assault Corps,Press Gangers, Sea Dog Crew"
+        },
+        {
+          "type": "SOLOS",
+          "models": "Bosun Grogspar, Doc Killingsworth, First Mate Hawk, Lord Rockbottom, Ogrun Bokur, Thor Steinhammer"
         }
       ]
     },
