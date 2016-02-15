@@ -1,0 +1,84 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"><i class="fa fa-star"></i> Tier level {{vars.tier.levels[options.modalLevel].level}}
+                <i ng-show="vars.tierLevel >= vars.tier.levels[options.modalLevel].level" class="fa fa-check"></i></h4>
+        </div>
+        <div class="modal-body">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Models available</h3>
+                </div>
+                <div class="panel-body">
+                    <ul ng-repeat="availableModels in vars.tier.availableModels">
+                        <li><strong>{{availableModels.type}}</strong></li>
+                        <li>{{availableModels.models}}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Requirements
+                        <small>(click model name to add)</small>
+                    </h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li ng-show="!vars.tier.levels[options.modalLevel].mustHave[0]">The army can include only the
+                            models listed above.
+                        </li>
+                        <li ng-show="vars.tier.levels[options.modalLevel].mustHave[0]" ng-repeat="have in vars.tier.levels[options.modalLevel].mustHave">
+                            The army includes <strong>{{have.min}}</strong> or more
+                            <a ng-repeat="id in have.ids" ng-init="model = getModelById(id)" ng-click="addModel(model)" class="tier-add-model">{{model.name}}{{$last ? '' : ', '}}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Benefit</h3>
+                </div>
+                <div class="panel-body">
+                    <ul>
+                        <li ng-show="vars.tier.levels[options.modalLevel].benefit">
+                            {{vars.tier.levels[options.modalLevel].benefit}}
+                        </li>
+                        <li ng-show="vars.tier.levels[options.modalLevel].costAlterations" ng-repeat="cost in vars.tier.levels[options.modalLevel].costAlterations">
+                            Reduce the point cost of <strong>{{getModelById(cost.id).name}}</strong> to
+                            <strong>{{getModelById(cost.id).cost - cost.bonus}}</strong>
+                        </li>
+                        <li ng-show="vars.tier.levels[options.modalLevel].faAlterations" ng-repeat="fa in vars.tier.levels[options.modalLevel].faAlterations">
+                            <span ng-hide="fa.forEach">
+                                <strong>{{getModelById(fa.id).name}}</strong> increased to FA:
+                                <strong>{{fa.bonus > 100 ? 'U' : 1 * getModelById(fa.id).fa + fa.bonus }}</strong>
+                            </span>
+                            <span ng-show="fa.forEach">
+                                The FA of <strong>{{getModelById(fa.id).name}}</strong> increases by
+                                <strong>+{{fa.bonus}}</strong> for each (<strong ng-repeat="id in fa.forEach">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>)
+                            </span>
+                        </li>
+                        <li ng-show="vars.tier.levels[options.modalLevel].freeModels" ng-repeat="free in vars.tier.levels[options.modalLevel].freeModels">
+                            <span ng-hide="free.forEach">
+                                Add one of (<strong ng-repeat="id in free.id">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>)
+                                free of cost. This entry ignores FA restrictions.
+                            </span>
+                            <span ng-show="free.forEach">
+                                Add one of (<strong ng-repeat="id in free.id">{{getModelById(id).name}}{{$last ? '' : ','}}</strong>) free of cost for each
+                                <strong ng-repeat="fid in free.forEach">{{getModelById(fid).name}}{{$last ? '' : ', '}}</strong>. This entry ignores FA restrictions.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" ng-click="options.modalLevel = options.modalLevel - 1" ng-hide="options.modalLevel < 1"
+                    class="pull-left btn btn-primary"><i class="fa fa-chevron-left"></i> previous
+            </button>
+            <button type="button" ng-click="options.modalLevel = options.modalLevel + 1" ng-hide="options.modalLevel > 2"
+                    class="btn btn-primary">next <i class="fa fa-chevron-right"></i></button>
+        </div>
+    </div>
+</div>

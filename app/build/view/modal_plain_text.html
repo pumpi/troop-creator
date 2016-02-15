@@ -1,0 +1,29 @@
+
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"><i class="fa fa-file-text-o"></i> Troop plain text</h4>
+        </div>
+        <div class="modal-body select-on-click" select-on-click>
+            System: <strong>{{system}}</strong><br/>
+            Faction: <strong>{{faction}}</strong><br/>
+            <span ng-hide="!options.gameTier">Tier: <strong>{{vars.tiers[options.gameTier].name}}</strong> (Level <strong>{{vars.tierLevel}}</strong>)<br/></span>
+            Caster: <strong>{{countSelectedModel('warlock|warcaster').all}} / {{options.gameCaster}}</strong><br/>
+            Points: <strong>{{vars.points}} / {{options.gamePoints}}</strong><br/>
+
+            <div ng-repeat="model in vars.selectedModels track by $index">
+                <strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
+                <span ng-show="model.max"> (Leader and {{model.useMax ? model.max -1 : model.min - 1}})</span>
+                <strong>(<span ng-show="checkIsCaster(model)">-</span>{{getModelCost(model)}} Pts.)</strong>
+                <div ng-repeat="model in model.group track by $index">
+                    * <strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
+                    <strong>({{getModelCost(model)}} Pts.)</strong>
+                </div>
+            </div>
+
+            <span ng-hide="!options.gameObjective">Objective: <strong>{{vars.objectives[options.gameObjective]}}</strong></span>
+        </div>
+    </div>
+</div>

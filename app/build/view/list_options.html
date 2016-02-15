@@ -1,0 +1,32 @@
+<div class="max-caster input-group">
+    <div class="input-group-btn" >
+        <div class="btn-group">
+            <button class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Caster</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li ng-repeat="i in [1,2,3]"><span ng-class="{current: options.gameCaster == i}" ng-click="options.gameCaster = i">{{i}}</span></li>
+            </ul>
+        </div>
+    </div>
+    <input type="text" ng-model="options.gameCaster" class="form-control">
+</div>
+<div class="max-points input-group">
+    <div class="input-group-btn" >
+        <div class="btn-group">
+            <button class="btn btn-default" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span>Points</span> <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+                <li ng-repeat="i in [15,25,35,50,75,100]"><span ng-class="{current: options.gamePoints == i}" ng-click="options.gamePoints = i;">{{i}}</span></li>
+            </ul>
+        </div>
+    </div>
+    <input type="text" ng-model="options.gamePoints" class="form-control">
+</div>
+<div class="tiers">
+    <select class="form-control" ng-model="options.gameTier" ng-change="changeTier()">
+        <option value="">no tier selected ...</option>
+        <option ng-repeat="tier in vars.tierOptions | orderBy: 'label'" value="{{tier.key}}">{{tier.label}}</option>
+    </select>
+</div>
