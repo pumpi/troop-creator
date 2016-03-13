@@ -935,6 +935,19 @@
           "type": "soloLesserWarlock"
         },
         {
+          "name": "Hutchuck(Hutchuck, Ogrun Bounty Hunter)",
+          "fa": "C",
+          "works_for": [
+            "faction_orboros",
+            "faction_skorne",
+            "faction_trollblood"
+          ],
+          "cost": 3,
+          "faction": "faction_minions",
+          "id": "IS16",
+          "type": "solo"
+        },
+        {
           "name": "Feralgeist",
           "fa": "3",
           "works_for": [

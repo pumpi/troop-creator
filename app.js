@@ -16,7 +16,7 @@
 ga('create', 'UA-72234013-1', 'auto');
 
 // Create an angular module and load the ngRoute and troopCreatorControllers
-var troopCreator = angular.module('troopCreator', ['ngRoute', 'navModule', 'hc.commonmark', 'ngDragDrop'])
+var troopCreator = angular.module('troopCreator', ['ngRoute', 'navModule', 'hc.commonmark', 'dndLists'])
 
 // the troopcreator configuration for ngRoute
 troopCreator.config(['$routeProvider',
