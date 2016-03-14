@@ -15,6 +15,8 @@
                 <ul>
                     <li class="model" ng-click="addModel(model)"
                         ng-class="{disable: modelAvailable = checkModelAvailable(model, model.type)}"
+                        data-drag="!modelAvailable" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}"
+                        jqyoui-draggable="{onStart: 'startCallback'}" data-type="{{model.type}}"
                         ng-repeat="model in filtered | orderBy: 'name'">
                         <div class="model-name">{{model.name}}</div>
                         <div class="model-options">
@@ -39,16 +41,11 @@
         <div class="list-options" ng-include="'app/build/view/list_options.html'"></div>
 
         <div class="selected-models army-models">
-            <ul jqyoui-droppable="{index: {{$index}}}">
+            <ul>
                 <li ng-repeat="(idx, model) in vars.selectedModels track by $index">
                     <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
-                    <ul dnd-list="model.group" ng-class="{dragging: vars.dragging !== false && checkDropable(model, idx) === false}" dnd-disable-if="checkDropable(model, idx)">
-                        <li ng-repeat="model in model.group | orderBy: 'name'" ng-init="groupIdx = idx"
-                            dnd-draggable="model"
-                            dnd-moved="removeModel(model, groupIdx)"
-                            dnd-effect-allowed="move"
-                            dnd-dragstart="vars.dragging = {'model': model, 'group': groupIdx};"
-                            dnd-dragend="vars.dragging = false">
+                    <ul ng-class="{dragging: vars.dragging !== false && checkDropable(model, idx) === false}">
+                        <li ng-repeat="model in model.group | orderBy: 'name'" ng-init="groupIdx = idx">
                             <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
                         </li>
                     </ul>
@@ -61,6 +58,10 @@
                     <option value="">no objecitve selected ...</option>
                     <option ng-repeat="tier in vars.objectives" value="{{$index}}">{{tier}}</option>
                 </select>
+            </div>
+
+            <div class="drop-model" data-drop="true" jqyoui-droppable="{onDrop:'dropCallback'}">
+                Drop Here
             </div>
 
             <div class="selected-counts">

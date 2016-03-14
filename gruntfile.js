@@ -9,11 +9,12 @@ var jsFiles = [
 
 var jsFilesVendor = [
     "lib/bower/jquery/dist/jquery.js",
+    "lib/bower/jquery-ui/jquery-ui.js",
     "lib/bower/angularjs/angular.js",
     "lib/bower/angular-route/angular-route.js",
     "lib/bower/commonmark/dist/commonmark.js",
     "lib/bower/angular-commonmark/angular-commonmark.js",
-    "lib/bower/angular-drag-and-drop-lists/angular-drag-and-drop-lists.js",
+    "lib/bower/angular-dragdrop/src/angular-dragdrop.js",
     "lib/bower/favico.js/favico.js",
     "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/modal.js",
     "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js",

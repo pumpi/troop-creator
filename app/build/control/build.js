@@ -387,6 +387,8 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 } else {
                     return true;
                 }
+            } else if (/^soloatt/i.test($scope.vars.dragging.model.type) && !/^warlock$|^warcaster$/i.test(model.type) && $scope.countSelectedModel('!^war', 'type', group).all > 0) {
+                return true;
             }
             return false;
         };
@@ -431,6 +433,13 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     }
                 } else if (model.hasOwnProperty('restricted_to')) {
                     findIdx = $scope.searchFreeUnit(model);
+                } else if (/^soloatt/i.test(model.type)) {
+                    for (var i = $scope.vars.selectedModels.length - 1; i >= 0; i--) {
+                        if (/^warlock$|^warcaster$/i.test($scope.vars.selectedModels[i].type)) {
+                            findIdx = i;
+                            break;
+                        }
+                    }
                 }
 
                 // check if the model we add an free model but only if tier
