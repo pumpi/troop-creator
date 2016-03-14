@@ -47,7 +47,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 });
 
                 // Objective Data
-                $scope.objectives = ['Arcane Wonder', 'Amory', 'Bunker', 'Effigy of Valor', 'Fuel Cache', 'Stockpile'];
+                $scope.objectives = ['Arcane Wonder', 'Armory', 'Bunker', 'Effigy of Valor', 'Fuel Cache', 'Stockpile'];
 
                 // Now we get the mercenarys and minions
                 $.each(['minion', 'mercenary'], function (k, v) {
@@ -439,14 +439,14 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 models = $scope.selectedModels[gIdx].group;
             }
             if ( models[idx].group.length > 0 ) {
-                if (!confirm("if you remove this model all grouped models also remove")) {
+                if (!confirm("If you remove this model all grouped models will also be removed")) {
                     return false;
                 }
             }
 
             // an UAMarchall have change the type of his group to unitMarshall
             if ( typeof gIdx !== 'undefined' && /uamarshall/i.test(models[idx].type) ) {
-                if (!confirm("if you remove this model the unit lose unitMarshall and all jacks are also remove")) {
+                if (!confirm("If you remove this model the unit will lose unitMarshall and all jacks will also be removed")) {
                     return false;
                 }
                 $scope.selectedModels[gIdx].type = 'unit';
