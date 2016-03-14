@@ -1,0 +1,13 @@
+# Node modules fpr grunt
+node_modules/
+
+# the IDE
+.idea/
+
+# grunt
+/build/
+install.sh
+*.map
+
+# DEV
+dev.html
