@@ -395,7 +395,7 @@
           "fa": "3",
           "costMin": 6,
           "id": "KU04",
-          "name": "Man-o-war Shocktroopers",
+          "name": "Man-O-War Shocktroopers",
           "cost": 6,
           "faction": "faction_khador",
           "type": "unit"
@@ -407,7 +407,7 @@
           "fa": "3",
           "costMin": 6,
           "id": "KU12",
-          "name": "Man-o-war Demolition Corps",
+          "name": "Man-O-War Demolition Corps",
           "cost": 6,
           "faction": "faction_khador",
           "type": "unit"
@@ -475,7 +475,7 @@
           "fa": "1",
           "costMin": 7,
           "id": "KU16",
-          "name": "Man-o-war Bombardiers",
+          "name": "Man-O-War Bombardiers",
           "cost": 7,
           "faction": "faction_khador",
           "type": "unit"
@@ -675,7 +675,7 @@
           "type": "soloMarshall"
         },
         {
-          "name": "Uhlan Kovnik Markhov",
+          "name": "Uhlan Kovnik Markov",
           "fa": "C",
           "cost": 4,
           "faction": "faction_khador",
@@ -739,7 +739,7 @@
           "type": "solo"
         },
         {
-          "name": "Man-o-war Kovnik",
+          "name": "Man-O-War Kovnik",
           "fa": "2",
           "cost": 3,
           "faction": "faction_khador",
@@ -755,7 +755,7 @@
           "type": "solo"
         },
         {
-          "name": "Man-o-war Drakhun",
+          "name": "Man-O-War Drakhun",
           "fa": "1",
           "cost": 4,
           "faction": "faction_khador",
@@ -1028,7 +1028,7 @@
           "freeModels": [],
           "costAlterations": [],
           "faAlterations": [],
-          "benefit": "Man-o-war units gain +2SPD during your first turn of the game.",
+          "benefit": "Man-O-War units gain +2SPD during your first turn of the game.",
           "level": 2,
           "mustHave": [
             {
@@ -1198,11 +1198,11 @@
         },
         {
           "type": "UNITS",
-          "models": "Kossite Woodsmen, Widowmakers, Man-o-war units, Winter Guard infantry"
+          "models": "Kossite Woodsmen, Widowmakers, Man-O-War units, Winter Guard infantry"
         },
         {
           "type": "SOLOS",
-          "models": "Manhunters, War dog, Widowmaker Marksmen, Yuri the Axe, Man-o-War solos"
+          "models": "Manhunters, War dog, Widowmaker Marksmen, Yuri the Axe, Man-O-War solos"
         }
       ]
     },
@@ -3514,7 +3514,7 @@
           "freeModels": [],
           "costAlterations": [],
           "faAlterations": [],
-          "benefit": "Man-o-war units gain Advance Move.",
+          "benefit": "Man-O-War units gain Advance Move.",
           "level": 3,
           "mustHave": [
             {
@@ -3628,11 +3628,11 @@
         },
         {
           "type": "UNITS",
-          "models": "Battle Mechaniks, Widowmakers, Man-o-war units, Winter Guard units"
+          "models": "Battle Mechaniks, Widowmakers, Man-O-War units, Winter Guard units"
         },
         {
           "type": "SOLOS",
-          "models": "Manhunters, Widowmaker Marksmen, Man-o-war solos, Winter Guard solos"
+          "models": "Manhunters, Widowmaker Marksmen, Man-O-War solos, Winter Guard solos"
         }
       ]
     },
