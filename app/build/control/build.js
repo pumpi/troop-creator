@@ -41,7 +41,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     'faction'           : $('#' + $routeParams.army).data('faction'),
                     'factionId'         : 'faction_' + $routeParams.army,
                     'system'            : $('#' + $routeParams.army).data('system'),
-                    'objectives'        : ['Arcane Wonder', 'Amory', 'Bunker', 'Effigy of Valor', 'Fuel Cache', 'Stockpile'],
+                    'objectives'        : ['Arcane Wonder', 'Armory', 'Bunker', 'Effigy of Valor', 'Fuel Cache', 'Stockpile'],
                     'dragging'          : false
                 };
 
@@ -483,14 +483,14 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 idx = $scope.vars.selectedModels[gIdx].group.indexOf(model);
             }
             if ( models[idx].group.length > 0 ) {
-                if (!confirm("if you remove this model all grouped models also remove")) {
+                if (!confirm("If you remove this model all grouped models will also be removed")) {
                     return false;
                 }
             }
 
             // an UAMarchall have change the type of his group to unitMarshall
             if ( typeof gIdx !== 'undefined' && /uamarshall/i.test(models[idx].type) ) {
-                if (!confirm("if you remove this model the unit lose unitMarshall and all jacks are also remove")) {
+                if (!confirm("If you remove this model the unit will lose unitMarshall and all jacks will also be removed")) {
                     return false;
                 }
                 $scope.vars.selectedModels[gIdx].type = 'unit';
