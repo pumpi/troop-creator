@@ -7,8 +7,8 @@
             <h4 class="modal-title"><i class="fa fa-file-text-o"></i> Troop plain text</h4>
         </div>
         <div class="modal-body select-on-click" select-on-click>
-            System: <strong>{{system}}</strong><br/>
-            Faction: <strong>{{faction}}</strong><br/>
+            System: <strong>{{vars.system}}</strong><br/>
+            Faction: <strong>{{vars.faction}}</strong><br/>
             <span ng-hide="!options.gameTier">Tier: <strong>{{vars.tiers[options.gameTier].name}}</strong> (Level <strong>{{vars.tierLevel}}</strong>)<br/></span>
             Caster: <strong>{{countSelectedModel('warlock|warcaster').all}} / {{options.gameCaster}}</strong><br/>
             Points: <strong>{{vars.points}} / {{options.gamePoints}}</strong><br/>
