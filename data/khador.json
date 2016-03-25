@@ -5556,6 +5556,223 @@
         }
       ],
       "availableModels": []
+    },
+    {
+      "name": "Vladimir2 - Steam and Steel (NQ60)",
+      "casterId": "Kx03",
+      "faction": "faction_khador",
+      "levels": [
+        {
+          "freeModels": [],
+          "costAlterations": [
+            {
+              "id": "KS02",
+              "bonus": 1
+            },
+            {
+              "id": "KU04",
+              "bonus": 1
+            },
+            {
+              "id": "KU12",
+              "bonus": 1
+            },
+            {
+              "id": "KU16",
+              "bonus": 1
+            }
+          ],
+          "faAlterations": [],
+          "benefit": "",
+          "level": 1,
+          "mustHave": [],
+          "onlyModels": {
+            "ids": [
+              "Kx03",
+              "KJ01",
+              "KJ02",
+              "KJ03",
+              "KJ04",
+              "KJ05",
+              "KJ06",
+              "KJ08",
+              "KJ10",
+              "KJ11",
+              "KJ12",
+              "KJ15",
+              "KJ16",
+              "KJ18",
+              "KJ19",
+              "KJ20",
+              "KU01",
+              "KU04",
+              "KU12",
+              "KU16",
+              "KS02",
+              "KS04"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "For each Man-O-War Kovnik in the army,you can redeploy one model/unit after both players have deployed but before the first player’s first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.",
+          "level": 2,
+          "mustHave": [
+            {
+              "min": 1,
+              "inMarshal": false,
+              "ids": [
+                "KS02"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "Kx03",
+              "KJ01",
+              "KJ02",
+              "KJ03",
+              "KJ04",
+              "KJ05",
+              "KJ06",
+              "KJ08",
+              "KJ10",
+              "KJ11",
+              "KJ12",
+              "KJ15",
+              "KJ16",
+              "KJ18",
+              "KJ19",
+              "KJ20",
+              "KU01",
+              "KU04",
+              "KU12",
+              "KU16",
+              "KS02",
+              "KS04"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "One Man-O-War Kovnik and one unit gains Advance Deployment",
+          "level": 3,
+          "mustHave": [
+            {
+              "min": 1,
+              "inMarshal": false,
+              "ids": [
+                "KU01",
+                "KU04",
+                "KU12",
+                "KU16"
+              ],
+              "inBG": false
+            }
+          ],
+          "onlyModels": {
+            "ids": [
+              "Kx03",
+              "KJ01",
+              "KJ02",
+              "KJ03",
+              "KJ04",
+              "KJ05",
+              "KJ06",
+              "KJ08",
+              "KJ10",
+              "KJ11",
+              "KJ12",
+              "KJ15",
+              "KJ16",
+              "KJ18",
+              "KJ19",
+              "KJ20",
+              "KU01",
+              "KU04",
+              "KU12",
+              "KU16",
+              "KS02",
+              "KS04"
+            ]
+          }
+        },
+        {
+          "freeModels": [],
+          "costAlterations": [],
+          "faAlterations": [],
+          "benefit": "Warjacks gain +2 SPD during your first turn of the game.",
+          "level": 4,
+          "mustHave": [
+            {
+              "min": 2,
+              "inMarshal": false,
+              "ids": [
+                "KJ01",
+                "KJ02",
+                "KJ03",
+                "KJ04",
+                "KJ05",
+                "KJ06",
+                "KJ08",
+                "KJ10",
+                "KJ11",
+                "KJ12",
+                "KJ15",
+                "KJ16",
+                "KJ18",
+                "KJ19",
+                "KJ20"
+              ],
+              "inBG": false
+            }],
+          "onlyModels": {
+            "ids": [
+              "Kx03",
+              "KJ01",
+              "KJ02",
+              "KJ03",
+              "KJ04",
+              "KJ05",
+              "KJ06",
+              "KJ08",
+              "KJ10",
+              "KJ11",
+              "KJ12",
+              "KJ15",
+              "KJ16",
+              "KJ18",
+              "KJ19",
+              "KJ20",
+              "KU01",
+              "KU04",
+              "KU12",
+              "KU16",
+              "KS02",
+              "KS04"
+            ]
+          }
+        }
+      ],
+      "availableModels": [
+        {
+          "type": "WARJACKS",
+          "models": "Khador non-character warjacks, Drago"
+        },
+        {
+          "type": "UNITS",
+          "models": "Battle Mechaniks,Man-O-War units"
+        },
+        {
+          "type": "SOLOS",
+          "models": "Man-O-War solos"
+        }
+      ]
     }
   ]
 }
