@@ -236,6 +236,17 @@ h1, h2, h3, h4, h5, p {
     }
 }
 
+.search-form {
+    position: relative;
+    .remove-search {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        cursor: pointer;
+    }
+}
+
 .available-models .model:not(.disable) {
     cursor: pointer;
 }

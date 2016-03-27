@@ -5,7 +5,10 @@
             <span>Available models</span>
         </div>
         <h2>Available models</h2>
-        <input type="search" ng-model="search" placeholder="Search..." class="form-control">
+        <div class="search-form">
+            <input type="search" ng-model="search" placeholder="Search..." class="form-control">
+            <i class="fa fa-times-circle remove-search" ng-click="search = ''" ng-show="search"></i>
+        </div>
         <div class="army-models" ng-repeat="i in notSorted(data)" ng-init="value = data[i]['entries']">
             <div ng-hide="(filtered = (allowedModels(value) | wildcardArmy:search )).length == 0"
                  class="headline accordion-click" accordion-toggle
