@@ -5520,7 +5520,7 @@ ul[dnd-list] {
     font-size: 14px;
     font-size: 1.4rem; }
   .tier-stars i.active {
-    display: inline-block; }
+    display: inline-block !important; }
   select.form-control {
     border: none;
     -webkit-appearance: none;

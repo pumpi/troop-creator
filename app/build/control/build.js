@@ -237,7 +237,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     var freeCaster = false;
                     $.each($scope.vars.selectedModels, function (key, sModel) {
                         if ( /^warlock$|^warcaster$/i.test(sModel.type) ) {
-                            console.log('caster', sModel.group.length, $scope.countSelectedModel('soloAttachment', 'type', key));
                             if ( sModel.group.length > 0 ) {
                                 if ($scope.countSelectedModel('soloAttachment', 'type', key).all === 0) {
                                     freeCaster = true;
