@@ -6,12 +6,6 @@ I only wish to contribute to the great community of this game.
 
 You can access the live version through http://pumpi.github.io/troop-creator
 
-To-Do:
-- some minor issues with TIER-lists.
-- Move Uas to other units
-- Some graphical changes
-- a lot of testing ;-)
-
 This tool is not yet completely finished, which is why I still consider it work-in-progress or BETA.
 If you find any bugs or issues, please feel free to report them to me via the github issue reporter:
 

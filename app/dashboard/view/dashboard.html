@@ -1,3 +1,21 @@
 <div common-mark ng-include="'readme.md'">
 </div>
 
+<div class="issues">
+    <h2>Issues</h2>
+    <div class="loading" ng-hide="dataLoaded">
+        <i class="fa fa-spinner fa-spin"></i>
+    </div>
+    <div ng-show="dataLoaded">
+        <!--Open: <strong>{{data.length}}</strong>-->
+        <a class="btn btn-success new-issue" href="https://github.com/pumpi/troop-creator/issues/new" target="_blank">New issue</a>
+        <ul>
+            <li ng-repeat="issue in data">
+                <a href="{{issue.html_url}}" target="_blank"><strong>{{issue.title}}</strong></a>
+                <span ng-repeat="label in issue.labels" class="label" style="background-color: #{{label.color}};">{{label.name}}</span>
+                <div class="issue-sub-info">#{{issue.number}} open on {{ issue.created_at | date : 'd MMM' }} by {{issue.user.login}}</div>
+                <div ng-show="issue.comments > 0" class="issue-comments"><i class="fa fa-comments-o"></i> {{issue.comments}}</div>
+            </li>
+        </ul>
+    </div>
+</div>

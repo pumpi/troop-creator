@@ -5373,6 +5373,32 @@ h1, h2, h3, h4, h5, p {
 .select-on-click {
   cursor: pointer; }
 
+.issues {
+  position: relative;
+  margin-top: 20px; }
+  .issues .new-issue {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .issues ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .issues ul li {
+      padding: 10px;
+      border: 1px solid #F0F0F0;
+      border-width: 1px 1px 0 1px;
+      position: relative; }
+      .issues ul li:last-child {
+        border-width: 1px; }
+      .issues ul li .issue-comments {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%); }
+      .issues ul li .issue-sub-info {
+        color: #999; }
+
 /*
  * FOOTER
  ******************************/

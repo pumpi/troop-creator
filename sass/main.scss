@@ -418,6 +418,39 @@ h1, h2, h3, h4, h5, p {
     cursor: pointer;
 }
 
+.issues {
+    position: relative;
+    margin-top: 20px;
+    .new-issue {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        li {
+            padding: 10px;
+            border: 1px solid #F0F0F0;
+            border-width: 1px 1px 0 1px;
+            position: relative;
+            &:last-child {
+                border-width: 1px;
+            }
+            .issue-comments {
+                position: absolute;
+                right: 10px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            .issue-sub-info {
+                color: #999;
+            }
+        }
+    }
+}
+
 /*
  * FOOTER
  ******************************/
