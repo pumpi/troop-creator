@@ -1,4 +1,4 @@
-/*! troopcreator 2016-03-27 */
+/*! troopcreator 2016-03-28 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5484,8 +5484,15 @@ ul[dnd-list] {
  * PRINT
  *****************************/
 @media print {
-  #left-col-build, .remove-from-list, .btn, .max-caster, .max-points, .drop-model, .tier-stars i, .remove-from-list {
+  #left-col-build, .remove-from-list, .btn, .max-caster, .max-points, .drop-model, .tier-stars i, .remove-from-list, .footer > p:not(:first-child):not(:last-child), .footer > div {
     display: none !important; }
+  .btn.active {
+    display: inline !important;
+    border: none;
+    padding: 0;
+    line-height: 1;
+    font-size: 14px;
+    font-size: 1.4rem; }
   .tier-stars i.active {
     display: inline-block; }
   select.form-control {
@@ -5495,25 +5502,28 @@ ul[dnd-list] {
     appearance: none;
     display: inline-block;
     width: auto; }
-  .tiers {
+  .cols .col {
+    max-width: none; }
+  .list-options .tiers {
     width: auto; }
-    .tiers:before {
+    .list-options .tiers:before {
       content: 'Tier: ';
       display: inline-block; }
-  .col-md-6 {
-    width: 100%; }
   .selected-models ul {
     display: table;
-    margin-bottom: 20px; }
+    width: 100%; }
     .selected-models ul li {
       display: table-row; }
-    .selected-models ul span {
-      display: table-cell; }
+  .selected-models .model {
+    border-bottom: 1px solid #F0F0F0; }
   #header .header-title {
     color: #FFF !important;
     text-shadow: 0 0 30px #000 !important; }
   .selected-counts {
-    padding: 0; } }
+    padding: 20px 0 0;
+    text-align: right; }
+  .selected-objective .input-group-addon {
+    border: none; } }
 
 /*
  * RESPONSIVE
