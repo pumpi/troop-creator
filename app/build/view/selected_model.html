@@ -18,6 +18,13 @@
     <span ng-show="model.max && model.min === model.max">
         (Leader and {{model.min -1}})
     </span>
+    <span ng-show="model.mount">
+        <button type="button" class="btn btn-xs btn-default"
+                ng-class="{'active btn-success': model.mounted}"
+                ng-click="model.mounted = !model.mounted; calculatePoints();"
+                ng-disabled="canUseMount(model)">mount
+        </button>
+    </span>
     <span ng-show="model.max_attach > 1" class="btn-group btn-group-xs">
         <button type="button" class="btn btn-default" ng-repeat="i in model.max_attach | range"
                 ng-class="{'active btn-success': i === model.attached}"

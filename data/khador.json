@@ -758,6 +758,7 @@
           "name": "Man-O-War Drakhun",
           "fa": "1",
           "cost": 4,
+          "mount": 5,
           "faction": "faction_khador",
           "id": "KS04",
           "type": "soloDragoon"
