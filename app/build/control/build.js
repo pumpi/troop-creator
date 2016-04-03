@@ -4,6 +4,7 @@
 troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$location', '$window', '$log',
     function ($scope, $http, $routeParams, $location, $window, $log) {
         $scope.$log = $log;
+
         $http.get('./data/' + $routeParams.army + '.json').
         success(
             function(data, status, headers, config) {
@@ -42,7 +43,8 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     'factionId'         : 'faction_' + $routeParams.army,
                     'system'            : $('#' + $routeParams.army).data('system'),
                     'objectives'        : ['Arcane Wonder', 'Armory', 'Bunker', 'Effigy of Valor', 'Fuel Cache', 'Stockpile'],
-                    'dragging'          : false
+                    'dragging'          : false,
+                    'location'          : $location.search()
                 };
 
                 // We must convert the Tiers in an array for select
@@ -96,6 +98,20 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                                     $scope.restoreSearch();
                                     $scope.$watchGroup(['options.gamePoints', 'options.gameCaster'], function() {
                                         $scope.updateSearch();
+                                    });
+
+                                    // Watch if location.search() is change Only if the search not change over an intern function we restore the url for History back
+                                    $scope.$watch(function(){ return $location.search() }, function(){
+                                        if ( JSON.stringify($location.search()) !== JSON.stringify($scope.vars.location) ) {
+                                            // Reset all data to restore the url correctly
+                                            $scope.vars.selectedModels      = [];
+                                            $scope.options.gameCaster       = 1;
+                                            $scope.options.gamePoints       = 50;
+                                            $scope.options.gameTier         = '';
+                                            $scope.options.gameObjective    = '';
+
+                                            $scope.restoreSearch();
+                                        }
                                     });
                                 }
                             }
@@ -815,7 +831,8 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             search.tier = $scope.options.gameTier === 0 ? '' : $scope.options.gameTier;
             search.objective =  $scope.options.gameObjective;
 
-            $location.search( search );
+            $scope.vars.location = search;
+            $location.search( $scope.vars.location );
         };
 
         // Get the selects from the URL
@@ -931,6 +948,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             if ( $scope.vars.tier !== undefined && $scope.vars.tier.hasOwnProperty('casterId') ) {
                 $scope.addModelByString($scope.vars.tier.casterId);
                 $('.army-models:eq(1) .accordion-container').slideDown().parent().siblings().find('.accordion-container').slideUp();
+                $scope.updateSearch();
             }
         };
 
