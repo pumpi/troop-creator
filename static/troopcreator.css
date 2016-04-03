@@ -5507,51 +5507,6 @@ ul[dnd-list] {
   font-weight: bold; }
 
 /*
- * PRINT
- *****************************/
-@media print {
-  #left-col-build, .remove-from-list, .btn, .max-caster, .max-points, .drop-model, .tier-stars i, .remove-from-list, .footer > p:not(:first-child):not(:last-child), .footer > div {
-    display: none !important; }
-  .btn.active {
-    display: inline !important;
-    border: none;
-    padding: 0;
-    line-height: 1;
-    font-size: 14px;
-    font-size: 1.4rem; }
-  .tier-stars i.active {
-    display: inline-block !important; }
-  select.form-control {
-    border: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: inline-block;
-    width: auto; }
-  .cols .col {
-    max-width: none; }
-  .list-options .tiers {
-    width: auto; }
-    .list-options .tiers:before {
-      content: 'Tier: ';
-      display: inline-block; }
-  .selected-models ul {
-    display: table;
-    width: 100%; }
-    .selected-models ul li {
-      display: table-row; }
-  .selected-models .model {
-    border-bottom: 1px solid #F0F0F0; }
-  #header .header-title {
-    color: #FFF !important;
-    text-shadow: 0 0 30px #000 !important; }
-  .selected-counts {
-    padding: 20px 0 0;
-    text-align: right; }
-  .selected-objective .input-group-addon {
-    border: none; } }
-
-/*
  * RESPONSIVE
  *****************************/
 @media screen and (max-width: 767px), (max-device-width: 1024px) and (orientation: portrait) {
@@ -5676,6 +5631,54 @@ ul[dnd-list] {
       margin-bottom: 10px; }
     .list-options .tiers {
       width: 100%; } }
+
+/*
+ * PRINT
+ *****************************/
+@media print {
+  #left-col-build, .remove-from-list, .btn, .max-caster, .max-points, .drop-model, .tier-stars i, .remove-from-list, .footer > p:not(:first-child):not(:last-child), .footer > div {
+    display: none !important; }
+  #content {
+    display: inline; }
+  .btn.active {
+    display: inline !important;
+    border: none;
+    padding: 0;
+    line-height: 1;
+    font-size: 14px;
+    font-size: 1.4rem; }
+  .tier-stars i.active {
+    display: inline-block !important; }
+  select.form-control {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    width: auto; }
+  .cols .col {
+    max-width: none; }
+  .list-options .tiers {
+    width: auto; }
+    .list-options .tiers:before {
+      content: 'Tier: ';
+      display: inline-block; }
+  .selected-models ul {
+    display: table;
+    width: 100%; }
+    .selected-models ul li {
+      display: table-row; }
+  .selected-models .model {
+    border-bottom: 1px solid #F0F0F0; }
+  #header .header-title {
+    color: #FFF !important;
+    text-shadow: 0 0 30px #000 !important; }
+  .selected-counts {
+    padding: 20px 0 0;
+    text-align: right;
+    position: relative; }
+  .selected-objective .input-group-addon {
+    border: none; } }
 
 /* */
 /*# sourceMappingURL=troopcreator.css.map */

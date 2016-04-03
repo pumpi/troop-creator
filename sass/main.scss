@@ -584,76 +584,6 @@ ul[dnd-list] {
 }
 
 /*
- * PRINT
- *****************************/
-@media print {
-    #left-col-build,
-    .remove-from-list,
-    .btn,
-    .max-caster,
-    .max-points,
-    .drop-model,
-    .tier-stars i,
-    .remove-from-list,
-    .footer > p:not(:first-child):not(:last-child),
-    .footer > div {
-        display: none !important;
-    }
-    .btn.active {
-        display: inline !important;
-        border: none;
-        padding: 0;
-        line-height: 1;
-        font-size: 14px;
-        font-size: 1.4rem;
-    }
-    .tier-stars i.active {
-        display: inline-block !important;
-    }
-    select.form-control {
-        border: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        display: inline-block;
-        width: auto;
-    }
-    .cols .col {
-        max-width: none;
-    }
-    .list-options  .tiers {
-        width: auto;
-        &:before {
-            content: 'Tier: ';
-            display: inline-block;
-        }
-    }
-    .selected-models {
-        ul {
-            display: table;
-            width: 100%;
-            li {
-                display: table-row;
-            }
-        }
-        .model {
-            border-bottom: 1px solid #F0F0F0;
-        }
-    }
-    #header .header-title {
-        color: #FFF !important;
-        text-shadow: 0 0 30px #000 !important;
-    }
-    .selected-counts {
-        padding: 20px 0 0;
-        text-align: right;
-    }
-    .selected-objective .input-group-addon {
-        border: none;
-    }
-}
-
-/*
  * RESPONSIVE
  *****************************/
 
@@ -817,3 +747,78 @@ ul[dnd-list] {
         }
     }
 }
+
+/*
+ * PRINT
+ *****************************/
+@media print {
+    #left-col-build,
+    .remove-from-list,
+    .btn,
+    .max-caster,
+    .max-points,
+    .drop-model,
+    .tier-stars i,
+    .remove-from-list,
+    .footer > p:not(:first-child):not(:last-child),
+    .footer > div {
+        display: none !important;
+    }
+    #content {
+        display: inline;
+    }
+    .btn.active {
+        display: inline !important;
+        border: none;
+        padding: 0;
+        line-height: 1;
+        font-size: 14px;
+        font-size: 1.4rem;
+    }
+    .tier-stars i.active {
+        display: inline-block !important;
+    }
+    select.form-control {
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: inline-block;
+        width: auto;
+    }
+    .cols .col {
+        max-width: none;
+    }
+    .list-options  .tiers {
+        width: auto;
+        &:before {
+            content: 'Tier: ';
+            display: inline-block;
+        }
+    }
+    .selected-models {
+        ul {
+            display: table;
+            width: 100%;
+            li {
+                display: table-row;
+            }
+        }
+        .model {
+            border-bottom: 1px solid #F0F0F0;
+        }
+    }
+    #header .header-title {
+        color: #FFF !important;
+        text-shadow: 0 0 30px #000 !important;
+    }
+    .selected-counts {
+        padding: 20px 0 0;
+        text-align: right;
+        position: relative;
+    }
+    .selected-objective .input-group-addon {
+        border: none;
+    }
+}
+
