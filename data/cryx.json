@@ -760,6 +760,14 @@
           "faction": "faction_cryx",
           "id": "CS12",
           "type": "solo"
+        },
+        {
+          "name": "Bloat Thrall Overseer Mobius",
+          "fa": "C",
+          "cost": 3,
+          "faction": "faction_cryx",
+          "id": "CS17",
+          "type": "solo"
         }
       ],
       "label": "Solos"
