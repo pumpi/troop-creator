@@ -82,7 +82,8 @@
           "cost": 3,
           "faction": "faction_cygnar",
           "id": "Yz04",
-          "type": "warcaster"
+          "type": "warcaster",
+          "attachment": "YS12"
         },
         {
           "name": "Constance Blaize(Constance Blaize, Knight of the Prophet)",
@@ -775,9 +776,19 @@
           "name": "Major Katherine Laddermore",
           "fa": "C",
           "cost": 5,
+
           "faction": "faction_cygnar",
           "id": "YS05",
           "type": "solo"
+        },
+        {
+          "name": "Storm Chaser Adept Caitlin Finch",
+          "fa": "C",
+          "cost": 0,
+          "restricted_to": "Yz04",
+          "faction": "faction_cygnar",
+          "id": "YS12",
+          "type": "soloAttachment"
         }
       ],
       "label": "Solos"

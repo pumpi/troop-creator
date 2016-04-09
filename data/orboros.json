@@ -80,7 +80,8 @@
           "cost": 3,
           "faction": "faction_orboros",
           "id": "Ox01",
-          "type": "warlock"
+          "type": "warlock",
+          "attachment": "Laris"
         },
         {
           "name": "Kaya1(Kaya the Wildborne)",

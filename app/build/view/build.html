@@ -48,7 +48,7 @@
                 <li ng-repeat="(idx, model) in vars.selectedModels track by $index">
                     <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
                     <ul ng-class="{dragging: vars.dragging !== false && checkDropable(model, idx) === false}">
-                        <li ng-repeat="model in model.group | orderBy: 'name'" ng-init="groupIdx = idx">
+                        <li ng-repeat="model in model.group | orderBy: ['auto_attached', 'name']" ng-init="groupIdx = idx">
                             <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
                         </li>
                     </ul>

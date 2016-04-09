@@ -38,6 +38,6 @@
         {{getModelCost(model, false, false, groupIdx)}}
     </span>
     <span class="model-remove">
-        <i ng-click="removeModel(model, groupIdx)" class="fa fa-minus-circle remove-from-list"></i>
+        <i ng-click="removeModel(model, groupIdx)" class="fa fa-minus-circle remove-from-list" ng-hide="model.auto_attached"></i>
     </span>
 </div>

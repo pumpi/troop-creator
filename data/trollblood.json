@@ -16,7 +16,8 @@
           "cost": 3,
           "faction": "faction_trollblood",
           "id": "Tz02",
-          "type": "warlock"
+          "type": "warlock",
+          "attachment": "TS14"
         },
         {
           "name": "Calandra Truthsayer, Oracle of the Glimmerwood",
@@ -72,7 +73,8 @@
           "cost": 5,
           "faction": "faction_trollblood",
           "id": "TW05",
-          "type": "warlock"
+          "type": "warlock",
+          "attachment": "TS13"
         },
         {
           "name": "Grim2(Hunters Grim)",
@@ -666,6 +668,22 @@
           "faction": "faction_trollblood",
           "id": "TS03",
           "type": "solo"
+        },
+        {
+          "name": "Pyg Keg Bearer",
+          "fa": "C",
+          "cost": 0,
+          "faction": "faction_trollblood",
+          "id": "TS13",
+          "type": "soloAttachment"
+        },
+        {
+          "name": "Scroll Bearer",
+          "fa": "C",
+          "cost": 0,
+          "faction": "faction_trollblood",
+          "id": "TS14",
+          "type": "soloAttachment"
         }
       ],
       "label": "Solos"

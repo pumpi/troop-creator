@@ -490,6 +490,16 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                         copy.freeModel = 1;
                     }
                 }
+                
+                // Auto attached
+                // Have the model the attribute auto_attached we must add the model in auto_attached
+                if (model.hasOwnProperty('attachment')) {
+                    var attache = angular.copy($scope.getModelById(model.attachment));
+                    attache.auto_attached = 1;
+                    attache.bonded = 1;
+                    attache.group = [];
+                    copy.group.push(attache);
+                }
 
                 // If we find a position where we add the model add this model or add to the end
                 if (findIdx !== false) {
@@ -506,6 +516,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 } else {
                     $scope.vars.selectedModels.push(copy);
                 }
+                console.log($scope.vars.selectedModels);
                 $scope.calculatePoints();
             }
         };
@@ -829,6 +840,11 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                         modStr += ':mo';
                     }
 
+                    //a auto attached model
+                    if ( model.hasOwnProperty('auto_attached') && model.auto_attached === 1 ) {
+                        modStr += ':aa';
+                    }
+
                     //a weapon attachment with the attached size
                     if ( model.hasOwnProperty('attached') ) {
                         modStr += ':a#' + model.attached;
@@ -924,6 +940,10 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
 
                     if (args[i] === 'mounted' || args[i] === 'mo') {
                         add.mounted = true;
+                    }
+
+                    if (args[i] === 'aa') {
+                        add.auto_attached = 1;
                     }
                 }
                 // Add bonded models in .group from the last model

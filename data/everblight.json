@@ -88,7 +88,8 @@
           "cost": 3,
           "faction": "faction_everblight",
           "id": "EW07",
-          "type": "warlock"
+          "type": "warlock",
+          "attachment": "EB20"
         },
         {
           "name": "Vayl1(Vayl, Disciple of Everblight)",
