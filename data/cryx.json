@@ -106,7 +106,8 @@
           "cost": 4,
           "faction": "faction_cryx",
           "id": "CW07",
-          "type": "warcaster"
+          "type": "warcaster",
+          "attachment": "CS19"
         },
         {
           "name": "Asphyxious3(Asphyxious the Hellbringer & Vociferon)",
@@ -114,7 +115,8 @@
           "cost": 4,
           "faction": "faction_cryx",
           "id": "Cz01",
-          "type": "warcaster"
+          "type": "warcaster",
+          "attachment": "CS18"
         },
         {
           "name": "Skarre1(Pirate Queen Skarre)",
@@ -768,6 +770,24 @@
           "faction": "faction_cryx",
           "id": "CS17",
           "type": "solo"
+        },
+        {
+          "name": "Vociferon",
+          "fa": "C",
+          "cost": 0,
+          "restricted_to": "Cz01",
+          "faction": "faction_cryx",
+          "id": "CS18",
+          "type": "soloAttachment"
+        },
+        {
+          "name": "Deryliss",
+          "fa": "C",
+          "cost": 0,
+          "restricted_to": "CW07",
+          "faction": "faction_cryx",
+          "id": "CS19",
+          "type": "soloAttachment"
         }
       ],
       "label": "Solos"

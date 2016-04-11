@@ -516,7 +516,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 } else {
                     $scope.vars.selectedModels.push(copy);
                 }
-                console.log($scope.vars.selectedModels);
                 $scope.calculatePoints();
             }
         };

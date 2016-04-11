@@ -34,7 +34,8 @@
           "cost": 3,
           "faction": "faction_khador",
           "id": "KW07",
-          "type": "warcaster"
+          "type": "warcaster",
+          "attachment": "Scrapjack"
         },
         {
           "name": "Butcher1(The Butcher of Khardov)",
