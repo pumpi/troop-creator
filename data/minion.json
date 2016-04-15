@@ -935,7 +935,7 @@
           "type": "soloLesserWarlock"
         },
         {
-          "name": "Hutchuck(Hutchuck, Ogrun Bounty Hunter)",
+          "name": "Hutchuck",
           "fa": "C",
           "works_for": [
             "faction_orboros",
@@ -1128,19 +1128,6 @@
           "cost": 1,
           "faction": "faction_minions",
           "id": "IS17",
-          "type": "solo"
-        },
-        {
-          "name": "Hutchuck",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 3,
-          "faction": "faction_mercs",
-          "id": "MS32_minion",
           "type": "solo"
         }
       ],
