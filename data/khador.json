@@ -184,7 +184,7 @@
           "cost": 19,
           "faction": "faction_khador",
           "id": "KJ15",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Marauder",
@@ -240,7 +240,7 @@
           "cost": 18,
           "faction": "faction_khador",
           "id": "KJ18",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Ruin",

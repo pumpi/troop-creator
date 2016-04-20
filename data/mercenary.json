@@ -626,7 +626,7 @@
           "cost": 18,
           "faction": "faction_mercs",
           "id": "MJ18",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Wroughthammer Rockram",
@@ -683,7 +683,7 @@
           "cost": 19,
           "faction": "faction_mercs",
           "id": "MJ19",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Wrecker",

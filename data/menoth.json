@@ -295,7 +295,7 @@
           "cost": 19,
           "faction": "faction_menoth",
           "id": "PJ23",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Fire of Salvation",
@@ -311,7 +311,7 @@
           "cost": 18,
           "faction": "faction_menoth",
           "id": "PJ19",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Vigilant",

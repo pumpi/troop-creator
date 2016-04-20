@@ -160,7 +160,7 @@
           "cost": 18,
           "faction": "faction_cygnar",
           "id": "YJ23",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Sentinel",
@@ -275,12 +275,12 @@
           "type": "warjack"
         },
         {
-          "name": "Stormwall(Stormwall & Lightning Pod)",
+          "name": "Stormwall (Stormwall & Lightning Pod)",
           "fa": "2",
           "cost": 19,
           "faction": "faction_cygnar",
           "id": "YJ20",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Firefly",

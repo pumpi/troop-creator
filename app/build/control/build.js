@@ -99,7 +99,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                                     });
 
                                     // Watch if location.search() is change Only if the search not change over an intern function we restore the url for History back
-                                    $scope.$watch(function(){ return $location.search() }, function(){
+                                    $scope.$watch(function(){ return $location.search(); }, function(){
                                         if ( JSON.stringify($location.search()) !== JSON.stringify($scope.vars.location) ) {
                                             // Reset all data to restore the url correctly
                                             $scope.vars.selectedModels      = [];
@@ -210,9 +210,9 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             }
 
             // No Caster or other model can control warbeast or warjack in selectedModels we can not select an Warbeast or Warjack
-            if ( /warbeast|warjack/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$|lesserwarlock|journeyman|marshall').all === 0 ) {
+            if ( /^warb|^warj/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$|lesserwarlock|journeyman|marshall').all === 0 ) {
                 return true;
-            } else if (/warbeast|warjack/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$').all === 0) {
+            } else if (/^warb|^warj/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$').all === 0) {
                 // We must look if the selected journyman or lesser warlock has an restricted_to or marshall max value overdone
                 var checkLesser = false;
                 if ( $scope.vars.selectedModels.length > 0 ) {
@@ -262,12 +262,14 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                         return !freeCaster;
                     });
 
-                    if ( freeCaster === false ) return true;
+                    if ( freeCaster === false ) {
+                        return true;
+                    }
                 }
             }
 
             // The Points to use are higher as the available points but check if warbeast an we have available caster points
-            if ( /^warbeast$|^warjack$/i.test(model.type) && parseInt($scope.vars.casterPoints) > 0) {
+            if ( /^warb|^warj/i.test(model.type) && parseInt($scope.vars.casterPoints) > 0) {
                 if ( ( parseInt($scope.options.gamePoints) - parseInt($scope.vars.points) + parseInt($scope.vars.casterPoints) ) < cost) {
                     return true;
                 }
@@ -442,17 +444,26 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             }
 
             // We chack if this model an model that must be in group
-            if ( !/^warbeast$|^warjack$|^soloatt/i.test($scope.vars.dragging.model.type) && !$scope.vars.dragging.model.hasOwnProperty('restricted_to') ) {
+            if ( !/^warb|^war|^soloatt/i.test($scope.vars.dragging.model.type) && !$scope.vars.dragging.model.hasOwnProperty('restricted_to') ) {
                 return false;
             }
 
             // check if warbeast and we can drop it but only if we have no restriceted_to
-            if (/^warbeast$|^warjack$/i.test($scope.vars.dragging.model.type) && !$scope.vars.dragging.model.hasOwnProperty('restricted_to')) {
+            if (/^warb|^warj/i.test($scope.vars.dragging.model.type) && !$scope.vars.dragging.model.hasOwnProperty('restricted_to')) {
                 if (/^warlock$|^warcaster$|lesserwarlock|journeyman|marshall/i.test(model.type)) {
                     // Some lesserwarlocks have an restricted_to that means she only can get special beasts
                     if (!model.hasOwnProperty('restricted_to') ||
                         ( model.hasOwnProperty('restricted_to') && model.restricted_to.indexOf($scope.vars.dragging.model.id) !== -1 )) {
-                        return ( !/marshall/i.test(model.type) || (/marshall/i.test(model.type) && $scope.countSelectedModel('^warb|^warj', 'type', group).normal < 2) );
+                        // If we have an Jack marshall he can only get 2 Jacks and no character and no colossal
+                        return (
+                            !/marshall/i.test(model.type) ||
+                            (
+                                /marshall/i.test(model.type)
+                                && $scope.countSelectedModel('^warb|^warj', 'type', group).normal < 2
+                                && $scope.vars.dragging.model.fa !== 'C'
+                                && !/colossal/i.test($scope.vars.dragging.model.type)
+                            )
+                        );
                     } else {
                         return false;
                     }
@@ -515,13 +526,22 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 var findIdx = false;
                 if ( group !== false) {
                     findIdx = group;
-                } else if (/^warbeast$|^warjack$/i.test(model.type)) {
+                } else if (/^warb|^warj/i.test(model.type)) {
                     for (var i = $scope.vars.selectedModels.length - 1; i >= 0; i--) {
                         if (/^warlock$|^warcaster$|lesserwarlock|journeyman|marshall/i.test($scope.vars.selectedModels[i].type)) {
                             // Some lesserwarlocks have an restricted_to that means she only can get special beasts
                             if (!$scope.vars.selectedModels[i].hasOwnProperty('restricted_to') ||
                                 ( $scope.vars.selectedModels[i].hasOwnProperty('restricted_to') && $scope.vars.selectedModels[i].restricted_to.indexOf(model.id) !== -1 )) {
-                                if ( !/marshall/i.test($scope.vars.selectedModels[i].type) || (/marshall/i.test($scope.vars.selectedModels[i].type) && $scope.countSelectedModel('^warb|^warj', 'type', i).normal < 2) ) {
+                                // If we have an Jack marshall he can only get 2 Jacks and no character and no colossal
+                                if (
+                                    !/marshall/i.test($scope.vars.selectedModels[i].type)
+                                    || (
+                                        /marshall/i.test($scope.vars.selectedModels[i].type)
+                                        && $scope.countSelectedModel('^warb|^warj', 'type', i).normal < 2
+                                        && model.fa !== 'C'
+                                        && !/colossal/i.test(model.type)
+                                    )
+                                ) {
                                     findIdx = i;
                                     break;
                                 }
@@ -561,7 +581,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 }
 
                 // If we find a position where we add the model add this model or add to the end
-                console.log(group, findIdx);
                 if (findIdx !== false) {
                     copy.bonded = 1;
 
@@ -584,7 +603,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
         $scope.removeModel = function(model, gIdx) {
             var models = false;
             var idx = false;
-            console.log(gIdx);
+            
             if (typeof(gIdx) === 'undefined' ) {
                 models = $scope.vars.selectedModels;
                 idx = $scope.vars.selectedModels.indexOf(model);
@@ -661,7 +680,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 // If we have models in the Battle Group we must count one deeper
                 $.each( model.group, function(groupIdx, gmodel) {
                     var cost = $scope.getModelCost(gmodel, false, false, parentIdx);
-                    if ( /^warjack$|^warbeast$/i.test(gmodel.type) ) {
+                    if ( /^warj|^warb/i.test(gmodel.type) ) {
                         casterPoints = casterPoints - cost;
                     } else {
                         sumPoints = sumPoints + cost;
@@ -858,6 +877,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 $('.army-models:eq(1) .accordion-container').slideDown().parent().siblings().find('.accordion-container').slideUp();
                 $scope.updateSearch();
             }
+
         };
 
         // get the real model FA

@@ -161,7 +161,7 @@
           "cost": 18,
           "faction": "faction_cryx",
           "id": "CJ22",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Barathrum",
@@ -265,7 +265,7 @@
           "cost": 19,
           "faction": "faction_cryx",
           "id": "CJ20",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Seether",

@@ -111,7 +111,7 @@
           "cost": 18,
           "faction": "faction_retribution",
           "id": "RJ13",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Banshee",
@@ -175,7 +175,7 @@
           "cost": 17,
           "faction": "faction_retribution",
           "id": "RJ16",
-          "type": "warjack"
+          "type": "warjackColossal"
         },
         {
           "name": "Aspis",
