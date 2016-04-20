@@ -10,6 +10,7 @@ var jsFiles = [
 var jsFilesVendor = [
     "lib/bower/jquery/dist/jquery.js",
     "lib/bower/jquery-ui/jquery-ui.js",
+    "lib/bower/jqueryui-touch-punch/jquery.ui.touch-punch.js",
     "lib/bower/angularjs/angular.js",
     "lib/bower/angular-route/angular-route.js",
     "lib/bower/commonmark/dist/commonmark.js",

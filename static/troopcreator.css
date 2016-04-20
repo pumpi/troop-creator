@@ -1,4 +1,4 @@
-/*! troopcreator 2016-04-09 */
+/*! troopcreator 2016-04-19 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5254,8 +5254,28 @@ h1, h2, h3, h4, h5, p {
   .army-models ul li {
     background: #CCC;
     list-style: none; }
+    .army-models ul li.activeDrop {
+      background-color: #EEE;
+      position: relative; }
+      .army-models ul li.activeDrop:before {
+        content: '\00a0';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: transparent;
+        border: 2px dashed #999; }
+    .army-models ul li .ui-draggable-dragging {
+      opacity: .7; }
+      .army-models ul li .ui-draggable-dragging .model-name.bonded:before {
+        content: none; }
+    .army-models ul li .ui-draggable-disabled {
+      cursor: not-allowed; }
     .army-models ul li > ul {
       position: relative; }
+      .army-models ul li > ul li {
+        background: transparent; }
       .army-models ul li > ul:before {
         content: '\00a0';
         position: absolute;

@@ -1,8 +1,8 @@
 ﻿'use strict';
 
 // Controller to display the troop creator
-troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$location', '$window', '$log',
-    function ($scope, $http, $routeParams, $location, $window, $log) {
+troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$location', '$window', '$log', '$q',
+    function ($scope, $http, $routeParams, $location, $window, $log, $q) {
         $scope.$log = $log;
 
         $http.get('./data/' + $routeParams.army + '.json').
@@ -16,9 +16,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                         $scope.data.push(item);
                     }
                 });
-
-                $scope.dropModel        = {};
-                $scope.location         = $location;
 
                 $scope.options = {
                     'gameCaster'        : 1,
@@ -44,6 +41,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     'system'            : $('#' + $routeParams.army).data('system'),
                     'objectives'        : ['Arcane Wonder', 'Armory', 'Bunker', 'Effigy of Valor', 'Fuel Cache', 'Stockpile'],
                     'dragging'          : false,
+                    'canDrop'           : false,
                     'location'          : $location.search()
                 };
 
@@ -337,12 +335,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             return false;
         };
 
-        // we have an Tier an check if the model allowed
-        $scope.checkModelTier = function(model) {
-            var tier = $scope.vars.tiers[$scope.options.gameTier];
-            return tier.levels[0].onlyModels.ids.indexOf(model.id) === -1;
-        };
-
         // count models with regex in selected list by value
         $scope.countSelectedModel = function(match, value, group) {
             if ( typeof value === 'undefined' ) { value = 'type'; }
@@ -399,39 +391,101 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             return findIdx;
         };
 
+        // ********************************
+        // MOVING MODELS BETWEEN GROUPS
+        // ********************************
+        // First we must Check if we can move the model
+        $scope.moveCanDrag = function(model) {
+            return !( /uamarshall/i.test(model.type) || model.auto_attached );
+        };
+
+        // start drag callback by moving Model
+        $scope.moveModelStart = function(event, ui, model, group) {
+            $scope.vars.dragging = {'model': model, 'group': group};
+        };
+
+        // move over callback if you move over the droparea
+        // we must Timeout the over function to execute it after the out function
+        // http://stackoverflow.com/questions/8932820/jquery-ui-draggable-over-out-event-order#comment11179667_8932820
+        $scope.moveOverDropable = function(event, ui, model, group) {
+            setTimeout( function() {
+                if ( $scope.checkDropable(model, group) ) {
+                    $(event.target).addClass('activeDrop').siblings().removeClass('activeDrop');
+                    $scope.vars.canDrop = true;
+                }
+            }, 0);
+        };
+
+        // move out callback if you leave the droparea
+        $scope.moveOutDropable = function() {
+            $('.activeDrop').removeClass('activeDrop');
+            $scope.vars.canDrop = false;
+        };
+
+        // start drag callback by moving Model
+        $scope.moveBeforeDrop = function(event, ui) {
+            var deferred = $q.defer();
+            if ($scope.vars.canDrop) {
+                deferred.resolve();
+            } else {
+                deferred.reject();
+                $(ui.helper.eq(0)).animate({'left': 0, 'top': 0});
+            }
+            return deferred.promise;
+        };
+
         // Check if we can drop the model in this Group
         $scope.checkDropable = function(model, group) {
             // if the same group as before
-            if ( group === $scope.vars.dragging.group ) {
-                return true;
+            if ( group === $scope.vars.dragging.group || $scope.vars.dragging === false ) {
+                return false;
             }
 
-            // check if warbeast and we can drop it
-            if (/^warbeast$|^warjack$/i.test($scope.vars.dragging.model.type)) {
+            // We chack if this model an model that must be in group
+            if ( !/^warbeast$|^warjack$|^soloatt/i.test($scope.vars.dragging.model.type) && !$scope.vars.dragging.model.hasOwnProperty('restricted_to') ) {
+                return false;
+            }
+
+            // check if warbeast and we can drop it but only if we have no restriceted_to
+            if (/^warbeast$|^warjack$/i.test($scope.vars.dragging.model.type) && !$scope.vars.dragging.model.hasOwnProperty('restricted_to')) {
                 if (/^warlock$|^warcaster$|lesserwarlock|journeyman|marshall/i.test(model.type)) {
                     // Some lesserwarlocks have an restricted_to that means she only can get special beasts
                     if (!model.hasOwnProperty('restricted_to') ||
                         ( model.hasOwnProperty('restricted_to') && model.restricted_to.indexOf($scope.vars.dragging.model.id) !== -1 )) {
-                        return !( !/marshall/i.test(model.type) || (/marshall/i.test(model.type) && $scope.countSelectedModel('^warb|^warj', 'type', group).normal < 2) );
+                        return ( !/marshall/i.test(model.type) || (/marshall/i.test(model.type) && $scope.countSelectedModel('^warb|^warj', 'type', group).normal < 2) );
                     } else {
-                        return true;
+                        return false;
                     }
                 } else {
-                    return true;
+                    return false;
                 }
             } else if ($scope.vars.dragging.model.hasOwnProperty('restricted_to')) {
                 if ( $scope.vars.dragging.model.restricted_to.indexOf(model.id) !== -1 ) {
                     // We only can add if there no other UA or other WA or not the same model in group
-                    return !( $scope.countSelectedModel('^' + model.type + '$', 'type', group).all === 0 && $scope.countSelectedModel($scope.vars.dragging.model.id, 'id', group).all === 0 );
+                    return ( $scope.countSelectedModel('^' + model.type + '$', 'type', group).all === 0 && $scope.countSelectedModel($scope.vars.dragging.model.id, 'id', group).all === 0 );
                 } else {
-                    return true;
+                    return false;
                 }
-            } else if (/^soloatt/i.test($scope.vars.dragging.model.type) && !/^warlock$|^warcaster$/i.test(model.type) && $scope.countSelectedModel('!^war', 'type', group).all > 0) {
-                return true;
+            } else if ( /^soloatt/i.test($scope.vars.dragging.model.type) && !/^warlock$|^warcaster$/i.test(model.type) ) {
+                return false;
             }
-            return false;
+            return true;
         };
 
+        // if we Drop the model now we can move it between the groups
+        $scope.moveOnDrop = function(event, ui, model, group) {
+            //at first we add the model by string to the group
+            $scope.addModel($scope.vars.dragging.model, group);
+
+            // now we can remove the old model
+            $scope.removeModel($scope.vars.dragging.model, $scope.vars.dragging.group);
+            $scope.vars.dragging = $scope.vars.canDrop = false;
+            $('.activeDrop').removeClass('activeDrop');
+        };
+
+        // ***********************************
+        // ADD  AND REMOVE MODELS FUNCTIONS
+        // ***********************************
         // Drop callback for draggable
         $scope.dropCallback = function(event, ui) {
             var dragScope = angular.element(ui.draggable).scope();
@@ -444,9 +498,11 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             ui.helper.css({'width': prevWidth});
         };
 
-        // Add an model from the left to the right
-        $scope.addModel = function(model) {
-            if ( !$scope.checkModelAvailable(model) ) {
+        // Add an model to the selected list
+        $scope.addModel = function(model, group) {
+            if ( typeof(group) === 'undefined' ) { group = false; }
+
+            if ( !$scope.checkModelAvailable(model) || group !== false ) {
                 var copy = angular.copy(model);
                 copy.group = [];
                 // its an Weapon Attachmend we need an option
@@ -457,7 +513,9 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 // If type warbeast or warjack we must add it in group of an caster model
                 // If baseUnit set we must add this model to an unit
                 var findIdx = false;
-                if (/^warbeast$|^warjack$/i.test(model.type)) {
+                if ( group !== false) {
+                    findIdx = group;
+                } else if (/^warbeast$|^warjack$/i.test(model.type)) {
                     for (var i = $scope.vars.selectedModels.length - 1; i >= 0; i--) {
                         if (/^warlock$|^warcaster$|lesserwarlock|journeyman|marshall/i.test($scope.vars.selectedModels[i].type)) {
                             // Some lesserwarlocks have an restricted_to that means she only can get special beasts
@@ -473,6 +531,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 } else if (model.hasOwnProperty('restricted_to')) {
                     findIdx = $scope.searchFreeUnit(model);
                 } else if (/^soloatt/i.test(model.type)) {
+                    copy.sort = 0;
                     for (var i = $scope.vars.selectedModels.length - 1; i >= 0; i--) {
                         if (/^warlock$|^warcaster$/i.test($scope.vars.selectedModels[i].type) && $scope.countSelectedModel('soloAtt', 'type', i).all === 0 ) {
                             findIdx = i;
@@ -502,6 +561,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 }
 
                 // If we find a position where we add the model add this model or add to the end
+                console.log(group, findIdx);
                 if (findIdx !== false) {
                     copy.bonded = 1;
 
@@ -524,39 +584,46 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
         $scope.removeModel = function(model, gIdx) {
             var models = false;
             var idx = false;
-            if (typeof gIdx === 'undefined' ) {
+            console.log(gIdx);
+            if (typeof(gIdx) === 'undefined' ) {
                 models = $scope.vars.selectedModels;
                 idx = $scope.vars.selectedModels.indexOf(model);
             } else {
                 models = $scope.vars.selectedModels[gIdx].group;
                 idx = $scope.vars.selectedModels[gIdx].group.indexOf(model);
             }
-            if ( models[idx].group.length > 0 ) {
-                if (!confirm("If you remove this model all grouped models will also be removed")) {
-                    return false;
-                }
-            }
 
-            // an UAMarchall have change the type of his group to unitMarshall
-            if ( typeof gIdx !== 'undefined' && /uamarshall/i.test(models[idx].type) ) {
-                if (!confirm("If you remove this model the unit will lose unitMarshall and all jacks will also be removed")) {
-                    return false;
-                }
-                $scope.vars.selectedModels[gIdx].type = 'unit';
-
-                // Now me must remove all warbeast or warjacks in his group
-                for (var i = $scope.vars.selectedModels[gIdx].group.length - 1; i >= 0; i--) {
-                    var gModel = $scope.vars.selectedModels[gIdx].group[i];
-                    if ( /^warb|^warj/i.test(gModel.type) ) {
-                        $scope.vars.selectedModels[gIdx].group.splice(idx, 1);
+            if ( idx !== -1 ) {
+                if (models[idx].group.length > 0 ) {
+                    if (!confirm("If you remove this model all grouped models will also be removed")) {
+                        return false;
                     }
                 }
-            }
 
-            models.splice(idx, 1);
-            $scope.calculatePoints();
+                // an UAMarchall have change the type of his group to unitMarshall
+                if ( typeof gIdx !== 'undefined' && /uamarshall/i.test(models[idx].type) ) {
+                    if (!confirm("If you remove this model the unit will lose unitMarshall and all jacks will also be removed")) {
+                        return false;
+                    }
+                    $scope.vars.selectedModels[gIdx].type = 'unit';
+
+                    // Now me must remove all warbeast or warjacks in his group
+                    for (var i = $scope.vars.selectedModels[gIdx].group.length - 1; i >= 0; i--) {
+                        var gModel = $scope.vars.selectedModels[gIdx].group[i];
+                        if ( /^warb|^warj/i.test(gModel.type) ) {
+                            $scope.vars.selectedModels[gIdx].group.splice(idx, 1);
+                        }
+                    }
+                }
+
+                models.splice(idx, 1);
+                $scope.calculatePoints();
+            }
         };
 
+        // *******************************
+        // CALCULATE AN CHECK THE POINTS
+        // *******************************
         // Is there enough points to use max size
         $scope.canUseMax = function(model) {
             return ( !model.useMax && ( parseInt($scope.options.gamePoints) - parseInt($scope.vars.points) + parseInt(model.cost) ) < parseInt(model.costMax) );
@@ -610,6 +677,83 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
 
             // Set the available Caster points for later Checks
             $scope.vars.casterPoints = casterPoints;
+        };
+
+        // get the real model cost
+        $scope.getModelCost = function(model, checkFree, getMax, groupIdx) {
+            if ( typeof(checkFree) === 'undefined' ) { checkFree = false; }
+            if ( typeof(getMax) === 'undefined' ) { getMax = false; }
+            if ( typeof(groupIdx) === 'undefined' ) { groupIdx = false; }
+            var rCost;
+
+            if ( ( getMax && model.hasOwnProperty('costMax') ) || ( model.hasOwnProperty('useMax') && model.useMax ) ) {
+                rCost = parseInt(model.costMax);
+            } else if ( model.hasOwnProperty('attached') ) {
+                rCost = parseInt(model.cost * model.attached);
+            } else if (model.hasOwnProperty('mounted') && model.mounted === true ) {
+                rCost = parseInt(model.mount);
+            } else {
+                rCost = parseInt(model.cost);
+            }
+
+            // We have an group model and show if there any bonus
+            if ( groupIdx !== false && $scope.vars.selectedModels[groupIdx].hasOwnProperty('bonded_bonus') ) {
+                rCost = rCost - $scope.vars.selectedModels[groupIdx].bonded_bonus;
+            }
+
+            // only run this checks if we have an tier
+            if ( $scope.vars.tier ) {
+                // Check for bonus points for Models
+                var bonus = $scope.vars.costAlterations[model.id];
+                if (bonus) {
+                    rCost -= bonus;
+                }
+
+                // Check for free models
+                if ($scope.vars.freeModels.id.length > 0 && checkFree) {
+                    // is the model we are check in the for free array
+                    var isFree = ( $.inArray(model.id, $scope.vars.freeModels.id) !== -1 );
+
+                    if ($scope.countSelectedModel($scope.vars.freeModels.id.join('|'), 'id').free < $scope.vars.freeModels.count && isFree) {
+                        rCost = parseInt(0);
+                    }
+                }
+            }
+
+            return rCost;
+        };
+
+        // Get true if this model with Bonus points
+        $scope.isBonusCost = function(model, checkFree, groupIdx) {
+            if ( !$scope.vars.tier ) {
+                return false;
+            }
+
+            if ( typeof(checkFree) === 'undefined' ) { checkFree = true; }
+            var cost = model.cost;
+
+            if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 && model.cost === 0 ) {
+                return true;
+            } else if ( /^unit/i.test(model.type) ) {
+                if ( model.useMax === true ) {
+                    cost = model.costMax;
+                }
+            } else if ( model.hasOwnProperty('mount') && model.mounted === true) {
+                cost = model.mount;
+            } else if (/^wa$/i.test(model.type)) {
+                cost = model.cost * model.attached;
+            }
+
+            return cost !== $scope.getModelCost(model, checkFree, false, groupIdx);
+        };
+
+        // ****************************
+        // TIER LEVEL HANDLING
+        // ****************************
+        // we have an Tier an check if the model allowed
+        $scope.checkModelTier = function(model) {
+            var tier = $scope.vars.tiers[$scope.options.gameTier];
+            return tier.levels[0].onlyModels.ids.indexOf(model.id) === -1;
         };
 
         // Calculate the tier level
@@ -705,72 +849,15 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             recursive($scope.vars.selectedModels);
         };
 
-        // get the real model cost
-        $scope.getModelCost = function(model, checkFree, getMax, groupIdx) {
-            if ( typeof(checkFree) === 'undefined' ) { checkFree = false; }
-            if ( typeof(getMax) === 'undefined' ) { getMax = false; }
-            if ( typeof(groupIdx) === 'undefined' ) { groupIdx = false; }
-            var rCost;
-
-            if ( ( getMax && model.hasOwnProperty('costMax') ) || ( model.hasOwnProperty('useMax') && model.useMax ) ) {
-                rCost = parseInt(model.costMax);
-            } else if ( model.hasOwnProperty('attached') ) {
-                rCost = parseInt(model.cost * model.attached);
-            } else if (model.hasOwnProperty('mounted') && model.mounted === true ) {
-                rCost = parseInt(model.mount);
-            } else {
-                rCost = parseInt(model.cost);
+        // callback if the tier changed
+        $scope.changeTier = function() {
+            $scope.vars.tier = $scope.vars.tiers[$scope.options.gameTier];
+            $scope.clearList();
+            if ( $scope.vars.tier !== undefined && $scope.vars.tier.hasOwnProperty('casterId') ) {
+                $scope.addModelByString($scope.vars.tier.casterId);
+                $('.army-models:eq(1) .accordion-container').slideDown().parent().siblings().find('.accordion-container').slideUp();
+                $scope.updateSearch();
             }
-
-            // We have an group model and show if there any bonus
-            if ( groupIdx !== false && $scope.vars.selectedModels[groupIdx].hasOwnProperty('bonded_bonus') ) {
-                rCost = rCost - $scope.vars.selectedModels[groupIdx].bonded_bonus;
-            }
-
-            // only run this checks if we have an tier
-            if ( $scope.vars.tier ) {
-                // Check for bonus points for Models
-                var bonus = $scope.vars.costAlterations[model.id];
-                if (bonus) {
-                    rCost -= bonus;
-                }
-
-                // Check for free models
-                if ($scope.vars.freeModels.id.length > 0 && checkFree) {
-                    // is the model we are check in the for free array
-                    var isFree = ( $.inArray(model.id, $scope.vars.freeModels.id) !== -1 );
-
-                    if ($scope.countSelectedModel($scope.vars.freeModels.id.join('|'), 'id').free < $scope.vars.freeModels.count && isFree) {
-                        rCost = parseInt(0);
-                    }
-                }
-            }
-
-            return rCost;
-        };
-
-        // Get true if this model with Bonus points
-        $scope.isBonusCost = function(model, checkFree, groupIdx) {
-            if ( !$scope.vars.tier ) {
-                return false;
-            }
-
-            if ( typeof(checkFree) === 'undefined' ) { checkFree = true; }
-            var cost = model.cost;
-
-            if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 && model.cost === 0 ) {
-                return true;
-            } else if ( /^unit/i.test(model.type) ) {
-                if ( model.useMax === true ) {
-                    cost = model.costMax;
-                }
-            } else if ( model.hasOwnProperty('mount') && model.mounted === true) {
-                cost = model.mount;
-            } else if (/^wa$/i.test(model.type)) {
-                cost = model.cost * model.attached;
-            }
-
-            return cost !== $scope.getModelCost(model, checkFree, false, groupIdx);
         };
 
         // get the real model FA
@@ -798,18 +885,9 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             return fa;
         };
 
-        // No sort for ng-repeat
-        $scope.notSorted = function(obj){
-            if (!obj) {
-                return [];
-            }
-            return Object.keys(obj);
-        };
-
-        $scope.createModStr = function(model) {
-
-        };
-
+        // *************************************
+        // STORE AND GET  THE LIST IN THE URL
+        // *************************************
         // add currently selects in the URL
         $scope.updateSearch = function() {
             //get the selectedModels as string
@@ -920,6 +998,9 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 for (var i = 0; i <= args.length ; i++) {
                     if (args[i] === 'bonded' || args[i] === 'b') {
                         add.bonded = 1;
+                        if ( /^soloatt/i.test(add.type) ) {
+                            add.sort = 0;
+                        }
                     }
 
                     if (args[i] === 'useMax' || args[i] === 'm') {
@@ -978,17 +1059,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             return found;
         };
 
-        // callback if the tier changed
-        $scope.changeTier = function() {
-            $scope.vars.tier = $scope.vars.tiers[$scope.options.gameTier];
-            $scope.clearList();
-            if ( $scope.vars.tier !== undefined && $scope.vars.tier.hasOwnProperty('casterId') ) {
-                $scope.addModelByString($scope.vars.tier.casterId);
-                $('.army-models:eq(1) .accordion-container').slideDown().parent().siblings().find('.accordion-container').slideUp();
-                $scope.updateSearch();
-            }
-        };
-
         // clear the complete list
         $scope.clearList = function() {
             $scope.vars.selectedModels = [];
@@ -1031,6 +1101,14 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     item.name = item.id + " - " + item.name;
                 });
             });
+        };
+
+        // No sort for ng-repeat
+        $scope.notSorted = function(obj){
+            if (!obj) {
+                return [];
+            }
+            return Object.keys(obj);
         };
     }]
 );

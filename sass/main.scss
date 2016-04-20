@@ -263,8 +263,34 @@ h1, h2, h3, h4, h5, p {
         li {
             background: #CCC;
             list-style: none;
+            &.activeDrop {
+                background-color: #EEE;
+                position: relative;
+                &:before {
+                    content: '\00a0';
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: transparent;
+                    border: 2px dashed #999;
+                }
+            }
+            .ui-draggable-dragging {
+                opacity: .7;
+                .model-name.bonded:before {
+                    content: none;
+                }
+            }
+            .ui-draggable-disabled {
+                cursor: not-allowed;
+            }
             > ul {
                 position: relative;
+                li {
+                    background: transparent;
+                }
                 &:before {
                     content: '\00a0';
                     position: absolute;
