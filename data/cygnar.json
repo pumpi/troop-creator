@@ -140,6 +140,14 @@
           "faction": "faction_cygnar",
           "id": "Yx01",
           "type": "warcaster"
+        },
+        {
+          "name": "Strugis1(Commander Dalin Sturgis)",
+          "fa": "C",
+          "cost": 6,
+          "faction": "faction_cygnar",
+          "id": "Yw01",
+          "type": "warcaster"
         }
       ],
       "label": "Warcasters"
