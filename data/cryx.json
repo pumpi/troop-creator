@@ -141,6 +141,14 @@
           "faction": "faction_cryx",
           "id": "Cw01",
           "type": "warcaster"
+        },
+        {
+          "name": "Strugis2(Sturgis the Corrupted)",
+          "fa": "C",
+          "cost": 6,
+          "faction": "faction_cryx",
+          "id": "Cw11",
+          "type": "warcaster"
         }
       ],
       "label": "Warcasters"
