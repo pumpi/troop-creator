@@ -18,6 +18,9 @@ ga('create', 'UA-72234013-1', 'auto');
 // Create an angular module and load the ngRoute and troopCreatorControllers
 var troopCreator = angular.module('troopCreator', ['ngRoute', 'navModule', 'hc.commonmark', 'ngDragDrop'])
 
+//Add Modernizr
+troopCreator.constant("Modernizr", Modernizr);
+
 // the troopcreator configuration for ngRoute
 troopCreator.config(['$routeProvider',
     function ($routeProvider) {

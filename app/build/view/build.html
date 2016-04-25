@@ -18,7 +18,7 @@
                 <ul>
                     <li class="model add-model" ng-click="addModel(model)"
                         ng-class="{disable: modelAvailable = checkModelAvailable(model, model.type)}"
-                        data-drag="!modelAvailable" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}"
+                        data-drag="!modelAvailable && !modernizr.touchevents" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}"
                         jqyoui-draggable="{onStart: 'startCallback', onDrag: 'moveModelStart(model)'}" data-type="{{model.type}}"
                         ng-repeat="model in filtered | orderBy: 'name'">
                         <div class="model-name">{{model.name}}</div>

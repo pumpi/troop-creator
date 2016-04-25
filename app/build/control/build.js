@@ -45,6 +45,8 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     'location'          : $location.search()
                 };
 
+                $scope.modernizr = Modernizr;
+
                 // We must convert the Tiers in an array for select
                 $.each(data.tiers, function(key, value) {
                     $scope.vars.tierOptions.push({

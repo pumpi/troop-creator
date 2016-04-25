@@ -19,7 +19,8 @@ var jsFilesVendor = [
     "lib/bower/favico.js/favico.js",
     "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/modal.js",
     "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js",
-    "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js"
+    "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js",
+    "build/modernizr-output.js"
 ];
 
 var sassFiles = [
@@ -59,6 +60,21 @@ module.exports = function (grunt) {
                 nonull: true,
                 src: ['build/sass.css'],
                 dest: 'static/<%= pkg.name %>.css'
+            }
+        },
+
+        modernizr: {
+            dist: {
+                "crawl": false,
+                "customTests": [],
+                "dest": "build/modernizr-output.js",
+                "tests": [
+                    "touchevents"
+                ],
+                "options": [
+                    "setClasses"
+                ],
+                "uglify": true
             }
         },
 
@@ -126,9 +142,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-sass');
     grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks("grunt-modernizr");
 
 // Default task(s).
-    grunt.registerTask('prod', ['jshint', 'sass', 'uglify']); // generate prod files
+    grunt.registerTask('prod', ['jshint', 'sass', 'modernizr', 'uglify']); // generate prod files
     grunt.registerTask('dev', ['sass', 'concat', 'jshint']); // Generate dev files
     grunt.registerTask('dev-watch', ['sass', 'concat', 'jshint', 'watch']); // Continously generate dev files
 };
