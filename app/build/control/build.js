@@ -1,5 +1,10 @@
 ﻿'use strict';
 
+/**
+ * @param {{army}} $routeParams Root Params from AngularJS.
+ * @param $window.ga            The google Analytics object.
+ */
+
 // Controller to display the troop creator
 troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$location', '$window', '$log', '$q',
     function ($scope, $http, $routeParams, $location, $window, $log, $q) {
@@ -7,10 +12,18 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
 
         $http.get('./data/' + $routeParams.army + '.json').
         success(
-            function(data, status, headers, config) {
-                // only add data with entries
+            function(data) {
+                /**
+                 * @param {{groups, tiers}} data    response the JSON Object with groups and tiers.
+                 * @param {{faction}} $scope.army   army is the data object of the active navigation point
+                 * @param {{levels, onlyModels, casterId}} $scope.vars.tier Include some infos for the tier Levels
+                 */
 
+                var jqArmy = $('#' + $routeParams.army);
+                $scope.army = jqArmy.data();
                 $scope.data = [];
+
+                // only add data with entries
                 $.each(data.groups, function(key, item) {
                     if (item.entries.length !== 0) {
                         $scope.data.push(item);
@@ -36,15 +49,15 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     'costAlterations'   : [],
                     'faAlterations'     : [],
                     'freeModels'        : {'id': [], 'count': 0},
-                    'faction'           : $('#' + $routeParams.army).data('faction'),
                     'factionId'         : 'faction_' + $routeParams.army,
-                    'system'            : $('#' + $routeParams.army).data('system'),
                     'objectives'        : ['Arcane Wonder', 'Armory', 'Bunker', 'Effigy of Valor', 'Fuel Cache', 'Stockpile'],
                     'dragging'          : false,
                     'canDrop'           : false,
-                    'location'          : $location.search()
+                    'location'          : $location.search(),
+                    'error'             : 'There no Errors'
                 };
 
+                $scope.location = $location;
                 $scope.modernizr = Modernizr;
 
                 // We must convert the Tiers in an array for select
@@ -67,6 +80,11 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
 
                                         // Now we check all models if he work for the faction
                                         group.entries = $.grep(group.entries, function (item) {
+                                            /**
+                                             * @param item                  the single model.
+                                             * @param item.works_for        model array for what faction he works.
+                                             * @param item.restricted_to    model what we need to play this model.
+                                             */
                                             if (item.works_for) {
                                                 // We have an caster, unit or solo and must look if he works_for this faction
                                                 if ($.inArray($scope.vars.factionId, item.works_for) !== -1) {
@@ -116,7 +134,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                                 }
                             }
                         ). error (
-                            function (data) {
+                            function () {
                                 alert('error reading ' + v + '.json');
                             }
                         );
@@ -127,11 +145,11 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 var image = $('#' + $routeParams.army + ' img')[0];
                 favicon.image(image);
 
-                document.title = $scope.vars.faction + ' - Troop Creator';
+                document.title = $scope.army.faction + ' - Troop Creator';
 
                 // Menu set selected
-                $( '#top-menu li' ).removeClass( 'active' );
-                $( '#' + $routeParams.army ).closest('li').addClass('active');
+                $( '#top-menu' ).find('li').removeClass( 'active' );
+                jqArmy.closest('li').addClass('active');
 
                 $('.btn').focus(function() {
                     this.blur();
@@ -139,7 +157,8 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             }
         ).
         error(
-            function(data, status, headers, config) {
+            /*data, status, headers, config*/
+            function() {
                 alert('error reading ' + $routeParams.army + '.json');
             }
         );
@@ -158,8 +177,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             models = $.grep(models, function(model) {
                 //Check first if we have an Tier and is this model allowed
                 if ($scope.options.gameTier) {
-                    var tier  = $scope.vars.tiers[$scope.options.gameTier];
-                    if (tier.levels[0].onlyModels.ids.indexOf(model.id) === -1 && tier.casterId !== model.id) {
+                    if ($scope.vars.tier.levels[0].onlyModels.ids.indexOf(model.id) === -1 && $scope.vars.tier.casterId !== model.id) {
                         return false;
                     }
                 }
@@ -341,8 +359,8 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
 
         // count models with regex in selected list by value
         $scope.countSelectedModel = function(match, value, group) {
-            if ( typeof value === 'undefined' ) { value = 'type'; }
-            if ( typeof group === 'undefined' ) { group = false; }
+            value = value || 'type';
+            group = group || false;
 
             var count = 0,
                 countFree = 0,
@@ -513,7 +531,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
 
         // Add an model to the selected list
         $scope.addModel = function(model, group) {
-            if ( typeof(group) === 'undefined' ) { group = false; }
+            group = group || false;
 
             if ( !$scope.checkModelAvailable(model) || group !== false ) {
                 var copy = angular.copy(model);
@@ -554,9 +572,9 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     findIdx = $scope.searchFreeUnit(model);
                 } else if (/^soloatt/i.test(model.type)) {
                     copy.sort = 0;
-                    for (var i = $scope.vars.selectedModels.length - 1; i >= 0; i--) {
-                        if (/^warlock$|^warcaster$/i.test($scope.vars.selectedModels[i].type) && $scope.countSelectedModel('soloAtt', 'type', i).all === 0 ) {
-                            findIdx = i;
+                    for (var j = $scope.vars.selectedModels.length - 1; j >= 0; j--) {
+                        if (/^warlock$|^warcaster$/i.test($scope.vars.selectedModels[j].type) && $scope.countSelectedModel('soloAtt', 'type', j).all === 0 ) {
+                            findIdx = j;
                             break;
                         }
                     }
@@ -662,8 +680,8 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
 
         // Calculate the available Points
         $scope.calculatePoints = function() {
-            $scope.calculateTierLevel();
-            $scope.checkFreeSelected();
+            //$scope.calculateTierLevel();
+            //$scope.checkFreeSelected();
             $scope.updateSearch();
 
             var sumPoints = 0;
@@ -702,9 +720,9 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
 
         // get the real model cost
         $scope.getModelCost = function(model, checkFree, getMax, groupIdx) {
-            if ( typeof(checkFree) === 'undefined' ) { checkFree = false; }
-            if ( typeof(getMax) === 'undefined' ) { getMax = false; }
-            if ( typeof(groupIdx) === 'undefined' ) { groupIdx = false; }
+            checkFree = checkFree || false;
+            getMax = getMax || false;
+            groupIdx = groupIdx || false;
             var rCost;
 
             if ( ( getMax && model.hasOwnProperty('costMax') ) || ( model.hasOwnProperty('useMax') && model.useMax ) ) {
@@ -723,6 +741,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             }
 
             // only run this checks if we have an tier
+            /*
             if ( $scope.vars.tier ) {
                 // Check for bonus points for Models
                 var bonus = $scope.vars.costAlterations[model.id];
@@ -740,17 +759,20 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     }
                 }
             }
+            */
 
             return rCost;
         };
 
         // Get true if this model with Bonus points
         $scope.isBonusCost = function(model, checkFree, groupIdx) {
+            /*
             if ( !$scope.vars.tier ) {
                 return false;
             }
+            */
 
-            if ( typeof(checkFree) === 'undefined' ) { checkFree = true; }
+            checkFree = checkFree || true;
             var cost = model.cost;
 
             if ( model.hasOwnProperty('freeModel') && model.freeModel === 1 && model.cost === 0 ) {
@@ -772,9 +794,9 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
         // TIER LEVEL HANDLING
         // ****************************
         // we have an Tier an check if the model allowed
+        /*
         $scope.checkModelTier = function(model) {
-            var tier = $scope.vars.tiers[$scope.options.gameTier];
-            return tier.levels[0].onlyModels.ids.indexOf(model.id) === -1;
+            return $scope.vars.tier.levels[0].onlyModels.ids.indexOf(model.id) === -1;
         };
 
         // Calculate the tier level
@@ -881,11 +903,12 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             }
 
         };
-
+         */
         // get the real model FA
         $scope.getModelFa = function(model) {
             // only run this checks if we have an tier and not an character
             var fa = model.fa;
+            /*
             if ( $scope.vars.tier && model.fa && model.fa !== 'C') {
                 // Check for bonus FA for Models
                 var bonus = $scope.vars.faAlterations[model.id];
@@ -893,6 +916,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     fa = parseInt(model.fa) + parseInt(bonus);
                 }
             }
+            */
 
             // number over 100 this model is unlimited
             if ( fa > 100 ) {
@@ -907,6 +931,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             return fa;
         };
 
+        
         // *************************************
         // STORE AND GET  THE LIST IN THE URL
         // *************************************
@@ -948,7 +973,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     if ( model.hasOwnProperty('attached') ) {
                         modStr += ':a#' + model.attached;
                     }
-                    sel.push(modStr);
+                    sel.push(modStr + '@mk3');
                     recursive(model.group);
                 });
             };
@@ -988,10 +1013,16 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             //restore selectedModels
             if (search.sel) {
                 var decode = atob(search.sel),
-                    sel = decode.split(',');
-                $.each(sel, function(key, val) {
-                    $scope.addModelByString(val);
-                });
+                    sel = decode.replace('@mk3', '').split(',');
+                if ( decode.indexOf('@mk3') === -1 ) {
+                    // The link is not from the actual Release
+                    $scope.vars.error = 'Your Link ist not compatible with the Current Game Release. We cannot restore this please build an List with the new Models!';
+                    $('#error').modal();
+                } else {
+                    $.each(sel, function (key, val) {
+                        $scope.addModelByString(val);
+                    });
+                }
             }
             $scope.calculatePoints();
         };

@@ -589,6 +589,12 @@ ul[dnd-list] {
     }
 }
 
+.modal-header {
+    background-color: #eee;
+    border-radius: 6px 6px 0 0;
+
+}
+
 .drop-model {
     margin-top: 10px;
     padding: 40px;
@@ -607,6 +613,17 @@ ul[dnd-list] {
 .tier-add-model {
     cursor: pointer;
     font-weight: bold;
+}
+
+.modal-error {
+    .modal-header {
+        background-color: #d9534f;
+        border-color: #d43f3a;
+        color: #FFF;
+    }
+    .modal-body {
+        color: #d43f3a;
+    }
 }
 
 /*

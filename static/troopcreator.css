@@ -1,4 +1,4 @@
-/*! troopcreator 2016-04-25 */
+/*! troopcreator 2016-05-30 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5509,6 +5509,10 @@ ul[dnd-list] {
   padding: 0;
   margin: 0 0 10px 0; }
 
+.modal-header {
+  background-color: #eee;
+  border-radius: 6px 6px 0 0; }
+
 .drop-model {
   margin-top: 10px;
   padding: 40px;
@@ -5525,6 +5529,13 @@ ul[dnd-list] {
 .tier-add-model {
   cursor: pointer;
   font-weight: bold; }
+
+.modal-error .modal-header {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+  color: #FFF; }
+.modal-error .modal-body {
+  color: #d43f3a; }
 
 /*
  * RESPONSIVE

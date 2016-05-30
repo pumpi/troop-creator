@@ -34,12 +34,7 @@
     </div>
 
     <div class="col">
-        <h2>Troop list  <span class="tier-stars" ng-hide="!options.gameTier" data-toggle="modal" data-target="#tier-level-info">
-            <i class="fa fa-star" ng-click="options.modalLevel = 0" ng-class="{active: vars.tierLevel >= 1}"></i>
-            <i class="fa fa-star" ng-click="options.modalLevel = 1" ng-class="{active: vars.tierLevel >= 2}"></i>
-            <i class="fa fa-star" ng-click="options.modalLevel = 2" ng-class="{active: vars.tierLevel >= 3}"></i>
-            <i class="fa fa-star" ng-click="options.modalLevel = 3" ng-class="{active: vars.tierLevel >= 4}"></i>
-        </span></h2>
+        <h2>Troop list</h2>
 
         <div class="list-options" ng-include="'app/build/view/list_options.html'"></div>
 
@@ -72,6 +67,7 @@
                 {{countSelectedModel('^warlock$|^warcaster$').all}} / {{options.gameCaster}} Caster | {{vars.points}} / {{options.gamePoints}}
                 Points
             </div>
+        </div>
 
         <div class="btn-group pull-right">
             <button class="btn btn-default" data-toggle="modal" data-target="#shareList" tooltip title="Share list"><i class="fa fa-share-alt"></i></button>
@@ -86,3 +82,4 @@
 <div class="modal fade" id="plainTextOutput" tabindex="-1" role="dialog" ng-include="'app/build/view/modal_plain_text.html'"></div>
 <div class="modal fade" id="shareList" tabindex="-1" role="dialog" ng-include="'app/build/view/modal_share_list.html'"></div>
 <div class="modal fade" id="tier-level-info" tabindex="-1" role="dialog" ng-include="'app/build/view/modal_tier_list.html'"></div>
+<div class="modal fade modal-error" id="error" tabindex="-1" role="dialog" ng-include="'app/build/view/modal_error.html'"></div>
