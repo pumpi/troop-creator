@@ -11,118 +11,125 @@
       "id": "faction_trollblood_warlocks",
       "entries": [
         {
-          "name": "Hoarluk3(Hoarluk Doomshaper, Dire Prophet)",
-          "fa": "C",
-          "cost": 3,
-          "faction": "faction_trollblood",
-          "id": "Tz02",
-          "type": "warlock",
-          "attachment": "TS14"
-        },
-        {
-          "name": "Calandra Truthsayer, Oracle of the Glimmerwood",
-          "fa": "C",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "id": "TW06",
-          "type": "warlock"
-        },
-        {
-          "name": "Borka2(Borka, Vengeance of the Rimeshaws)",
-          "fa": "C",
-          "cost": 6,
-          "faction": "faction_trollblood",
-          "id": "TX05",
-          "type": "warlock"
-        },
-        {
-          "name": "Grissel1(Grissel Bloodsong, Fell Caller)",
-          "fa": "C",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "id": "Tw03",
-          "type": "warlock"
-        },
-        {
-          "name": "Madrak1(Madrak Ironhide, Thornwood Chieftain)",
-          "fa": "C",
-          "cost": 6,
-          "faction": "faction_trollblood",
           "id": "Tw01",
-          "type": "warlock"
+          "type": "warlock",
+          "name": " Madrak1 (Madrak Ironhide Thornwood Chieftain)",
+          "cost": 29,
+          "fa": "C",
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Jarl1 (Jarl Skuld, Devil of the Thornwood)",
+          "id": "Tw02",
+          "type": "warlock",
+          "name": " Hoarluk1 (Hoarluk Doomshaper Shaman of the Gnarls)",
+          "cost": 29,
           "fa": "C",
-          "cost": 6,
-          "faction": "faction_trollblood",
-          "id": "TW08",
-          "type": "warlock"
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Hoarluk2(Hoarluk Doomshaper, Rage of Dhunia)",
+          "id": "Tw03",
+          "type": "warlock",
+          "name": " Grissel1 (Grissel Bloodsong Fell Caller)",
+          "cost": 29,
           "fa": "C",
-          "cost": 6,
-          "faction": "faction_trollblood",
-          "id": "Tx02",
-          "type": "warlock"
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Borka1(Borka Kegslayer & Pyg Keg Carrier)",
+          "id": "Tw04",
+          "type": "warlock",
+          "name": " Grim1 (Grim Angus)",
+          "cost": 29,
           "fa": "C",
-          "cost": 5,
-          "faction": "faction_trollblood",
+          "faction": "faction_trollblood"
+        },
+        {
           "id": "TW05",
           "type": "warlock",
+          "name": " Borka1 (Borka Kegslayer & Pyg Keg Carrier)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_trollblood",
           "attachment": "TS13"
         },
         {
-          "name": "Grim2(Hunters Grim)",
+          "id": "TW06",
+          "type": "warlock",
+          "name": " Calandra(Calandra Truthsayer Oracle of the Glimmerwood)",
+          "cost": 27,
           "fa": "C",
-          "cost": 4,
-          "faction": "faction_trollblood",
-          "id": "Tx04",
-          "type": "warlock"
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Captain Gunnbjorn",
-          "fa": "C",
-          "cost": 5,
-          "faction": "faction_trollblood",
           "id": "TW07",
-          "type": "warlock"
+          "type": "warlock",
+          "name": " Gunnbjorn (Captain Gunnbjorn)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Grissel2(Grissel Bloodsong, Marshal of the Kriels)",
+          "id": "TW08",
+          "type": "warlock",
+          "name": " Jarl1(Jarl Skuld Devil of the Thornwood)",
+          "cost": 30,
           "fa": "C",
-          "cost": 6,
-          "faction": "faction_trollblood",
-          "id": "Tx03",
-          "type": "warlock"
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Grim1(Grim Angus)",
+          "id": "TW09",
+          "type": "warlock",
+          "name": " Ragnor (Ragnor Skysplitter The Runemaster)",
+          "cost": 30,
           "fa": "C",
-          "cost": 6,
-          "faction": "faction_trollblood",
-          "id": "Tw04",
-          "type": "warlock"
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Hoarluk1(Hoarluk Doomshaper, Shaman of the Gnarls)",
-          "fa": "C",
-          "cost": 7,
-          "faction": "faction_trollblood",
-          "id": "Tw02",
-          "type": "warlock"
-        },
-        {
-          "name": "Madrak2(Madrak Ironhide, World Ender)",
-          "fa": "C",
-          "cost": 5,
-          "faction": "faction_trollblood",
           "id": "Tx01",
-          "type": "warlock"
+          "type": "warlock",
+          "name": " Madrak2 (Madrak Ironhide World Ender)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "Tx02",
+          "type": "warlock",
+          "name": " Hoarluk2 (Hoarluk Doomshaper Rage of Dhunia)",
+          "cost": 27,
+          "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "Tx03",
+          "type": "warlock",
+          "name": " Grissel2 (Grissel Bloodsong Marshal of the Kriels)",
+          "cost": 27,
+          "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "Tx04",
+          "type": "warlock",
+          "name": " Grim2 (Hunters Grim)",
+          "cost": 25,
+          "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TX05",
+          "type": "warlock",
+          "name": " Borka2 (Borka Vengeance of the Rimeshaws)",
+          "cost": 29,
+          "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "Tz02",
+          "type": "warlock",
+          "name": " Hoarluk3 (Hoarluk Doomshaper Dire Prophet & Scroll Bearers)",
+          "cost": 26,
+          "fa": "C",
+          "faction": "faction_trollblood"
         }
       ],
       "label": "Warlocks"
@@ -138,148 +145,148 @@
       "id": "faction_trollblood_warbeasts",
       "entries": [
         {
-          "name": "Dire Troll Mauler",
-          "fa": "U",
-          "cost": 9,
-          "faction": "faction_trollblood",
           "id": "TB08",
-          "type": "warbeast"
-        },
-        {
-          "name": "Troll Axer",
+          "type": "warbeast",
+          "name": " Dire Troll Mauler",
+          "cost": 15,
           "fa": "U",
-          "cost": 6,
-          "faction": "faction_trollblood",
-          "id": "TB03",
-          "type": "warbeast"
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Earthborn Dire Troll",
-          "fa": "U",
-          "cost": 10,
-          "faction": "faction_trollblood",
-          "id": "TB09",
-          "type": "warbeast"
-        },
-        {
-          "name": "Night Troll",
-          "fa": "U",
-          "cost": 4,
-          "faction": "faction_trollblood",
-          "id": "TB15",
-          "type": "warbeast"
-        },
-        {
-          "name": "Swamp Troll",
-          "fa": "U",
-          "cost": 4,
-          "faction": "faction_trollblood",
-          "id": "TB12",
-          "type": "warbeast"
-        },
-        {
-          "name": "Troll Bouncer",
-          "fa": "U",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "id": "TB04",
-          "type": "warbeast"
-        },
-        {
-          "name": "Glacier King",
-          "fa": "2",
-          "cost": 18,
-          "faction": "faction_trollblood",
-          "id": "TB18",
-          "type": "warbeast"
-        },
-        {
-          "name": "Dire Troll Blitzer",
-          "fa": "U",
-          "cost": 9,
-          "faction": "faction_trollblood",
           "id": "TB07",
-          "type": "warbeast"
-        },
-        {
-          "name": "Pyre Troll",
+          "type": "warbeast",
+          "name": " Dire Troll Blitzer",
+          "cost": 16,
           "fa": "U",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "id": "TB01",
-          "type": "warbeast"
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Mountain King",
-          "fa": "2",
-          "cost": 20,
-          "faction": "faction_trollblood",
-          "id": "TB16",
-          "type": "warbeast"
-        },
-        {
-          "name": "Dozer & Smigg",
-          "fa": "C",
-          "cost": 9,
-          "faction": "faction_trollblood",
-          "id": "TB17",
-          "type": "warbeast"
-        },
-        {
-          "name": "Winter Troll",
-          "fa": "U",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "id": "TB06",
-          "type": "warbeast"
-        },
-        {
-          "name": "Troll Impaler",
-          "fa": "U",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "id": "TB05",
-          "type": "warbeast"
-        },
-        {
-          "name": "Mulg the Ancient",
-          "fa": "C",
-          "cost": 12,
-          "faction": "faction_trollblood",
-          "id": "TB10",
-          "type": "warbeast"
-        },
-        {
-          "name": "Storm Troll",
-          "fa": "U",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "id": "TB14",
-          "type": "warbeast"
-        },
-        {
-          "name": "Slag Troll",
-          "fa": "U",
-          "cost": 6,
-          "faction": "faction_trollblood",
-          "id": "TB02",
-          "type": "warbeast"
-        },
-        {
-          "name": "Dire Troll Bomber",
-          "fa": "U",
+          "id": "TB03",
+          "type": "warbeast",
+          "name": " Troll Axer",
           "cost": 10,
-          "faction": "faction_trollblood",
-          "id": "TB11",
-          "type": "warbeast"
+          "fa": "U",
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Rök",
+          "id": "TB09",
+          "type": "warbeast",
+          "name": " Earthborn Dire Troll",
+          "cost": 15,
+          "fa": "U",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB15",
+          "type": "warbeast",
+          "name": " Night Troll",
+          "cost": 7,
+          "fa": "U",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB12",
+          "type": "warbeast",
+          "name": " Swamp Troll",
+          "cost": 8,
+          "fa": "U",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB04",
+          "type": "warbeast",
+          "name": " Troll Bouncer",
+          "cost": 9,
+          "fa": "U",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB18",
+          "type": "warbeast",
+          "name": " Glacier King",
+          "cost": 35,
+          "fa": "2",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB01",
+          "type": "warbeast",
+          "name": " Pyre Troll",
+          "cost": 9,
+          "fa": "U",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB16",
+          "type": "warbeast",
+          "name": " Mountain King",
+          "cost": 36,
+          "fa": "2",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB17",
+          "type": "warbeast",
+          "name": " Dozer & Smigg",
+          "cost": 18,
           "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB06",
+          "type": "warbeast",
+          "name": " Winter Troll",
+          "cost": 8,
+          "fa": "U",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB05",
+          "type": "warbeast",
+          "name": " Troll Impaler",
           "cost": 11,
-          "faction": "faction_trollblood",
+          "fa": "U",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB10",
+          "type": "warbeast",
+          "name": " Mulg the Ancient",
+          "cost": 19,
+          "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB14",
+          "type": "warbeast",
+          "name": " Storm Troll",
+          "cost": 9,
+          "fa": "U",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB02",
+          "type": "warbeast",
+          "name": " Slag Troll",
+          "cost": 10,
+          "fa": "U",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TB11",
+          "type": "warbeast",
+          "name": " Dire Troll Bomber",
+          "cost": 19,
+          "fa": "U",
+          "faction": "faction_trollblood"
+        },
+        {
           "id": "TB13",
-          "type": "warbeast"
+          "type": "warbeast",
+          "name": " Rök",
+          "cost": 21,
+          "fa": "C",
+          "faction": "faction_trollblood"
         }
       ],
       "label": "Warbeasts"
@@ -289,12 +296,12 @@
       "id": "faction_trollblood_bes",
       "entries": [
         {
-          "name": "Trollkin War Wagon",
-          "fa": "2",
-          "cost": 9,
-          "faction": "faction_trollblood",
           "id": "TE01",
-          "type": "battleengine"
+          "type": "battleengine",
+          "name": " Trollkin War Wagon",
+          "cost": 18,
+          "fa": "2",
+          "faction": "faction_trollblood"
         }
       ],
       "label": "Battle engines"
@@ -304,184 +311,192 @@
       "id": "faction_trollblood_units",
       "entries": [
         {
-          "max": 5,
-          "min": 3,
-          "costMax": 10,
-          "fa": "2",
-          "costMin": 6,
-          "id": "TU06",
-          "name": "Trollkin Champions",
-          "cost": 6,
-          "faction": "faction_trollblood",
-          "type": "unit"
-        },
-        {
-          "max": 6,
-          "min": 4,
-          "costMax": 4,
-          "fa": "1",
-          "costMin": 3,
-          "id": "TU02",
-          "name": "Krielstone Bearer & Stone Scribes",
-          "cost": 3,
-          "faction": "faction_trollblood",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 8,
-          "fa": "2",
-          "costMin": 5,
-          "id": "TU04",
-          "name": "Pyg Bushwackers",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 8,
-          "fa": "2",
-          "costMin": 5,
-          "id": "TU07",
-          "name": "Trollkin Fennblades",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 6,
-          "fa": "1",
-          "costMin": 4,
-          "id": "TU03",
-          "name": "Pyg Burrowers",
-          "cost": 4,
-          "faction": "faction_trollblood",
-          "type": "unit"
-        },
-        {
-          "max": 5,
-          "min": 3,
-          "costMax": 11,
-          "fa": "1",
-          "costMin": 7,
-          "id": "TU08",
-          "name": "Long Riders",
-          "cost": 7,
-          "faction": "faction_trollblood",
-          "type": "unit"
-        },
-        {
-          "name": "Northkin Fire Eaters",
-          "fa": "2",
-          "cost": 4,
-          "faction": "faction_trollblood",
-          "id": "TU15",
-          "type": "unit"
-        },
-        {
-          "name": "Dhunian Knot",
-          "fa": "2",
-          "cost": 3,
-          "faction": "faction_trollblood",
-          "id": "TU17",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 8,
-          "fa": "2",
-          "costMin": 5,
-          "id": "TU10",
-          "name": "Scattergunners",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 8,
-          "fa": "2",
-          "costMin": 5,
-          "id": "TU16",
-          "name": "Trollkin Highwaymen",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "type": "unit"
-        },
-        {
-          "max": 5,
-          "min": 3,
-          "costMax": 8,
-          "fa": "2",
-          "costMin": 5,
-          "id": "TU14",
-          "name": "Trollkin Warders",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 6,
-          "fa": "3",
-          "costMin": 4,
           "id": "TU01",
-          "name": "Kriel Warriors",
-          "cost": 4,
-          "faction": "faction_trollblood",
-          "type": "unit"
+          "type": "unit",
+          "name": " Kriel Warriors",
+          "cost": 7,
+          "costMin": 7,
+          "costMax": 11,
+          "fa": "U",
+          "min": 6,
+          "max": 10,
+          "faction": "faction_trollblood"
         },
         {
-          "max": 5,
-          "min": 3,
-          "costMax": 8,
-          "fa": "1",
-          "costMin": 5,
-          "id": "TU12",
-          "name": "Trollkin Sluggers",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "type": "unit"
-        },
-        {
-          "name": "Thumper Crew",
-          "fa": "2",
-          "cost": 3,
-          "faction": "faction_trollblood",
-          "id": "TU05",
-          "type": "unit"
-        },
-        {
-          "name": "Trollkin Scouts",
-          "fa": "2",
-          "cost": 5,
-          "faction": "faction_trollblood",
-          "id": "TU11",
-          "type": "unit"
-        },
-        {
-          "name": "Sons of Bragg",
-          "fa": "C",
+          "id": "TU02",
+          "type": "unit",
+          "name": " Krielstone Bearer & Stone Scribes",
           "cost": 6,
-          "faction": "faction_trollblood",
-          "id": "TU13",
-          "type": "unit"
+          "costMin": 6,
+          "costMax": 9,
+          "fa": "1",
+          "min": 4,
+          "max": 6,
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Trollkin Runeshapers",
+          "id": "TU03",
+          "type": "unit",
+          "name": " Pyg Burrowers",
+          "cost": 8,
+          "costMin": 8,
+          "costMax": 13,
+          "fa": "1",
+          "min": 6,
+          "max": 10,
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU04",
+          "type": "unit",
+          "name": " Pyg Bushwackers",
+          "cost": 9,
+          "costMin": 9,
+          "costMax": 15,
           "fa": "2",
-          "cost": 4,
-          "faction": "faction_trollblood",
+          "min": 6,
+          "max": 10,
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU05",
+          "type": "unit",
+          "name": " Thumper Crew",
+          "cost": 5,
+          "fa": "2",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU06",
+          "type": "unit",
+          "name": " Trollkin Champions",
+          "cost": 6,
+          "costMin": 10,
+          "costMax": 17,
+          "fa": "2",
+          "min": 3,
+          "max": 5,
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU07",
+          "type": "unit",
+          "name": " Trollkin Fennblades",
+          "cost": 9,
+          "costMin": 9,
+          "costMax": 15,
+          "fa": "2",
+          "min": 6,
+          "max": 10,
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU08",
+          "type": "unit",
+          "name": " Long Riders",
+          "cost": 12,
+          "costMin": 12,
+          "costMax": 20,
+          "fa": "2",
+          "min": 3,
+          "max": 5,
+          "faction": "faction_trollblood"
+        },
+        {
           "id": "TU09",
-          "type": "unit"
+          "type": "unit",
+          "name": " Trollkin Runeshapers",
+          "cost": 9,
+          "fa": "3",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU10",
+          "type": "unit",
+          "name": " Scattergunners",
+          "cost": 8,
+          "costMin": 8,
+          "costMax": 14,
+          "fa": "3",
+          "min": 6,
+          "max": 10,
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU11",
+          "type": "unit",
+          "name": " Trollkin Scouts",
+          "cost": 10,
+          "fa": "2",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU12",
+          "type": "unit",
+          "name": " Trollkin Sluggers",
+          "cost": 9,
+          "costMin": 8,
+          "costMax": 13,
+          "fa": "2",
+          "min": 3,
+          "max": 5,
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU13",
+          "type": "unit",
+          "name": " Sons of Bragg",
+          "cost": 11,
+          "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU14",
+          "type": "unit",
+          "name": " Trollkin Warders",
+          "cost": 10,
+          "costMin": 10,
+          "costMax": 17,
+          "fa": "2",
+          "min": 3,
+          "max": 5,
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU15",
+          "type": "unit",
+          "name": " Northkin Fire Eaters",
+          "cost": 7,
+          "fa": "2",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU16",
+          "type": "unit",
+          "name": " Trollkin Highwaymen",
+          "cost": 5,
+          "costMin": 9,
+          "costMax": 15,
+          "fa": "2",
+          "min": 6,
+          "max": 10,
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU18",
+          "type": "unit",
+          "name": " Pummeler Crew",
+          "cost": 6,
+          "fa": "2",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TU17",
+          "type": "unit",
+          "name": " Dhunian Knot",
+          "cost": 6,
+          "fa": "2",
+          "faction": "faction_trollblood"
         }
       ],
       "label": "Units"
@@ -491,58 +506,58 @@
       "id": "faction_trollblood_UAs",
       "entries": [
         {
-          "name": "Skaldi Bonehammer",
-          "fa": "C",
-          "cost": 3,
-          "restricted_to": "TU06",
-          "faction": "faction_trollblood",
           "id": "TA05",
-          "type": "UA"
+          "type": "UA",
+          "name": " Skaldi Bonehammer",
+          "cost": 5,
+          "fa": "C",
+          "faction": "faction_trollblood",
+          "restricted_to": "TU06"
         },
         {
-          "name": "Stone Scribe Elder",
-          "fa": "1",
-          "cost": 1,
-          "restricted_to": "TU02",
-          "faction": "faction_trollblood",
           "id": "TA03",
-          "type": "UA"
+          "type": "UA",
+          "name": " Stone Scribe Elder",
+          "cost": 3,
+          "fa": "1",
+          "faction": "faction_trollblood",
+          "restricted_to": "TU02"
         },
         {
-          "name": "Pyg Bushwhacker Officer & Mortar",
-          "fa": "1",
-          "cost": 2,
-          "restricted_to": "TU04",
-          "faction": "faction_trollblood",
           "id": "TA07",
-          "type": "UA"
+          "type": "UA",
+          "name": " Pyg Bushwhacker Officer & Mortar",
+          "cost": 5,
+          "fa": "2",
+          "faction": "faction_trollblood",
+          "restricted_to": "TU04"
         },
         {
-          "name": "Trollkin Fennblade Officer & Drummer",
-          "fa": "1",
-          "cost": 2,
-          "restricted_to": "TU07",
-          "faction": "faction_trollblood",
           "id": "TA04",
-          "type": "UA"
+          "type": "UA",
+          "name": " Trollkin Fennblade Officer & Drummer",
+          "cost": 5,
+          "fa": "2",
+          "faction": "faction_trollblood",
+          "restricted_to": "TU07"
         },
         {
-          "name": "Scattergunner Officer & Standard",
-          "fa": "1",
-          "cost": 2,
-          "restricted_to": "TU10",
-          "faction": "faction_trollblood",
           "id": "TA06",
-          "type": "UA"
+          "type": "UA",
+          "name": " Scattergunner Officer & Standard",
+          "cost": 4,
+          "fa": "3",
+          "faction": "faction_trollblood",
+          "restricted_to": "TU10"
         },
         {
-          "name": "Kriel Warrior Standard Bearer & Piper",
-          "fa": "1",
-          "cost": 2,
-          "restricted_to": "TU01",
-          "faction": "faction_trollblood",
           "id": "TA01",
-          "type": "UA"
+          "type": "UA",
+          "name": " Kriel Warrior Standard Bearer & Piper",
+          "cost": 3,
+          "fa": "U",
+          "faction": "faction_trollblood",
+          "restricted_to": "TU01"
         }
       ],
       "label": "Unit Attachments"
@@ -552,14 +567,40 @@
       "id": "faction_trollblood_WAs",
       "entries": [
         {
-          "name": "Kriel Warrior Caber Thrower",
-          "fa": "3",
-          "cost": 1,
-          "restricted_to": "TU01",
-          "max_attach": 3,
+          "id": "TA08",
+          "type": "WA",
+          "name": " Trollkin Sorcerer",
+          "cost": 3,
+          "fa": "U",
           "faction": "faction_trollblood",
+          "restricted_to": [
+            "TU01",
+            "TU02",
+            "TU05",
+            "TU06",
+            "TU07",
+            "TU09",
+            "TU10",
+            "TU11",
+            "TU12",
+            "TU13",
+            "TU14",
+            "TU15",
+            "TU16",
+            "TU17",
+            "TU18"
+          ],
+          "max_attach": 3
+        },
+        {
           "id": "TA02",
-          "type": "WA"
+          "type": "WA",
+          "name": " Kriel Warrior Caber Thrower",
+          "cost": 2,
+          "fa": "U",
+          "faction": "faction_trollblood",
+          "restricted_to": "TU01",
+          "max_attach": 3
         }
       ],
       "label": "Weapon Attachments"
@@ -569,3680 +610,117 @@
       "id": "faction_trollblood_solos",
       "entries": [
         {
-          "name": "Braylen Wanderheart, Trollkin Outlaw",
-          "fa": "C",
-          "cost": 3,
-          "faction": "faction_trollblood",
-          "id": "TS12",
-          "type": "solo"
+          "id": "TS01",
+          "type": "solo",
+          "name": " Fell Caller Hero",
+          "cost": 5,
+          "fa": "2",
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Janissa Stonetide",
-          "fa": "C",
-          "cost": 3,
-          "faction": "faction_trollblood",
-          "id": "TS08",
-          "type": "solo"
-        },
-        {
-          "name": "Stone Scribe Chronicler",
-          "fa": "1",
-          "cost": 2,
-          "faction": "faction_trollblood",
           "id": "TS02",
-          "type": "solo"
-        },
-        {
-          "name": "Fennblade Kithkar",
+          "type": "solo",
+          "name": " Stone Scribe Chronicler",
+          "cost": 4,
           "fa": "2",
-          "cost": 2,
-          "faction": "faction_trollblood",
-          "id": "TS10",
-          "type": "solo"
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Trollblood Skinner",
-          "fa": "2",
-          "cost": 2,
-          "faction": "faction_trollblood",
-          "id": "TS07",
-          "type": "solo"
+          "id": "TS03",
+          "type": "solo",
+          "name": " Troll Whelps",
+          "cost": 4,
+          "fa": "3",
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Trollkin Runebearer",
-          "fa": "1",
-          "cost": 2,
-          "faction": "faction_trollblood",
-          "id": "TS06",
-          "type": "soloAttachment"
-        },
-        {
-          "name": "Trollkin Sorcerer",
-          "fa": "2",
-          "cost": 1,
-          "faction": "faction_trollblood",
-          "id": "TS09",
-          "type": "solo"
-        },
-        {
-          "name": "Trollkin Champion Hero",
-          "fa": "2",
-          "cost": 3,
-          "faction": "faction_trollblood",
           "id": "TS04",
-          "type": "solo"
+          "type": "solo",
+          "name": " Trollkin Champion Hero",
+          "cost": 5,
+          "fa": "2",
+          "faction": "faction_trollblood"
         },
         {
-          "name": "Horgle Ironstrike",
+          "id": "TS05",
+          "type": "solo",
+          "name": " Horthol Long Rider Hero",
+          "cost": 8,
           "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TS06",
+          "type": "soloAttachment",
+          "name": " Trollkin Runebearer",
+          "cost": 4,
+          "fa": "1",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TS07",
+          "type": "solo",
+          "name": " Trollblood Skinner",
+          "cost": 4,
+          "fa": "2",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TS08",
+          "type": "solo",
+          "name": " Janissa Stonetide",
+          "cost": 4,
+          "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TS10",
+          "type": "solo",
+          "name": " Fennblade Kithkar",
+          "cost": 4,
+          "fa": "2",
+          "faction": "faction_trollblood"
+        },
+        {
+          "id": "TS11",
+          "type": "soloLesserWarlock",
+          "name": " Horgle Ironstrike",
+          "cost": 4,
+          "fa": "C",
+          "faction": "faction_trollblood",
           "restricted_to": [
             "TB01",
             "TB02"
-          ],
-          "bonded_bonus": 1,
-          "cost": 3,
-          "faction": "faction_trollblood",
-          "id": "TS11",
-          "type": "soloLesserWarlock"
+          ]
         },
         {
-          "name": "Horthol, Long Rider Hero",
-          "fa": "C",
+          "id": "TS12",
+          "type": "solo",
+          "name": " Braylen Wanderheart",
           "cost": 5,
-          "faction": "faction_trollblood",
-          "id": "TS05",
-          "type": "solo"
-        },
-        {
-          "name": "Fell Caller Hero",
-          "fa": "2",
-          "cost": 3,
-          "faction": "faction_trollblood",
-          "id": "TS01",
-          "type": "solo"
-        },
-        {
-          "name": "Troll Whelps",
-          "fa": "3",
-          "cost": 2,
-          "faction": "faction_trollblood",
-          "id": "TS03",
-          "type": "solo"
-        },
-        {
-          "name": "Pyg Keg Bearer",
           "fa": "C",
-          "cost": 0,
-          "faction": "faction_trollblood",
+          "faction": "faction_trollblood"
+        },
+        {
           "id": "TS13",
-          "type": "soloAttachment"
+          "type": "soloAttachment",
+          "name": " Keg Carrier",
+          "cost": 0,
+          "fa": "C",
+          "faction": "faction_trollblood",
+          "restricted_to": "TW05"
         },
         {
-          "name": "Scroll Bearer",
-          "fa": "C",
-          "cost": 0,
-          "faction": "faction_trollblood",
-          "id": "TS14",
-          "type": "soloAttachment"
+          "id": "TS15",
+          "type": "solo",
+          "name": " Northkin Shaman",
+          "cost": 4,
+          "fa": "2",
+          "faction": "faction_trollblood"
         }
       ],
       "label": "Solos"
     }
   ],
-  "tiers": [
-    {
-      "name": "Borka1 - Drunk and Disorderly",
-      "casterId": "TW05",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Models/units gain Pathfinder during your first turn of the game.",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "TW05",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB13",
-              "TU08",
-              "TU07",
-              "TA04",
-              "TU06",
-              "TA05",
-              "TU11",
-              "TS01",
-              "TS02",
-              "TS04",
-              "TS07",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Up to one warbeast gain Advance Deployment for each Trollkin scout unit in the army.",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TU11"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW05",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB13",
-              "TU08",
-              "TU07",
-              "TA04",
-              "TU06",
-              "TA05",
-              "TU11",
-              "TS01",
-              "TS02",
-              "TS04",
-              "TS07",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "You gain +1 on your starting roll for the game .",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TA05"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW05",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB13",
-              "TU08",
-              "TU07",
-              "TA04",
-              "TU06",
-              "TA05",
-              "TU11",
-              "TS01",
-              "TS02",
-              "TS04",
-              "TS07",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TB06",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TB06"
-              ],
-              "inBG": true
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW05",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB13",
-              "TU08",
-              "TU07",
-              "TA04",
-              "TU06",
-              "TA05",
-              "TU11",
-              "TS01",
-              "TS02",
-              "TS04",
-              "TS07",
-              "TS03"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Troll Axer, Troll Bouncer, Troll Impaler, Winter Troll, non-character Dire Trolls"
-        },
-        {
-          "type": "UNITS",
-          "models": "Long Riders, Trollkin Champions, Trollkin Fennbladcs, Trollkin Scouts"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Fell Caller Hero, Stone Scribe Chronicler, Trollkin Champion Hero, Trollkin Skinner, Troll Whelps"
-        }
-      ]
-    },
-    {
-      "name": "Borka1 - Family Reunion (NQ38)",
-      "casterId": "TW05",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [
-            {
-              "id": "TU12",
-              "bonus": 1
-            },
-            {
-              "id": "TU06",
-              "bonus": 1
-            },
-            {
-              "id": "TS04",
-              "bonus": 1
-            }
-          ],
-          "benefit": "Additionally, this army can include Greygore Boomhowler & Co. and Gudrun the Wanderer. These models are considered to be friendly Trollblood models.",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "TW05",
-              "TB01",
-              "TB02",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB13",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU06",
-              "TA05",
-              "TU12",
-              "TS04",
-              "TS02",
-              "TE01",
-              "MU01_minion",
-              "IS03_minion"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "For each Trollkin Champion Hero in the army, one unit in the army gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TS04"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW05",
-              "TB01",
-              "TB02",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB13",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU06",
-              "TA05",
-              "TU12",
-              "TS04",
-              "TS02",
-              "TE01",
-              "MU01_minion",
-              "IS03_minion"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "The army gains Tale of Mist during the first round of the game. (Models with Tale of Mist gain concealment and Feign Death. A model with Feign Death cannot be targeted by ranged or magic attacks while knocked down.)",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TS02"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW05",
-              "TB01",
-              "TB02",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB13",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU06",
-              "TA05",
-              "TU12",
-              "TS04",
-              "TS02",
-              "TE01",
-              "MU01_minion",
-              "IS03_minion"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TU06",
-              "bonus": 1
-            },
-            {
-              "id": "TU12",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 3,
-              "inMarshal": false,
-              "ids": [
-                "TU12",
-                "TU06"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW05",
-              "TB01",
-              "TB02",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB13",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU06",
-              "TA05",
-              "TU12",
-              "TS04",
-              "TS02",
-              "TE01",
-              "MU01_minion",
-              "IS03_minion"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood non-character warbeasts with one or more melee weapons with Open Fist"
-        },
-        {
-          "type": "UNITS",
-          "models": "Krielstone Bearer & Stone Scribes, Trollkin Champions, Trollkin Sluggers"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Trollkin Champion solos, Stone Scribe Chronicler"
-        },
-        {
-          "type": "BATTLE_ENGINES",
-          "models": "Trollkin War Wagons"
-        }
-      ]
-    },
-    {
-      "name": "Borka2 - Avalanche",
-      "casterId": "TX05",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TU08",
-              "bonus": 1
-            },
-            {
-              "id": "TS05",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "TX05",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TB13",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU02",
-              "TA03",
-              "TU08",
-              "TU11",
-              "TU15",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TS01",
-              "TS03",
-              "TS05",
-              "TS06",
-              "TS07",
-              "TS09",
-              "TE01"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Friendly models/units can begin the game affected by Borka's upkeep spells. These spells and their targets must be declared before either player sets up models. Borka does not pay fury to upkeep these spells during your first turn.",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU11",
-                "TU15",
-                "TS06",
-                "TS07"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TX05",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TB13",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU02",
-              "TA03",
-              "TU08",
-              "TU11",
-              "TU15",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TS01",
-              "TS03",
-              "TS05",
-              "TS06",
-              "TS07",
-              "TS09",
-              "TE01"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "For each warbeast in the army, place one 4\" AOE template anywhere completely within 20\" of the back edge of Borka's deployment zone after terrain has been placed but before either player deploys his army. These templates cannot be placed within 3\" of a terrain feature. The templates are snowdrifts. Models in a snowdrift gain Concealment and models without Immunity:Cold treat them as rough terrain.",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TB13"
-              ],
-              "inBG": true
-            },
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TB06"
-              ],
-              "inBG": true
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TX05",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TB13",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU02",
-              "TA03",
-              "TU08",
-              "TU11",
-              "TU15",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TS01",
-              "TS03",
-              "TS05",
-              "TS06",
-              "TS07",
-              "TS09",
-              "TE01"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Models in Borka's battlegroup gain +2 SPD during your first turn of the game.",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TE01"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TX05",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TB13",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU02",
-              "TA03",
-              "TU08",
-              "TU11",
-              "TU15",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TS01",
-              "TS03",
-              "TS05",
-              "TS06",
-              "TS07",
-              "TS09",
-              "TE01"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood non-character warbeasts, Rök"
-        },
-        {
-          "type": "UNITS",
-          "models": "Kriel Warriors, Krielstone Bearer & Stone Scribes, Trollkin Cavalry units, Trollblood units with Advance Deployment."
-        },
-        {
-          "type": "SOLOS",
-          "models": "Fell Caller Hero, Trollkin Sorcerer, Troll Whelps, Trollkin Cavalry solos, Trollblood solos with Advance Deployment."
-        },
-        {
-          "type": "BATTLE_ENGINES",
-          "models": "Trollkin War Wagons"
-        }
-      ]
-    },
-    {
-      "name": "Calandra1 - Children of Dhunia",
-      "casterId": "TW06",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "You gain +1 on your starting roll for the game.",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "TW06",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB12",
-              "TB09",
-              "TB14",
-              "TB15",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU10",
-              "TA06",
-              "TU11",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TS01",
-              "TS02",
-              "TS06",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "For every two solos in the army, one Trollkin unit gain +2 SPD during your first turn of the game.",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TS01",
-                "TS02",
-                "TS06"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW06",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB12",
-              "TB09",
-              "TB14",
-              "TB15",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU10",
-              "TA06",
-              "TU11",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TS01",
-              "TS02",
-              "TS06",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Up to one warbeast gains Advance Deployment for each Trollkin Scout or Pyg unit in the army.",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TU03",
-                "TU04",
-                "TU11"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW06",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB12",
-              "TB09",
-              "TB14",
-              "TB15",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU10",
-              "TA06",
-              "TU11",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TS01",
-              "TS02",
-              "TS06",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TB09",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TB09"
-              ],
-              "inBG": true
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW06",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB12",
-              "TB09",
-              "TB14",
-              "TB15",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU10",
-              "TA06",
-              "TU11",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TS01",
-              "TS02",
-              "TS06",
-              "TS03"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood non-character light warbeasts, Earthborn Dire Trolls"
-        },
-        {
-          "type": "UNITS",
-          "models": "Krielstone Bearer & Stone Scribes, Kriel Warriors, Trollkin Scattergunners, Trollkin Scouts, Pyg units"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Fell Caller Hero, Stone Scribe Chronicler, Trollkin Runebearer, Troll Whelps"
-        }
-      ]
-    },
-    {
-      "name": "Calandra1 - Evolutionary Elementalism",
-      "casterId": "TW06",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TB01",
-              "bonus": 1
-            },
-            {
-              "id": "TB02",
-              "bonus": 1
-            },
-            {
-              "id": "TB06",
-              "bonus": 1
-            },
-            {
-              "id": "TB14",
-              "bonus": 1
-            },
-            {
-              "id": "TB16",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "At the start of your first turn, choose one warbeast in Calandra's battlegroup. All models in the army are affected by that warbeast's animus.",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "TW06",
-              "TB01",
-              "TB02",
-              "TB06",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU09",
-              "TU14",
-              "TS03",
-              "TS06",
-              "TS08"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "The Krielstone Bearer & Stone Scribes unit leader begins the game with 1 fury point for each Runeshaper unit or solo in the army. (If the number exceeds the maximum of the Fury Vault ability, additional fury points are lost.)",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TU02"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW06",
-              "TB01",
-              "TB02",
-              "TB06",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU09",
-              "TU14",
-              "TS03",
-              "TS06",
-              "TS08"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "(The warbeasts must be different) Light Warbeasts in Calandra's battlegroup gain Advance Deployment",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 3,
-              "inMarshal": false,
-              "ids": [
-                "TB01",
-                "TB02",
-                "TB06",
-                "TB14"
-              ],
-              "inBG": true
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW06",
-              "TB01",
-              "TB02",
-              "TB06",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU09",
-              "TU14",
-              "TS03",
-              "TS06",
-              "TS08"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TB01",
-              "bonus": 1
-            },
-            {
-              "id": "TB02",
-              "bonus": 1
-            },
-            {
-              "id": "TB06",
-              "bonus": 1
-            },
-            {
-              "id": "TB14",
-              "bonus": 1
-            },
-            {
-              "id": "TB16",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TB16"
-              ],
-              "inBG": true
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW06",
-              "TB01",
-              "TB02",
-              "TB06",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU09",
-              "TU14",
-              "TS03",
-              "TS06",
-              "TS08"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Pyre Trolls, Slag Trolls, Storm Trolls, Winter Trolls, Mountain Kings"
-        },
-        {
-          "type": "UNITS",
-          "models": "Krielstone Bearer & Stone Scribes, Trollkin Runeshapers, Trollkin Warders"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Runeshaper solos, Troll Whelps, Trollkin Runebearer"
-        }
-      ]
-    },
-    {
-      "name": "Grim1 - Headhunters",
-      "casterId": "Tw04",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [
-            {
-              "id": "TU11",
-              "bonus": 512
-            },
-            {
-              "id": "TS07",
-              "forEach": [
-                "TU11",
-                "TU03",
-                "TU04"
-              ],
-              "bonus": 1
-            }
-          ],
-          "benefit": "",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "Tw04",
-              "TB16",
-              "TB01",
-              "TB02",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TU11",
-              "TU03",
-              "TU04",
-              "TA07",
-              "MU16_minion",
-              "TS07",
-              "IS01_minion"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Dannon Blythe & Bull gain Advance Deployment.",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "MU16_minion"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw04",
-              "TB16",
-              "TB01",
-              "TB02",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TU11",
-              "TU03",
-              "TU04",
-              "TA07",
-              "MU16_minion",
-              "TS07",
-              "IS01_minion"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "For every two units in the army, place one 4\" AOE forest template anywhere completely within 20\" of the back edge of Grim's deployment zone after terrain has been placed but before either player deploys his army. Forest templates cannot be placed within 3\" of another terrain feature including other forest templates.",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU11",
-                "TU03",
-                "TU04",
-                "MU16_minion"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw04",
-              "TB16",
-              "TB01",
-              "TB02",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TU11",
-              "TU03",
-              "TU04",
-              "TA07",
-              "MU16_minion",
-              "TS07",
-              "IS01_minion"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Models in Grim's battlegroup gain Prowl during the first round of the game. (Models with Prowl gain Stealth while within terrain that provides concealment, or the AOE of a cloud effect.)",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 3,
-              "inMarshal": false,
-              "ids": [
-                "TB01",
-                "TB02",
-                "TB05",
-                "TB06",
-                "TB07",
-                "TB11",
-                "TB12",
-                "TB14",
-                "TB16"
-              ],
-              "inBG": true
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw04",
-              "TB16",
-              "TB01",
-              "TB02",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TU11",
-              "TU03",
-              "TU04",
-              "TA07",
-              "MU16_minion",
-              "TS07",
-              "IS01_minion"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood non-character warbeasts with ranged weapons"
-        },
-        {
-          "type": "UNITS",
-          "models": "Trollkin Scouts, Pyg units, Dannon Blythe & Bull"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Trollkin Skinner, Alten Ashley"
-        }
-      ]
-    },
-    {
-      "name": "Grissel1 - Blood of Bragg",
-      "casterId": "Tw03",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TS01",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "Additionnaly, up to one warbeast in Bloodsong' battlegroup gains Advance Move for each Fell Caller Hero in the army.(Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "Tw03",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU10",
-              "TA06",
-              "TU05",
-              "TU12",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU15",
-              "TS04",
-              "TS01",
-              "IS01_minion"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "All Kriel Warrior units can be affected by Bloodsong's fell call Hoof It during your first tum of the game. Bloodsong can still make a fell call that turn normally.",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU01"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw03",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU10",
-              "TA06",
-              "TU05",
-              "TU12",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU15",
-              "TS04",
-              "TS01",
-              "IS01_minion"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Pyg units can be redeployed after both players have deployed but before the first player's first turn. The redeployed models must be placed on the table in a location they could have been deployed initially.",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU03",
-                "TU04",
-                "TU15"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw03",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU10",
-              "TA06",
-              "TU05",
-              "TU12",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU15",
-              "TS04",
-              "TS01",
-              "IS01_minion"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Your deployment zone is extended 2\" forward.",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 3,
-              "inMarshal": false,
-              "ids": [
-                "TB01",
-                "TB02",
-                "TB03",
-                "TB04",
-                "TB05",
-                "TB06",
-                "TB12",
-                "TB14",
-                "TB15"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw03",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU10",
-              "TA06",
-              "TU05",
-              "TU12",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU15",
-              "TS04",
-              "TS01",
-              "IS01_minion"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood Non-character light warbeasts"
-        },
-        {
-          "type": "UNITS",
-          "models": "Krielstone Bearer & Stone Scribes, Kriel Warriors, Scattergunners, Thumper Crew, Trollkin Sluggers, Pyg units"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Fell Caller Hero, Troll Whelps, Alten Ashley"
-        }
-      ]
-    },
-    {
-      "name": "Gunnbjorn1 - The Big Bang",
-      "casterId": "TW07",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TB07",
-              "bonus": 1
-            },
-            {
-              "id": "TB11",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "TW07",
-              "TB04",
-              "TB01",
-              "TB02",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU05",
-              "TU10",
-              "TA06",
-              "TU11",
-              "TU12",
-              "TU13",
-              "TU15",
-              "TU16",
-              "TS03",
-              "TS01",
-              "TS12"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "For every two units in the army, place one trench template anywhere completely within 20\" of the back edge of Gunnbjorn's deployment zone after terrain has been placed but before either player deploys his army. Trench templates cannot be placed within 3\" of another terrain feature but can be placed within 3\" of each other.",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU04",
-                "TU05",
-                "TU10",
-                "TU11",
-                "TU12",
-                "TU13",
-                "TU15",
-                "TU16"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW07",
-              "TB04",
-              "TB01",
-              "TB02",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU05",
-              "TU10",
-              "TA06",
-              "TU11",
-              "TU12",
-              "TU13",
-              "TU15",
-              "TU16",
-              "TS03",
-              "TS01",
-              "TS12"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Thumper Crew units gain Advance Deployment",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU05"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW07",
-              "TB04",
-              "TB01",
-              "TB02",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU05",
-              "TU10",
-              "TA06",
-              "TU11",
-              "TU12",
-              "TU13",
-              "TU15",
-              "TU16",
-              "TS03",
-              "TS01",
-              "TS12"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Models in Gunnbjorn's battlegroup gain +2 SPD during your first turn of the game.",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 3,
-              "inMarshal": false,
-              "ids": [
-                "TB07",
-                "TB11"
-              ],
-              "inBG": true
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW07",
-              "TB04",
-              "TB01",
-              "TB02",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU05",
-              "TU10",
-              "TA06",
-              "TU11",
-              "TU12",
-              "TU13",
-              "TU15",
-              "TU16",
-              "TS03",
-              "TS01",
-              "TS12"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Troll Bouncer, Trollblood non-character warbeasts with ranged weapons"
-        },
-        {
-          "type": "UNITS",
-          "models": "Trollblood units with ranged weapons"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Troll Whelps, Trollblood solos with ranged weapons"
-        }
-      ]
-    },
-    {
-      "name": "Hoarluk1 - Runes of War",
-      "casterId": "Tw02",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TU09",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [
-            {
-              "id": "TU09",
-              "bonus": 512
-            }
-          ],
-          "benefit": "",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "Tw02",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU09",
-              "TS02",
-              "TS06",
-              "TS03",
-              "TS08"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "The Krielstone Bearer & Stone Scribe unit Leader begins the game with 1 fury point for each Runeshaper unit or solo in the army. (If the number of fury points exceeds the maximum of the Fury Vault ability, additional fury points are lost.)",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TS08"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw02",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU09",
-              "TS02",
-              "TS06",
-              "TS03",
-              "TS08"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "For every two Trollkin Runeshaper units in the army place one wall template anywhere completely within 20\" of the back edge of Doomshaper's deployment zone after terrain has been placed but before either player deploys his army. The wall is a linear obstacle that grants cover. Wall templates cannot be placed within 3\" of another terrain feature including another wall template.",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU09"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw02",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU09",
-              "TS02",
-              "TS06",
-              "TS03",
-              "TS08"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Your deployment zone is extended 2\" forward.",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TB07",
-                "TB08",
-                "TB09",
-                "TB10",
-                "TB11"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw02",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU09",
-              "TS02",
-              "TS06",
-              "TS03",
-              "TS08"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood Non-character warbeasts, Mulg the Ancient"
-        },
-        {
-          "type": "UNITS",
-          "models": "Krielstone Bearer & Stone Scribes, Trollkin Runeshapers"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Stone Scribe Chronicler,Trollkin Runebearer, Troll Whelps, Janissa Stonetide"
-        }
-      ]
-    },
-    {
-      "name": "Jarl1 - Highwaymen",
-      "casterId": "TW08",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "You gain +1 on your starting roll for the game. Additionally Kriel Warriors units in the army gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "TW08",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU10",
-              "TA06",
-              "TU13",
-              "TS02",
-              "TS07",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [
-            {
-              "id": [
-                "TA06"
-              ]
-            }
-          ],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU10"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW08",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU10",
-              "TA06",
-              "TU13",
-              "TS02",
-              "TS07",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Models/units gain Pathfinder during your first turn of the game.",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 3,
-              "inMarshal": false,
-              "ids": [
-                "TU01",
-                "TU04",
-                "TU10",
-                "TU13"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW08",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU10",
-              "TA06",
-              "TU13",
-              "TS02",
-              "TS07",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Models/units gain Pathfinder during your first turn of the game.",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 3,
-              "inMarshal": false,
-              "ids": [
-                "TB01",
-                "TB02",
-                "TB03",
-                "TB04",
-                "TB05",
-                "TB06",
-                "TB12",
-                "TB14",
-                "TB15"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "TW08",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU10",
-              "TA06",
-              "TU13",
-              "TS02",
-              "TS07",
-              "TS03"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood non-character warbeasts"
-        },
-        {
-          "type": "UNITS",
-          "models": "Kriel Warriors, Pyg Bushwhackers, Scattergunners, Sons of Bragg"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Stone Scribe Chronicler, Trollkin Skinner, Troll Whelps"
-        }
-      ]
-    },
-    {
-      "name": "Madrak1 - War Party",
-      "casterId": "Tw01",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [
-            {
-              "id": "TU01",
-              "bonus": 512
-            },
-            {
-              "id": "TA01",
-              "bonus": 512
-            },
-            {
-              "id": "TA02",
-              "bonus": 512
-            }
-          ],
-          "benefit": "",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "Tw01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU07",
-              "TA04",
-              "TU10",
-              "TA06",
-              "TS01",
-              "TS02",
-              "TS03",
-              "TS06"
-            ]
-          }
-        },
-        {
-          "freeModels": [
-            {
-              "id": [
-                "TA01"
-              ]
-            }
-          ],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU01"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU07",
-              "TA04",
-              "TU10",
-              "TA06",
-              "TS01",
-              "TS02",
-              "TS03",
-              "TS06"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "You gain +1 on your starting roll for the game.",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU04"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU07",
-              "TA04",
-              "TU10",
-              "TA06",
-              "TS01",
-              "TS02",
-              "TS03",
-              "TS06"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Models in Madrak's battlegroup gain +2 SPD during your first turn of the game.",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TB03"
-              ],
-              "inBG": true
-            },
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TB05"
-              ],
-              "inBG": true
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU02",
-              "TA03",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU07",
-              "TA04",
-              "TU10",
-              "TA06",
-              "TS01",
-              "TS02",
-              "TS03",
-              "TS06"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood Non-character warbeasts"
-        },
-        {
-          "type": "UNITS",
-          "models": "Krielstone Bearer & Stone Scribes, Kriel Warriors, Pyg Bushwhackers, Scattergunners, Trollkin Fennblades"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Fell Caller Hero, Stone Scribe Chronicler, Trollkin Runebearer, Troll Whelps"
-        }
-      ]
-    },
-    {
-      "name": "Madrak1 - Winter Kin (NQ63)",
-      "casterId": "Tw01",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Trollkin Skinners in the army gain Immunity: Cold  and their Skinning Knives gain Beacon. (Replace the Trollkin Skinners card with the Theme Force Trollkin Skinners card found in this article - NQ 63.) ",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "Tw01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TB18",
-              "TU02",
-              "TU15",
-              "TU11",
-              "TU14",
-              "TA03",
-              "TS02",
-              "TS06",
-              "TS07",
-              "TS09"
-            ]
-          }
-        },
-        {
-          "freeModels": [
-            {
-              "id": [
-                "TA01"
-              ]
-            }
-          ],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Models in the army have concealment during the first round of the game.",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 3,
-              "inMarshal": false,
-              "ids": [
-                "TB12",
-                "TB09",
-                "TU11",
-                "TS07"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TB18",
-              "TU02",
-              "TU15",
-              "TU11",
-              "TU14",
-              "TA03",
-              "TS02",
-              "TS06",
-              "TS07",
-              "TS09"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Friendly models/units can begin the game affected by Madrak’s upkeep spells. These spells and their targets must be declared before either player sets up models. Madrak does not pay fury to upkeep these spells during your first turn.",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TA03"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TB18",
-              "TU02",
-              "TU15",
-              "TU11",
-              "TU14",
-              "TA03",
-              "TS02",
-              "TS06",
-              "TS07",
-              "TS09"
-            ]
-          }
-        },
-        {
-          "freeModels": [
-            {
-              "id": [
-                "TB05"
-              ]
-            }
-          ],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TB03"
-              ],
-              "inBG": true
-            },
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TB01",
-                "TB02",
-                "TB04",
-                "TB05",
-                "TB06",
-                "TB07",
-                "TB08",
-                "TB09",
-                "TB11",
-                "TB12",
-                "TB14",
-                "TB15",
-                "TB16",
-                "TB18"
-              ],
-              "inBG": true
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tw01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TB18",
-              "TU02",
-              "TU15",
-              "TU11",
-              "TU14",
-              "TA03",
-              "TS02",
-              "TS06",
-              "TS07",
-              "TS09"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood Non-character warbeasts"
-        },
-        {
-          "type": "UNITS",
-          "models": "Krielstone Bearer & Stone Scribes, Northkin units, Trollkin Scouts, Trollkin Warders"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Stone Scribe Chronicler, Trollkin Runebearer, Trollkin Sorcerer, Trollkin Skinners"
-        }
-      ]
-    },
-    {
-      "name": "Grim2 - Hunting Party",
-      "casterId": "Tx04",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TU05",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [
-            {
-              "id": "TU05",
-              "forEach": [
-                "TU04",
-                "TU11",
-                "TU12"
-              ],
-              "bonus": 1
-            }
-          ],
-          "benefit": "",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "Tx04",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU04",
-              "TA07",
-              "TU05",
-              "TU11",
-              "TU12",
-              "TS01"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Trollkin Scout units gain Ambush. (You can choose not to deploy a unit with Ambush at the start of the game. If it is not deployed normally, you can put it into play at the end of any of your Control Phases after your first turn. When you do, choose any table edge except the back of your opponent's deployment zone. Place the models in the unit within 3\" of the chosen table edge.)",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU11"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx04",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU04",
-              "TA07",
-              "TU05",
-              "TU11",
-              "TU12",
-              "TS01"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Light warbeasts gain Advance Deployment",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 3,
-              "inMarshal": false,
-              "ids": [
-                "TB01",
-                "TB02",
-                "TB03",
-                "TB04",
-                "TB05",
-                "TB06",
-                "TB12",
-                "TB14",
-                "TB15"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx04",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU04",
-              "TA07",
-              "TU05",
-              "TU11",
-              "TU12",
-              "TS01"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Your deployment zone is extended 2\" forward.",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TU04"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx04",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU04",
-              "TA07",
-              "TU05",
-              "TU11",
-              "TU12",
-              "TS01"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood non-character warbeasts"
-        },
-        {
-          "type": "UNITS",
-          "models": "Pyg Bushwhackers, Thumper Crews, Trollkin Highwaymen, Trollkin Scouts, Trollkin Sluggers"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Fell Caller solos"
-        }
-      ]
-    },
-    {
-      "name": "Grissel2 - Blockade Runners",
-      "casterId": "Tx03",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TU08",
-              "bonus": 1
-            },
-            {
-              "id": "TS05",
-              "bonus": 1
-            },
-            {
-              "id": "TE01",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "Tx03",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB07",
-              "TB11",
-              "TB08",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU08",
-              "TU13",
-              "TS05",
-              "TS03",
-              "TE01"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "You gain + 1 on your starting roll for the game.",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TS05"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx03",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB07",
-              "TB11",
-              "TB08",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU08",
-              "TU13",
-              "TS05",
-              "TS03",
-              "TE01"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "One Medium-based unit gains Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TU13"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx03",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB07",
-              "TB11",
-              "TB08",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU08",
-              "TU13",
-              "TS05",
-              "TS03",
-              "TE01"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Warbeasts in Grissel's battlegroup gain +2 SPD during your first turn of the game.",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 3,
-              "inMarshal": false,
-              "ids": [
-                "TB03",
-                "TB04",
-                "TB05",
-                "TB07",
-                "TB11",
-                "TB08"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx03",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB07",
-              "TB11",
-              "TB08",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU04",
-              "TA07",
-              "TU08",
-              "TU13",
-              "TS05",
-              "TS03",
-              "TE01"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Troll Axer, Troll Bouncer, Troll Impaler, Dire Troll Blitzer, Dire Troll Bomber, Dire Troll Mauler"
-        },
-        {
-          "type": "UNITS",
-          "models": "Kriel Warriors, Pyg Bushwhackers, Trollkin Long Riders, Sons of Bragg"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Troll Whelps, Horthol Long Rider Hero"
-        },
-        {
-          "type": "BATTLE_ENGINES",
-          "models": "Trollkin War Wagons"
-        }
-      ]
-    },
-    {
-      "name": "Hoarluk2 - Unbridled Fury",
-      "casterId": "Tx02",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [
-            {
-              "id": "TS03",
-              "forEach": [
-                "TB07",
-                "TB08",
-                "TB09",
-                "TB10",
-                "TB11"
-              ],
-              "bonus": 1
-            }
-          ],
-          "benefit": "",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "Tx02",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TU06",
-              "TA05",
-              "TU11",
-              "TS07",
-              "TS06",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "You gain +1 on your starting roll for the game.",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU06",
-                "TU11"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx02",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TU06",
-              "TA05",
-              "TU11",
-              "TS07",
-              "TS06",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Heavy warbeasts gain +2 SPD during your first turn of the game.",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TS03"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx02",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TU06",
-              "TA05",
-              "TU11",
-              "TS07",
-              "TS06",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TB07",
-              "bonus": 1
-            },
-            {
-              "id": "TB08",
-              "bonus": 1
-            },
-            {
-              "id": "TB09",
-              "bonus": 1
-            },
-            {
-              "id": "TB10",
-              "bonus": 1
-            },
-            {
-              "id": "TB11",
-              "bonus": 1
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TB10"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx02",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TU06",
-              "TA05",
-              "TU11",
-              "TS07",
-              "TS06",
-              "TS03"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood Non-character Dire Troll warbeasts, Mulg the Ancient"
-        },
-        {
-          "type": "UNITS",
-          "models": "Trollkin Scouts, Trollkin Champions"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Trollkin Skinner, Trollkin Runebearer, Troll Whelps"
-        }
-      ]
-    },
-    {
-      "name": "Hoarluk3 - Immovable Mountains",
-      "casterId": "Tz02",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Models in the army gain +2 ARM during the first round of the game.",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "Tz02",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TB15",
-              "TB18",
-              "TU02",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU15",
-              "TA07",
-              "TA03",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Warbeasts in the army gain +2 SPD during the first round of the game.",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TS03"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tz02",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TB15",
-              "TB18",
-              "TU02",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU15",
-              "TA07",
-              "TA03",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "You gain +1 on your starting roll for the game. ",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TU04",
-                "TU03",
-                "TU15"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tz02",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TB15",
-              "TB18",
-              "TU02",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU15",
-              "TA07",
-              "TA03",
-              "TS03"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [
-            {
-              "id": "TB16",
-              "bonus": 2
-            },
-            {
-              "id": "TB18",
-              "bonus": 2
-            }
-          ],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TB16",
-                "TB18"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tz02",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB10",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB16",
-              "TB15",
-              "TB18",
-              "TU02",
-              "TU03",
-              "TU04",
-              "TA07",
-              "TU15",
-              "TA07",
-              "TA03",
-              "TS03"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood Non-character warbeasts, Mulg the Ancient"
-        },
-        {
-          "type": "UNITS",
-          "models": "Krielstone Bearer & Stone Scribes, Pyg units"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Pyg solos, Troll Whelps"
-        }
-      ]
-    },
-    {
-      "name": "Madrak2 - End Times",
-      "casterId": "Tx01",
-      "faction": "faction_trollblood",
-      "levels": [
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [
-            {
-              "id": "TU08",
-              "bonus": 1
-            }
-          ],
-          "benefit": "",
-          "level": 1,
-          "mustHave": [],
-          "onlyModels": {
-            "ids": [
-              "Tx01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU08",
-              "TU06",
-              "TA05",
-              "TU07",
-              "TA04",
-              "TS04",
-              "TS06",
-              "TS03",
-              "TS05"
-            ]
-          }
-        },
-        {
-          "freeModels": [
-            {
-              "id": [
-                "TA04"
-              ]
-            }
-          ],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "",
-          "level": 2,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TU07"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU08",
-              "TU06",
-              "TA05",
-              "TU07",
-              "TA04",
-              "TS04",
-              "TS06",
-              "TS03",
-              "TS05"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Place Long Rider models after normal deployment. These models are placed at the same time as your models with Advance Deployment (if any). These models must be placed within your normal deployment zone.",
-          "level": 3,
-          "mustHave": [
-            {
-              "min": 1,
-              "inMarshal": false,
-              "ids": [
-                "TS05"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU08",
-              "TU06",
-              "TA05",
-              "TU07",
-              "TA04",
-              "TS04",
-              "TS06",
-              "TS03",
-              "TS05"
-            ]
-          }
-        },
-        {
-          "freeModels": [],
-          "costAlterations": [],
-          "faAlterations": [],
-          "benefit": "Heavy warbeasts in Madrak's battlegroup gain Advance Move. (Before the start of the game but after both players have deployed, a model with Advance Move can make a full advance.)",
-          "level": 4,
-          "mustHave": [
-            {
-              "min": 2,
-              "inMarshal": false,
-              "ids": [
-                "TB07",
-                "TB08",
-                "TB09",
-                "TB11"
-              ],
-              "inBG": false
-            }
-          ],
-          "onlyModels": {
-            "ids": [
-              "Tx01",
-              "TB01",
-              "TB02",
-              "TB03",
-              "TB04",
-              "TB05",
-              "TB06",
-              "TB07",
-              "TB08",
-              "TB09",
-              "TB11",
-              "TB12",
-              "TB14",
-              "TB15",
-              "TB16",
-              "TU01",
-              "TA01",
-              "TA02",
-              "TU08",
-              "TU06",
-              "TA05",
-              "TU07",
-              "TA04",
-              "TS04",
-              "TS06",
-              "TS03",
-              "TS05"
-            ]
-          }
-        }
-      ],
-      "availableModels": [
-        {
-          "type": "WARBEASTS",
-          "models": "Trollblood Non-character warbeasts"
-        },
-        {
-          "type": "UNITS",
-          "models": "Kriel Warriors, Long Riders, Trollkin Champions, Trollkin Fennblades"
-        },
-        {
-          "type": "SOLOS",
-          "models": "Troll kin Champion Hero, Trollkin Runebearer, Troll Whelps, Long Rider solos"
-        }
-      ]
-    }
-  ]
+  "tiers": []
 }
