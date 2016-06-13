@@ -123,6 +123,14 @@
           "fa": "C",
           "faction": "faction_orboros",
           "attachment": "OS13"
+        },
+        {
+          "id": "OW15",
+          "type": "warlock",
+          "name": "Tanith1 (Tanith the Feral Song)",
+          "cost": 31,
+          "fa": "C",
+          "faction": "faction_orboros"
         }
       ],
       "label": "Warlocks"
