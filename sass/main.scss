@@ -85,8 +85,10 @@ h1, h2, h3, h4, h5, p {
         &:hover {
             text-decoration: none;
         }
+        small {
+            font-size: 3rem;
+        }
     }
-    font-size: 80px
 }
 
 /*
@@ -636,6 +638,9 @@ ul[dnd-list] {
     }
     #header .header-title {
         font-size: 4rem;
+        small {
+            font-size: 2rem;
+        }
     }
     #left-col-build {
         background: #FFF;

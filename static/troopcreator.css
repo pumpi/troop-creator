@@ -1,4 +1,4 @@
-/*! troopcreator 2016-06-12 */
+/*! troopcreator 2016-06-13 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5092,8 +5092,7 @@ h1, h2, h3, h4, h5, p {
  *****************************/
 #header {
   max-height: 300px;
-  position: relative;
-  font-size: 80px; }
+  position: relative; }
   #header .beta-logo {
     position: absolute;
     right: 10px;
@@ -5111,6 +5110,8 @@ h1, h2, h3, h4, h5, p {
     text-shadow: 0 0 30px #000; }
     #header .header-title:hover {
       text-decoration: none; }
+    #header .header-title small {
+      font-size: 3rem; }
 
 /*
  * MENU
@@ -5545,6 +5546,8 @@ ul[dnd-list] {
     max-width: 100%; }
   #header .header-title {
     font-size: 4rem; }
+    #header .header-title small {
+      font-size: 2rem; }
   #left-col-build {
     background: #FFF;
     position: absolute;
