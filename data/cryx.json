@@ -405,7 +405,7 @@
           "id": "CU03",
           "type": "unit",
           "name": "Mechanithralls",
-          "cost": 3,
+          "cost": 6,
           "costMin": 6,
           "costMax": 10,
           "fa": "U",

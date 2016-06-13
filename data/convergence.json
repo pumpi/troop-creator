@@ -177,7 +177,7 @@
           "id": "COCU03",
           "type": "unit",
           "name": "Reductors",
-          "cost": 4,
+          "cost": 8,
           "costMin": 8,
           "costMax": 13,
           "fa": "3",

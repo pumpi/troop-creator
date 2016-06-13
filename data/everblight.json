@@ -355,7 +355,7 @@
           "id": "EU14",
           "type": "unit",
           "name": "Grotesque Banshees",
-          "cost": 5,
+          "cost": 8,
           "costMin": 8,
           "costMax": 13,
           "fa": "2",

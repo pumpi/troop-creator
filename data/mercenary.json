@@ -882,7 +882,7 @@
           "costMin": 7,
           "id": "MU24",
           "name": "Cephalyx Mind Bender & Drudges",
-          "cost": 4,
+          "cost": 7,
           "faction": "faction_mercs",
           "type": "unit"
         },
@@ -898,7 +898,7 @@
             "faction_khador",
             "faction_cygnar"
           ],
-          "cost": 5,
+          "cost": 10,
           "faction": "faction_mercs",
           "type": "unitMarshall"
         },
@@ -1001,7 +1001,7 @@
             "faction_menoth",
             "faction_cygnar"
           ],
-          "cost": 6,
+          "cost": 10,
           "faction": "faction_mercs",
           "type": "unit"
         },
@@ -1165,7 +1165,7 @@
           "costMin": 8,
           "id": "MU22",
           "name": "Cephalyx Mind Slaver & Drudges",
-          "cost": 4,
+          "cost": 8,
           "faction": "faction_mercs",
           "type": "unit"
         },
