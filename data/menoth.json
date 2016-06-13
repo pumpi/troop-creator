@@ -223,7 +223,7 @@
           "id": "PJ13",
           "type": "warjack",
           "name": "Fire of Salvation",
-          "cost": 3,
+          "cost": 16,
           "fa": "C",
           "faction": "faction_menoth"
         },
