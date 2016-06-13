@@ -32,7 +32,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
 
                 $scope.options = {
                     'gameCaster'        : 1,
-                    'gamePoints'        : 50,
+                    'gamePoints'        : 75,
                     'gameTier'          : '',
                     'gameObjective'     : '',
                     'modalLevel'        : 0
