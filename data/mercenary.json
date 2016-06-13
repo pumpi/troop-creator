@@ -1934,6 +1934,12 @@
           "name": "Brun Cragback (Brun Cragback & Lug)",
           "fa": "C",
           "cost": 16,
+          "works_for": [
+            "faction_cygnar",
+            "faction_khador",
+            "faction_circle",
+            "faction_trollblood"
+          ],
           "faction": "faction_mercs",
           "id": "MS42",
           "type": "soloLesserWarlock"

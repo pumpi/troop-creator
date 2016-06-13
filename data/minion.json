@@ -128,6 +128,20 @@
             "faction_trollblood",
             "faction_skorne"
           ]
+        },
+        {
+          "id": "IW10",
+          "type": "warlock",
+          "name": " Rask1 ",
+          "cost": 27,
+          "fa": "C",
+          "faction": "factions",
+          "works_for": [
+            "faction_orboros",
+            "faction_everblight",
+            "faction_trollblood",
+            "faction_skorne"
+          ]
         }
       ],
       "label": "Warlocks"
@@ -566,16 +580,16 @@
         {
           "max": 10,
           "min": 6,
-          "costMax": 10,
+          "costMax": 19,
           "fa": "C",
-          "costMin": 7,
+          "costMin": 12,
           "id": "IU12",
           "name": "Cylena Raefyll & Nyss Hunters",
           "works_for": [
             "faction_orboros",
             "faction_trollblood"
           ],
-          "cost": 7,
+          "cost": 12,
           "faction": "factions",
           "type": "unit"
         },
@@ -585,7 +599,7 @@
           "works_for": [
             "faction_trollblood"
           ],
-          "cost": 4,
+          "cost": 6,
           "faction": "factions",
           "id": "IU13",
           "type": "unit"
@@ -635,15 +649,15 @@
         {
           "max": 10,
           "min": 6,
-          "costMax": 9,
+          "costMax": 17,
           "fa": "C",
-          "costMin": 6,
+          "costMin": 11,
           "id": "IU11",
           "name": "Greygore Boomhowler & Co.",
           "works_for": [
             "faction_trollblood"
           ],
-          "cost": 6,
+          "cost": 11,
           "faction": "factions",
           "type": "unit"
         },
@@ -1084,6 +1098,8 @@
           "name": "Brun Cragback (Brun Cragback & Lug)",
           "fa": "C",
           "works_for": [
+            "faction_cygnar",
+            "faction_khador",
             "faction_orboros",
             "faction_trollblood"
           ],
