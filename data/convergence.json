@@ -5,7 +5,7 @@
       "id": "faction_cyriss_warcasters",
       "entries": [
         {
-          "id": "cocW05",
+          "id": "COCW05",
           "type": "warcaster",
           "name": "Syntherion(Forge Master Syntherion)",
           "cost": 27,
@@ -13,7 +13,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocW02",
+          "id": "COCW02",
           "type": "warcaster",
           "name": "Axis(Axis the Harmonic Enforcer)",
           "cost": 30,
@@ -21,7 +21,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocW04",
+          "id": "COCW04",
           "type": "warcaster",
           "name": "Lucant(Father Lucant Divinity Architect)",
           "cost": 28,
@@ -29,7 +29,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocW03",
+          "id": "COCW03",
           "type": "warcaster",
           "name": "Iron Mother Directrix(Iron Mother Directrix & Exponent Servitors)",
           "cost": 27,
@@ -37,7 +37,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocW01",
+          "id": "COCW01",
           "type": "warcaster",
           "name": "Aurora(Aurora Numen of Aerogenesis)",
           "cost": 29,
@@ -58,7 +58,7 @@
       "id": "faction_cyriss_warjacks",
       "entries": [
         {
-          "id": "cocJ08",
+          "id": "COCJ08",
           "type": "warjack",
           "name": "Inverter",
           "cost": 15,
@@ -66,7 +66,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocJ06",
+          "id": "COCJ06",
           "type": "warjack",
           "name": "Cipher",
           "cost": 16,
@@ -74,7 +74,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocJ09",
+          "id": "COCJ09",
           "type": "warjack",
           "name": "Modulator",
           "cost": 10,
@@ -82,7 +82,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocJ11",
+          "id": "COCJ11",
           "type": "warjackColossal",
           "name": "Prime Axiom",
           "cost": 38,
@@ -90,7 +90,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocJ04",
+          "id": "COCJ04",
           "type": "warjack",
           "name": "Mitigator",
           "cost": 7,
@@ -98,7 +98,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocJ10",
+          "id": "COCJ10",
           "type": "warjack",
           "name": "Monitor",
           "cost": 16,
@@ -106,7 +106,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocJ05",
+          "id": "COCJ05",
           "type": "warjack",
           "name": "Assimilator",
           "cost": 16,
@@ -114,7 +114,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocJ01",
+          "id": "COCJ01",
           "type": "warjack",
           "name": "Corollary",
           "cost": 6,
@@ -122,7 +122,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocJ02",
+          "id": "COCJ02",
           "type": "warjack",
           "name": "Diffuser",
           "cost": 6,
@@ -130,7 +130,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocJ03",
+          "id": "COCJ03",
           "type": "warjack",
           "name": "Galvanizer",
           "cost": 5,
@@ -138,7 +138,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocJ07",
+          "id": "COCJ07",
           "type": "warjack",
           "name": "Conservator",
           "cost": 12,
@@ -159,7 +159,7 @@
       "id": "faction_cyriss_bes",
       "entries": [
         {
-          "id": "cocE01",
+          "id": "COCE01",
           "type": "battleengine",
           "name": "Transfinite Emergence Projector & Permutation Servitors",
           "cost": 19,
@@ -174,7 +174,7 @@
       "id": "faction_cyriss_units",
       "entries": [
         {
-          "id": "cocU03",
+          "id": "COCU03",
           "type": "unit",
           "name": "Reductors",
           "cost": 4,
@@ -186,7 +186,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocU06",
+          "id": "COCU06",
           "type": "unit",
           "name": "Reciprocators",
           "cost": 11,
@@ -198,7 +198,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocU05",
+          "id": "COCU05",
           "type": "unit",
           "name": "Optifex Directive",
           "cost": 4,
@@ -206,7 +206,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocU04",
+          "id": "COCU04",
           "type": "unit",
           "name": "Eradicators",
           "cost": 9,
@@ -218,7 +218,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocU01",
+          "id": "COCU01",
           "type": "unit",
           "name": "Clockwork Angels",
           "cost": 5,
@@ -226,7 +226,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocU07",
+          "id": "COCU07",
           "type": "unit",
           "name": "Perforators",
           "cost": 11,
@@ -238,7 +238,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocU02",
+          "id": "COCU02",
           "type": "unit",
           "name": "Obstructors",
           "cost": 7,
@@ -257,37 +257,37 @@
       "id": "faction_cyriss_UAs",
       "entries": [
         {
-          "id": "cocA01",
+          "id": "COCA01",
           "type": "UA",
           "name": "Transverse Enumerator",
           "cost": 3,
           "fa": "3",
           "faction": "faction_cyriss",
           "restricted_to": [
-            "cocU01",
-            "cocU02",
-            "cocU03",
-            "cocU04",
-            "cocU05",
-            "cocU06",
-            "cocU07"
+            "COCU01",
+            "COCU02",
+            "COCU03",
+            "COCU04",
+            "COCU05",
+            "COCU06",
+            "COCU07"
           ]
         }
       ],
-      "label": "Unit ATTACHEMENTs"
+      "label": "Unit Attachments"
     },
     {
       "logo": "faction_cyriss",
       "id": "faction_cyriss_WAs",
       "entries": [],
-      "label": "Weapon ATTACHEMENTs"
+      "label": "Weapon Attachments"
     },
     {
       "logo": "faction_cyriss",
       "id": "faction_cyriss_solos",
       "entries": [
         {
-          "id": "cocS06",
+          "id": "COCS06",
           "type": "solo",
           "name": "Steelsoul Protector",
           "cost": 4,
@@ -295,7 +295,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocS04",
+          "id": "COCS04",
           "type": "solo",
           "name": "EliMINation Servitors",
           "cost": 3,
@@ -303,7 +303,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocS05",
+          "id": "COCS05",
           "type": "solo",
           "name": "Enigma Foundry",
           "cost": 5,
@@ -311,7 +311,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocS03",
+          "id": "COCS03",
           "type": "solo",
           "name": "Attunement Servitors",
           "cost": 4,
@@ -319,7 +319,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocS01",
+          "id": "COCS01",
           "type": "solo",
           "name": "Accretion Servitors",
           "cost": 2,
@@ -327,7 +327,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocS02",
+          "id": "COCS02",
           "type": "solo",
           "name": "Algorithmic Dispersion Optifex",
           "cost": 2,
@@ -335,7 +335,7 @@
           "faction": "faction_cyriss"
         },
         {
-          "id": "cocS07",
+          "id": "COCS07",
           "type": "solo",
           "name": "Reflex Servitors",
           "cost": 4,

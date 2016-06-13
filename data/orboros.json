@@ -11,7 +11,7 @@
       "id": "faction_orboros_warlocks",
       "entries": [
         {
-          "id": "Ow03",
+          "id": "OW03",
           "type": "warlock",
           "name": "Baldur1 (Baldur the Stonecleaver)",
           "cost": 31,
@@ -19,7 +19,7 @@
           "faction": "faction_orboros"
         },
         {
-          "id": "Ox03",
+          "id": "OW11",
           "type": "warlock",
           "name": "Baldur2 (Baldur the Stonesoul)",
           "cost": 30,
@@ -43,7 +43,7 @@
           "faction": "faction_orboros"
         },
         {
-          "id": "Ow01",
+          "id": "OW01",
           "type": "warlock",
           "name": "Kaya1 (Kaya the Wildborne)",
           "cost": 32,
@@ -51,13 +51,13 @@
           "faction": "faction_orboros"
         },
         {
-          "id": "Ox01",
+          "id": "OW12",
           "type": "warlock",
           "name": "Kaya2 (Kaya the Moonhunter & Laris)",
           "cost": 24,
           "fa": "C",
           "faction": "faction_orboros",
-          "attachment": "Laris"
+          "attachment": "OB23"
         },
         {
           "id": "OW05",
@@ -77,7 +77,7 @@
           "faction": "faction_orboros"
         },
         {
-          "id": "Ow02",
+          "id": "OW12",
           "type": "warlock",
           "name": "Krueger1 (Krueger the Stormwrath)",
           "cost": 28,
@@ -85,7 +85,7 @@
           "faction": "faction_orboros"
         },
         {
-          "id": "Ox02",
+          "id": "OW13",
           "type": "warlock",
           "name": "Krueger2 (Krueger the Stormlord)",
           "cost": 27,
@@ -101,7 +101,7 @@
           "faction": "faction_orboros"
         },
         {
-          "id": "Ow04",
+          "id": "OW04",
           "type": "warlock",
           "name": "Morvahna1 (Morvahna the Autumnblade)",
           "cost": 28,
@@ -109,7 +109,7 @@
           "faction": "faction_orboros"
         },
         {
-          "id": "Ox04",
+          "id": "OW14",
           "type": "warlock",
           "name": "Morvahna2 (Morvahna the Dawnshadow)",
           "cost": 27,
@@ -122,7 +122,8 @@
           "name": "Wurmwood1 (Wurmwood Tree of Fate & Cassius)",
           "cost": 27,
           "fa": "C",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attachment": "OS13"
         }
       ],
       "label": "Warlocks"
@@ -194,13 +195,13 @@
           "faction": "faction_orboros"
         },
         {
-          "id": "Laris",
+          "id": "OB23",
           "type": "warbeast",
           "name": "Laris",
           "cost": 0,
           "fa": "C",
           "faction": "faction_orboros",
-          "restricted_to": " Ox01"
+          "restricted_to": "OW12"
         },
         {
           "id": "OB06",

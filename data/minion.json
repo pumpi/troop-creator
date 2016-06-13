@@ -1,22 +1,16 @@
 {
   "groups": [
     {
-      "logo": "faction_minions",
-      "id": "faction_minions_warcasters",
-      "entries": [],
-      "label": "Warcasters"
-    },
-    {
-      "logo": "faction_minions",
-      "id": "faction_minions_warlocks",
+      "logo": "factions",
+      "id": "factions_warlocks",
       "entries": [
         {
-          "id": "IW13",
+          "id": "IW08",
           "type": "warlock",
           "name": " Helga1 (Helga the Conqueror)",
           "cost": 29,
           "fa": "C",
-          "faction": "faction_minions",
+          "faction": "factions",
           "works_for": [
             "faction_orboros",
             "faction_everblight",
@@ -25,12 +19,12 @@
           ]
         },
         {
-          "id": "IW08",
+          "id": "IW04",
           "type": "warlock",
           "name": " Arkadius1 (Dr. Arkadius)",
           "cost": 32,
           "fa": "C",
-          "faction": "faction_minions",
+          "faction": "factions",
           "works_for": [
             "faction_orboros",
             "faction_trollblood",
@@ -38,68 +32,12 @@
           ]
         },
         {
-          "id": "IW07",
+          "id": "IW03",
           "type": "warlock",
           "name": " Calaban1 (Calaban the Grave Walker)",
           "cost": 29,
           "fa": "C",
-          "faction": "faction_minions",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ]
-        },
-        {
-          "id": "IW14",
-          "type": "warlock",
-          "name": " Jaga-Jaga1 (Jaga-JagaThe Death Charmer)",
-          "cost": 29,
-          "fa": "C",
-          "faction": "faction_minions",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ]
-        },
-        {
-          "id": "IW10",
-          "type": "warlock",
-          "name": " Sturm & Drang1 ",
-          "cost": 28,
-          "fa": "C",
-          "faction": "faction_minions",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ]
-        },
-        {
-          "id": "IW06",
-          "type": "warlock",
-          "name": "Barnabas 1 (Bloody Barnabas)",
-          "cost": 28,
-          "fa": "C",
-          "faction": "faction_minions",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ]
-        },
-        {
-          "id": "IW05",
-          "type": "warlock",
-          "name": "Carver1 (Lord Carver BMMD Esq. III)",
-          "cost": 28,
-          "fa": "C",
-          "faction": "faction_minions",
+          "faction": "factions",
           "works_for": [
             "faction_orboros",
             "faction_everblight",
@@ -110,10 +48,10 @@
         {
           "id": "IW09",
           "type": "warlock",
-          "name": " Maelok1 (Maelok the Dreadbound)",
-          "cost": 28,
+          "name": " Jaga-Jaga1 (Jaga-JagaThe Death Charmer)",
+          "cost": 29,
           "fa": "C",
-          "faction": "faction_minions",
+          "faction": "factions",
           "works_for": [
             "faction_orboros",
             "faction_everblight",
@@ -122,12 +60,68 @@
           ]
         },
         {
-          "id": "IW11",
+          "id": "IW06",
+          "type": "warlock",
+          "name": " Sturm & Drang1 ",
+          "cost": 28,
+          "fa": "C",
+          "faction": "factions",
+          "works_for": [
+            "faction_orboros",
+            "faction_everblight",
+            "faction_trollblood",
+            "faction_skorne"
+          ]
+        },
+        {
+          "id": "IW02",
+          "type": "warlock",
+          "name": "Barnabas 1 (Bloody Barnabas)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "factions",
+          "works_for": [
+            "faction_orboros",
+            "faction_everblight",
+            "faction_trollblood",
+            "faction_skorne"
+          ]
+        },
+        {
+          "id": "IW01",
+          "type": "warlock",
+          "name": "Carver1 (Lord Carver BMMD Esq. III)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "factions",
+          "works_for": [
+            "faction_orboros",
+            "faction_everblight",
+            "faction_trollblood",
+            "faction_skorne"
+          ]
+        },
+        {
+          "id": "IW05",
+          "type": "warlock",
+          "name": " Maelok1 (Maelok the Dreadbound)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "factions",
+          "works_for": [
+            "faction_orboros",
+            "faction_everblight",
+            "faction_trollblood",
+            "faction_skorne"
+          ]
+        },
+        {
+          "id": "IW07",
           "type": "warlock",
           "name": " Midas1",
           "cost": 30,
           "fa": "C",
-          "faction": "faction_minions",
+          "faction": "factions",
           "works_for": [
             "faction_orboros",
             "faction_everblight",
@@ -139,125 +133,125 @@
       "label": "Warlocks"
     },
     {
-      "logo": "faction_minions",
-      "id": "faction_minions_warjacks",
+      "logo": "factions",
+      "id": "factions_warjacks",
       "entries": [
         {
           "name": "Rover",
           "fa": "U",
           "restricted_to": [
-            "MS26_minion"
+            "IS24"
           ],
           "cost": 15,
-          "faction": "faction_minions",
-          "id": "MJ16_minion",
+          "faction": "factions",
+          "id": "IJ16",
           "type": "warjack"
         },
         {
           "name": "Nomad",
           "fa": "U",
           "restricted_to": [
-            "MS26_minion"
+            "IS24"
           ],
           "cost": 11,
-          "faction": "faction_minions",
-          "id": "MJ11_minion",
+          "faction": "factions",
+          "id": "IJ11",
           "type": "warjack"
         },
         {
           "name": "Freebooter",
           "fa": "U",
           "restricted_to": [
-            "MS26_minion"
+            "IS24"
           ],
           "cost": 9,
-          "faction": "faction_minions",
-          "id": "MJ12_minion",
+          "faction": "factions",
+          "id": "IJ12",
           "type": "warjack"
         },
         {
           "name": "Mangler",
           "fa": "U",
           "restricted_to": [
-            "MS26_minion"
+            "IS24"
           ],
           "cost": 15,
-          "faction": "faction_minions",
-          "id": "MJ09_minion",
+          "faction": "factions",
+          "id": "IJ09",
           "type": "warjack"
         },
         {
           "name": "Mule",
           "fa": "U",
           "restricted_to": [
-            "MS26_minion"
+            "IS24"
           ],
           "cost": 15,
-          "faction": "faction_minions",
-          "id": "MJ10_minion",
+          "faction": "factions",
+          "id": "IJ10",
           "type": "warjack"
         },
         {
           "name": "Mariner",
           "fa": "U",
           "restricted_to": [
-            "MS26_minion"
+            "IS24"
           ],
           "cost": 14,
-          "faction": "faction_minions",
-          "id": "MJ13_minion",
+          "faction": "factions",
+          "id": "IJ13",
           "type": "warjack"
         },
         {
           "name": "Buccaneer",
           "fa": "U",
           "restricted_to": [
-            "MS26_minion"
+            "IS24"
           ],
           "cost": 6,
-          "faction": "faction_minions",
-          "id": "MJ04_minion",
+          "faction": "factions",
+          "id": "IJ04",
           "type": "warjack"
         },
         {
           "name": "Rocinante",
           "fa": "C",
           "restricted_to": [
-            "MS26_minion"
+            "IS24"
           ],
           "cost": 18,
-          "faction": "faction_minions",
-          "id": "MJ17_minion",
+          "faction": "factions",
+          "id": "IJ17",
           "type": "warjack"
         },
         {
           "name": "Talon",
           "fa": "U",
           "restricted_to": [
-            "MS26_minion"
+            "IS24"
           ],
           "cost": 7,
-          "faction": "faction_minions",
-          "id": "MJ02_minion",
+          "faction": "factions",
+          "id": "IJ02",
           "type": "warjack"
         },
         {
           "name": "Vanguard",
           "fa": "U",
           "restricted_to": [
-            "MS26_minion"
+            "IS24"
           ],
           "cost": 11,
-          "faction": "faction_minions",
-          "id": "MJ03_minion",
+          "faction": "factions",
+          "id": "IJ03",
           "type": "warjack"
         }
       ],
       "label": "Warjacks"
     },
     {
-      "logo": "faction_minions",
-      "id": "faction_minions_warbeasts",
+      "logo": "factions",
+      "id": "factions_warbeasts",
       "entries": [
         {
           "name": "2 Razor Boars",
@@ -268,10 +262,10 @@
             "IW11",
             "IW05",
             "IW13",
-            "IW03_minion"
+            "IS20"
           ],
           "cost": 7,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB09",
           "type": "warbeast"
         },
@@ -284,10 +278,10 @@
             "IW11",
             "IW05",
             "IW13",
-            "IW03_minion"
+            "IS20"
           ],
           "cost": 9,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB01",
           "type": "warbeast"
         },
@@ -300,10 +294,10 @@
             "IW09",
             "IW12",
             "IW14",
-            "IW04_minion"
+            "IS21"
           ],
           "cost": 5,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB04",
           "type": "warbeast"
         },
@@ -311,22 +305,22 @@
           "name": "Snapjaw",
           "fa": "C",
           "restricted_to": [
-            "IW04_minion"
+            "IS21"
           ],
           "cost": 0,
-          "faction": "faction_minions",
-          "id": "Snapjaw_minion",
+          "faction": "factions",
+          "id": "IB16",
           "type": "warbeast"
         },
         {
           "name": "Brine",
           "fa": "C",
           "restricted_to": [
-            "IW03_minion"
+            "IS20"
           ],
           "cost": 0,
-          "faction": "faction_minions",
-          "id": "Brine_minion",
+          "faction": "factions",
+          "id": "IB13",
           "type": "warbeast"
         },
         {
@@ -338,10 +332,10 @@
             "IW11",
             "IW05",
             "IW13",
-            "IW03_minion"
+            "IS20"
           ],
           "cost": 15,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB02",
           "type": "warbeast"
         },
@@ -354,22 +348,11 @@
             "IW11",
             "IW05",
             "IW13",
-            "IW03_minion"
+            "IS20"
           ],
           "cost": 8,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB11",
-          "type": "warbeast"
-        },
-        {
-          "name": "Gorax Rager(Arkadius)",
-          "fa": "U",
-          "restricted_to": [
-            "IW08"
-          ],
-          "cost": 4,
-          "faction": "faction_minions",
-          "id": "OB02_minion_arkadius",
           "type": "warbeast"
         },
         {
@@ -381,10 +364,10 @@
             "IW09",
             "IW12",
             "IW14",
-            "IW04_minion"
+            "IS21"
           ],
           "cost": 7,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB07",
           "type": "warbeast"
         },
@@ -392,22 +375,22 @@
           "name": "Lug",
           "fa": "C",
           "restricted_to": [
-            "IW01_minion"
+            "IS18"
           ],
           "cost": 0,
-          "faction": "faction_minions",
-          "id": "Lug_minion",
+          "faction": "factions",
+          "id": "IB14",
           "type": "warbeast"
         },
         {
           "name": "Skarath",
           "fa": "C",
           "restricted_to": [
-            "IW02_minion"
+            "IS19"
           ],
           "cost": 0,
-          "faction": "faction_minions",
-          "id": "Skarath_minion",
+          "faction": "factions",
+          "id": "IB15",
           "type": "warbeast"
         },
         {
@@ -419,10 +402,10 @@
             "IW09",
             "IW12",
             "IW14",
-            "IW04_minion"
+            "IS21"
           ],
           "cost": 16,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB03",
           "type": "warbeast"
         },
@@ -435,10 +418,10 @@
             "IW11",
             "IW05",
             "IW13",
-            "IW03_minion"
+            "IS20"
           ],
           "cost": 16,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB06",
           "type": "warbeast"
         },
@@ -451,10 +434,10 @@
             "IW09",
             "IW12",
             "IW14",
-            "IW04_minion"
+            "IS21"
           ],
           "cost": 14,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB08",
           "type": "warbeast"
         },
@@ -467,10 +450,10 @@
             "IW11",
             "IW05",
             "IW13",
-            "IW03_minion"
+            "IS20"
           ],
           "cost": 7,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB10",
           "type": "warbeast"
         },
@@ -483,10 +466,10 @@
             "IW09",
             "IW12",
             "IW14",
-            "IW04_minion"
+            "IS21"
           ],
           "cost": 15,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB05",
           "type": "warbeast"
         },
@@ -499,30 +482,19 @@
             "IW09",
             "IW12",
             "IW14",
-            "IW04_minion"
+            "IS21"
           ],
           "cost": 12,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IB12",
-          "type": "warbeast"
-        },
-        {
-          "name": "Boneswarm (Midas - Butcher's Block)",
-          "fa": "U",
-          "restricted_to": [
-            "IW11"
-          ],
-          "cost": 7,
-          "faction": "faction_minions",
-          "id": "IB07_midas",
           "type": "warbeast"
         }
       ],
       "label": "Warbeasts"
     },
     {
-      "logo": "faction_minions",
-      "id": "faction_minions_bes",
+      "logo": "factions",
+      "id": "factions_bes",
       "entries": [
         {
           "name": "Meat Thresher",
@@ -532,7 +504,7 @@
             "faction_trollblood"
           ],
           "cost": 19,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IE01",
           "type": "battleengine"
         },
@@ -544,7 +516,7 @@
             "faction_everblight"
           ],
           "cost": 18,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IE02",
           "type": "battleengine"
         }
@@ -552,8 +524,8 @@
       "label": "Battle engines"
     },
     {
-      "logo": "faction_minions",
-      "id": "faction_minions_units",
+      "logo": "factions",
+      "id": "factions_units",
       "entries": [
         {
           "max": 5,
@@ -570,7 +542,7 @@
             "faction_skorne"
           ],
           "cost": 11,
-          "faction": "faction_minions",
+          "faction": "factions",
           "type": "unit"
         },
         {
@@ -588,7 +560,7 @@
             "faction_skorne"
           ],
           "cost": 9,
-          "faction": "faction_minions",
+          "faction": "factions",
           "type": "unit"
         },
         {
@@ -597,14 +569,14 @@
           "costMax": 10,
           "fa": "C",
           "costMin": 7,
-          "id": "MU05_minion",
+          "id": "IU12",
           "name": "Cylena Raefyll & Nyss Hunters",
           "works_for": [
             "faction_orboros",
             "faction_trollblood"
           ],
           "cost": 7,
-          "faction": "faction_minions",
+          "faction": "factions",
           "type": "unit"
         },
         {
@@ -614,8 +586,8 @@
             "faction_trollblood"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "MU16_minion",
+          "faction": "factions",
+          "id": "IU13",
           "type": "unit"
         },
         {
@@ -628,7 +600,7 @@
             "faction_skorne"
           ],
           "cost": 11,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IU08",
           "type": "unit"
         },
@@ -642,7 +614,7 @@
             "faction_skorne"
           ],
           "cost": 2,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IU05",
           "type": "unit"
         },
@@ -656,7 +628,7 @@
             "faction_skorne"
           ],
           "cost": 11,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IU07",
           "type": "unit"
         },
@@ -666,13 +638,13 @@
           "costMax": 9,
           "fa": "C",
           "costMin": 6,
-          "id": "MU01_minion",
+          "id": "IU11",
           "name": "Greygore Boomhowler & Co.",
           "works_for": [
             "faction_trollblood"
           ],
           "cost": 6,
-          "faction": "faction_minions",
+          "faction": "factions",
           "type": "unit"
         },
         {
@@ -690,7 +662,7 @@
             "faction_skorne"
           ],
           "cost": 5,
-          "faction": "faction_minions",
+          "faction": "factions",
           "type": "unit"
         },
         {
@@ -708,7 +680,7 @@
             "faction_skorne"
           ],
           "cost": 10,
-          "faction": "faction_minions",
+          "faction": "factions",
           "type": "unit"
         },
         {
@@ -726,7 +698,7 @@
             "faction_skorne"
           ],
           "cost": 10,
-          "faction": "faction_minions",
+          "faction": "factions",
           "type": "unit"
         },
         {
@@ -737,7 +709,7 @@
             "faction_trollblood"
           ],
           "cost": 5,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IU10",
           "type": "unit"
         },
@@ -751,7 +723,7 @@
             "faction_skorne"
           ],
           "cost": 5,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IU06",
           "type": "unit"
         },
@@ -761,7 +733,7 @@
           "costMax": 15,
           "fa": "2",
           "costMin": 9,
-          "id": "@ToDo",
+          "id": "IU14",
           "name": "Farrow Commandos",
           "works_for": [
             "faction_orboros",
@@ -770,20 +742,20 @@
             "faction_skorne"
           ],
           "cost": 9,
-          "faction": "faction_minions",
+          "faction": "factions",
           "type": "unit"
         }
       ],
       "label": "Units"
     },
     {
-      "logo": "faction_minions",
-      "id": "faction_minions_UAs",
+      "logo": "factions",
+      "id": "factions_UAs",
       "entries": [
         {
           "fa": "2",
           "restricted_to": "IU03",
-          "id": "UA_for_IU03",
+          "id": "IA01",
           "name": "Farrow Brigand Warlord",
           "works_for": [
             "faction_orboros",
@@ -792,21 +764,21 @@
             "faction_skorne"
           ],
           "cost": 4,
-          "faction": "faction_minions",
+          "faction": "factions",
           "type": "UA"
         }
       ],
       "label": "Unit Attachments"
     },
     {
-      "logo": "faction_minions",
-      "id": "faction_minions_WAs",
+      "logo": "factions",
+      "id": "factions_WAs",
       "entries": [],
       "label": "Weapon Attachments"
     },
     {
-      "logo": "faction_minions",
-      "id": "faction_minions_solos",
+      "logo": "factions",
+      "id": "factions_solos",
       "entries": [
         {
           "name": "Gremlin Swarm",
@@ -818,7 +790,7 @@
             "faction_trollblood"
           ],
           "cost": 3,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS15",
           "type": "solo"
         },
@@ -832,7 +804,7 @@
             "faction_skorne"
           ],
           "cost": 6,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS07",
           "type": "solo"
         },
@@ -845,8 +817,8 @@
             "faction_skorne"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS06_minion",
+          "faction": "factions",
+          "id": "IS06",
           "type": "solo"
         },
         {
@@ -856,8 +828,8 @@
             "faction_trollblood"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "MS26_minion",
+          "faction": "factions",
+          "id": "IS24",
           "type": "soloMarshall"
         },
         {
@@ -867,8 +839,8 @@
             "faction_orboros"
           ],
           "cost": 3,
-          "faction": "faction_minions",
-          "id": "MS01_minion",
+          "faction": "factions",
+          "id": "IS22",
           "type": "solo"
         },
         {
@@ -881,7 +853,7 @@
             "faction_skorne"
           ],
           "cost": 4,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS10",
           "type": "soloAttachment"
         },
@@ -895,7 +867,7 @@
             "faction_skorne"
           ],
           "cost": 4,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS09",
           "type": "solo"
         },
@@ -906,8 +878,8 @@
             "faction_skorne"
           ],
           "cost": 2,
-          "faction": "faction_minions",
-          "id": "MS15_minion",
+          "faction": "factions",
+          "id": "IS23",
           "type": "solo"
         },
         {
@@ -920,8 +892,8 @@
             "faction_skorne"
           ],
           "cost": 5,
-          "faction": "faction_minions",
-          "id": "IS03_minion",
+          "faction": "factions",
+          "id": "IS03",
           "type": "solo"
         },
         {
@@ -934,8 +906,8 @@
             "faction_skorne"
           ],
           "cost": 15,
-          "faction": "faction_minions",
-          "id": "IW03_minion",
+          "faction": "factions",
+          "id": "IS20",
           "type": "soloLesserWarlock"
         },
         {
@@ -947,7 +919,7 @@
             "faction_trollblood"
           ],
           "cost": 6,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS16",
           "type": "solo"
         },
@@ -961,7 +933,7 @@
             "faction_skorne"
           ],
           "cost": 2,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS02",
           "type": "solo"
         },
@@ -973,8 +945,8 @@
             "faction_skorne"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "MS30_minion",
+          "faction": "factions",
+          "id": "IS25",
           "type": "solo"
         },
         {
@@ -985,8 +957,8 @@
             "faction_trollblood"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS05_minion",
+          "faction": "factions",
+          "id": "IS05",
           "type": "solo"
         },
         {
@@ -997,8 +969,8 @@
             "faction_trollblood"
           ],
           "cost": 17,
-          "faction": "faction_minions",
-          "id": "IW02_minion",
+          "faction": "factions",
+          "id": "IS19",
           "type": "soloLesserWarlock"
         },
         {
@@ -1011,7 +983,7 @@
             "faction_skorne"
           ],
           "cost": 4,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS11",
           "type": "solo"
         },
@@ -1024,7 +996,7 @@
             "faction_trollblood"
           ],
           "cost": 6,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS13",
           "type": "solo"
         },
@@ -1038,8 +1010,8 @@
             "faction_skorne"
           ],
           "cost": 17,
-          "faction": "faction_minions",
-          "id": "IW04_minion",
+          "faction": "factions",
+          "id": "IS21",
           "type": "soloLesserWarlock"
         },
         {
@@ -1050,8 +1022,8 @@
             "faction_trollblood"
           ],
           "cost": 3,
-          "faction": "faction_minions",
-          "id": "IS04_minion",
+          "faction": "factions",
+          "id": "IS04",
           "type": "solo"
         },
         {
@@ -1064,7 +1036,7 @@
             "faction_trollblood"
           ],
           "cost": 4,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS14",
           "type": "solo"
         },
@@ -1078,8 +1050,8 @@
             "faction_skorne"
           ],
           "cost": 2,
-          "faction": "faction_minions",
-          "id": "IS12_minion",
+          "faction": "factions",
+          "id": "IS12",
           "type": "solo"
         },
         {
@@ -1092,7 +1064,7 @@
             "faction_skorne"
           ],
           "cost": 6,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS08",
           "type": "solo"
         },
@@ -1104,8 +1076,8 @@
             "faction_trollblood"
           ],
           "cost": 5,
-          "faction": "faction_minions",
-          "id": "IS01_minion",
+          "faction": "factions",
+          "id": "IS01",
           "type": "solo"
         },
         {
@@ -1116,8 +1088,8 @@
             "faction_trollblood"
           ],
           "cost": 16,
-          "faction": "faction_minions",
-          "id": "IW01_minion",
+          "faction": "factions",
+          "id": "IS18",
           "type": "soloLesserWarlock"
         },
         {
@@ -1130,7 +1102,7 @@
             "faction_skorne"
           ],
           "cost": 1,
-          "faction": "faction_minions",
+          "faction": "factions",
           "id": "IS17",
           "type": "solo"
         },
@@ -1144,8 +1116,8 @@
             "faction_skorne"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "@ToDo",
+          "faction": "factions",
+          "id": "IS26",
           "type": "solo"
         },
         {
@@ -1158,8 +1130,8 @@
             "faction_skorne"
           ],
           "cost": 3,
-          "faction": "faction_minions",
-          "id": "@ToDo",
+          "faction": "factions",
+          "id": "IS27",
           "type": "solo"
         }
       ],

@@ -5,7 +5,7 @@
       "id": "faction_menoth_warcasters",
       "entries": [
         {
-          "id": "Pw01",
+          "id": "PW01",
           "type": "warcaster",
           "name": "Kreoss1 (High Exemplar Kreoss)",
           "cost": 29,
@@ -13,7 +13,7 @@
           "faction": "faction_menoth"
         },
         {
-          "id": "Pw02",
+          "id": "PW02",
           "type": "warcaster",
           "name": "High Reclaimer1 (The High Reclaimer)",
           "cost": 32,
@@ -21,7 +21,7 @@
           "faction": "faction_menoth"
         },
         {
-          "id": "Pw03",
+          "id": "PW03",
           "type": "warcaster",
           "name": "Severius1 (Grand Scrutator Severius)",
           "cost": 28,
@@ -29,7 +29,7 @@
           "faction": "faction_menoth"
         },
         {
-          "id": "Pw04",
+          "id": "PW04",
           "type": "warcaster",
           "name": "Feora1 (Feora Priestess of the Flame)",
           "cost": 31,
@@ -93,7 +93,7 @@
           "faction": "faction_menoth"
         },
         {
-          "id": "Px01",
+          "id": "PW12",
           "type": "warcaster",
           "name": "Kreoss2 (Grand Exemplar Kreoss)",
           "cost": 28,
@@ -101,7 +101,7 @@
           "faction": "faction_menoth"
         },
         {
-          "id": "Px02",
+          "id": "PW13",
           "type": "warcaster",
           "name": "High Reclaimer2 (Testament of Menoth)",
           "cost": 27,
@@ -109,7 +109,7 @@
           "faction": "faction_menoth"
         },
         {
-          "id": "Px03",
+          "id": "PW14",
           "type": "warcaster",
           "name": "Severius2 (Hierarch Severius)",
           "cost": 26,
@@ -117,7 +117,7 @@
           "faction": "faction_menoth"
         },
         {
-          "id": "Px04",
+          "id": "PW15",
           "type": "warcaster",
           "name": "Feora2 (Feora Protector of the Flame)",
           "cost": 28,
@@ -125,7 +125,7 @@
           "faction": "faction_menoth"
         },
         {
-          "id": "Px07",
+          "id": "PW16",
           "type": "warcaster",
           "name": "Reznik2 (Servath Reznik Wrath of Ages)",
           "cost": 29,
@@ -133,7 +133,7 @@
           "faction": "faction_menoth"
         },
         {
-          "id": "Pz01",
+          "id": "PW17",
           "type": "warcaster",
           "name": "Kreoss3 (Intercessor Kreoss)",
           "cost": 28,
@@ -142,12 +142,6 @@
         }
       ],
       "label": "Warcasters"
-    },
-    {
-      "logo": "faction_menoth",
-      "id": "faction_menoth_warlocks",
-      "entries": [],
-      "label": "Warlocks"
     },
     {
       "logo": "faction_menoth",

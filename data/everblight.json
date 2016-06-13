@@ -19,7 +19,7 @@
           "faction": "faction_everblight"
         },
         {
-          "id": "Ex06",
+          "id": "EW13",
           "type": "warlock",
           "name": "Absylonia2 (Absylonia Daughter of Everblight)",
           "cost": 28,
@@ -44,7 +44,7 @@
           "faction": "faction_everblight"
         },
         {
-          "id": "Ew01",
+          "id": "EW01",
           "type": "warlock",
           "name": "Lylyth1 (Lylyth Herald of Everblight)",
           "cost": 30,
@@ -52,7 +52,7 @@
           "faction": "faction_everblight"
         },
         {
-          "id": "Ex01",
+          "id": "EW10",
           "type": "warlock",
           "name": "Lylyth2 (Lylyth Shadow of Everblight)",
           "cost": 28,
@@ -60,7 +60,7 @@
           "faction": "faction_everblight"
         },
         {
-          "id": "Ez01",
+          "id": "EW14",
           "type": "warlock",
           "name": "Lylyth3 (Lylyth Reckoning of Everblight)",
           "cost": 29,
@@ -92,7 +92,7 @@
           "faction": "faction_everblight"
         },
         {
-          "id": "Ew02",
+          "id": "EW02",
           "type": "warlock",
           "name": "Thagrosh1 (Thagrosh Prophet of Everblight)",
           "cost": 28,
@@ -100,7 +100,7 @@
           "faction": "faction_everblight"
         },
         {
-          "id": "Ex02",
+          "id": "EW11",
           "type": "warlock",
           "name": "Thagrosh2 (Thagrosh the Messiah)",
           "cost": 25,
@@ -108,7 +108,7 @@
           "faction": "faction_everblight"
         },
         {
-          "id": "Ew03",
+          "id": "EW03",
           "type": "warlock",
           "name": "Vayl1 (Vayl Disciple of Everblight)",
           "cost": 27,
@@ -116,7 +116,7 @@
           "faction": "faction_everblight"
         },
         {
-          "id": "Ex03",
+          "id": "EW12",
           "type": "warlock",
           "name": "Vayl2 (Vayl Consul of Everblight)",
           "cost": 28,
@@ -167,7 +167,7 @@
           "cost": 0,
           "fa": "C",
           "faction": "faction_everblight",
-          "restricted_to": " EW07"
+          "restricted_to": "EW07"
         },
         {
           "id": "EB22",

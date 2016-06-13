@@ -11,7 +11,7 @@
       "id": "faction_skorne_warlocks",
       "entries": [
         {
-          "id": "Sw01",
+          "id": "SW01",
           "type": "warlock",
           "name": " Morghoul1 (Master Tormentor Morghoul)",
           "cost": 30,
@@ -19,7 +19,7 @@
           "faction": "faction_skorne"
         },
         {
-          "id": "Sw02",
+          "id": "SW02",
           "type": "warlock",
           "name": " Makeda1 (Archdomina Makeda)",
           "cost": 29,
@@ -27,7 +27,7 @@
           "faction": "faction_skorne"
         },
         {
-          "id": "Sw03",
+          "id": "SW03",
           "type": "warlock",
           "name": " Hexeris1 (Lord Tyrant Hexeris)",
           "cost": 29,
@@ -83,7 +83,7 @@
           "faction": "faction_skorne"
         },
         {
-          "id": "Sx01",
+          "id": "SW10",
           "type": "warlock",
           "name": " Morghoul2 (Lord Assassin Morghoul)",
           "cost": 29,
@@ -91,7 +91,7 @@
           "faction": "faction_skorne"
         },
         {
-          "id": "Sx02",
+          "id": "SW11",
           "type": "warlock",
           "name": " Makeda2 (Supreme Archdomina Makeda)",
           "cost": 24,
@@ -99,7 +99,7 @@
           "faction": "faction_skorne"
         },
         {
-          "id": "Sx03",
+          "id": "SW12",
           "type": "warlock",
           "name": " Hexeris2 (Lord Arbiter Hexeris)",
           "cost": 27,
@@ -107,7 +107,7 @@
           "faction": "faction_skorne"
         },
         {
-          "id": "Sx04",
+          "id": "SW13",
           "type": "warlock",
           "name": " Xerxis2 (Xerxis  Fury of Halaak)",
           "cost": 29,
@@ -115,7 +115,7 @@
           "faction": "faction_skorne"
         },
         {
-          "id": "Sx05",
+          "id": "SW14",
           "type": "warlock",
           "name": " Zaal2 (Zaal The Ancestral Advocate)",
           "cost": 29,
@@ -123,7 +123,7 @@
           "faction": "faction_skorne"
         },
         {
-          "id": "Sz02",
+          "id": "SW15",
           "type": "warlock",
           "name": " Makeda3 (Makeda & the Exalted Court)",
           "cost": 24,

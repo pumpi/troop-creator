@@ -5,24 +5,24 @@
       "id": "faction_mercs_warcasters",
       "entries": [
         {
-          "id": " MW04",
-          "type": " warcaster",
-          "name": " Ashlynn1 (Ashlynn d'Elyse)",
+          "id": "MW04",
+          "type": "warcaster",
+          "name": "Ashlynn1 (Ashlynn d'Elyse)",
           "cost": 29,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_cygnar",
             "faction_menoth"
           ]
         },
         {
-          "id": " MW06",
-          "type": " warcaster",
-          "name": " Bartolo1  (Captain Bartolo Montador)",
+          "id": "MW06",
+          "type": "warcaster",
+          "name": "Bartolo1  (Captain Bartolo Montador)",
           "cost": 26,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_cryx",
             "faction_cygnar",
@@ -31,12 +31,12 @@
           ]
         },
         {
-          "id": " MW09",
-          "type": " warcaster",
-          "name": " Damiano1 (Captain Damiano)",
+          "id": "MW09",
+          "type": "warcaster",
+          "name": "Damiano1 (Captain Damiano)",
           "cost": 28,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_cryx",
             "faction_cygnar",
@@ -45,45 +45,45 @@
           ]
         },
         {
-          "id": " MW07",
-          "type": " warcaster",
-          "name": " Shae1 (Captain Phinneus Shae)",
+          "id": "MW07",
+          "type": "warcaster",
+          "name": "Shae1 (Captain Phinneus Shae)",
           "cost": 28,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_cygnar"
           ]
         },
         {
-          "id": " MW12",
-          "type": " warcaster",
-          "name": " Cyphon1 (Cognifex Cyphon)",
+          "id": "MW12",
+          "type": "warcaster",
+          "name": "Cyphon1 (Cognifex Cyphon)",
           "cost": 29,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_cryx"
           ]
         },
         {
-          "id": " YX09_mercs",
-          "type": " warcaster",
-          "name": " Constance1 (Constance Blaize Knight of the Prophet)",
+          "id": "MW14",
+          "type": "warcaster",
+          "name": "Constance1 (Constance Blaize Knight of the Prophet)",
           "cost": 30,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_cygnar"
           ]
         },
         {
-          "id": " MW08",
-          "type": " warcaster",
-          "name": " MacBain1 (Drake MacBain)",
+          "id": "MW08",
+          "type": "warcaster",
+          "name": "MacBain1 (Drake MacBain)",
           "cost": 30,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_cryx",
             "faction_cygnar",
@@ -92,12 +92,12 @@
           ]
         },
         {
-          "id": " MW03",
-          "type": " warcaster",
-          "name": " Durgen1 (Durgen Madhammer)",
+          "id": "MW03",
+          "type": "warcaster",
+          "name": "Durgen1 (Durgen Madhammer)",
           "cost": 29,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_cygnar",
             "faction_khador",
@@ -105,23 +105,23 @@
           ]
         },
         {
-          "id": " MW11",
-          "type": " warcaster",
-          "name": " Thexus1 (Exulon Thexus)",
+          "id": "MW11",
+          "type": "warcaster",
+          "name": "Thexus1 (Exulon Thexus)",
           "cost": 29,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_cryx"
           ]
         },
         {
-          "id": " MW05",
-          "type": " warcaster",
-          "name": " Fiona1  (Fiona the Black",
+          "id": "MW05",
+          "type": "warcaster",
+          "name": "Fiona1  (Fiona the Black",
           "cost": 31,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_cryx",
             "faction_cygnar",
@@ -129,12 +129,12 @@
           ]
         },
         {
-          "id": " MW10",
-          "type": " warcaster",
-          "name": " Ossrum1 (General Ossrum)",
+          "id": "MW10",
+          "type": "warcaster",
+          "name": "Ossrum1 (General Ossrum)",
           "cost": 28,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_khador",
             "faction_cygnar",
@@ -142,24 +142,24 @@
           ]
         },
         {
-          "id": " MW02",
-          "type": " warcaster",
-          "name": " Gorten1 (Gorten Grundback)",
+          "id": "MW02",
+          "type": "warcaster",
+          "name": "Gorten1 (Gorten Grundback)",
           "cost": 31,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_khador",
             "faction_cygnar"
           ]
         },
         {
-          "id": " Mw01",
-          "type": " warcaster",
-          "name": " Magnus1 (Magnus  the Traitor)",
+          "id": "MW01",
+          "type": "warcaster",
+          "name": "Magnus1 (Magnus  the Traitor)",
           "cost": 30,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_menoth",
             "faction_khador",
@@ -167,12 +167,12 @@
           ]
         },
         {
-          "id": " Mx01",
-          "type": " warcaster",
-          "name": " Magnus2 (Magnus the Warlord)",
+          "id": "MW13",
+          "type": "warcaster",
+          "name": "Magnus2 (Magnus the Warlord)",
           "cost": 28,
-          "fa": " C",
-          "faction": " faction_mercs",
+          "fa": "C",
+          "faction": "faction_mercs",
           "works_for": [
             "faction_menoth",
             "faction_khador",
@@ -215,17 +215,17 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MU03",
             "MS09",
             "MS20",
             "MS25",
             "MS26",
-            "YA01_mercs"
+            "MA06"
           ],
           "cost": 15,
           "faction": "faction_mercs",
@@ -240,17 +240,17 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MU03",
             "MS09",
             "MS20",
             "MS25",
             "MS26",
-            "YA01_mercs"
+            "MA06"
           ],
           "cost": 6,
           "faction": "faction_mercs",
@@ -266,11 +266,11 @@
             "MW06",
             "MW08",
             "MW09",
-            "YX09_mercs"
+            "MW14"
           ],
           "cost": 17,
           "faction": "faction_mercs",
-          "id": "YJ17_mercs",
+          "id": "MJ25",
           "type": "warjack"
         },
         {
@@ -282,19 +282,19 @@
           ],
           "cost": 10,
           "faction": "faction_mercs",
-          "id": "MM02",
+          "id": "MJ21",
           "type": "warjack"
         },
         {
           "name": "Sentinel",
           "fa": "U",
           "restricted_to": [
-            "Mw01",
-            "Mx01"
+            "MW01",
+            "MW13"
           ],
           "cost": 4,
           "faction": "faction_mercs",
-          "id": "YJ03_mercs",
+          "id": "MJ23",
           "type": "warjack"
         },
         {
@@ -305,17 +305,17 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MU03",
             "MS09",
             "MS20",
             "MS25",
             "MS26",
-            "YA01_mercs"
+            "MA06"
           ],
           "cost": 15,
           "faction": "faction_mercs",
@@ -330,11 +330,11 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MU03",
             "MS09",
             "MS20",
@@ -369,16 +369,16 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MU03",
             "MS09",
             "MS20",
             "MS26",
-            "YA01_mercs"
+            "MA06"
           ],
           "cost": 11,
           "faction": "faction_mercs",
@@ -393,17 +393,17 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MU03",
             "MS09",
             "MS20",
             "MS25",
             "MS26",
-            "YA01_mercs"
+            "MA06"
           ],
           "cost": 15,
           "faction": "faction_mercs",
@@ -418,17 +418,17 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MU03",
             "MS09",
             "MS20",
             "MS25",
             "MS26",
-            "YA01_mercs"
+            "MA06"
           ],
           "cost": 9,
           "faction": "faction_mercs",
@@ -439,8 +439,8 @@
           "name": "Renegade",
           "fa": "2",
           "restricted_to": [
-            "Mw01",
-            "Mx01"
+            "MW01",
+            "MW13"
           ],
           "cost": 10,
           "faction": "faction_mercs",
@@ -466,12 +466,12 @@
           "name": "Defender",
           "fa": "1",
           "restricted_to": [
-            "Mw01",
-            "Mx01"
+            "MW01",
+            "MW13"
           ],
           "cost": 9,
           "faction": "faction_mercs",
-          "id": "YJ07_mercs",
+          "id": "MJ24",
           "type": "warjack"
         },
         {
@@ -482,17 +482,17 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MU03",
             "MS09",
             "MS20",
             "MS25",
             "MS26",
-            "YA01_mercs"
+            "MA06"
           ],
           "cost": 11,
           "faction": "faction_mercs",
@@ -507,17 +507,17 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MU03",
             "MS09",
             "MS20",
             "MS25",
             "MS26",
-            "YA01_mercs"
+            "MA06"
           ],
           "cost": 7,
           "faction": "faction_mercs",
@@ -547,17 +547,17 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MU03",
             "MS09",
             "MS20",
             "MS25",
             "MS26",
-            "YA01_mercs"
+            "MA06"
           ],
           "cost": 14,
           "faction": "faction_mercs",
@@ -572,11 +572,11 @@
             "MW06",
             "MW09",
             "MW07",
-            "YX09_mercs",
+            "MW14",
             "MW08",
             "MW05",
-            "Mw01",
-            "Mx01",
+            "MW01",
+            "MW13",
             "MS25"
           ],
           "cost": 39,
@@ -608,7 +608,7 @@
           ],
           "cost": 11,
           "faction": "faction_mercs",
-          "id": "MM01",
+          "id": "MJ20",
           "type": "warjack"
         },
         {
@@ -650,7 +650,7 @@
           ],
           "cost": 14,
           "faction": "faction_mercs",
-          "id": "MM03",
+          "id": "MJ22",
           "type": "warjack"
         }
       ],
@@ -664,7 +664,7 @@
           "name": "Brine",
           "fa": "C",
           "restricted_to": [
-            "IW03_mercs"
+            "MS44"
           ],
           "cost": 0,
           "faction": "faction_mercs",
@@ -675,7 +675,7 @@
           "name": "Splatter Boar",
           "fa": "U",
           "restricted_to": [
-            "IW03_mercs"
+            "MS44"
           ],
           "cost": 5,
           "faction": "faction_mercs",
@@ -686,7 +686,7 @@
           "name": "Gun Boar",
           "fa": "U",
           "restricted_to": [
-            "IW03_mercs"
+            "MS44"
           ],
           "cost": 5,
           "faction": "faction_mercs",
@@ -697,7 +697,7 @@
           "name": "Road Hog",
           "fa": "U",
           "restricted_to": [
-            "IW03_mercs"
+            "MS44"
           ],
           "cost": 9,
           "faction": "faction_mercs",
@@ -708,7 +708,7 @@
           "name": "Bull Snapper",
           "fa": "U",
           "restricted_to": [
-            "IW04_mercs"
+            "MS45"
           ],
           "cost": 3,
           "faction": "faction_mercs",
@@ -719,7 +719,7 @@
           "name": "Boneswarm",
           "fa": "U",
           "restricted_to": [
-            "IW04_mercs"
+            "MS45"
           ],
           "cost": 4,
           "faction": "faction_mercs",
@@ -730,7 +730,7 @@
           "name": "Blind Walker",
           "fa": "U",
           "restricted_to": [
-            "IW04_mercs"
+            "MS45"
           ],
           "cost": 7,
           "faction": "faction_mercs",
@@ -741,7 +741,7 @@
           "name": "Lug",
           "fa": "C",
           "restricted_to": [
-            "IW01_mercs"
+            "MS42"
           ],
           "cost": 0,
           "faction": "faction_mercs",
@@ -752,7 +752,7 @@
           "name": "Razor Boar",
           "fa": "U",
           "restricted_to": [
-            "IW03_mercs"
+            "MS44"
           ],
           "cost": 2,
           "faction": "faction_mercs",
@@ -763,7 +763,7 @@
           "name": "Snapjaw",
           "fa": "C",
           "restricted_to": [
-            "IW04_mercs"
+            "MS45"
           ],
           "cost": 0,
           "faction": "faction_mercs",
@@ -774,7 +774,7 @@
           "name": "Swamp Horror",
           "fa": "U",
           "restricted_to": [
-            "IW04_mercs"
+            "MS45"
           ],
           "cost": 8,
           "faction": "faction_mercs",
@@ -785,7 +785,7 @@
           "name": "Skarath",
           "fa": "C",
           "restricted_to": [
-            "IW02_mercs"
+            "MS43"
           ],
           "cost": 0,
           "faction": "faction_mercs",
@@ -796,7 +796,7 @@
           "name": "Battle Boar",
           "fa": "U",
           "restricted_to": [
-            "IW03_mercs"
+            "MS44"
           ],
           "cost": 4,
           "faction": "faction_mercs",
@@ -807,7 +807,7 @@
           "name": "War Hog",
           "fa": "U",
           "restricted_to": [
-            "IW03_mercs"
+            "MS44"
           ],
           "cost": 8,
           "faction": "faction_mercs",
@@ -818,7 +818,7 @@
           "name": "Ironback Spitter",
           "fa": "U",
           "restricted_to": [
-            "IW04_mercs"
+            "MS45"
           ],
           "cost": 8,
           "faction": "faction_mercs",
@@ -829,7 +829,7 @@
           "name": "Blackhide Wrastler",
           "fa": "U",
           "restricted_to": [
-            "IW04_mercs"
+            "MS45"
           ],
           "cost": 9,
           "faction": "faction_mercs",
@@ -868,7 +868,7 @@
           "costMax": 15,
           "fa": "2",
           "costMin": 9,
-          "id": "PU13_mercs",
+          "id": "MU28",
           "name": "Idrian Skirmishers",
           "cost": 9,
           "faction": "faction_mercs",
@@ -880,7 +880,7 @@
           "costMax": 11,
           "fa": "3",
           "costMin": 7,
-          "id": "CU15_mercs",
+          "id": "MU24",
           "name": "Cephalyx Mind Bender & Drudges",
           "cost": 4,
           "faction": "faction_mercs",
@@ -954,7 +954,7 @@
           "fa": "2",
           "cost": 6,
           "faction": "faction_mercs",
-          "id": "YU01_mercs",
+          "id": "MU29",
           "type": "unit"
         },
         {
@@ -1029,7 +1029,7 @@
           "costMax": 10,
           "fa": "2",
           "costMin": 6,
-          "id": "YU14_mercs",
+          "id": "MU37",
           "name": "Trencher Commandos",
           "cost": 6,
           "faction": "faction_mercs",
@@ -1055,7 +1055,7 @@
           ],
           "cost": 3,
           "faction": "faction_mercs",
-          "id": "IU10_mercs",
+          "id": "MU25",
           "type": "unit"
         },
         {
@@ -1135,7 +1135,7 @@
           "costMax": 15,
           "fa": "2",
           "costMin": 9,
-          "id": "KU15_mercs",
+          "id": "MU26",
           "name": "Kayazy Assassins",
           "cost": 9,
           "faction": "faction_mercs",
@@ -1146,7 +1146,7 @@
           "fa": "2",
           "cost": 5,
           "faction": "faction_mercs",
-          "id": "KU18_mercs",
+          "id": "MU27",
           "type": "unit"
         },
         {
@@ -1154,7 +1154,7 @@
           "fa": "2",
           "cost": 3,
           "faction": "faction_mercs",
-          "id": "YU07_mercs",
+          "id": "MU33",
           "type": "unit"
         },
         {
@@ -1163,7 +1163,7 @@
           "costMax": 12,
           "fa": "3",
           "costMin": 8,
-          "id": "CU13_mercs",
+          "id": "MU22",
           "name": "Cephalyx Mind Slaver & Drudges",
           "cost": 4,
           "faction": "faction_mercs",
@@ -1175,7 +1175,7 @@
           "costMax": 15,
           "fa": "2",
           "costMin": 9,
-          "id": "YU12_mercs",
+          "id": "MU35",
           "name": "Precursor Knights",
           "cost": 9,
           "faction": "faction_mercs",
@@ -1186,7 +1186,7 @@
           "fa": "3",
           "cost": 8,
           "faction": "faction_mercs",
-          "id": "CU14_mercs",
+          "id": "MU23",
           "type": "unit"
         },
         {
@@ -1215,7 +1215,7 @@
           "fa": "2",
           "cost": 2,
           "faction": "faction_mercs",
-          "id": "YU06_mercs",
+          "id": "MU32",
           "type": "unit"
         },
         {
@@ -1240,7 +1240,7 @@
           "costMax": 10,
           "fa": "2",
           "costMin": 6,
-          "id": "YU02_mercs",
+          "id": "MU30",
           "name": "Long Gunner Infantry",
           "cost": 6,
           "faction": "faction_mercs",
@@ -1252,7 +1252,7 @@
           "costMax": 6,
           "fa": "2",
           "costMin": 4,
-          "id": "YU08_mercs",
+          "id": "MU34",
           "name": "Sword Knights",
           "cost": 4,
           "faction": "faction_mercs",
@@ -1282,7 +1282,7 @@
           "costMax": 10,
           "fa": "2",
           "costMin": 6,
-          "id": "YU05_mercs",
+          "id": "MU31",
           "name": "Trencher Infantry",
           "cost": 6,
           "faction": "faction_mercs",
@@ -1323,7 +1323,7 @@
           "fa": "2",
           "cost": 5,
           "faction": "faction_mercs",
-          "id": "YU13_mercs",
+          "id": "MU36",
           "type": "unit"
         },
         {
@@ -1355,9 +1355,9 @@
           "name": "Idrian Skirmishers Chieftain & Guide",
           "fa": "2",
           "cost": 5,
-          "restricted_to": "PU13_mercs",
+          "restricted_to": "MU28",
           "faction": "faction_mercs",
-          "id": "PA03_mercs",
+          "id": "MA05",
           "type": "UA"
         },
         {
@@ -1392,54 +1392,54 @@
           "name": "Arcane Tempest Gun Mage Officer",
           "fa": "1",
           "cost": 2,
-          "restricted_to": "YU01_mercs",
+          "restricted_to": "MU29",
           "faction": "faction_mercs",
-          "id": "YA01_mercs",
+          "id": "MA06",
           "type": "UAMarshall"
         },
         {
           "name": "Kayazy Assassin Underboss",
           "fa": "2",
           "cost": 4,
-          "restricted_to": "KU15_mercs",
+          "restricted_to": "MU26",
           "faction": "faction_mercs",
-          "id": "KA04_mercs",
+          "id": "MA04",
           "type": "UA"
         },
         {
           "name": "Precursor Knight Officer & Standard",
           "fa": "2",
           "cost": 4,
-          "restricted_to": "YU12_mercs",
+          "restricted_to": "MU35",
           "faction": "faction_mercs",
-          "id": "YA06_mercs",
+          "id": "MA09",
           "type": "UA"
         },
         {
           "name": "Long Gunner Infantry Officer & Standard",
           "fa": "1",
           "cost": 2,
-          "restricted_to": "YU02_mercs",
+          "restricted_to": "MU30",
           "faction": "faction_mercs",
-          "id": "YA07_mercs",
+          "id": "MA10",
           "type": "UA"
         },
         {
           "name": "Sword Knight Officer & Standard",
           "fa": "1",
           "cost": 2,
-          "restricted_to": "YU08_mercs",
+          "restricted_to": "MU34",
           "faction": "faction_mercs",
-          "id": "YA05_mercs",
+          "id": "MA08",
           "type": "UA"
         },
         {
           "name": "Trencher Infantry Officer & Sniper",
           "fa": "1",
           "cost": 3,
-          "restricted_to": "YU05_mercs",
+          "restricted_to": "MU31",
           "faction": "faction_mercs",
-          "id": "YA03_mercs",
+          "id": "MA07",
           "type": "UAMarshall"
         },
         {
@@ -1464,7 +1464,7 @@
             "MU18",
             "MU20"
           ],
-          "id": "MS28",
+          "id": "MA11",
           "name": "Cephalyx Dominator",
           "works_for": [
             "faction_cryx"
@@ -1500,20 +1500,20 @@
           "name": "Trencher Commandos Scattergunner",
           "fa": "2",
           "cost": 1,
-          "restricted_to": "YU14_mercs",
+          "restricted_to": "MU37",
           "max_attach": 3,
           "faction": "faction_mercs",
-          "id": "YA08_mercs",
+          "id": "MA13",
           "type": "WA"
         },
         {
           "name": "Trencher Infantry Grenadier",
           "fa": "2",
           "cost": 1,
-          "restricted_to": "YU05_mercs",
+          "restricted_to": "MU31",
           "max_attach": 3,
           "faction": "faction_mercs",
-          "id": "YA04_mercs",
+          "id": "MA12",
           "type": "WA"
         }
       ],
@@ -1543,7 +1543,7 @@
           ],
           "cost": 17,
           "faction": "faction_mercs",
-          "id": "IW04_mercs",
+          "id": "MS45",
           "type": "soloLesserWarlock"
         },
         {
@@ -1581,7 +1581,7 @@
           ],
           "cost": 3,
           "faction": "faction_mercs",
-          "id": "IS04_mercs",
+          "id": "MS38",
           "type": "solo"
         },
         {
@@ -1643,7 +1643,7 @@
           ],
           "cost": 9,
           "faction": "faction_mercs",
-          "id": "IW02_mercs",
+          "id": "MS43",
           "type": "soloLesserWarlock"
         },
         {
@@ -1651,7 +1651,7 @@
           "fa": "2",
           "cost": 5,
           "faction": "faction_mercs",
-          "id": "CS06_mercs",
+          "id": "MS35",
           "type": "solo"
         },
         {
@@ -1755,7 +1755,7 @@
           ],
           "cost": 2,
           "faction": "faction_mercs",
-          "id": "IS12_mercs",
+          "id": "MS41",
           "type": "solo"
         },
         {
@@ -1763,7 +1763,7 @@
           "fa": "2",
           "cost": 4,
           "faction": "faction_mercs",
-          "id": "CS02_mercs",
+          "id": "MS33",
           "type": "solo"
         },
         {
@@ -1785,7 +1785,7 @@
           "fa": "3",
           "cost": 2,
           "faction": "faction_mercs",
-          "id": "CS05_mercs",
+          "id": "MS34",
           "type": "solo"
         },
         {
@@ -1808,7 +1808,7 @@
           ],
           "cost": 4,
           "faction": "faction_mercs",
-          "id": "IS05_mercs",
+          "id": "MS39",
           "type": "solo"
         },
         {
@@ -1822,7 +1822,7 @@
           ],
           "cost": 15,
           "faction": "faction_mercs",
-          "id": "IW03_mercs",
+          "id": "MS44",
           "type": "soloLesserWarlock"
         },
         {
@@ -1835,7 +1835,7 @@
           ],
           "cost": 5,
           "faction": "faction_mercs",
-          "id": "IS01_mercs",
+          "id": "MS36",
           "type": "solo"
         },
         {
@@ -1889,7 +1889,7 @@
           ],
           "cost": 5,
           "faction": "faction_mercs",
-          "id": "IS03_mercs",
+          "id": "MS37",
           "type": "solo"
         },
         {
@@ -1935,7 +1935,7 @@
           "fa": "C",
           "cost": 16,
           "faction": "faction_mercs",
-          "id": "IW01_mercs",
+          "id": "MS42",
           "type": "soloLesserWarlock"
         },
         {
@@ -1976,7 +1976,7 @@
           ],
           "cost": 6,
           "faction": "faction_mercs",
-          "id": "MS01e",
+          "id": "MS28",
           "type": "solo"
         },
         {
@@ -2039,7 +2039,7 @@
           ],
           "cost": 4,
           "faction": "faction_mercs",
-          "id": "IS06_mercs",
+          "id": "MS40",
           "type": "solo"
         },
         {

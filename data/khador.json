@@ -5,7 +5,7 @@
       "id": "faction_khador_warcasters",
       "entries": [
         {
-          "id": "Kw01",
+          "id": "KW01",
           "type": "warcaster",
           "name": " Butcher1 (The Butcher of Khardov)",
           "cost": 28,
@@ -13,7 +13,7 @@
           "faction": "faction_khador"
         },
         {
-          "id": "Kx01",
+          "id": "KW11",
           "type": "warcaster",
           "name": " Butcher2 (Kommander Orsus Zoktavir)",
           "cost": 28,
@@ -21,7 +21,7 @@
           "faction": "faction_khador"
         },
         {
-          "id": "Kz01",
+          "id": "KW16",
           "type": "warcaster",
           "name": " Butcher3 (Kommander Zoktavir The Butcher Unleashed)",
           "cost": 22,
@@ -37,7 +37,7 @@
           "faction": "faction_khador"
         },
         {
-          "id": "Kw04",
+          "id": "KW04",
           "type": "warcaster",
           "name": " Irusk1 (Kommandant Irusk)",
           "cost": 27,
@@ -45,7 +45,7 @@
           "faction": "faction_khador"
         },
         {
-          "id": "Kx04",
+          "id": "KW14",
           "type": "warcaster",
           "name": " Irusk2 (Supreme Kommandant Irusk)",
           "cost": 27,
@@ -75,10 +75,10 @@
           "cost": 18,
           "fa": "C",
           "faction": "faction_khador",
-          "attachment": "Scrapjack"
+          "attachment": "KJ21"
         },
         {
-          "id": "Kw02",
+          "id": "KW02",
           "type": "warcaster",
           "name": " Sorscha1 (Kommander Sorscha)",
           "cost": 29,
@@ -86,7 +86,7 @@
           "faction": "faction_khador"
         },
         {
-          "id": "Kx02",
+          "id": "KW12",
           "type": "warcaster",
           "name": " Sorscha2 (Forward Kommander Sorscha)",
           "cost": 27,
@@ -102,7 +102,7 @@
           "faction": "faction_khador"
         },
         {
-          "id": "Kw03",
+          "id": "KW03",
           "type": "warcaster",
           "name": " Vladimir1 (Vladimir The Dark Prince)",
           "cost": 28,
@@ -110,7 +110,7 @@
           "faction": "faction_khador"
         },
         {
-          "id": "Kx03",
+          "id": "KW13",
           "type": "warcaster",
           "name": " Vladimir2 (Vladimir Tzepesci The Dark Champion)",
           "cost": 27,
@@ -118,7 +118,7 @@
           "faction": "faction_khador"
         },
         {
-          "id": "Kz03",
+          "id": "KW17",
           "type": "warcaster",
           "name": " Vladimir3 (Vladimir Tzepesci Great Prince of Umbrey)",
           "cost": 27,
@@ -134,7 +134,7 @@
           "faction": "faction_khador"
         },
         {
-          "id": "Kx06",
+          "id": "KW15",
           "type": "warcaster",
           "name": " Zerkova2 (Obavnik Kommander Zerkova and Reaver Guard)",
           "cost": 24,
@@ -143,12 +143,6 @@
         }
       ],
       "label": "Warcasters"
-    },
-    {
-      "logo": "faction_khador",
-      "id": "faction_khador_warlocks",
-      "entries": [],
-      "label": "Warlocks"
     },
     {
       "logo": "faction_khador",
@@ -299,7 +293,7 @@
           "faction": "faction_khador"
         },
         {
-          "id": "Scrapjack",
+          "id": "KJ21",
           "type": "warjack",
           "name": " Scrapjack",
           "cost": 0,

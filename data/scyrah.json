@@ -5,7 +5,7 @@
       "id": "faction_retribution_warcasters",
       "entries": [
         {
-          "id": "Rx02",
+          "id": "RW10",
           "type": "warcaster",
           "name": " Vyros2 (Vyros Incissar of the Dawnguard)",
           "cost": 27,
@@ -13,7 +13,7 @@
           "faction": "faction_retribution"
         },
         {
-          "id": "Rw02",
+          "id": "RW02",
           "type": "warcaster",
           "name": " Vyros1 (Dawnlord Vyros)",
           "cost": 28,
@@ -86,12 +86,6 @@
         }
       ],
       "label": "Warcasters"
-    },
-    {
-      "logo": "faction_retribution",
-      "id": "faction_retribution_warlocks",
-      "entries": [],
-      "label": "Warlocks"
     },
     {
       "logo": "faction_retribution",
@@ -511,7 +505,7 @@
       "id": "faction_retribution_solos",
       "entries": [
         {
-          "id": "RS11",
+          "id": "RS10",
           "type": "soloMarshall",
           "name": " House Shyeel Artificer",
           "cost": 5,
@@ -527,7 +521,7 @@
           "faction": "faction_retribution"
         },
         {
-          "id": "RS12",
+          "id": "RS11",
           "type": "soloJourneyMan",
           "name": " Elara Tyro of The Third Chamber",
           "cost": 4,
@@ -535,7 +529,7 @@
           "faction": "faction_retribution"
         },
         {
-          "id": "RS14",
+          "id": "RS13",
           "type": "solo",
           "name": " Soulless Voidtracer",
           "cost": 2,
@@ -567,7 +561,7 @@
           "faction": "faction_retribution"
         },
         {
-          "id": "RS15",
+          "id": "RS14",
           "type": "solo",
           "name": " Lys Healer",
           "cost": 3,
@@ -575,7 +569,7 @@
           "faction": "faction_retribution"
         },
         {
-          "id": "RS13",
+          "id": "RS12",
           "type": "solo",
           "name": " Houseguard Thane",
           "cost": 4,
@@ -599,7 +593,7 @@
           "faction": "faction_retribution"
         },
         {
-          "id": "RS10",
+          "id": "RS09",
           "type": "solo",
           "name": " Fane Knight Skeryth Issyen",
           "cost": 8,

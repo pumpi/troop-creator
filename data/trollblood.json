@@ -11,33 +11,33 @@
       "id": "faction_trollblood_warlocks",
       "entries": [
         {
-          "id": "Tw01",
+          "id": "TW01",
           "type": "warlock",
-          "name": " Madrak1 (Madrak Ironhide Thornwood Chieftain)",
+          "name": "Madrak1 (Madrak Ironhide Thornwood Chieftain)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_trollblood"
         },
         {
-          "id": "Tw02",
+          "id": "TW02",
           "type": "warlock",
-          "name": " Hoarluk1 (Hoarluk Doomshaper Shaman of the Gnarls)",
+          "name": "Hoarluk1 (Hoarluk Doomshaper Shaman of the Gnarls)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_trollblood"
         },
         {
-          "id": "Tw03",
+          "id": "TW03",
           "type": "warlock",
-          "name": " Grissel1 (Grissel Bloodsong Fell Caller)",
+          "name": "Grissel1 (Grissel Bloodsong Fell Caller)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_trollblood"
         },
         {
-          "id": "Tw04",
+          "id": "TW04",
           "type": "warlock",
-          "name": " Grim1 (Grim Angus)",
+          "name": "Grim1 (Grim Angus)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -45,16 +45,16 @@
         {
           "id": "TW05",
           "type": "warlock",
-          "name": " Borka1 (Borka Kegslayer & Pyg Keg Carrier)",
+          "name": "Borka1 (Borka Kegslayer & Pyg Keg Carrier)",
           "cost": 28,
           "fa": "C",
           "faction": "faction_trollblood",
-          "attachment": "TS13"
+          "attachment": "TS09"
         },
         {
           "id": "TW06",
           "type": "warlock",
-          "name": " Calandra(Calandra Truthsayer Oracle of the Glimmerwood)",
+          "name": "Calandra(Calandra Truthsayer Oracle of the Glimmerwood)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -62,7 +62,7 @@
         {
           "id": "TW07",
           "type": "warlock",
-          "name": " Gunnbjorn (Captain Gunnbjorn)",
+          "name": "Gunnbjorn (Captain Gunnbjorn)",
           "cost": 28,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -70,7 +70,7 @@
         {
           "id": "TW08",
           "type": "warlock",
-          "name": " Jarl1(Jarl Skuld Devil of the Thornwood)",
+          "name": "Jarl1(Jarl Skuld Devil of the Thornwood)",
           "cost": 30,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -78,58 +78,59 @@
         {
           "id": "TW09",
           "type": "warlock",
-          "name": " Ragnor (Ragnor Skysplitter The Runemaster)",
+          "name": "Ragnor (Ragnor Skysplitter The Runemaster)",
           "cost": 30,
           "fa": "C",
           "faction": "faction_trollblood"
         },
         {
-          "id": "Tx01",
+          "id": "TW10",
           "type": "warlock",
-          "name": " Madrak2 (Madrak Ironhide World Ender)",
+          "name": "Madrak2 (Madrak Ironhide World Ender)",
           "cost": 28,
           "fa": "C",
           "faction": "faction_trollblood"
         },
         {
-          "id": "Tx02",
+          "id": "TW11",
           "type": "warlock",
-          "name": " Hoarluk2 (Hoarluk Doomshaper Rage of Dhunia)",
+          "name": "Hoarluk2 (Hoarluk Doomshaper Rage of Dhunia)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_trollblood"
         },
         {
-          "id": "Tx03",
+          "id": "TW12",
           "type": "warlock",
-          "name": " Grissel2 (Grissel Bloodsong Marshal of the Kriels)",
+          "name": "Grissel2 (Grissel Bloodsong Marshal of the Kriels)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_trollblood"
         },
         {
-          "id": "Tx04",
+          "id": "TW13",
           "type": "warlock",
-          "name": " Grim2 (Hunters Grim)",
+          "name": "Grim2 (Hunters Grim)",
           "cost": 25,
           "fa": "C",
           "faction": "faction_trollblood"
         },
         {
-          "id": "TX05",
+          "id": "TW15",
           "type": "warlock",
-          "name": " Borka2 (Borka Vengeance of the Rimeshaws)",
+          "name": "Borka2 (Borka Vengeance of the Rimeshaws)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_trollblood"
         },
         {
-          "id": "Tz02",
+          "id": "TW16",
           "type": "warlock",
-          "name": " Hoarluk3 (Hoarluk Doomshaper Dire Prophet & Scroll Bearers)",
+          "name": "Hoarluk3 (Hoarluk Doomshaper Dire Prophet & Scroll Bearers)",
           "cost": 26,
           "fa": "C",
-          "faction": "faction_trollblood"
+          "faction": "faction_trollblood",
+          "attachment": "TS13"
         }
       ],
       "label": "Warlocks"
@@ -147,7 +148,7 @@
         {
           "id": "TB08",
           "type": "warbeast",
-          "name": " Dire Troll Mauler",
+          "name": "Dire Troll Mauler",
           "cost": 15,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -155,7 +156,7 @@
         {
           "id": "TB07",
           "type": "warbeast",
-          "name": " Dire Troll Blitzer",
+          "name": "Dire Troll Blitzer",
           "cost": 16,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -163,7 +164,7 @@
         {
           "id": "TB03",
           "type": "warbeast",
-          "name": " Troll Axer",
+          "name": "Troll Axer",
           "cost": 10,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -171,7 +172,7 @@
         {
           "id": "TB09",
           "type": "warbeast",
-          "name": " Earthborn Dire Troll",
+          "name": "Earthborn Dire Troll",
           "cost": 15,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -179,7 +180,7 @@
         {
           "id": "TB15",
           "type": "warbeast",
-          "name": " Night Troll",
+          "name": "Night Troll",
           "cost": 7,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -187,7 +188,7 @@
         {
           "id": "TB12",
           "type": "warbeast",
-          "name": " Swamp Troll",
+          "name": "Swamp Troll",
           "cost": 8,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -195,7 +196,7 @@
         {
           "id": "TB04",
           "type": "warbeast",
-          "name": " Troll Bouncer",
+          "name": "Troll Bouncer",
           "cost": 9,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -203,7 +204,7 @@
         {
           "id": "TB18",
           "type": "warbeast",
-          "name": " Glacier King",
+          "name": "Glacier King",
           "cost": 35,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -211,7 +212,7 @@
         {
           "id": "TB01",
           "type": "warbeast",
-          "name": " Pyre Troll",
+          "name": "Pyre Troll",
           "cost": 9,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -219,7 +220,7 @@
         {
           "id": "TB16",
           "type": "warbeast",
-          "name": " Mountain King",
+          "name": "Mountain King",
           "cost": 36,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -227,7 +228,7 @@
         {
           "id": "TB17",
           "type": "warbeast",
-          "name": " Dozer & Smigg",
+          "name": "Dozer & Smigg",
           "cost": 18,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -235,7 +236,7 @@
         {
           "id": "TB06",
           "type": "warbeast",
-          "name": " Winter Troll",
+          "name": "Winter Troll",
           "cost": 8,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -243,7 +244,7 @@
         {
           "id": "TB05",
           "type": "warbeast",
-          "name": " Troll Impaler",
+          "name": "Troll Impaler",
           "cost": 11,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -251,7 +252,7 @@
         {
           "id": "TB10",
           "type": "warbeast",
-          "name": " Mulg the Ancient",
+          "name": "Mulg the Ancient",
           "cost": 19,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -259,7 +260,7 @@
         {
           "id": "TB14",
           "type": "warbeast",
-          "name": " Storm Troll",
+          "name": "Storm Troll",
           "cost": 9,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -267,7 +268,7 @@
         {
           "id": "TB02",
           "type": "warbeast",
-          "name": " Slag Troll",
+          "name": "Slag Troll",
           "cost": 10,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -275,7 +276,7 @@
         {
           "id": "TB11",
           "type": "warbeast",
-          "name": " Dire Troll Bomber",
+          "name": "Dire Troll Bomber",
           "cost": 19,
           "fa": "U",
           "faction": "faction_trollblood"
@@ -283,7 +284,7 @@
         {
           "id": "TB13",
           "type": "warbeast",
-          "name": " Rök",
+          "name": "Rök",
           "cost": 21,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -298,7 +299,7 @@
         {
           "id": "TE01",
           "type": "battleengine",
-          "name": " Trollkin War Wagon",
+          "name": "Trollkin War Wagon",
           "cost": 18,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -313,7 +314,7 @@
         {
           "id": "TU01",
           "type": "unit",
-          "name": " Kriel Warriors",
+          "name": "Kriel Warriors",
           "cost": 7,
           "costMin": 7,
           "costMax": 11,
@@ -325,7 +326,7 @@
         {
           "id": "TU02",
           "type": "unit",
-          "name": " Krielstone Bearer & Stone Scribes",
+          "name": "Krielstone Bearer & Stone Scribes",
           "cost": 6,
           "costMin": 6,
           "costMax": 9,
@@ -337,7 +338,7 @@
         {
           "id": "TU03",
           "type": "unit",
-          "name": " Pyg Burrowers",
+          "name": "Pyg Burrowers",
           "cost": 8,
           "costMin": 8,
           "costMax": 13,
@@ -349,7 +350,7 @@
         {
           "id": "TU04",
           "type": "unit",
-          "name": " Pyg Bushwackers",
+          "name": "Pyg Bushwackers",
           "cost": 9,
           "costMin": 9,
           "costMax": 15,
@@ -361,7 +362,7 @@
         {
           "id": "TU05",
           "type": "unit",
-          "name": " Thumper Crew",
+          "name": "Thumper Crew",
           "cost": 5,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -369,7 +370,7 @@
         {
           "id": "TU06",
           "type": "unit",
-          "name": " Trollkin Champions",
+          "name": "Trollkin Champions",
           "cost": 6,
           "costMin": 10,
           "costMax": 17,
@@ -381,7 +382,7 @@
         {
           "id": "TU07",
           "type": "unit",
-          "name": " Trollkin Fennblades",
+          "name": "Trollkin Fennblades",
           "cost": 9,
           "costMin": 9,
           "costMax": 15,
@@ -393,7 +394,7 @@
         {
           "id": "TU08",
           "type": "unit",
-          "name": " Long Riders",
+          "name": "Long Riders",
           "cost": 12,
           "costMin": 12,
           "costMax": 20,
@@ -405,7 +406,7 @@
         {
           "id": "TU09",
           "type": "unit",
-          "name": " Trollkin Runeshapers",
+          "name": "Trollkin Runeshapers",
           "cost": 9,
           "fa": "3",
           "faction": "faction_trollblood"
@@ -413,7 +414,7 @@
         {
           "id": "TU10",
           "type": "unit",
-          "name": " Scattergunners",
+          "name": "Scattergunners",
           "cost": 8,
           "costMin": 8,
           "costMax": 14,
@@ -425,7 +426,7 @@
         {
           "id": "TU11",
           "type": "unit",
-          "name": " Trollkin Scouts",
+          "name": "Trollkin Scouts",
           "cost": 10,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -433,7 +434,7 @@
         {
           "id": "TU12",
           "type": "unit",
-          "name": " Trollkin Sluggers",
+          "name": "Trollkin Sluggers",
           "cost": 9,
           "costMin": 8,
           "costMax": 13,
@@ -445,7 +446,7 @@
         {
           "id": "TU13",
           "type": "unit",
-          "name": " Sons of Bragg",
+          "name": "Sons of Bragg",
           "cost": 11,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -453,7 +454,7 @@
         {
           "id": "TU14",
           "type": "unit",
-          "name": " Trollkin Warders",
+          "name": "Trollkin Warders",
           "cost": 10,
           "costMin": 10,
           "costMax": 17,
@@ -465,7 +466,7 @@
         {
           "id": "TU15",
           "type": "unit",
-          "name": " Northkin Fire Eaters",
+          "name": "Northkin Fire Eaters",
           "cost": 7,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -473,7 +474,7 @@
         {
           "id": "TU16",
           "type": "unit",
-          "name": " Trollkin Highwaymen",
+          "name": "Trollkin Highwaymen",
           "cost": 5,
           "costMin": 9,
           "costMax": 15,
@@ -485,7 +486,7 @@
         {
           "id": "TU18",
           "type": "unit",
-          "name": " Pummeler Crew",
+          "name": "Pummeler Crew",
           "cost": 6,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -493,7 +494,7 @@
         {
           "id": "TU17",
           "type": "unit",
-          "name": " Dhunian Knot",
+          "name": "Dhunian Knot",
           "cost": 6,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -508,7 +509,7 @@
         {
           "id": "TA05",
           "type": "UA",
-          "name": " Skaldi Bonehammer",
+          "name": "Skaldi Bonehammer",
           "cost": 5,
           "fa": "C",
           "faction": "faction_trollblood",
@@ -517,7 +518,7 @@
         {
           "id": "TA03",
           "type": "UA",
-          "name": " Stone Scribe Elder",
+          "name": "Stone Scribe Elder",
           "cost": 3,
           "fa": "1",
           "faction": "faction_trollblood",
@@ -526,7 +527,7 @@
         {
           "id": "TA07",
           "type": "UA",
-          "name": " Pyg Bushwhacker Officer & Mortar",
+          "name": "Pyg Bushwhacker Officer & Mortar",
           "cost": 5,
           "fa": "2",
           "faction": "faction_trollblood",
@@ -535,7 +536,7 @@
         {
           "id": "TA04",
           "type": "UA",
-          "name": " Trollkin Fennblade Officer & Drummer",
+          "name": "Trollkin Fennblade Officer & Drummer",
           "cost": 5,
           "fa": "2",
           "faction": "faction_trollblood",
@@ -544,7 +545,7 @@
         {
           "id": "TA06",
           "type": "UA",
-          "name": " Scattergunner Officer & Standard",
+          "name": "Scattergunner Officer & Standard",
           "cost": 4,
           "fa": "3",
           "faction": "faction_trollblood",
@@ -553,7 +554,7 @@
         {
           "id": "TA01",
           "type": "UA",
-          "name": " Kriel Warrior Standard Bearer & Piper",
+          "name": "Kriel Warrior Standard Bearer & Piper",
           "cost": 3,
           "fa": "U",
           "faction": "faction_trollblood",
@@ -569,7 +570,7 @@
         {
           "id": "TA08",
           "type": "WA",
-          "name": " Trollkin Sorcerer",
+          "name": "Trollkin Sorcerer",
           "cost": 3,
           "fa": "U",
           "faction": "faction_trollblood",
@@ -595,7 +596,7 @@
         {
           "id": "TA02",
           "type": "WA",
-          "name": " Kriel Warrior Caber Thrower",
+          "name": "Kriel Warrior Caber Thrower",
           "cost": 2,
           "fa": "U",
           "faction": "faction_trollblood",
@@ -612,7 +613,7 @@
         {
           "id": "TS01",
           "type": "solo",
-          "name": " Fell Caller Hero",
+          "name": "Fell Caller Hero",
           "cost": 5,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -620,7 +621,7 @@
         {
           "id": "TS02",
           "type": "solo",
-          "name": " Stone Scribe Chronicler",
+          "name": "Stone Scribe Chronicler",
           "cost": 4,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -628,7 +629,7 @@
         {
           "id": "TS03",
           "type": "solo",
-          "name": " Troll Whelps",
+          "name": "Troll Whelps",
           "cost": 4,
           "fa": "3",
           "faction": "faction_trollblood"
@@ -636,7 +637,7 @@
         {
           "id": "TS04",
           "type": "solo",
-          "name": " Trollkin Champion Hero",
+          "name": "Trollkin Champion Hero",
           "cost": 5,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -644,7 +645,7 @@
         {
           "id": "TS05",
           "type": "solo",
-          "name": " Horthol Long Rider Hero",
+          "name": "Horthol Long Rider Hero",
           "cost": 8,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -652,7 +653,7 @@
         {
           "id": "TS06",
           "type": "soloAttachment",
-          "name": " Trollkin Runebearer",
+          "name": "Trollkin Runebearer",
           "cost": 4,
           "fa": "1",
           "faction": "faction_trollblood"
@@ -660,7 +661,7 @@
         {
           "id": "TS07",
           "type": "solo",
-          "name": " Trollblood Skinner",
+          "name": "Trollblood Skinner",
           "cost": 4,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -668,7 +669,7 @@
         {
           "id": "TS08",
           "type": "solo",
-          "name": " Janissa Stonetide",
+          "name": "Janissa Stonetide",
           "cost": 4,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -676,7 +677,7 @@
         {
           "id": "TS10",
           "type": "solo",
-          "name": " Fennblade Kithkar",
+          "name": "Fennblade Kithkar",
           "cost": 4,
           "fa": "2",
           "faction": "faction_trollblood"
@@ -684,7 +685,7 @@
         {
           "id": "TS11",
           "type": "soloLesserWarlock",
-          "name": " Horgle Ironstrike",
+          "name": "Horgle Ironstrike",
           "cost": 4,
           "fa": "C",
           "faction": "faction_trollblood",
@@ -696,24 +697,33 @@
         {
           "id": "TS12",
           "type": "solo",
-          "name": " Braylen Wanderheart",
+          "name": "Braylen Wanderheart",
           "cost": 5,
           "fa": "C",
           "faction": "faction_trollblood"
         },
         {
-          "id": "TS13",
+          "id": "TS09",
           "type": "soloAttachment",
-          "name": " Keg Carrier",
+          "name": "Keg Carrier",
           "cost": 0,
           "fa": "C",
           "faction": "faction_trollblood",
           "restricted_to": "TW05"
         },
         {
-          "id": "TS15",
+          "id": "TS13",
+          "type": "soloAttachment",
+          "name": "Scroll Bearer",
+          "cost": 0,
+          "fa": "C",
+          "faction": "faction_trollblood",
+          "restricted_to": "TW16"
+        },
+        {
+          "id": "TS14",
           "type": "solo",
-          "name": " Northkin Shaman",
+          "name": "Northkin Shaman",
           "cost": 4,
           "fa": "2",
           "faction": "faction_trollblood"

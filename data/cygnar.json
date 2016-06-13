@@ -5,7 +5,7 @@
       "id": "faction_cygnar_warcasters",
       "entries": [
         {
-          "id": "Yw01",
+          "id": "YW01",
           "type": "warcaster",
           "name": "Haley1 (Captain Victoria Haley)",
           "cost": 28,
@@ -13,15 +13,7 @@
           "faction": "faction_cygnar"
         },
         {
-          "id": "Yw01",
-          "type": "warcaster",
-          "name": "Strugis1 (Commander Dalin Sturgis)",
-          "cost": 6,
-          "fa": "C",
-          "faction": "faction_cygnar"
-        },
-        {
-          "id": "Yw02",
+          "id": "YW02",
           "type": "warcaster",
           "name": "Stryker1 (Commander Coleman Stryker)",
           "cost": 30,
@@ -29,7 +21,7 @@
           "faction": "faction_cygnar"
         },
         {
-          "id": "Yw03",
+          "id": "YW03",
           "type": "warcaster",
           "name": "Caine1 (Lieutenant Allister Caine)",
           "cost": 30,
@@ -37,7 +29,7 @@
           "faction": "faction_cygnar"
         },
         {
-          "id": "Yw04",
+          "id": "YW04",
           "type": "warcaster",
           "name": "Nemo1 (Commander Adept Nemo)",
           "cost": 30,
@@ -101,7 +93,7 @@
           "faction": "faction_cygnar"
         },
         {
-          "id": "Yx01",
+          "id": "YW12",
           "type": "warcaster",
           "name": "Haley2 (Major Victoria Haley)",
           "cost": 25,
@@ -109,7 +101,7 @@
           "faction": "faction_cygnar"
         },
         {
-          "id": "Yx02",
+          "id": "YW13",
           "type": "warcaster",
           "name": "Stryker2 (Lord Commander Stryker)",
           "cost": 28,
@@ -117,7 +109,7 @@
           "faction": "faction_cygnar"
         },
         {
-          "id": "Yx03",
+          "id": "YW14",
           "type": "warcaster",
           "name": "Caine2 (Captain Allister Caine)",
           "cost": 27,
@@ -125,7 +117,7 @@
           "faction": "faction_cygnar"
         },
         {
-          "id": "Yx04",
+          "id": "YW15",
           "type": "warcaster",
           "name": "Nemo2 (General Adept Nemo)",
           "cost": 26,
@@ -133,7 +125,7 @@
           "faction": "faction_cygnar"
         },
         {
-          "id": "Yz01",
+          "id": "YW16",
           "type": "warcaster",
           "name": "Haley3 (Major Prime Victoria Haley)",
           "cost": 25,
@@ -141,7 +133,7 @@
           "faction": "faction_cygnar"
         },
         {
-          "id": "Yz02",
+          "id": "YW17",
           "type": "warcaster",
           "name": "Stryker3 (Lord General Coleman Stryker)",
           "cost": 28,
@@ -149,7 +141,7 @@
           "faction": "faction_cygnar"
         },
         {
-          "id": "Yz04",
+          "id": "YW18",
           "type": "warcaster",
           "name": "Nemo3 (Artificer General Nemo & Storm Chaser Adept Finch)",
           "cost": 25,
@@ -159,12 +151,6 @@
         }
       ],
       "label": "Warcasters"
-    },
-    {
-      "logo": "faction_cygnar",
-      "id": "faction_cygnar_warlocks",
-      "entries": [],
-      "label": "Warlocks"
     },
     {
       "logo": "faction_cygnar",
@@ -701,7 +687,7 @@
       "id": "faction_cygnar_solos",
       "entries": [
         {
-          "id": "YA11",
+          "id": "YS14",
           "type": "soloJourneyMan",
           "name": "Lieutenant Allison Jakes",
           "cost": 4,

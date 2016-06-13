@@ -5,7 +5,7 @@
       "id": "faction_cryx_warcasters",
       "entries": [
         {
-          "id": "Cw01",
+          "id": "CW01",
           "type": "warcaster",
           "name": "Asphyxious1 (Iron Lich Asphyxious)",
           "cost": 28,
@@ -13,7 +13,7 @@
           "faction": "faction_cryx"
         },
         {
-          "id": "Cw02",
+          "id": "CW02",
           "type": "warcaster",
           "name": "Deneghra1 (Warwitch Deneghra)",
           "cost": 28,
@@ -21,7 +21,7 @@
           "faction": "faction_cryx"
         },
         {
-          "id": "Cw03",
+          "id": "CW03",
           "type": "warcaster",
           "name": "Skarre1 (Pirate Queen Skarre)",
           "cost": 28,
@@ -37,7 +37,7 @@
           "faction": "faction_cryx"
         },
         {
-          "id": "Cw05",
+          "id": "CW05",
           "type": "warcaster",
           "name": "Goreshade1 (Goreshade the Bastard)",
           "cost": 28,
@@ -94,7 +94,7 @@
           "faction": "faction_cryx"
         },
         {
-          "id": "Cx01",
+          "id": "CW12",
           "type": "warcaster",
           "name": "Asphyxious2 (Lich Lord Asphyxious)",
           "cost": 26,
@@ -102,7 +102,7 @@
           "faction": "faction_cryx"
         },
         {
-          "id": "Cx02",
+          "id": "CW13",
           "type": "warcaster",
           "name": "Deneghra2 (Wraith Witch Deneghra)",
           "cost": 28,
@@ -110,7 +110,7 @@
           "faction": "faction_cryx"
         },
         {
-          "id": "Cx03",
+          "id": "CW14",
           "type": "warcaster",
           "name": "Skarre2 (Skarre  Queen of the Broken Coast)",
           "cost": 26,
@@ -118,7 +118,7 @@
           "faction": "faction_cryx"
         },
         {
-          "id": "Cx05",
+          "id": "CW15",
           "type": "warcaster",
           "name": "Goreshade2 (Goreshade the Cursed)",
           "cost": 27,
@@ -126,7 +126,7 @@
           "faction": "faction_cryx"
         },
         {
-          "id": "Cz01",
+          "id": "CW16",
           "type": "warcaster",
           "name": "Asphyxious3 (Asphyxious the Hellbringer & Vociferon)",
           "cost": 24,
@@ -135,7 +135,7 @@
           "attachment": "CS15"
         },
         {
-          "id": "Cz02",
+          "id": "CW17",
           "type": "warcaster",
           "name": "Deneghra3 (Deneghra the Soul Weaver)",
           "cost": 27,
@@ -143,7 +143,7 @@
           "faction": "faction_cryx"
         },
         {
-          "id": "Cz05",
+          "id": "CW18",
           "type": "warcaster",
           "name": "Goreshade3 (Goreshade Lord of Ruin)",
           "cost": 27,
@@ -152,12 +152,6 @@
         }
       ],
       "label": "Warcasters"
-    },
-    {
-      "logo": "faction_cryx",
-      "id": "faction_cryx_warlocks",
-      "entries": [],
-      "label": "Warlocks"
     },
     {
       "logo": "faction_cryx",
@@ -560,7 +554,7 @@
           "faction": "faction_cryx"
         },
         {
-          "id": "CU 18",
+          "id": "CU18",
           "type": "unit",
           "name": "Carrion Thralls",
           "cost": 6,
@@ -627,7 +621,7 @@
           "restricted_to": "CU16"
         },
         {
-          "id": "CS15",
+          "id": "CA07",
           "type": "UA",
           "name": "Skarlock Commander",
           "cost": 2,
@@ -791,7 +785,7 @@
           "cost": 0,
           "fa": "C",
           "faction": "faction_cryx",
-          "restricted_to": "Cz01"
+          "restricted_to": "CW16"
         },
         {
           "id": "CS17",
