@@ -347,7 +347,7 @@
       "entries": [
         {
           "id": "KU01",
-          "type": "unitMarshall",
+          "type": "unit",
           "name": " Battle Mechaniks",
           "cost": 3,
           "costMin": 3,
@@ -676,7 +676,8 @@
           "cost": 2,
           "fa": "U",
           "faction": "faction_khador",
-          "restricted_to": "KU06",
+          "restricted_to":[ "KU06",
+          "KU17"],
           "max_attach": 3
         }
       ],
@@ -688,7 +689,7 @@
       "entries": [
         {
           "id": "KS11",
-          "type": "soloMarshall",
+          "type": "solo",
           "name": " Iron Fang Kovnik",
           "cost": 4,
           "fa": "2",
@@ -696,7 +697,7 @@
         },
         {
           "id": "KS06",
-          "type": "soloMarshall",
+          "type": "solo",
           "name": " Koldun Lord",
           "cost": 4,
           "fa": "2",
