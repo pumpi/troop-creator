@@ -255,7 +255,7 @@
           "id": "PJ22",
           "type": "warjack",
           "name": "Purifier",
-          "cost": 5,
+          "cost": 8,
           "fa": "U",
           "faction": "faction_menoth"
         },
