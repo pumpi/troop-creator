@@ -622,7 +622,7 @@
           "id": "OS08",
           "type": "solo",
           "name": "Gallows Grove",
-          "cost": 1,
+          "cost": 2,
           "fa": "4",
           "faction": "faction_orboros"
         },
