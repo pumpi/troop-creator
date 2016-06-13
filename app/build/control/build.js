@@ -125,7 +125,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                                             // Reset all data to restore the url correctly
                                             $scope.vars.selectedModels      = [];
                                             $scope.options.gameCaster       = 1;
-                                            $scope.options.gamePoints       = 50;
+                                            $scope.options.gamePoints       = 75;
                                             $scope.options.gameTier         = '';
                                             $scope.options.gameObjective    = '';
 
