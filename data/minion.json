@@ -1084,6 +1084,8 @@
           "name": "Brun Cragback (Brun Cragback & Lug)",
           "fa": "C",
           "works_for": [
+            "faction_cygnar",
+            "faction_khador",
             "faction_orboros",
             "faction_trollblood"
           ],
