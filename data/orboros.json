@@ -65,8 +65,7 @@
           "name": "Kromac1 (Kromac the Ravenous)",
           "cost": 26,
           "fa": "C",
-          "faction": "faction_orboros",
-          "attachment": "Cassius the Oathkeeper"
+          "faction": "faction_orboros"
         },
         {
           "id": "OW10",
