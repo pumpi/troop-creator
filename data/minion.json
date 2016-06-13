@@ -585,7 +585,7 @@
           "works_for": [
             "faction_trollblood"
           ],
-          "cost": 4,
+          "cost": 6,
           "faction": "factions",
           "id": "IU13",
           "type": "unit"
@@ -635,9 +635,9 @@
         {
           "max": 10,
           "min": 6,
-          "costMax": 9,
+          "costMax": 17,
           "fa": "C",
-          "costMin": 6,
+          "costMin": 11,
           "id": "IU11",
           "name": "Greygore Boomhowler & Co.",
           "works_for": [
