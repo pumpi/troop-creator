@@ -1,4 +1,4 @@
-/*! troopcreator 2016-05-30 */
+/*! troopcreator 2016-06-12 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5332,7 +5332,7 @@ h1, h2, h3, h4, h5, p {
       min-width: 20px;
       display: inline-block; }
       .army-models .model .model-options > span.model-cost {
-        min-width: 30px; }
+        min-width: 40px; }
 .army-models .add-to-list {
   cursor: pointer; }
   .army-models .add-to-list:hover {
