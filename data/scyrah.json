@@ -441,12 +441,15 @@
         {
           "id": "RA07",
           "type": "UA",
-          "name": " Eiryss3 (Eiryss Mage Hunter Commander)",
+          "name": "Eiryss3 (Eiryss Mage Hunter Commander)",
           "attribute": "mage_hunter",
           "cost": 6,
           "fa": "C",
           "faction": "faction_retribution",
-          "restricted_to": "RU05,\nRU10"
+          "restricted_to": [
+            "RU05",
+            "RU10"
+          ]
         },
         {
           "id": "RA02",
