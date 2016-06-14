@@ -1098,15 +1098,14 @@
           "name": "Brun Cragback (Brun Cragback & Lug)",
           "fa": "C",
           "works_for": [
-            "faction_cygnar",
-            "faction_khador",
             "faction_orboros",
             "faction_trollblood"
           ],
           "cost": 16,
           "faction": "factions",
           "id": "IS18",
-          "type": "soloLesserWarlock"
+          "type": "soloLesserWarlock",
+          "attachment": "IB14"
         },
         {
           "name": "Swamp Gobber Chef",
