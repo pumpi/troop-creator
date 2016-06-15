@@ -515,9 +515,7 @@
           "fa": "2",
           "works_for": [
             "faction_skorne",
-            "faction_trollblood",
-            "faction_orboros",
-            "faction_everblight"
+            "faction_trollblood"
           ],
           "cost": 19,
           "faction": "factions",
@@ -797,62 +795,6 @@
       "id": "factions_solos",
       "entries": [
         {
-          "name": "Wrong Eye (Wrong Eye & Snapjaw)",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 17,
-          "faction": "factions",
-          "id": "IS21",
-          "type": "soloLesserWarlock",
-          "attachment":"IB16"
-        },
-        {
-          "name": "Dahlia Hallyr (Dahlia Hallyr & Skarath)",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
-          ],
-          "cost": 17,
-          "faction": "factions",
-          "id": "IS19",
-          "type": "soloLesserWarlock",
-          "attachment":"IB15"
-        },
-        {
-          "name": "Rorsh (Rorsh & Brine)",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 15,
-          "faction": "factions",
-          "id": "IS20",
-          "type": "soloLesserWarlock",
-          "attachment":"IB13"
-        },
-        {
-          "name": "Brun Cragback (Brun Cragback & Lug)",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
-          ],
-          "cost": 16,
-          "faction": "factions",
-          "id": "IS18",
-          "type": "soloLesserWarlock",
-          "attachment": "IB14"
-        },
-        {
           "name": "Gremlin Swarm",
           "fa": "2",
           "works_for": [
@@ -969,6 +911,20 @@
           "type": "solo"
         },
         {
+          "name": "Rorsh (Rorsh & Brine)",
+          "fa": "C",
+          "works_for": [
+            "faction_orboros",
+            "faction_everblight",
+            "faction_trollblood",
+            "faction_skorne"
+          ],
+          "cost": 15,
+          "faction": "factions",
+          "id": "IS20",
+          "type": "soloLesserWarlock"
+        },
+        {
           "name": "Hutchuck",
           "fa": "C",
           "works_for": [
@@ -1020,6 +976,18 @@
           "type": "solo"
         },
         {
+          "name": "Dahlia Hallyr (Dahlia Hallyr & Skarath)",
+          "fa": "C",
+          "works_for": [
+            "faction_orboros",
+            "faction_trollblood"
+          ],
+          "cost": 17,
+          "faction": "factions",
+          "id": "IS19",
+          "type": "soloLesserWarlock"
+        },
+        {
           "name": "Gatorman Witch Doctor",
           "fa": "2",
           "works_for": [
@@ -1045,6 +1013,20 @@
           "faction": "factions",
           "id": "IS13",
           "type": "solo"
+        },
+        {
+          "name": "Wrong Eye (Wrong Eye & Snapjaw)",
+          "fa": "C",
+          "works_for": [
+            "faction_orboros",
+            "faction_everblight",
+            "faction_trollblood",
+            "faction_skorne"
+          ],
+          "cost": 17,
+          "faction": "factions",
+          "id": "IS21",
+          "type": "soloLesserWarlock"
         },
         {
           "name": "Lanyssa Ryssyll",
@@ -1111,6 +1093,19 @@
           "faction": "factions",
           "id": "IS01",
           "type": "solo"
+        },
+        {
+          "name": "Brun Cragback (Brun Cragback & Lug)",
+          "fa": "C",
+          "works_for": [
+            "faction_orboros",
+            "faction_trollblood"
+          ],
+          "cost": 16,
+          "faction": "factions",
+          "id": "IS18",
+          "type": "soloLesserWarlock",
+          "attachment": "IB14"
         },
         {
           "name": "Swamp Gobber Chef",
