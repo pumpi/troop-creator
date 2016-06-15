@@ -1544,7 +1544,48 @@
           "cost": 17,
           "faction": "faction_mercs",
           "id": "MS45",
-          "type": "soloLesserWarlock"
+          "type": "soloLesserWarlock",
+          "attachement": "Snapjaw_mercs"
+        },
+        {
+          "name": "Dahlia Hallyr (Dahlia Hallyr & Skarath)",
+          "fa": "C",
+          "works_for": [
+            "faction_scyrah"
+          ],
+          "cost": 17,
+          "faction": "faction_mercs",
+          "id": "MS43",
+          "type": "soloLesserWarlock",
+          "attachement": "Skarath_mercs"
+        },
+        {
+          "name": "Rorsh (Rorsh & Brine)",
+          "fa": "C",
+          "works_for": [
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
+          ],
+          "cost": 15,
+          "faction": "faction_mercs",
+          "id": "MS44",
+          "type": "soloLesserWarlock",
+          "attachement": "Brine_mercs"
+        },
+        {
+          "name": "Brun Cragback (Brun Cragback & Lug)",
+          "fa": "C",
+          "cost": 16,
+          "works_for": [
+            "faction_cygnar",
+            "faction_khador",
+          ],
+          "faction": "faction_mercs",
+          "id": "MS42",
+          "type": "soloLesserWarlock",
+          "attachement": "Lug_mercs"
         },
         {
           "name": "Rhupert Carvolo, Piper of Ord",
@@ -1634,17 +1675,6 @@
           "faction": "faction_mercs",
           "id": "MS11",
           "type": "solo"
-        },
-        {
-          "name": "Dahlia Hallyr (Dahlia Hallyr & Skarath)",
-          "fa": "C",
-          "works_for": [
-            "faction_scyrah"
-          ],
-          "cost": 9,
-          "faction": "faction_mercs",
-          "id": "MS43",
-          "type": "soloLesserWarlock"
         },
         {
           "name": "Pistol Wraith",
@@ -1812,20 +1842,6 @@
           "type": "solo"
         },
         {
-          "name": "Rorsh (Rorsh & Brine)",
-          "fa": "C",
-          "works_for": [
-            "faction_cryx",
-            "faction_cygnar",
-            "faction_khador",
-            "faction_menoth"
-          ],
-          "cost": 15,
-          "faction": "faction_mercs",
-          "id": "MS44",
-          "type": "soloLesserWarlock"
-        },
-        {
           "name": "Alten Ashley",
           "fa": "C",
           "works_for": [
@@ -1929,20 +1945,6 @@
           "faction": "faction_mercs",
           "id": "MS05",
           "type": "solo"
-        },
-        {
-          "name": "Brun Cragback (Brun Cragback & Lug)",
-          "fa": "C",
-          "cost": 16,
-          "works_for": [
-            "faction_cygnar",
-            "faction_khador",
-            "faction_circle",
-            "faction_trollblood"
-          ],
-          "faction": "faction_mercs",
-          "id": "MS42",
-          "type": "soloLesserWarlock"
         },
         {
           "name": "Rutger Shaw",
@@ -2077,7 +2079,7 @@
             "faction_khador",
             "faction_cygnar"
           ],
-          "cost": 3,
+          "cost": 6,
           "faction": "faction_mercs",
           "id": "MS32",
           "type": "solo"
