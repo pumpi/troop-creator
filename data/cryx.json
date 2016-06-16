@@ -40,7 +40,7 @@
           "id": "CW05",
           "type": "warcaster",
           "name": "Goreshade1 (Goreshade the Bastard)",
-          "cost": 28,
+          "cost": 27,
           "fa": "C",
           "faction": "faction_cryx"
         },
@@ -233,7 +233,7 @@
           "id": "CJ21",
           "type": "warjack",
           "name": "Inflictor",
-          "cost": 8,
+          "cost": 13,
           "fa": "U",
           "faction": "faction_cryx"
         },
