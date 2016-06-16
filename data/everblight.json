@@ -11,6 +11,14 @@
       "id": "faction_everblight_warlocks",
       "entries": [
         {
+          "id": "EW14",
+          "type": "warlock",
+          "name": "Kryssa1 (Krissa Conviction of Everblight)",
+          "cost": 31,
+          "fa": "C",
+          "faction": "faction_everblight"
+        },
+        {
           "id": "EW06",
           "type": "warlock",
           "name": "Absylonia1 (Absylonia Terror of Everblight)",
@@ -78,7 +86,7 @@
         {
           "id": "EW09",
           "type": "warlock",
-          "name": "Saeryn & Rhyas (Saeryn & Rhyas Talons of Everblight)",
+          "name": "Saeryn2 & Rhyas2 (Saeryn & Rhyas Talons of Everblight)",
           "cost": 24,
           "fa": "C",
           "faction": "faction_everblight"

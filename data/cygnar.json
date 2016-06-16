@@ -147,7 +147,6 @@
           "cost": 25,
           "fa": "C",
           "faction": "faction_cygnar",
-          "attachment": "YS12"
         }
       ],
       "label": "Warcasters"
@@ -156,6 +155,14 @@
       "logo": "faction_cygnar",
       "id": "faction_cygnar_warjacks",
       "entries": [
+        {
+          "id": "YJ25",
+          "type": "warjack",
+          "name": "Hurricane",
+          "cost": 39,
+          "fa": "U",
+          "faction": "faction_cygnar"
+        },
         {
           "id": "YJ03",
           "type": "warjack",
@@ -790,15 +797,6 @@
           "fa": "2",
           "faction": "faction_cygnar"
         },
-        {
-          "id": "YS12",
-          "type": "soloAttachment",
-          "name": "Storm Chaser Adept Caitlin Finch",
-          "cost": 0,
-          "fa": "C",
-          "faction": "faction_cygnar",
-          "restricted_to": "Yz04"
-        }
       ],
       "label": "Solos"
     }

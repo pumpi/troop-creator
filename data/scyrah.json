@@ -457,7 +457,7 @@
           "name": " Dawnguard Sentinel Officer & Standard",
           "attribute": "dawnguard",
           "cost": 4,
-          "fa": "1",
+          "fa": "2",
           "faction": "faction_retribution",
           "restricted_to": "RU02"
         },
@@ -467,7 +467,7 @@
           "name": " Dawnguard Invictor Officer & Standard",
           "attribute": "dawnguard",
           "cost": 4,
-          "fa": "1",
+          "fa": "2",
           "faction": "faction_retribution",
           "restricted_to": "RU01"
         }
