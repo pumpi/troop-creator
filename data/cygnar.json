@@ -146,7 +146,7 @@
           "name": "Nemo3 (Artificer General Nemo & Storm Chaser Adept Finch)",
           "cost": 25,
           "fa": "C",
-          "faction": "faction_cygnar",
+          "faction": "faction_cygnar"
         }
       ],
       "label": "Warcasters"
