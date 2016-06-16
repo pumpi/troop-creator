@@ -796,7 +796,7 @@
           "cost": 4,
           "fa": "2",
           "faction": "faction_cygnar"
-        },
+        }
       ],
       "label": "Solos"
     }
