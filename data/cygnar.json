@@ -157,6 +157,14 @@
       "id": "faction_cygnar_warjacks",
       "entries": [
         {
+          "id": "YJ23",
+          "type": "warjack",
+          "name": "Hurricane",
+          "cost": 39,
+          "fa": "2",
+          "faction": "faction_cygnar"
+        },
+        {
           "id": "YJ03",
           "type": "warjack",
           "name": "Sentinel",
