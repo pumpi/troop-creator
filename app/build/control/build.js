@@ -211,9 +211,9 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             var cost = $scope.getModelCost(model, true),
                 getFa = $scope.getModelFa(model);
 
-            if ( $scope.options.gameTier && $scope.checkModelTier(model) ) {
-                return true;
-            }
+            //if ( $scope.options.gameTier && $scope.checkModelTier(model) ) {
+            //    return true;
+            //}
 
             // gameCaster not set or no usable int
             if ( typeof $scope.options.gameCaster === 'undefined' || $scope.options.gameCaster.length === 0 || isNaN($scope.options.gameCaster)) {
@@ -238,8 +238,12 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 var checkLesser = false;
                 if ( $scope.vars.selectedModels.length > 0 ) {
                     $.each($scope.vars.selectedModels, function (key, sModel) {
-                        // Marshals can only have 2
-                        if ( /marshall/i.test(sModel.type) && sModel.group.length < 2 ) {
+                        // Marshals can only have 1 Jack and no Colossal
+                        if (
+                            /marshall/i.test(sModel.type)
+                            && !/colossal/i.test(model.type)
+                            && $scope.countSelectedModel('^warjack$', 'type', key).all < 1
+                        ) {
                             checkLesser = true;
                         } else if ( sModel.hasOwnProperty('restricted_to') ) {
                             // An Lesser Warlock can have an restricted_to then he can not add all models
@@ -480,8 +484,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                             !/marshall/i.test(model.type) ||
                             (
                                 /marshall/i.test(model.type)
-                                && $scope.countSelectedModel('^warb|^warj', 'type', group).normal < 2
-                                && $scope.vars.dragging.model.fa !== 'C'
+                                && $scope.countSelectedModel('^warjack$', 'type', group).normal < 1
                                 && !/colossal/i.test($scope.vars.dragging.model.type)
                             )
                         );
@@ -558,8 +561,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                                     !/marshall/i.test($scope.vars.selectedModels[i].type)
                                     || (
                                         /marshall/i.test($scope.vars.selectedModels[i].type)
-                                        && $scope.countSelectedModel('^warb|^warj', 'type', i).normal < 2
-                                        && model.fa !== 'C'
+                                        && $scope.countSelectedModel('^warjack$', 'type', i).normal < 1
                                         && !/colossal/i.test(model.type)
                                     )
                                 ) {
