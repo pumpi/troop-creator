@@ -950,9 +950,9 @@
           "type": "unit"
         },
         {
-          "name": "Arcane Tempest Gun Mage Pistoleers",
+          "name": "Thorn Gun Mages",
           "fa": "2",
-          "cost": 6,
+          "cost": 9,
           "faction": "faction_mercs",
           "id": "MU29",
           "type": "unit"
@@ -1053,7 +1053,7 @@
           "works_for": [
             "faction_cygnar"
           ],
-          "cost": 3,
+          "cost": 6,
           "faction": "faction_mercs",
           "id": "MU25",
           "type": "unit"
@@ -1150,14 +1150,6 @@
           "type": "unit"
         },
         {
-          "name": "Trencher Cannon Crew",
-          "fa": "2",
-          "cost": 3,
-          "faction": "faction_mercs",
-          "id": "MU33",
-          "type": "unit"
-        },
-        {
           "max": 10,
           "min": 6,
           "costMax": 12,
@@ -1211,14 +1203,6 @@
           "type": "unit"
         },
         {
-          "name": "Trencher Chain Gun Crew",
-          "fa": "2",
-          "cost": 2,
-          "faction": "faction_mercs",
-          "id": "MU32",
-          "type": "unit"
-        },
-        {
           "max": 10,
           "min": 6,
           "costMax": 16,
@@ -1237,30 +1221,6 @@
         {
           "max": 10,
           "min": 6,
-          "costMax": 10,
-          "fa": "2",
-          "costMin": 6,
-          "id": "MU30",
-          "name": "Long Gunner Infantry",
-          "cost": 6,
-          "faction": "faction_mercs",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 6,
-          "fa": "2",
-          "costMin": 4,
-          "id": "MU34",
-          "name": "Sword Knights",
-          "cost": 4,
-          "faction": "faction_mercs",
-          "type": "unitMarshall"
-        },
-        {
-          "max": 10,
-          "min": 6,
           "costMax": 12,
           "fa": "2",
           "costMin": 8,
@@ -1273,18 +1233,6 @@
             "faction_cygnar"
           ],
           "cost": 8,
-          "faction": "faction_mercs",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 10,
-          "fa": "2",
-          "costMin": 6,
-          "id": "MU31",
-          "name": "Trencher Infantry",
-          "cost": 6,
           "faction": "faction_mercs",
           "type": "unit"
         },
@@ -1316,14 +1264,6 @@
           ],
           "cost": 12,
           "faction": "faction_mercs",
-          "type": "unit"
-        },
-        {
-          "name": "Rangers",
-          "fa": "2",
-          "cost": 5,
-          "faction": "faction_mercs",
-          "id": "MU36",
           "type": "unit"
         },
         {
@@ -1389,9 +1329,9 @@
           "type": "UA"
         },
         {
-          "name": "Arcane Tempest Gun Mage Officer",
-          "fa": "1",
-          "cost": 2,
+          "name": "Major Harrison Gibbs",
+          "fa": "C",
+          "cost": 4,
           "restricted_to": "MU29",
           "faction": "faction_mercs",
           "id": "MA06",
@@ -1416,33 +1356,8 @@
           "type": "UA"
         },
         {
-          "name": "Long Gunner Infantry Officer & Standard",
-          "fa": "1",
-          "cost": 2,
-          "restricted_to": "MU30",
-          "faction": "faction_mercs",
-          "id": "MA10",
-          "type": "UA"
-        },
-        {
-          "name": "Sword Knight Officer & Standard",
-          "fa": "1",
-          "cost": 2,
-          "restricted_to": "MU34",
-          "faction": "faction_mercs",
-          "id": "MA08",
-          "type": "UA"
-        },
-        {
-          "name": "Trencher Infantry Officer & Sniper",
-          "fa": "1",
-          "cost": 3,
-          "restricted_to": "MU31",
-          "faction": "faction_mercs",
-          "id": "MA07",
-          "type": "UAMarshall"
-        },
-        {
+          "id": "MA11",
+          "name": "Cephalyx Dominator",
           "fa": "2",
           "restricted_to": [
             "MU09",
@@ -1464,8 +1379,7 @@
             "MU18",
             "MU20"
           ],
-          "id": "MA11",
-          "name": "Cephalyx Dominator",
+
           "works_for": [
             "faction_cryx"
           ],
@@ -1494,26 +1408,6 @@
           ],
           "cost": 2,
           "faction": "faction_mercs",
-          "type": "WA"
-        },
-        {
-          "name": "Trencher Commandos Scattergunner",
-          "fa": "2",
-          "cost": 1,
-          "restricted_to": "MU37",
-          "max_attach": 3,
-          "faction": "faction_mercs",
-          "id": "MA13",
-          "type": "WA"
-        },
-        {
-          "name": "Trencher Infantry Grenadier",
-          "fa": "2",
-          "cost": 1,
-          "restricted_to": "MU31",
-          "max_attach": 3,
-          "faction": "faction_mercs",
-          "id": "MA12",
           "type": "WA"
         }
       ],
@@ -1647,14 +1541,6 @@
           "type": "soloLesserWarlock"
         },
         {
-          "name": "Pistol Wraith",
-          "fa": "2",
-          "cost": 5,
-          "faction": "faction_mercs",
-          "id": "MS35",
-          "type": "solo"
-        },
-        {
           "name": "Stannis Brocker",
           "fa": "C",
           "works_for": [
@@ -1756,14 +1642,6 @@
           "cost": 2,
           "faction": "faction_mercs",
           "id": "MS41",
-          "type": "solo"
-        },
-        {
-          "name": "Bloat Thrall",
-          "fa": "2",
-          "cost": 4,
-          "faction": "faction_mercs",
-          "id": "MS33",
           "type": "solo"
         },
         {
