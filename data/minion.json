@@ -17,7 +17,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "canControllOnly":[
+          "canControlOnly":[
             "farrow"]
         },
         {
@@ -32,7 +32,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "canControllOnly":[
+          "canControlOnly":[
             "farrow",
             "arkadius"]
         },
@@ -49,7 +49,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "canControllOnly":[
+          "canControlOnly":[
             "gatorman"]
         },
         {
@@ -65,7 +65,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "canControllOnly":[
+          "canControlOnly":[
             "gatorman"]
         },
         {
@@ -81,7 +81,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "canControllOnly":[
+          "canControlOnly":[
             "farrow"]
         },
         {
@@ -97,7 +97,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "canControllOnly":[
+          "canControlOnly":[
             "gatorman"]
         },
         {
@@ -113,7 +113,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "canControllOnly":[
+          "canControlOnly":[
             "farrow"]
         },
         {
@@ -129,7 +129,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "canControllOnly":[
+          "canControlOnly":[
             "gatorman"]
         },
         {
@@ -145,7 +145,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "canControllOnly":[
+          "canControlOnly":[
             "farrow",
             "midas"]
         },
@@ -162,7 +162,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "canControllOnly":[
+          "canControlOnly":[
             "gatorman"]
         }
       ],
@@ -303,7 +303,10 @@
           "cost": 7,
           "faction": "factions",
           "id": "IB09",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Gun Boar",
@@ -319,7 +322,10 @@
           "cost": 9,
           "faction": "factions",
           "id": "IB01",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Bull Snapper",
@@ -335,7 +341,10 @@
           "cost": 5,
           "faction": "factions",
           "id": "IB04",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "gatorman"
+          ]
         },
         {
           "name": "Snapjaw",
@@ -373,7 +382,10 @@
           "cost": 15,
           "faction": "factions",
           "id": "IB02",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Splatter Boar",
@@ -389,7 +401,10 @@
           "cost": 8,
           "faction": "factions",
           "id": "IB11",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Boneswarm",
@@ -405,7 +420,11 @@
           "cost": 7,
           "faction": "factions",
           "id": "IB07",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "gatorman",
+            "arkadius"
+          ]
         },
         {
           "name": "Lug",
@@ -443,7 +462,10 @@
           "cost": 16,
           "faction": "factions",
           "id": "IB03",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "gatorman"
+          ]
         },
         {
           "name": "Road Hog",
@@ -459,7 +481,10 @@
           "cost": 16,
           "faction": "factions",
           "id": "IB06",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Swamp Horror",
@@ -475,7 +500,10 @@
           "cost": 14,
           "faction": "factions",
           "id": "IB08",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "gatorman"
+          ]
         },
         {
           "name": "Battle Boar",
@@ -491,7 +519,10 @@
           "cost": 7,
           "faction": "factions",
           "id": "IB10",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Ironback Spitter",
@@ -507,7 +538,10 @@
           "cost": 15,
           "faction": "factions",
           "id": "IB05",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "gatorman"
+          ]
         },
         {
           "name": "Blind Walker",
@@ -832,7 +866,7 @@
           "id": "IS21",
           "type": "soloLesserWarlock",
           "attachment":"IB16",
-          "canControllOnly":[
+          "canControlOnly":[
             "gatorman"]
         },
         {
@@ -862,7 +896,7 @@
           "id": "IS20",
           "type": "soloLesserWarlock",
           "attachment":"IB13",
-          "canControllOnly":[
+          "canControlOnly":[
             "farrow"]
         },
         {
