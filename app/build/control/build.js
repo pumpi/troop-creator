@@ -69,7 +69,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     });
                 });
 
-                // Now we get the mercenarys and minions
+                // Now we get the mercenaries and minions
                 $.each(['minion', 'mercenary'], function (k, v) {
                     if ( v !== $routeParams.army ) {
                         $http.get('./data/' + v + '.json').
@@ -91,7 +91,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                                                 if ($.inArray($scope.vars.factionId, item.works_for) !== -1) {
                                                     return true;
                                                 }
-                                            } else if (item.restricted_to) {
+                                            } else if (item.restricted_to || /^warj|^warb/i.test(item.type) ) {
                                                 // We have an restricted model but not all data fetched we save reference for later
                                                 // If we have an UA we can already watch for the restricted_to Unit
                                                 // UAs restricted_to always string i hope ^^
@@ -176,13 +176,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
         // Filter the selected Models and return only the Models that allowed
         $scope.allowedModels = function(models) {
             models = $.grep(models, function(model) {
-                //Check first if we have an Tier and is this model allowed
-                if ($scope.options.gameTier) {
-                    if ($scope.vars.tier.levels[0].onlyModels.ids.indexOf(model.id) === -1 && $scope.vars.tier.casterId !== model.id) {
-                        return false;
-                    }
-                }
-
                 //Now we Check if we have the restricted model available
                 if ( model.hasOwnProperty('restricted_to') ) {
                     if (typeof model.restricted_to === 'string') {
@@ -200,6 +193,9 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                         return found;
                     }
                     return false;
+                } else if ( /merc|minion/i.test(model.faction) && /^warj|^warb/i.test(model.type) ) {
+                    // for mercs an Minions we must look for an model that can control this beast or jack
+                    return $scope.checkCanControl(model);
                 }
                 return true;
             });
@@ -233,6 +229,21 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             // No Caster or other model can control warbeast or warjack in selectedModels we can not select an Warbeast or Warjack
             if ( /^warb|^warj/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$|lesserwarlock|journeyman|marshall').all === 0 ) {
                 return true;
+            } else if ( /^warb|^warj/i.test(model.type) && $scope.countSelectedModel('.*?', 'canControlOnly').all > 0 ) {
+                // The Caster can have an canControlOnly string we must test if we can control this beast
+                var cco = undefined;
+                $.each($scope.vars.selectedModels, function (key, sModel) {
+                    if ( sModel.hasOwnProperty('canControlOnly') ) {
+                        cco = $scope.checkAttributes(model, sModel.canControlOnly);
+                    }
+
+                    if ( cco === true ) {
+                        return false;
+                    }
+                });
+                if ( cco !== true ) {
+                    return true;
+                }
             } else if (/^warb|^warj/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$').all === 0) {
                 // We must look if the selected journyman or lesser warlock has an restricted_to or marshall max value overdone
                 var checkLesser = false;
@@ -378,7 +389,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             if ( $scope.hasOwnProperty('vars') && $scope.vars.selectedModels ) {
                 var recursive = function(models) {
                     $.each(models, function (key, model) {
-                        if ( matcher.test(model[value]) ) {
+                        if ( model.hasOwnProperty(value) && matcher.test(model[value]) ) {
                             if ( model.freeModel ) {
                                 countFree++;
                             } else {
@@ -396,6 +407,46 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 }
             }
             return {'normal': count, 'free': countFree, 'all': (count + countFree)};
+        };
+
+        /**
+         * This function check if the regex string match to the models attributes
+         * @param   model object    the single model.
+         * @param   match string    An String with regex that must match
+         * @return                  boolean true or false
+         */
+        $scope.checkAttributes = function(model, match) {
+            var matcher = new RegExp(match, 'i');
+            if ( model.hasOwnProperty('attributes') ) {
+                var attributes = model.attributes.join();
+                return matcher.test(attributes);
+            }
+            return false;
+        };
+
+        /**
+         * This function check if there an Warlock that control this beast or jack
+         * param    model object    the model
+         * @return                  boolean true or false
+         */
+        $scope.checkCanControl = function(model) {
+            var found = false;
+            if ( model.hasOwnProperty('attributes')) {
+                $.each($scope.data, function (key, grp) {
+                    $.each(grp.entries, function (key, dModel) {
+                        if (dModel.hasOwnProperty('canControlOnly')) {
+                            found = $scope.checkAttributes(model, dModel.canControlOnly);
+                            if (found === true) {
+                                return false;
+                            }
+                        }
+                    });
+                    if (found === true) {
+                        return false;
+                    }
+                });
+            }
+            return found;
         };
 
         // Search for an free Unit without the same type of model
@@ -480,17 +531,25 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             // check if warbeast and we can drop it but only if we have no restriceted_to
             if (/^warb|^warj/i.test($scope.vars.dragging.model.type) && !$scope.vars.dragging.model.hasOwnProperty('restricted_to')) {
                 if (/^warlock$|^warcaster$|lesserwarlock|journeyman|marshall/i.test(model.type)) {
+                    var cco = true;
+                    if ( model.hasOwnProperty('canControlOnly') ) {
+                        // This caster can control only special attribute models
+                        cco = $scope.checkAttributes($scope.vars.dragging.model, model.canControlOnly);
+                    }
                     // Some lesserwarlocks have an restricted_to that means she only can get special beasts
                     if (!model.hasOwnProperty('restricted_to') ||
                         ( model.hasOwnProperty('restricted_to') && model.restricted_to.indexOf($scope.vars.dragging.model.id) !== -1 )) {
-                        // If we have an Jack marshall he can only get 2 Jacks and no character and no colossal
+                        // If we have an Jack marshall he can only get 1 Jacks and no colossal
                         return (
-                            !/marshall/i.test(model.type) ||
                             (
-                                /marshall/i.test(model.type)
-                                && $scope.countSelectedModel('^warjack$', 'type', group).normal < 1
-                                && !/colossal/i.test($scope.vars.dragging.model.type)
+                                !/marshall/i.test(model.type) ||
+                                (
+                                    /marshall/i.test(model.type)
+                                    && $scope.countSelectedModel('^warjack$', 'type', group).normal < 1
+                                    && !/colossal/i.test($scope.vars.dragging.model.type)
+                                )
                             )
+                            && cco
                         );
                     } else {
                         return false;
@@ -523,7 +582,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
         };
 
         // ***********************************
-        // ADD  AND REMOVE MODELS FUNCTIONS
+        // ADD AND REMOVE MODELS FUNCTIONS
         // ***********************************
         // Drop callback for draggable
         $scope.dropCallback = function(event, ui) {
@@ -557,17 +616,25 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 } else if (/^warb|^warj/i.test(model.type)) {
                     for (var i = $scope.vars.selectedModels.length - 1; i >= 0; i--) {
                         if (/^warlock$|^warcaster$|lesserwarlock|journeyman|marshall/i.test($scope.vars.selectedModels[i].type)) {
+                            var cco = true;
+                            if ( $scope.vars.selectedModels[i].hasOwnProperty('canControlOnly') ) {
+                                // This caster can control only special attribute models
+                                cco = $scope.checkAttributes(model, $scope.vars.selectedModels[i].canControlOnly);
+                            }
                             // Some lesserwarlocks have an restricted_to that means she only can get special beasts
                             if (!$scope.vars.selectedModels[i].hasOwnProperty('restricted_to') ||
                                 ( $scope.vars.selectedModels[i].hasOwnProperty('restricted_to') && $scope.vars.selectedModels[i].restricted_to.indexOf(model.id) !== -1 )) {
                                 // If we have an Jack marshall he can only get 2 Jacks and no character and no colossal
                                 if (
-                                    !/marshall/i.test($scope.vars.selectedModels[i].type)
-                                    || (
-                                        /marshall/i.test($scope.vars.selectedModels[i].type)
-                                        && $scope.countSelectedModel('^warjack$', 'type', i).normal < 1
-                                        && !/colossal/i.test(model.type)
+                                    (
+                                        !/marshall/i.test($scope.vars.selectedModels[i].type)
+                                        || (
+                                            /marshall/i.test($scope.vars.selectedModels[i].type)
+                                            && $scope.countSelectedModel('^warjack$', 'type', i).normal < 1
+                                            && !/colossal/i.test(model.type)
+                                        )
                                     )
+                                    && cco
                                 ) {
                                     findIdx = i;
                                     break;
