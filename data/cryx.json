@@ -507,11 +507,14 @@
         },
         {
           "id": "CU12",
-          "type": "unitCasterAttachment",
+          "type": "unit",
           "name": "The Withershadow Combine",
           "cost": 9,
           "fa": "C",
-          "faction": "faction_cryx"
+          "faction": "faction_cryx",
+          "attributes":[
+            "attached"
+          ]
         },
         {
           "id": "CU13",
@@ -785,7 +788,10 @@
           "cost": 0,
           "fa": "C",
           "faction": "faction_cryx",
-          "restricted_to": "CW16"
+          "restricted_to": "CW16",
+          "attributes":[
+            "attached"
+          ]
         },
         {
           "id": "CS17",
@@ -794,7 +800,10 @@
           "cost": 0,
           "fa": "C",
           "faction": "faction_cryx",
-          "restricted_to": "CW07"
+          "restricted_to": "CW07",
+          "attributes":[
+            "attached"
+          ]
         },
         {
           "id": "CS16",
