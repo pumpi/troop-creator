@@ -16,7 +16,9 @@
             "faction_everblight",
             "faction_trollblood",
             "faction_skorne"
-          ]
+          ],
+          "canControllOnly":[
+            "farrow"]
         },
         {
           "id": "IW04",
@@ -29,7 +31,10 @@
             "faction_orboros",
             "faction_trollblood",
             "faction_skorne"
-          ]
+          ],
+          "canControllOnly":[
+            "farrow",
+            "arkadius"]
         },
         {
           "id": "IW03",
@@ -43,7 +48,9 @@
             "faction_everblight",
             "faction_trollblood",
             "faction_skorne"
-          ]
+          ],
+          "canControllOnly":[
+            "gatorman"]
         },
         {
           "id": "IW09",
@@ -57,7 +64,9 @@
             "faction_everblight",
             "faction_trollblood",
             "faction_skorne"
-          ]
+          ],
+          "canControllOnly":[
+            "gatorman"]
         },
         {
           "id": "IW06",
@@ -71,7 +80,9 @@
             "faction_everblight",
             "faction_trollblood",
             "faction_skorne"
-          ]
+          ],
+          "canControllOnly":[
+            "farrow"]
         },
         {
           "id": "IW02",
@@ -85,7 +96,9 @@
             "faction_everblight",
             "faction_trollblood",
             "faction_skorne"
-          ]
+          ],
+          "canControllOnly":[
+            "gatorman"]
         },
         {
           "id": "IW01",
@@ -99,7 +112,9 @@
             "faction_everblight",
             "faction_trollblood",
             "faction_skorne"
-          ]
+          ],
+          "canControllOnly":[
+            "farrow"]
         },
         {
           "id": "IW05",
@@ -113,7 +128,9 @@
             "faction_everblight",
             "faction_trollblood",
             "faction_skorne"
-          ]
+          ],
+          "canControllOnly":[
+            "gatorman"]
         },
         {
           "id": "IW07",
@@ -127,7 +144,10 @@
             "faction_everblight",
             "faction_trollblood",
             "faction_skorne"
-          ]
+          ],
+          "canControllOnly":[
+            "farrow",
+            "midas"]
         },
         {
           "id": "IW10",
@@ -141,7 +161,9 @@
             "faction_everblight",
             "faction_trollblood",
             "faction_skorne"
-          ]
+          ],
+          "canControllOnly":[
+            "gatorman"]
         }
       ],
       "label": "Warlocks"
@@ -809,7 +831,9 @@
           "faction": "factions",
           "id": "IS21",
           "type": "soloLesserWarlock",
-          "attachment":"IB16"
+          "attachment":"IB16",
+          "canControllOnly":[
+            "gatorman"]
         },
         {
           "name": "Dahlia Hallyr (Dahlia Hallyr & Skarath)",
@@ -837,7 +861,9 @@
           "faction": "factions",
           "id": "IS20",
           "type": "soloLesserWarlock",
-          "attachment":"IB13"
+          "attachment":"IB13",
+          "canControllOnly":[
+            "farrow"]
         },
         {
           "name": "Brun Cragback (Brun Cragback & Lug)",
