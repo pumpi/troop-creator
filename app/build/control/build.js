@@ -268,7 +268,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 }
             }
 
-            // We must have an Caster or Warlock to use Solo/Unit attachments and the Caster don't can have more then one
+            // We must have an Caster or Warlock to use Solo/Unit attachments and the Caster don't can have more then one or tow if he an unit
             if ( /^soloAtt|^unitCasterAtt/i.test(model.type) ) {
                 if ( $scope.countSelectedModel('^warlock$|^warcaster$').all === 0 ) {
                     return true;
@@ -277,7 +277,11 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     $.each($scope.vars.selectedModels, function (key, sModel) {
                         if ( /^warlock$|^warcaster$/i.test(sModel.type) ) {
                             if ( sModel.group.length > 0 ) {
-                                if ($scope.countSelectedModel('^soloAtt|^unitCasterAtt', 'type', key).all === 0) {
+                                var maxAtt = 0;
+                                if ( sModel.hasOwnProperty('attachment') ) {
+                                    maxAtt = 1
+                                }
+                                if ($scope.countSelectedModel('^soloAtt|^unitCasterAtt', 'type', key).all === maxAtt) {
                                     freeCaster = true;
                                 }
                             } else {
@@ -468,7 +472,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 return false;
             }
 
-            // We chack if this model an model that must be in group
+            // We check if this model an model that must be in group
             if ( !/^warb|^war|^soloatt|^unitcasteratt/i.test($scope.vars.dragging.model.type) && !$scope.vars.dragging.model.hasOwnProperty('restricted_to') ) {
                 return false;
             }
@@ -576,7 +580,11 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 } else if (/^soloatt|^unitcasteratt/i.test(model.type)) {
                     copy.sort = 0;
                     for (var j = $scope.vars.selectedModels.length - 1; j >= 0; j--) {
-                        if (/^warlock$|^warcaster$/i.test($scope.vars.selectedModels[j].type) && $scope.countSelectedModel('^soloAtt|^unitcasteatt', 'type', j).all === 0 ) {
+                        var maxAtt = 0;
+                        if ( $scope.vars.selectedModels[j].hasOwnProperty('attachment') ) {
+                            maxAtt = 1
+                        }
+                        if (/^warlock$|^warcaster$/i.test($scope.vars.selectedModels[j].type) && $scope.countSelectedModel('^soloAtt|^unitcasteatt', 'type', j).all === maxAtt ) {
                             findIdx = j;
                             break;
                         }
