@@ -668,7 +668,7 @@
           ],
           "cost": 0,
           "faction": "faction_mercs",
-          "id": "Brine_mercs",
+          "id": "IB13_mercs",
           "type": "warbeast"
         },
         {
@@ -745,7 +745,7 @@
           ],
           "cost": 0,
           "faction": "faction_mercs",
-          "id": "Lug_mercs",
+          "id": "IB14_mercs",
           "type": "warbeast"
         },
         {
@@ -767,7 +767,7 @@
           ],
           "cost": 0,
           "faction": "faction_mercs",
-          "id": "Snapjaw_mercs",
+          "id": "IB16_mercs",
           "type": "warbeast"
         },
         {
@@ -789,7 +789,7 @@
           ],
           "cost": 0,
           "faction": "faction_mercs",
-          "id": "Skarath_mercs",
+          "id": "IB15_mercs",
           "type": "warbeast"
         },
         {
@@ -1020,18 +1020,6 @@
             "faction_cygnar"
           ],
           "cost": 11,
-          "faction": "faction_mercs",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 10,
-          "fa": "2",
-          "costMin": 6,
-          "id": "MU37",
-          "name": "Trencher Commandos",
-          "cost": 6,
           "faction": "faction_mercs",
           "type": "unit"
         },
@@ -1438,7 +1426,8 @@
           "cost": 17,
           "faction": "faction_mercs",
           "id": "MS45",
-          "type": "soloLesserWarlock"
+          "type": "soloLesserWarlock",
+          "attachment": "IB16_mercs"
         },
         {
           "name": "Rhupert Carvolo, Piper of Ord",
@@ -1535,10 +1524,11 @@
           "works_for": [
             "faction_scyrah"
           ],
-          "cost": 9,
+          "cost": 17,
           "faction": "faction_mercs",
           "id": "MS43",
-          "type": "soloLesserWarlock"
+          "type": "soloLesserWarlock",
+          "attachment": "IB15_mercs"
         },
         {
           "name": "Stannis Brocker",
@@ -1701,7 +1691,8 @@
           "cost": 15,
           "faction": "faction_mercs",
           "id": "MS44",
-          "type": "soloLesserWarlock"
+          "type": "soloLesserWarlock",
+          "attachment": "IB13_mercs"
         },
         {
           "name": "Alten Ashley",
@@ -1820,7 +1811,8 @@
           ],
           "faction": "faction_mercs",
           "id": "MS42",
-          "type": "soloLesserWarlock"
+          "type": "soloLesserWarlock",
+          "attachment": "IB14_mercs"
         },
         {
           "name": "Rutger Shaw",
