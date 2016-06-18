@@ -278,6 +278,20 @@
       "id": "factions_warbeasts",
       "entries": [
         {
+          "name": "Gorax Rager",
+          "fa": "U",
+          "restricted_to": [
+            "IW04"
+          ],
+          "cost": 7,
+          "faction": "factions",
+          "id": "IB17",
+          "type": "warbeast",
+          "attributes":[
+            "arkadius"
+          ]
+        },
+        {
           "name": "2 Razor Boars",
           "fa": "U",
           "cost": 7,
@@ -363,7 +377,7 @@
           "type": "warbeast",
           "attributes": [
             "gatorman",
-            "arkadius"
+            "midas"
           ]
         },
         {
