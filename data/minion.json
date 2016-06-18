@@ -876,17 +876,6 @@
           "type": "soloMarshall"
         },
         {
-          "name": "Eiryss, Mage Hunter of Ios",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros"
-          ],
-          "cost": 3,
-          "faction": "faction_minions",
-          "id": "IS22",
-          "type": "solo"
-        },
-        {
           "name": "Targ",
           "fa": "C",
           "works_for": [
@@ -920,7 +909,7 @@
           "works_for": [
             "faction_skorne"
           ],
-          "cost": 2,
+          "cost": 5,
           "faction": "faction_minions",
           "id": "IS23",
           "type": "solo"
