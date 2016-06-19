@@ -136,7 +136,8 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                             }
                         ). error (
                             function () {
-                                alert('error reading ' + v + '.json');
+                                $scope.vars.error = 'error reading ' + v + '.json';
+                                $('#error').modal();
                             }
                         );
                     }
@@ -160,7 +161,8 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
         error(
             /*data, status, headers, config*/
             function() {
-                alert('error reading ' + $routeParams.army + '.json');
+                $scope.vars.error = 'error reading ' + $routeParams.army + '.json';
+                $('#error').modal();
             }
         );
 
@@ -226,7 +228,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 return true;
             }
 
-            // No Caster or other model can control warbeast or warjack in selectedModels we can not select an Warbeast or Warjack
+            // Only Caster or other model can control warbeast or warjack in selectedModels we can not select an Warbeast or Warjack
             if ( /^warb|^warj/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$|lesserwarlock|journeyman|marshall').all === 0 ) {
                 return true;
             } else if ( /^warb|^warj/i.test(model.type) && $scope.countSelectedModel('.*?', 'canControlOnly').all > 0 ) {
@@ -694,6 +696,18 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     $scope.vars.selectedModels.splice(0, 0, copy);
                 } else {
                     $scope.vars.selectedModels.push(copy);
+                }
+                if ( /journeyman/i.test(copy.type) ) {
+                    $('#journeyman').modal().on('hidden.bs.modal', function () {
+                        var j = $scope.vars.selectedModels.indexOf(copy);
+                        if ( $scope.vars.selectedModels[j].group.length === 0 ) {
+                            $scope.removeModel(copy);
+                        }
+                        $(this).off();
+
+                        // The Scope need an apply while is out of the angular walker
+                        $scope.$apply();
+                    });
                 }
                 $scope.calculatePoints();
             }

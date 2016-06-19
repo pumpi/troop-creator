@@ -1,0 +1,30 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                    aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title"><i class="fa fa-file-text-o"></i> Journyman Warcaster</h4>
+        </div>
+        <div class="modal-body select-on-click">
+            <strong>Battlegroup Controller:</strong> This model is not a warcaster but have the following warcaster special rules: Battlegroup Commander, Focus Manipulation, Power Field and Spellcaster. This model must have at least one warjack in its battlegroup at the start of the game.
+
+            <div class="army-models" ng-init="value = data[1]['entries']">
+                <div ng-hide="(filtered = allowedModels(value) ).length == 0" class="headline">
+                    {{data[1]['label']}} <span>({{filtered.length}})</span>
+                </div>
+                <ul>
+                    <li class="model add-model" ng-click="addModel(model)"
+                        ng-class="{disable: modelAvailable = checkModelAvailable(model, model.type)}"
+                        ng-repeat="model in filtered | orderBy: 'name'">
+                        <div class="model-name">{{model.name}}</div>
+                        <div class="model-options">
+                            <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
+                            <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + getModelCost(model, 1, 1) : ''}}</span>
+                            <span class="model-add"><i class="fa fa-plus-circle add-to-list"></i></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
