@@ -1,470 +1,974 @@
 {
   "groups": [
     {
-      "logo": "factions",
-      "id": "faction_minions_warlocks",
+      "logo": "faction_mercs",
+      "id": "faction_mercs_warcasters",
       "entries": [
         {
-          "id": "IW08",
-          "type": "warlock",
-          "name": " Helga1 (Helga the Conqueror)",
+          "id": "MW04",
+          "type": "warcaster",
+          "name": "Ashlynn1 (Ashlynn d'Elyse)",
           "cost": 29,
           "fa": "C",
-          "faction": "faction_minions",
+          "faction": "faction_mercs",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cygnar",
+            "faction_menoth"
           ],
-          "canControlOnly": "farrow"
+          "attributes":[
+            "llaelese"
+          ]
         },
         {
-          "id": "IW04",
-          "type": "warlock",
-          "name": " Arkadius1 (Dr. Arkadius)",
-          "cost": 32,
+          "id": "MW06",
+          "type": "warcaster",
+          "name": "Bartolo1  (Captain Bartolo Montador)",
+          "cost": 26,
           "fa": "C",
-          "faction": "faction_minions",
+          "faction": "faction_mercs",
           "works_for": [
-            "faction_orboros",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
           ],
-          "canControlOnly": "farrow|arkadius"
+          "attributes":[
+            "ordic",
+            "privateer"
+          ]
         },
         {
-          "id": "IW03",
-          "type": "warlock",
-          "name": " Calaban1 (Calaban the Grave Walker)",
+          "id": "MW09",
+          "type": "warcaster",
+          "name": "Damiano1 (Captain Damiano)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_mercs",
+          "works_for": [
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
+          ],
+          "attributes":[
+            "steelhead",
+            "ordic"
+          ]
+        },
+        {
+          "id": "MW07",
+          "type": "warcaster",
+          "name": "Shae1 (Captain Phinneus Shae)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_mercs",
+          "works_for": [
+            "faction_cygnar"
+          ],
+          "attributes":[
+            "privateer"
+          ]
+        },
+        {
+          "id": "MW12",
+          "type": "warcaster",
+          "name": "Cyphon1 (Cognifex Cyphon)",
           "cost": 29,
           "fa": "C",
-          "faction": "faction_minions",
+          "faction": "faction_mercs",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cryx"
           ],
-          "canControlOnly": "gatorman"
+          "attributes":[
+            "cephalyx"
+          ],
+          "canControlOnly": "cephalyx"
         },
         {
-          "id": "IW09",
-          "type": "warlock",
-          "name": " Jaga-Jaga1 (Jaga-JagaThe Death Charmer)",
-          "cost": 29,
-          "fa": "C",
-          "faction": "faction_minions",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "canControlOnly": "gatorman"
-        },
-        {
-          "id": "IW06",
-          "type": "warlock",
-          "name": " Sturm & Drang1 ",
-          "cost": 28,
-          "fa": "C",
-          "faction": "faction_minions",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "canControlOnly": "farrow"
-        },
-        {
-          "id": "IW02",
-          "type": "warlock",
-          "name": "Barnabas 1 (Bloody Barnabas)",
-          "cost": 28,
-          "fa": "C",
-          "faction": "faction_minions",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "canControlOnly": "gatorman"
-        },
-        {
-          "id": "IW01",
-          "type": "warlock",
-          "name": "Carver1 (Lord Carver BMMD Esq. III)",
-          "cost": 28,
-          "fa": "C",
-          "faction": "faction_minions",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "canControlOnly": "farrow"
-        },
-        {
-          "id": "IW05",
-          "type": "warlock",
-          "name": " Maelok1 (Maelok the Dreadbound)",
-          "cost": 28,
-          "fa": "C",
-          "faction": "faction_minions",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "canControlOnly": "gatorman"
-        },
-        {
-          "id": "IW07",
-          "type": "warlock",
-          "name": " Midas1",
+          "id": "MW14",
+          "type": "warcaster",
+          "name": "Constance1 (Constance Blaize Knight of the Prophet)",
           "cost": 30,
           "fa": "C",
-          "faction": "faction_minions",
+          "faction": "faction_mercs",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cygnar"
           ],
-          "canControlOnly": "farrow|midas"
+          "attributes":[
+            "morrow"
+          ]
         },
         {
-          "id": "IW10",
-          "type": "warlock",
-          "name": " Rask1 ",
-          "cost": 27,
+          "id": "MW08",
+          "type": "warcaster",
+          "name": "MacBain1 (Drake MacBain)",
+          "cost": 30,
           "fa": "C",
-          "faction": "faction_minions",
+          "faction": "faction_mercs",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
           ],
-          "canControlOnly": "gatorman"
+          "attributes":[
+            "ordic"
+          ]
+        },
+        {
+          "id": "MW03",
+          "type": "warcaster",
+          "name": "Durgen1 (Durgen Madhammer)",
+          "cost": 29,
+          "fa": "C",
+          "faction": "faction_mercs",
+          "works_for": [
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
+          ],
+          "attributes":[
+            "rhulic"
+          ],
+          "canControlOnly": "rhulic"
+        },
+        {
+          "id": "MW11",
+          "type": "warcaster",
+          "name": "Thexus1 (Exulon Thexus)",
+          "cost": 29,
+          "fa": "C",
+          "faction": "faction_mercs",
+          "works_for": [
+            "faction_cryx"
+          ],
+          "attributes":[
+            "cephalyx"
+          ],
+          "canControlOnly": "cephalyx"
+        },
+        {
+          "id": "MW05",
+          "type": "warcaster",
+          "name": "Fiona1  (Fiona the Black",
+          "cost": 31,
+          "fa": "C",
+          "faction": "faction_mercs",
+          "works_for": [
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador"
+          ],
+          "attributes":[
+            "thamarit",
+            "privateer"
+          ]
+        },
+        {
+          "id": "MW10",
+          "type": "warcaster",
+          "name": "Ossrum1 (General Ossrum)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_mercs",
+          "works_for": [
+            "faction_khador",
+            "faction_cygnar",
+            "faction_menoth"
+          ],
+          "attributes":[
+            "rhulic"
+          ],
+          "canControlOnly": "rhulic"
+        },
+        {
+          "id": "MW02",
+          "type": "warcaster",
+          "name": "Gorten1 (Gorten Grundback)",
+          "cost": 31,
+          "fa": "C",
+          "faction": "faction_mercs",
+          "works_for": [
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "attributes":[
+            "rhulic"
+          ],
+          "canControlOnly": "rhulic"
+        },
+        {
+          "id": "MW01",
+          "type": "warcaster",
+          "name": "Magnus1 (Magnus  the Traitor)",
+          "cost": 30,
+          "fa": "C",
+          "faction": "faction_mercs",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx"
+          ]
+        },
+        {
+          "id": "MW13",
+          "type": "warcaster",
+          "name": "Magnus2 (Magnus the Warlord)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_mercs",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx"
+          ]
         }
       ],
+      "label": "Warcasters"
+    },
+    {
+      "logo": "faction_mercs",
+      "id": "faction_mercs_warlocks",
+      "entries": [],
       "label": "Warlocks"
     },
     {
-      "logo": "factions",
-      "id": "faction_minions_warjacks",
+      "logo": "faction_mercs",
+      "id": "faction_mercs_warjacks",
       "entries": [
         {
-          "name": "Rover",
+          "name": "Grundback Gunner",
           "fa": "U",
           "restricted_to": [
-            "IS24"
+            "MW10",
+            "MW02",
+            "MW03",
+            "MA03",
+            "MS17"
           ],
-          "cost": 15,
-          "faction": "faction_minions",
-          "id": "IJ16",
-          "type": "warjack"
-        },
-        {
-          "name": "Nomad",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 11,
-          "faction": "faction_minions",
-          "id": "IJ11",
-          "type": "warjack"
-        },
-        {
-          "name": "Freebooter",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 9,
-          "faction": "faction_minions",
-          "id": "IJ12",
-          "type": "warjack"
-        },
-        {
-          "name": "Mangler",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 15,
-          "faction": "faction_minions",
-          "id": "IJ09",
-          "type": "warjack"
+          "cost": 6,
+          "faction": "faction_mercs",
+          "id": "MJ06",
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "light"
+          ]
         },
         {
           "name": "Mule",
           "fa": "U",
           "restricted_to": [
-            "IS24"
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MU03",
+            "MS09",
+            "MS20",
+            "MS25",
+            "MS26",
+            "MA06"
           ],
           "cost": 15,
-          "faction": "faction_minions",
-          "id": "IJ10",
-          "type": "warjack"
-        },
-        {
-          "name": "Mariner",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 14,
-          "faction": "faction_minions",
-          "id": "IJ13",
-          "type": "warjack"
+          "faction": "faction_mercs",
+          "id": "MJ10",
+          "type": "warjack",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "name": "Buccaneer",
           "fa": "U",
           "restricted_to": [
-            "IS24"
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MU03",
+            "MS09",
+            "MS20",
+            "MS25",
+            "MS26",
+            "MA06"
           ],
           "cost": 6,
-          "faction": "faction_minions",
-          "id": "IJ04",
-          "type": "warjack"
+          "faction": "faction_mercs",
+          "id": "MJ04",
+          "type": "warjack",
+          "attributes":[
+            "privateer",
+            "light"
+          ]
+        },
+        {
+          "name": "Gallant",
+          "fa": "C",
+          "restricted_to": [
+            "MW02",
+            "MW04",
+            "MW06",
+            "MW08",
+            "MW09",
+            "MW14"
+          ],
+          "cost": 17,
+          "faction": "faction_mercs",
+          "id": "MJ25",
+          "type": "warjack",
+          "attributes":[
+            "morrow",
+            "heavy"
+          ]
+        },
+        {
+          "name": "Warden",
+          "fa": "U",
+          "restricted_to": [
+            "MW11",
+            "MW12"
+          ],
+          "cost": 10,
+          "faction": "faction_mercs",
+          "id": "MJ21",
+          "type": "warjack",
+          "attributes":[
+            "cephalyx"
+          ]
+        },
+        {
+          "name": "Rover",
+          "fa": "U",
+          "restricted_to": [
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MU03",
+            "MS09",
+            "MS20",
+            "MS25",
+            "MS26",
+            "MA06"
+          ],
+          "cost": 15,
+          "faction": "faction_mercs",
+          "id": "MJ16",
+          "type": "warjack",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "name": "Rocinante",
           "fa": "C",
           "restricted_to": [
-            "IS24"
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MU03",
+            "MS09",
+            "MS20",
+            "MS25",
+            "MS26"
           ],
           "cost": 18,
-          "faction": "faction_minions",
-          "id": "IJ17",
-          "type": "warjack"
+          "faction": "faction_mercs",
+          "id": "MJ17",
+          "type": "warjack",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
-          "name": "Talon",
+          "name": "Ghordson Avalancher",
           "fa": "U",
           "restricted_to": [
-            "IS24"
+            "MW10",
+            "MW02",
+            "MW03",
+            "MA03",
+            "MS17"
           ],
-          "cost": 7,
-          "faction": "faction_minions",
-          "id": "IJ02",
-          "type": "warjack"
+          "cost": 17,
+          "faction": "faction_mercs",
+          "id": "MJ15",
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "heavy"
+          ]
         },
         {
           "name": "Vanguard",
           "fa": "U",
           "restricted_to": [
-            "IS24"
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MU03",
+            "MS09",
+            "MS20",
+            "MS26",
+            "MA06"
           ],
           "cost": 11,
-          "faction": "faction_minions",
-          "id": "IJ03",
-          "type": "warjack"
+          "faction": "faction_mercs",
+          "id": "MJ03",
+          "type": "warjack",
+          "attributes":[
+            "llaelese",
+            "light"
+          ]
+        },
+        {
+          "name": "Mangler",
+          "fa": "U",
+          "restricted_to": [
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MU03",
+            "MS09",
+            "MS20",
+            "MS25",
+            "MS26",
+            "MA06"
+          ],
+          "cost": 15,
+          "faction": "faction_mercs",
+          "id": "MJ09",
+          "type": "warjack",
+          "attributes":[
+            "heavy"
+          ]
+        },
+        {
+          "name": "Freebooter",
+          "fa": "U",
+          "restricted_to": [
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MU03",
+            "MS09",
+            "MS20",
+            "MS25",
+            "MS26",
+            "MA06"
+          ],
+          "cost": 9,
+          "faction": "faction_mercs",
+          "id": "MJ12",
+          "type": "warjack",
+          "attributes":[
+            "privateer",
+            "light"
+          ]
+        },
+        {
+          "name": "Renegade",
+          "fa": "2",
+          "restricted_to": [
+            "MW01",
+            "MW13"
+          ],
+          "cost": 10,
+          "faction": "faction_mercs",
+          "id": "MJ01",
+          "type": "warjack",
+          "attributes":[
+            "magnus",
+            "light"
+          ]
+        },
+        {
+          "name": "Ghordson Driller",
+          "fa": "U",
+          "restricted_to": [
+            "MW10",
+            "MW02",
+            "MW03",
+            "MA03",
+            "MS17"
+          ],
+          "cost": 10,
+          "faction": "faction_mercs",
+          "id": "MJ07",
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "heavy"
+          ]
+        },
+        {
+          "name": "Nomad",
+          "fa": "U",
+          "restricted_to": [
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MU03",
+            "MS09",
+            "MS20",
+            "MS25",
+            "MS26",
+            "MA06"
+          ],
+          "cost": 11,
+          "faction": "faction_mercs",
+          "id": "MJ11",
+          "type": "warjack",
+          "attributes":[
+            "heavy"
+          ]
+        },
+        {
+          "name": "Talon",
+          "fa": "U",
+          "restricted_to": [
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MU03",
+            "MS09",
+            "MS20",
+            "MS25",
+            "MS26",
+            "MA06"
+          ],
+          "cost": 7,
+          "faction": "faction_mercs",
+          "id": "MJ02",
+          "type": "warjack",
+          "attributes":[
+            "light"
+          ]
+        },
+        {
+          "name": "Grundback Blaster",
+          "fa": "U",
+          "restricted_to": [
+            "MW10",
+            "MW02",
+            "MW03",
+            "MA03",
+            "MS17"
+          ],
+          "cost": 6,
+          "faction": "faction_mercs",
+          "id": "MJ05",
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "light"
+          ]
+        },
+        {
+          "name": "Mariner",
+          "fa": "U",
+          "restricted_to": [
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MU03",
+            "MS09",
+            "MS20",
+            "MS25",
+            "MS26",
+            "MA06"
+          ],
+          "cost": 14,
+          "faction": "faction_mercs",
+          "id": "MJ13",
+          "type": "warjack",
+          "attributes":[
+            "privateer",
+            "heavy"
+          ]
+        },
+        {
+          "name": "Galleon",
+          "fa": "2",
+          "restricted_to": [
+            "MW04",
+            "MW06",
+            "MW09",
+            "MW07",
+            "MW14",
+            "MW08",
+            "MW05",
+            "MW01",
+            "MW13",
+            "MS25"
+          ],
+          "cost": 39,
+          "faction": "faction_mercs",
+          "id": "MJ18",
+          "type": "warjackColossal",
+          "attributes":[
+            "privateer",
+            "colossal"
+          ]
+        },
+        {
+          "name": "Wroughthammer Rockram",
+          "fa": "U",
+          "restricted_to": [
+            "MW10",
+            "MW02",
+            "MW03",
+            "MA03",
+            "MS17"
+          ],
+          "cost": 14,
+          "faction": "faction_mercs",
+          "id": "MJ08",
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "heavy"
+          ]
+        },
+        {
+          "name": "Subduer",
+          "fa": "U",
+          "restricted_to": [
+            "MW11",
+            "MW12"
+          ],
+          "cost": 11,
+          "faction": "faction_mercs",
+          "id": "MJ20",
+          "type": "warjack",
+          "attributes":[
+            "cephalyx"
+          ]
+        },
+        {
+          "name": "Ghordson Basher",
+          "fa": "U",
+          "restricted_to": [
+            "MW10",
+            "MW02",
+            "MW03",
+            "MA03",
+            "MS17"
+          ],
+          "cost": 9,
+          "faction": "faction_mercs",
+          "id": "MJ14",
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "light"
+          ]
+        },
+        {
+          "name": "Ghordson Earthbreaker",
+          "fa": "2",
+          "restricted_to": [
+            "MW10",
+            "MW02",
+            "MW03",
+            "MA03",
+            "MS17"
+          ],
+          "cost": 38,
+          "faction": "faction_mercs",
+          "id": "MJ19",
+          "type": "warjackColossal",
+          "attributes":[
+            "rhulic",
+            "colossal"
+          ]
+        },
+        {
+          "name": "Wrecker",
+          "fa": "U",
+          "restricted_to": [
+            "MW11",
+            "MW12"
+          ],
+          "cost": 14,
+          "faction": "faction_mercs",
+          "id": "MJ22",
+          "type": "warjack",
+          "attributes":[
+            "cephalyx"
+          ]
         }
       ],
       "label": "Warjacks"
     },
     {
-      "logo": "factions",
-      "id": "faction_minions_warbeasts",
+      "logo": "faction_mercs",
+      "id": "faction_mercs_warbeasts",
       "entries": [
         {
-          "name": "Gorax Rager",
-          "fa": "U",
+          "name": "Brine",
+          "fa": "C",
           "restricted_to": [
-            "IW04"
+            "MS44"
           ],
-          "cost": 7,
-          "faction": "factions",
-          "id": "IB17",
-          "type": "warbeast",
-          "attributes":[
-            "arkadius"
-          ]
+          "cost": 0,
+          "faction": "faction_mercs",
+          "id": "IB13_mercs",
+          "type": "warbeast"
         },
         {
-          "name": "2 Razor Boars",
+          "name": "Splatter Boar",
           "fa": "U",
-          "cost": 7,
-          "faction": "faction_minions",
-          "id": "IB09",
+          "restricted_to": [
+            "MS44"
+          ],
+          "cost": 5,
+          "faction": "faction_mercs",
+          "id": "IB11_mercs",
           "type": "warbeast",
-          "attributes": [
+          "attributes":[
             "farrow"
           ]
         },
         {
           "name": "Gun Boar",
           "fa": "U",
-          "cost": 9,
-          "faction": "faction_minions",
-          "id": "IB01",
+          "restricted_to": [
+            "MS44"
+          ],
+          "cost": 5,
+          "faction": "faction_mercs",
+          "id": "IB01_mercs",
           "type": "warbeast",
-          "attributes": [
+          "attributes":[
+            "farrow"
+          ]
+        },
+        {
+          "name": "Road Hog",
+          "fa": "U",
+          "restricted_to": [
+            "MS44"
+          ],
+          "cost": 9,
+          "faction": "faction_mercs",
+          "id": "IB06_mercs",
+          "type": "warbeast",
+          "attributes":[
             "farrow"
           ]
         },
         {
           "name": "Bull Snapper",
           "fa": "U",
-          "cost": 5,
-          "faction": "faction_minions",
-          "id": "IB04",
+          "restricted_to": [
+            "MS45"
+          ],
+          "cost": 3,
+          "faction": "faction_mercs",
+          "id": "IB04_mercs",
           "type": "warbeast",
-          "attributes": [
+          "attributes":[
             "gatorman"
-          ]
-        },
-        {
-          "name": "Snapjaw",
-          "fa": "C",
-          "restricted_to": [
-            "IS21"
-          ],
-          "cost": 0,
-          "faction": "faction_minions",
-          "id": "IB16",
-          "type": "warbeast"
-        },
-        {
-          "name": "Brine",
-          "fa": "C",
-          "restricted_to": [
-            "IS20"
-          ],
-          "cost": 0,
-          "faction": "faction_minions",
-          "id": "IB13",
-          "type": "warbeast"
-        },
-        {
-          "name": "War Hog",
-          "fa": "U",
-          "cost": 15,
-          "faction": "faction_minions",
-          "id": "IB02",
-          "type": "warbeast",
-          "attributes": [
-            "farrow"
-          ]
-        },
-        {
-          "name": "Splatter Boar",
-          "fa": "U",
-          "cost": 8,
-          "faction": "faction_minions",
-          "id": "IB11",
-          "type": "warbeast",
-          "attributes": [
-            "farrow"
           ]
         },
         {
           "name": "Boneswarm",
           "fa": "U",
+          "restricted_to": [
+            "MS45"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "IB07_mercs",
+          "type": "warbeast"
+        },
+        {
+          "name": "Blind Walker",
+          "fa": "U",
+          "restricted_to": [
+            "MS45"
+          ],
           "cost": 7,
-          "faction": "faction_minions",
-          "id": "IB07",
+          "faction": "faction_mercs",
+          "id": "IB12_mercs",
           "type": "warbeast",
-          "attributes": [
-            "gatorman",
-            "midas"
+          "attributes":[
+            "gatorman"
           ]
         },
         {
           "name": "Lug",
           "fa": "C",
           "restricted_to": [
-            "IS18"
+            "MS42"
           ],
           "cost": 0,
-          "faction": "faction_minions",
-          "id": "IB14",
+          "faction": "faction_mercs",
+          "id": "IB14_mercs",
           "type": "warbeast"
+        },
+        {
+          "name": "Razor Boar",
+          "fa": "U",
+          "restricted_to": [
+            "MS44"
+          ],
+          "cost": 2,
+          "faction": "faction_mercs",
+          "id": "IB09_mercs",
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
+        },
+        {
+          "name": "Snapjaw",
+          "fa": "C",
+          "restricted_to": [
+            "MS45"
+          ],
+          "cost": 0,
+          "faction": "faction_mercs",
+          "id": "IB16_mercs",
+          "type": "warbeast"
+        },
+        {
+          "name": "Swamp Horror",
+          "fa": "U",
+          "restricted_to": [
+            "MS45"
+          ],
+          "cost": 8,
+          "faction": "faction_mercs",
+          "id": "IB08_mercs",
+          "type": "warbeast",
+          "attributes":[
+            "gatorman"
+          ]
         },
         {
           "name": "Skarath",
           "fa": "C",
           "restricted_to": [
-            "IS19"
+            "MS43"
           ],
           "cost": 0,
-          "faction": "faction_minions",
-          "id": "IB15",
+          "faction": "faction_mercs",
+          "id": "IB15_mercs",
           "type": "warbeast"
-        },
-        {
-          "name": "Blackhide Wrastler",
-          "fa": "U",
-          "cost": 16,
-          "faction": "faction_minions",
-          "id": "IB03",
-          "type": "warbeast",
-          "attributes": [
-            "gatorman"
-          ]
-        },
-        {
-          "name": "Road Hog",
-          "fa": "U",
-          "cost": 16,
-          "faction": "faction_minions",
-          "id": "IB06",
-          "type": "warbeast",
-          "attributes": [
-            "farrow"
-          ]
-        },
-        {
-          "name": "Swamp Horror",
-          "fa": "U",
-          "cost": 14,
-          "faction": "faction_minions",
-          "id": "IB08",
-          "type": "warbeast",
-          "attributes": [
-            "gatorman"
-          ]
         },
         {
           "name": "Battle Boar",
           "fa": "U",
-          "cost": 7,
-          "faction": "faction_minions",
-          "id": "IB10",
+          "restricted_to": [
+            "MS44"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "IB10_mercs",
           "type": "warbeast",
-          "attributes": [
+          "attributes":[
+            "farrow"
+          ]
+        },
+        {
+          "name": "War Hog",
+          "fa": "U",
+          "restricted_to": [
+            "MS44"
+          ],
+          "cost": 8,
+          "faction": "faction_mercs",
+          "id": "IB02_mercs",
+          "type": "warbeast",
+          "attributes":[
             "farrow"
           ]
         },
         {
           "name": "Ironback Spitter",
           "fa": "U",
-          "cost": 15,
-          "faction": "faction_minions",
-          "id": "IB05",
+          "restricted_to": [
+            "MS45"
+          ],
+          "cost": 8,
+          "faction": "faction_mercs",
+          "id": "IB05_mercs",
           "type": "warbeast",
-          "attributes": [
+          "attributes":[
             "gatorman"
           ]
         },
         {
-          "name": "Blind Walker",
+          "name": "Blackhide Wrastler",
           "fa": "U",
-          "cost": 12,
-          "faction": "faction_minions",
-          "id": "IB12",
+          "restricted_to": [
+            "MS45"
+          ],
+          "cost": 9,
+          "faction": "faction_mercs",
+          "id": "IB03_mercs",
           "type": "warbeast",
-          "attributes": [
+          "attributes":[
             "gatorman"
           ]
         }
@@ -472,76 +976,413 @@
       "label": "Warbeasts"
     },
     {
-      "logo": "factions",
-      "id": "faction_minions_bes",
+      "logo": "faction_mercs",
+      "id": "faction_mercs_bes",
       "entries": [
         {
-          "name": "Meat Thresher",
+          "name": "Hammerfall Siege Crawler",
           "fa": "2",
           "works_for": [
-            "faction_skorne",
-            "faction_trollblood",
-            "faction_orboros",
-            "faction_everblight"
+            "faction_khador",
+            "faction_cygnar"
           ],
-          "cost": 19,
-          "faction": "faction_minions",
-          "id": "IE01",
-          "type": "battleengine"
-        },
-        {
-          "name": "Sacral Vault",
-          "fa": "2",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight"
-          ],
-          "cost": 18,
-          "faction": "faction_minions",
-          "id": "IE02",
+          "cost": 9,
+          "faction": "faction_mercs",
+          "id": "ME01",
           "type": "battleengine"
         }
       ],
       "label": "Battle engines"
     },
     {
-      "logo": "factions",
-      "id": "faction_minions_units",
+      "logo": "faction_mercs",
+      "id": "faction_mercs_units",
       "entries": [
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 15,
+          "fa": "2",
+          "costMin": 9,
+          "id": "MU28",
+          "name": "Idrian Skirmishers",
+          "cost": 9,
+          "faction": "faction_mercs",
+          "type": "unit"
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 11,
+          "fa": "3",
+          "costMin": 7,
+          "id": "MU24",
+          "name": "Cephalyx Mind Bender & Drudges",
+          "cost": 7,
+          "faction": "faction_mercs",
+          "type": "unit"
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 16,
+          "fa": "3",
+          "costMin": 10,
+          "id": "MU06",
+          "name": "Hammerfall High Shield Gun Corps",
+          "works_for": [
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "cost": 10,
+          "faction": "faction_mercs",
+          "type": "unitMarshall"
+        },
+        {
+          "name": "Tactical Arcanist Corps",
+          "fa": "3",
+          "works_for": [
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "cost": 7,
+          "faction": "faction_mercs",
+          "id": "MU20",
+          "type": "unit"
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 13,
+          "fa": "U",
+          "costMin": 8,
+          "id": "MU13",
+          "name": "Sea Dog Pirates",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 8,
+          "faction": "faction_mercs",
+          "type": "unit"
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 16,
+          "fa": "C",
+          "costMin": 10,
+          "id": "MU04",
+          "name": "Croe's Cutthroats",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx"
+          ],
+          "cost": 10,
+          "faction": "faction_mercs",
+          "type": "unit"
+        },
+        {
+          "name": "Thorn Gun Mages",
+          "fa": "2",
+          "cost": 9,
+          "faction": "faction_mercs",
+          "id": "MU29",
+          "type": "unit",
+          "attributes":[
+            "llaelese"
+          ]
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 11,
+          "fa": "U",
+          "costMin": 7,
+          "id": "MU08",
+          "name": "Steelhead Halberdiers",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 7,
+          "faction": "faction_mercs",
+          "type": "unit",
+          "attributes":[
+            "steelhead"
+          ]
+        },
+        {
+          "name": "Sea Dog Deck Gun",
+          "fa": "2",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 3,
+          "faction": "faction_mercs",
+          "id": "MU14",
+          "type": "unit"
+        },
+        {
+          "max": 5,
+          "min": 3,
+          "costMax": 16,
+          "fa": "2",
+          "costMin": 10,
+          "id": "MU19",
+          "name": "Ogrun Assault Corps",
+          "works_for": [
+            "faction_menoth",
+            "faction_cygnar"
+          ],
+          "cost": 10,
+          "faction": "faction_mercs",
+          "type": "unit"
+        },
         {
           "max": 5,
           "min": 3,
           "costMax": 18,
-          "fa": "3",
+          "fa": "1",
           "costMin": 11,
-          "id": "IU04",
-          "name": "Gatorman Posse",
+          "id": "MU15",
+          "name": "Steelhead Heavy Cavalry",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
           ],
           "cost": 11,
-          "faction": "faction_minions",
+          "faction": "faction_mercs",
+          "type": "unit",
+          "attributes":[
+            "steelhead"
+          ]
+        },
+        {
+          "name": "Horgenhold Artillery Corps",
+          "fa": "2",
+          "works_for": [
+            "faction_menoth",
+            "faction_cygnar"
+          ],
+          "cost": 6,
+          "faction": "faction_mercs",
+          "id": "MU17",
+          "type": "unit"
+        },
+        {
+          "name": "Lynus Wesselbaum & Edrea Lloryrr",
+          "fa": "C",
+          "works_for": [
+            "faction_cygnar"
+          ],
+          "cost": 6,
+          "faction": "faction_mercs",
+          "id": "MU25",
+          "type": "unit"
+        },
+        {
+          "name": "Devil's Shadow Mutineers",
+          "fa": "C",
+          "works_for": [
+            "faction_cryx"
+          ],
+          "cost": 8,
+          "faction": "faction_mercs",
+          "id": "MU21",
+          "type": "unit"
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 18,
+          "fa": "C",
+          "costMin": 12,
+          "id": "MU03",
+          "name": "Captain Sam MacHorne & the Devil Dogs",
+          "works_for": [
+            "faction_menoth",
+            "faction_cygnar"
+          ],
+          "cost": 12,
+          "faction": "faction_mercs",
+          "type": "unitMarshall",
+          "attributes":[
+            "ordic",
+            "marshall"
+          ]
+        },
+        {
+          "name": "Lady Aiyana & Master Holt",
+          "fa": "C",
+          "works_for": [
+            "faction_cygnar",
+            "faction_menoth",
+            "faction_khador",
+            "faction_scyrah"
+          ],
+          "cost": 8,
+          "faction": "faction_mercs",
+          "id": "MU11",
+          "type": "unit"
+        },
+        {
+          "name": "Dannon Blythe & Bull",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "cost": 6,
+          "faction": "faction_mercs",
+          "id": "MU16",
+          "type": "unit"
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 17,
+          "fa": "C",
+          "costMin": 11,
+          "id": "MU01",
+          "name": "Greygore Boomhowler & Co.",
+          "works_for": [
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 11,
+          "faction": "faction_mercs",
           "type": "unit"
         },
         {
           "max": 10,
           "min": 6,
           "costMax": 15,
-          "fa": "3",
+          "fa": "2",
           "costMin": 9,
-          "id": "IU03",
-          "name": "Farrow Brigands",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
+          "id": "MU26",
+          "name": "Kayazy Assassins",
           "cost": 9,
-          "faction": "faction_minions",
+          "faction": "faction_mercs",
+          "type": "unit"
+        },
+        {
+          "name": "Kayazy Eliminators",
+          "fa": "2",
+          "cost": 5,
+          "faction": "faction_mercs",
+          "id": "MU27",
+          "type": "unit"
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 12,
+          "fa": "3",
+          "costMin": 8,
+          "id": "MU22",
+          "name": "Cephalyx Mind Slaver & Drudges",
+          "cost": 8,
+          "faction": "faction_mercs",
+          "type": "unit"
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 15,
+          "fa": "2",
+          "costMin": 9,
+          "id": "MU35",
+          "name": "Precursor Knights",
+          "cost": 9,
+          "faction": "faction_mercs",
+          "type": "unit"
+        },
+        {
+          "name": "Cephalyx Overlords",
+          "fa": "3",
+          "cost": 8,
+          "faction": "faction_mercs",
+          "id": "MU23",
+          "type": "unit"
+        },
+        {
+          "name": "The Commodore Cannon & Crew",
+          "fa": "C",
+          "cost": 7,
+          "faction": "faction_mercs",
+          "id": "MU10",
+          "type": "unit"
+        },
+        {
+          "name": "Herne & Jonne",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "cost": 5,
+          "faction": "faction_mercs",
+          "id": "MU02",
+          "type": "unit"
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 16,
+          "fa": "3",
+          "costMin": 10,
+          "id": "MU07",
+          "name": "Horgenhold Forge Guard",
+          "works_for": [
+            "faction_menoth",
+            "faction_cygnar"
+          ],
+          "cost": 10,
+          "faction": "faction_mercs",
+          "type": "unit"
+        },
+        {
+          "max": 10,
+          "min": 6,
+          "costMax": 12,
+          "fa": "2",
+          "costMin": 8,
+          "id": "MU12",
+          "name": "Press Gangers",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 8,
+          "faction": "faction_mercs",
+          "type": "unit"
+        },
+        {
+          "name": "Alexia Ciannor & the Risen",
+          "fa": "C",
+          "works_for": [
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "cost": 10,
+          "faction": "faction_mercs",
+          "id": "MU09",
           "type": "unit"
         },
         {
@@ -550,568 +1391,747 @@
           "costMax": 19,
           "fa": "C",
           "costMin": 12,
-          "id": "IU12",
+          "id": "MU05",
           "name": "Cylena Raefyll & Nyss Hunters",
           "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_scyrah"
           ],
           "cost": 12,
-          "faction": "faction_minions",
-          "type": "unit"
-        },
-        {
-          "name": "Dannon Blythe & Bull",
-          "fa": "C",
-          "works_for": [
-            "faction_trollblood"
-          ],
-          "cost": 6,
-          "faction": "faction_minions",
-          "id": "IU13",
-          "type": "unit"
-        },
-        {
-          "name": "Gatorman Bokor and Bog Trog Swamp Shamblers",
-          "fa": "2",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 11,
-          "faction": "faction_minions",
-          "id": "IU08",
-          "type": "unit"
-        },
-        {
-          "name": "Swamp Gobber Bellows Crew",
-          "fa": "1",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 2,
-          "faction": "faction_minions",
-          "id": "IU05",
-          "type": "unit"
-        },
-        {
-          "name": "Farrow Slaughterhousers",
-          "fa": "3",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 11,
-          "faction": "faction_minions",
-          "id": "IU07",
+          "faction": "faction_mercs",
           "type": "unit"
         },
         {
           "max": 10,
           "min": 6,
-          "costMax": 17,
-          "fa": "C",
-          "costMin": 11,
-          "id": "IU11",
-          "name": "Greygore Boomhowler & Co.",
-          "works_for": [
-            "faction_trollblood"
-          ],
-          "cost": 11,
-          "faction": "faction_minions",
-          "type": "unit"
-        },
-        {
-          "max": 6,
-          "min": 4,
-          "costMax": 8,
-          "fa": "U",
-          "costMin": 5,
-          "id": "IU02",
-          "name": "Farrow Bone Grinders",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 5,
-          "faction": "faction_minions",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 16,
+          "costMax": 14,
           "fa": "2",
-          "costMin": 10,
-          "id": "IU01",
-          "name": "Bog Trog Ambushers",
+          "costMin": 8,
+          "id": "MU18",
+          "name": "Steelhead Riflemen",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
           ],
-          "cost": 10,
-          "faction": "faction_minions",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 17,
-          "fa": "2",
-          "costMin": 10,
-          "id": "IU09",
-          "name": "Croak Raiders",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 10,
-          "faction": "faction_minions",
-          "type": "unit"
-        },
-        {
-          "name": "Lynus Wesselbaum & Edrea Lloryrr",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
-          ],
-          "cost": 5,
-          "faction": "faction_minions",
-          "id": "IU10",
-          "type": "unit"
-        },
-        {
-          "name": "Farrow Razorback Crew",
-          "fa": "2",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 5,
-          "faction": "faction_minions",
-          "id": "IU06",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 15,
-          "fa": "2",
-          "costMin": 9,
-          "id": "IU14",
-          "name": "Farrow Commandos",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 9,
-          "faction": "faction_minions",
-          "type": "unit"
+          "cost": 8,
+          "faction": "faction_mercs",
+          "type": "unit",
+          "attributes":[
+            "steelhead"
+          ]
         }
       ],
       "label": "Units"
     },
     {
-      "logo": "factions",
-      "id": "faction_minions_UAs",
+      "logo": "faction_mercs",
+      "id": "faction_mercs_UAs",
       "entries": [
         {
+          "name": "Idrian Skirmishers Chieftain & Guide",
           "fa": "2",
-          "restricted_to": "IU03",
-          "id": "IA01",
-          "name": "Farrow Brigand Warlord",
+          "cost": 5,
+          "restricted_to": "MU28",
+          "faction": "faction_mercs",
+          "id": "MA05",
+          "type": "UA"
+        },
+        {
+          "fa": "3",
+          "restricted_to": "MU06",
+          "id": "MA03",
+          "name": "Hammerfall High Shield Officer & Standard",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "cost": 5,
+          "faction": "faction_mercs",
+          "type": "UAMarshall"
+        },
+        {
+          "fa": "C",
+          "restricted_to": "MU13",
+          "id": "MA01",
+          "name": "Mr. Walls, the Quartermaster",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
           ],
           "cost": 4,
-          "faction": "faction_minions",
+          "faction": "faction_mercs",
+          "type": "UA"
+        },
+        {
+          "name": "Major Harrison Gibbs",
+          "fa": "C",
+          "cost": 4,
+          "restricted_to": "MU29",
+          "faction": "faction_mercs",
+          "id": "MA06",
+          "type": "UAMarshall"
+        },
+        {
+          "name": "Kayazy Assassin Underboss",
+          "fa": "2",
+          "cost": 4,
+          "restricted_to": "MU26",
+          "faction": "faction_mercs",
+          "id": "MA04",
+          "type": "UA"
+        },
+        {
+          "name": "Precursor Knight Officer & Standard",
+          "fa": "2",
+          "cost": 4,
+          "restricted_to": "MU35",
+          "faction": "faction_mercs",
+          "id": "MA09",
+          "type": "UA"
+        },
+        {
+          "id": "MA11",
+          "name": "Cephalyx Dominator",
+          "fa": "2",
+          "restricted_to": [
+            "MU09",
+            "MU04",
+            "MU05",
+            "MU16",
+            "MU01",
+            "MU06",
+            "MU02",
+            "MU17",
+            "MU07",
+            "MU11",
+            "MU19",
+            "MU12",
+            "MU03",
+            "MU13",
+            "MU14",
+            "MU08",
+            "MU18",
+            "MU20"
+          ],
+
+          "works_for": [
+            "faction_cryx"
+          ],
+          "cost": 1,
+          "faction": "faction_mercs",
           "type": "UA"
         }
       ],
       "label": "Unit Attachments"
     },
     {
-      "logo": "factions",
-      "id": "faction_minions_WAs",
-      "entries": [],
+      "logo": "faction_mercs",
+      "id": "faction_mercs_WAs",
+      "entries": [
+        {
+          "fa": "3",
+          "restricted_to": "MU13",
+          "max_attach": 3,
+          "id": "MA02",
+          "name": "Sea Dog Pirate Riflemen",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 2,
+          "faction": "faction_mercs",
+          "type": "WA"
+        }
+      ],
       "label": "Weapon Attachments"
     },
     {
-      "logo": "factions",
-      "id": "faction_minions_solos",
+      "logo": "faction_mercs",
+      "id": "faction_mercs_solos",
       "entries": [
+        {
+          "name": "Kell Bailoch",
+          "fa": "C",
+          "works_for": [
+            "faction_khador",
+            "faction_menoth"
+          ],
+          "cost": 5,
+          "faction": "faction_mercs",
+          "id": "MS06",
+          "type": "solo"
+        },
         {
           "name": "Wrong Eye (Wrong Eye & Snapjaw)",
           "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cryx"
           ],
           "cost": 17,
-          "faction": "faction_minions",
-          "id": "IS21",
+          "faction": "faction_mercs",
+          "id": "MS45",
           "type": "soloLesserWarlock",
-          "attachment": "IB16",
-          "canControlOnly": [
-            "gatorman"
-          ]
+          "attachment": "IB16_mercs"
         },
         {
-          "name": "Dahlia Hallyr (Dahlia Hallyr & Skarath)",
+          "name": "Rhupert Carvolo, Piper of Ord",
           "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
-          ],
-          "cost": 17,
-          "faction": "faction_minions",
-          "id": "IS19",
-          "type": "soloLesserWarlock",
-          "attachment": "IB15"
-        },
-        {
-          "name": "Rorsh (Rorsh & Brine)",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 15,
-          "faction": "faction_minions",
-          "id": "IS20",
-          "type": "soloLesserWarlock",
-          "attachment": "IB13",
-          "canControlOnly": [
-            "farrow"
-          ]
-        },
-        {
-          "name": "Brun Cragback (Brun Cragback & Lug)",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
-          ],
-          "cost": 16,
-          "faction": "faction_minions",
-          "id": "IS18",
-          "type": "soloLesserWarlock",
-          "attachment": "IB14"
-        },
-        {
-          "name": "Gremlin Swarm",
-          "fa": "2",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_skorne",
-            "faction_trollblood"
-          ],
-          "cost": 3,
-          "faction": "faction_minions",
-          "id": "IS15",
-          "type": "solo"
-        },
-        {
-          "name": "Totem Hunter",
-          "fa": "1",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 6,
-          "faction": "faction_minions",
-          "id": "IS07",
-          "type": "solo"
-        },
-        {
-          "name": "Saxon Orrik",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cygnar",
+            "faction_menoth"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS06",
-          "type": "solo"
+          "faction": "faction_mercs",
+          "id": "MS04",
+          "type": "solo",
+          "attributes":[
+            "ordic"
+          ]
         },
         {
           "name": "Raluk Moorclaw, the Ironmonger",
           "fa": "C",
           "works_for": [
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
             "faction_trollblood"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS24",
+          "faction": "faction_mercs",
+          "id": "MS26",
           "type": "soloMarshall"
         },
         {
-          "name": "Targ",
+          "name": "Lanyssa Ryssyll, Nyss Sorceress",
           "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cygnar",
+            "faction_scyrah"
+          ],
+          "cost": 3,
+          "faction": "faction_mercs",
+          "id": "MS38",
+          "type": "solo"
+        },
+        {
+          "name": "Gastone Crosse",
+          "fa": "C",
+          "works_for": [
+            "faction_cygnar",
+            "faction_menoth"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS10",
+          "faction": "faction_mercs",
+          "id": "MS25",
+          "type": "soloJourneyMan",
+          "attributes":[
+            "llaelese",
+            "journeyman"
+          ]
+        },
+        {
+          "name": "Sylys Wyshnalyrr, the Seeker",
+          "fa": "C",
+          "works_for": [
+            "faction_cygnar",
+            "faction_khador",
+            "faction_scyrah"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS23",
           "type": "soloAttachment"
         },
         {
-          "name": "Croak Hunter",
-          "fa": "3",
+          "name": "Thor Steinhammer",
+          "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cygnar",
+            "faction_khador"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS09",
+          "faction": "faction_mercs",
+          "id": "MS17",
+          "type": "soloMarshall"
+        },
+        {
+          "name": "First Mate Hawk",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS11",
           "type": "solo"
         },
         {
-          "name": "Orin Midwinter, Rogue Inquisitor",
+          "name": "Dahlia Hallyr (Dahlia Hallyr & Skarath)",
           "fa": "C",
           "works_for": [
-            "faction_skorne"
+            "faction_scyrah"
+          ],
+          "cost": 17,
+          "faction": "faction_mercs",
+          "id": "MS43",
+          "type": "soloLesserWarlock",
+          "attachment": "IB15_mercs"
+        },
+        {
+          "name": "Stannis Brocker",
+          "fa": "C",
+          "works_for": [
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
+          ],
+          "cost": 7,
+          "faction": "faction_mercs",
+          "id": "MS16",
+          "type": "solo",
+          "attributes":[
+            "steelhead"
+          ]
+        },
+        {
+          "name": "Taryn di la Rovissi, Llaelese Gun Mage",
+          "fa": "C",
+          "works_for": [
+            "faction_cygnar",
+            "faction_menoth"
           ],
           "cost": 5,
-          "faction": "faction_minions",
-          "id": "IS23",
-          "type": "solo"
+          "faction": "faction_mercs",
+          "id": "MS19",
+          "type": "solo",
+          "attributes":[
+            "llaelese"
+          ]
         },
         {
-          "name": "Gudrun the Wanderer",
+          "name": "Madelyn Corbeau, Ordic Courtesan",
           "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 5,
-          "faction": "faction_minions",
-          "id": "IS03",
-          "type": "solo"
-        },
-        {
-          "name": "Hutchuck",
-          "fa": "C",
-          "works_for": [
-            "faction_orboros",
-            "faction_skorne",
-            "faction_trollblood"
-          ],
-          "cost": 6,
-          "faction": "faction_minions",
-          "id": "IS16",
-          "type": "solo"
-        },
-        {
-          "name": "Feralgeist",
-          "fa": "3",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 2,
-          "faction": "faction_minions",
-          "id": "IS02",
-          "type": "solo"
-        },
-        {
-          "name": "Swamp Gobber River Raiders",
-          "fa": "3",
-          "works_for": [
-            "faction_orboros",
-            "faction_skorne"
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth",
+            "faction_scyrah"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS25",
-          "type": "solo"
+          "faction": "faction_mercs",
+          "id": "MS21",
+          "type": "soloAttachment",
+          "attributes":[
+            "ordic"
+          ]
         },
         {
-          "name": "Viktor Pendrake",
+          "name": "Ragman",
           "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS05",
-          "type": "solo"
+          "faction": "faction_mercs",
+          "id": "MS22",
+          "type": "solo",
+          "attributes":[
+            "llaelese",
+            "thamarite"
+          ]
         },
         {
-          "name": "Gatorman Witch Doctor",
-          "fa": "2",
-          "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
-          ],
-          "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS11",
-          "type": "solo"
-        },
-        {
-          "name": "Efaarit Scouts",
-          "fa": "2",
-          "works_for": [
-            "faction_orboros",
-            "faction_skorne",
-            "faction_trollblood"
-          ],
-          "cost": 6,
-          "faction": "faction_minions",
-          "id": "IS13",
-          "type": "solo"
-        },
-        {
-          "name": "Lanyssa Ryssyll",
+          "name": "Reinholdt, Gobber Speculator",
           "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
+            "faction_cygnar",
+            "faction_khador"
           ],
-          "cost": 3,
-          "faction": "faction_minions",
-          "id": "IS04",
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS02",
+          "type": "soloAttachment"
+        },
+        {
+          "name": "Bosun Grogspar",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS08",
           "type": "solo"
         },
         {
-          "name": "Maximus",
+          "name": "Alexia, Mistress of the Witchfire",
           "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_skorne",
-            "faction_trollblood"
+            "faction_cygnar",
+            "faction_khador"
           ],
-          "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS14",
+          "cost": 7,
+          "faction": "faction_mercs",
+          "id": "MS24",
           "type": "solo"
         },
         {
           "name": "Gobber Tinker",
           "fa": "2",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cygnar",
+            "faction_khador"
           ],
           "cost": 2,
-          "faction": "faction_minions",
-          "id": "IS12",
+          "faction": "faction_mercs",
+          "id": "MS41",
           "type": "solo"
         },
         {
-          "name": "Thrullg",
-          "fa": "2",
+          "name": "Master Gunner Dougal MacNaile",
+          "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
           ],
-          "cost": 6,
-          "faction": "faction_minions",
-          "id": "IS08",
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS13",
           "type": "solo"
+        },
+        {
+          "name": "Machine Wraith",
+          "fa": "3",
+          "cost": 2,
+          "faction": "faction_mercs",
+          "id": "MS34",
+          "type": "solo"
+        },
+        {
+          "name": "Anastasia di Bray",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_cygnar"
+          ],
+          "cost": 3,
+          "faction": "faction_mercs",
+          "id": "MS14",
+          "type": "solo",
+          "attributes":[
+            "llaelese"
+          ]
+        },
+        {
+          "name": "Viktor Pendrake",
+          "fa": "C",
+          "works_for": [
+            "faction_cygnar"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS39",
+          "type": "solo"
+        },
+        {
+          "name": "Rorsh (Rorsh & Brine)",
+          "fa": "C",
+          "works_for": [
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
+          ],
+          "cost": 15,
+          "faction": "faction_mercs",
+          "id": "MS44",
+          "type": "soloLesserWarlock",
+          "attachment": "IB13_mercs"
         },
         {
           "name": "Alten Ashley",
           "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
+            "faction_menoth",
+            "faction_khador",
+            "faction_cygnar"
           ],
           "cost": 5,
-          "faction": "faction_minions",
-          "id": "IS01",
+          "faction": "faction_mercs",
+          "id": "MS36",
           "type": "solo"
         },
         {
-          "name": "Swamp Gobber Chef",
-          "fa": "2",
+          "name": "Orin Midwinter, Rogue Inquisitor",
+          "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cryx",
+            "faction_khador",
+            "faction_menoth"
           ],
-          "cost": 1,
-          "faction": "faction_minions",
-          "id": "IS17",
+          "cost": 5,
+          "faction": "faction_mercs",
+          "id": "MS15",
           "type": "solo"
         },
         {
-          "name": "Bog Trog Mist Speaker",
-          "fa": "2",
+          "name": "Sergeant Nicolas Verendrye",
+          "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
           ],
           "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS26",
+          "faction": "faction_mercs",
+          "id": "MS29",
+          "type": "solo",
+          "attributes":[
+            "llaelese",
+            "steelhead"
+          ]
+        },
+        {
+          "name": "Bloody Bradigan",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 3,
+          "faction": "faction_mercs",
+          "id": "MS07",
           "type": "solo"
         },
         {
-          "name": "Bog Trog Trawler",
-          "fa": "3",
+          "name": "Gudrun the Wanderer",
+          "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_everblight",
-            "faction_trollblood",
-            "faction_skorne"
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 5,
+          "faction": "faction_mercs",
+          "id": "MS37",
+          "type": "solo"
+        },
+        {
+          "name": "Dirty Meg",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cygnar"
           ],
           "cost": 3,
-          "faction": "faction_minions",
-          "id": "IS27",
+          "faction": "faction_mercs",
+          "id": "MS09",
+          "type": "soloMarshall"
+        },
+        {
+          "name": "Harlan Versh, Illuminated One",
+          "fa": "C",
+          "works_for": [
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS18",
+          "type": "solo"
+        },
+        {
+          "name": "Ogrun Bokur",
+          "fa": "2",
+          "works_for": [
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador"
+          ],
+          "cost": 5,
+          "faction": "faction_mercs",
+          "id": "MS05",
+          "type": "solo"
+        },
+        {
+          "name": "Brun Cragback (Brun Cragback & Lug)",
+          "fa": "C",
+          "cost": 16,
+          "works_for": [
+            "faction_cygnar",
+            "faction_khador",
+            "faction_circle",
+            "faction_trollblood"
+          ],
+          "faction": "faction_mercs",
+          "id": "MS42",
+          "type": "soloLesserWarlock",
+          "attachment": "IB14_mercs"
+        },
+        {
+          "name": "Rutger Shaw",
+          "fa": "C",
+          "works_for": [
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS20",
+          "type": "soloMarshall"
+        },
+        {
+          "name": "Gorman di Wulfe, Rogue Alchemist",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS03",
+          "type": "solo",
+          "attributes":[
+            "llaelese"
+          ]
+        },
+        {
+          "name": "Eiryss, Angel of Retribution",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cygnar",
+            "faction_scyrah"
+          ],
+          "cost": 6,
+          "faction": "faction_mercs",
+          "id": "MS28",
+          "type": "solo"
+        },
+        {
+          "name": "Eiryss, Mage Hunter of Ios",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cygnar",
+            "faction_scyrah"
+          ],
+          "cost": 7,
+          "faction": "faction_mercs",
+          "id": "MS01",
+          "type": "solo"
+        },
+        {
+          "name": "Swamp Gobber River Raiders",
+          "fa": "3",
+          "works_for": [
+            "faction_cryx"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS30",
+          "type": "solo"
+        },
+        {
+          "name": "Lord Rockbottom",
+          "fa": "C",
+          "works_for": [
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS12",
+          "type": "solo"
+        },
+        {
+          "name": "Savio Montero Acosta",
+          "fa": "C",
+          "works_for": [
+            "faction_cygnar"
+          ],
+          "cost": 6,
+          "faction": "faction_mercs",
+          "id": "MS31",
+          "type": "solo"
+        },
+        {
+          "name": "Saxon Orrik",
+          "fa": "C",
+          "works_for": [
+            "faction_cryx",
+            "faction_khador",
+            "faction_menoth"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS40",
+          "type": "solo"
+        },
+        {
+          "name": "Cephalyx Agitator",
+          "fa": "3",
+          "cost": 3,
+          "faction": "faction_mercs",
+          "id": "MS27",
+          "type": "solo"
+        },
+        {
+          "name": "Doc Killingsworth",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar"
+          ],
+          "cost": 4,
+          "faction": "faction_mercs",
+          "id": "MS10",
+          "type": "solo"
+        },
+        {
+          "name": "Hutchuck",
+          "fa": "C",
+          "works_for": [
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "cost": 6,
+          "faction": "faction_mercs",
+          "id": "MS32",
           "type": "solo"
         }
       ],
