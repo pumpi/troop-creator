@@ -10,7 +10,10 @@
           "name": "Kreoss1 (High Exemplar Kreoss)",
           "cost": 29,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PW02",
@@ -82,7 +85,10 @@
           "name": "Durst1 (Anson Durst Rock of the Faith)",
           "cost": 28,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "paladin"
+          ]
         },
         {
           "id": "PW11",
@@ -98,7 +104,10 @@
           "name": "Kreoss2 (Grand Exemplar Kreoss)",
           "cost": 28,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PW13",
@@ -138,7 +147,10 @@
           "name": "Kreoss3 (Intercessor Kreoss)",
           "cost": 28,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         }
       ],
       "label": "Warcasters"
@@ -161,7 +173,10 @@
           "name": "Judicator",
           "cost": 36,
           "fa": "2",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "colossal"
+          ]
         },
         {
           "id": "PJ23",
@@ -169,7 +184,10 @@
           "name": "Revelator",
           "cost": 37,
           "fa": "2",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "colossal"
+          ]
         },
         {
           "id": "PJ06",
@@ -177,7 +195,10 @@
           "name": "Blessing of Vengeance",
           "cost": 13,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "PJ18",
@@ -185,7 +206,10 @@
           "name": "Blood of Martyrs",
           "cost": 16,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ12",
@@ -193,7 +217,10 @@
           "name": "Castigator",
           "cost": 12,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ07",
@@ -201,7 +228,10 @@
           "name": "Crusader",
           "cost": 10,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ05",
@@ -209,7 +239,10 @@
           "name": "Dervish",
           "cost": 7,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "PJ04",
@@ -217,7 +250,10 @@
           "name": "Devout",
           "cost": 9,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "PJ13",
@@ -225,7 +261,10 @@
           "name": "Fire of Salvation",
           "cost": 16,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ09",
@@ -233,7 +272,10 @@
           "name": "Guardian",
           "cost": 15,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ21",
@@ -241,7 +283,10 @@
           "name": "Hand of Judgment",
           "cost": 18,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ20",
@@ -249,7 +294,10 @@
           "name": "Indictor",
           "cost": 15,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ22",
@@ -257,7 +305,10 @@
           "name": "Purifier",
           "cost": 8,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ10",
@@ -265,7 +316,10 @@
           "name": "Reckoner",
           "cost": 16,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ01",
@@ -273,7 +327,10 @@
           "name": "Redeemer",
           "cost": 11,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "PJ02",
@@ -281,7 +338,10 @@
           "name": "Repenter",
           "cost": 8,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "PJ03",
@@ -289,7 +349,10 @@
           "name": "Revenger",
           "cost": 10,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "PJ17",
@@ -297,7 +360,10 @@
           "name": "Sanctifier",
           "cost": 14,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ16",
@@ -305,7 +371,10 @@
           "name": "Scourge of Heresy",
           "cost": 16,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ14",
@@ -313,7 +382,10 @@
           "name": "Templar",
           "cost": 15,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ08",
@@ -321,7 +393,10 @@
           "name": "Vanquisher",
           "cost": 17,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "PJ15",
@@ -329,7 +404,10 @@
           "name": "Vigilant",
           "cost": 9,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "light"
+          ]
         }
       ],
       "label": "Warjacks"
@@ -377,7 +455,10 @@
           "name": "Daughters of the Flame",
           "cost": 10,
           "fa": "2",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "flameguard"
+          ]
         },
         {
           "id": "PU02",
@@ -409,7 +490,10 @@
           "fa": "2",
           "min": 3,
           "max": 5,
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PU14",
@@ -421,7 +505,10 @@
           "fa": "2",
           "min": 3,
           "max": 5,
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PU09",
@@ -433,7 +520,10 @@
           "fa": "3",
           "min": 6,
           "max": 10,
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PU10",
@@ -445,7 +535,10 @@
           "fa": "2",
           "min": 3,
           "max": 5,
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PU15",
@@ -457,7 +550,10 @@
           "fa": "2",
           "min": 3,
           "max": 5,
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "flameguard"
+          ]
         },
         {
           "id": "PU07",
@@ -469,7 +565,10 @@
           "fa": "2",
           "min": 6,
           "max": 10,
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "flameguard"
+          ]
         },
         {
           "id": "PU03",
@@ -501,7 +600,10 @@
           "name": "Knights Exemplar",
           "cost": 9,
           "fa": "U",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PU05",
@@ -513,7 +615,10 @@
           "fa": "U",
           "min": 6,
           "max": 10,
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "flameguard"
+          ]
         },
         {
           "id": "PU12",
@@ -561,7 +666,10 @@
           "cost": 4,
           "fa": "3",
           "faction": "faction_menoth",
-          "restricted_to": "PU09"
+          "restricted_to": "PU09",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PA06",
@@ -570,7 +678,10 @@
           "cost": 4,
           "fa": "2",
           "faction": "faction_menoth",
-          "restricted_to": "PU07"
+          "restricted_to": "PU07",
+          "attributes":[
+            "flameguard"
+          ]
         },
         {
           "id": "PA03",
@@ -588,7 +699,10 @@
           "cost": 5,
           "fa": "U",
           "faction": "faction_menoth",
-          "restricted_to": "PU04"
+          "restricted_to": "PU04",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PA01",
@@ -606,7 +720,10 @@
           "cost": 4,
           "fa": "U",
           "faction": "faction_menoth",
-          "restricted_to": "PU05"
+          "restricted_to": "PU05",
+          "attributes":[
+            "flameguard"
+          ]
         }
       ],
       "label": "Unit Attachments"
@@ -627,7 +744,10 @@
           "name": "Exemplar Bastion Seneschal",
           "cost": 6,
           "fa": "2",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PS15",
@@ -635,7 +755,10 @@
           "name": "Initiate Tristan Durant",
           "cost": 4,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "journeyman"
+          ]
         },
         {
           "id": "PS08",
@@ -667,7 +790,10 @@
           "name": "Exemplar Errant Seneschal",
           "cost": 4,
           "fa": "2",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PS09",
@@ -675,7 +801,10 @@
           "name": "High Exemplar Gravus",
           "cost": 9,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PS06",
@@ -683,7 +812,10 @@
           "name": "High Paladin Dartan Vilmon",
           "cost": 6,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "paladin"
+          ]
         },
         {
           "id": "PS02",
@@ -691,15 +823,21 @@
           "name": "Knights Exemplar Seneschal",
           "cost": 5,
           "fa": "2",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "exemplar"
+          ]
         },
         {
           "id": "PS13",
           "type": "solo",
-          "name": "Nicia Tear of Vengeance",
+          "name": "Nicia, Tear of Vengeance",
           "cost": 5,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "flameguard"
+          ]
         },
         {
           "id": "PS01",
@@ -707,15 +845,21 @@
           "name": "Paladin of the Order of the Wall",
           "cost": 4,
           "fa": "2",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "paladin"
+          ]
         },
         {
           "id": "PS16",
           "type": "solo",
-          "name": "Pyrrhus",
+          "name": "Pyrrhus, Flameguard Hero",
           "cost": 5,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "flameguard"
+          ]
         },
         {
           "id": "PS05",

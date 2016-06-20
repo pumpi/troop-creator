@@ -131,7 +131,10 @@
           "name": " Zerkova1 (Koldun Kommander Aleksandra Zerkova)",
           "cost": 28,
           "fa": "C",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "greylord"
+          ]
         },
         {
           "id": "KW15",
@@ -139,7 +142,10 @@
           "name": " Zerkova2 (Obavnik Kommander Zerkova and Reaver Guard)",
           "cost": 24,
           "fa": "C",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "greylord"
+          ]
         }
       ],
       "label": "Warcasters"
@@ -154,7 +160,10 @@
           "name": " Conquest",
           "cost": 37,
           "fa": "2",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "colossal"
+          ]
         },
         {
           "id": "KJ18",
@@ -162,7 +171,10 @@
           "name": " Victor",
           "cost": 38,
           "fa": "2",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "colossal"
+          ]
         },
         {
           "id": "KJ09",
@@ -379,7 +391,10 @@
           "fa": "2",
           "min": 6,
           "max": 10,
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "iron_fang"
+          ]
         },
         {
           "id": "KU02",
@@ -395,7 +410,10 @@
           "name": " Great Bears of Gallowswood",
           "cost": 9,
           "fa": "C",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "iron_fang"
+          ]
         },
         {
           "id": "KU19",
@@ -407,7 +425,10 @@
           "fa": "2",
           "min": 3,
           "max": 5,
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "greylord"
+          ]
         },
         {
           "id": "KU07",
@@ -415,7 +436,10 @@
           "name": " Greylord Ternion",
           "cost": 7,
           "fa": "3",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "greylord"
+          ]
         },
         {
           "id": "KU03",
@@ -427,7 +451,10 @@
           "fa": "U",
           "min": 6,
           "max": 10,
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "iron_fang"
+          ]
         },
         {
           "id": "KU11",
@@ -439,7 +466,10 @@
           "fa": "2",
           "min": 3,
           "max": 5,
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "iron_fang"
+          ]
         },
         {
           "id": "KU15",
@@ -483,7 +513,10 @@
           "fa": "3",
           "min": 3,
           "max": 5,
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "man-o-war"
+          ]
         },
         {
           "id": "KU12",
@@ -495,7 +528,10 @@
           "fa": "3",
           "min": 3,
           "max": 5,
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "man-o-war"
+          ]
         },
         {
           "id": "KU04",
@@ -507,7 +543,10 @@
           "fa": "3",
           "min": 3,
           "max": 5,
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "man-o-war"
+          ]
         },
         {
           "id": "KU05",
@@ -523,7 +562,10 @@
           "name": " Winter Guard Field Gun Crew",
           "cost": 4,
           "fa": "2",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "winter_guard"
+          ]
         },
         {
           "id": "KU06",
@@ -535,7 +577,10 @@
           "fa": "U",
           "min": 6,
           "max": 10,
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "winter_guard"
+          ]
         },
         {
           "id": "KU09",
@@ -543,7 +588,10 @@
           "name": " Winter Guard Mortar Crew",
           "cost": 5,
           "fa": "2",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "winter_guard"
+          ]
         },
         {
           "id": "KU17",
@@ -555,7 +603,10 @@
           "fa": "U",
           "min": 6,
           "max": 10,
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "winter_guard"
+          ]
         }
       ],
       "label": "Units"
@@ -580,7 +631,10 @@
           "cost": 4,
           "fa": "2",
           "faction": "faction_khador",
-          "restricted_to": "KU20"
+          "restricted_to": "KU20",
+          "attributes":[
+            "iron_fang"
+          ]
         },
         {
           "id": "KA06",
@@ -589,7 +643,10 @@
           "cost": 3,
           "fa": "U",
           "faction": "faction_khador",
-          "restricted_to": "KU02"
+          "restricted_to": "KU02",
+          "attributes":[
+            "greylord"
+          ]
         },
         {
           "id": "KA01",
@@ -598,7 +655,10 @@
           "cost": 4,
           "fa": "U",
           "faction": "faction_khador",
-          "restricted_to": "KU03"
+          "restricted_to": "KU03",
+          "attributes":[
+            "iron_fang"
+          ]
         },
         {
           "id": "KA04",
@@ -641,7 +701,10 @@
           "cost": 4,
           "fa": "3",
           "faction": "faction_khador",
-          "restricted_to": "KU04"
+          "restricted_to": "KU04",
+          "attributes":[
+            "man-o-war"
+          ]
         },
         {
           "id": "KA02",
@@ -650,7 +713,10 @@
           "cost": 4,
           "fa": "U",
           "faction": "faction_khador",
-          "restricted_to": "KU06"
+          "restricted_to": "KU06",
+          "attributes":[
+            "winter_guard"
+          ]
         }
       ],
       "label": "Unit Attachments"
@@ -678,7 +744,10 @@
           "faction": "faction_khador",
           "restricted_to":[ "KU06",
           "KU17"],
-          "max_attach": 3
+          "max_attach": 3,
+          "attributes":[
+            "winter_guard"
+          ]
         }
       ],
       "label": "Weapon Attachments"
@@ -693,7 +762,10 @@
           "name": " Iron Fang Kovnik",
           "cost": 4,
           "fa": "2",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "iron_fang"
+          ]
         },
         {
           "id": "KS06",
@@ -701,7 +773,10 @@
           "name": " Koldun Lord",
           "cost": 4,
           "fa": "2",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "greylord"
+          ]
         },
         {
           "id": "KS02",
@@ -709,7 +784,11 @@
           "name": " Man-O-War Kovnik",
           "cost": 5,
           "fa": "2",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "man-o-war",
+            "marshall"
+          ]
         },
         {
           "id": "KS12",
@@ -717,7 +796,10 @@
           "name": " Kovnik Andrei Malakov",
           "cost": 4,
           "fa": "C",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "journeyman"
+          ]
         },
         {
           "id": "KS04",
@@ -725,7 +807,10 @@
           "name": " Man-O-War Drakhun",
           "cost": 9,
           "fa": "2",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "man-o-war"
+          ]
         },
         {
           "id": "KS08",
@@ -749,7 +834,10 @@
           "name": " Kovnik Jozef Grigorovich",
           "cost": 4,
           "fa": "C",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "winter_guard"
+          ]
         },
         {
           "id": "KS01",
@@ -765,7 +853,10 @@
           "name": " Uhlan Kovnik Markov",
           "cost": 7,
           "fa": "C",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "iron_fang"
+          ]
         },
         {
           "id": "KS10",
@@ -781,7 +872,10 @@
           "name": " Winter Guard Artillery Kapitan",
           "cost": 3,
           "fa": "2",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "winter_guard"
+          ]
         },
         {
           "id": "KS09",
