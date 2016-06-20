@@ -2,7 +2,7 @@
   "groups": [
     {
       "logo": "factions",
-      "id": "factions_warlocks",
+      "id": "faction_minions_warlocks",
       "entries": [
         {
           "id": "IW08",
@@ -158,7 +158,7 @@
     },
     {
       "logo": "factions",
-      "id": "factions_warjacks",
+      "id": "faction_minions_warjacks",
       "entries": [
         {
           "name": "Rover",
@@ -275,7 +275,7 @@
     },
     {
       "logo": "factions",
-      "id": "factions_warbeasts",
+      "id": "faction_minions_warbeasts",
       "entries": [
         {
           "name": "Gorax Rager",
@@ -473,7 +473,7 @@
     },
     {
       "logo": "factions",
-      "id": "factions_bes",
+      "id": "faction_minions_bes",
       "entries": [
         {
           "name": "Meat Thresher",
@@ -506,7 +506,7 @@
     },
     {
       "logo": "factions",
-      "id": "factions_units",
+      "id": "faction_minions_units",
       "entries": [
         {
           "max": 5,
@@ -731,7 +731,7 @@
     },
     {
       "logo": "factions",
-      "id": "factions_UAs",
+      "id": "faction_minions_UAs",
       "entries": [
         {
           "fa": "2",
@@ -753,13 +753,13 @@
     },
     {
       "logo": "factions",
-      "id": "factions_WAs",
+      "id": "faction_minions_WAs",
       "entries": [],
       "label": "Weapon Attachments"
     },
     {
       "logo": "factions",
-      "id": "factions_solos",
+      "id": "faction_minions_solos",
       "entries": [
         {
           "name": "Wrong Eye (Wrong Eye & Snapjaw)",
