@@ -42,7 +42,10 @@
           "name": "Aurora(Aurora Numen of Aerogenesis)",
           "cost": 29,
           "fa": "C",
-          "faction": "faction_cyriss"
+          "faction": "faction_cyriss",
+          "attributes":[
+            "angel"
+          ]
         }
       ],
       "label": "Warcasters"
@@ -223,7 +226,10 @@
           "name": "Clockwork Angels",
           "cost": 5,
           "fa": "3",
-          "faction": "faction_cyriss"
+          "faction": "faction_cyriss",
+          "attributes":[
+            "angel"
+          ]
         },
         {
           "id": "COCU07",

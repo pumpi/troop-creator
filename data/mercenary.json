@@ -14,6 +14,9 @@
           "works_for": [
             "faction_cygnar",
             "faction_menoth"
+          ],
+          "attributes":[
+            "llaelese"
           ]
         },
         {
@@ -28,6 +31,10 @@
             "faction_cygnar",
             "faction_khador",
             "faction_menoth"
+          ],
+          "attributes":[
+            "ordic",
+            "privateer"
           ]
         },
         {
@@ -42,6 +49,10 @@
             "faction_cygnar",
             "faction_khador",
             "faction_menoth"
+          ],
+          "attributes":[
+            "steelhead",
+            "ordic"
           ]
         },
         {
@@ -53,6 +64,9 @@
           "faction": "faction_mercs",
           "works_for": [
             "faction_cygnar"
+          ],
+          "attributes":[
+            "privateer"
           ]
         },
         {
@@ -64,7 +78,11 @@
           "faction": "faction_mercs",
           "works_for": [
             "faction_cryx"
-          ]
+          ],
+          "attributes":[
+            "cephalyx"
+          ],
+          "canControlOnly": "cephalyx"
         },
         {
           "id": "MW14",
@@ -75,6 +93,9 @@
           "faction": "faction_mercs",
           "works_for": [
             "faction_cygnar"
+          ],
+          "attributes":[
+            "morrow"
           ]
         },
         {
@@ -89,6 +110,9 @@
             "faction_cygnar",
             "faction_khador",
             "faction_menoth"
+          ],
+          "attributes":[
+            "ordic"
           ]
         },
         {
@@ -102,7 +126,11 @@
             "faction_cygnar",
             "faction_khador",
             "faction_menoth"
-          ]
+          ],
+          "attributes":[
+            "rhulic"
+          ],
+          "canControlOnly": "rhulic"
         },
         {
           "id": "MW11",
@@ -113,7 +141,11 @@
           "faction": "faction_mercs",
           "works_for": [
             "faction_cryx"
-          ]
+          ],
+          "attributes":[
+            "cephalyx"
+          ],
+          "canControlOnly": "cephalyx"
         },
         {
           "id": "MW05",
@@ -126,6 +158,10 @@
             "faction_cryx",
             "faction_cygnar",
             "faction_khador"
+          ],
+          "attributes":[
+            "thamarit",
+            "privateer"
           ]
         },
         {
@@ -139,7 +175,11 @@
             "faction_khador",
             "faction_cygnar",
             "faction_menoth"
-          ]
+          ],
+          "attributes":[
+            "rhulic"
+          ],
+          "canControlOnly": "rhulic"
         },
         {
           "id": "MW02",
@@ -151,7 +191,11 @@
           "works_for": [
             "faction_khador",
             "faction_cygnar"
-          ]
+          ],
+          "attributes":[
+            "rhulic"
+          ],
+          "canControlOnly": "rhulic"
         },
         {
           "id": "MW01",
@@ -205,7 +249,11 @@
           "cost": 6,
           "faction": "faction_mercs",
           "id": "MJ06",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "light"
+          ]
         },
         {
           "name": "Mule",
@@ -230,7 +278,10 @@
           "cost": 15,
           "faction": "faction_mercs",
           "id": "MJ10",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "name": "Buccaneer",
@@ -255,7 +306,11 @@
           "cost": 6,
           "faction": "faction_mercs",
           "id": "MJ04",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "privateer",
+            "light"
+          ]
         },
         {
           "name": "Gallant",
@@ -271,7 +326,11 @@
           "cost": 17,
           "faction": "faction_mercs",
           "id": "MJ25",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "morrow",
+            "heavy"
+          ]
         },
         {
           "name": "Warden",
@@ -283,19 +342,10 @@
           "cost": 10,
           "faction": "faction_mercs",
           "id": "MJ21",
-          "type": "warjack"
-        },
-        {
-          "name": "Sentinel",
-          "fa": "U",
-          "restricted_to": [
-            "MW01",
-            "MW13"
-          ],
-          "cost": 4,
-          "faction": "faction_mercs",
-          "id": "MJ23",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "cephalyx"
+          ]
         },
         {
           "name": "Rover",
@@ -320,7 +370,10 @@
           "cost": 15,
           "faction": "faction_mercs",
           "id": "MJ16",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "name": "Rocinante",
@@ -344,7 +397,10 @@
           "cost": 18,
           "faction": "faction_mercs",
           "id": "MJ17",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "name": "Ghordson Avalancher",
@@ -359,7 +415,11 @@
           "cost": 17,
           "faction": "faction_mercs",
           "id": "MJ15",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "heavy"
+          ]
         },
         {
           "name": "Vanguard",
@@ -383,7 +443,11 @@
           "cost": 11,
           "faction": "faction_mercs",
           "id": "MJ03",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "llaelese",
+            "light"
+          ]
         },
         {
           "name": "Mangler",
@@ -408,7 +472,10 @@
           "cost": 15,
           "faction": "faction_mercs",
           "id": "MJ09",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "name": "Freebooter",
@@ -433,7 +500,11 @@
           "cost": 9,
           "faction": "faction_mercs",
           "id": "MJ12",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "privateer",
+            "light"
+          ]
         },
         {
           "name": "Renegade",
@@ -445,7 +516,11 @@
           "cost": 10,
           "faction": "faction_mercs",
           "id": "MJ01",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "magnus",
+            "light"
+          ]
         },
         {
           "name": "Ghordson Driller",
@@ -460,19 +535,11 @@
           "cost": 10,
           "faction": "faction_mercs",
           "id": "MJ07",
-          "type": "warjack"
-        },
-        {
-          "name": "Defender",
-          "fa": "1",
-          "restricted_to": [
-            "MW01",
-            "MW13"
-          ],
-          "cost": 9,
-          "faction": "faction_mercs",
-          "id": "MJ24",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "heavy"
+          ]
         },
         {
           "name": "Nomad",
@@ -497,7 +564,10 @@
           "cost": 11,
           "faction": "faction_mercs",
           "id": "MJ11",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "name": "Talon",
@@ -522,7 +592,10 @@
           "cost": 7,
           "faction": "faction_mercs",
           "id": "MJ02",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "name": "Grundback Blaster",
@@ -537,7 +610,11 @@
           "cost": 6,
           "faction": "faction_mercs",
           "id": "MJ05",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "light"
+          ]
         },
         {
           "name": "Mariner",
@@ -562,7 +639,11 @@
           "cost": 14,
           "faction": "faction_mercs",
           "id": "MJ13",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "privateer",
+            "heavy"
+          ]
         },
         {
           "name": "Galleon",
@@ -582,7 +663,11 @@
           "cost": 39,
           "faction": "faction_mercs",
           "id": "MJ18",
-          "type": "warjackColossal"
+          "type": "warjackColossal",
+          "attributes":[
+            "privateer",
+            "colossal"
+          ]
         },
         {
           "name": "Wroughthammer Rockram",
@@ -597,7 +682,11 @@
           "cost": 14,
           "faction": "faction_mercs",
           "id": "MJ08",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "heavy"
+          ]
         },
         {
           "name": "Subduer",
@@ -609,7 +698,10 @@
           "cost": 11,
           "faction": "faction_mercs",
           "id": "MJ20",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "cephalyx"
+          ]
         },
         {
           "name": "Ghordson Basher",
@@ -624,7 +716,11 @@
           "cost": 9,
           "faction": "faction_mercs",
           "id": "MJ14",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "rhulic",
+            "light"
+          ]
         },
         {
           "name": "Ghordson Earthbreaker",
@@ -639,7 +735,11 @@
           "cost": 38,
           "faction": "faction_mercs",
           "id": "MJ19",
-          "type": "warjackColossal"
+          "type": "warjackColossal",
+          "attributes":[
+            "rhulic",
+            "colossal"
+          ]
         },
         {
           "name": "Wrecker",
@@ -651,7 +751,10 @@
           "cost": 14,
           "faction": "faction_mercs",
           "id": "MJ22",
-          "type": "warjack"
+          "type": "warjack",
+          "attributes":[
+            "cephalyx"
+          ]
         }
       ],
       "label": "Warjacks"
@@ -680,7 +783,10 @@
           "cost": 5,
           "faction": "faction_mercs",
           "id": "IB11_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Gun Boar",
@@ -691,7 +797,10 @@
           "cost": 5,
           "faction": "faction_mercs",
           "id": "IB01_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Road Hog",
@@ -702,7 +811,10 @@
           "cost": 9,
           "faction": "faction_mercs",
           "id": "IB06_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Bull Snapper",
@@ -713,7 +825,10 @@
           "cost": 3,
           "faction": "faction_mercs",
           "id": "IB04_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "gatorman"
+          ]
         },
         {
           "name": "Boneswarm",
@@ -735,7 +850,10 @@
           "cost": 7,
           "faction": "faction_mercs",
           "id": "IB12_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "gatorman"
+          ]
         },
         {
           "name": "Lug",
@@ -757,7 +875,10 @@
           "cost": 2,
           "faction": "faction_mercs",
           "id": "IB09_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Snapjaw",
@@ -779,7 +900,10 @@
           "cost": 8,
           "faction": "faction_mercs",
           "id": "IB08_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "gatorman"
+          ]
         },
         {
           "name": "Skarath",
@@ -801,7 +925,10 @@
           "cost": 4,
           "faction": "faction_mercs",
           "id": "IB10_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "War Hog",
@@ -812,7 +939,10 @@
           "cost": 8,
           "faction": "faction_mercs",
           "id": "IB02_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "farrow"
+          ]
         },
         {
           "name": "Ironback Spitter",
@@ -823,7 +953,10 @@
           "cost": 8,
           "faction": "faction_mercs",
           "id": "IB05_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "gatorman"
+          ]
         },
         {
           "name": "Blackhide Wrastler",
@@ -834,7 +967,10 @@
           "cost": 9,
           "faction": "faction_mercs",
           "id": "IB03_mercs",
-          "type": "warbeast"
+          "type": "warbeast",
+          "attributes":[
+            "gatorman"
+          ]
         }
       ],
       "label": "Warbeasts"
@@ -955,7 +1091,10 @@
           "cost": 9,
           "faction": "faction_mercs",
           "id": "MU29",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "llaelese"
+          ]
         },
         {
           "max": 10,
@@ -973,7 +1112,10 @@
           ],
           "cost": 7,
           "faction": "faction_mercs",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "steelhead"
+          ]
         },
         {
           "name": "Sea Dog Deck Gun",
@@ -1021,7 +1163,10 @@
           ],
           "cost": 11,
           "faction": "faction_mercs",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "steelhead"
+          ]
         },
         {
           "name": "Horgenhold Artillery Corps",
@@ -1071,7 +1216,11 @@
           ],
           "cost": 12,
           "faction": "faction_mercs",
-          "type": "unitMarshall"
+          "type": "unitMarshall",
+          "attributes":[
+            "ordic",
+            "marshall"
+          ]
         },
         {
           "name": "Lady Aiyana & Master Holt",
@@ -1270,7 +1419,10 @@
           ],
           "cost": 8,
           "faction": "faction_mercs",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "steelhead"
+          ]
         }
       ],
       "label": "Units"
@@ -1439,7 +1591,10 @@
           "cost": 4,
           "faction": "faction_mercs",
           "id": "MS04",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "ordic"
+          ]
         },
         {
           "name": "Raluk Moorclaw, the Ironmonger",
@@ -1477,7 +1632,11 @@
           "cost": 4,
           "faction": "faction_mercs",
           "id": "MS25",
-          "type": "soloJourneyMan"
+          "type": "soloJourneyMan",
+          "attributes":[
+            "llaelese",
+            "journeyman"
+          ]
         },
         {
           "name": "Sylys Wyshnalyrr, the Seeker",
@@ -1542,7 +1701,10 @@
           "cost": 7,
           "faction": "faction_mercs",
           "id": "MS16",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "steelhead"
+          ]
         },
         {
           "name": "Taryn di la Rovissi, Llaelese Gun Mage",
@@ -1554,7 +1716,10 @@
           "cost": 5,
           "faction": "faction_mercs",
           "id": "MS19",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "llaelese"
+          ]
         },
         {
           "name": "Madelyn Corbeau, Ordic Courtesan",
@@ -1569,7 +1734,10 @@
           "cost": 4,
           "faction": "faction_mercs",
           "id": "MS21",
-          "type": "soloAttachment"
+          "type": "soloAttachment",
+          "attributes":[
+            "ordic"
+          ]
         },
         {
           "name": "Ragman",
@@ -1582,7 +1750,11 @@
           "cost": 4,
           "faction": "faction_mercs",
           "id": "MS22",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "llaelese",
+            "thamarite"
+          ]
         },
         {
           "name": "Reinholdt, Gobber Speculator",
@@ -1666,7 +1838,10 @@
           "cost": 3,
           "faction": "faction_mercs",
           "id": "MS14",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "llaelese"
+          ]
         },
         {
           "name": "Viktor Pendrake",
@@ -1732,7 +1907,11 @@
           "cost": 4,
           "faction": "faction_mercs",
           "id": "MS29",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "llaelese",
+            "steelhead"
+          ]
         },
         {
           "name": "Bloody Bradigan",
@@ -1839,7 +2018,10 @@
           "cost": 4,
           "faction": "faction_mercs",
           "id": "MS03",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "llaelese"
+          ]
         },
         {
           "name": "Eiryss, Angel of Retribution",

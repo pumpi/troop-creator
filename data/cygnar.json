@@ -74,7 +74,10 @@
           "name": "Constance Blaize1 (Constance Blaize Knight of the Prophet)",
           "cost": 30,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "morrow"
+          ]
         },
         {
           "id": "YW10",
@@ -90,7 +93,10 @@
           "name": "Maddox1 (Major Beth Maddox)",
           "cost": 30,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "storm_knight"
+          ]
         },
         {
           "id": "YW12",
@@ -162,7 +168,10 @@
           "name": "Hurricane",
           "cost": 39,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "colossal"
+          ]
         },
         {
           "id": "YJ03",
@@ -170,7 +179,10 @@
           "name": "Sentinel",
           "cost": 8,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "YJ19",
@@ -178,7 +190,10 @@
           "name": "Avenger",
           "cost": 17,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ22",
@@ -186,7 +201,10 @@
           "name": "Dynamo",
           "cost": 18,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ07",
@@ -194,7 +212,10 @@
           "name": "Defender",
           "cost": 16,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ09",
@@ -202,7 +223,10 @@
           "name": "Centurion",
           "cost": 17,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ18",
@@ -210,7 +234,10 @@
           "name": "Minuteman",
           "cost": 9,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "YJ21",
@@ -218,7 +245,10 @@
           "name": "Reliant",
           "cost": 14,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ13",
@@ -226,7 +256,10 @@
           "name": "Ol' Rowdy",
           "cost": 18,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ24",
@@ -234,7 +267,10 @@
           "name": "Ace",
           "cost": 12,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "YJ10",
@@ -242,7 +278,10 @@
           "name": "Stormclad",
           "cost": 18,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ04",
@@ -250,7 +289,10 @@
           "name": "Hunter",
           "cost": 11,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "YJ02",
@@ -258,7 +300,10 @@
           "name": "Lancer",
           "cost": 10,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "YJ16",
@@ -266,7 +311,10 @@
           "name": "Triumph",
           "cost": 20,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ06",
@@ -274,7 +322,10 @@
           "name": "Thorn",
           "cost": 13,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "YJ20",
@@ -282,7 +333,10 @@
           "name": "Stormwall (Stormwall & Lightning Pod)",
           "cost": 39,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "colossal"
+          ]
         },
         {
           "id": "YJ15",
@@ -290,7 +344,10 @@
           "name": "Firefly",
           "cost": 8,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "YJ08",
@@ -298,7 +355,10 @@
           "name": "Ironclad",
           "cost": 12,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ11",
@@ -306,7 +366,10 @@
           "name": "Thunderhead",
           "cost": 20,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ01",
@@ -314,7 +377,10 @@
           "name": "Charger",
           "cost": 9,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "YJ17",
@@ -322,7 +388,11 @@
           "name": "Gallant",
           "cost": 17,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy",
+            "morrow"
+          ]
         },
         {
           "id": "YJ14",
@@ -330,7 +400,10 @@
           "name": "Cyclone",
           "cost": 13,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         },
         {
           "id": "YJ05",
@@ -338,7 +411,10 @@
           "name": "Grenadier",
           "cost": 9,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "light"
+          ]
         },
         {
           "id": "YJ12",
@@ -346,7 +422,10 @@
           "name": "Hammersmith",
           "cost": 12,
           "fa": "U",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "heavy"
+          ]
         }
       ],
       "label": "Warjacks"
@@ -382,7 +461,10 @@
           "name": "Arcane Tempest Gun Mage Pistoleers",
           "cost": 11,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "tempest"
+          ]
         },
         {
           "id": "YU02",
@@ -406,7 +488,10 @@
           "fa": "3",
           "min": 3,
           "max": 6,
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "marshall"
+          ]
         },
         {
           "id": "YU04",
@@ -414,7 +499,10 @@
           "name": "Stormblade Infantry",
           "cost": 10,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "storm_knight"
+          ]
         },
         {
           "id": "YU05",
@@ -426,7 +514,10 @@
           "fa": "U",
           "min": 6,
           "max": 10,
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "trencher"
+          ]
         },
         {
           "id": "YU06",
@@ -434,7 +525,10 @@
           "name": "Trencher Chaingun Crew",
           "cost": 5,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "trencher"
+          ]
         },
         {
           "id": "YU07",
@@ -442,7 +536,10 @@
           "name": "Trencher Cannon Crew",
           "cost": 6,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "trencher"
+          ]
         },
         {
           "id": "YU08",
@@ -454,7 +551,10 @@
           "fa": "2",
           "min": 6,
           "max": 10,
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "marshall"
+          ]
         },
         {
           "id": "YU09",
@@ -466,7 +566,10 @@
           "fa": "2",
           "min": 6,
           "max": 10,
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "storm_knight"
+          ]
         },
         {
           "id": "YU10",
@@ -478,7 +581,10 @@
           "fa": "2",
           "min": 3,
           "max": 5,
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "storm_knight"
+          ]
         },
         {
           "id": "YU11",
@@ -486,7 +592,10 @@
           "name": "Black 13th Gun Mage Strike Team",
           "cost": 10,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "tempest"
+          ]
         },
         {
           "id": "YU12",
@@ -498,7 +607,10 @@
           "fa": "2",
           "min": 6,
           "max": 10,
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "morrow"
+          ]
         },
         {
           "id": "YU13",
@@ -518,7 +630,10 @@
           "fa": "2",
           "min": 6,
           "max": 10,
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "trencher"
+          ]
         },
         {
           "id": "YU15",
@@ -538,7 +653,10 @@
           "fa": "2",
           "min": 3,
           "max": 5,
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "tempest"
+          ]
         },
         {
           "id": "YU18",
@@ -558,7 +676,10 @@
           "fa": "2",
           "min": 6,
           "max": 10,
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "storm_knight"
+          ]
         }
       ],
       "label": "Units"
@@ -612,7 +733,10 @@
           "cost": 4,
           "fa": "2",
           "faction": "faction_cygnar",
-          "restricted_to": "YU12"
+          "restricted_to": "YU12",
+          "attributes":[
+            "morrow"
+          ]
         },
         {
           "id": "YA05",
@@ -630,7 +754,11 @@
           "cost": 4,
           "fa": "2",
           "faction": "faction_cygnar",
-          "restricted_to": "YU01"
+          "restricted_to": "YU01",
+          "attributes":[
+            "marshall",
+            "tempest"
+          ]
         },
         {
           "id": "YA02",
@@ -639,7 +767,11 @@
           "cost": 5,
           "fa": "2",
           "faction": "faction_cygnar",
-          "restricted_to": "YU04"
+          "restricted_to": "YU04",
+          "attributes":[
+            "marshall",
+            "storm_knight"
+          ]
         },
         {
           "id": "YA03",
@@ -648,7 +780,11 @@
           "cost": 5,
           "fa": "U",
           "faction": "faction_cygnar",
-          "restricted_to": "YU05"
+          "restricted_to": "YU05",
+          "attributes":[
+            "marshall",
+            "trencher"
+          ]
         }
       ],
       "label": "Unit Attachments"
@@ -665,7 +801,10 @@
           "fa": "U",
           "faction": "faction_cygnar",
           "restricted_to": "YU14",
-          "max_attach": 3
+          "max_attach": 3,
+          "attributes":[
+            "trencher"
+          ]
         },
         {
           "id": "YA09",
@@ -675,7 +814,10 @@
           "fa": "U",
           "faction": "faction_cygnar",
           "restricted_to": "YU04",
-          "max_attach": 3
+          "max_attach": 3,
+          "attributes":[
+            "storm_knight"
+          ]
         },
         {
           "id": "YA04",
@@ -685,7 +827,10 @@
           "fa": "U",
           "faction": "faction_cygnar",
           "restricted_to": "YU05",
-          "max_attach": 3
+          "max_attach": 3,
+          "attributes":[
+            "trencher"
+          ]
         }
       ],
       "label": "Weapon Attachments"
@@ -700,7 +845,10 @@
           "name": "Lieutenant Allison Jakes",
           "cost": 4,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+          "journeyman"
+        ]
         },
         {
           "id": "YS01",
@@ -708,7 +856,10 @@
           "name": "Journeyman Warcaster",
           "cost": 4,
           "fa": "1",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "journeyman"
+          ]
         },
         {
           "id": "YS02",
@@ -716,7 +867,10 @@
           "name": "Gun Mage Captain Adept",
           "cost": 5,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "tempest"
+          ]
         },
         {
           "id": "YS03",
@@ -732,7 +886,10 @@
           "name": "Captain Maxwell Finn",
           "cost": 6,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "trencher"
+          ]
         },
         {
           "id": "YS05",
@@ -740,7 +897,10 @@
           "name": "Major Katherine Laddermore",
           "cost": 8,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "storm_knight"
+          ]
         },
         {
           "id": "YS06",
@@ -748,7 +908,10 @@
           "name": "Squire",
           "cost": 5,
           "fa": "1",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "attachment"
+          ]
         },
         {
           "id": "YS07",
@@ -756,7 +919,10 @@
           "name": "Captain Arlan Strangewayes",
           "cost": 4,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "marshall"
+          ]
         },
         {
           "id": "YS08",
@@ -764,7 +930,10 @@
           "name": "Trencher Master Gunner",
           "cost": 4,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "trencher"
+          ]
         },
         {
           "id": "YS09",
@@ -772,7 +941,10 @@
           "name": "Archduke Alain Runewood",
           "cost": 4,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "marshall"
+          ]
         },
         {
           "id": "YS10",
@@ -780,7 +952,11 @@
           "name": "Stormblade Captain",
           "cost": 5,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "marshall",
+            "storm_knight"
+          ]
         },
         {
           "id": "YS11",
@@ -788,7 +964,10 @@
           "name": "Trench Buster",
           "cost": 6,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "trencher"
+          ]
         },
         {
           "id": "YS13",
@@ -796,7 +975,10 @@
           "name": "Arcane Tempest Rifleman",
           "cost": 4,
           "fa": "2",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "tempest"
+          ]
         },
         {
           "id": "YS12",
@@ -805,7 +987,10 @@
           "cost": 0,
           "fa": "C",
           "faction": "faction_cygnar",
-          "restricted_to": "YZ04"
+          "restricted_to": "YZ04",
+          "attributes":[
+            "attachment"
+          ]
         }
       ],
       "label": "Solos"
