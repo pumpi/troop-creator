@@ -9,15 +9,16 @@
             <input type="search" ng-model="search" placeholder="Search..." class="form-control">
             <i class="fa fa-times-circle remove-search" ng-click="search = ''" ng-show="search"></i>
         </div>
-        <div class="army-models" ng-repeat="i in notSorted(data)" ng-init="value = data[i]['entries']">
-            <div ng-hide="(filtered = (allowedModels(value) | wildcardArmy:search )).length == 0"
+
+        <div class="army-models" ng-repeat="i in notSorted(vars.data)" ng-init="value = vars.data[i]['entries']">
+            <div ng-hide="(filtered = (value | wildcardArmy:search )).length == 0"
                  class="headline accordion-click" accordion-toggle
-                 ng-class="{mercenary: data[i].add.indexOf('mercenary') > -1, minions: data[i].add.indexOf('minion') > -1}">
+                 ng-class="{mercenary: vars.data[i].add.indexOf('mercenary') > -1, minions: vars.data[i].add.indexOf('minion') > -1}">
                 {{data[i]['label']}} <span>({{filtered.length}})</span></div>
             <div class="accordion-container">
                 <ul>
                     <li class="model add-model" ng-click="addModel(model)"
-                        ng-class="{disable: modelAvailable = checkModelAvailable(model, model.type)}"
+                        ng-class="{disable: modelAvailable = checkModelAvailable(model)}"
                         data-drag="!modelAvailable && !modernizr.touchevents" data-jqyoui-options="{revert: 'invalid', helper: 'clone'}"
                         jqyoui-draggable="{onStart: 'startCallback', onDrag: 'moveModelStart(model)'}" data-type="{{model.type}}"
                         ng-repeat="model in filtered | orderBy: 'name'">

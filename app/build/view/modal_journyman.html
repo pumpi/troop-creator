@@ -3,19 +3,19 @@
         <div class="modal-header">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
                     aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title"><i class="fa fa-file-text-o"></i> Journyman Warcaster</h4>
+            <h4 class="modal-title"><i class="fa fa-file-text-o"></i> Battlegroup Controller</h4>
         </div>
         <div class="modal-body select-on-click">
-            <strong>Battlegroup Controller:</strong> This model is not a warcaster but have the following warcaster special rules: Battlegroup Commander, Focus Manipulation, Power Field and Spellcaster. This model must have at least one warjack in its battlegroup at the start of the game.
-
-            <div class="army-models" ng-init="value = data[1]['entries']">
-                <div ng-hide="(filtered = allowedModels(value) ).length == 0" class="headline">
-                    {{data[1]['label']}} <span>({{filtered.length}})</span>
+            This model must have at least one <strong>{{vars.warbj['label']}}</strong> in its battlegroup at the start of the game.
+            <div class="army-models">
+                <div class="headline">
+                    {{vars.warbj['label']}}
                 </div>
                 <ul>
                     <li class="model add-model" ng-click="addModel(model)"
-                        ng-class="{disable: modelAvailable = checkModelAvailable(model, model.type)}"
-                        ng-repeat="model in filtered | orderBy: 'name'">
+                        ng-show="canJoinGroup(vars.lastController, model)"
+                        ng-class="{disable: modelAvailable = checkModelAvailable(model)}"
+                        ng-repeat="model in vars.warbj.entries | orderBy: 'name'">
                         <div class="model-name">{{model.name}}</div>
                         <div class="model-options">
                             <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>

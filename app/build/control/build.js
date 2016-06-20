@@ -22,14 +22,18 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 var jqArmy = $('#' + $routeParams.army);
                 $scope.army = jqArmy.data();
                 $scope.data = [];
+                $scope.warbj = [];
 
-                // only add data with entries
+                // only add data with entries and allowed
                 $.each(data.groups, function(key, item) {
                     if (item.entries.length !== 0) {
                         $scope.data.push(item);
+                        if ( /^warb|^warj/i.test(item.label) ) {
+                            $scope.warbj = item;
+                        }
                     }
-                });
 
+                });
                 $scope.options = {
                     'gameCaster'        : 1,
                     'gamePoints'        : 75,
@@ -50,12 +54,22 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     'faAlterations'     : [],
                     'freeModels'        : {'id': [], 'count': 0},
                     'factionId'         : 'faction_' + $routeParams.army,
-                    'objectives'        : ['Arcane Wonder', 'Armory', 'Bunker', 'Effigy of Valor', 'Fuel Cache', 'Stockpile'],
+                    'objectives'        : [
+                        'Arcane Wonder',
+                        'Armory',
+                        'Bunker',
+                        'Effigy of Valor',
+                        'Fuel Cache',
+                        'Stockpile'
+                    ],
                     'dragging'          : false,
                     'canDrop'           : false,
                     'location'          : $location.search(),
                     'error'             : 'There no Errors',
-                    'gameRelease'       : 'mk4'
+                    'gameRelease'       : 'mk3',
+                    'warbj'             : $scope.warbj,
+                    'data'              : [],
+                    'lastController'     : {}
                 };
 
                 $scope.location = $location;
@@ -112,6 +126,12 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                                     if (!$window.ga || /127\.0\.0\.1/i.test($location.host())) {
                                         $scope.devAddId();
                                     }
+
+                                    // Now we can filter all models that not allowed
+                                    $.each( $scope.data, function(key, group) {
+                                        group.entries = $scope.allowedModels(group.entries);
+                                        $scope.vars.data.push(group);
+                                    });
 
                                     //restore from URL after we load the last data and we start watching scope Changes
                                     $scope.restoreSearch();
@@ -177,30 +197,32 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
 
         // Filter the selected Models and return only the Models that allowed
         $scope.allowedModels = function(models) {
-            models = $.grep(models, function(model) {
-                //Now we Check if we have the restricted model available
-                if ( model.hasOwnProperty('restricted_to') ) {
-                    if (typeof model.restricted_to === 'string') {
-                        if ($scope.getModelById(model.restricted_to) || model.restricted_to === '*') {
-                            return true;
-                        }
-                    } else {
-                        var found = false;
-                        $.each(model.restricted_to, function(id, val) {
-                            if ( $scope.getModelById(val) ) {
-                                found = true;
-                                return false;
+            if ( models ) {
+                models = $.grep(models, function (model) {
+                    //Now we Check if we have the restricted model available
+                    if (model.hasOwnProperty('restricted_to')) {
+                        if (typeof model.restricted_to === 'string') {
+                            if ($scope.getModelById(model.restricted_to) || model.restricted_to === '*') {
+                                return true;
                             }
-                        });
-                        return found;
+                        } else {
+                            var found = false;
+                            $.each(model.restricted_to, function (id, val) {
+                                if ($scope.getModelById(val)) {
+                                    found = true;
+                                    return false;
+                                }
+                            });
+                            return found;
+                        }
+                        return false;
+                    } else if (/merc|minion/i.test(model.faction) && /^warj|^warb/i.test(model.type)) {
+                        // for mercs an Minions we must look for an model that can control this beast or jack
+                        return $scope.checkCanControl(model);
                     }
-                    return false;
-                } else if ( /merc|minion/i.test(model.faction) && /^warj|^warb/i.test(model.type) ) {
-                    // for mercs an Minions we must look for an model that can control this beast or jack
-                    return $scope.checkCanControl(model);
-                }
-                return true;
-            });
+                    return true;
+                });
+            }
             return models;
         };
 
@@ -243,7 +265,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                         return false;
                     }
                 });
-                if ( cco !== true ) {
+                if  ( cco !== true ) {
                     return true;
                 }
             } else if (/^warb|^warj/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$').all === 0) {
@@ -475,6 +497,64 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             return findIdx;
         };
 
+        /**
+         * This function check an model can join a group of an other model
+         * @param   gModel object   the model who leads the group.
+         * @param   jModel string   the model will join the group
+         * @return                  boolean true or false
+         */
+        $scope.canJoinGroup = function(gModel, jModel) {
+            if ( typeof gModel === 'undefined' ) {
+                return false;
+            }
+
+            // We check if this model an model that must be in group
+            if ( !/^warb|^war|^soloatt|^unitcasteratt/i.test(jModel.type) && !jModel.hasOwnProperty('restricted_to') ) {
+                return false;
+            }
+
+            // check if warbeast and we can drop it but only if we have no restriceted_to
+            if (/^warb|^warj/i.test(jModel.type) && !jModel.hasOwnProperty('restricted_to')) {
+                if (/^warlock$|^warcaster$|lesserwarlock|journeyman|marshall/i.test(gModel.type)) {
+                    var cco = true;
+                    if ( gModel.hasOwnProperty('canControlOnly') ) {
+                        // This caster can control only special attribute models
+                        cco = $scope.checkAttributes(jModel, gModel.canControlOnly);
+                    }
+                    // Some lesserwarlocks have an restricted_to that means she only can get special beasts
+                    if (!gModel.hasOwnProperty('restricted_to') ||
+                        ( gModel.hasOwnProperty('restricted_to') && gModel.restricted_to.indexOf(jModel.id) !== -1 )) {
+                        // If we have an Jack marshall he can only get 1 Jacks and no colossal
+                        return (
+                            (
+                                !/marshall/i.test(gModel.type) ||
+                                (
+                                    /marshall/i.test(gModel.type)
+                                    && $scope.countSelectedModel('^warjack$', 'type', group).normal < 1
+                                    && !/colossal/i.test(jModel.type)
+                                )
+                            )
+                            && cco
+                        );
+                    } else {
+                        return false;
+                    }
+                } else {
+                    return false;
+                }
+            } else if (jModel.hasOwnProperty('restricted_to')) {
+                if ( jModel.restricted_to.indexOf(gModel.id) !== -1 ) {
+                    // We only can add if there no other UA or other WA or not the same model in group
+                    return ( $scope.countSelectedModel('^' + model.type + '$', 'type', group).all === 0 && $scope.countSelectedModel(jModel.id, 'id', group).all === 0 );
+                } else {
+                    return false;
+                }
+            } else if ( /^soloatt|^unitcasteratt/i.test(jModel.type) && !/^warlock$|^warcaster$/i.test(gModel.type) ) {
+                return false;
+            }
+            return true;
+        };
+
         // ********************************
         // MOVING MODELS BETWEEN GROUPS
         // ********************************
@@ -525,51 +605,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 return false;
             }
 
-            // We check if this model an model that must be in group
-            if ( !/^warb|^war|^soloatt|^unitcasteratt/i.test($scope.vars.dragging.model.type) && !$scope.vars.dragging.model.hasOwnProperty('restricted_to') ) {
-                return false;
-            }
-
-            // check if warbeast and we can drop it but only if we have no restriceted_to
-            if (/^warb|^warj/i.test($scope.vars.dragging.model.type) && !$scope.vars.dragging.model.hasOwnProperty('restricted_to')) {
-                if (/^warlock$|^warcaster$|lesserwarlock|journeyman|marshall/i.test(model.type)) {
-                    var cco = true;
-                    if ( model.hasOwnProperty('canControlOnly') ) {
-                        // This caster can control only special attribute models
-                        cco = $scope.checkAttributes($scope.vars.dragging.model, model.canControlOnly);
-                    }
-                    // Some lesserwarlocks have an restricted_to that means she only can get special beasts
-                    if (!model.hasOwnProperty('restricted_to') ||
-                        ( model.hasOwnProperty('restricted_to') && model.restricted_to.indexOf($scope.vars.dragging.model.id) !== -1 )) {
-                        // If we have an Jack marshall he can only get 1 Jacks and no colossal
-                        return (
-                            (
-                                !/marshall/i.test(model.type) ||
-                                (
-                                    /marshall/i.test(model.type)
-                                    && $scope.countSelectedModel('^warjack$', 'type', group).normal < 1
-                                    && !/colossal/i.test($scope.vars.dragging.model.type)
-                                )
-                            )
-                            && cco
-                        );
-                    } else {
-                        return false;
-                    }
-                } else {
-                    return false;
-                }
-            } else if ($scope.vars.dragging.model.hasOwnProperty('restricted_to')) {
-                if ( $scope.vars.dragging.model.restricted_to.indexOf(model.id) !== -1 ) {
-                    // We only can add if there no other UA or other WA or not the same model in group
-                    return ( $scope.countSelectedModel('^' + model.type + '$', 'type', group).all === 0 && $scope.countSelectedModel($scope.vars.dragging.model.id, 'id', group).all === 0 );
-                } else {
-                    return false;
-                }
-            } else if ( /^soloatt|^unitcasteratt/i.test($scope.vars.dragging.model.type) && !/^warlock$|^warcaster$/i.test(model.type) ) {
-                return false;
-            }
-            return true;
+            return $scope.canJoinGroup(model, $scope.vars.dragging.model);
         };
 
         // if we Drop the model now we can move it between the groups
@@ -583,9 +619,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             $('.activeDrop').removeClass('activeDrop');
         };
 
-        // ***********************************
-        // ADD AND REMOVE MODELS FUNCTIONS
-        // ***********************************
         // Drop callback for draggable
         $scope.dropCallback = function(event, ui) {
             var dragScope = angular.element(ui.draggable).scope();
@@ -598,6 +631,9 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             ui.helper.css({'width': prevWidth});
         };
 
+        // ***********************************
+        // ADD AND REMOVE MODELS FUNCTIONS
+        // ***********************************
         // Add an model to the selected list
         $scope.addModel = function(model, group) {
             group = typeof group !== 'undefined' ? group : false;
@@ -697,10 +733,12 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 } else {
                     $scope.vars.selectedModels.push(copy);
                 }
-                if ( /journeyman/i.test(copy.type) ) {
+                if ( /journeyman|lesserwar/i.test(copy.type) && !copy.hasOwnProperty('attachment') ) {
+                    $scope.vars.j = $scope.vars.selectedModels.indexOf(copy);
+                    $scope.vars.lastController = copy;
                     $('#journeyman').modal().on('hidden.bs.modal', function () {
-                        var j = $scope.vars.selectedModels.indexOf(copy);
-                        if ( $scope.vars.selectedModels[j].group.length === 0 ) {
+
+                        if ( $scope.vars.selectedModels[$scope.vars.j].group.length === 0 ) {
                             $scope.removeModel(copy);
                         }
                         $(this).off();
@@ -709,6 +747,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                         $scope.$apply();
                     });
                 }
+
                 $scope.calculatePoints();
             }
         };
