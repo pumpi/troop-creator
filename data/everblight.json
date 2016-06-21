@@ -599,7 +599,7 @@
           "name": "Blighted Nyss Warlord",
           "cost": 5,
           "fa": "2",
-          "faction": "faction_everblight",
+          "faction": "faction_everblight"
         },
         {
           "id": "ES08",
