@@ -360,6 +360,14 @@
       "id": "faction_everblight_units",
       "entries": [
         {
+          "id": "EU15",
+          "type": "unit",
+          "name": "Hellmouth",
+          "cost": 6,
+          "fa": "2",
+          "faction": "faction_everblight"
+        },
+        {
           "id": "EU14",
           "type": "unit",
           "name": "Grotesque Banshees",
@@ -585,6 +593,14 @@
       "logo": "faction_everblight",
       "id": "faction_everblight_solos",
       "entries": [
+        {
+          "id": "ES13",
+          "type": "Solo",
+          "name": "Blighted Nyss Warlord",
+          "cost": 5,
+          "fa": "2",
+          "faction": "faction_everblight",
+        },
         {
           "id": "ES08",
           "type": "solo",
