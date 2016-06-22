@@ -61,68 +61,16 @@
       "id": "faction_cyriss_warjacks",
       "entries": [
         {
-          "id": "COCJ08",
-          "type": "warjack",
-          "name": "Inverter",
-          "cost": 15,
-          "fa": "U",
-          "faction": "faction_cyriss"
-        },
-        {
-          "id": "COCJ06",
-          "type": "warjack",
-          "name": "Cipher",
-          "cost": 16,
-          "fa": "U",
-          "faction": "faction_cyriss"
-        },
-        {
-          "id": "COCJ09",
-          "type": "warjack",
-          "name": "Modulator",
-          "cost": 10,
-          "fa": "U",
-          "faction": "faction_cyriss"
-        },
-        {
-          "id": "COCJ11",
-          "type": "warjackColossal",
-          "name": "Prime Axiom",
-          "cost": 38,
-          "fa": "2",
-          "faction": "faction_cyriss"
-        },
-        {
-          "id": "COCJ04",
-          "type": "warjack",
-          "name": "Mitigator",
-          "cost": 7,
-          "fa": "U",
-          "faction": "faction_cyriss"
-        },
-        {
-          "id": "COCJ10",
-          "type": "warjack",
-          "name": "Monitor",
-          "cost": 16,
-          "fa": "U",
-          "faction": "faction_cyriss"
-        },
-        {
-          "id": "COCJ05",
-          "type": "warjack",
-          "name": "Assimilator",
-          "cost": 16,
-          "fa": "U",
-          "faction": "faction_cyriss"
-        },
-        {
           "id": "COCJ01",
           "type": "warjack",
           "name": "Corollary",
           "cost": 6,
           "fa": "1",
-          "faction": "faction_cyriss"
+          "faction": "faction_cyriss",
+          "attribute": [
+            "light",
+            "awesome"
+            ]
         },
         {
           "id": "COCJ02",
@@ -130,7 +78,10 @@
           "name": "Diffuser",
           "cost": 6,
           "fa": "U",
-          "faction": "faction_cyriss"
+          "faction": "faction_cyriss",
+          "attribute": [
+            "light"
+            ]
         },
         {
           "id": "COCJ03",
@@ -138,7 +89,43 @@
           "name": "Galvanizer",
           "cost": 5,
           "fa": "U",
-          "faction": "faction_cyriss"
+          "faction": "faction_cyriss",
+          "attribute": [
+            "light"
+            ]
+        },
+        {
+          "id": "COCJ04",
+          "type": "warjack",
+          "name": "Mitigator",
+          "cost": 7,
+          "fa": "U",
+          "faction": "faction_cyriss",
+          "attribute": [
+            "light"
+            ]
+        },
+        {
+          "id": "COCJ05",
+          "type": "warjack",
+          "name": "Assimilator",
+          "cost": 16,
+          "fa": "U",
+          "faction": "faction_cyriss",
+          "attribute": [
+            "heavy"
+            ]
+        },
+        {
+          "id": "COCJ06",
+          "type": "warjack",
+          "name": "Cipher",
+          "cost": 16,
+          "fa": "U",
+          "faction": "faction_cyriss",
+          "attribute": [
+            "heavy"
+            ]
         },
         {
           "id": "COCJ07",
@@ -146,7 +133,65 @@
           "name": "Conservator",
           "cost": 12,
           "fa": "U",
-          "faction": "faction_cyriss"
+          "faction": "faction_cyriss",
+          "attribute": [
+            "heavy"
+            ]
+        },
+        {
+          "id": "COCJ08",
+          "type": "warjack",
+          "name": "Inverter",
+          "cost": 15,
+          "fa": "U",
+          "faction": "faction_cyriss",
+          "attribute": [
+            "heavy"
+            ]
+        },
+        {
+          "id": "COCJ09",
+          "type": "warjack",
+          "name": "Modulator",
+          "cost": 10,
+          "fa": "U",
+          "faction": "faction_cyriss",
+          "attribute": [
+            "heavy"
+            ]
+        },
+        {
+          "id": "COCJ10",
+          "type": "warjack",
+          "name": "Monitor",
+          "cost": 16,
+          "fa": "U",
+          "faction": "faction_cyriss",
+          "attribute": [
+            "heavy"
+            ]
+        },
+        {
+          "id": "COCJ11",
+          "type": "warjackColossal",
+          "name": "Prime Axiom",
+          "cost": 38,
+          "fa": "2",
+          "faction": "faction_cyriss",
+          "attribute": [
+            "colossal"
+            ]
+        },
+        {
+          "id": "COCJ12",
+          "type": "warjackColossal",
+          "name": "Prime Conflux",
+          "cost": 38,
+          "fa": "2",
+          "faction": "faction_cyriss",
+          "attribute": [
+            "colossal"
+            ]
         }
       ],
       "label": "Warjacks"
