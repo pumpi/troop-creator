@@ -248,13 +248,6 @@
         {
           "name": "Grundback Gunner",
           "fa": "U",
-          "restricted_to": [
-            "MW10",
-            "MW02",
-            "MW03",
-            "MA03",
-            "MS17"
-          ],
           "cost": 6,
           "faction": "faction_mercs",
           "id": "MJ06",
@@ -267,23 +260,6 @@
         {
           "name": "Mule",
           "fa": "U",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MU03",
-            "MS09",
-            "MS20",
-            "MS25",
-            "MS26",
-            "MA06"
-          ],
           "cost": 15,
           "faction": "faction_mercs",
           "id": "MJ10",
@@ -296,23 +272,6 @@
         {
           "name": "Buccaneer",
           "fa": "U",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MU03",
-            "MS09",
-            "MS20",
-            "MS25",
-            "MS26",
-            "MA06"
-          ],
           "cost": 6,
           "faction": "faction_mercs",
           "id": "MJ04",
@@ -326,14 +285,6 @@
         {
           "name": "Gallant",
           "fa": "C",
-          "restricted_to": [
-            "MW02",
-            "MW04",
-            "MW06",
-            "MW08",
-            "MW09",
-            "MW14"
-          ],
           "cost": 17,
           "faction": "faction_mercs",
           "id": "MJ25",
@@ -347,10 +298,6 @@
         {
           "name": "Warden",
           "fa": "U",
-          "restricted_to": [
-            "MW11",
-            "MW12"
-          ],
           "cost": 10,
           "faction": "faction_mercs",
           "id": "MJ21",
@@ -362,23 +309,6 @@
         {
           "name": "Rover",
           "fa": "U",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MU03",
-            "MS09",
-            "MS20",
-            "MS25",
-            "MS26",
-            "MA06"
-          ],
           "cost": 15,
           "faction": "faction_mercs",
           "id": "MJ16",
@@ -391,22 +321,6 @@
         {
           "name": "Rocinante",
           "fa": "C",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MU03",
-            "MS09",
-            "MS20",
-            "MS25",
-            "MS26"
-          ],
           "cost": 18,
           "faction": "faction_mercs",
           "id": "MJ17",
@@ -419,13 +333,6 @@
         {
           "name": "Ghordson Avalancher",
           "fa": "U",
-          "restricted_to": [
-            "MW10",
-            "MW02",
-            "MW03",
-            "MA03",
-            "MS17"
-          ],
           "cost": 17,
           "faction": "faction_mercs",
           "id": "MJ15",
@@ -438,22 +345,6 @@
         {
           "name": "Vanguard",
           "fa": "U",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MU03",
-            "MS09",
-            "MS20",
-            "MS26",
-            "MA06"
-          ],
           "cost": 11,
           "faction": "faction_mercs",
           "id": "MJ03",
@@ -467,23 +358,6 @@
         {
           "name": "Mangler",
           "fa": "U",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MU03",
-            "MS09",
-            "MS20",
-            "MS25",
-            "MS26",
-            "MA06"
-          ],
           "cost": 15,
           "faction": "faction_mercs",
           "id": "MJ09",
@@ -496,23 +370,6 @@
         {
           "name": "Freebooter",
           "fa": "U",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MU03",
-            "MS09",
-            "MS20",
-            "MS25",
-            "MS26",
-            "MA06"
-          ],
           "cost": 9,
           "faction": "faction_mercs",
           "id": "MJ12",
@@ -526,10 +383,6 @@
         {
           "name": "Renegade",
           "fa": "2",
-          "restricted_to": [
-            "MW01",
-            "MW13"
-          ],
           "cost": 10,
           "faction": "faction_mercs",
           "id": "MJ01",
@@ -543,13 +396,6 @@
         {
           "name": "Ghordson Driller",
           "fa": "U",
-          "restricted_to": [
-            "MW10",
-            "MW02",
-            "MW03",
-            "MA03",
-            "MS17"
-          ],
           "cost": 10,
           "faction": "faction_mercs",
           "id": "MJ07",
@@ -562,23 +408,6 @@
         {
           "name": "Nomad",
           "fa": "U",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MU03",
-            "MS09",
-            "MS20",
-            "MS25",
-            "MS26",
-            "MA06"
-          ],
           "cost": 11,
           "faction": "faction_mercs",
           "id": "MJ11",
@@ -591,23 +420,6 @@
         {
           "name": "Talon",
           "fa": "U",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MU03",
-            "MS09",
-            "MS20",
-            "MS25",
-            "MS26",
-            "MA06"
-          ],
           "cost": 7,
           "faction": "faction_mercs",
           "id": "MJ02",
@@ -620,13 +432,6 @@
         {
           "name": "Grundback Blaster",
           "fa": "U",
-          "restricted_to": [
-            "MW10",
-            "MW02",
-            "MW03",
-            "MA03",
-            "MS17"
-          ],
           "cost": 6,
           "faction": "faction_mercs",
           "id": "MJ05",
@@ -639,23 +444,6 @@
         {
           "name": "Mariner",
           "fa": "U",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MU03",
-            "MS09",
-            "MS20",
-            "MS25",
-            "MS26",
-            "MA06"
-          ],
           "cost": 14,
           "faction": "faction_mercs",
           "id": "MJ13",
@@ -669,18 +457,6 @@
         {
           "name": "Galleon",
           "fa": "2",
-          "restricted_to": [
-            "MW04",
-            "MW06",
-            "MW09",
-            "MW07",
-            "MW14",
-            "MW08",
-            "MW05",
-            "MW01",
-            "MW13",
-            "MS25"
-          ],
           "cost": 39,
           "faction": "faction_mercs",
           "id": "MJ18",
@@ -694,13 +470,6 @@
         {
           "name": "Wroughthammer Rockram",
           "fa": "U",
-          "restricted_to": [
-            "MW10",
-            "MW02",
-            "MW03",
-            "MA03",
-            "MS17"
-          ],
           "cost": 14,
           "faction": "faction_mercs",
           "id": "MJ08",
@@ -713,10 +482,6 @@
         {
           "name": "Subduer",
           "fa": "U",
-          "restricted_to": [
-            "MW11",
-            "MW12"
-          ],
           "cost": 11,
           "faction": "faction_mercs",
           "id": "MJ20",
@@ -728,13 +493,6 @@
         {
           "name": "Ghordson Basher",
           "fa": "U",
-          "restricted_to": [
-            "MW10",
-            "MW02",
-            "MW03",
-            "MA03",
-            "MS17"
-          ],
           "cost": 9,
           "faction": "faction_mercs",
           "id": "MJ14",
@@ -747,13 +505,6 @@
         {
           "name": "Ghordson Earthbreaker",
           "fa": "2",
-          "restricted_to": [
-            "MW10",
-            "MW02",
-            "MW03",
-            "MA03",
-            "MS17"
-          ],
           "cost": 38,
           "faction": "faction_mercs",
           "id": "MJ19",
@@ -766,10 +517,6 @@
         {
           "name": "Wrecker",
           "fa": "U",
-          "restricted_to": [
-            "MW11",
-            "MW12"
-          ],
           "cost": 14,
           "faction": "faction_mercs",
           "id": "MJ22",
