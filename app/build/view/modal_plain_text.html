@@ -6,7 +6,7 @@
                     aria-hidden="true">&times;</span></button>
             <h4 class="modal-title"><i class="fa fa-file-text-o"></i> Troop plain text</h4>
         </div>
-        <div class="modal-body select-on-click" select-on-click>
+        <div class="modal-body select-on-click" id="selectme" select-on-click>
             System: <strong>{{army.system}}</strong><br/>
             Faction: <strong>{{army.faction}}</strong><br/>
             <span ng-hide="!options.gameTier">Tier: <strong>{{vars.tiers[options.gameTier].name}}</strong> (Level <strong>{{vars.tierLevel}}</strong>)<br/></span>

@@ -82,11 +82,21 @@ troopCreator.directive('selectOnClick', ['$window',
         return {
             link: function (scope, element) {
                 element.on('click', function () {
-                    var selection = $window.getSelection();
-                    var range = document.createRange();
-                    range.selectNodeContents(element[0]);
-                    selection.removeAllRanges();
-                    selection.addRange(range);
+                    var doc = document,
+                        text = doc.getElementById('selectme'),
+                        range,
+                        selection;
+                    if (document.body.createTextRange) {
+                        range = document.body.createTextRange();
+                        range.moveToElementText(text);
+                        range.select();
+                    } else if ($window.getSelection) {
+                        selection = $window.getSelection();
+                        range = document.createRange();
+                        range.selectNodeContents(text);
+                        selection.removeAllRanges();
+                        selection.addRange(range);
+                    }
                 });
             }
         }
