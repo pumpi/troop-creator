@@ -504,12 +504,15 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
          * @return                  boolean true or false
          */
         $scope.canJoinGroup = function(gModel, jModel) {
+            var group = $scope.vars.selectedModels.indexOf(gModel);
+
             if ( typeof gModel === 'undefined' ) {
                 return false;
             }
 
-            // We check if this model an model that must be in group
-            if ( !/^warb|^war|^soloatt|^unitcasteratt/i.test(jModel.type) && !jModel.hasOwnProperty('restricted_to') ) {
+            // We check if this model an model that must be in group and is it the same faction
+            if ( !/^warb|^war|^soloatt|^unitcasteratt/i.test(jModel.type) && !jModel.hasOwnProperty('restricted_to')
+                && gModel['faction'] === jModel['faction']) {
                 return false;
             }
 
@@ -545,7 +548,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             } else if (jModel.hasOwnProperty('restricted_to')) {
                 if ( jModel.restricted_to.indexOf(gModel.id) !== -1 ) {
                     // We only can add if there no other UA or other WA or not the same model in group
-                    return ( $scope.countSelectedModel('^' + model.type + '$', 'type', group).all === 0 && $scope.countSelectedModel(jModel.id, 'id', group).all === 0 );
+                    return ( $scope.countSelectedModel('^' + jModel.type + '$', 'type', group).all === 0 && $scope.countSelectedModel(jModel.id, 'id', group).all === 0 );
                 } else {
                     return false;
                 }
@@ -653,31 +656,10 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     findIdx = group;
                 } else if (/^warb|^warj/i.test(model.type)) {
                     for (var i = $scope.vars.selectedModels.length - 1; i >= 0; i--) {
-                        if (/^warlock$|^warcaster$|lesserwarlock|journeyman|marshall/i.test($scope.vars.selectedModels[i].type)) {
-                            var cco = true;
-                            if ( $scope.vars.selectedModels[i].hasOwnProperty('canControlOnly') ) {
-                                // This caster can control only special attribute models
-                                cco = $scope.checkAttributes(model, $scope.vars.selectedModels[i].canControlOnly);
-                            }
-                            // Some lesserwarlocks have an restricted_to that means she only can get special beasts
-                            if (!$scope.vars.selectedModels[i].hasOwnProperty('restricted_to') ||
-                                ( $scope.vars.selectedModels[i].hasOwnProperty('restricted_to') && $scope.vars.selectedModels[i].restricted_to.indexOf(model.id) !== -1 )) {
-                                // If we have an Jack marshall he can only get 2 Jacks and no character and no colossal
-                                if (
-                                    (
-                                        !/marshall/i.test($scope.vars.selectedModels[i].type)
-                                        || (
-                                            /marshall/i.test($scope.vars.selectedModels[i].type)
-                                            && $scope.countSelectedModel('^warjack$', 'type', i).normal < 1
-                                            && !/colossal/i.test(model.type)
-                                        )
-                                    )
-                                    && cco
-                                ) {
-                                    findIdx = i;
-                                    break;
-                                }
-                            }
+                        console.log(model);
+                        if ( $scope.canJoinGroup($scope.vars.selectedModels[i], model) ) {
+                            findIdx = i;
+                            break;
                         }
                     }
                 } else if (model.hasOwnProperty('restricted_to')) {
