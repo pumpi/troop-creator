@@ -17,7 +17,8 @@
           ],
           "attributes":[
             "llaelese"
-          ]
+          ],
+          "canControlOnly": "merc"
         },
         {
           "id": "MW06",
@@ -35,7 +36,8 @@
           "attributes":[
             "ordic",
             "privateer"
-          ]
+          ],
+          "canControlOnly": "merc"
         },
         {
           "id": "MW09",
@@ -53,7 +55,8 @@
           "attributes":[
             "steelhead",
             "ordic"
-          ]
+          ],
+          "canControlOnly": "merc"
         },
         {
           "id": "MW07",
@@ -67,7 +70,8 @@
           ],
           "attributes":[
             "privateer"
-          ]
+          ],
+          "canControlOnly": "merc"
         },
         {
           "id": "MW12",
@@ -96,7 +100,8 @@
           ],
           "attributes":[
             "morrow"
-          ]
+          ],
+          "canControlOnly": "merc"
         },
         {
           "id": "MW08",
@@ -113,7 +118,8 @@
           ],
           "attributes":[
             "ordic"
-          ]
+          ],
+          "canControlOnly": "merc"
         },
         {
           "id": "MW03",
@@ -162,7 +168,8 @@
           "attributes":[
             "thamarit",
             "privateer"
-          ]
+          ],
+          "canControlOnly": "merc"
         },
         {
           "id": "MW10",
@@ -208,7 +215,8 @@
             "faction_menoth",
             "faction_khador",
             "faction_cryx"
-          ]
+          ],
+          "canControlOnly": "merc|magnus"
         },
         {
           "id": "MW13",
@@ -221,7 +229,8 @@
             "faction_menoth",
             "faction_khador",
             "faction_cryx"
-          ]
+          ],
+          "canControlOnly": "merc|magnus"
         }
       ],
       "label": "Warcasters"
@@ -280,7 +289,8 @@
           "id": "MJ10",
           "type": "warjack",
           "attributes":[
-            "heavy"
+            "heavy",
+            "merc"
           ]
         },
         {
@@ -309,7 +319,8 @@
           "type": "warjack",
           "attributes":[
             "privateer",
-            "light"
+            "light",
+            "merc"
           ]
         },
         {
@@ -329,7 +340,8 @@
           "type": "warjack",
           "attributes":[
             "morrow",
-            "heavy"
+            "heavy",
+            "merc"
           ]
         },
         {
@@ -372,7 +384,8 @@
           "id": "MJ16",
           "type": "warjack",
           "attributes":[
-            "heavy"
+            "heavy",
+            "merc"
           ]
         },
         {
@@ -399,7 +412,8 @@
           "id": "MJ17",
           "type": "warjack",
           "attributes":[
-            "heavy"
+            "heavy",
+            "merc"
           ]
         },
         {
@@ -446,7 +460,8 @@
           "type": "warjack",
           "attributes":[
             "llaelese",
-            "light"
+            "light",
+            "merc"
           ]
         },
         {
@@ -474,7 +489,8 @@
           "id": "MJ09",
           "type": "warjack",
           "attributes":[
-            "heavy"
+            "heavy",
+            "merc"
           ]
         },
         {
@@ -503,7 +519,8 @@
           "type": "warjack",
           "attributes":[
             "privateer",
-            "light"
+            "light",
+            "merc"
           ]
         },
         {
@@ -519,7 +536,8 @@
           "type": "warjack",
           "attributes":[
             "magnus",
-            "light"
+            "light",
+            "merc"
           ]
         },
         {
@@ -566,7 +584,8 @@
           "id": "MJ11",
           "type": "warjack",
           "attributes":[
-            "heavy"
+            "heavy",
+            "merc"
           ]
         },
         {
@@ -594,7 +613,8 @@
           "id": "MJ02",
           "type": "warjack",
           "attributes":[
-            "light"
+            "light",
+            "merc"
           ]
         },
         {
@@ -642,7 +662,8 @@
           "type": "warjack",
           "attributes":[
             "privateer",
-            "heavy"
+            "heavy",
+            "merc"
           ]
         },
         {
@@ -666,7 +687,8 @@
           "type": "warjackColossal",
           "attributes":[
             "privateer",
-            "colossal"
+            "colossal",
+            "merc"
           ]
         },
         {

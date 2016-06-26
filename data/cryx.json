@@ -834,7 +834,7 @@
         {
           "id": "CS03",
           "type": "solo",
-          "name": "Necrotech & Scrap Thrall",
+          "name": "Necrotech",
           "cost": 2,
           "fa": "3",
           "faction": "faction_cryx"
