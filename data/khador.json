@@ -402,7 +402,10 @@
           "name": " Doom Reaver Swordsmen",
           "cost": 13,
           "fa": "U",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "doom"
+          ]
         },
         {
           "id": "KU14",
@@ -826,7 +829,10 @@
           "name": " Fenris",
           "cost": 9,
           "fa": "C",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "doom"
+          ]
         },
         {
           "id": "KS03",
