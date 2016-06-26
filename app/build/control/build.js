@@ -656,7 +656,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     findIdx = group;
                 } else if (/^warb|^warj/i.test(model.type)) {
                     for (var i = $scope.vars.selectedModels.length - 1; i >= 0; i--) {
-                        console.log(model);
                         if ( $scope.canJoinGroup($scope.vars.selectedModels[i], model) ) {
                             findIdx = i;
                             break;
