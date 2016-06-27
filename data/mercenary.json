@@ -1372,8 +1372,7 @@
           "works_for": [
             "faction_cryx",
             "faction_cygnar",
-            "faction_khador",
-            "faction_trollblood"
+            "faction_khador"
           ],
           "cost": 4,
           "faction": "faction_mercs",
@@ -1757,8 +1756,7 @@
           "works_for": [
             "faction_cygnar",
             "faction_khador",
-            "faction_circle",
-            "faction_trollblood"
+            "faction_circle"
           ],
           "faction": "faction_mercs",
           "id": "MS42",
