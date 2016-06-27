@@ -506,13 +506,12 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
         $scope.canJoinGroup = function(gModel, jModel) {
             var group = $scope.vars.selectedModels.indexOf(gModel);
 
-            if ( typeof gModel === 'undefined' ) {
-                return false;
-            }
-
             // We check if this model an model that must be in group and is it the same faction
-            if ( !/^warb|^war|^soloatt|^unitcasteratt/i.test(jModel.type) && !jModel.hasOwnProperty('restricted_to')
-                && gModel['faction'] === jModel['faction']) {
+            if (
+                typeof gModel === 'undefined' ||
+                (!/^warb|^war|^soloatt|^unitcasteratt/i.test(jModel.type) && !jModel.hasOwnProperty('restricted_to')) ||
+                gModel['faction'] !== jModel['faction']
+            ) {
                 return false;
             }
 
