@@ -253,57 +253,22 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             // Only Caster or other model can control warbeast or warjack in selectedModels we can not select an Warbeast or Warjack
             if ( /^warb|^warj/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$|lesserwarlock|journeyman|marshall').all === 0 ) {
                 return true;
-            } else if ( /^warb|^warj/i.test(model.type) && $scope.countSelectedModel('.*?', 'canControlOnly').all > 0 ) {
-                // The Caster can have an canControlOnly string we must test if we can control this beast
-                var cco = undefined;
+            } else if ( /^warb|^warj/i.test(model.type) ) {
+                // If there an caster or other model where this model can join
+                var cj = false;
                 $.each($scope.vars.selectedModels, function (key, sModel) {
-                    if ( sModel.hasOwnProperty('canControlOnly') ) {
-                        cco = $scope.checkAttributes(model, sModel.canControlOnly);
-                    }
-
-                    if ( cco === true ) {
-                        return false;
+                    if ( $scope.canJoinGroup(sModel, model) ) {
+                        cj = true;
                     }
                 });
-                if  ( cco !== true ) {
+
+                // The model can not join any group now we disable it
+                if ( cj === false ) {
                     return true;
-                }
-            } else if (/^warb|^warj/i.test(model.type) && $scope.countSelectedModel('^warlock$|^warcaster$').all === 0) {
-                // We must look if the selected journyman or lesser warlock has an restricted_to or marshall max value overdone
-                var checkLesser = false;
-                if ( $scope.vars.selectedModels.length > 0 ) {
-                    $.each($scope.vars.selectedModels, function (key, sModel) {
-                        // Marshals can only have 1 Jack and no Colossal
-                        if (
-                            /marshall/i.test(sModel.type)
-                            && !/colossal/i.test(model.type)
-                            && $scope.countSelectedModel('^warjack$', 'type', key).all < 1
-                        ) {
-                            checkLesser = true;
-                        } else if ( sModel.hasOwnProperty('restricted_to') ) {
-                            // An Lesser Warlock can have an restricted_to then he can not add all models
-                            var restrictedTo = sModel.restricted_to;
-                            if (typeof sModel.restricted_to === 'string') {
-                                restrictedTo = model.restricted_to.split(' ');
-                            }
-                            if ( restrictedTo.indexOf(model.id) !== -1 ) {
-                                checkLesser = true;
-                            }
-                        } else if ( !/marshall/i.test(sModel.type) ) {
-                            // All fine if the sModel if not an marshall
-                            checkLesser = true;
-                        }
-
-                        return !checkLesser;
-                    });
-
-                    if ( checkLesser !== true ) {
-                        return true;
-                    }
                 }
             }
 
-            // We must have an Caster or Warlock to use Solo/Unit attachments and the Caster don't can have more then one or tow if he an unit
+            // We must have an Caster or Warlock to use Solo/Unit attachments and the Caster don't can have more then one or two if he an unit
             if ( /^soloAtt|^unitCasterAtt/i.test(model.type) ) {
                 if ( $scope.countSelectedModel('^warlock$|^warcaster$').all === 0 ) {
                     return true;
