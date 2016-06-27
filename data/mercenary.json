@@ -805,7 +805,7 @@
           ],
           "cost": 10,
           "faction": "faction_mercs",
-          "type": "unitMarshall"
+          "type": "unit"
         },
         {
           "name": "Tactical Arcanist Corps",
@@ -989,7 +989,8 @@
           "attributes":[
             "ordic",
             "marshall"
-          ]
+          ],
+          "canControlOnly": "merc"
         },
         {
           "name": "Lady Aiyana & Master Holt",
@@ -1220,7 +1221,7 @@
           ],
           "cost": 5,
           "faction": "faction_mercs",
-          "type": "UAMarshall"
+          "type": "UA"
         },
         {
           "fa": "C",
@@ -1244,7 +1245,8 @@
           "restricted_to": "MU29",
           "faction": "faction_mercs",
           "id": "MA06",
-          "type": "UAMarshall"
+          "type": "UAMarshall",
+          "canControlOnly": "merc"
         },
         {
           "name": "Kayazy Assassin Underboss",
@@ -1377,7 +1379,8 @@
           "cost": 4,
           "faction": "faction_mercs",
           "id": "MS26",
-          "type": "soloMarshall"
+          "type": "soloMarshall",
+          "canControlOnly": "merc" 
         },
         {
           "name": "Lanyssa Ryssyll, Nyss Sorceress",
@@ -1431,7 +1434,8 @@
           "cost": 4,
           "faction": "faction_mercs",
           "id": "MS17",
-          "type": "soloMarshall"
+          "type": "soloMarshall",
+          "canControlOnly": "rhulic"
         },
         {
           "name": "First Mate Hawk",
@@ -1722,7 +1726,8 @@
           "cost": 3,
           "faction": "faction_mercs",
           "id": "MS09",
-          "type": "soloMarshall"
+          "type": "soloMarshall",
+          "canControlOnly": "merc"
         },
         {
           "name": "Harlan Versh, Illuminated One",
@@ -1774,7 +1779,8 @@
           "cost": 4,
           "faction": "faction_mercs",
           "id": "MS20",
-          "type": "soloMarshall"
+          "type": "soloMarshall",
+          "canControlOnly": "merc"
         },
         {
           "name": "Gorman di Wulfe, Rogue Alchemist",
