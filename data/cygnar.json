@@ -152,8 +152,7 @@
           "name": "Nemo3 (Artificer General Nemo & Storm Chaser Adept Finch)",
           "cost": 25,
           "fa": "C",
-          "faction": "faction_cygnar",
-          "attachment": "YS12"
+          "faction": "faction_cygnar"
         }
       ],
       "label": "Warcasters"
@@ -978,18 +977,6 @@
           "faction": "faction_cygnar",
           "attributes":[
             "tempest"
-          ]
-        },
-        {
-          "id": "YS12",
-          "type": "soloAttachment",
-          "name": "Storm Chaser Adept Caitlin Finch",
-          "cost": 0,
-          "fa": "C",
-          "faction": "faction_cygnar",
-          "restricted_to": "YW18",
-          "attributes":[
-            "attachment"
           ]
         }
       ],

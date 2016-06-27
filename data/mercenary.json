@@ -1348,7 +1348,8 @@
           "faction": "faction_mercs",
           "id": "MS45",
           "type": "soloLesserWarlock",
-          "attachment": "IB16_mercs"
+          "attachment": "IB16_mercs",
+          "canControlOnly": "gatorman"
         },
         {
           "name": "Rhupert Carvolo, Piper of Ord",
@@ -1405,7 +1406,8 @@
           "attributes":[
             "llaelese",
             "journeyman"
-          ]
+          ],
+          "canControlOnly": "merc"
         },
         {
           "name": "Sylys Wyshnalyrr, the Seeker",
@@ -1455,7 +1457,7 @@
           "cost": 17,
           "faction": "faction_mercs",
           "id": "MS43",
-          "type": "soloLesserWarlock",
+          "type": "solo",
           "attachment": "IB15_mercs"
         },
         {
@@ -1636,7 +1638,8 @@
           "faction": "faction_mercs",
           "id": "MS44",
           "type": "soloLesserWarlock",
-          "attachment": "IB13_mercs"
+          "attachment": "IB13_mercs",
+          "canControlOnly": "farrow"
         },
         {
           "name": "Alten Ashley",
@@ -1759,7 +1762,7 @@
           ],
           "faction": "faction_mercs",
           "id": "MS42",
-          "type": "soloLesserWarlock",
+          "type": "solo",
           "attachment": "IB14_mercs"
         },
         {
