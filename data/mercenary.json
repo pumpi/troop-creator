@@ -1457,7 +1457,7 @@
           "cost": 17,
           "faction": "faction_mercs",
           "id": "MS43",
-          "type": "soloLesserWarlock",
+          "type": "solo",
           "attachment": "IB15_mercs"
         },
         {
@@ -1762,7 +1762,7 @@
           ],
           "faction": "faction_mercs",
           "id": "MS42",
-          "type": "soloLesserWarlock",
+          "type": "solo",
           "attachment": "IB14_mercs"
         },
         {
