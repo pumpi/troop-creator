@@ -64,7 +64,6 @@ h1, h2, h3, h4, h5, p {
  * HEADER
  *****************************/
 #header {
-    max-height: 300px;
     position: relative;
     .beta-logo {
         position: absolute;
@@ -73,21 +72,27 @@ h1, h2, h3, h4, h5, p {
         width: 300px;
         max-width: 30%;
     }
-    .header-title {
+    .logo {
         position: absolute;
-        bottom: 10px;
-        left: 30px;
-        color: #FFF;
-        font-size: 80px;
-        font-size: 8rem;
-        font-family: 'Fredericka the Great', cursive;
-        text-shadow: 0 0 30px #000;
+        bottom: 20px;
+        left: 20px;
+        background-image: url(../img/logo.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 181px;
+        padding-left: 358px;
         &:hover {
             text-decoration: none;
         }
-        small {
-            font-size: 3rem;
-        }
+    }
+    .release {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        color: #FFF;
+        font-size: 20px;
+        font-size: 2rem;
+        font-family: 'Fredericka the Great', cursive;
     }
 }
 
@@ -249,8 +254,11 @@ h1, h2, h3, h4, h5, p {
     }
 }
 
-.available-models .model:not(.disable) {
-    cursor: pointer;
+.available-models,
+.modal-body {
+    .model:not(.disable) {
+        cursor: pointer;
+    }
 }
 
 .army-models {
@@ -587,7 +595,6 @@ ul[dnd-list] {
     ul {
         list-style: none;
         padding: 0;
-        margin: 0 0 10px 0;
     }
 }
 

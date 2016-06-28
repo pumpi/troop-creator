@@ -1,4 +1,4 @@
-/*! troopcreator 2016-06-27 */
+/*! troopcreator 2016-06-28 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5091,7 +5091,6 @@ h1, h2, h3, h4, h5, p {
  * HEADER
  *****************************/
 #header {
-  max-height: 300px;
   position: relative; }
   #header .beta-logo {
     position: absolute;
@@ -5099,19 +5098,25 @@ h1, h2, h3, h4, h5, p {
     top: 10px;
     width: 300px;
     max-width: 30%; }
-  #header .header-title {
+  #header .logo {
     position: absolute;
-    bottom: 10px;
-    left: 30px;
-    color: #FFF;
-    font-size: 80px;
-    font-size: 8rem;
-    font-family: 'Fredericka the Great', cursive;
-    text-shadow: 0 0 30px #000; }
-    #header .header-title:hover {
+    bottom: 20px;
+    left: 20px;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 181px;
+    padding-left: 358px; }
+    #header .logo:hover {
       text-decoration: none; }
-    #header .header-title small {
-      font-size: 3rem; }
+  #header .release {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #FFF;
+    font-size: 20px;
+    font-size: 2rem;
+    font-family: 'Fredericka the Great', cursive; }
 
 /*
  * MENU
@@ -5244,7 +5249,7 @@ h1, h2, h3, h4, h5, p {
     right: 10px;
     cursor: pointer; }
 
-.available-models .model:not(.disable) {
+.available-models .model:not(.disable), .modal-body .model:not(.disable) {
   cursor: pointer; }
 
 .army-models:nth-of-type(2) .accordion-container {
@@ -5507,8 +5512,7 @@ ul[dnd-list] {
  *****************************/
 .modal-body ul {
   list-style: none;
-  padding: 0;
-  margin: 0 0 10px 0; }
+  padding: 0; }
 
 .modal-header {
   background-color: #eee;
