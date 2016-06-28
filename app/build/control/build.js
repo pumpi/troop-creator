@@ -22,15 +22,11 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 var jqArmy = $('#' + $routeParams.army);
                 $scope.army = jqArmy.data();
                 $scope.data = [];
-                $scope.warbj = [];
 
                 // only add data with entries and allowed
                 $.each(data.groups, function(key, item) {
                     if (item.entries.length !== 0) {
                         $scope.data.push(item);
-                        if ( /^warb|^warj/i.test(item.label) ) {
-                            $scope.warbj = item;
-                        }
                     }
 
                 });
@@ -67,7 +63,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     'location'          : $location.search(),
                     'error'             : 'There no Errors',
                     'gameRelease'       : 'mk3',
-                    'warbj'             : $scope.warbj,
                     'data'              : [],
                     'lastController'     : {}
                 };
@@ -466,7 +461,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             // We check if this model an model that must be in group and is it the same faction
             if (
                 typeof gModel === 'undefined' ||
-                (!/^warb|^war|^soloatt|^unitcasteratt/i.test(jModel.type) && !jModel.hasOwnProperty('restricted_to')) ||
+                (!/^warb|^warj|^soloatt|^unitcasteratt/i.test(jModel.type) && !jModel.hasOwnProperty('restricted_to')) ||
                 gModel['faction'] !== jModel['faction']
             ) {
                 return false;
