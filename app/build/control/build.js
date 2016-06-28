@@ -276,15 +276,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     var freeCaster = false;
                     $.each($scope.vars.selectedModels, function (key, sModel) {
                         if ( /^warlock$|^warcaster$/i.test(sModel.type) ) {
-                            if ( sModel.group.length > 0 ) {
-                                var maxAtt = 0;
-                                if ( sModel.hasOwnProperty('attachment') ) {
-                                    maxAtt = 1
-                                }
-                                if ($scope.countSelectedModel('^soloAtt|^unitCasterAtt', 'type', key).all === maxAtt) {
-                                    freeCaster = true;
-                                }
-                            } else {
+                            if ( sModel.group.length === 0 || $scope.countSelectedModel('^soloAtt|^unitCasterAtt', 'type', key).all === 0) {
                                 freeCaster = true;
                             }
                         }
@@ -630,11 +622,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 } else if (/^soloatt|^unitcasteratt/i.test(model.type)) {
                     copy.sort = 0;
                     for (var j = $scope.vars.selectedModels.length - 1; j >= 0; j--) {
-                        var maxAtt = 0;
-                        if ( $scope.vars.selectedModels[j].hasOwnProperty('attachment') ) {
-                            maxAtt = 1
-                        }
-                        if (/^warlock$|^warcaster$/i.test($scope.vars.selectedModels[j].type) && $scope.countSelectedModel('^soloAtt|^unitcasteatt', 'type', j).all === maxAtt ) {
+                        if (/^warlock$|^warcaster$/i.test($scope.vars.selectedModels[j].type) && $scope.countSelectedModel('^soloAtt|^unitcasteatt', 'type', j).all === 0 ) {
                             findIdx = j;
                             break;
                         }
