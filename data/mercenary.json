@@ -1146,7 +1146,8 @@
           "cost": 4,
           "faction": "faction_mercenary",
           "id": "MS26",
-          "type": "soloMarshall"
+          "type": "soloMarshall",
+          "canControlOnly": "merc"
         },
         {
           "name": "Gastone Crosse",
