@@ -158,123 +158,6 @@
     },
     {
       "logo": "factions",
-      "id": "faction_minions_warjacks",
-      "entries": [
-        {
-          "name": "Rover",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 15,
-          "faction": "faction_minions",
-          "id": "IJ16",
-          "type": "warjack"
-        },
-        {
-          "name": "Nomad",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 11,
-          "faction": "faction_minions",
-          "id": "IJ11",
-          "type": "warjack"
-        },
-        {
-          "name": "Freebooter",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 9,
-          "faction": "faction_minions",
-          "id": "IJ12",
-          "type": "warjack"
-        },
-        {
-          "name": "Mangler",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 15,
-          "faction": "faction_minions",
-          "id": "IJ09",
-          "type": "warjack"
-        },
-        {
-          "name": "Mule",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 15,
-          "faction": "faction_minions",
-          "id": "IJ10",
-          "type": "warjack"
-        },
-        {
-          "name": "Mariner",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 14,
-          "faction": "faction_minions",
-          "id": "IJ13",
-          "type": "warjack"
-        },
-        {
-          "name": "Buccaneer",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 6,
-          "faction": "faction_minions",
-          "id": "IJ04",
-          "type": "warjack"
-        },
-        {
-          "name": "Rocinante",
-          "fa": "C",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 18,
-          "faction": "faction_minions",
-          "id": "IJ17",
-          "type": "warjack"
-        },
-        {
-          "name": "Talon",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 7,
-          "faction": "faction_minions",
-          "id": "IJ02",
-          "type": "warjack"
-        },
-        {
-          "name": "Vanguard",
-          "fa": "U",
-          "restricted_to": [
-            "IS24"
-          ],
-          "cost": 11,
-          "faction": "faction_minions",
-          "id": "IJ03",
-          "type": "warjack"
-        }
-      ],
-      "label": "Warjacks"
-    },
-    {
-      "logo": "factions",
       "id": "faction_minions_warbeasts",
       "entries": [
         {
@@ -545,33 +428,6 @@
           "type": "unit"
         },
         {
-          "max": 10,
-          "min": 6,
-          "costMax": 19,
-          "fa": "C",
-          "costMin": 12,
-          "id": "IU12",
-          "name": "Cylena Raefyll & Nyss Hunters",
-          "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
-          ],
-          "cost": 12,
-          "faction": "faction_minions",
-          "type": "unit"
-        },
-        {
-          "name": "Dannon Blythe & Bull",
-          "fa": "C",
-          "works_for": [
-            "faction_trollblood"
-          ],
-          "cost": 6,
-          "faction": "faction_minions",
-          "id": "IU13",
-          "type": "unit"
-        },
-        {
           "name": "Gatorman Bokor and Bog Trog Swamp Shamblers",
           "fa": "2",
           "works_for": [
@@ -611,21 +467,6 @@
           "cost": 11,
           "faction": "faction_minions",
           "id": "IU07",
-          "type": "unit"
-        },
-        {
-          "max": 10,
-          "min": 6,
-          "costMax": 17,
-          "fa": "C",
-          "costMin": 11,
-          "id": "IU11",
-          "name": "Greygore Boomhowler & Co.",
-          "works_for": [
-            "faction_trollblood"
-          ],
-          "cost": 11,
-          "faction": "faction_minions",
           "type": "unit"
         },
         {
@@ -687,7 +528,9 @@
           "fa": "C",
           "works_for": [
             "faction_orboros",
-            "faction_trollblood"
+            "faction_trollblood",
+            "faction_cygnar",
+            "faction_mercs"
           ],
           "cost": 5,
           "faction": "faction_minions",
@@ -768,7 +611,9 @@
             "faction_orboros",
             "faction_everblight",
             "faction_trollblood",
-            "faction_skorne"
+            "faction_skorne",
+            "faction_cryx",
+            "faction_mercs"
           ],
           "cost": 17,
           "faction": "faction_minions",
@@ -784,7 +629,9 @@
           "fa": "C",
           "works_for": [
             "faction_orboros",
-            "faction_trollblood"
+            "faction_trollblood",
+            "faction_scyrah",
+            "faction_mercs"
           ],
           "cost": 17,
           "faction": "faction_minions",
@@ -799,7 +646,12 @@
             "faction_orboros",
             "faction_everblight",
             "faction_trollblood",
-            "faction_skorne"
+            "faction_skorne",
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_menoth",
+            "faction_mercs"
           ],
           "cost": 15,
           "faction": "faction_minions",
@@ -814,8 +666,11 @@
           "name": "Brun Cragback (Brun Cragback & Lug)",
           "fa": "C",
           "works_for": [
-            "faction_orboros",
-            "faction_trollblood"
+            "faction_cygnar",
+            "faction_khador",
+            "faction_circle",
+            "faction_trollblood",
+            "faction_mercs"
           ],
           "cost": 16,
           "faction": "faction_minions",
@@ -857,23 +712,16 @@
           "works_for": [
             "faction_orboros",
             "faction_trollblood",
-            "faction_skorne"
+            "faction_skorne",
+            "faction_cryx",
+            "faction_khador",
+            "faction_menoth",
+            "faction_mercs"
           ],
           "cost": 4,
           "faction": "faction_minions",
           "id": "IS06",
           "type": "solo"
-        },
-        {
-          "name": "Raluk Moorclaw, the Ironmonger",
-          "fa": "C",
-          "works_for": [
-            "faction_trollblood"
-          ],
-          "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS24",
-          "type": "soloMarshall"
         },
         {
           "name": "Targ",
@@ -904,24 +752,17 @@
           "type": "solo"
         },
         {
-          "name": "Orin Midwinter, Rogue Inquisitor",
-          "fa": "C",
-          "works_for": [
-            "faction_skorne"
-          ],
-          "cost": 5,
-          "faction": "faction_minions",
-          "id": "IS23",
-          "type": "solo"
-        },
-        {
           "name": "Gudrun the Wanderer",
           "fa": "C",
           "works_for": [
             "faction_orboros",
             "faction_everblight",
             "faction_trollblood",
-            "faction_skorne"
+            "faction_skorne",
+            "faction_khador",
+            "faction_cryx",
+            "faction_cygnar",
+            "faction_mercs"
           ],
           "cost": 5,
           "faction": "faction_minions",
@@ -934,7 +775,10 @@
           "works_for": [
             "faction_orboros",
             "faction_skorne",
-            "faction_trollblood"
+            "faction_trollblood",
+            "faction_khador",
+            "faction_cygnar",
+            "faction_mercs"
           ],
           "cost": 6,
           "faction": "faction_minions",
@@ -956,23 +800,13 @@
           "type": "solo"
         },
         {
-          "name": "Swamp Gobber River Raiders",
-          "fa": "3",
-          "works_for": [
-            "faction_orboros",
-            "faction_skorne"
-          ],
-          "cost": 4,
-          "faction": "faction_minions",
-          "id": "IS25",
-          "type": "solo"
-        },
-        {
           "name": "Viktor Pendrake",
           "fa": "C",
           "works_for": [
             "faction_orboros",
-            "faction_trollblood"
+            "faction_trollblood",
+            "faction_cygnar",
+            "faction_mercs"
           ],
           "cost": 4,
           "faction": "faction_minions",
@@ -1011,7 +845,10 @@
           "fa": "C",
           "works_for": [
             "faction_orboros",
-            "faction_trollblood"
+            "faction_trollblood",
+            "faction_cygnar",
+            "faction_scyrah",
+            "faction_mercs"
           ],
           "cost": 3,
           "faction": "faction_minions",
@@ -1039,7 +876,10 @@
             "faction_orboros",
             "faction_everblight",
             "faction_trollblood",
-            "faction_skorne"
+            "faction_skorne",
+            "faction_cygnar",
+            "faction_khador",
+            "faction_mercs"
           ],
           "cost": 2,
           "faction": "faction_minions",
@@ -1065,7 +905,10 @@
           "fa": "C",
           "works_for": [
             "faction_orboros",
-            "faction_trollblood"
+            "faction_trollblood",
+            "faction_menoth",
+            "faction_khador",
+            "faction_cygnar"
           ],
           "cost": 5,
           "faction": "faction_minions",
