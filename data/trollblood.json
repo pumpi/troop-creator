@@ -54,7 +54,7 @@
         {
           "id": "TW06",
           "type": "warlock",
-          "name": "Calandra(Calandra Truthsayer Oracle of the Glimmerwood)",
+          "name": "Calandra (Calandra Truthsayer Oracle of the Glimmerwood)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_trollblood"
@@ -70,7 +70,7 @@
         {
           "id": "TW08",
           "type": "warlock",
-          "name": "Jarl1(Jarl Skuld Devil of the Thornwood)",
+          "name": "Jarl1 (Jarl Skuld Devil of the Thornwood)",
           "cost": 30,
           "fa": "C",
           "faction": "faction_trollblood"
