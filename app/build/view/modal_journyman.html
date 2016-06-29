@@ -7,15 +7,15 @@
         </div>
         <div class="modal-body">
             This model must have at least one <strong>Warjacks or Warbeasts</strong> in its battlegroup at the start of the game.
-            <div class="army-models">
+            <div class="army-models" ng-repeat="group in vars.data | filter:checkEmptyGroup">
                 <div class="headline">
-                    Warjacks/Warbeasts
+                    {{group.label}}
                 </div>
-                <ul ng-repeat="i in notSorted(vars.data)" ng-init="value = vars.data[i]['entries']">
+                <ul >
                     <li class="model add-model" ng-click="addModel(model)"
                         ng-show="canJoinGroup(vars.lastController, model)"
                         ng-class="{disable: modelAvailable = checkModelAvailable(model)}"
-                        ng-repeat="model in value | orderBy: 'name'">
+                        ng-repeat="model in group.entries | orderBy: 'name'">
                         <div class="model-name">{{model.name}}</div>
                         <div class="model-options">
                             <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
