@@ -636,7 +636,7 @@
           "cost": 17,
           "faction": "faction_minion",
           "id": "IS19",
-          "type": "soloLesserWarlock",
+          "type": "solo",
           "attachment": "IB15"
         },
         {
@@ -675,7 +675,7 @@
           "cost": 16,
           "faction": "faction_minion",
           "id": "IS18",
-          "type": "soloLesserWarlock",
+          "type": "solo",
           "attachment": "IB14"
         },
         {
