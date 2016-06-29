@@ -156,7 +156,7 @@
         {
           "id": "MW05",
           "type": "warcaster",
-          "name": "Fiona1  (Fiona the Black",
+          "name": "Fiona1  (Fiona the Black)",
           "cost": 31,
           "fa": "C",
           "faction": "faction_mercenary",
@@ -870,7 +870,12 @@
           "cost": 7,
           "faction": "faction_mercenary",
           "id": "MU10",
-          "type": "unit"
+          "type": "unit",
+          "restricted_to": [
+            "MW05",
+            "MW06",
+            "MW07"
+            ]
         },
         {
           "name": "Herne & Jonne",
