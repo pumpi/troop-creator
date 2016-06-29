@@ -233,7 +233,9 @@
           "cost": 7,
           "fa": "U",
           "faction": "faction_orboros",
-          "attributes": "griffon"
+          "attributes":[
+            "griffon"
+          ]
         },
         {
           "id": "OB17",
@@ -250,7 +252,9 @@
           "cost": 7,
           "fa": "U",
           "faction": "faction_orboros",
-          "attributes": "griffon"
+          "attributes":[
+            "griffon"
+          ]
         },
         {
           "id": "OB13",
@@ -259,7 +263,9 @@
           "cost": 8,
           "fa": "U",
           "faction": "faction_orboros",
-          "attributes": "griffon"
+          "attributes":[
+            "griffon"
+          ]
         },
         {
           "id": "OB08",
@@ -276,7 +282,9 @@
           "cost": 38,
           "fa": "2",
           "faction": "faction_orboros",
-          "attributes": "griffon"
+          "attributes":[
+            "griffon"
+          ]
         },
         {
           "id": "OB11",
