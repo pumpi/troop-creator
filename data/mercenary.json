@@ -934,7 +934,10 @@
           "cost": 10,
           "faction": "faction_mercenary",
           "id": "MU09",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "alexia"
+          ]
         },
         {
           "max": 10,
@@ -1317,7 +1320,10 @@
           "cost": 7,
           "faction": "faction_mercenary",
           "id": "MS24",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "alexia"
+          ]
         },
         {
           "name": "Master Gunner Dougal MacNaile",
@@ -1483,7 +1489,10 @@
           "cost": 6,
           "faction": "faction_mercenary",
           "id": "MS28",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "eiryss"
+          ]
         },
         {
           "name": "Eiryss, Mage Hunter of Ios",
@@ -1497,7 +1506,10 @@
           "cost": 7,
           "faction": "faction_mercenary",
           "id": "MS01",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "eiryss"
+          ]
         },
         {
           "name": "Swamp Gobber River Raiders",
