@@ -232,7 +232,8 @@
           "name": "Razorwing Griffon",
           "cost": 7,
           "fa": "U",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attributes": "griffon"
         },
         {
           "id": "OB17",
@@ -248,7 +249,8 @@
           "name": "Rotterhorn Griffon",
           "cost": 7,
           "fa": "U",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attributes": "griffon"
         },
         {
           "id": "OB13",
@@ -256,7 +258,8 @@
           "name": "Scarsfell Griffon",
           "cost": 8,
           "fa": "U",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attributes": "griffon"
         },
         {
           "id": "OB08",
@@ -272,7 +275,8 @@
           "name": "Storm Raptor",
           "cost": 38,
           "fa": "2",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attributes": "griffon"
         },
         {
           "id": "OB11",
@@ -586,11 +590,7 @@
           "cost": 4,
           "fa": "C",
           "faction": "faction_orboros",
-          "restricted_to": [
-            "OB13",
-            "OB16",
-            "OB19"
-          ]
+          "canControlOnly": "griffon"
         },
         {
           "id": "OS06",
