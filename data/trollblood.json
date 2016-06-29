@@ -129,8 +129,7 @@
           "name": "Hoarluk3 (Hoarluk Doomshaper Dire Prophet & Scroll Bearers)",
           "cost": 26,
           "fa": "C",
-          "faction": "faction_trollblood",
-          "attachment": "TS13"
+          "faction": "faction_trollblood"
         }
       ],
       "label": "Warlocks"
@@ -710,15 +709,6 @@
           "fa": "C",
           "faction": "faction_trollblood",
           "restricted_to": "TW05"
-        },
-        {
-          "id": "TS13",
-          "type": "soloAttachment",
-          "name": "Scroll Bearer",
-          "cost": 0,
-          "fa": "C",
-          "faction": "faction_trollblood",
-          "restricted_to": "TW16"
         },
         {
           "id": "TS14",
