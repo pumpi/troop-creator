@@ -7,7 +7,7 @@
         {
           "id": "COCW05",
           "type": "warcaster",
-          "name": "Syntherion(Forge Master Syntherion)",
+          "name": "Syntherion (Forge Master Syntherion)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_cyriss"
@@ -15,7 +15,7 @@
         {
           "id": "COCW02",
           "type": "warcaster",
-          "name": "Axis(Axis the Harmonic Enforcer)",
+          "name": "Axis (Axis the Harmonic Enforcer)",
           "cost": 30,
           "fa": "C",
           "faction": "faction_cyriss"
@@ -23,7 +23,7 @@
         {
           "id": "COCW04",
           "type": "warcaster",
-          "name": "Lucant(Father Lucant Divinity Architect)",
+          "name": "Lucant (Father Lucant Divinity Architect)",
           "cost": 28,
           "fa": "C",
           "faction": "faction_cyriss"
@@ -31,7 +31,7 @@
         {
           "id": "COCW03",
           "type": "warcaster",
-          "name": "Iron Mother Directrix(Iron Mother Directrix & Exponent Servitors)",
+          "name": "Iron Mother Directrix (Iron Mother Directrix & Exponent Servitors)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_cyriss"
@@ -39,7 +39,7 @@
         {
           "id": "COCW01",
           "type": "warcaster",
-          "name": "Aurora(Aurora Numen of Aerogenesis)",
+          "name": "Aurora (Aurora Numen of Aerogenesis)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_cyriss",
