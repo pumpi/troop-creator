@@ -1357,7 +1357,8 @@
             "faction_cryx",
             "faction_khador",
             "faction_menoth",
-            "faction_skorne"
+            "faction_skorne",
+            "faction_minion"
           ],
           "cost": 5,
           "faction": "faction_mercenary",
