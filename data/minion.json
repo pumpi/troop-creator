@@ -164,7 +164,7 @@
           "name": "Gorax Rager",
           "fa": "U",
           "cost": 7,
-          "faction": "factions",
+          "faction": "faction_minion",
           "id": "IB17",
           "type": "warbeast",
           "attributes":[
