@@ -163,9 +163,6 @@
         {
           "name": "Gorax Rager",
           "fa": "U",
-          "restricted_to": [
-            "IW04"
-          ],
           "cost": 7,
           "faction": "factions",
           "id": "IB17",
