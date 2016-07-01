@@ -1,0 +1,30 @@
+{
+  "groups": [
+    {
+      "id": "animositys",
+      "entries": [
+        {
+          "attribute1": "morrow",
+          "attribute2" "thamarite"
+        },
+        {
+          "attribute1": "morrow",
+          "attribute2" "undead"
+        },
+        {
+          "attribute1": "pendrake",
+          "attribute2": "saxon"
+        },
+        {
+          "attribute1": "eyriss",
+          "attribute2": "eyriss"
+        },
+        {
+          "attribute1": "alexia",
+          "attribute2": "alexia"
+        }
+        ]
+    }
+    
+  ]
+}
