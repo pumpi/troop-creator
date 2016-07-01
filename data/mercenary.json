@@ -293,7 +293,10 @@
             "morrow",
             "heavy",
             "merc"
-          ]
+          ],
+          "works_for": [
+            "faction_cygnar"
+          ],
         },
         {
           "name": "Warden",
