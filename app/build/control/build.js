@@ -58,6 +58,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                         'Fuel Cache',
                         'Stockpile'
                     ],
+                    'animosities'       : false,
                     'dragging'          : false,
                     'canDrop'           : false,
                     'location'          : $location.search(),
@@ -66,6 +67,10 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     'data'              : [],
                     'lastController'     : {}
                 };
+
+                $http.get('./data/animosities.json').success(function(data) {
+                    $scope.vars.animosities = data;
+                });
 
                 $scope.location = $location;
                 $scope.modernizr = Modernizr;
@@ -229,6 +234,33 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             //if ( $scope.options.gameTier && $scope.checkModelTier(model) ) {
             //    return true;
             //}
+
+            // We check first the animosities
+            if ( $scope.vars.animosities && !$.isEmptyObject($scope.vars.selectedModels) ) {
+                var animosity = false;
+                $.each( $scope.vars.animosities, function(a1, a2) {
+
+                    var match = false;
+                    if ( $scope.checkAttributes(model, a1) ) {
+                        match = a2;
+                    } else if ( $scope.checkAttributes(model, a2) ) {
+                        match = a1;
+                    }
+
+                    if ( match !== false ) {
+                        $.each($scope.vars.selectedModels, function (key, sModel) {
+                            if ( $scope.checkAttributes(sModel, match) ) {
+                                animosity = true;
+                            }
+                        });
+
+                    }
+                });
+
+                if ( animosity === true ) {
+                    return true;
+                }
+            }
 
             // gameCaster not set or no usable int
             if ( typeof $scope.options.gameCaster === 'undefined' || $scope.options.gameCaster.length === 0 || isNaN($scope.options.gameCaster)) {
@@ -515,7 +547,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
          * @return                  boolean true or false
          */
         $scope.checkEmptyGroup = function(group) {
-            console.log('filter', $scope.vars.lastController, group);
             if ( !jQuery.isEmptyObject($scope.vars.lastController) ) {
                 var f = $.grep(group.entries, function (model) {
                     return $scope.canJoinGroup($scope.vars.lastController, model);
