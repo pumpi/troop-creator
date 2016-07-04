@@ -962,7 +962,10 @@
           ],
           "cost": 12,
           "faction": "faction_mercenary",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "cylena"
+          ]
         },
         {
           "max": 10,
