@@ -1555,7 +1555,10 @@
           "cost": 6,
           "faction": "faction_mercenary",
           "id": "MS31",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "thamarit"
+          ]
         },
         {
           "name": "Cephalyx Agitator",
