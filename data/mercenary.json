@@ -860,7 +860,7 @@
           "type": "unit",
           "attributes":[
             "morrow"
-          ],
+          ]
         },
         {
           "name": "Cephalyx Overlords",
@@ -1063,7 +1063,7 @@
           "type": "UA",
           "attributes":[
             "morrow"
-          ],
+          ]
         },
         {
           "id": "MA11",
@@ -1448,7 +1448,7 @@
           "type": "solo",
           "attributes":[
             "morrow"
-          ],
+          ]
         },
         {
           "name": "Ogrun Bokur",
