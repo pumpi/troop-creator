@@ -91,7 +91,7 @@
         {
           "id": "CW11",
           "type": "warcaster",
-          "name": "Agathia1 (Bane Witch Agathia",
+          "name": "Agathia1 (Bane Witch Agathia)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_cryx",
@@ -118,7 +118,7 @@
         {
           "id": "CW14",
           "type": "warcaster",
-          "name": "Skarre2 (Skarre  Queen of the Broken Coast)",
+          "name": "Skarre2 (Skarre, Queen of the Broken Coast)",
           "cost": 26,
           "fa": "C",
           "faction": "faction_cryx",
@@ -146,7 +146,7 @@
         {
           "id": "CW17",
           "type": "warcaster",
-          "name": "Deneghra3 (Deneghra the Soul Weaver)",
+          "name": "Deneghra3 (Deneghra, the Soul Weaver)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_cryx"
@@ -154,7 +154,7 @@
         {
           "id": "CW18",
           "type": "warcaster",
-          "name": "Goreshade3 (Goreshade Lord of Ruin)",
+          "name": "Goreshade3 (Goreshade, Lord of Ruin)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_cryx"
