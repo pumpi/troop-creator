@@ -616,7 +616,7 @@
         },
         {
           "id": "CU12",
-          "type": "unit",
+          "type": "unitCasterAttachment",
           "name": "The Withershadow Combine",
           "cost": 9,
           "fa": "C",
