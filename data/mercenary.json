@@ -166,7 +166,7 @@
             "faction_khador"
           ],
           "attributes":[
-            "thamarit",
+            "thamarite",
             "privateer"
           ],
           "canControlOnly": "merc"
@@ -857,7 +857,10 @@
           "name": "Precursor Knights",
           "cost": 9,
           "faction": "faction_mercenary",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "morrow"
+          ]
         },
         {
           "name": "Cephalyx Overlords",
@@ -962,7 +965,10 @@
           ],
           "cost": 12,
           "faction": "faction_mercenary",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "cylena"
+          ]
         },
         {
           "max": 10,
@@ -1054,7 +1060,10 @@
           "restricted_to": "MU35",
           "faction": "faction_mercenary",
           "id": "MA09",
-          "type": "UA"
+          "type": "UA",
+          "attributes":[
+            "morrow"
+          ]
         },
         {
           "id": "MA11",
@@ -1436,7 +1445,10 @@
           "cost": 4,
           "faction": "faction_mercenary",
           "id": "MS18",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "morrow"
+          ]
         },
         {
           "name": "Ogrun Bokur",
@@ -1552,7 +1564,10 @@
           "cost": 6,
           "faction": "faction_mercenary",
           "id": "MS31",
-          "type": "solo"
+          "type": "solo",
+          "attributes":[
+            "thamarite"
+          ]
         },
         {
           "name": "Cephalyx Agitator",
