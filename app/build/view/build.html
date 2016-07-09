@@ -24,7 +24,10 @@
                         ng-repeat="model in filtered | orderBy: 'name'">
                         <div class="model-name">{{model.name}}</div>
                         <div class="model-options">
-                            <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">{{getModelFa(model)}}</span>
+                            <span class="model-fa" ng-class="{'tier-bonus': model.fa != getModelFa(model)}">
+                                <span ng-hide="(inList = countSelectedModel(model.id, 'id').all) === 0">{{inList}} / </span>
+                                {{getModelFa(model)}}
+                            </span>
                             <span class="model-cost" ng-class="{'tier-bonus': isBonusCost(model)}">{{getModelCost(model, 1)}}{{(model.min && model.max !== '0') ? '/' + getModelCost(model, 1, 1) : ''}}</span>
                             <span class="model-add"><i class="fa fa-plus-circle add-to-list"></i></span>
                         </div>
@@ -65,8 +68,9 @@
             </div>
 
             <div class="selected-counts">
-                {{countSelectedModel('^warlock$|^warcaster$').all}} / {{options.gameCaster}} Caster | {{vars.points}} / {{options.gamePoints}}
-                Points
+                <span ng-class="{error: errors.casters}">{{countSelectedModel('^war(lock|caster)$').all}}</span> / {{options.gameCaster}} Caster |
+                <span ng-class="{error: errors.points}">{{vars.points}}</span> / {{options.gamePoints}}
+                <span class="selected-bg-points" ng-hide="vars.casterPoints === 0" tooltip title="The available Battlegroup points" >+{{vars.casterPoints}}</span> Points
             </div>
         </div>
 
