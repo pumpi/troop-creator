@@ -5,8 +5,10 @@
                     aria-hidden="true">&times;</span></button>
             <h4 class="modal-title"><i class="fa fa-file-text-o"></i> There was an Error</h4>
         </div>
-        <div class="modal-body select-on-click">
-            {{vars.error}}
+        <div class="modal-body">
+            <ul>
+                <li ng-repeat="error in errors">{{error}}</li>
+            </ul>
         </div>
         <div class="modal-footer">
             <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>

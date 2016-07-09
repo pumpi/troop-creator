@@ -1,4 +1,4 @@
-/*! troopcreator 2016-07-03 */
+/*! troopcreator 2016-07-09 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5197,6 +5197,9 @@ h1, h2, h3, h4, h5, p {
 #content {
   padding: 20px; }
 
+.error {
+  color: #B22222; }
+
 #armys {
   list-style: none;
   margin: 0;
@@ -5334,7 +5337,7 @@ h1, h2, h3, h4, h5, p {
     text-align: right; }
     .army-models .model .model-options > span {
       margin-right: 10px;
-      min-width: 20px;
+      min-width: 35px;
       display: inline-block; }
       .army-models .model .model-options > span.model-cost {
         min-width: 40px; }
@@ -5367,6 +5370,8 @@ h1, h2, h3, h4, h5, p {
   font-size: 1.8rem;
   font-weight: bold;
   padding-top: 15px; }
+  .selected-counts .selected-bg-points {
+    color: #2ba1ff; }
 
 .selected-objective {
   margin-top: 10px; }

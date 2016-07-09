@@ -62,11 +62,12 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     'dragging'          : false,
                     'canDrop'           : false,
                     'location'          : $location.search(),
-                    'error'             : 'There no Errors',
                     'gameRelease'       : 'mk3',
                     'data'              : [],
                     'lastController'     : {}
                 };
+
+                $scope.errors = {};
 
                 $http.get('./data/animosities.json').success(function(data) {
                     $scope.vars.animosities = data;
@@ -156,7 +157,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                             }
                         ). error (
                             function () {
-                                $scope.vars.error = 'error reading ' + v + '.json';
+                                $scope.errors.readingFile = 'error reading ' + v + '.json';
                                 $('#error').modal();
                             }
                         );
@@ -181,13 +182,24 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
         error(
             /*data, status, headers, config*/
             function() {
-                $scope.vars.error = 'error reading ' + $routeParams.army + '.json';
+                $scope.errors.readingFile = 'error reading ' + $routeParams.army + '.json';
                 $('#error').modal();
             }
         );
 
         $scope.openList = function() {
             $('#left-col-build').toggleClass('active');
+        };
+
+        // We Check all parameters for some errors and store ist in the error Object
+        $scope.checkErrors = function() {
+            $scope.errors = {};
+            if ( $scope.options.gameCaster > $scope.countSelectedModel('^war(lock|caster)$').all ) {
+                $scope.errors.casters = 'You Have not set all Casters';
+            }
+            if ( ($scope.options.gamePoints - $scope.vars.points) > 4 ) {
+                $scope.errors.points = 'You have more than 4 points left';
+            }
         };
 
         // Check if model an warcaster/warlock
@@ -822,7 +834,10 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             }
 
             // Set the available Caster points for later Checks
-            $scope.vars.casterPoints = casterPoints;
+            $scope.vars.casterPoints = casterPoints < 0 ? 0 : casterPoints;
+
+            // Check for some errors in points
+            $scope.checkErrors();
         };
 
         // get the real model cost
@@ -1123,15 +1138,17 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     sel = decode.replace('@' + $scope.vars.gameRelease, '').split(',');
                 if ( decode.indexOf('@' + $scope.vars.gameRelease) === -1 ) {
                     // The link is not from the actual Release
-                    $scope.vars.error = 'Your Link ist not compatible with the Current Game Release. We cannot restore this please build an List with the new Models!';
+                    $scope.errors = {};
+                    $scope.errors.link = 'Your Link ist not compatible with the Current Game Release. We cannot restore this please build an List with the new Models!';
                     $('#error').modal();
                 } else {
                     $.each(sel, function (key, val) {
                         $scope.addModelByString(val);
                     });
+                    $scope.calculatePoints();
                 }
             }
-            $scope.calculatePoints();
+
         };
 
         // adds an model by only give an string
