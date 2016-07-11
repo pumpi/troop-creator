@@ -542,7 +542,7 @@
             "faction_khador",
             "faction_cygnar"
           ],
-          "cost": 9,
+          "cost": 19,
           "faction": "faction_mercenary",
           "id": "ME01",
           "type": "battleengine"
