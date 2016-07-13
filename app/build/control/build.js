@@ -810,7 +810,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 // Change the cost to the tier bonus cost
                 var cost = $scope.getModelCost(model);
 
-                if ( /^warlock$|^warcaster$/i.test(model.type) ) {
+                if ( /^warl|^warc/i.test(model.type) ) {
                     casterPoints = casterPoints + parseInt(cost);
                 } else {
                     sumPoints = sumPoints + cost;
@@ -819,7 +819,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 // If we have models in the Battle Group we must count one deeper
                 $.each( model.group, function(groupIdx, gmodel) {
                     var cost = $scope.getModelCost(gmodel, false, false, parentIdx);
-                    if ( /^warj|^warb/i.test(gmodel.type) ) {
+                    if ( /^warl|^warc/i.test(model.type) && /^warj|^warb/i.test(gmodel.type) ) {
                         casterPoints = casterPoints - cost;
                     } else {
                         sumPoints = sumPoints + cost;
