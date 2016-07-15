@@ -905,7 +905,8 @@
             "faction_trollblood",
             "faction_menoth",
             "faction_khador",
-            "faction_cygnar"
+            "faction_cygnar",
+            "faction_mercenary"
           ],
           "cost": 5,
           "faction": "faction_minion",
