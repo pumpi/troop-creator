@@ -6,10 +6,11 @@
  */
 
 // Controller to display the troop creator
-troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$location', '$window', '$log', '$q',
-    function ($scope, $http, $routeParams, $location, $window, $log, $q) {
+troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$location', '$window', '$log', '$q', 'animosities',
+    function ($scope, $http, $routeParams, $location, $window, $log, $q, animosities) {
         $scope.$log = $log;
 
+        // Init the data to display the army
         $http.get('./data/' + $routeParams.army + '.json').
         success(
             function(data) {
@@ -58,7 +59,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                         'Fuel Cache',
                         'Stockpile'
                     ],
-                    'animosities'       : false,
+                    'animosities'       : animosities.data,
                     'dragging'          : false,
                     'canDrop'           : false,
                     'location'          : $location.search(),
@@ -68,10 +69,6 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 };
 
                 $scope.errors = {};
-
-                $http.get('./data/animosities.json').success(function(data) {
-                    $scope.vars.animosities = data;
-                });
 
                 $scope.location = $location;
                 $scope.modernizr = Modernizr;
@@ -85,83 +82,82 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                 });
 
                 // Now we get the mercenaries and minions
-                $.each(['minion', 'mercenary'], function (k, v) {
-                    if ( v !== $routeParams.army ) {
-                        $http.get('./data/' + v + '.json').
-                        success(
-                            function (data) {
-                                // Only who works for the faction get in list
-                                $.each(data.groups, function (gkey, group) {
-                                    if (group.entries.length !== 0) {
+                var mercs = {};
+                $http({ url: './data/minion.json', method: "GET" }).then(function (minion) {
+                    mercs.minion = minion.data;
+                    return $http({ url: './data/mercenary.json', method: "GET" });
+                }).then(function (mercenary) {
+                    mercs.mercenary = mercenary.data;
 
-                                        // Now we check all models if he work for the faction
-                                        group.entries = $.grep(group.entries, function (item) {
-                                            /**
-                                             * @param item                  the single model.
-                                             * @param item.works_for        model array for what faction he works.
-                                             * @param item.restricted_to    model what we need to play this model.
-                                             */
-                                            if (item.works_for) {
-                                                // We have an caster, unit or solo and must look if he works_for this faction
-                                                if ($.inArray($scope.vars.factionId, item.works_for) !== -1) {
-                                                    return true;
-                                                }
-                                            } else if (item.restricted_to || /^warj|^warb/i.test(item.type) ) {
-                                                // We have an restricted model but not all data fetched we save reference for later
-                                                // If we have an UA we can already watch for the restricted_to Unit
-                                                // UAs restricted_to always string i hope ^^
-                                                if ( /^ua/i.test(item.type) ) {
-                                                    return $scope.getModelById(item.restricted_to);
-                                                } else {
-                                                    return true;
-                                                }
+                    $.each(mercs, function (k, v) {
+                        if (k !== $routeParams.army) {
+                            // Only who works for the faction get in list
+                            $.each(v.groups, function (gkey, group) {
+                                if (group.entries.length !== 0) {
+
+                                    // Now we check all models if he work for the faction
+                                    group.entries = $.grep(group.entries, function (item) {
+                                        /**
+                                         * @param item                  the single model.
+                                         * @param item.works_for        model array for what faction he works.
+                                         * @param item.restricted_to    model what we need to play this model.
+                                         */
+                                        if (item.works_for) {
+                                            // We have an caster, unit or solo and must look if he works_for this faction
+                                            if ($.inArray($scope.vars.factionId, item.works_for) !== -1) {
+                                                return true;
                                             }
-                                            return false;
-                                        });
-                                        group.add = v;
-                                        $scope.data.push(group);
-                                    }
-                                });
-
-                                if ( v === 'mercenary' || $routeParams.army === 'mercenary' ) {
-                                    if (!$window.ga || /127\.0\.0\.1/i.test($location.host())) {
-                                        $scope.devAddId();
-                                    }
-
-                                    // Now we can filter all models that not allowed
-                                    $.each( $scope.data, function(key, group) {
-                                        group.entries = $scope.allowedModels(group.entries);
-                                        $scope.vars.data.push(group);
-                                    });
-
-                                    //restore from URL after we load the last data and we start watching scope Changes
-                                    $scope.restoreSearch();
-                                    $scope.$watchGroup(['options.gamePoints', 'options.gameCaster'], function() {
-                                        $scope.updateSearch();
-                                    });
-
-                                    // Watch if location.search() is change Only if the search not change over an intern function we restore the url for History back
-                                    $scope.$watch(function(){ return $location.search(); }, function(){
-                                        if ( JSON.stringify($location.search()) !== JSON.stringify($scope.vars.location) ) {
-                                            // Reset all data to restore the url correctly
-                                            $scope.vars.selectedModels      = [];
-                                            $scope.options.gameCaster       = 1;
-                                            $scope.options.gamePoints       = 75;
-                                            $scope.options.gameTier         = '';
-                                            $scope.options.gameObjective    = '';
-
-                                            $scope.restoreSearch();
+                                        } else if (item.restricted_to || /^warj|^warb/i.test(item.type)) {
+                                            // We have an restricted model but not all data fetched we save reference for later
+                                            // If we have an UA we can already watch for the restricted_to Unit
+                                            // UAs restricted_to always string i hope ^^
+                                            if (/^ua/i.test(item.type)) {
+                                                return $scope.getModelById(item.restricted_to);
+                                            } else {
+                                                return true;
+                                            }
                                         }
+                                        return false;
                                     });
+                                    group.add = k;
+                                    $scope.data.push(group);
                                 }
-                            }
-                        ). error (
-                            function () {
-                                $scope.errors.readingFile = 'error reading ' + v + '.json';
-                                $('#error').modal();
-                            }
-                        );
+                            });
+                        }
+                    });
+                }).then( function() {
+                    // after all data is loaded we cann filter an other things
+                    if (!$window.ga || /127\.0\.0\.1/i.test($location.host())) {
+                        $scope.devAddId();
                     }
+
+                    // Now we can filter all models that not allowed
+                    $.each($scope.data, function (key, group) {
+                        group.entries = $scope.allowedModels(group.entries);
+                        $scope.vars.data.push(group);
+                    });
+
+                    //restore from URL after we load the last data and we start watching scope Changes
+                    $scope.restoreSearch();
+                    $scope.$watchGroup(['options.gamePoints', 'options.gameCaster'], function () {
+                        $scope.updateSearch();
+                    });
+
+                    // Watch if location.search() is change Only if the search not change over an intern function we restore the url for History back
+                    $scope.$watch(function () {
+                        return $location.search();
+                    }, function () {
+                        if (JSON.stringify($location.search()) !== JSON.stringify($scope.vars.location)) {
+                            // Reset all data to restore the url correctly
+                            $scope.vars.selectedModels = [];
+                            $scope.options.gameCaster = 1;
+                            $scope.options.gamePoints = 75;
+                            $scope.options.gameTier = '';
+                            $scope.options.gameObjective = '';
+
+                            $scope.restoreSearch();
+                        }
+                    });
                 });
 
                 var favicon = new Favico();

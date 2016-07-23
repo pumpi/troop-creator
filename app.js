@@ -33,7 +33,12 @@ troopCreator.config(['$routeProvider',
         }).when('/build/:army', {
             templateUrl: 'app/build/view/build.html',
             controller: 'buildCtrl',
-            reloadOnSearch: false
+            reloadOnSearch: false,
+            resolve: {
+                animosities: function(initData){
+                    return initData();
+                }
+            }
         }).when('/imprint', {
             templateUrl: 'app/content/imprint.html'
         }).
@@ -44,6 +49,18 @@ troopCreator.config(['$routeProvider',
         });
     }]
 );
+
+// Get server side Data at init
+troopCreator.factory('initData', ['$http','$q', function ($http,$q) {
+    return function () {
+        var deferred = $q.defer();
+
+        $http({ url: './data/animosities.json', method: "GET" }).then(function (data) {
+            deferred.resolve(data);
+        });
+        return deferred.promise;
+    }
+}]);
 
 // Google Analytics send
 troopCreator.run(['$rootScope', '$location', '$window',
