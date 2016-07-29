@@ -25,7 +25,6 @@ troopCreator.constant("Modernizr", Modernizr);
 troopCreator.config(['$routeProvider',
     function ($routeProvider) {
         $routeProvider.
-
         // Is the hash contains /examples we at home and view the navigation list
         when('/', {
             templateUrl: 'app/dashboard/view/dashboard.html',
@@ -35,9 +34,11 @@ troopCreator.config(['$routeProvider',
             controller: 'buildCtrl',
             reloadOnSearch: false,
             resolve: {
-                animosities: function(initData){
-                    return initData();
-                }
+                initData: ['$route', 'initData',
+                    function($route, initData){
+                        return initData($route.current.params.army);
+                    }
+                ]
             }
         }).when('/imprint', {
             templateUrl: 'app/content/imprint.html'
@@ -52,11 +53,21 @@ troopCreator.config(['$routeProvider',
 
 // Get server side Data at init
 troopCreator.factory('initData', ['$http','$q', function ($http,$q) {
-    return function () {
-        var deferred = $q.defer();
-
-        $http({ url: './data/animosities.json', method: "GET" }).then(function (data) {
-            deferred.resolve(data);
+    return function (army) {
+        var deferred = $q.defer(),
+            r = [];
+        $http({ url: './data/animosities.json', method: "GET" }).then(function (response) {
+            r['animosities'] = response.data;
+            return $http({ url: './data/' + army + '.json', method: "GET" });
+        }).then(function (response) {
+            r['army'] = response.data;
+            return $http({ url: './data/minion.json', method: "GET" });
+        }).then(function (response) {
+            r['minion'] = response.data;
+            return $http({ url: './data/mercenary.json', method: "GET" });
+        }).then(function (response) {
+            r['mercenary'] = response.data;
+            deferred.resolve(r);
         });
         return deferred.promise;
     }
@@ -74,24 +85,38 @@ troopCreator.run(['$rootScope', '$location', '$window',
     }]
 );
 
-// Generate the Tooltip directive
-troopCreator.directive('tooltip', function () {
+// Show Loading icon
+troopCreator.directive('showDuringResolve', function($rootScope) {
     return {
-        restrict: 'A',
-        link: function (scope, element, attrs) {
-            if (!$('#navi-icon').is(':visible')) {
-                $.fn.tooltip.Constructor.DEFAULTS.container = 'body';
-                $(element).hover(function () {
-                    // on mouseenter
-                    $(element).tooltip('show');
-                }, function () {
-                    // on mouseleave
-                    $(element).tooltip('hide');
-                });
-            }
+        link: function(scope, element) {
+
+            element.addClass('ng-hide');
+
+            var unregister = $rootScope.$on('$routeChangeStart', function() {
+                element.removeClass('ng-hide');
+            });
+
+            scope.$on('$destroy', unregister);
         }
     };
 });
+
+troopCreator.run(['$rootScope','$timeout',function($rootScope,$timeout){
+
+    $rootScope.stateIsLoading = false;
+    $rootScope.$on('$routeChangeStart', function() {
+        $rootScope.stateIsLoading = true;
+    });
+    $rootScope.$on('$routeChangeSuccess', function() {
+        $timeout(function() {
+            $rootScope.stateIsLoading = false;
+        }, 500);
+    });
+    $rootScope.$on('$routeChangeError', function() {
+        //catch error
+    });
+
+}]);
 
 // The on click select Directive
 troopCreator.directive('selectOnClick', ['$window',

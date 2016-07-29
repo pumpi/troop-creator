@@ -1,4 +1,4 @@
-/*! troopcreator 2016-07-23 */
+/*! troopcreator 2016-07-28 */
 /*!
  * Bootstrap v3.3.6 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -5055,6 +5055,19 @@ img {
 
 h1, h2, h3, h4, h5, p {
   margin-top: 0; }
+
+.loading {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  font-size: 2.6rem;
+  text-align: center;
+  padding-top: 40%;
+  color: #FFF; }
 
 .cols {
   display: -webkit-box;

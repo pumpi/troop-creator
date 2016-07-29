@@ -6,182 +6,9 @@
  */
 
 // Controller to display the troop creator
-troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$location', '$window', '$log', '$q', 'animosities',
-    function ($scope, $http, $routeParams, $location, $window, $log, $q, animosities) {
-        $scope.$log = $log;
+troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$location', '$window', '$q', 'initData',
+    function ($scope, $http, $routeParams, $location, $window, $q, initData) {
 
-        // Init the data to display the army
-        $http.get('./data/' + $routeParams.army + '.json').
-        success(
-            function(data) {
-                /**
-                 * @param {{groups, tiers}} data    response the JSON Object with groups and tiers.
-                 * @param {{faction}} $scope.army   army is the data object of the active navigation point
-                 * @param {{levels, onlyModels, casterId}} $scope.vars.tier Include some infos for the tier Levels
-                 */
-
-                var jqArmy = $('#' + $routeParams.army);
-                $scope.army = jqArmy.data();
-                $scope.data = [];
-
-                // only add data with entries and allowed
-                $.each(data.groups, function(key, item) {
-                    if (item.entries.length !== 0) {
-                        $scope.data.push(item);
-                    }
-
-                });
-                $scope.options = {
-                    'gameCaster'        : 1,
-                    'gamePoints'        : 75,
-                    'gameTier'          : '',
-                    'gameObjective'     : '',
-                    'modalLevel'        : 0
-                };
-
-                $scope.vars = {
-                    'tiers'             : data.tiers,
-                    'tierOptions'       : [],
-                    'tier'              : {},
-                    'tierLevel'         : 0,
-                    'selectedModels'    : [],
-                    'casterPoints'      : 0,
-                    'points'            : 0,
-                    'costAlterations'   : [],
-                    'faAlterations'     : [],
-                    'freeModels'        : {'id': [], 'count': 0},
-                    'factionId'         : 'faction_' + $routeParams.army,
-                    'objectives'        : [
-                        'Arcane Wonder',
-                        'Armory',
-                        'Bunker',
-                        'Effigy of Valor',
-                        'Fuel Cache',
-                        'Stockpile'
-                    ],
-                    'animosities'       : animosities.data,
-                    'dragging'          : false,
-                    'canDrop'           : false,
-                    'location'          : $location.search(),
-                    'gameRelease'       : 'mk3',
-                    'data'              : [],
-                    'lastController'     : {}
-                };
-
-                $scope.errors = {};
-
-                $scope.location = $location;
-                $scope.modernizr = Modernizr;
-
-                // We must convert the Tiers in an array for select
-                $.each(data.tiers, function(key, value) {
-                    $scope.vars.tierOptions.push({
-                        key: key,
-                        label: value.name
-                    });
-                });
-
-                // Now we get the mercenaries and minions
-                var mercs = {};
-                $http({ url: './data/minion.json', method: "GET" }).then(function (minion) {
-                    mercs.minion = minion.data;
-                    return $http({ url: './data/mercenary.json', method: "GET" });
-                }).then(function (mercenary) {
-                    mercs.mercenary = mercenary.data;
-
-                    $.each(mercs, function (k, v) {
-                        if (k !== $routeParams.army) {
-                            // Only who works for the faction get in list
-                            $.each(v.groups, function (gkey, group) {
-                                if (group.entries.length !== 0) {
-
-                                    // Now we check all models if he work for the faction
-                                    group.entries = $.grep(group.entries, function (item) {
-                                        /**
-                                         * @param item                  the single model.
-                                         * @param item.works_for        model array for what faction he works.
-                                         * @param item.restricted_to    model what we need to play this model.
-                                         */
-                                        if (item.works_for) {
-                                            // We have an caster, unit or solo and must look if he works_for this faction
-                                            if ($.inArray($scope.vars.factionId, item.works_for) !== -1) {
-                                                return true;
-                                            }
-                                        } else if (item.restricted_to || /^warj|^warb/i.test(item.type)) {
-                                            // We have an restricted model but not all data fetched we save reference for later
-                                            // If we have an UA we can already watch for the restricted_to Unit
-                                            // UAs restricted_to always string i hope ^^
-                                            if (/^ua/i.test(item.type)) {
-                                                return $scope.getModelById(item.restricted_to);
-                                            } else {
-                                                return true;
-                                            }
-                                        }
-                                        return false;
-                                    });
-                                    group.add = k;
-                                    $scope.data.push(group);
-                                }
-                            });
-                        }
-                    });
-                }).then( function() {
-                    // after all data is loaded we cann filter an other things
-                    if (!$window.ga || /127\.0\.0\.1/i.test($location.host())) {
-                        $scope.devAddId();
-                    }
-
-                    // Now we can filter all models that not allowed
-                    $.each($scope.data, function (key, group) {
-                        group.entries = $scope.allowedModels(group.entries);
-                        $scope.vars.data.push(group);
-                    });
-
-                    //restore from URL after we load the last data and we start watching scope Changes
-                    $scope.restoreSearch();
-                    $scope.$watchGroup(['options.gamePoints', 'options.gameCaster'], function () {
-                        $scope.updateSearch();
-                    });
-
-                    // Watch if location.search() is change Only if the search not change over an intern function we restore the url for History back
-                    $scope.$watch(function () {
-                        return $location.search();
-                    }, function () {
-                        if (JSON.stringify($location.search()) !== JSON.stringify($scope.vars.location)) {
-                            // Reset all data to restore the url correctly
-                            $scope.vars.selectedModels = [];
-                            $scope.options.gameCaster = 1;
-                            $scope.options.gamePoints = 75;
-                            $scope.options.gameTier = '';
-                            $scope.options.gameObjective = '';
-
-                            $scope.restoreSearch();
-                        }
-                    });
-                });
-
-                var favicon = new Favico();
-                var image = $('#' + $routeParams.army + ' img')[0];
-                favicon.image(image);
-
-                document.title = $scope.army.faction + ' - Troop Creator';
-
-                // Menu set selected
-                $( '#top-menu' ).find('li').removeClass( 'active' );
-                jqArmy.closest('li').addClass('active');
-
-                $('.btn').focus(function() {
-                    this.blur();
-                });
-            }
-        ).
-        error(
-            /*data, status, headers, config*/
-            function() {
-                $scope.errors.readingFile = 'error reading ' + $routeParams.army + '.json';
-                $('#error').modal();
-            }
-        );
 
         $scope.openList = function() {
             $('#left-col-build').toggleClass('active');
@@ -1283,5 +1110,164 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
             }
             return Object.keys(obj);
         };
+
+        // INIT the scope variables
+        angular.element(document).ready(function () {
+
+            /**
+             * @param {{groups, tiers}} data    response the JSON Object with groups and tiers.
+             * @param {{faction}} $scope.army   army is the data object of the active navigation point
+             * @param {{levels, onlyModels, casterId}} $scope.vars.tier Include some infos for the tier Levels
+             */
+            var jqArmy = $('#' + $routeParams.army);
+            $scope.army = jqArmy.data();
+            $scope.data = [];
+
+            // only add data with entries and allowed
+            $.each(initData.army.groups, function(key, item) {
+                if (item.entries.length !== 0) {
+                    $scope.data.push(item);
+                }
+            });
+
+            $scope.options = {
+                'gameCaster'        : 1,
+                'gamePoints'        : 75,
+                'gameTier'          : '',
+                'gameObjective'     : '',
+                'modalLevel'        : 0
+            };
+
+            $scope.vars = {
+                'tiers'             : initData.army.tiers,
+                'tierOptions'       : [],
+                'tier'              : {},
+                'tierLevel'         : 0,
+                'selectedModels'    : [],
+                'casterPoints'      : 0,
+                'points'            : 0,
+                'costAlterations'   : [],
+                'faAlterations'     : [],
+                'freeModels'        : {'id': [], 'count': 0},
+                'factionId'         : 'faction_' + $routeParams.army,
+                'objectives'        : [
+                    'Arcane Wonder',
+                    'Armory',
+                    'Bunker',
+                    'Effigy of Valor',
+                    'Fuel Cache',
+                    'Stockpile'
+                ],
+                'animosities'       : initData.animosities.data,
+                'dragging'          : false,
+                'canDrop'           : false,
+                'location'          : $location.search(),
+                'gameRelease'       : 'mk3',
+                'data'              : [],
+                'lastController'     : {}
+            };
+
+            $scope.errors = {};
+
+            $scope.location = $location;
+            $scope.modernizr = Modernizr;
+
+            // We must convert the Tiers in an array for select
+            $.each(initData.army.tiers, function(key, value) {
+                $scope.vars.tierOptions.push({
+                    key: key,
+                    label: value.name
+                });
+            });
+
+            // Now we get the mercenaries and minions
+            var mercs = {'minion': initData.minion, 'mercenary': initData.mercenary};
+
+            $.each(mercs, function (k, v) {
+                if (k !== $routeParams.army) {
+                    // Only who works for the faction get in list
+                    $.each(v.groups, function (gkey, group) {
+                        if (group.entries.length !== 0) {
+
+                            // Now we check all models if he work for the faction
+                            group.entries = $.grep(group.entries, function (item) {
+                                /**
+                                 * @param item                  the single model.
+                                 * @param item.works_for        model array for what faction he works.
+                                 * @param item.restricted_to    model what we need to play this model.
+                                 */
+                                if (item.works_for) {
+                                    // We have an caster, unit or solo and must look if he works_for this faction
+                                    if ($.inArray($scope.vars.factionId, item.works_for) !== -1) {
+                                        return true;
+                                    }
+                                } else if (item.restricted_to || /^warj|^warb/i.test(item.type)) {
+                                    // We have an restricted model but not all data fetched we save reference for later
+                                    // If we have an UA we can already watch for the restricted_to Unit
+                                    // UAs restricted_to always string i hope ^^
+                                    if (/^ua/i.test(item.type)) {
+                                        return $scope.getModelById(item.restricted_to);
+                                    } else {
+                                        return true;
+                                    }
+                                }
+                                return false;
+                            });
+                            group.add = k;
+                            $scope.data.push(group);
+                        }
+                    });
+                }
+            });
+
+            // after all data is loaded we cann filter an other things
+            if (!$window.ga || /127\.0\.0\.1/i.test($location.host())) {
+                $scope.devAddId();
+            }
+
+            // Now we can filter all models that not allowed
+            $.each($scope.data, function (key, group) {
+                group.entries = $scope.allowedModels(group.entries);
+                $scope.vars.data.push(group);
+            });
+
+            //restore from URL after we load the last data and we start watching scope Changes
+            $scope.restoreSearch();
+            $scope.$watchGroup(['options.gamePoints', 'options.gameCaster'], function () {
+                $scope.updateSearch();
+            });
+
+            // Watch if location.search() is change Only if the search not change over an intern function we restore the url for History back
+            $scope.$watch(function () {
+                return $location.search();
+            }, function () {
+                if (JSON.stringify($location.search()) !== JSON.stringify($scope.vars.location)) {
+                    // Reset all data to restore the url correctly
+                    $scope.vars.selectedModels = [];
+                    $scope.options.gameCaster = 1;
+                    $scope.options.gamePoints = 75;
+                    $scope.options.gameTier = '';
+                    $scope.options.gameObjective = '';
+
+                    $scope.restoreSearch();
+                }
+            });
+
+            var favicon = new Favico();
+            var image = $('#' + $routeParams.army + ' img')[0];
+            favicon.image(image);
+
+            document.title = $scope.army.faction + ' - Troop Creator';
+
+
+            // Menu set selected
+            $( '#top-menu' ).find('li').removeClass( 'active' );
+            jqArmy.closest('li').addClass('active');
+
+            $('.btn').focus(function() {
+                this.blur();
+            });
+
+        });
     }]
 );
