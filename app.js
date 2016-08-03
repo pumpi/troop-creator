@@ -86,21 +86,6 @@ troopCreator.run(['$rootScope', '$location', '$window',
 );
 
 // Show Loading icon
-troopCreator.directive('showDuringResolve', function($rootScope) {
-    return {
-        link: function(scope, element) {
-
-            element.addClass('ng-hide');
-
-            var unregister = $rootScope.$on('$routeChangeStart', function() {
-                element.removeClass('ng-hide');
-            });
-
-            scope.$on('$destroy', unregister);
-        }
-    };
-});
-
 troopCreator.run(['$rootScope','$timeout',function($rootScope,$timeout){
 
     $rootScope.stateIsLoading = false;
@@ -117,6 +102,25 @@ troopCreator.run(['$rootScope','$timeout',function($rootScope,$timeout){
     });
 
 }]);
+
+// Generate the Tooltip directive
+troopCreator.directive('tooltip', function () {
+    return {
+        restrict: 'A',
+        link: function (scope, element, attrs) {
+            if (!$('#navi-icon').is(':visible')) {
+                $.fn.tooltip.Constructor.DEFAULTS.container = 'body';
+                $(element).hover(function () {
+                    // on mouseenter
+                    $(element).tooltip('show');
+                }, function () {
+                    // on mouseleave
+                    $(element).tooltip('hide');
+                });
+            }
+        }
+    };
+});
 
 // The on click select Directive
 troopCreator.directive('selectOnClick', ['$window',
