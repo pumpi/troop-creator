@@ -20,7 +20,8 @@ var jsFilesVendor = [
     "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/modal.js",
     "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/tooltip.js",
     "lib/bower/bootstrap-sass/assets/javascripts/bootstrap/dropdown.js",
-    "build/modernizr-output.js"
+    "build/modernizr-output.js",
+    "lib/bower/html2canvas/dist/html2canvas.js"
 ];
 
 var sassFiles = [

@@ -8,8 +8,6 @@
 // Controller to display the troop creator
 troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$location', '$window', '$q', 'initData',
     function ($scope, $http, $routeParams, $location, $window, $q, initData) {
-
-
         $scope.openList = function() {
             $('#left-col-build').toggleClass('active');
         };
@@ -28,6 +26,22 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
         // Check if model an warcaster/warlock
         $scope.checkIsCaster = function(model) {
             return /^warcaster$|^warlock$/i.test(model.type);
+        };
+
+        /**
+         * This Function Takes an Screenshot of the selected List
+         */
+        $scope.takeScreenshot = function() {
+            html2canvas(document.getElementById('list-screenshot'), {
+                background: '#FFF',
+                onclone: function(doc){
+                    doc.getElementsByClassName('drop-model')[0].style.display = 'none';
+                },
+                onrendered: function(canvas) {
+                    $('.screenshot-container').html(canvas);
+                    $('#screenshot').modal();
+                }
+            });
         };
 
         // Filter the selected Models and return only the Models that allowed

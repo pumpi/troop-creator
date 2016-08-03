@@ -39,44 +39,46 @@
 
     <div class="col">
         <h2>Troop list</h2>
+        <div id="list-screenshot">
+            <div class="list-options" ng-include="'app/build/view/list_options.html'"></div>
 
-        <div class="list-options" ng-include="'app/build/view/list_options.html'"></div>
+            <div class="selected-models army-models">
+                <ul>
+                    <li ng-repeat="(idx, model) in vars.selectedModels track by $index" data-drop="true"
+                        jqyoui-droppable="{onOver: 'moveOverDropable(model, idx)', onOut: 'moveOutDropable', beforeDrop: 'moveBeforeDrop', onDrop: 'moveOnDrop(model, idx)'}">
+                        <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
+                        <ul>
+                            <li ng-repeat="model in model.group | orderBy: ['auto_attached', 'sort', 'name']" ng-init="groupIdx = idx" data-drag="moveCanDrag(model)" data-jqyoui-options="{revert: 'invalid', delay: 200}" jqyoui-draggable="{onDrag: 'moveModelStart(model,idx)'}">
+                                <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
 
-        <div class="selected-models army-models">
-            <ul>
-                <li ng-repeat="(idx, model) in vars.selectedModels track by $index" data-drop="true"
-                    jqyoui-droppable="{onOver: 'moveOverDropable(model, idx)', onOut: 'moveOutDropable', beforeDrop: 'moveBeforeDrop', onDrop: 'moveOnDrop(model, idx)'}">
-                    <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
-                    <ul>
-                        <li ng-repeat="model in model.group | orderBy: ['auto_attached', 'sort', 'name']" ng-init="groupIdx = idx" data-drag="moveCanDrag(model)" data-jqyoui-options="{revert: 'invalid', delay: 200}" jqyoui-draggable="{onDrag: 'moveModelStart(model,idx)'}">
-                            <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
+                <div class="selected-objective input-group">
+                    <div class="input-group-addon">Objective</div>
+                    <select class="form-control" ng-model="options.gameObjective" ng-change="updateSearch()">
+                        <option value="">no objective selected ...</option>
+                        <option ng-repeat="tier in vars.objectives" value="{{$index}}">{{tier}}</option>
+                    </select>
+                </div>
 
-            <div class="selected-objective input-group">
-                <div class="input-group-addon">Objective</div>
-                <select class="form-control" ng-model="options.gameObjective" ng-change="updateSearch()">
-                    <option value="">no objective selected ...</option>
-                    <option ng-repeat="tier in vars.objectives" value="{{$index}}">{{tier}}</option>
-                </select>
-            </div>
+                <div class="drop-model" data-drop="true" jqyoui-droppable="{onDrop:'dropCallback'}" jqyoui-options="{accept: '.add-model'}">
+                    Drop Here
+                </div>
 
-            <div class="drop-model" data-drop="true" jqyoui-droppable="{onDrop:'dropCallback'}" jqyoui-options="{accept: '.add-model'}">
-                Drop Here
-            </div>
-
-            <div class="selected-counts">
-                <span ng-class="{error: errors.casters}">{{countSelectedModel('^war(lock|caster)$').all}}</span> / {{options.gameCaster}} Caster |
-                <span ng-class="{error: errors.points}">{{vars.points}}</span> / {{options.gamePoints}}
-                <span class="selected-bg-points" ng-hide="vars.casterPoints === 0" tooltip title="The available Battlegroup points" >+{{vars.casterPoints}}</span> Points
+                <div class="selected-counts">
+                    <span ng-class="{error: errors.casters}">{{countSelectedModel('^war(lock|caster)$').all}}</span> / {{options.gameCaster}} Caster |
+                    <span ng-class="{error: errors.points}">{{vars.points}}</span> / {{options.gamePoints}}
+                    <span class="selected-bg-points" ng-hide="vars.casterPoints === 0" tooltip title="The available Battlegroup points" >+{{vars.casterPoints}}</span> Points
+                </div>
             </div>
         </div>
 
         <div class="btn-group pull-right">
             <button class="btn btn-default" data-toggle="modal" data-target="#shareList" tooltip title="Share list"><i class="fa fa-share-alt"></i></button>
             <button class="btn btn-default" ng-click="saveListAsFav()" tooltip title="Save list as favorit"><i class="fa fa-save"></i></button>
+            <button class="btn btn-default" ng-click="takeScreenshot()" tooltip title="Get an Screenshot of your list"><i class="fa fa-image"></i></button>
             <button class="btn btn-default" tooltip title="Print your list" onClick="window.print()"><i class="fa fa-print"></i></button>
             <button class="btn btn-default" data-toggle="modal" data-target="#plainTextOutput" tooltip title="Export list as text"><i class="fa fa-file-text-o"></i></button>
             <button class="btn btn-danger" ng-click="clearList()"><i class="fa fa-trash"></i></button>
@@ -89,3 +91,4 @@
 <div class="modal fade" id="tier-level-info" tabindex="-1" role="dialog" ng-include="'app/build/view/modal_tier_list.html'"></div>
 <div class="modal fade modal-error" id="error" tabindex="-1" role="dialog" ng-include="'app/build/view/modal_error.html'"></div>
 <div class="modal fade" id="journeyman" tabindex="-1" role="dialog" ng-include="'app/build/view/modal_journyman.html'"></div>
+<div class="modal fade" id="screenshot" tabindex="-1" role="dialog" ng-include="'app/build/view/modal_screenshot.html'"></div>
