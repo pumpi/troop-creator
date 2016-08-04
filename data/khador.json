@@ -146,6 +146,14 @@
           "attributes":[
             "greylord"
           ]
+        },
+        {
+          "id": "KW16",
+          "type": "warcaster",
+          "name": " Malakov2 (Kommander Andrei Malakov)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_khador"
         }
       ],
       "label": "Warcasters"
