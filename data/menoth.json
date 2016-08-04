@@ -151,7 +151,15 @@
           "attributes":[
             "exemplar"
           ]
-        }
+        },
+        {
+          "id": "PW18",
+          "type": "warcaster",
+          "name": "Durant2 (Sovereign Tristan Durant)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_menoth"
+        },
       ],
       "label": "Warcasters"
     },
