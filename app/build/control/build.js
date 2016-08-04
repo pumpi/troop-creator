@@ -1172,7 +1172,7 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                     'Fuel Cache',
                     'Stockpile'
                 ],
-                'animosities'       : initData.animosities.data,
+                'animosities'       : initData.animosities,
                 'dragging'          : false,
                 'canDrop'           : false,
                 'location'          : $location.search(),
