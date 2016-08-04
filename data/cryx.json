@@ -158,6 +158,14 @@
           "cost": 27,
           "fa": "C",
           "faction": "faction_cryx"
+        },
+        {
+          "id": "CW19",
+          "type": "warcaster",
+          "name": "Aiakos2 (Captain Aiakos)",
+          "cost": 29,
+          "fa": "C",
+          "faction": "faction_cryx"
         }
       ],
       "label": "Warcasters"
