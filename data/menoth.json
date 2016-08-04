@@ -158,7 +158,10 @@
           "name": "Durant2 (Sovereign Tristan Durant)",
           "cost": 28,
           "fa": "C",
-          "faction": "faction_menoth"
+          "faction": "faction_menoth",
+          "attributes":[
+            "durant"
+          ]
         }
       ],
       "label": "Warcasters"
@@ -765,7 +768,8 @@
           "fa": "C",
           "faction": "faction_menoth",
           "attributes":[
-            "journeyman"
+            "journeyman",
+            "durant"
           ]
         },
         {

@@ -165,7 +165,10 @@
           "name": "Aiakos2 (Captain Aiakos)",
           "cost": 29,
           "fa": "C",
-          "faction": "faction_cryx"
+          "faction": "faction_cryx",
+          "attributes":[
+            "aiakos"
+          ]
         }
       ],
       "label": "Warcasters"
@@ -953,7 +956,8 @@
           "fa": "C",
           "faction": "faction_cryx",
           "attributes":[
-            "journeyman"
+            "journeyman",
+            "aiakos"
           ]
         },
         {

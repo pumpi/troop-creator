@@ -148,12 +148,15 @@
           ]
         },
         {
-          "id": "KW16",
+          "id": "KW18",
           "type": "warcaster",
           "name": " Malakov2 (Kommander Andrei Malakov)",
           "cost": 28,
           "fa": "C",
-          "faction": "faction_khador"
+          "faction": "faction_khador",
+          "attributes":[
+            "malakov"
+          ]
         }
       ],
       "label": "Warcasters"
@@ -809,7 +812,8 @@
           "fa": "C",
           "faction": "faction_khador",
           "attributes":[
-            "journeyman"
+            "journeyman",
+            "malakov"
           ]
         },
         {

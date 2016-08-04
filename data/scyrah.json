@@ -90,7 +90,10 @@
           "name": " Elara2 (Elara, Death's Shadow)",
           "cost": 28,
           "fa": "C",
-          "faction": "faction_retribution"
+          "faction": "faction_retribution",
+          "attributes":[
+            "elara"
+          ]
         }
       ],
       "label": "Warcasters"
@@ -537,7 +540,11 @@
           "name": " Elara Tyro of The Third Chamber",
           "cost": 4,
           "fa": "C",
-          "faction": "faction_retribution"
+          "faction": "faction_retribution",
+          "attributes":[
+            "journeyman",
+            "elara"
+          ]
         },
         {
           "id": "RS13",

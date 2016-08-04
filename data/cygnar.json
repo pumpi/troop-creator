@@ -160,7 +160,10 @@
           "name": "Jakes2 (Captain Allison Jakes)",
           "cost": 28,
           "fa": "C",
-          "faction": "faction_cygnar"
+          "faction": "faction_cygnar",
+          "attributes":[
+            "jakes"
+          ]
         }
       ],
       "label": "Warcasters"
@@ -854,7 +857,8 @@
           "fa": "C",
           "faction": "faction_cygnar",
           "attributes":[
-          "journeyman"
+          "journeyman",
+          "jakes"
         ]
         },
         {
