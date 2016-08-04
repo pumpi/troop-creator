@@ -153,6 +153,14 @@
           "cost": 25,
           "fa": "C",
           "faction": "faction_cygnar"
+        },
+        {
+          "id": "YW19",
+          "type": "warcaster",
+          "name": "Jakes2 (Captain Allison Jakes)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_cygnar"
         }
       ],
       "label": "Warcasters"
