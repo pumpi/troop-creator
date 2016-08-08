@@ -688,6 +688,14 @@
           "cost": 8,
           "fa": "C",
           "faction": "faction_orboros"
+        },
+        {
+          "id": "OS04",
+          "type": "solo",
+          "name": "Blackclad Stoneshaper",
+          "cost": 3,
+          "fa": "3",
+          "faction": "faction_orboros"
         }
       ],
       "label": "Solos"
