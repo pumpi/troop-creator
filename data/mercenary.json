@@ -1595,5 +1595,38 @@
       "label": "Solos"
     }
   ],
-  "tiers": []
+  "tiers": [
+    {
+      "name": "Tier Name",
+      "only": [
+        "attribute 1",
+        "attribute 2",
+        "attribute 3",
+        "name 1",
+        "here also include attributes from models from additional data"
+      ],
+      "data": [
+        "cygnar.json"
+      ],
+      "benefits": [
+        {
+          "text": "Text of Benefit",
+          "free_models": {
+            "for": {
+              "attribute": "attribute Name",
+              "points": 20
+            },
+            "get": [
+              "attribute of the free model",
+              "second attribute",
+              "...."
+            ]
+          }
+        },
+        {
+          "text": "text for only ingame benefit"
+        }
+      ]
+    }
+  ]
 }
