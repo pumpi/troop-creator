@@ -875,7 +875,7 @@
         },
         {
           "id": "PS05",
-          "type": "solo",
+          "type": "soloMarshall",
           "name": "Reclaimer Gatekeeper",
           "cost": 3,
           "fa": "2",
