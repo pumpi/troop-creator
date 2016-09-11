@@ -32,7 +32,8 @@
           "name": "Bradigus1 (Bradigus Thorle the Runecarver)",
           "cost": 27,
           "fa": "C",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "canControlOnly": "construct"
         },
         {
           "id": "OW08",
@@ -308,7 +309,10 @@
           "name": "Wold Guardian",
           "cost": 17,
           "fa": "U",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attributes":[
+            "construct"
+          ]
         },
         {
           "id": "OB10",
@@ -316,7 +320,10 @@
           "name": "Woldwarden",
           "cost": 16,
           "fa": "U",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attributes":[
+            "construct"
+          ]
         },
         {
           "id": "OB03",
@@ -324,7 +331,10 @@
           "name": "Woldwatcher",
           "cost": 9,
           "fa": "U",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attributes":[
+            "construct"
+          ]
         },
         {
           "id": "OB18",
@@ -332,7 +342,10 @@
           "name": "Woldwrath",
           "cost": 37,
           "fa": "2",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attributes":[
+            "construct"
+          ]
         },
         {
           "id": "OB04",
@@ -340,7 +353,10 @@
           "name": "Woldwyrd",
           "cost": 9,
           "fa": "U",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attributes":[
+            "construct"
+          ]
         }
       ],
       "label": "Warbeasts"
