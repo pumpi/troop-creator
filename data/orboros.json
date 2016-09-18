@@ -217,7 +217,10 @@
           "name": "Megalith",
           "cost": 20,
           "fa": "C",
-          "faction": "faction_orboros"
+          "faction": "faction_orboros",
+          "attributes":[
+            "construct"
+          ]
         },
         {
           "id": "OB07",
