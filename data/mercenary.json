@@ -591,8 +591,7 @@
             "faction_cygnar"
           ],
           "cost": 10,
-          "faction": "faction_mercenary",
-          "type": "unitMarshall"
+          "faction": "faction_mercenary"
         },
         {
           "name": "Tactical Arcanist Corps",
@@ -1017,8 +1016,7 @@
             "faction_cygnar"
           ],
           "cost": 5,
-          "faction": "faction_mercenary",
-          "type": "UAMarshall"
+          "faction": "faction_mercenary"
         },
         {
           "fa": "C",
