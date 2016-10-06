@@ -576,7 +576,11 @@
           "name": "Cephalyx Mind Bender & Drudges",
           "cost": 7,
           "faction": "faction_mercenary",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "cephalyx",
+            "drudges"
+          ]
         },
         {
           "max": 10,
@@ -844,7 +848,11 @@
           "name": "Cephalyx Mind Slaver & Drudges",
           "cost": 8,
           "faction": "faction_mercenary",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "cephalyx",
+            "drudges"
+          ]
         },
         {
           "max": 10,
@@ -867,7 +875,11 @@
           "cost": 8,
           "faction": "faction_mercenary",
           "id": "MU23",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "cephalyx",
+            "overlords"
+          ]
         },
         {
           "name": "The Commodore Cannon & Crew",
@@ -1623,6 +1635,29 @@
         },
         {
           "text": "text for only ingame benefit"
+        }
+      ]
+    }
+    {
+      "name": "Operating Theater",
+      "only": [
+        "cephalyx",
+      ],
+      "benefits": [
+        {
+          "text": "Text of Benefit",
+          "free_models": {
+            "for": {
+              "attribute": "drudges",
+              "points": 30
+            },
+            "get": [
+              "overlords"
+            ]
+          }
+        },
+        {
+          "text": "Monstrosities gain Hyper Aggressive. One Mind Slaver unit gains Ambush"
         }
       ]
     }
