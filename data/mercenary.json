@@ -1641,7 +1641,7 @@
     {
       "name": "Operating Theater",
       "only": [
-        "cephalyx",
+        "cephalyx"
       ],
       "benefits": [
         {
