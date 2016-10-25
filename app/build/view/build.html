@@ -48,7 +48,7 @@
                         jqyoui-droppable="{onOver: 'moveOverDropable(model, idx)', onOut: 'moveOutDropable', beforeDrop: 'moveBeforeDrop', onDrop: 'moveOnDrop(model, idx)'}">
                         <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
                         <ul>
-                            <li ng-repeat="model in model.group | orderBy: ['auto_attached', 'sort', 'name']" ng-init="groupIdx = idx" data-drag="moveCanDrag(model)" data-jqyoui-options="{revert: 'invalid', delay: 200}" jqyoui-draggable="{onDrag: 'moveModelStart(model,idx)'}">
+                            <li ng-repeat="model in model.group | orderBy: ['auto_attached', 'sort', 'name']" ng-init="groupIdx = idx" data-drag="moveCanDrag(model)" data-jqyoui-options="{revert: 'invalid', delay: 200, cancel: '.model-remove'}" jqyoui-draggable="{onDrag: 'moveModelStart(model,idx)'}">
                                 <div class="model" ng-include="'app/build/view/selected_model.html'"></div>
                             </li>
                         </ul>
