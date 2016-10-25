@@ -10,16 +10,16 @@
             System: <strong>{{army.system}}</strong><br/>
             Faction: <strong>{{army.faction}}</strong><br/>
             <span ng-hide="!options.gameTier">Tier: <strong>{{vars.tiers[options.gameTier].name}}</strong> (Level <strong>{{vars.tierLevel}}</strong>)<br/></span>
-            Caster: <strong>{{countSelectedModel('warlock|warcaster').all}} / {{options.gameCaster}}</strong><br/>
+            Caster: <strong>{{countSelectedModel('^warlock$|^warcaster$').all}} / {{options.gameCaster}}</strong><br/>
             Points: <strong>{{vars.points}} / {{options.gamePoints}}</strong><br/>
 
             <div ng-repeat="model in vars.selectedModels track by $index">
                 <strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
                 <span ng-show="model.max"> (Leader and {{model.useMax ? model.max -1 : model.min - 1}})</span>
-                <strong>(<span ng-show="checkIsCaster(model)">-</span>{{getModelCost(model)}} Pts.)</strong>
+                <strong><span ng-show="checkIsCaster(model)">-</span>{{getModelCost(model)}}</strong>
                 <div ng-repeat="model in model.group track by $index">
                     * <strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
-                    <strong>({{getModelCost(model)}} Pts.)</strong>
+                    <strong>{{getModelCost(model)}}</strong>
                 </div>
             </div>
 
