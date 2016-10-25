@@ -576,7 +576,11 @@
           "name": "Cephalyx Mind Bender & Drudges",
           "cost": 7,
           "faction": "faction_mercenary",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "cephalyx",
+            "drudges"
+          ]
         },
         {
           "max": 10,
@@ -591,8 +595,7 @@
             "faction_cygnar"
           ],
           "cost": 10,
-          "faction": "faction_mercenary",
-          "type": "unitMarshall"
+          "faction": "faction_mercenary"
         },
         {
           "name": "Tactical Arcanist Corps",
@@ -845,7 +848,11 @@
           "name": "Cephalyx Mind Slaver & Drudges",
           "cost": 8,
           "faction": "faction_mercenary",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "cephalyx",
+            "drudges"
+          ]
         },
         {
           "max": 10,
@@ -868,7 +875,11 @@
           "cost": 8,
           "faction": "faction_mercenary",
           "id": "MU23",
-          "type": "unit"
+          "type": "unit",
+          "attributes":[
+            "cephalyx",
+            "overlords"
+          ]
         },
         {
           "name": "The Commodore Cannon & Crew",
@@ -1017,8 +1028,7 @@
             "faction_cygnar"
           ],
           "cost": 5,
-          "faction": "faction_mercenary",
-          "type": "UAMarshall"
+          "faction": "faction_mercenary"
         },
         {
           "fa": "C",
@@ -1625,6 +1635,29 @@
         },
         {
           "text": "text for only ingame benefit"
+        }
+      ]
+    },
+    {
+      "name": "Operating Theater",
+      "only": [
+        "cephalyx"
+      ],
+      "benefits": [
+        {
+          "text": "Text of Benefit",
+          "free_models": {
+            "for": {
+              "attribute": "drudges",
+              "points": 30
+            },
+            "get": [
+              "overlords"
+            ]
+          }
+        },
+        {
+          "text": "Monstrosities gain Hyper Aggressive. One Mind Slaver unit gains Ambush"
         }
       ]
     }
