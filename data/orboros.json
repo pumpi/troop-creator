@@ -371,7 +371,7 @@
         {
           "id": "OE01",
           "type": "battleengine",
-          "name": "Celestal Fulcrum",
+          "name": "Celestial Fulcrum",
           "cost": 19,
           "fa": "2",
           "faction": "faction_orboros"
