@@ -1590,7 +1590,7 @@
           "cost": 3,
           "faction": "faction_mercenary",
           "id": "MS32",
-          "type": "solo"
+          "type": "soloMarshall"
         },
         {
           "name": "Cephalyx Agitator",
