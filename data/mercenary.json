@@ -1580,6 +1580,19 @@
           ]
         },
         {
+          "name": "Colbie Sterling",
+          "fa": "C",
+          "works_for": [
+            "faction_menoth",
+            "faction_khador",
+            "faction_cygnar"
+          ],
+          "cost": 3,
+          "faction": "faction_mercenary",
+          "id": "MS32",
+          "type": "solo"
+        },
+        {
           "name": "Cephalyx Agitator",
           "fa": "3",
           "cost": 3,
