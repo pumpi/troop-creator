@@ -132,6 +132,14 @@
           "cost": 31,
           "fa": "C",
           "faction": "faction_orboros"
+        },
+        {
+          "id": "OW16",
+          "type": "warlock",
+          "name": "Una2 (Una The Skyhunter)",
+          "cost": 29,
+          "fa": "C",
+          "faction": "faction_orboros"
         }
       ],
       "label": "Warlocks"

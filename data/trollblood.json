@@ -130,6 +130,14 @@
           "cost": 26,
           "fa": "C",
           "faction": "faction_trollblood"
+        },
+        {
+          "id": "TW17",
+          "type": "warlock",
+          "name": "Horgle2 (Horgle The Anvil)",
+          "cost": 29,
+          "fa": "C",
+          "faction": "faction_trollblood"
         }
       ],
       "label": "Warlocks"

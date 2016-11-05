@@ -130,6 +130,14 @@
           "cost": 28,
           "fa": "C",
           "faction": "faction_everblight"
+        },
+        {
+          "id": "EW16",
+          "type": "warlock",
+          "name": "Fyanna2 (Fyanna Torment of Everblight)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_everblight"
         }
       ],
       "label": "Warlocks"

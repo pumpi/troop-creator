@@ -129,6 +129,14 @@
           "cost": 24,
           "fa": "C",
           "faction": "faction_skorne"
+        },
+        {
+          "id": "SW16",
+          "type": "warlock",
+          "name": "Zaadesh2 (Lord Tyrant Zaadesh)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_skorne"
         }
       ],
       "label": "Warlocks"
