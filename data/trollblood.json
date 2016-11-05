@@ -116,6 +116,14 @@
           "faction": "faction_trollblood"
         },
         {
+          "id": "TW14",
+          "type": "warlock",
+          "name": "Horgle2 (Horgle The Anvil)",
+          "cost": 29,
+          "fa": "C",
+          "faction": "faction_trollblood"
+        },
+        {
           "id": "TW15",
           "type": "warlock",
           "name": "Borka2 (Borka Vengeance of the Rimeshaws)",
