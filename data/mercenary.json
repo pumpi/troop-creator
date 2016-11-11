@@ -1612,6 +1612,17 @@
           "faction": "faction_mercenary",
           "id": "MS10",
           "type": "solo"
+        },
+        {
+          "name": "Major Harrison Gibbs",
+          "fa": "C",
+          "works_for": [
+            "faction_cygnar"
+          ],
+          "cost": 4,
+          "faction": "faction_mercenary",
+          "id": "MS33",
+          "type": "solo"
         }
       ],
       "label": "Solos"
