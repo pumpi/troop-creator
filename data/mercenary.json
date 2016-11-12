@@ -650,6 +650,10 @@
           "faction": "faction_mercenary",
           "id": "MU29",
           "type": "unit",
+          "works_for": [
+            "faction_menoth",
+            "faction_cygnar"
+          ],
           "attributes":[
             "llaelese"
           ]
