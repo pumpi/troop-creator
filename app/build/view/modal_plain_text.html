@@ -18,7 +18,7 @@
                 <span ng-show="model.max"> (Leader and {{model.useMax ? model.max -1 : model.min - 1}})</span>
                 <strong><span ng-show="checkIsCaster(model)">-</span>{{getModelCost(model)}}</strong>
                 <div ng-repeat="model in model.group track by $index">
-                    * <strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
+                    - <strong ng-show="model.attached > 1">{{model.attached}} </strong>{{model.name}}
                     <strong>{{getModelCost(model)}}</strong>
                 </div>
             </div>
