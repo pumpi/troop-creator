@@ -460,6 +460,9 @@
           "restricted_to": [
             "RU05",
             "RU10"
+          ],
+          "attributes":[
+            "eiryss"
           ]
         },
         {
