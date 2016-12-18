@@ -96,13 +96,18 @@ troopCreator.controller('buildCtrl', ['$scope', '$http', '$routeParams', '$locat
                         match = a1;
                     }
 
-                    if ( match !== false ) {
-                        $.each($scope.vars.selectedModels, function (key, sModel) {
+                    var recursive = function(models) {
+                        $.each(models, function (key, sModel) {
                             if ( $scope.checkAttributes(sModel, match) ) {
                                 animosity = true;
                             }
+                            recursive(sModel.group);
                         });
 
+                    };
+
+                    if ( match !== false ) {
+                        recursive($scope.vars.selectedModels);
                     }
                 });
 
