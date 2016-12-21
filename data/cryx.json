@@ -771,7 +771,7 @@
           "id": "CA07",
           "type": "UA",
           "name": "Skarlock Commander",
-          "cost": 2,
+          "cost": 3,
           "fa": "U",
           "faction": "faction_cryx",
           "restricted_to": [
