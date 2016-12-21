@@ -199,7 +199,7 @@
           "id": "KJ07",
           "type": "warjack",
           "name": " Behemoth",
-          "cost": 24,
+          "cost": 25,
           "fa": "C",
           "faction": "faction_khador"
         },
@@ -207,7 +207,7 @@
           "id": "KJ04",
           "type": "warjack",
           "name": " Berserker",
-          "cost": 8,
+          "cost": 9,
           "fa": "U",
           "faction": "faction_khador"
         },
@@ -239,7 +239,7 @@
           "id": "KJ01",
           "type": "warjack",
           "name": " Destroyer",
-          "cost": 16,
+          "cost": 14,
           "fa": "U",
           "faction": "faction_khador"
         },
@@ -287,7 +287,7 @@
           "id": "KJ19",
           "type": "warjack",
           "name": " Mad Dog",
-          "cost": 7,
+          "cost": 9,
           "fa": "U",
           "faction": "faction_khador"
         },
