@@ -391,9 +391,9 @@
         {
           "max": 5,
           "min": 3,
-          "costMax": 18,
+          "costMax": 17,
           "fa": "3",
-          "costMin": 11,
+          "costMin": 10,
           "id": "IU04",
           "name": "Gatorman Posse",
           "works_for": [
@@ -402,7 +402,7 @@
             "faction_trollblood",
             "faction_skorne"
           ],
-          "cost": 11,
+          "cost": 10,
           "faction": "faction_minion",
           "type": "unit"
         },
@@ -847,7 +847,7 @@
             "faction_scyrah",
             "faction_mercenary"
           ],
-          "cost": 3,
+          "cost": 4,
           "faction": "faction_minion",
           "id": "IS04",
           "type": "solo",
@@ -911,7 +911,7 @@
             "faction_cygnar",
             "faction_mercenary"
           ],
-          "cost": 5,
+          "cost": 6,
           "faction": "faction_minion",
           "id": "IS01",
           "type": "solo"
