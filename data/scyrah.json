@@ -263,7 +263,7 @@
           "type": "battleengine",
           "name": " Arcantric Force Generator",
           "attribute": "vyre",
-          "cost": 19,
+          "cost": 16,
           "fa": "2",
           "faction": "faction_retribution"
         }
