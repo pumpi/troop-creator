@@ -456,7 +456,7 @@
           "id": "CE01",
           "type": "battleengine",
           "name": "Wraith Engine",
-          "cost": 18,
+          "cost": 15,
           "fa": "2",
           "faction": "faction_cryx"
         }
@@ -531,9 +531,9 @@
           "id": "CU05",
           "type": "unit",
           "name": "Revenant Crew of the Atramentous",
-          "cost": 10,
-          "costMin": 10,
-          "costMax": 17,
+          "cost": 9,
+          "costMin": 9,
+          "costMax": 16,
           "fa": "3",
           "min": 6,
           "max": 10,
