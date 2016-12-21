@@ -357,7 +357,7 @@
           "id": "COCS05",
           "type": "solo",
           "name": "Enigma Foundry",
-          "cost": 5,
+          "cost": 4,
           "fa": "2",
           "faction": "faction_cyriss"
         },
