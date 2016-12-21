@@ -1469,7 +1469,12 @@
           "works_for": [
             "faction_cryx",
             "faction_cygnar",
-            "faction_khador"
+            "faction_khador",
+            "faction_circle",
+            "faction_legion",
+            "faction_skorne",
+            "faction_trollblood",
+            "faction_minion"
           ],
           "cost": 5,
           "faction": "faction_mercenary",
