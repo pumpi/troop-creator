@@ -1102,10 +1102,6 @@
             "MU18",
             "MU20"
           ],
-
-          "works_for": [
-            "faction_cryx"
-          ],
           "cost": 1,
           "faction": "faction_mercenary",
           "type": "UA"
