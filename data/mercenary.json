@@ -1102,10 +1102,6 @@
             "MU18",
             "MU20"
           ],
-
-          "works_for": [
-            "faction_cryx"
-          ],
           "cost": 1,
           "faction": "faction_mercenary",
           "type": "UA"
@@ -1470,7 +1466,7 @@
             "faction_cryx",
             "faction_cygnar",
             "faction_khador",
-            "faction_circle",
+            "faction_orboros",
             "faction_legion",
             "faction_skorne",
             "faction_trollblood",
