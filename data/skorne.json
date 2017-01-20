@@ -13,7 +13,7 @@
         {
           "id": "SW01",
           "type": "warlock",
-          "name": "Morghoul1 (Master Tormentor Morghoul)",
+          "name": " Morghoul1 (Master Tormentor Morghoul)",
           "cost": 30,
           "fa": "C",
           "faction": "faction_skorne"
@@ -21,7 +21,7 @@
         {
           "id": "SW02",
           "type": "warlock",
-          "name": "Makeda1 (Archdomina Makeda)",
+          "name": " Makeda1 (Archdomina Makeda)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_skorne"
@@ -29,15 +29,15 @@
         {
           "id": "SW03",
           "type": "warlock",
-          "name": "Hexeris1 (Lord Tyrant Hexeris)",
-          "cost": 28,
+          "name": " Hexeris1 (Lord Tyrant Hexeris)",
+          "cost": 29,
           "fa": "C",
           "faction": "faction_skorne"
         },
         {
           "id": "SW04",
           "type": "warlock",
-          "name": "Xerxis1 (Tyrant Xerxis)",
+          "name": " Xerxis1 (Tyrant Xerxis)",
           "cost": 28,
           "fa": "C",
           "faction": "faction_skorne"
@@ -45,7 +45,7 @@
         {
           "id": "SW05",
           "type": "warlock",
-          "name": "Zaal1 (Supreme Aptimus Zaal & Kovaas)",
+          "name": " Zaal1 (Supreme Aptimus Zaal & Kovaas)",
           "cost": 26,
           "fa": "C",
           "faction": "faction_skorne"
@@ -53,7 +53,7 @@
         {
           "id": "SW06",
           "type": "warlock",
-          "name": "Mordikaar1 (Void Seer Mordikaar)",
+          "name": " Mordikaar1 (Void Seer Mordikaar)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_skorne"
@@ -61,7 +61,7 @@
         {
           "id": "SW07",
           "type": "warlock",
-          "name": "Rasheth1 (Dominar Rasheth)",
+          "name": " Rasheth1 (Dominar Rasheth)",
           "cost": 28,
           "fa": "C",
           "faction": "faction_skorne"
@@ -69,7 +69,7 @@
         {
           "id": "SW08",
           "type": "warlock",
-          "name": "Naaresh1 (Master Ascetic Naaresh)",
+          "name": " Naaresh1 (Master Ascetic Naaresh)",
           "cost": 32,
           "fa": "C",
           "faction": "faction_skorne"
@@ -77,7 +77,7 @@
         {
           "id": "SW09",
           "type": "warlock",
-          "name": "Xekaar1 (Beast Master Xekaar)",
+          "name": " Xekaar1 (Beast Master Xekaar)",
           "cost": 31,
           "fa": "C",
           "faction": "faction_skorne"
@@ -85,7 +85,7 @@
         {
           "id": "SW10",
           "type": "warlock",
-          "name": "Morghoul2 (Lord Assassin Morghoul)",
+          "name": " Morghoul2 (Lord Assassin Morghoul)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_skorne"
@@ -93,15 +93,15 @@
         {
           "id": "SW11",
           "type": "warlock",
-          "name": "Makeda2 (Supreme Archdomina Makeda)",
-          "cost": 27,
+          "name": " Makeda2 (Supreme Archdomina Makeda)",
+          "cost": 24,
           "fa": "C",
           "faction": "faction_skorne"
         },
         {
           "id": "SW12",
           "type": "warlock",
-          "name": "Hexeris2 (Lord Arbiter Hexeris)",
+          "name": " Hexeris2 (Lord Arbiter Hexeris)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_skorne"
@@ -109,15 +109,15 @@
         {
           "id": "SW13",
           "type": "warlock",
-          "name": "Xerxis2 (Xerxis  Fury of Halaak)",
-          "cost": 28,
+          "name": " Xerxis2 (Xerxis  Fury of Halaak)",
+          "cost": 29,
           "fa": "C",
           "faction": "faction_skorne"
         },
         {
           "id": "SW14",
           "type": "warlock",
-          "name": "Zaal2 (Zaal The Ancestral Advocate)",
+          "name": " Zaal2 (Zaal The Ancestral Advocate)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_skorne"
@@ -125,7 +125,7 @@
         {
           "id": "SW15",
           "type": "warlock",
-          "name": "Makeda3 (Makeda & the Exalted Court)",
+          "name": " Makeda3 (Makeda & the Exalted Court)",
           "cost": 24,
           "fa": "C",
           "faction": "faction_skorne"
@@ -154,15 +154,15 @@
         {
           "id": "SB17",
           "type": "warbeast",
-          "name": "Reptile Hound",
-          "cost": 4,
+          "name": " 2 Reptile Hounds",
+          "cost": 7,
           "fa": "U",
           "faction": "faction_skorne"
         },
         {
           "id": "SB23",
           "type": "warbeast",
-          "name": "Agonizer",
+          "name": " Agonizer",
           "cost": 7,
           "fa": "U",
           "faction": "faction_skorne"
@@ -170,7 +170,7 @@
         {
           "id": "SB21",
           "type": "warbeast",
-          "name": "Aradus Sentinel",
+          "name": " Aradus Sentinel",
           "cost": 16,
           "fa": "U",
           "faction": "faction_skorne"
@@ -178,7 +178,7 @@
         {
           "id": "SB20",
           "type": "warbeast",
-          "name": "Aradus Soldier",
+          "name": " Aradus Soldier",
           "cost": 18,
           "fa": "U",
           "faction": "faction_skorne"
@@ -186,7 +186,7 @@
         {
           "id": "SB15",
           "type": "warbeast",
-          "name": "Archidon",
+          "name": " Archidon",
           "cost": 12,
           "fa": "U",
           "faction": "faction_skorne"
@@ -194,7 +194,7 @@
         {
           "id": "SB04",
           "type": "warbeast",
-          "name": "Basilisk Drake",
+          "name": " Basilisk Drake",
           "cost": 8,
           "fa": "U",
           "faction": "faction_skorne"
@@ -202,7 +202,7 @@
         {
           "id": "SB05",
           "type": "warbeast",
-          "name": "Basilisk Krea",
+          "name": " Basilisk Krea",
           "cost": 7,
           "fa": "U",
           "faction": "faction_skorne"
@@ -210,7 +210,7 @@
         {
           "id": "SB08",
           "type": "warbeast",
-          "name": "Bronzeback Titan",
+          "name": " Bronzeback Titan",
           "cost": 18,
           "fa": "U",
           "faction": "faction_skorne"
@@ -218,7 +218,7 @@
         {
           "id": "SB02",
           "type": "warbeast",
-          "name": "Cyclops Brute",
+          "name": " Cyclops Brute",
           "cost": 8,
           "fa": "U",
           "faction": "faction_skorne"
@@ -226,7 +226,7 @@
         {
           "id": "SB14",
           "type": "warbeast",
-          "name": "Cyclops Raider",
+          "name": " Cyclops Raider",
           "cost": 9,
           "fa": "U",
           "faction": "faction_skorne"
@@ -234,7 +234,7 @@
         {
           "id": "SB01",
           "type": "warbeast",
-          "name": "Cyclops Savage",
+          "name": " Cyclops Savage",
           "cost": 8,
           "fa": "U",
           "faction": "faction_skorne"
@@ -242,7 +242,7 @@
         {
           "id": "SB03",
           "type": "warbeast",
-          "name": "Cyclops Shaman",
+          "name": " Cyclops Shaman",
           "cost": 8,
           "fa": "U",
           "faction": "faction_skorne"
@@ -250,7 +250,7 @@
         {
           "id": "SB22",
           "type": "warbeast",
-          "name": "Desert Hydra",
+          "name": " Desert Hydra",
           "cost": 38,
           "fa": "2",
           "faction": "faction_skorne"
@@ -258,7 +258,7 @@
         {
           "id": "SB16",
           "type": "warbeast",
-          "name": "Despoiler",
+          "name": " Despoiler",
           "cost": 18,
           "fa": "C",
           "faction": "faction_skorne"
@@ -266,7 +266,7 @@
         {
           "id": "SB18",
           "type": "warbeast",
-          "name": "Mammoth",
+          "name": " Mammoth",
           "cost": 38,
           "fa": "2",
           "faction": "faction_skorne"
@@ -274,7 +274,7 @@
         {
           "id": "SB10",
           "type": "warbeast",
-          "name": "Molik Karn",
+          "name": " Molik Karn",
           "cost": 20,
           "fa": "C",
           "faction": "faction_skorne"
@@ -282,7 +282,7 @@
         {
           "id": "SB12",
           "type": "warbeast",
-          "name": "Razor Worm",
+          "name": " Razor Worm",
           "cost": 7,
           "fa": "U",
           "faction": "faction_skorne"
@@ -290,7 +290,7 @@
         {
           "id": "SB09",
           "type": "warbeast",
-          "name": "Rhinodon",
+          "name": " Rhinodon",
           "cost": 12,
           "fa": "U",
           "faction": "faction_skorne"
@@ -298,7 +298,7 @@
         {
           "id": "SB19",
           "type": "warbeast",
-          "name": "Scarab Pack",
+          "name": " Scarab Pack",
           "cost": 10,
           "fa": "U",
           "faction": "faction_skorne"
@@ -306,7 +306,7 @@
         {
           "id": "SB13",
           "type": "warbeast",
-          "name": "Tiberion",
+          "name": " Tiberion",
           "cost": 22,
           "fa": "C",
           "faction": "faction_skorne"
@@ -314,7 +314,7 @@
         {
           "id": "SB07",
           "type": "warbeast",
-          "name": "Titan Cannoneer",
+          "name": " Titan Cannoneer",
           "cost": 17,
           "fa": "U",
           "faction": "faction_skorne"
@@ -322,7 +322,7 @@
         {
           "id": "SB06",
           "type": "warbeast",
-          "name": "Titan Gladiator",
+          "name": " Titan Gladiator",
           "cost": 14,
           "fa": "U",
           "faction": "faction_skorne"
@@ -330,7 +330,7 @@
         {
           "id": "SB11",
           "type": "warbeast",
-          "name": "Titan Sentry",
+          "name": " Titan Sentry",
           "cost": 15,
           "fa": "U",
           "faction": "faction_skorne"
@@ -345,7 +345,7 @@
         {
           "id": "SE01",
           "type": "battleengine",
-          "name": "Siege Animantarax",
+          "name": " Siege Animantarax",
           "cost": 18,
           "fa": "2",
           "faction": "faction_skorne"
@@ -360,7 +360,7 @@
         {
           "id": "SU02",
           "type": "unit",
-          "name": "Cataphract Arcuarii",
+          "name": " Cataphract Arcuarii",
           "cost": 11,
           "costMin": 11,
           "costMax": 17,
@@ -372,7 +372,7 @@
         {
           "id": "SU03",
           "type": "unit",
-          "name": "Cataphract Cetrati",
+          "name": " Cataphract Cetrati",
           "cost": 13,
           "costMin": 13,
           "costMax": 20,
@@ -384,7 +384,7 @@
         {
           "id": "SU15",
           "type": "unit",
-          "name": "Cataphract Incindiarii",
+          "name": " Cataphract Incindiarii",
           "cost": 12,
           "costMin": 12,
           "costMax": 18,
@@ -396,7 +396,7 @@
         {
           "id": "SU04",
           "type": "unit",
-          "name": "Immortals",
+          "name": " Immortals",
           "cost": 9,
           "costMin": 9,
           "costMax": 15,
@@ -408,7 +408,7 @@
         {
           "id": "SU17",
           "type": "unit",
-          "name": "Legends of Halaak",
+          "name": " Legends of Halaak",
           "cost": 8,
           "fa": "C",
           "faction": "faction_skorne"
@@ -416,7 +416,7 @@
         {
           "id": "SU12",
           "type": "unit",
-          "name": "Nihilators",
+          "name": " Nihilators",
           "cost": 9,
           "costMin": 9,
           "costMax": 15,
@@ -428,7 +428,7 @@
         {
           "id": "SU05",
           "type": "unit",
-          "name": "Paingiver Beast Handlers",
+          "name": " Paingiver Beast Handlers",
           "cost": 5,
           "costMin": 5,
           "costMax": 7,
@@ -440,7 +440,7 @@
         {
           "id": "SU01",
           "type": "unit",
-          "name": "Paingiver Bloodrunners",
+          "name": " Paingiver Bloodrunners",
           "cost": 9,
           "fa": "2",
           "faction": "faction_skorne"
@@ -448,7 +448,7 @@
         {
           "id": "SU06",
           "type": "unit",
-          "name": "Praetorian Ferox",
+          "name": " Praetorian Ferox",
           "cost": 13,
           "costMin": 13,
           "costMax": 21,
@@ -460,7 +460,7 @@
         {
           "id": "SU07",
           "type": "unit",
-          "name": "Praetorian Karax",
+          "name": " Praetorian Karax",
           "cost": 7,
           "costMin": 7,
           "costMax": 11,
@@ -472,7 +472,7 @@
         {
           "id": "SU16",
           "type": "unit",
-          "name": "Praetorian Keltarii",
+          "name": " Praetorian Keltarii",
           "cost": 9,
           "costMin": 9,
           "costMax": 15,
@@ -484,7 +484,7 @@
         {
           "id": "SU08",
           "type": "unit",
-          "name": "Praetorian Swordsmen",
+          "name": " Praetorian Swordsmen",
           "cost": 8,
           "costMin": 8,
           "costMax": 13,
@@ -496,7 +496,7 @@
         {
           "id": "SU09",
           "type": "unit",
-          "name": "Tyrant Commander & Standard Bearer",
+          "name": " Tyrant Commander & Standard Bearer",
           "cost": 6,
           "fa": "2",
           "faction": "faction_skorne"
@@ -504,7 +504,7 @@
         {
           "id": "SU10",
           "type": "unit",
-          "name": "Venator Catapult Crew",
+          "name": " Venator Catapult Crew",
           "cost": 5,
           "fa": "2",
           "faction": "faction_skorne"
@@ -512,7 +512,7 @@
         {
           "id": "SU13",
           "type": "unit",
-          "name": "Venator Flayer Cannon Crew",
+          "name": " Venator Flayer Cannon Crew",
           "cost": 5,
           "fa": "2",
           "faction": "faction_skorne"
@@ -520,7 +520,7 @@
         {
           "id": "SU11",
           "type": "unit",
-          "name": "Venator Reivers",
+          "name": " Venator Reivers",
           "cost": 9,
           "costMin": 9,
           "costMax": 15,
@@ -532,7 +532,7 @@
         {
           "id": "SU14",
           "type": "unit",
-          "name": "Venators Slingers",
+          "name": " Venators Slingers",
           "cost": 8,
           "costMin": 8,
           "costMax": 13,
@@ -551,7 +551,7 @@
         {
           "id": "SA05",
           "type": "UA",
-          "name": "Preatorian Karax Officer & Standard",
+          "name": " Preatorian Karax Officer & Standard",
           "cost": 4,
           "fa": "U",
           "faction": "faction_skorne",
@@ -560,7 +560,7 @@
         {
           "id": "SA02",
           "type": "UA",
-          "name": "Venator Reiver Officer & Standard",
+          "name": " Venator Reiver Officer & Standard",
           "cost": 4,
           "fa": "U",
           "faction": "faction_skorne",
@@ -569,7 +569,7 @@
         {
           "id": "SA04",
           "type": "UA",
-          "name": "Extoller Advocate",
+          "name": " Extoller Advocate",
           "cost": 4,
           "fa": "3",
           "faction": "faction_skorne",
@@ -578,7 +578,7 @@
         {
           "id": "SA01",
           "type": "UA",
-          "name": "Praetorian Swordsmen Officer & Standard",
+          "name": " Praetorian Swordsmen Officer & Standard",
           "cost": 4,
           "fa": "U",
           "faction": "faction_skorne",
@@ -587,7 +587,7 @@
         {
           "id": "SA03",
           "type": "UA",
-          "name": "Tyrant Vorkesh",
+          "name": " Tyrant Vorkesh",
           "cost": 6,
           "fa": "C",
           "faction": "faction_skorne",
@@ -609,7 +609,7 @@
         {
           "id": "SS02",
           "type": "solo",
-          "name": "Ancestral Guardian",
+          "name": " Ancestral Guardian",
           "cost": 5,
           "fa": "3",
           "faction": "faction_skorne"
@@ -617,7 +617,7 @@
         {
           "id": "SS03",
           "type": "solo",
-          "name": "Paingiver Bloodrunner Master Tormentor",
+          "name": " Paingiver Bloodrunner Master Tormentor",
           "cost": 4,
           "fa": "2",
           "faction": "faction_skorne"
@@ -625,7 +625,7 @@
         {
           "id": "SS04",
           "type": "solo",
-          "name": "Extoller Soulward",
+          "name": " Extoller Soulward",
           "cost": 3,
           "fa": "2",
           "faction": "faction_skorne"
@@ -633,7 +633,7 @@
         {
           "id": "SS05",
           "type": "solo",
-          "name": "Tyrant Rhadeim",
+          "name": " Tyrant Rhadeim",
           "cost": 9,
           "fa": "C",
           "faction": "faction_skorne"
@@ -641,7 +641,7 @@
         {
           "id": "SS06",
           "type": "solo",
-          "name": "Void Spirit",
+          "name": " Void Spirit",
           "cost": 4,
           "fa": "2",
           "faction": "faction_skorne"
@@ -649,7 +649,7 @@
         {
           "id": "SS07",
           "type": "solo",
-          "name": "Paingiver Task Master",
+          "name": " Paingiver Task Master",
           "cost": 3,
           "fa": "2",
           "faction": "faction_skorne"
@@ -657,7 +657,7 @@
         {
           "id": "SS08",
           "type": "soloAttachment",
-          "name": "Aptimus Marketh",
+          "name": " Aptimus Marketh",
           "cost": 6,
           "fa": "C",
           "faction": "faction_skorne"
@@ -665,7 +665,7 @@
         {
           "id": "SS09",
           "type": "solo",
-          "name": "Hakaar the Destroyer",
+          "name": " Hakaar the Destroyer",
           "cost": 7,
           "fa": "C",
           "faction": "faction_skorne"
@@ -673,7 +673,7 @@
         {
           "id": "SS10",
           "type": "solo",
-          "name": "Mortitheurge Willbreaker",
+          "name": " Mortitheurge Willbreaker",
           "cost": 4,
           "fa": "2",
           "faction": "faction_skorne"
@@ -681,7 +681,7 @@
         {
           "id": "SS12",
           "type": "solo",
-          "name": "Venator Dakar",
+          "name": " Venator Dakar",
           "cost": 4,
           "fa": "2",
           "faction": "faction_skorne"
@@ -689,7 +689,7 @@
         {
           "id": "SS11",
           "type": "soloLesserWarlock",
-          "name": "Tyrant Zaadesh",
+          "name": " Tyrant Zaadesh",
           "cost": 4,
           "fa": "C",
           "faction": "faction_skorne"
