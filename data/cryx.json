@@ -103,7 +103,7 @@
           "id": "CW12",
           "type": "warcaster",
           "name": "Asphyxious2 (Lich Lord Asphyxious)",
-          "cost": 26,
+          "cost": 28,
           "fa": "C",
           "faction": "faction_cryx"
         },
