@@ -658,7 +658,7 @@
           "id": "SS08",
           "type": "soloAttachment",
           "name": "Aptimus Marketh",
-          "cost": 6,
+          "cost": 5,
           "fa": "C",
           "faction": "faction_skorne"
         },
