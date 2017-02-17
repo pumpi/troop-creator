@@ -7,7 +7,7 @@
         {
           "id": "RW10",
           "type": "warcaster",
-          "name": " Vyros2 (Vyros Incissar of the Dawnguard)",
+          "name": "Vyros2 (Vyros Incissar of the Dawnguard)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_retribution"
@@ -15,7 +15,7 @@
         {
           "id": "RW02",
           "type": "warcaster",
-          "name": " Vyros1 (Dawnlord Vyros)",
+          "name": "Vyros1 (Dawnlord Vyros)",
           "cost": 28,
           "fa": "C",
           "faction": "faction_retribution"
@@ -23,7 +23,7 @@
         {
           "id": "RW08",
           "type": "warcaster",
-          "name": " Thyron1 (Thyron Sword of Truth)",
+          "name": "Thyron1 (Thyron Sword of Truth)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_retribution"
@@ -31,7 +31,7 @@
         {
           "id": "RW05",
           "type": "warcaster",
-          "name": " Ravyn1 (Ravyn Eternal Light)",
+          "name": "Ravyn1 (Ravyn Eternal Light)",
           "cost": 30,
           "fa": "C",
           "faction": "faction_retribution"
@@ -39,7 +39,7 @@
         {
           "id": "RW01",
           "type": "warcaster",
-          "name": " Rahn1 (Adeptis Rahn)",
+          "name": "Rahn1 (Adeptis Rahn)",
           "cost": 26,
           "fa": "C",
           "faction": "faction_retribution"
@@ -47,7 +47,7 @@
         {
           "id": "RW06",
           "type": "warcaster",
-          "name": " Ossyan1 (Lord Arcanist Ossyan)",
+          "name": "Ossyan1 (Lord Arcanist Ossyan)",
           "cost": 28,
           "fa": "C",
           "faction": "faction_retribution"
@@ -55,7 +55,7 @@
         {
           "id": "RW04",
           "type": "warcaster",
-          "name": " Kaelyssa1 (Kaelyssa Night's Whisper)",
+          "name": "Kaelyssa1 (Kaelyssa Night's Whisper)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_retribution"
@@ -63,7 +63,7 @@
         {
           "id": "RW07",
           "type": "warcaster",
-          "name": " Issyria1 (Issyria Sibyl of Dawn)",
+          "name": "Issyria1 (Issyria Sibyl of Dawn)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_retribution"
@@ -71,7 +71,7 @@
         {
           "id": "RW09",
           "type": "warcaster",
-          "name": " Helynna1 (Magister Helynna)",
+          "name": "Helynna1 (Magister Helynna)",
           "cost": 30,
           "fa": "C",
           "faction": "faction_retribution"
@@ -79,7 +79,7 @@
         {
           "id": "RW03",
           "type": "warcaster",
-          "name": " Garryth1 (Garryth Blade of Retribution)",
+          "name": "Garryth1 (Garryth Blade of Retribution)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_retribution"
@@ -87,7 +87,7 @@
         {
           "id": "RW11",
           "type": "warcaster",
-          "name": " Elara2 (Elara, Death's Shadow)",
+          "name": "Elara2 (Elara, Death's Shadow)",
           "cost": 28,
           "fa": "C",
           "faction": "faction_retribution",
@@ -105,7 +105,7 @@
         {
           "id": "RJ13",
           "type": "warjackColossal",
-          "name": " Hyperion",
+          "name": "Hyperion",
           "attribute": "shyeel",
           "cost": 36,
           "fa": "2",
@@ -122,7 +122,7 @@
         {
           "id": "RJ11",
           "type": "warjack",
-          "name": " Sphinx",
+          "name": "Sphinx",
           "attribute": "vyre",
           "cost": 13,
           "fa": "U",
@@ -131,7 +131,7 @@
         {
           "id": "RJ06",
           "type": "warjack",
-          "name": " Phoenix",
+          "name": "Phoenix",
           "attribute": "shyeel",
           "cost": 18,
           "fa": "U",
@@ -140,7 +140,7 @@
         {
           "id": "RJ15",
           "type": "warjack",
-          "name": " Moros",
+          "name": "Moros",
           "attribute": "shyeel",
           "cost": 11,
           "fa": "C",
@@ -149,7 +149,7 @@
         {
           "id": "RJ05",
           "type": "warjack",
-          "name": " Manticore",
+          "name": "Manticore",
           "attribute": "shyeel",
           "cost": 14,
           "fa": "U",
@@ -158,7 +158,7 @@
         {
           "id": "RJ14",
           "type": "warjack",
-          "name": " Imperatus",
+          "name": "Imperatus",
           "attribute": "shyeel",
           "cost": 22,
           "fa": "C",
@@ -167,7 +167,7 @@
         {
           "id": "RJ12",
           "type": "warjack",
-          "name": " Hypnos",
+          "name": "Hypnos",
           "attribute": "vyre",
           "cost": 18,
           "fa": "C",
@@ -176,7 +176,7 @@
         {
           "id": "RJ04",
           "type": "warjack",
-          "name": " Hydra",
+          "name": "Hydra",
           "attribute": "shyeel",
           "cost": 15,
           "fa": "U",
@@ -185,7 +185,7 @@
         {
           "id": "RJ03",
           "type": "warjack",
-          "name": " Griffon",
+          "name": "Griffon",
           "attribute": "shyeel",
           "cost": 8,
           "fa": "U",
@@ -194,7 +194,7 @@
         {
           "id": "RJ02",
           "type": "warjack",
-          "name": " Gorgon",
+          "name": "Gorgon",
           "attribute": "shyeel",
           "cost": 9,
           "fa": "U",
@@ -203,7 +203,7 @@
         {
           "id": "RJ07",
           "type": "warjack",
-          "name": " Discordia",
+          "name": "Discordia",
           "attribute": "shyeel",
           "cost": 18,
           "fa": "C",
@@ -212,7 +212,7 @@
         {
           "id": "RJ10",
           "type": "warjack",
-          "name": " Daemon",
+          "name": "Daemon",
           "attribute": "vyre",
           "cost": 16,
           "fa": "U",
@@ -221,7 +221,7 @@
         {
           "id": "RJ01",
           "type": "warjack",
-          "name": " Chimera",
+          "name": "Chimera",
           "attribute": "shyeel",
           "cost": 8,
           "fa": "U",
@@ -230,7 +230,7 @@
         {
           "id": "RJ09",
           "type": "warjack",
-          "name": " Banshee",
+          "name": "Banshee",
           "attribute": "vyre",
           "cost": 18,
           "fa": "U",
@@ -239,7 +239,7 @@
         {
           "id": "RJ08",
           "type": "warjack",
-          "name": " Aspis",
+          "name": "Aspis",
           "attribute": "shyeel",
           "cost": 6,
           "fa": "U",
@@ -261,7 +261,7 @@
         {
           "id": "RB01",
           "type": "battleengine",
-          "name": " Arcantric Force Generator",
+          "name": "Arcantric Force Generator",
           "attribute": "vyre",
           "cost": 16,
           "fa": "2",
@@ -277,7 +277,7 @@
         {
           "id": "RU02",
           "type": "unitMarshall",
-          "name": " Dawnguard Sentinels",
+          "name": "Dawnguard Sentinels",
           "attribute": "dawnguard",
           "cost": 11,
           "costMin": 11,
@@ -290,7 +290,7 @@
         {
           "id": "RU01",
           "type": "unitMarshall",
-          "name": " Dawnguard Invictors",
+          "name": "Dawnguard Invictors",
           "attribute": "dawnguard",
           "cost": 10,
           "costMin": 10,
@@ -303,7 +303,7 @@
         {
           "id": "RU08",
           "type": "unit",
-          "name": " Stormfall Archers",
+          "name": "Stormfall Archers",
           "cost": 9,
           "fa": "2",
           "faction": "faction_retribution"
@@ -311,7 +311,7 @@
         {
           "id": "RU05",
           "type": "unit",
-          "name": " Mage Hunter Strike Force",
+          "name": "Mage Hunter Strike Force",
           "attribute": "mage_hunter",
           "cost": 10,
           "costMin": 10,
@@ -324,7 +324,7 @@
         {
           "id": "RU10",
           "type": "unit",
-          "name": " Mage Hunter Infiltrators",
+          "name": "Mage Hunter Infiltrators",
           "attribute": "mage_hunter",
           "cost": 8,
           "costMin": 8,
@@ -337,7 +337,7 @@
         {
           "id": "RU04",
           "type": "unit",
-          "name": " Houseguard Riflemen",
+          "name": "Houseguard Riflemen",
           "attribute": "houseguard",
           "cost": 9,
           "costMin": 9,
@@ -350,7 +350,7 @@
         {
           "id": "RU07",
           "type": "unit",
-          "name": " Houseguard Halberdiers",
+          "name": "Houseguard Halberdiers",
           "attribute": "houseguard",
           "cost": 8,
           "costMin": 8,
@@ -363,7 +363,7 @@
         {
           "id": "RU11",
           "type": "unit",
-          "name": " House Vyre Electromancers",
+          "name": "House Vyre Electromancers",
           "attribute": "vyre",
           "cost": 8,
           "fa": "2",
@@ -372,7 +372,7 @@
         {
           "id": "RU03",
           "type": "unit",
-          "name": " House Shyeel Battle Mages",
+          "name": "House Shyeel Battle Mages",
           "attribute": "shyeel",
           "cost": 10,
           "fa": "2",
@@ -381,7 +381,7 @@
         {
           "id": "RU12",
           "type": "unit",
-          "name": " House Ellowuyr Swordsmen",
+          "name": "House Ellowuyr Swordsmen",
           "attribute": "ellowuyr",
           "cost": 10,
           "costMin": 10,
@@ -394,7 +394,7 @@
         {
           "id": "RU09",
           "type": "unit",
-          "name": " Heavy Rifle Team",
+          "name": "Heavy Rifle Team",
           "cost": 4,
           "fa": "2",
           "faction": "faction_retribution"
@@ -402,7 +402,7 @@
         {
           "id": "RU06",
           "type": "unit",
-          "name": " Dawnguard Destors",
+          "name": "Dawnguard Destors",
           "attribute": "dawnguard",
           "cost": 12,
           "costMin": 12,
@@ -422,7 +422,7 @@
         {
           "id": "RA03",
           "type": "UA",
-          "name": " Mage Hunter Strike Force Commander",
+          "name": "Mage Hunter Strike Force Commander",
           "attribute": "mage_hunter",
           "cost": 4,
           "fa": "2",
@@ -432,7 +432,7 @@
         {
           "id": "RA06",
           "type": "UA",
-          "name": " Houseguard Riflemen Officer & Standard",
+          "name": "Houseguard Riflemen Officer & Standard",
           "attribute": "houseguard",
           "cost": 4,
           "fa": "U",
@@ -442,7 +442,7 @@
         {
           "id": "RA05",
           "type": "UA",
-          "name": " Houseguard Halberdier Officer & Standard",
+          "name": "Houseguard Halberdier Officer & Standard",
           "attribute": "houseguard",
           "cost": 4,
           "fa": "U",
@@ -468,7 +468,7 @@
         {
           "id": "RA02",
           "type": "UA",
-          "name": " Dawnguard Sentinel Officer & Standard",
+          "name": "Dawnguard Sentinel Officer & Standard",
           "attribute": "dawnguard",
           "cost": 4,
           "fa": "2",
@@ -478,7 +478,7 @@
         {
           "id": "RA01",
           "type": "UA",
-          "name": " Dawnguard Invictor Officer & Standard",
+          "name": "Dawnguard Invictor Officer & Standard",
           "attribute": "dawnguard",
           "cost": 4,
           "fa": "2",
@@ -495,7 +495,7 @@
         {
           "id": "RA04",
           "type": "WA",
-          "name": " Soulless Escort",
+          "name": "Soulless Escort",
           "cost": 1,
           "fa": "U",
           "faction": "faction_retribution",
@@ -524,7 +524,7 @@
         {
           "id": "RS10",
           "type": "soloMarshall",
-          "name": " House Shyeel Artificer",
+          "name": "House Shyeel Artificer",
           "cost": 5,
           "fa": "2",
           "faction": "faction_retribution"
@@ -532,7 +532,7 @@
         {
           "id": "RS02",
           "type": "soloMarshall",
-          "name": " Dawnguard Scyir",
+          "name": "Dawnguard Scyir",
           "cost": 4,
           "fa": "2",
           "faction": "faction_retribution"
@@ -540,7 +540,7 @@
         {
           "id": "RS11",
           "type": "soloJourneyMan",
-          "name": " Elara Tyro of The Third Chamber",
+          "name": "Elara Tyro of The Third Chamber",
           "cost": 4,
           "fa": "C",
           "faction": "faction_retribution",
@@ -552,7 +552,7 @@
         {
           "id": "RS13",
           "type": "solo",
-          "name": " Soulless Voidtracer",
+          "name": "Soulless Voidtracer",
           "cost": 2,
           "fa": "2",
           "faction": "faction_retribution"
@@ -560,7 +560,7 @@
         {
           "id": "RS07",
           "type": "solo",
-          "name": " Nayl",
+          "name": "Nayl",
           "cost": 3,
           "fa": "C",
           "faction": "faction_retribution"
@@ -568,7 +568,7 @@
         {
           "id": "RS06",
           "type": "solo",
-          "name": " Narn Mage Hunter of Ios",
+          "name": "Narn Mage Hunter of Ios",
           "cost": 6,
           "fa": "C",
           "faction": "faction_retribution"
@@ -576,7 +576,7 @@
         {
           "id": "RS05",
           "type": "solo",
-          "name": " Mage Hunter Assassin",
+          "name": "Mage Hunter Assassin",
           "cost": 4,
           "fa": "2",
           "faction": "faction_retribution"
@@ -584,7 +584,7 @@
         {
           "id": "RS14",
           "type": "solo",
-          "name": " Lys Healer",
+          "name": "Lys Healer",
           "cost": 3,
           "fa": "2",
           "faction": "faction_retribution"
@@ -592,7 +592,7 @@
         {
           "id": "RS12",
           "type": "solo",
-          "name": " Houseguard Thane",
+          "name": "Houseguard Thane",
           "cost": 4,
           "fa": "2",
           "faction": "faction_retribution"
@@ -600,7 +600,7 @@
         {
           "id": "RS04",
           "type": "solo",
-          "name": " House Shyeel Magister",
+          "name": "House Shyeel Magister",
           "cost": 4,
           "fa": "2",
           "faction": "faction_retribution"
@@ -608,7 +608,7 @@
         {
           "id": "RS03",
           "type": "solo",
-          "name": " Ghost Sniper",
+          "name": "Ghost Sniper",
           "cost": 3,
           "fa": "2",
           "faction": "faction_retribution"
@@ -616,7 +616,7 @@
         {
           "id": "RS09",
           "type": "solo",
-          "name": " Fane Knight Skeryth Issyen",
+          "name": "Fane Knight Skeryth Issyen",
           "cost": 8,
           "fa": "C",
           "faction": "faction_retribution"
@@ -624,7 +624,7 @@
         {
           "id": "RS08",
           "type": "solo",
-          "name": " Destor Thane",
+          "name": "Destor Thane",
           "cost": 7,
           "fa": "2",
           "faction": "faction_retribution"
@@ -632,7 +632,7 @@
         {
           "id": "RS01",
           "type": "solo",
-          "name": " Arcanist",
+          "name": "Arcanist",
           "cost": 2,
           "fa": "3",
           "faction": "faction_retribution"
