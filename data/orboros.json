@@ -136,7 +136,7 @@
         {
           "id": "OW16",
           "type": "warlock",
-          "name": "Una2 (Una The Skyhunter)",
+          "name": "Una2 (Una the Skyhunter)",
           "cost": 29,
           "fa": "C",
           "faction": "faction_orboros"
@@ -144,7 +144,7 @@
         {
           "id": "OW17",
           "type": "warlock",
-          "name": "Kaya3 (Kaya The Wildheart)",
+          "name": "Kaya3 (Kaya the Wildheart)",
           "cost": 27,
           "fa": "C",
           "faction": "faction_orboros"
