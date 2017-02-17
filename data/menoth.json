@@ -267,6 +267,17 @@
           ]
         },
         {
+          "id": "PJ24",
+          "type": "warjack",
+          "name": "Eye of Truth",
+          "cost": 20,
+          "fa": "C",
+          "faction": "faction_menoth",
+          "attributes":[
+            "heavy"
+          ]
+        },
+        {
           "id": "PJ13",
           "type": "warjack",
           "name": "Fire of Salvation",
