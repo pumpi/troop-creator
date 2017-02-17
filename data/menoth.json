@@ -162,6 +162,14 @@
           "attributes":[
             "durant"
           ]
+        },
+        {
+          "id": "PW19",
+          "type": "warcaster",
+          "name": "Feora3 (Feora the Conquering Flame)",
+          "cost": 27,
+          "fa": "C",
+          "faction": "faction_menoth"
         }
       ],
       "label": "Warcasters"
