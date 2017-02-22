@@ -747,8 +747,8 @@
           "id": "OS15",
           "type": "solo",
           "name": "Tharn wolf rider champion",
-          "cost": 3,
-          "fa": "3",
+          "cost": 8,
+          "fa": "2",
           "faction": "faction_orboros"
         }
       ],
