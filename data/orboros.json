@@ -382,7 +382,7 @@
           "type": "warbeast",
           "name": "Loki",
           "cost": 19,
-          "fa": "U",
+          "fa": "C",
           "faction": "faction_orboros",
           "attributes":[
             "heavy"
