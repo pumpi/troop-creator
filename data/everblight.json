@@ -177,6 +177,14 @@
           "faction": "faction_everblight"
         },
         {
+          "id": "EB25",
+          "type": "warbeast",
+          "name": "Azrael",
+          "cost": 21,
+          "fa": "C",
+          "faction": "faction_everblight"
+        },
+        {
           "id": "EB20",
           "type": "warbeast",
           "name": "Belphagor",
