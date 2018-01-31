@@ -52,6 +52,14 @@
           "faction": "faction_everblight"
         },
         {
+          "id": "EW18",
+          "type": "warlock",
+          "name": "Kallus2 (Kallus Devastation of Everblight)",
+          "cost": 28,
+          "fa": "C",
+          "faction": "faction_everblight"
+        },
+        {
           "id": "EW01",
           "type": "warlock",
           "name": "Lylyth1 (Lylyth Herald of Everblight)",
@@ -364,7 +372,7 @@
           "id": "EE01",
           "type": "battleengine",
           "name": "Throne of Everblight",
-          "cost": 19,
+          "cost": 16,
           "fa": "2",
           "faction": "faction_everblight"
         }
@@ -535,6 +543,14 @@
           "max": 10,
           "faction": "faction_everblight"
         }
+        {
+          "id": "EU16",
+          "type": "unit",
+          "name": "Ice Witches",
+          "cost": 7,
+          "fa": "3",
+          "faction": "faction_everblight"
+        }
       ],
       "label": "Units"
     },
@@ -652,6 +668,14 @@
           "name": "Blighted Nyss Sorceress & Hellion",
           "cost": 6,
           "fa": "2",
+          "faction": "faction_everblight"
+        },
+        {
+          "id": "ES14",
+          "type": "solo",
+          "name": "Craelix Fang of Everblight",
+          "cost": 6,
+          "fa": "C",
           "faction": "faction_everblight"
         },
         {
