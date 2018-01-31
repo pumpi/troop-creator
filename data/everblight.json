@@ -542,7 +542,7 @@
           "min": 6,
           "max": 10,
           "faction": "faction_everblight"
-        }
+        },
         {
           "id": "EU16",
           "type": "unit",
