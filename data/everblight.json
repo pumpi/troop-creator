@@ -35,6 +35,14 @@
           "faction": "faction_everblight"
         },
         {
+          "id": "EW19",
+          "type": "warlock",
+          "name": "Anamag (Anamag the Doom Feaster)",
+          "cost": 27,
+          "fa": "C",
+          "faction": "faction_everblight"
+        },
+        {
           "id": "EW07",
           "type": "warlock",
           "name": "Bethayne1 (Bethayne Voice of Everblight & Belphagor)",
@@ -213,7 +221,7 @@
           "id": "EB24",
           "type": "warbeast",
           "name": "Blightbringer",
-          "cost": 38,
+          "cost": 32,
           "fa": "2",
           "faction": "faction_everblight"
         },
@@ -221,8 +229,16 @@
           "id": "EB09",
           "type": "warbeast",
           "name": "Carnivean",
-          "cost": 19,
+          "cost": 18,
           "fa": "U",
+          "faction": "faction_everblight"
+        },
+        {
+          "id": "EB26",
+          "type": "warbeast",
+          "name": "Golab",
+          "cost": 17,
+          "fa": "C",
           "faction": "faction_everblight"
         },
         {
@@ -301,7 +317,7 @@
           "id": "EB13",
           "type": "warbeast",
           "name": "Ravagore",
-          "cost": 19,
+          "cost": 16,
           "fa": "U",
           "faction": "faction_everblight"
         },
@@ -309,7 +325,7 @@
           "id": "EB11",
           "type": "warbeast",
           "name": "Scythean",
-          "cost": 18,
+          "cost": 16,
           "fa": "U",
           "faction": "faction_everblight"
         },
@@ -349,7 +365,7 @@
           "id": "EB10",
           "type": "warbeast",
           "name": "Typhon",
-          "cost": 24,
+          "cost": 20,
           "fa": "C",
           "faction": "faction_everblight"
         },
@@ -447,9 +463,9 @@
           "id": "EU08",
           "type": "unit",
           "name": "Blighted Ogrun Warmongers",
-          "cost": 9,
-          "costMin": 9,
-          "costMax": 15,
+          "cost": 8,
+          "costMin": 8,
+          "costMax": 13,
           "fa": "3",
           "min": 3,
           "max": 5,
@@ -550,6 +566,26 @@
           "cost": 7,
           "fa": "3",
           "faction": "faction_everblight"
+        },
+        {
+          "id": "EU17",
+          "type": "unit",
+          "name": "Blighted Rotwings",
+          "cost": 7,
+          "costMin": 7,
+          "costMax": 12,
+          "fa": "2",
+          "faction": "faction_everblight"
+        },
+        {
+          "id": "EU18",
+          "type": "unit",
+          "name": "Chosen of Everblight",
+          "cost": 12,
+          "costMin": 12,
+          "costMax": 20,
+          "fa": "2",
+          "faction": "faction_everblight"
         }
       ],
       "label": "Units"
@@ -611,6 +647,15 @@
           "fa": "3",
           "faction": "faction_everblight",
           "restricted_to": "EU09"
+        },
+        {
+          "id": "EA07",
+          "type": "UA",
+          "name": "Gorag Rotteneye",
+          "cost": 6,
+          "fa": "C",
+          "faction": "faction_everblight",
+          "restricted_to": "EU08"
         }
       ],
       "label": "Unit Attachments"
@@ -738,8 +783,16 @@
           "id": "ES06",
           "type": "solo",
           "name": "Warmonger War Chief",
-          "cost": 6,
+          "cost": 5,
           "fa": "2",
+          "faction": "faction_everblight"
+        },
+        {
+          "id": "ES15",
+          "type": "soloAttachment",
+          "name": "Ammok the Truthbearer",
+          "cost": 4,
+          "fa": "1",
           "faction": "faction_everblight"
         }
       ],
